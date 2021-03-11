@@ -2,7 +2,7 @@
 #
 # Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                        main  
-absl-py                   0.11.0           py38h578d9bd_0    conda-forge
+absl-py                   0.12.0             pyhd8ed1ab_0    conda-forge
 blas                      1.0                         mkl  
 blinker                   1.4                        py_1    conda-forge
 brotlipy                  0.7.0           py38h8df0ef7_1001    conda-forge
@@ -15,7 +15,7 @@ cffi                      1.14.5           py38h261ae71_0
 chardet                   4.0.0            py38h578d9bd_1    conda-forge
 click                     7.1.2              pyh9f0ad1d_0    conda-forge
 cpuonly                   1.0                           0    pytorch
-cryptography              3.4.5            py38ha5dfef3_1    conda-forge
+cryptography              3.4.6            py38ha5dfef3_0    conda-forge
 cycler                    0.10.0                     py_2    conda-forge
 cython                    0.29.21          py38h348cfbe_1    conda-forge
 dbus                      1.13.16              hb2f20db_0  
