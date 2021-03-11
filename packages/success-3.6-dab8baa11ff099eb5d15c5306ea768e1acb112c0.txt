@@ -2,7 +2,7 @@
 #
 # Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                        main  
-absl-py                   0.11.0           py36h5fab9bb_0    conda-forge
+absl-py                   0.12.0             pyhd8ed1ab_0    conda-forge
 blas                      1.0                         mkl  
 bzip2                     1.0.8                h7b6447c_0  
 c-ares                    1.17.1               h36c2ea0_0    conda-forge
