@@ -61,7 +61,7 @@ libiconv                  1.16                 h516909a_0    conda-forge
 liblapack                 3.9.0                     8_mkl    conda-forge
 liblapacke                3.9.0                     8_mkl    conda-forge
 libpng                    1.6.37               h21135ba_2    conda-forge
-libprotobuf               3.15.5               h780b84a_0    conda-forge
+libprotobuf               3.15.6               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_18    conda-forge
 libtiff                   4.1.0                h2733197_1  
 libuuid                   2.32.1            h7f98852_1000    conda-forge
@@ -87,7 +87,7 @@ openssl                   1.1.1j               h7f98852_0    conda-forge
 pcre                      8.44                 he1b5a44_0    conda-forge
 pillow                    8.1.2            py39he98fc37_0  
 pip                       21.0.1             pyhd8ed1ab_0    conda-forge
-protobuf                  3.15.5           py39he80948d_0    conda-forge
+protobuf                  3.15.6           py39he80948d_0    conda-forge
 psutil                    5.8.0            py39h3811e60_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
