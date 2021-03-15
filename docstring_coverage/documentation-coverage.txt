@@ -446,16 +446,25 @@
 |   disk_usage_metrics (L283)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/forgetting.py (module)                          |  MISSED |
-|   ExperienceForgetting (L25)                                       | COVERED |
-|     ExperienceForgetting.__init__ (L38)                            | COVERED |
-|     ExperienceForgetting.reset (L65)                               | COVERED |
-|     ExperienceForgetting.reset_current_accuracy (L77)              | COVERED |
-|     ExperienceForgetting.update (L88)                              | COVERED |
-|     ExperienceForgetting.before_training_exp (L105)                |  MISSED |
-|     ExperienceForgetting.before_eval (L108)                        |  MISSED |
-|     ExperienceForgetting.after_eval_iteration (L111)               |  MISSED |
-|     ExperienceForgetting.after_eval_exp (L117)                     |  MISSED |
-|     ExperienceForgetting.result (L136)                             | COVERED |
+|   Forgetting (L23)                                                 | COVERED |
+|     Forgetting.__init__ (L36)                                      | COVERED |
+|     Forgetting.update_initial (L53)                                |  MISSED |
+|     Forgetting.update_last (L56)                                   |  MISSED |
+|     Forgetting.update (L59)                                        |  MISSED |
+|     Forgetting.result (L65)                                        | COVERED |
+|     Forgetting.reset_last (L97)                                    |  MISSED |
+|     Forgetting.reset (L100)                                        |  MISSED |
+|   ExperienceForgetting (L105)                                      | COVERED |
+|     ExperienceForgetting.__init__ (L118)                           | COVERED |
+|     ExperienceForgetting.reset (L145)                              | COVERED |
+|     ExperienceForgetting.reset_last_accuracy (L156)                | COVERED |
+|     ExperienceForgetting.update (L167)                             | COVERED |
+|     ExperienceForgetting.result (L179)                             | COVERED |
+|     ExperienceForgetting.before_training_exp (L187)                |  MISSED |
+|     ExperienceForgetting.before_eval (L190)                        |  MISSED |
+|     ExperienceForgetting.before_eval_exp (L193)                    |  MISSED |
+|     ExperienceForgetting.after_eval_iteration (L196)               |  MISSED |
+|     ExperienceForgetting.after_eval_exp (L201)                     |  MISSED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/gpu_usage.py (module)                           |  MISSED |
 |   MaxGPU (L27)                                                     | COVERED |
@@ -1025,7 +1034,7 @@
 | evaluation/metrics/confusion_matrix.py                  |    15 |    8 |     7 |    47% |
 | evaluation/metrics/cpu_usage.py                         |    38 |   22 |    16 |    42% |
 | evaluation/metrics/disk_usage.py                        |    32 |   18 |    14 |    44% |
-| evaluation/metrics/forgetting.py                        |    11 |    5 |     6 |    55% |
+| evaluation/metrics/forgetting.py                        |    20 |   11 |     9 |    45% |
 | evaluation/metrics/gpu_usage.py                         |    38 |   25 |    13 |    34% |
 | evaluation/metrics/loss.py                              |    37 |   21 |    16 |    43% |
 | evaluation/metrics/mac.py                               |    24 |   13 |    11 |    46% |
@@ -1048,5 +1057,5 @@
 | training/strategies/joint_training.py                   |     4 |    2 |     2 |    50% |
 | training/strategies/strategies.py                       |    29 |   14 |    15 |    52% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |   907 |  527 |   380 |  41.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 41.9%) -----------------
+| TOTAL                                                   |   916 |  533 |   383 |  41.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 41.8%) -----------------
