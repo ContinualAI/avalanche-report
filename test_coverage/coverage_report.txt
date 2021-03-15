@@ -61,14 +61,14 @@ avalanche/evaluation/metrics/__init__.py                               11      0
 avalanche/evaluation/metrics/accuracy.py                              143     21    85%
 avalanche/evaluation/metrics/confusion_matrix.py                      118     50    58%
 avalanche/evaluation/metrics/cpu_usage.py                             161     74    54%
-avalanche/evaluation/metrics/disk_usage.py                            130     62    52%
-avalanche/evaluation/metrics/forgetting.py                             53     33    38%
+avalanche/evaluation/metrics/disk_usage.py                            130     61    53%
+avalanche/evaluation/metrics/forgetting.py                             77     29    62%
 avalanche/evaluation/metrics/gpu_usage.py                             159    103    35%
 avalanche/evaluation/metrics/loss.py                                  132     21    84%
-avalanche/evaluation/metrics/mac.py                                   102     63    38%
-avalanche/evaluation/metrics/mean.py                                   30      5    83%
-avalanche/evaluation/metrics/ram_usage.py                             144     71    51%
-avalanche/evaluation/metrics/timing.py                                149     94    37%
+avalanche/evaluation/metrics/mac.py                                   102     46    55%
+avalanche/evaluation/metrics/mean.py                                   30      0   100%
+avalanche/evaluation/metrics/ram_usage.py                             144     66    54%
+avalanche/evaluation/metrics/timing.py                                149     83    44%
 avalanche/logging/__init__.py                                           8      0   100%
 avalanche/logging/interactive_logging.py                               39     20    49%
 avalanche/logging/strategy_logger.py                                   83     22    73%
@@ -94,7 +94,7 @@ tests/__init__.py                                                       0      0
 tests/deprecated_tests/__init__.py                                      0      0   100%
 tests/test_avalanche_dataset.py                                       550      1    99%
 tests/test_core50.py                                                   12      1    92%
-tests/test_metrics.py                                                 247      1    99%
+tests/test_metrics.py                                                 352      8    98%
 tests/test_nc_mt_scenario.py                                          153      2    99%
 tests/test_nc_sit_scenario.py                                         161      1    99%
 tests/test_ni_sit_scenario.py                                         109      1    99%
@@ -105,4 +105,4 @@ tests/test_strategies.py                                              246     11
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               8      0   100%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                7712   1972    74%
+TOTAL                                                                7841   1936    75%
