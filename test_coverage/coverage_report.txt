@@ -46,10 +46,11 @@ avalanche/benchmarks/scenarios/new_classes/nc_utils.py                 55     29
 avalanche/benchmarks/scenarios/new_instances/__init__.py                1      0   100%
 avalanche/benchmarks/scenarios/new_instances/ni_scenario.py           141     20    86%
 avalanche/benchmarks/scenarios/new_instances/ni_utils.py               13      0   100%
-avalanche/benchmarks/utils/__init__.py                                  5      0   100%
-avalanche/benchmarks/utils/avalanche_dataset.py                       369     49    87%
+avalanche/benchmarks/utils/__init__.py                                  4      0   100%
+avalanche/benchmarks/utils/avalanche_dataset.py                       415     63    85%
 avalanche/benchmarks/utils/data_loader.py                              67     21    69%
-avalanche/benchmarks/utils/dataset_utils.py                           241     47    80%
+avalanche/benchmarks/utils/dataset_definitions.py                      27      2    93%
+avalanche/benchmarks/utils/dataset_utils.py                           207     36    83%
 avalanche/benchmarks/utils/datasets_from_filelists.py                 124    103    17%
 avalanche/benchmarks/utils/torchvision_wrapper.py                      10      3    70%
 avalanche/benchmarks/utils/utils.py                                    45     31    31%
@@ -92,7 +93,7 @@ examples/__init__.py                                                    0      0
 examples/test_install.py                                                7      3    57%
 tests/__init__.py                                                       0      0   100%
 tests/deprecated_tests/__init__.py                                      0      0   100%
-tests/test_avalanche_dataset.py                                       550      1    99%
+tests/test_avalanche_dataset.py                                       639      1    99%
 tests/test_core50.py                                                   12      1    92%
 tests/test_metrics.py                                                 352      8    98%
 tests/test_nc_mt_scenario.py                                          153      2    99%
@@ -105,4 +106,4 @@ tests/test_strategies.py                                              246     11
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               8      0   100%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                7841   1936    75%
+TOTAL                                                                7968   1941    76%
