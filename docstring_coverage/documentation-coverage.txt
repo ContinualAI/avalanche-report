@@ -247,10 +247,12 @@
 |   train_eval_avalanche_datasets (L1309)                            |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                           |  MISSED |
-|   MultiTaskDataLoader (L15)                                        |  MISSED |
-|     MultiTaskDataLoader.__init__ (L16)                             | COVERED |
-|   MultiTaskMultiBatchDataLoader (L78)                              |  MISSED |
-|     MultiTaskMultiBatchDataLoader.__init__ (L79)                   | COVERED |
+|   MultiTaskDataLoader (L17)                                        |  MISSED |
+|     MultiTaskDataLoader.__init__ (L18)                             | COVERED |
+|   MultiTaskMultiBatchDataLoader (L80)                              |  MISSED |
+|     MultiTaskMultiBatchDataLoader.__init__ (L81)                   | COVERED |
+|   MultiTaskJoinedBatchDataLoader (L143)                            |  MISSED |
+|     MultiTaskJoinedBatchDataLoader.__init__ (L144)                 | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                   |  MISSED |
 |   IDataset (L23)                                                   | COVERED |
@@ -887,10 +889,10 @@
 |     MultiHeadPlugin.expand_task_layer (L207)                       | COVERED |
 |--------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                |  MISSED |
-|   ReplayPlugin (L6)                                                | COVERED |
-|     ReplayPlugin.__init__ (L20)                                    |  MISSED |
-|     ReplayPlugin.adapt_train_dataset (L27)                         | COVERED |
-|     ReplayPlugin.after_training_exp (L60)                          | COVERED |
+|   ReplayPlugin (L8)                                                | COVERED |
+|     ReplayPlugin.__init__ (L27)                                    |  MISSED |
+|     ReplayPlugin.before_training_exp (L33)                         | COVERED |
+|     ReplayPlugin.after_training_exp (L47)                          | COVERED |
 |--------------------------------------------------------------------|---------|
 | training/plugins/strategy_plugin.py (module)                       |  MISSED |
 |   StrategyPlugin (L9)                                              | COVERED |
@@ -1056,7 +1058,7 @@
 | benchmarks/scenarios/new_instances/ni_scenario.py       |     7 |    3 |     4 |    57% |
 | benchmarks/scenarios/new_instances/ni_utils.py          |     1 |    1 |     0 |     0% |
 | benchmarks/utils/avalanche_dataset.py                   |    20 |    2 |    18 |    90% |
-| benchmarks/utils/data_loader.py                         |     5 |    3 |     2 |    40% |
+| benchmarks/utils/data_loader.py                         |     7 |    4 |     3 |    43% |
 | benchmarks/utils/dataset_definitions.py                 |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                       |    28 |   13 |    15 |    54% |
 | benchmarks/utils/datasets_from_filelists.py             |     9 |    0 |     9 |   100% |
@@ -1103,5 +1105,5 @@
 | training/strategies/joint_training.py                   |     4 |    2 |     2 |    50% |
 | training/strategies/strategy_wrappers.py                |    19 |    8 |    11 |    58% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |   936 |  550 |   386 |  41.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 41.2%) -----------------
+| TOTAL                                                   |   938 |  551 |   387 |  41.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 41.3%) -----------------
