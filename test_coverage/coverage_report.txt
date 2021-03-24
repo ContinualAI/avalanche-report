@@ -48,7 +48,7 @@ avalanche/benchmarks/scenarios/new_instances/ni_scenario.py           141     20
 avalanche/benchmarks/scenarios/new_instances/ni_utils.py               13      0   100%
 avalanche/benchmarks/utils/__init__.py                                  4      0   100%
 avalanche/benchmarks/utils/avalanche_dataset.py                       415     63    85%
-avalanche/benchmarks/utils/data_loader.py                              65     14    78%
+avalanche/benchmarks/utils/data_loader.py                             125     23    82%
 avalanche/benchmarks/utils/dataset_definitions.py                      27      2    93%
 avalanche/benchmarks/utils/dataset_utils.py                           207     36    83%
 avalanche/benchmarks/utils/datasets_from_filelists.py                 124    103    17%
@@ -92,7 +92,7 @@ avalanche/training/plugins/gdumb.py                                    36      0
 avalanche/training/plugins/gem.py                                      74      8    89%
 avalanche/training/plugins/lwf.py                                      26      0   100%
 avalanche/training/plugins/multi_head.py                               66      5    92%
-avalanche/training/plugins/replay.py                                   29      0   100%
+avalanche/training/plugins/replay.py                                   32      0   100%
 avalanche/training/plugins/strategy_plugin.py                          56      1    98%
 avalanche/training/plugins/synaptic_intelligence.py                   152      9    94%
 avalanche/training/strategies/__init__.py                               5      0   100%
@@ -108,16 +108,16 @@ tests/__init__.py                                                       0      0
 tests/deprecated_tests/__init__.py                                      0      0   100%
 tests/test_avalanche_dataset.py                                       639      1    99%
 tests/test_core50.py                                                   12      1    92%
-tests/test_dataloaders.py                                              41      1    98%
+tests/test_dataloaders.py                                              60      1    98%
 tests/test_metrics.py                                                 352      8    98%
 tests/test_nc_mt_scenario.py                                          153      2    99%
 tests/test_nc_sit_scenario.py                                         161      1    99%
 tests/test_ni_sit_scenario.py                                         109      1    99%
 tests/test_permuted_mnist.py                                           18      1    94%
-tests/test_plugins.py                                                 114      2    98%
+tests/test_plugins.py                                                 130      2    98%
 tests/test_scenarios_typechecks.py                                     46      2    96%
 tests/test_strategies.py                                              248     11    96%
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               8      0   100%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                8076   1927    76%
+TOTAL                                                                8174   1936    76%
