@@ -13,7 +13,7 @@ avalanche/benchmarks/classic/comniglot.py                              70     49
 avalanche/benchmarks/classic/core50.py                                 34     25    26%
 avalanche/benchmarks/classic/ctiny_imagenet.py                         16      1    94%
 avalanche/benchmarks/classic/openloris.py                              33     24    27%
-avalanche/benchmarks/classic/stream51.py                               95     81    15%
+avalanche/benchmarks/classic/stream51.py                               96     81    16%
 avalanche/benchmarks/datasets/__init__.py                               8      0   100%
 avalanche/benchmarks/datasets/core50/__init__.py                        1      0   100%
 avalanche/benchmarks/datasets/core50/core50.py                         76     60    21%
@@ -35,11 +35,11 @@ avalanche/benchmarks/datasets/tiny_imagenet/__init__.py                 1      0
 avalanche/benchmarks/datasets/tiny_imagenet/tiny_imagenet.py          105     22    79%
 avalanche/benchmarks/datasets/torchvision_wrapper.py                   93     31    67%
 avalanche/benchmarks/generators/__init__.py                             1      0   100%
-avalanche/benchmarks/generators/scenario_generators.py                 61      7    89%
+avalanche/benchmarks/generators/scenario_generators.py                 83      9    89%
 avalanche/benchmarks/scenarios/__init__.py                              5      0   100%
 avalanche/benchmarks/scenarios/generic_cl_scenario.py                 158     11    93%
 avalanche/benchmarks/scenarios/generic_definitions.py                  37      8    78%
-avalanche/benchmarks/scenarios/generic_scenario_creation.py            61      8    87%
+avalanche/benchmarks/scenarios/generic_scenario_creation.py            75     10    87%
 avalanche/benchmarks/scenarios/new_classes/__init__.py                  1      0   100%
 avalanche/benchmarks/scenarios/new_classes/nc_scenario.py             132     11    92%
 avalanche/benchmarks/scenarios/new_classes/nc_utils.py                 55     29    47%
@@ -47,10 +47,10 @@ avalanche/benchmarks/scenarios/new_instances/__init__.py                1      0
 avalanche/benchmarks/scenarios/new_instances/ni_scenario.py           141     20    86%
 avalanche/benchmarks/scenarios/new_instances/ni_utils.py               13      0   100%
 avalanche/benchmarks/utils/__init__.py                                  4      0   100%
-avalanche/benchmarks/utils/avalanche_dataset.py                       415     63    85%
+avalanche/benchmarks/utils/avalanche_dataset.py                       507     75    85%
 avalanche/benchmarks/utils/data_loader.py                             125     23    82%
 avalanche/benchmarks/utils/dataset_definitions.py                      27      2    93%
-avalanche/benchmarks/utils/dataset_utils.py                           207     36    83%
+avalanche/benchmarks/utils/dataset_utils.py                           201     29    86%
 avalanche/benchmarks/utils/datasets_from_filelists.py                 124    103    17%
 avalanche/benchmarks/utils/torchvision_wrapper.py                      10      3    70%
 avalanche/benchmarks/utils/utils.py                                    45     31    31%
@@ -106,7 +106,7 @@ examples/__init__.py                                                    0      0
 examples/test_install.py                                                7      3    57%
 tests/__init__.py                                                       0      0   100%
 tests/deprecated_tests/__init__.py                                      0      0   100%
-tests/test_avalanche_dataset.py                                       639      1    99%
+tests/test_avalanche_dataset.py                                       743     11    99%
 tests/test_core50.py                                                   12      1    92%
 tests/test_dataloaders.py                                              60      1    98%
 tests/test_metrics.py                                                 352      8    98%
@@ -120,4 +120,4 @@ tests/test_strategies.py                                              248     11
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               8      0   100%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                8174   1936    76%
+TOTAL                                                                8401   1955    77%
