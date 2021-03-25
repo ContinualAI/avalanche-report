@@ -29,8 +29,8 @@ ffmpeg                    4.3                  hf484d3e_0    pytorch
 fontconfig                2.13.1            he4413a7_1000    conda-forge
 freetype                  2.10.4               h0708190_1    conda-forge
 gettext                   0.19.8.1          h0b5b191_1005    conda-forge
-glib                      2.68.0               h9c3ff4c_1    conda-forge
-glib-tools                2.68.0               h9c3ff4c_1    conda-forge
+glib                      2.68.0               h9c3ff4c_2    conda-forge
+glib-tools                2.68.0               h9c3ff4c_2    conda-forge
 gmp                       6.2.1                h58526e2_0    conda-forge
 gnutls                    3.6.13               h85f3911_1    conda-forge
 google-auth               1.24.0             pyhd3deb0d_0    conda-forge
@@ -55,7 +55,7 @@ libffi                    3.3                  he6710b0_2
 libgcc-ng                 9.3.0               h2828fa1_18    conda-forge
 libgfortran-ng            9.3.0               hff62375_18    conda-forge
 libgfortran5              9.3.0               hff62375_18    conda-forge
-libglib                   2.68.0               h3e27bee_1    conda-forge
+libglib                   2.68.0               h3e27bee_2    conda-forge
 libiconv                  1.16                 h516909a_0    conda-forge
 liblapack                 3.9.0                     8_mkl    conda-forge
 liblapacke                3.9.0                     8_mkl    conda-forge
