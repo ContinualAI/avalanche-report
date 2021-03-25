@@ -70,7 +70,7 @@
 |   OpenLORIS (L38)                                                  | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/classic/stream51.py (module)                            |  MISSED |
-|   CLStream51 (L57)                                                 | COVERED |
+|   CLStream51 (L59)                                                 | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/datasets/imagenet_data.py (module)                      |  MISSED |
 |--------------------------------------------------------------------|---------|
@@ -165,12 +165,13 @@
 |     TinyImagenet.get_test_images_paths (L158)                      | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)              | COVERED |
-|   nc_scenario (L35)                                                | COVERED |
-|   ni_scenario (L184)                                               | COVERED |
-|   dataset_scenario (L276)                                          | COVERED |
-|   filelist_scenario (L326)                                         | COVERED |
-|   paths_scenario (L398)                                            | COVERED |
-|   tensor_scenario (L478)                                           | COVERED |
+|   nc_scenario (L36)                                                | COVERED |
+|   ni_scenario (L185)                                               | COVERED |
+|   dataset_scenario (L277)                                          | COVERED |
+|   filelist_scenario (L334)                                         | COVERED |
+|   paths_scenario (L409)                                            | COVERED |
+|   tensors_scenario (L495)                                          | COVERED |
+|   tensor_scenario (L575)                                           | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_cl_scenario.py (module)               |  MISSED |
 |   GenericCLScenario (L18)                                          | COVERED |
@@ -198,10 +199,11 @@
 |   ScenarioStream (L103)                                            | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_scenario_creation.py (module)         |  MISSED |
-|   create_multi_dataset_generic_scenario (L15)                      | COVERED |
-|   create_generic_scenario_from_filelists (L142)                    | COVERED |
-|   create_generic_scenario_from_paths (L215)                        | COVERED |
-|   create_generic_scenario_from_tensors (L297)                      | COVERED |
+|   create_multi_dataset_generic_scenario (L17)                      | COVERED |
+|   create_generic_scenario_from_filelists (L153)                    | COVERED |
+|   create_generic_scenario_from_paths (L229)                        | COVERED |
+|   create_generic_scenario_from_tensor_lists (L316)                 | COVERED |
+|   create_generic_scenario_from_tensors (L405)                      | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)           |  MISSED |
 |   NCScenario (L23)                                                 | COVERED |
@@ -226,25 +228,30 @@
 | benchmarks/scenarios/new_instances/ni_utils.py (module)            |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/avalanche_dataset.py (module)                     | COVERED |
-|   AvalancheDataset (L53)                                           | COVERED |
-|     AvalancheDataset.__init__ (L89)                                | COVERED |
-|     AvalancheDataset.train (L247)                                  | COVERED |
-|     AvalancheDataset.eval (L258)                                   | COVERED |
-|     AvalancheDataset.freeze_transforms (L273)                      | COVERED |
-|     AvalancheDataset.freeze_group_transforms (L301)                | COVERED |
-|     AvalancheDataset.add_transforms (L327)                         | COVERED |
-|     AvalancheDataset.replace_transforms (L370)                     | COVERED |
-|     AvalancheDataset.with_transforms (L406)                        | COVERED |
-|     AvalancheDataset.add_transforms_group (L435)                   | COVERED |
-|   AvalancheSubset (L762)                                           | COVERED |
-|     AvalancheSubset.__init__ (L769)                                | COVERED |
-|   AvalancheTensorDataset (L903)                                    | COVERED |
-|     AvalancheTensorDataset.__init__ (L911)                         | COVERED |
-|   AvalancheConcatDataset (L968)                                    | COVERED |
-|     AvalancheConcatDataset.__init__ (L979)                         | COVERED |
-|   concat_datasets_sequentially (L1213)                             | COVERED |
-|   as_avalanche_dataset (L1301)                                     |  MISSED |
-|   train_eval_avalanche_datasets (L1309)                            |  MISSED |
+|   AvalancheDatasetType (L55)                                       |  MISSED |
+|   AvalancheDataset (L62)                                           | COVERED |
+|     AvalancheDataset.__init__ (L98)                                | COVERED |
+|     AvalancheDataset.train (L308)                                  | COVERED |
+|     AvalancheDataset.eval (L319)                                   | COVERED |
+|     AvalancheDataset.freeze_transforms (L334)                      | COVERED |
+|     AvalancheDataset.freeze_group_transforms (L362)                | COVERED |
+|     AvalancheDataset.add_transforms (L388)                         | COVERED |
+|     AvalancheDataset.replace_transforms (L431)                     | COVERED |
+|     AvalancheDataset.with_transforms (L467)                        | COVERED |
+|     AvalancheDataset.add_transforms_group (L496)                   | COVERED |
+|   AvalancheSubset (L834)                                           | COVERED |
+|     AvalancheSubset.__init__ (L841)                                | COVERED |
+|   AvalancheTensorDataset (L1035)                                   | COVERED |
+|     AvalancheTensorDataset.__init__ (L1043)                        | COVERED |
+|   AvalancheConcatDataset (L1137)                                   | COVERED |
+|     AvalancheConcatDataset.__init__ (L1148)                        | COVERED |
+|   concat_datasets_sequentially (L1441)                             | COVERED |
+|   as_avalanche_dataset (L1529)                                     |  MISSED |
+|   as_classification_dataset (L1553)                                |  MISSED |
+|   as_regression_dataset (L1559)                                    |  MISSED |
+|   as_segmentation_dataset (L1565)                                  |  MISSED |
+|   as_undefined_dataset (L1571)                                     |  MISSED |
+|   train_eval_avalanche_datasets (L1577)                            |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                           |  MISSED |
 |   MultiTaskDataLoader (L17)                                        |  MISSED |
@@ -274,23 +281,21 @@
 |     LazyConcatIntTargets.__init__ (L120)                           |  MISSED |
 |   LazyTargetsConversion (L127)                                     | COVERED |
 |     LazyTargetsConversion.__init__ (L133)                          |  MISSED |
-|   ConstantSequence (L148)                                          | COVERED |
-|     ConstantSequence.__init__ (L152)                               |  MISSED |
-|   SubsetWithTargets (L171)                                         | COVERED |
-|     SubsetWithTargets.__init__ (L176)                              |  MISSED |
-|   ClassificationSubset (L198)                                      | COVERED |
-|     ClassificationSubset.__init__ (L203)                           |  MISSED |
-|   ConcatDatasetWithTargets (L221)                                  | COVERED |
-|     ConcatDatasetWithTargets.__init__ (L227)                       |  MISSED |
-|   SequenceDataset (L245)                                           | COVERED |
-|     SequenceDataset.__init__ (L250)                                | COVERED |
-|   TensorDatasetWrapper (L281)                                      | COVERED |
-|     TensorDatasetWrapper.__init__ (L295)                           | COVERED |
-|   find_list_from_index (L317)                                      |  MISSED |
-|   manage_advanced_indexing (L334)                                  | COVERED |
-|   LazySubsequence (L376)                                           | COVERED |
-|     LazySubsequence.__init__ (L381)                                |  MISSED |
-|   optimize_sequence (L404)                                         |  MISSED |
+|   ConstantSequence (L152)                                          | COVERED |
+|     ConstantSequence.__init__ (L156)                               |  MISSED |
+|   SubsetWithTargets (L175)                                         | COVERED |
+|     SubsetWithTargets.__init__ (L180)                              |  MISSED |
+|   ClassificationSubset (L202)                                      | COVERED |
+|     ClassificationSubset.__init__ (L209)                           |  MISSED |
+|   ConcatDatasetWithTargets (L227)                                  | COVERED |
+|     ConcatDatasetWithTargets.__init__ (L233)                       |  MISSED |
+|   SequenceDataset (L251)                                           | COVERED |
+|     SequenceDataset.__init__ (L256)                                | COVERED |
+|   find_list_from_index (L298)                                      |  MISSED |
+|   manage_advanced_indexing (L315)                                  | COVERED |
+|   LazySubsequence (L357)                                           | COVERED |
+|     LazySubsequence.__init__ (L362)                                |  MISSED |
+|   optimize_sequence (L385)                                         |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/datasets_from_filelists.py (module)               | COVERED |
 |   default_image_loader (L30)                                       | COVERED |
@@ -1049,18 +1054,18 @@
 | benchmarks/datasets/stream51/stream51.py                |     5 |    3 |     2 |    40% |
 | benchmarks/datasets/stream51/stream51_data.py           |     4 |    2 |     2 |    50% |
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py      |     8 |    0 |     8 |   100% |
-| benchmarks/generators/scenario_generators.py            |     7 |    0 |     7 |   100% |
+| benchmarks/generators/scenario_generators.py            |     8 |    0 |     8 |   100% |
 | benchmarks/scenarios/generic_cl_scenario.py             |    17 |    7 |    10 |    59% |
 | benchmarks/scenarios/generic_definitions.py             |     6 |    1 |     5 |    83% |
-| benchmarks/scenarios/generic_scenario_creation.py       |     5 |    1 |     4 |    80% |
+| benchmarks/scenarios/generic_scenario_creation.py       |     6 |    1 |     5 |    83% |
 | benchmarks/scenarios/new_classes/nc_scenario.py         |     8 |    3 |     5 |    62% |
 | benchmarks/scenarios/new_classes/nc_utils.py            |     2 |    1 |     1 |    50% |
 | benchmarks/scenarios/new_instances/ni_scenario.py       |     7 |    3 |     4 |    57% |
 | benchmarks/scenarios/new_instances/ni_utils.py          |     1 |    1 |     0 |     0% |
-| benchmarks/utils/avalanche_dataset.py                   |    20 |    2 |    18 |    90% |
+| benchmarks/utils/avalanche_dataset.py                   |    25 |    7 |    18 |    72% |
 | benchmarks/utils/data_loader.py                         |     7 |    4 |     3 |    43% |
 | benchmarks/utils/dataset_definitions.py                 |     8 |    2 |     6 |    75% |
-| benchmarks/utils/dataset_utils.py                       |    28 |   13 |    15 |    54% |
+| benchmarks/utils/dataset_utils.py                       |    26 |   13 |    13 |    50% |
 | benchmarks/utils/datasets_from_filelists.py             |     9 |    0 |     9 |   100% |
 | benchmarks/utils/torchvision_wrapper.py                 |     3 |    2 |     1 |    33% |
 | benchmarks/utils/utils.py                               |     3 |    1 |     2 |    67% |
@@ -1105,5 +1110,5 @@
 | training/strategies/joint_training.py                   |     4 |    2 |     2 |    50% |
 | training/strategies/strategy_wrappers.py                |    19 |    8 |    11 |    58% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |   938 |  551 |   387 |  41.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 41.3%) -----------------
+| TOTAL                                                   |   943 |  556 |   387 |  41.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 41.0%) -----------------
