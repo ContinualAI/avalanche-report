@@ -1,6 +1,6 @@
 Name                                                                Stmts   Miss  Cover
 ---------------------------------------------------------------------------------------
-avalanche/__init__.py                                                   8      0   100%
+avalanche/__init__.py                                                   2      0   100%
 avalanche/benchmarks/__init__.py                                        3      0   100%
 avalanche/benchmarks/classic/__init__.py                               11      0   100%
 avalanche/benchmarks/classic/ccifar10.py                               18      7    61%
@@ -118,6 +118,6 @@ tests/test_plugins.py                                                 130      2
 tests/test_scenarios_typechecks.py                                     46      2    96%
 tests/test_strategies.py                                              248     11    96%
 tests/test_tinyimagenet.py                                             20      1    95%
-tests/unit_tests_utils.py                                               8      0   100%
+tests/unit_tests_utils.py                                               6      1    83%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                8163   1989    76%
+TOTAL                                                                8155   1990    76%
