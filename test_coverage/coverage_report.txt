@@ -61,7 +61,7 @@ avalanche/evaluation/metric_results.py                                 21      5
 avalanche/evaluation/metric_utils.py                                   51     24    53%
 avalanche/evaluation/metrics/__init__.py                               11      0   100%
 avalanche/evaluation/metrics/accuracy.py                              143     25    83%
-avalanche/evaluation/metrics/confusion_matrix.py                      118     60    49%
+avalanche/evaluation/metrics/confusion_matrix.py                      113     54    52%
 avalanche/evaluation/metrics/cpu_usage.py                             161     89    45%
 avalanche/evaluation/metrics/disk_usage.py                            130     62    52%
 avalanche/evaluation/metrics/forgetting.py                             77     29    62%
@@ -120,4 +120,4 @@ tests/test_strategies.py                                              248     11
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               6      1    83%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                8155   1990    76%
+TOTAL                                                                8150   1984    76%
