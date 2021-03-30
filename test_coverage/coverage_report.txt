@@ -1,6 +1,6 @@
 Name                                                                Stmts   Miss  Cover
 ---------------------------------------------------------------------------------------
-avalanche/__init__.py                                                   2      0   100%
+avalanche/__init__.py                                                  13      0   100%
 avalanche/benchmarks/__init__.py                                        3      0   100%
 avalanche/benchmarks/classic/__init__.py                               11      0   100%
 avalanche/benchmarks/classic/ccifar10.py                               18      7    61%
@@ -47,7 +47,7 @@ avalanche/benchmarks/scenarios/new_instances/__init__.py                1      0
 avalanche/benchmarks/scenarios/new_instances/ni_scenario.py           141     20    86%
 avalanche/benchmarks/scenarios/new_instances/ni_utils.py               13      0   100%
 avalanche/benchmarks/utils/__init__.py                                  4      0   100%
-avalanche/benchmarks/utils/avalanche_dataset.py                       507     75    85%
+avalanche/benchmarks/utils/avalanche_dataset.py                       509     75    85%
 avalanche/benchmarks/utils/data_loader.py                             125     23    82%
 avalanche/benchmarks/utils/dataset_definitions.py                      27      2    93%
 avalanche/benchmarks/utils/dataset_utils.py                           201     29    86%
@@ -106,7 +106,7 @@ examples/__init__.py                                                    0      0
 examples/test_install.py                                                7      3    57%
 tests/__init__.py                                                       0      0   100%
 tests/deprecated_tests/__init__.py                                      0      0   100%
-tests/test_avalanche_dataset.py                                       743     11    99%
+tests/test_avalanche_dataset.py                                       758     11    99%
 tests/test_core50.py                                                   12      1    92%
 tests/test_dataloaders.py                                              60      1    98%
 tests/test_metrics.py                                                 113      8    93%
@@ -120,4 +120,4 @@ tests/test_strategies.py                                              248     11
 tests/test_tinyimagenet.py                                             20      1    95%
 tests/unit_tests_utils.py                                               6      1    83%
 ---------------------------------------------------------------------------------------
-TOTAL                                                                8150   1984    76%
+TOTAL                                                                8178   1984    76%
