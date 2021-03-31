@@ -492,25 +492,39 @@
 |   disk_usage_metrics (L283)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/forgetting.py (module)                          |  MISSED |
-|   Forgetting (L23)                                                 | COVERED |
-|     Forgetting.__init__ (L36)                                      | COVERED |
-|     Forgetting.update_initial (L53)                                |  MISSED |
-|     Forgetting.update_last (L56)                                   |  MISSED |
-|     Forgetting.update (L59)                                        |  MISSED |
-|     Forgetting.result (L65)                                        | COVERED |
-|     Forgetting.reset_last (L97)                                    |  MISSED |
-|     Forgetting.reset (L100)                                        |  MISSED |
-|   ExperienceForgetting (L105)                                      | COVERED |
-|     ExperienceForgetting.__init__ (L118)                           | COVERED |
-|     ExperienceForgetting.reset (L145)                              | COVERED |
-|     ExperienceForgetting.reset_last_accuracy (L156)                | COVERED |
-|     ExperienceForgetting.update (L167)                             | COVERED |
-|     ExperienceForgetting.result (L179)                             | COVERED |
-|     ExperienceForgetting.before_training_exp (L187)                |  MISSED |
-|     ExperienceForgetting.before_eval (L190)                        |  MISSED |
-|     ExperienceForgetting.before_eval_exp (L193)                    |  MISSED |
-|     ExperienceForgetting.after_eval_iteration (L196)               |  MISSED |
-|     ExperienceForgetting.after_eval_exp (L201)                     |  MISSED |
+|   Forgetting (L24)                                                 | COVERED |
+|     Forgetting.__init__ (L37)                                      | COVERED |
+|     Forgetting.update_initial (L54)                                |  MISSED |
+|     Forgetting.update_last (L57)                                   |  MISSED |
+|     Forgetting.update (L60)                                        |  MISSED |
+|     Forgetting.result (L66)                                        | COVERED |
+|     Forgetting.reset_last (L98)                                    |  MISSED |
+|     Forgetting.reset (L101)                                        |  MISSED |
+|   ExperienceForgetting (L106)                                      | COVERED |
+|     ExperienceForgetting.__init__ (L119)                           | COVERED |
+|     ExperienceForgetting.reset (L146)                              | COVERED |
+|     ExperienceForgetting.reset_last_accuracy (L157)                | COVERED |
+|     ExperienceForgetting.update (L168)                             | COVERED |
+|     ExperienceForgetting.result (L180)                             | COVERED |
+|     ExperienceForgetting.before_training_exp (L188)                |  MISSED |
+|     ExperienceForgetting.before_eval (L191)                        |  MISSED |
+|     ExperienceForgetting.before_eval_exp (L194)                    |  MISSED |
+|     ExperienceForgetting.after_eval_iteration (L197)               |  MISSED |
+|     ExperienceForgetting.after_eval_exp (L202)                     |  MISSED |
+|   StreamForgetting (L238)                                          | COVERED |
+|     StreamForgetting.__init__ (L251)                               | COVERED |
+|     StreamForgetting.reset (L283)                                  | COVERED |
+|     StreamForgetting.reset_last_accuracy (L295)                    | COVERED |
+|     StreamForgetting.exp_update (L306)                             | COVERED |
+|     StreamForgetting.exp_result (L318)                             | COVERED |
+|     StreamForgetting.result (L327)                                 | COVERED |
+|     StreamForgetting.before_training_exp (L335)                    |  MISSED |
+|     StreamForgetting.before_eval (L338)                            |  MISSED |
+|     StreamForgetting.before_eval_exp (L342)                        |  MISSED |
+|     StreamForgetting.after_eval_iteration (L345)                   |  MISSED |
+|     StreamForgetting.after_eval_exp (L350)                         |  MISSED |
+|     StreamForgetting.after_eval (L371)                             |  MISSED |
+|   forgetting_metrics (L393)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/gpu_usage.py (module)                           |  MISSED |
 |   MaxGPU (L27)                                                     | COVERED |
@@ -1090,7 +1104,7 @@
 | evaluation/metrics/confusion_matrix.py                  |    15 |    8 |     7 |    47% |
 | evaluation/metrics/cpu_usage.py                         |    38 |   22 |    16 |    42% |
 | evaluation/metrics/disk_usage.py                        |    32 |   18 |    14 |    44% |
-| evaluation/metrics/forgetting.py                        |    20 |   11 |     9 |    45% |
+| evaluation/metrics/forgetting.py                        |    34 |   17 |    17 |    50% |
 | evaluation/metrics/gpu_usage.py                         |    38 |   25 |    13 |    34% |
 | evaluation/metrics/loss.py                              |    37 |   21 |    16 |    43% |
 | evaluation/metrics/mac.py                               |    24 |   13 |    11 |    46% |
@@ -1124,5 +1138,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    19 |    8 |    11 |    58% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |   957 |  538 |   419 |  43.8% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 43.8%) -----------------
+| TOTAL                                                   |   971 |  544 |   427 |  44.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 44.0%) -----------------
