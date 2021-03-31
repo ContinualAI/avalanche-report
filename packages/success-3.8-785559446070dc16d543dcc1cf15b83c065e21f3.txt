@@ -111,7 +111,7 @@ scipy                     1.5.3            py38h828c644_0    conda-forge
 setuptools                52.0.0           py38h06a4308_0  
 sip                       4.19.13          py38he6710b0_0  
 six                       1.15.0           py38h06a4308_0  
-sqlite                    3.35.2               hdfb4753_0  
+sqlite                    3.35.3               hdfb4753_0  
 tensorboard               2.4.1              pyhd8ed1ab_0    conda-forge
 tensorboard-plugin-wit    1.8.0              pyh44b312d_0    conda-forge
 threadpoolctl             2.1.0              pyh5ca1d4c_0    conda-forge
