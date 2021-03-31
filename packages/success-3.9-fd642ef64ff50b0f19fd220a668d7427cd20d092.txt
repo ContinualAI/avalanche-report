@@ -29,7 +29,7 @@ freetype                  2.10.4               h7ca028e_0    conda-forge
 glib                      2.68.0               h36276a3_0  
 gmp                       6.2.1                h58526e2_0    conda-forge
 gnutls                    3.6.13               h85f3911_1    conda-forge
-google-auth               1.26.1             pyh44b312d_0    conda-forge
+google-auth               1.28.0             pyh44b312d_0    conda-forge
 google-auth-oauthlib      0.4.1                      py_2    conda-forge
 googledrivedownloader     0.4                      pypi_0    pypi
 gputil                    1.4.0              pyh9f0ad1d_0    conda-forge
@@ -38,7 +38,7 @@ gst-plugins-base          1.14.0               hbbd80ab_1
 gstreamer                 1.14.0               h28cd5cc_2  
 icu                       58.2              hf484d3e_1000    conda-forge
 idna                      2.10               pyh9f0ad1d_0    conda-forge
-importlib-metadata        3.9.1            py39hf3d152e_0    conda-forge
+importlib-metadata        3.10.0           py39hf3d152e_0    conda-forge
 intel-openmp              2020.2                      254  
 joblib                    1.0.1              pyhd8ed1ab_0    conda-forge
 jpeg                      9b                   h024ee3a_2  
