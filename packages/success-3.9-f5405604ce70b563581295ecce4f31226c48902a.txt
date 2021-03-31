@@ -91,7 +91,7 @@ pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
 pyasn1-modules            0.2.7                      py_0    conda-forge
 pycparser                 2.20               pyh9f0ad1d_2    conda-forge
-pyjwt                     2.0.1              pyhd8ed1ab_0    conda-forge
+pyjwt                     2.0.1              pyhd8ed1ab_1    conda-forge
 pyopenssl                 20.0.1             pyhd8ed1ab_0    conda-forge
 pyparsing                 2.4.7              pyh9f0ad1d_0    conda-forge
 pyqt                      5.9.2            py39h2531618_6  
