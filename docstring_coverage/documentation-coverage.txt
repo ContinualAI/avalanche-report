@@ -321,35 +321,36 @@
 |     Metric.result (L49)                                            | COVERED |
 |     Metric.reset (L57)                                             | COVERED |
 |   PluginMetric (L66)                                               | COVERED |
-|     PluginMetric.__init__ (L83)                                    | COVERED |
+|     PluginMetric.__init__ (L79)                                    | COVERED |
 |     PluginMetric.result (L94)                                      |  MISSED |
 |     PluginMetric.reset (L98)                                       |  MISSED |
-|     PluginMetric.before_training (L101)                            |  MISSED |
-|     PluginMetric.before_training_exp (L104)                        |  MISSED |
-|     PluginMetric.before_train_dataset_adaptation (L108)            |  MISSED |
-|     PluginMetric.after_train_dataset_adaptation (L112)             |  MISSED |
-|     PluginMetric.before_training_epoch (L116)                      |  MISSED |
-|     PluginMetric.before_training_iteration (L120)                  |  MISSED |
-|     PluginMetric.before_forward (L124)                             |  MISSED |
-|     PluginMetric.after_forward (L127)                              |  MISSED |
-|     PluginMetric.before_backward (L130)                            |  MISSED |
-|     PluginMetric.after_backward (L133)                             |  MISSED |
-|     PluginMetric.after_training_iteration (L136)                   |  MISSED |
-|     PluginMetric.before_update (L140)                              |  MISSED |
-|     PluginMetric.after_update (L143)                               |  MISSED |
-|     PluginMetric.after_training_epoch (L146)                       |  MISSED |
-|     PluginMetric.after_training_exp (L150)                         |  MISSED |
-|     PluginMetric.after_training (L154)                             |  MISSED |
-|     PluginMetric.before_eval (L157)                                |  MISSED |
-|     PluginMetric.before_eval_dataset_adaptation (L160)             |  MISSED |
-|     PluginMetric.after_eval_dataset_adaptation (L164)              |  MISSED |
-|     PluginMetric.before_eval_exp (L168)                            |  MISSED |
-|     PluginMetric.after_eval_exp (L171)                             |  MISSED |
-|     PluginMetric.after_eval (L174)                                 |  MISSED |
-|     PluginMetric.before_eval_iteration (L177)                      |  MISSED |
-|     PluginMetric.before_eval_forward (L181)                        |  MISSED |
-|     PluginMetric.after_eval_forward (L185)                         |  MISSED |
-|     PluginMetric.after_eval_iteration (L189)                       |  MISSED |
+|     PluginMetric.get_global_counter (L101)                         | COVERED |
+|     PluginMetric.before_training (L107)                            |  MISSED |
+|     PluginMetric.before_training_exp (L110)                        |  MISSED |
+|     PluginMetric.before_train_dataset_adaptation (L114)            |  MISSED |
+|     PluginMetric.after_train_dataset_adaptation (L118)             |  MISSED |
+|     PluginMetric.before_training_epoch (L122)                      |  MISSED |
+|     PluginMetric.before_training_iteration (L126)                  |  MISSED |
+|     PluginMetric.before_forward (L130)                             |  MISSED |
+|     PluginMetric.after_forward (L133)                              |  MISSED |
+|     PluginMetric.before_backward (L136)                            |  MISSED |
+|     PluginMetric.after_backward (L139)                             |  MISSED |
+|     PluginMetric.after_training_iteration (L142)                   |  MISSED |
+|     PluginMetric.before_update (L146)                              |  MISSED |
+|     PluginMetric.after_update (L149)                               |  MISSED |
+|     PluginMetric.after_training_epoch (L152)                       |  MISSED |
+|     PluginMetric.after_training_exp (L156)                         |  MISSED |
+|     PluginMetric.after_training (L160)                             |  MISSED |
+|     PluginMetric.before_eval (L163)                                |  MISSED |
+|     PluginMetric.before_eval_dataset_adaptation (L166)             |  MISSED |
+|     PluginMetric.after_eval_dataset_adaptation (L170)              |  MISSED |
+|     PluginMetric.before_eval_exp (L174)                            |  MISSED |
+|     PluginMetric.after_eval_exp (L177)                             |  MISSED |
+|     PluginMetric.after_eval (L180)                                 |  MISSED |
+|     PluginMetric.before_eval_iteration (L183)                      |  MISSED |
+|     PluginMetric.before_eval_forward (L187)                        |  MISSED |
+|     PluginMetric.after_eval_forward (L191)                         |  MISSED |
+|     PluginMetric.after_eval_iteration (L195)                       |  MISSED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metric_results.py (module)                              |  MISSED |
 |   AlternativeValues (L23)                                          | COVERED |
@@ -605,29 +606,29 @@
 |   loss_metrics (L312)                                              | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/mac.py (module)                                 |  MISSED |
-|   MAC (L25)                                                        | COVERED |
-|     MAC.__init__ (L32)                                             | COVERED |
-|     MAC.update (L39)                                               | COVERED |
-|       MAC.update.foo (L51)                                         |  MISSED |
-|     MAC.result (L63)                                               | COVERED |
-|     MAC.update_compute_cost (L73)                                  |  MISSED |
-|     MAC.is_recognized_module (L83)                                 |  MISSED |
-|   MinibatchMAC (L88)                                               | COVERED |
-|     MinibatchMAC.__init__ (L101)                                   | COVERED |
-|     MinibatchMAC.reset (L110)                                      |  MISSED |
-|     MinibatchMAC.result (L113)                                     |  MISSED |
-|     MinibatchMAC.after_training_iteration (L116)                   |  MISSED |
-|   EpochMAC (L134)                                                  | COVERED |
-|     EpochMAC.__init__ (L143)                                       | COVERED |
-|     EpochMAC.reset (L151)                                          |  MISSED |
-|     EpochMAC.result (L154)                                         |  MISSED |
-|     EpochMAC.after_training_epoch (L157)                           |  MISSED |
-|   ExperienceMAC (L175)                                             | COVERED |
-|     ExperienceMAC.__init__ (L182)                                  | COVERED |
-|     ExperienceMAC.reset (L190)                                     |  MISSED |
-|     ExperienceMAC.result (L193)                                    |  MISSED |
-|     ExperienceMAC.after_eval_exp (L196)                            |  MISSED |
-|   MAC_metrics (L216)                                               | COVERED |
+|   MAC (L24)                                                        | COVERED |
+|     MAC.__init__ (L31)                                             | COVERED |
+|     MAC.update (L38)                                               | COVERED |
+|       MAC.update.foo (L50)                                         |  MISSED |
+|     MAC.result (L62)                                               | COVERED |
+|     MAC.update_compute_cost (L72)                                  |  MISSED |
+|     MAC.is_recognized_module (L82)                                 |  MISSED |
+|   MinibatchMAC (L87)                                               | COVERED |
+|     MinibatchMAC.__init__ (L100)                                   | COVERED |
+|     MinibatchMAC.reset (L109)                                      |  MISSED |
+|     MinibatchMAC.result (L112)                                     |  MISSED |
+|     MinibatchMAC.after_training_iteration (L115)                   |  MISSED |
+|   EpochMAC (L133)                                                  | COVERED |
+|     EpochMAC.__init__ (L142)                                       | COVERED |
+|     EpochMAC.reset (L150)                                          |  MISSED |
+|     EpochMAC.result (L153)                                         |  MISSED |
+|     EpochMAC.after_training_epoch (L156)                           |  MISSED |
+|   ExperienceMAC (L174)                                             | COVERED |
+|     ExperienceMAC.__init__ (L181)                                  | COVERED |
+|     ExperienceMAC.reset (L189)                                     |  MISSED |
+|     ExperienceMAC.result (L192)                                    |  MISSED |
+|     ExperienceMAC.after_eval_exp (L195)                            |  MISSED |
+|   MAC_metrics (L215)                                               | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/mean.py (module)                                |  MISSED |
 |   Mean (L17)                                                       | COVERED |
@@ -1105,7 +1106,7 @@
 | benchmarks/utils/datasets_from_filelists.py             |     9 |    0 |     9 |   100% |
 | benchmarks/utils/torchvision_wrapper.py                 |     3 |    2 |     1 |    33% |
 | benchmarks/utils/utils.py                               |     3 |    1 |     2 |    67% |
-| evaluation/metric_definitions.py                        |    34 |   29 |     5 |    15% |
+| evaluation/metric_definitions.py                        |    35 |   29 |     6 |    17% |
 | evaluation/metric_results.py                            |     6 |    2 |     4 |    67% |
 | evaluation/metric_utils.py                              |     7 |    2 |     5 |    71% |
 | evaluation/metrics/accuracy.py                          |    37 |   21 |    16 |    43% |
@@ -1147,5 +1148,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    19 |    8 |    11 |    58% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |   978 |  547 |   431 |  44.1% |
+| TOTAL                                                   |   979 |  547 |   432 |  44.1% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 44.1%) -----------------
