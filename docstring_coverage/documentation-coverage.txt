@@ -52,8 +52,8 @@
 |   PixelsPermutation (L38)                                          | COVERED |
 |     PixelsPermutation.__init__ (L46)                               |  MISSED |
 |   SplitMNIST (L67)                                                 | COVERED |
-|   PermutedMNIST (L149)                                             | COVERED |
-|   RotatedMNIST (L238)                                              | COVERED |
+|   PermutedMNIST (L151)                                             | COVERED |
+|   RotatedMNIST (L240)                                              | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/classic/comniglot.py (module)                           |  MISSED |
 |   PixelsPermutation (L34)                                          | COVERED |
