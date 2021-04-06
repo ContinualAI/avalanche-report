@@ -43,7 +43,7 @@ joblib                    1.0.1              pyhd8ed1ab_0    conda-forge
 jpeg                      9b                   h024ee3a_2  
 kiwisolver                1.3.1            py36h51d7077_0    conda-forge
 lame                      3.100                h7b6447c_0  
-lcms2                     2.11                 h396b838_0  
+lcms2                     2.12                 h3be6417_0  
 ld_impl_linux-64          2.33.1               h53a641e_7  
 libblas                   3.9.0           1_h6e990d7_netlib    conda-forge
 libcblas                  3.9.0           3_h893e4fe_netlib    conda-forge
@@ -111,7 +111,7 @@ shortuuid                 1.0.1            py36h5fab9bb_4    conda-forge
 sip                       4.19.8          py36hf484d3e_1000    conda-forge
 six                       1.15.0           py36h06a4308_0  
 smmap                     3.0.5              pyh44b312d_0    conda-forge
-sqlite                    3.35.3               hdfb4753_0  
+sqlite                    3.35.4               hdfb4753_0  
 subprocess32              3.5.4                      py_1    conda-forge
 tensorboard               2.4.1              pyhd8ed1ab_0    conda-forge
 tensorboard-plugin-wit    1.8.0              pyh44b312d_0    conda-forge
@@ -119,7 +119,7 @@ threadpoolctl             2.1.0              pyh5ca1d4c_0    conda-forge
 tk                        8.6.10               hbc83047_0  
 torchvision               0.9.1                  py36_cpu  [cpuonly]  pytorch
 tornado                   6.1              py36h1d69622_0    conda-forge
-tqdm                      4.59.0             pyhd8ed1ab_0    conda-forge
+tqdm                      4.60.0             pyhd8ed1ab_0    conda-forge
 typing_extensions         3.7.4.3            pyha847dfd_0  
 urllib3                   1.20                     py36_1    conda-forge
 wandb                     0.10.20            pyhd8ed1ab_0    conda-forge
