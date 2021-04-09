@@ -360,12 +360,12 @@
 |     MetricValue.__init__ (L58)                                     | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metric_utils.py (module)                                |  MISSED |
-|   default_cm_image_creator (L30)                                   | COVERED |
-|   get_task_label (L85)                                             | COVERED |
-|   stream_type (L100)                                               | COVERED |
-|   phase_and_task (L111)                                            | COVERED |
-|   bytes2human (L131)                                               |  MISSED |
-|   get_metric_name (L148)                                           | COVERED |
+|   default_cm_image_creator (L31)                                   | COVERED |
+|   get_task_label (L119)                                            | COVERED |
+|   stream_type (L134)                                               | COVERED |
+|   phase_and_task (L145)                                            | COVERED |
+|   bytes2human (L165)                                               |  MISSED |
+|   get_metric_name (L182)                                           | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/accuracy.py (module)                            |  MISSED |
 |   Accuracy (L27)                                                   | COVERED |
@@ -407,19 +407,19 @@
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                    |  MISSED |
 |   ConfusionMatrix (L30)                                            | COVERED |
-|     ConfusionMatrix.__init__ (L53)                                 | COVERED |
-|     ConfusionMatrix.update (L78)                                   | COVERED |
-|     ConfusionMatrix.result (L139)                                  | COVERED |
-|     ConfusionMatrix.reset (L157)                                   | COVERED |
-|     ConfusionMatrix.nan_to_num (L185)                              |  MISSED |
-|   StreamConfusionMatrix (L195)                                     | COVERED |
-|     StreamConfusionMatrix.__init__ (L207)                          | COVERED |
-|     StreamConfusionMatrix.reset (L245)                             |  MISSED |
-|     StreamConfusionMatrix.result (L248)                            |  MISSED |
-|     StreamConfusionMatrix.update (L252)                            |  MISSED |
-|     StreamConfusionMatrix.before_eval (L255)                       |  MISSED |
-|     StreamConfusionMatrix.after_eval_iteration (L258)              |  MISSED |
-|     StreamConfusionMatrix.after_eval (L262)                        |  MISSED |
+|     ConfusionMatrix.__init__ (L58)                                 | COVERED |
+|     ConfusionMatrix.update (L87)                                   | COVERED |
+|     ConfusionMatrix.result (L168)                                  | COVERED |
+|     ConfusionMatrix.reset (L186)                                   | COVERED |
+|     ConfusionMatrix.nan_to_num (L214)                              |  MISSED |
+|   StreamConfusionMatrix (L224)                                     | COVERED |
+|     StreamConfusionMatrix.__init__ (L240)                          | COVERED |
+|     StreamConfusionMatrix.reset (L284)                             |  MISSED |
+|     StreamConfusionMatrix.result (L288)                            |  MISSED |
+|     StreamConfusionMatrix.update (L292)                            |  MISSED |
+|     StreamConfusionMatrix.before_eval (L295)                       |  MISSED |
+|     StreamConfusionMatrix.after_eval_iteration (L298)              |  MISSED |
+|     StreamConfusionMatrix.after_eval (L302)                        |  MISSED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/cpu_usage.py (module)                           |  MISSED |
 |   CPUUsage (L28)                                                   | COVERED |
@@ -760,9 +760,9 @@
 |     StrategyLogger.after_eval_iteration (L166)                     |  MISSED |
 |--------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                             | COVERED |
-|   TensorboardLogger (L25)                                          | COVERED |
-|     TensorboardLogger.__init__ (L42)                               | COVERED |
-|     TensorboardLogger.log_metric (L58)                             |  MISSED |
+|   TensorboardLogger (L26)                                          | COVERED |
+|     TensorboardLogger.__init__ (L43)                               | COVERED |
+|     TensorboardLogger.log_metric (L59)                             |  MISSED |
 |--------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                   |  MISSED |
 |   TextLogger (L24)                                                 | COVERED |
@@ -779,11 +779,11 @@
 |     TextLogger.after_eval (L123)                                   |  MISSED |
 |--------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                   | COVERED |
-|   WandBLogger (L21)                                                | COVERED |
-|     WandBLogger.__init__ (L28)                                     | COVERED |
-|     WandBLogger.import_wandb (L41)                                 |  MISSED |
-|     WandBLogger.before_run (L49)                                   |  MISSED |
-|     WandBLogger.log_metric (L57)                                   |  MISSED |
+|   WandBLogger (L24)                                                | COVERED |
+|     WandBLogger.__init__ (L31)                                     | COVERED |
+|     WandBLogger.import_wandb (L44)                                 |  MISSED |
+|     WandBLogger.before_run (L52)                                   |  MISSED |
+|     WandBLogger.log_metric (L60)                                   |  MISSED |
 |--------------------------------------------------------------------|---------|
 | models/batch_renorm.py (module)                                    | COVERED |
 |   BatchRenorm2D (L18)                                              |  MISSED |
