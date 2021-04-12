@@ -124,8 +124,8 @@
 |     CORE50_DATA.download_core50 (L77)                              | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/datasets/cub200/cub200.py (module)                      | COVERED |
-|   CUB200 (L22)                                                     |  MISSED |
-|     CUB200.__init__ (L29)                                          |  MISSED |
+|   CUB200 (L26)                                                     |  MISSED |
+|     CUB200.__init__ (L33)                                          |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py (module)        |  MISSED |
 |   pil_loader (L83)                                                 |  MISSED |
