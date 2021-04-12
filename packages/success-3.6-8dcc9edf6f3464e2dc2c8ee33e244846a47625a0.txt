@@ -49,8 +49,8 @@ libblas                   3.9.0           1_h6e990d7_netlib    conda-forge
 libcblas                  3.9.0           3_h893e4fe_netlib    conda-forge
 libffi                    3.3                  he6710b0_2  
 libgcc-ng                 9.1.0                hdf63c60_0  
-libgfortran-ng            7.5.0               h14aa051_18    conda-forge
-libgfortran4              7.5.0               h14aa051_18    conda-forge
+libgfortran-ng            7.5.0               h14aa051_19    conda-forge
+libgfortran4              7.5.0               h14aa051_19    conda-forge
 libiconv                  1.15                 h63c8f33_5  
 libidn2                   2.3.0                h27cfd23_0  
 liblapack                 3.9.0           3_h893e4fe_netlib    conda-forge
