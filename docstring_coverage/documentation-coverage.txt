@@ -261,12 +261,12 @@
 |   train_eval_avalanche_datasets (L1630)                            |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                           |  MISSED |
-|   MultiTaskDataLoader (L19)                                        |  MISSED |
-|     MultiTaskDataLoader.__init__ (L20)                             | COVERED |
-|   MultiTaskMultiBatchDataLoader (L79)                              |  MISSED |
-|     MultiTaskMultiBatchDataLoader.__init__ (L80)                   | COVERED |
-|   MultiTaskJoinedBatchDataLoader (L136)                            |  MISSED |
-|     MultiTaskJoinedBatchDataLoader.__init__ (L137)                 | COVERED |
+|   MultiTaskDataLoader (L20)                                        |  MISSED |
+|     MultiTaskDataLoader.__init__ (L21)                             | COVERED |
+|   MultiTaskMultiBatchDataLoader (L80)                              |  MISSED |
+|     MultiTaskMultiBatchDataLoader.__init__ (L81)                   | COVERED |
+|   MultiTaskJoinedBatchDataLoader (L137)                            |  MISSED |
+|     MultiTaskJoinedBatchDataLoader.__init__ (L138)                 | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                   |  MISSED |
 |   IDataset (L23)                                                   | COVERED |
