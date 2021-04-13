@@ -43,7 +43,7 @@
 |   SplitCUB200 (L33)                                                | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/classic/cfashion_mnist.py (module)                      | COVERED |
-|   SplitFMNIST (L38)                                                | COVERED |
+|   SplitFMNIST (L34)                                                | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/classic/cimagenet.py (module)                           |  MISSED |
 |   SplitImageNet (L38)                                              | COVERED |
