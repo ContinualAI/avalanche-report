@@ -31,7 +31,7 @@ fontconfig                2.13.1            he4413a7_1000    conda-forge
 freetype                  2.10.4               h5ab3b9f_0  
 gitdb                     4.0.7              pyhd8ed1ab_0    conda-forge
 gitpython                 3.1.14             pyhd8ed1ab_0    conda-forge
-glib                      2.68.0               h36276a3_0  
+glib                      2.68.1               h36276a3_0  
 gmp                       6.2.1                h2531618_2  
 gnutls                    3.6.15               he1e5248_0  
 google-auth               1.28.0             pyh44b312d_0    conda-forge
