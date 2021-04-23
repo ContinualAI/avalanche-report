@@ -30,7 +30,7 @@ ffmpeg                    4.3                  hf484d3e_0    pytorch
 fontconfig                2.13.1            he4413a7_1000    conda-forge
 freetype                  2.10.4               h5ab3b9f_0  
 gitdb                     4.0.7              pyhd8ed1ab_0    conda-forge
-gitpython                 3.1.14             pyhd8ed1ab_0    conda-forge
+gitpython                 3.1.15             pyhd8ed1ab_0    conda-forge
 glib                      2.68.1               h36276a3_0  
 gmp                       6.2.1                h2531618_2  
 gnutls                    3.6.15               he1e5248_0  
@@ -46,7 +46,7 @@ gstreamer                 1.14.0               h28cd5cc_2
 icu                       58.2              hf484d3e_1000    conda-forge
 idna                      2.10               pyh9f0ad1d_0    conda-forge
 importlib-metadata        4.0.1            py37h89c1867_0    conda-forge
-intel-openmp              2020.2                      254  
+intel-openmp              2021.2.0           h06a4308_610  
 joblib                    1.0.1              pyhd8ed1ab_0    conda-forge
 jpeg                      9b                   h024ee3a_2  
 kiwisolver                1.3.1            py37hc928c03_0    conda-forge
@@ -76,16 +76,16 @@ lz4-c                     1.9.3                h2531618_0
 markdown                  3.3.4              pyhd8ed1ab_0    conda-forge
 matplotlib                3.3.4            py37h89c1867_0    conda-forge
 matplotlib-base           3.3.4            py37h62a2d02_0  
-mkl                       2020.2                      256  
-mkl-service               2.3.0            py37he8ac12f_0  
-mkl_fft                   1.3.0            py37h54f3939_0  
-mkl_random                1.1.1            py37h0573a6f_0  
+mkl                       2021.2.0           h06a4308_296  
+mkl-service               2.3.0            py37h27cfd23_1  
+mkl_fft                   1.3.0            py37h42c9631_2  
+mkl_random                1.2.1            py37ha9443f7_2  
 multidict                 4.7.5            py37h8f50634_2    conda-forge
 ncurses                   6.2                  he6710b0_1  
 nettle                    3.7.2                hbbd107a_1  
 ninja                     1.10.2               hff7bd54_1  
-numpy                     1.19.2           py37h54aff64_0  
-numpy-base                1.19.2           py37hfa32c7d_0  
+numpy                     1.20.1           py37h93e21f0_0  
+numpy-base                1.20.1           py37h7d8b39e_0  
 nvidia-ml                 7.352.0                    py_0    conda-forge
 oauthlib                  3.0.1                      py_0    conda-forge
 olefile                   0.46                     py37_0  
