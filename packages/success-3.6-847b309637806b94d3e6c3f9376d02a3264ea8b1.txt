@@ -8,7 +8,7 @@ blas                      1.0                         mkl
 bzip2                     1.0.8                h7b6447c_0  
 c-ares                    1.17.1               h36c2ea0_0    conda-forge
 ca-certificates           2020.12.5            ha878542_0    conda-forge
-cachetools                4.2.1              pyhd8ed1ab_0    conda-forge
+cachetools                4.2.2              pyhd8ed1ab_0    conda-forge
 certifi                   2020.12.5        py36h5fab9bb_1    conda-forge
 click                     7.1.2              pyh9f0ad1d_0    conda-forge
 configparser              5.0.2              pyhd8ed1ab_0    conda-forge
