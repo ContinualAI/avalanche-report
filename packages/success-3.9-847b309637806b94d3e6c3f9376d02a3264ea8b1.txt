@@ -13,7 +13,7 @@ brotlipy                  0.7.0           py39h38d8fee_1001    conda-forge
 bzip2                     1.0.8                h516909a_3    conda-forge
 c-ares                    1.17.1               h36c2ea0_0    conda-forge
 ca-certificates           2020.12.5            ha878542_0    conda-forge
-cachetools                4.2.1              pyhd8ed1ab_0    conda-forge
+cachetools                4.2.2              pyhd8ed1ab_0    conda-forge
 certifi                   2020.12.5        py39hf3d152e_1    conda-forge
 cffi                      1.14.5           py39h261ae71_0  
 chardet                   3.0.4           py39h079e4ff_1008    conda-forge
