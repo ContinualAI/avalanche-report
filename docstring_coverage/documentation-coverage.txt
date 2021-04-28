@@ -221,25 +221,28 @@
 |   create_generic_scenario_from_tensor_lists (L325)                  | COVERED |
 |   create_generic_scenario_from_tensors (L420)                       | COVERED |
 |---------------------------------------------------------------------|---------|
+| benchmarks/scenarios/scenario_utils.py (module)                     | COVERED |
+|   train_eval_transforms (L7)                                        | COVERED |
+|---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)            |  MISSED |
-|   NCScenario (L21)                                                  | COVERED |
-|     NCScenario.__init__ (L31)                                       | COVERED |
-|     NCScenario.classes_in_experience (L414)                         |  MISSED |
-|     NCScenario.get_reproducibility_data (L417)                      |  MISSED |
-|     NCScenario.classes_in_exp_range (L431)                          | COVERED |
-|   NCExperience (L457)                                               | COVERED |
-|     NCExperience.__init__ (L465)                                    | COVERED |
+|   NCScenario (L22)                                                  | COVERED |
+|     NCScenario.__init__ (L32)                                       | COVERED |
+|     NCScenario.classes_in_experience (L427)                         |  MISSED |
+|     NCScenario.get_reproducibility_data (L430)                      |  MISSED |
+|     NCScenario.classes_in_exp_range (L444)                          | COVERED |
+|   NCExperience (L470)                                               | COVERED |
+|     NCExperience.__init__ (L478)                                    | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)               |  MISSED |
 |   make_nc_transformation_subset (L147)                              | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_scenario.py (module)          |  MISSED |
-|   NIScenario (L24)                                                  | COVERED |
-|     NIScenario.__init__ (L41)                                       | COVERED |
-|     NIScenario.classes_in_experience (L396)                         |  MISSED |
-|     NIScenario.get_reproducibility_data (L407)                      |  MISSED |
-|   NIExperience (L416)                                               | COVERED |
-|     NIExperience.__init__ (L424)                                    | COVERED |
+|   NIScenario (L25)                                                  | COVERED |
+|     NIScenario.__init__ (L42)                                       | COVERED |
+|     NIScenario.classes_in_experience (L407)                         |  MISSED |
+|     NIScenario.get_reproducibility_data (L418)                      |  MISSED |
+|   NIExperience (L427)                                               | COVERED |
+|     NIExperience.__init__ (L435)                                    | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_utils.py (module)             |  MISSED |
 |---------------------------------------------------------------------|---------|
@@ -251,24 +254,25 @@
 |     AvalancheDataset.eval (L337)                                    | COVERED |
 |     AvalancheDataset.freeze_transforms (L352)                       | COVERED |
 |     AvalancheDataset.freeze_group_transforms (L380)                 | COVERED |
-|     AvalancheDataset.add_transforms (L406)                          | COVERED |
-|     AvalancheDataset.add_transforms_to_group (L449)                 | COVERED |
-|     AvalancheDataset.replace_transforms (L506)                      | COVERED |
-|     AvalancheDataset.with_transforms (L542)                         | COVERED |
-|     AvalancheDataset.add_transforms_group (L573)                    | COVERED |
-|   AvalancheSubset (L1001)                                           | COVERED |
-|     AvalancheSubset.__init__ (L1008)                                | COVERED |
-|   AvalancheTensorDataset (L1353)                                    | COVERED |
-|     AvalancheTensorDataset.__init__ (L1361)                         | COVERED |
-|   AvalancheConcatDataset (L1456)                                    | COVERED |
-|     AvalancheConcatDataset.__init__ (L1467)                         | COVERED |
-|   concat_datasets_sequentially (L1818)                              | COVERED |
-|   as_avalanche_dataset (L1904)                                      |  MISSED |
-|   as_classification_dataset (L1928)                                 |  MISSED |
-|   as_regression_dataset (L1934)                                     |  MISSED |
-|   as_segmentation_dataset (L1940)                                   |  MISSED |
-|   as_undefined_dataset (L1946)                                      |  MISSED |
-|   train_eval_avalanche_datasets (L1952)                             |  MISSED |
+|     AvalancheDataset.get_transforms (L406)                          | COVERED |
+|     AvalancheDataset.add_transforms (L429)                          | COVERED |
+|     AvalancheDataset.add_transforms_to_group (L472)                 | COVERED |
+|     AvalancheDataset.replace_transforms (L529)                      | COVERED |
+|     AvalancheDataset.with_transforms (L571)                         | COVERED |
+|     AvalancheDataset.add_transforms_group (L602)                    | COVERED |
+|   AvalancheSubset (L1030)                                           | COVERED |
+|     AvalancheSubset.__init__ (L1037)                                | COVERED |
+|   AvalancheTensorDataset (L1382)                                    | COVERED |
+|     AvalancheTensorDataset.__init__ (L1390)                         | COVERED |
+|   AvalancheConcatDataset (L1485)                                    | COVERED |
+|     AvalancheConcatDataset.__init__ (L1496)                         | COVERED |
+|   concat_datasets_sequentially (L1847)                              | COVERED |
+|   as_avalanche_dataset (L1933)                                      |  MISSED |
+|   as_classification_dataset (L1957)                                 |  MISSED |
+|   as_regression_dataset (L1963)                                     |  MISSED |
+|   as_segmentation_dataset (L1969)                                   |  MISSED |
+|   as_undefined_dataset (L1975)                                      |  MISSED |
+|   train_eval_avalanche_datasets (L1981)                             |  MISSED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                            |  MISSED |
 |   MultiTaskDataLoader (L20)                                         |  MISSED |
@@ -1166,11 +1170,12 @@
 | benchmarks/scenarios/generic_cl_scenario.py             |    21 |    9 |    12 |    57% |
 | benchmarks/scenarios/generic_definitions.py             |     6 |    1 |     5 |    83% |
 | benchmarks/scenarios/generic_scenario_creation.py       |     6 |    0 |     6 |   100% |
+| benchmarks/scenarios/scenario_utils.py                  |     2 |    0 |     2 |   100% |
 | benchmarks/scenarios/new_classes/nc_scenario.py         |     8 |    3 |     5 |    62% |
 | benchmarks/scenarios/new_classes/nc_utils.py            |     2 |    1 |     1 |    50% |
 | benchmarks/scenarios/new_instances/ni_scenario.py       |     7 |    3 |     4 |    57% |
 | benchmarks/scenarios/new_instances/ni_utils.py          |     1 |    1 |     0 |     0% |
-| benchmarks/utils/avalanche_dataset.py                   |    26 |    7 |    19 |    73% |
+| benchmarks/utils/avalanche_dataset.py                   |    27 |    7 |    20 |    74% |
 | benchmarks/utils/data_loader.py                         |     7 |    4 |     3 |    43% |
 | benchmarks/utils/dataset_definitions.py                 |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                       |    24 |   12 |    12 |    50% |
@@ -1223,5 +1228,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1042 |  566 |   476 |  45.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 45.7%) -----------------
+| TOTAL                                                   |  1045 |  566 |   479 |  45.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 45.8%) -----------------
