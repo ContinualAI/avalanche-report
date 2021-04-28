@@ -63,7 +63,7 @@
 |   RotatedOmniglot (L232)                                            | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                               | COVERED |
-|   CORe50 (L40)                                                      | COVERED |
+|   CORe50 (L41)                                                      | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/ctiny_imagenet.py (module)                       |  MISSED |
 |   SplitTinyImageNet (L31)                                           | COVERED |
