@@ -841,6 +841,13 @@
 |     MobilenetV1.__init__ (L52)                                      |  MISSED |
 |     MobilenetV1.forward (L76)                                       |  MISSED |
 |---------------------------------------------------------------------|---------|
+| models/pytorchcv_wrapper.py (module)                                | COVERED |
+|   vgg (L32)                                                         | COVERED |
+|   resnet (L53)                                                      | COVERED |
+|   densenet (L82)                                                    | COVERED |
+|   pyramidnet (L111)                                                 | COVERED |
+|   get_model (L143)                                                  | COVERED |
+|---------------------------------------------------------------------|---------|
 | models/simple_cnn.py (module)                                       |  MISSED |
 |   SimpleCNN (L18)                                                   |  MISSED |
 |     SimpleCNN.__init__ (L20)                                        |  MISSED |
@@ -1194,6 +1201,7 @@
 | models/dynamic_optimizers.py                            |     4 |    0 |     4 |   100% |
 | models/mlp_tiny_imagenet.py                             |     4 |    3 |     1 |    25% |
 | models/mobilenetv1.py                                   |     6 |    5 |     1 |    17% |
+| models/pytorchcv_wrapper.py                             |     6 |    0 |     6 |   100% |
 | models/simple_cnn.py                                    |     7 |    6 |     1 |    14% |
 | models/simple_mlp.py                                    |     7 |    6 |     1 |    14% |
 | models/utils.py                                         |     2 |    2 |     0 |     0% |
@@ -1215,5 +1223,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1036 |  566 |   470 |  45.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 45.4%) -----------------
+| TOTAL                                                   |  1042 |  566 |   476 |  45.7% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 45.7%) -----------------
