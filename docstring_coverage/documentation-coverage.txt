@@ -274,13 +274,13 @@
 |   as_undefined_dataset (L1975)                                      |  MISSED |
 |   train_eval_avalanche_datasets (L1981)                             |  MISSED |
 |---------------------------------------------------------------------|---------|
-| benchmarks/utils/data_loader.py (module)                            |  MISSED |
-|   MultiTaskDataLoader (L20)                                         |  MISSED |
-|     MultiTaskDataLoader.__init__ (L21)                              | COVERED |
-|   MultiTaskMultiBatchDataLoader (L80)                               |  MISSED |
-|     MultiTaskMultiBatchDataLoader.__init__ (L81)                    | COVERED |
-|   MultiTaskJoinedBatchDataLoader (L137)                             |  MISSED |
-|     MultiTaskJoinedBatchDataLoader.__init__ (L138)                  | COVERED |
+| benchmarks/utils/data_loader.py (module)                            | COVERED |
+|   TaskBalancedDataLoader (L42)                                      |  MISSED |
+|     TaskBalancedDataLoader.__init__ (L43)                           | COVERED |
+|   GroupBalancedDataLoader (L96)                                     |  MISSED |
+|     GroupBalancedDataLoader.__init__ (L97)                          | COVERED |
+|   ReplayDataLoader (L167)                                           |  MISSED |
+|     ReplayDataLoader.__init__ (L168)                                | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                    |  MISSED |
 |   IDataset (L23)                                                    | COVERED |
@@ -1060,47 +1060,47 @@
 |     AR1.filter_bn_and_brn (L293)                                    |  MISSED |
 |---------------------------------------------------------------------|---------|
 | training/strategies/base_strategy.py (module)                       |  MISSED |
-|   BaseStrategy (L32)                                                |  MISSED |
-|     BaseStrategy.__init__ (L33)                                     | COVERED |
-|     BaseStrategy.is_eval (L179)                                     | COVERED |
-|     BaseStrategy.train (L183)                                       | COVERED |
-|     BaseStrategy.train_exp (L222)                                   | COVERED |
-|     BaseStrategy.train_dataset_adaptation (L282)                    | COVERED |
-|     BaseStrategy.eval (L287)                                        | COVERED |
-|     BaseStrategy.before_training_exp (L329)                         | COVERED |
-|     BaseStrategy.make_train_dataloader (L337)                       | COVERED |
-|     BaseStrategy.make_eval_dataloader (L350)                        | COVERED |
+|   BaseStrategy (L34)                                                |  MISSED |
+|     BaseStrategy.__init__ (L35)                                     | COVERED |
+|     BaseStrategy.is_eval (L181)                                     | COVERED |
+|     BaseStrategy.train (L185)                                       | COVERED |
+|     BaseStrategy.train_exp (L224)                                   | COVERED |
+|     BaseStrategy.train_dataset_adaptation (L284)                    | COVERED |
+|     BaseStrategy.eval (L290)                                        | COVERED |
+|     BaseStrategy.before_training_exp (L330)                         | COVERED |
+|     BaseStrategy.make_train_dataloader (L338)                       | COVERED |
+|     BaseStrategy.make_eval_dataloader (L351)                        | COVERED |
 |     BaseStrategy.after_train_dataset_adaptation (L364)              | COVERED |
 |     BaseStrategy.before_training_epoch (L374)                       | COVERED |
 |     BaseStrategy.training_epoch (L383)                              | COVERED |
-|     BaseStrategy.before_training (L418)                             |  MISSED |
-|     BaseStrategy.after_training (L422)                              |  MISSED |
-|     BaseStrategy.before_training_iteration (L426)                   |  MISSED |
-|     BaseStrategy.before_forward (L430)                              |  MISSED |
-|     BaseStrategy.after_forward (L434)                               |  MISSED |
-|     BaseStrategy.before_backward (L438)                             |  MISSED |
-|     BaseStrategy.after_backward (L442)                              |  MISSED |
-|     BaseStrategy.after_training_iteration (L446)                    |  MISSED |
-|     BaseStrategy.before_update (L450)                               |  MISSED |
-|     BaseStrategy.after_update (L454)                                |  MISSED |
-|     BaseStrategy.after_training_epoch (L458)                        |  MISSED |
-|     BaseStrategy.after_training_exp (L462)                          |  MISSED |
-|     BaseStrategy.before_eval (L477)                                 |  MISSED |
-|     BaseStrategy.before_eval_exp (L481)                             |  MISSED |
-|     BaseStrategy.eval_dataset_adaptation (L485)                     | COVERED |
-|     BaseStrategy.before_eval_dataset_adaptation (L490)              |  MISSED |
-|     BaseStrategy.after_eval_dataset_adaptation (L494)               |  MISSED |
-|     BaseStrategy.eval_epoch (L498)                                  |  MISSED |
-|     BaseStrategy.after_eval_exp (L513)                              |  MISSED |
-|     BaseStrategy.after_eval (L517)                                  |  MISSED |
-|     BaseStrategy.before_eval_iteration (L529)                       |  MISSED |
-|     BaseStrategy.before_eval_forward (L533)                         |  MISSED |
-|     BaseStrategy.after_eval_forward (L537)                          |  MISSED |
-|     BaseStrategy.after_eval_iteration (L541)                        |  MISSED |
-|     BaseStrategy.before_train_dataset_adaptation (L545)             |  MISSED |
-|     BaseStrategy.model_adaptation (L549)                            |  MISSED |
-|     BaseStrategy.forward (L555)                                     |  MISSED |
-|     BaseStrategy.make_optimizer (L561)                              |  MISSED |
+|     BaseStrategy.before_training (L429)                             |  MISSED |
+|     BaseStrategy.after_training (L433)                              |  MISSED |
+|     BaseStrategy.before_training_iteration (L437)                   |  MISSED |
+|     BaseStrategy.before_forward (L441)                              |  MISSED |
+|     BaseStrategy.after_forward (L445)                               |  MISSED |
+|     BaseStrategy.before_backward (L449)                             |  MISSED |
+|     BaseStrategy.after_backward (L453)                              |  MISSED |
+|     BaseStrategy.after_training_iteration (L457)                    |  MISSED |
+|     BaseStrategy.before_update (L461)                               |  MISSED |
+|     BaseStrategy.after_update (L465)                                |  MISSED |
+|     BaseStrategy.after_training_epoch (L469)                        |  MISSED |
+|     BaseStrategy.after_training_exp (L473)                          |  MISSED |
+|     BaseStrategy.before_eval (L488)                                 |  MISSED |
+|     BaseStrategy.before_eval_exp (L492)                             |  MISSED |
+|     BaseStrategy.eval_dataset_adaptation (L496)                     | COVERED |
+|     BaseStrategy.before_eval_dataset_adaptation (L501)              |  MISSED |
+|     BaseStrategy.after_eval_dataset_adaptation (L505)               |  MISSED |
+|     BaseStrategy.eval_epoch (L509)                                  |  MISSED |
+|     BaseStrategy.after_eval_exp (L522)                              |  MISSED |
+|     BaseStrategy.after_eval (L526)                                  |  MISSED |
+|     BaseStrategy.before_eval_iteration (L538)                       |  MISSED |
+|     BaseStrategy.before_eval_forward (L542)                         |  MISSED |
+|     BaseStrategy.after_eval_forward (L546)                          |  MISSED |
+|     BaseStrategy.after_eval_iteration (L550)                        |  MISSED |
+|     BaseStrategy.before_train_dataset_adaptation (L554)             |  MISSED |
+|     BaseStrategy.model_adaptation (L558)                            |  MISSED |
+|     BaseStrategy.forward (L564)                                     |  MISSED |
+|     BaseStrategy.make_optimizer (L570)                              |  MISSED |
 |---------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                          |  MISSED |
 |   Cumulative (L13)                                                  |  MISSED |
@@ -1176,7 +1176,7 @@
 | benchmarks/scenarios/new_instances/ni_scenario.py       |     7 |    3 |     4 |    57% |
 | benchmarks/scenarios/new_instances/ni_utils.py          |     1 |    1 |     0 |     0% |
 | benchmarks/utils/avalanche_dataset.py                   |    27 |    7 |    20 |    74% |
-| benchmarks/utils/data_loader.py                         |     7 |    4 |     3 |    43% |
+| benchmarks/utils/data_loader.py                         |     7 |    3 |     4 |    57% |
 | benchmarks/utils/dataset_definitions.py                 |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                       |    24 |   12 |    12 |    50% |
 | benchmarks/utils/datasets_from_filelists.py             |    10 |    1 |     9 |    90% |
@@ -1228,5 +1228,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1045 |  566 |   479 |  45.8% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 45.8%) -----------------
+| TOTAL                                                   |  1045 |  565 |   480 |  45.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 45.9%) -----------------
