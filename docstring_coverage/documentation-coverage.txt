@@ -33,34 +33,34 @@
 |     StrategyCallbacks.after_eval_iteration (L153)                   | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar10.py (module)                             |  MISSED |
-|   SplitCIFAR10 (L36)                                                | COVERED |
+|   SplitCIFAR10 (L35)                                                | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar100.py (module)                            |  MISSED |
 |   SplitCIFAR100 (L38)                                               | COVERED |
-|   SplitCIFAR110 (L128)                                              | COVERED |
+|   SplitCIFAR110 (L130)                                              | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/ccub200.py (module)                              |  MISSED |
-|   SplitCUB200 (L33)                                                 | COVERED |
+|   SplitCUB200 (L32)                                                 | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/cfashion_mnist.py (module)                       | COVERED |
-|   SplitFMNIST (L34)                                                 | COVERED |
+|   SplitFMNIST (L33)                                                 | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/cimagenet.py (module)                            |  MISSED |
-|   SplitImageNet (L38)                                               | COVERED |
+|   SplitImageNet (L36)                                               | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                               |  MISSED |
-|   PixelsPermutation (L38)                                           | COVERED |
-|     PixelsPermutation.__init__ (L46)                                |  MISSED |
-|   SplitMNIST (L67)                                                  | COVERED |
+|   PixelsPermutation (L37)                                           | COVERED |
+|     PixelsPermutation.__init__ (L45)                                |  MISSED |
+|   SplitMNIST (L66)                                                  | COVERED |
 |   PermutedMNIST (L151)                                              | COVERED |
-|   RotatedMNIST (L240)                                               | COVERED |
+|   RotatedMNIST (L245)                                               | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/comniglot.py (module)                            |  MISSED |
 |   PixelsPermutation (L34)                                           | COVERED |
 |     PixelsPermutation.__init__ (L42)                                |  MISSED |
 |   SplitOmniglot (L63)                                               | COVERED |
-|   PermutedOmniglot (L147)                                           | COVERED |
-|   RotatedOmniglot (L232)                                            | COVERED |
+|   PermutedOmniglot (L150)                                           | COVERED |
+|   RotatedOmniglot (L243)                                            | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                               | COVERED |
 |   CORe50 (L41)                                                      | COVERED |
@@ -168,7 +168,7 @@
 |---------------------------------------------------------------------|---------|
 | benchmarks/generators/benchmark_generators.py (module)              | COVERED |
 |   nc_benchmark (L31)                                                | COVERED |
-|   ni_benchmark (L183)                                               | COVERED |
+|   ni_benchmark (L207)                                               | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)               | COVERED |
 |   nc_scenario (L34)                                                 | COVERED |
@@ -227,11 +227,11 @@
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)            |  MISSED |
 |   NCScenario (L22)                                                  | COVERED |
 |     NCScenario.__init__ (L32)                                       | COVERED |
-|     NCScenario.classes_in_experience (L427)                         |  MISSED |
-|     NCScenario.get_reproducibility_data (L430)                      |  MISSED |
-|     NCScenario.classes_in_exp_range (L444)                          | COVERED |
-|   NCExperience (L470)                                               | COVERED |
-|     NCExperience.__init__ (L478)                                    | COVERED |
+|     NCScenario.classes_in_experience (L428)                         |  MISSED |
+|     NCScenario.get_reproducibility_data (L431)                      |  MISSED |
+|     NCScenario.classes_in_exp_range (L445)                          | COVERED |
+|   NCExperience (L471)                                               | COVERED |
+|     NCExperience.__init__ (L479)                                    | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)               |  MISSED |
 |   make_nc_transformation_subset (L147)                              | COVERED |
@@ -239,10 +239,10 @@
 | benchmarks/scenarios/new_instances/ni_scenario.py (module)          |  MISSED |
 |   NIScenario (L25)                                                  | COVERED |
 |     NIScenario.__init__ (L42)                                       | COVERED |
-|     NIScenario.classes_in_experience (L407)                         |  MISSED |
-|     NIScenario.get_reproducibility_data (L418)                      |  MISSED |
-|   NIExperience (L427)                                               | COVERED |
-|     NIExperience.__init__ (L435)                                    | COVERED |
+|     NIScenario.classes_in_experience (L408)                         |  MISSED |
+|     NIScenario.get_reproducibility_data (L419)                      |  MISSED |
+|   NIExperience (L428)                                               | COVERED |
+|     NIExperience.__init__ (L436)                                    | COVERED |
 |---------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_utils.py (module)             |  MISSED |
 |---------------------------------------------------------------------|---------|
