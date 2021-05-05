@@ -167,8 +167,10 @@
 |     TinyImagenet.get_test_images_paths (L158)                      | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/generators/benchmark_generators.py (module)             | COVERED |
-|   nc_benchmark (L31)                                               | COVERED |
-|   ni_benchmark (L207)                                              | COVERED |
+|   nc_benchmark (L36)                                               | COVERED |
+|   ni_benchmark (L212)                                              | COVERED |
+|   fixed_size_experience_split_strategy (L372)                      | COVERED |
+|   data_incremental_benchmark (L427)                                | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)              | COVERED |
 |   nc_scenario (L34)                                                | COVERED |
@@ -190,22 +192,22 @@
 |   StreamDef (L43)                                                  |  MISSED |
 |   GenericCLScenario (L55)                                          | COVERED |
 |     GenericCLScenario.__init__ (L75)                               | COVERED |
-|     GenericCLScenario.n_experiences (L180)                         | COVERED |
-|     GenericCLScenario.task_labels (L186)                           | COVERED |
-|     GenericCLScenario.get_reproducibility_data (L195)              | COVERED |
-|     GenericCLScenario.classes_in_experience (L218)                 | COVERED |
-|     GenericCLScenario.get_classes_timeline (L224)                  | COVERED |
-|   GenericScenarioStream (L373)                                     |  MISSED |
-|     GenericScenarioStream.__init__ (L377)                          |  MISSED |
-|   LazyClassesInExps (L447)                                         |  MISSED |
-|     LazyClassesInExps.__init__ (L448)                              |  MISSED |
-|   AbstractExperience (L491)                                        | COVERED |
-|     AbstractExperience.__init__ (L504)                             | COVERED |
-|     AbstractExperience.task_label (L548)                           | COVERED |
-|   GenericExperience (L564)                                         | COVERED |
-|     GenericExperience.__init__ (L577)                              | COVERED |
-|     GenericExperience.dataset (L602)                               |  MISSED |
-|     GenericExperience.task_labels (L606)                           |  MISSED |
+|     GenericCLScenario.n_experiences (L179)                         | COVERED |
+|     GenericCLScenario.task_labels (L185)                           | COVERED |
+|     GenericCLScenario.get_reproducibility_data (L194)              | COVERED |
+|     GenericCLScenario.classes_in_experience (L217)                 | COVERED |
+|     GenericCLScenario.get_classes_timeline (L223)                  | COVERED |
+|   GenericScenarioStream (L372)                                     |  MISSED |
+|     GenericScenarioStream.__init__ (L376)                          |  MISSED |
+|   LazyClassesInExps (L446)                                         |  MISSED |
+|     LazyClassesInExps.__init__ (L447)                              |  MISSED |
+|   AbstractExperience (L490)                                        | COVERED |
+|     AbstractExperience.__init__ (L503)                             | COVERED |
+|     AbstractExperience.task_label (L547)                           | COVERED |
+|   GenericExperience (L563)                                         | COVERED |
+|     GenericExperience.__init__ (L576)                              | COVERED |
+|     GenericExperience.dataset (L601)                               |  MISSED |
+|     GenericExperience.task_labels (L605)                           |  MISSED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_definitions.py (module)               |  MISSED |
 |   Experience (L30)                                                 | COVERED |
@@ -1173,7 +1175,7 @@
 | benchmarks/datasets/stream51/stream51.py                |     5 |    3 |     2 |    40% |
 | benchmarks/datasets/stream51/stream51_data.py           |     4 |    2 |     2 |    50% |
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py      |     8 |    0 |     8 |   100% |
-| benchmarks/generators/benchmark_generators.py           |     3 |    0 |     3 |   100% |
+| benchmarks/generators/benchmark_generators.py           |     5 |    0 |     5 |   100% |
 | benchmarks/generators/scenario_generators.py            |     8 |    0 |     8 |   100% |
 | benchmarks/scenarios/generic_benchmark_creation.py      |     5 |    0 |     5 |   100% |
 | benchmarks/scenarios/generic_cl_scenario.py             |    21 |    9 |    12 |    57% |
@@ -1238,5 +1240,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1053 |  568 |   485 |  46.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 46.1%) -----------------
+| TOTAL                                                   |  1055 |  568 |   487 |  46.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 46.2%) -----------------
