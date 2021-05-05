@@ -2,35 +2,35 @@
 ------------------------------ Detailed Coverage -------------------------------
 | Name                                                               |  Status |
 |--------------------------------------------------------------------|---------|
-| core.py (module)                                                   |  MISSED |
-|   StrategyCallbacks (L7)                                           | COVERED |
-|     StrategyCallbacks.__init__ (L46)                               |  MISSED |
-|     StrategyCallbacks.before_training (L49)                        | COVERED |
-|     StrategyCallbacks.before_training_exp (L53)                    | COVERED |
-|     StrategyCallbacks.before_train_dataset_adaptation (L57)        | COVERED |
-|     StrategyCallbacks.after_train_dataset_adaptation (L62)         | COVERED |
-|     StrategyCallbacks.before_training_epoch (L66)                  | COVERED |
-|     StrategyCallbacks.before_training_iteration (L70)              | COVERED |
-|     StrategyCallbacks.before_forward (L75)                         | COVERED |
-|     StrategyCallbacks.after_forward (L79)                          | COVERED |
-|     StrategyCallbacks.before_backward (L83)                        | COVERED |
-|     StrategyCallbacks.after_backward (L87)                         | COVERED |
-|     StrategyCallbacks.after_training_iteration (L91)               | COVERED |
-|     StrategyCallbacks.before_update (L96)                          | COVERED |
-|     StrategyCallbacks.after_update (L100)                          | COVERED |
-|     StrategyCallbacks.after_training_epoch (L104)                  | COVERED |
-|     StrategyCallbacks.after_training_exp (L108)                    | COVERED |
-|     StrategyCallbacks.after_training (L112)                        | COVERED |
-|     StrategyCallbacks.before_eval (L116)                           | COVERED |
-|     StrategyCallbacks.before_eval_dataset_adaptation (L120)        | COVERED |
-|     StrategyCallbacks.after_eval_dataset_adaptation (L124)         | COVERED |
-|     StrategyCallbacks.before_eval_exp (L128)                       | COVERED |
-|     StrategyCallbacks.after_eval_exp (L132)                        | COVERED |
-|     StrategyCallbacks.after_eval (L136)                            | COVERED |
-|     StrategyCallbacks.before_eval_iteration (L140)                 | COVERED |
-|     StrategyCallbacks.before_eval_forward (L145)                   | COVERED |
-|     StrategyCallbacks.after_eval_forward (L149)                    | COVERED |
-|     StrategyCallbacks.after_eval_iteration (L153)                  | COVERED |
+| core.py (module)                                                   | COVERED |
+|   StrategyCallbacks (L26)                                          | COVERED |
+|     StrategyCallbacks.__init__ (L65)                               |  MISSED |
+|     StrategyCallbacks.before_training (L68)                        | COVERED |
+|     StrategyCallbacks.before_training_exp (L72)                    | COVERED |
+|     StrategyCallbacks.before_train_dataset_adaptation (L76)        | COVERED |
+|     StrategyCallbacks.after_train_dataset_adaptation (L81)         | COVERED |
+|     StrategyCallbacks.before_training_epoch (L85)                  | COVERED |
+|     StrategyCallbacks.before_training_iteration (L89)              | COVERED |
+|     StrategyCallbacks.before_forward (L94)                         | COVERED |
+|     StrategyCallbacks.after_forward (L98)                          | COVERED |
+|     StrategyCallbacks.before_backward (L102)                       | COVERED |
+|     StrategyCallbacks.after_backward (L106)                        | COVERED |
+|     StrategyCallbacks.after_training_iteration (L110)              | COVERED |
+|     StrategyCallbacks.before_update (L115)                         | COVERED |
+|     StrategyCallbacks.after_update (L119)                          | COVERED |
+|     StrategyCallbacks.after_training_epoch (L123)                  | COVERED |
+|     StrategyCallbacks.after_training_exp (L127)                    | COVERED |
+|     StrategyCallbacks.after_training (L131)                        | COVERED |
+|     StrategyCallbacks.before_eval (L135)                           | COVERED |
+|     StrategyCallbacks.before_eval_dataset_adaptation (L139)        | COVERED |
+|     StrategyCallbacks.after_eval_dataset_adaptation (L143)         | COVERED |
+|     StrategyCallbacks.before_eval_exp (L147)                       | COVERED |
+|     StrategyCallbacks.after_eval_exp (L151)                        | COVERED |
+|     StrategyCallbacks.after_eval (L155)                            | COVERED |
+|     StrategyCallbacks.before_eval_iteration (L159)                 | COVERED |
+|     StrategyCallbacks.before_eval_forward (L164)                   | COVERED |
+|     StrategyCallbacks.after_eval_forward (L168)                    | COVERED |
+|     StrategyCallbacks.after_eval_iteration (L172)                  | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar10.py (module)                            |  MISSED |
 |   SplitCIFAR10 (L35)                                               | COVERED |
@@ -1142,7 +1142,7 @@
 ----------------------------------- Summary ------------------------------------
 | Name                                                    | Total | Miss | Cover | Cover% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| core.py                                                 |    29 |    2 |    27 |    93% |
+| core.py                                                 |    29 |    1 |    28 |    97% |
 | benchmarks/classic/ccifar10.py                          |     2 |    1 |     1 |    50% |
 | benchmarks/classic/ccifar100.py                         |     3 |    1 |     2 |    67% |
 | benchmarks/classic/ccub200.py                           |     2 |    1 |     1 |    50% |
@@ -1231,5 +1231,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1048 |  566 |   482 |  46.0% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 46.0%) -----------------
+| TOTAL                                                   |  1048 |  565 |   483 |  46.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 46.1%) -----------------
