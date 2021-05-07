@@ -167,10 +167,12 @@
 |     TinyImagenet.get_test_images_paths (L158)                      | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/generators/benchmark_generators.py (module)             | COVERED |
-|   nc_benchmark (L36)                                               | COVERED |
-|   ni_benchmark (L212)                                              | COVERED |
-|   fixed_size_experience_split_strategy (L372)                      | COVERED |
-|   data_incremental_benchmark (L427)                                | COVERED |
+|   nc_benchmark (L37)                                               | COVERED |
+|   ni_benchmark (L213)                                              | COVERED |
+|   fixed_size_experience_split_strategy (L373)                      | COVERED |
+|   data_incremental_benchmark (L428)                                | COVERED |
+|   random_validation_split_strategy (L529)                          | COVERED |
+|   benchmark_with_validation_stream (L588)                          | COVERED |
 |--------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)              | COVERED |
 |   nc_scenario (L34)                                                | COVERED |
@@ -1176,7 +1178,7 @@
 | benchmarks/datasets/stream51/stream51.py                |     5 |    3 |     2 |    40% |
 | benchmarks/datasets/stream51/stream51_data.py           |     4 |    2 |     2 |    50% |
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py      |     8 |    0 |     8 |   100% |
-| benchmarks/generators/benchmark_generators.py           |     5 |    0 |     5 |   100% |
+| benchmarks/generators/benchmark_generators.py           |     7 |    0 |     7 |   100% |
 | benchmarks/generators/scenario_generators.py            |     8 |    0 |     8 |   100% |
 | benchmarks/scenarios/generic_benchmark_creation.py      |     5 |    0 |     5 |   100% |
 | benchmarks/scenarios/generic_cl_scenario.py             |    24 |   12 |    12 |    50% |
@@ -1241,5 +1243,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1056 |  569 |   487 |  46.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 46.1%) -----------------
+| TOTAL                                                   |  1058 |  569 |   489 |  46.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 46.2%) -----------------
