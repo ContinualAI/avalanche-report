@@ -1090,9 +1090,9 @@
 | training/strategies/base_strategy.py (module)                      |  MISSED |
 |   BaseStrategy (L34)                                               |  MISSED |
 |     BaseStrategy.__init__ (L35)                                    | COVERED |
-|     BaseStrategy.is_eval (L184)                                    | COVERED |
-|     BaseStrategy.train (L188)                                      | COVERED |
-|     BaseStrategy.train_exp (L227)                                  | COVERED |
+|     BaseStrategy.is_eval (L181)                                    | COVERED |
+|     BaseStrategy.train (L185)                                      | COVERED |
+|     BaseStrategy.train_exp (L224)                                  | COVERED |
 |     BaseStrategy.train_dataset_adaptation (L290)                   | COVERED |
 |     BaseStrategy.eval (L296)                                       | COVERED |
 |     BaseStrategy.before_training_exp (L336)                        | COVERED |
