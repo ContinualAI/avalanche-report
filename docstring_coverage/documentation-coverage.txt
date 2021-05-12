@@ -430,20 +430,29 @@
 |   accuracy_metrics (L344)                                          | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                    |  MISSED |
-|   ConfusionMatrix (L30)                                            | COVERED |
-|     ConfusionMatrix.__init__ (L58)                                 | COVERED |
-|     ConfusionMatrix.update (L87)                                   | COVERED |
-|     ConfusionMatrix.result (L168)                                  | COVERED |
-|     ConfusionMatrix.reset (L186)                                   | COVERED |
-|     ConfusionMatrix.nan_to_num (L214)                              |  MISSED |
-|   StreamConfusionMatrix (L224)                                     | COVERED |
-|     StreamConfusionMatrix.__init__ (L240)                          | COVERED |
-|     StreamConfusionMatrix.reset (L284)                             |  MISSED |
-|     StreamConfusionMatrix.result (L288)                            |  MISSED |
-|     StreamConfusionMatrix.update (L292)                            |  MISSED |
-|     StreamConfusionMatrix.before_eval (L295)                       |  MISSED |
-|     StreamConfusionMatrix.after_eval_iteration (L298)              |  MISSED |
-|     StreamConfusionMatrix.after_eval (L303)                        |  MISSED |
+|   ConfusionMatrix (L32)                                            | COVERED |
+|     ConfusionMatrix.__init__ (L60)                                 | COVERED |
+|     ConfusionMatrix.update (L89)                                   | COVERED |
+|     ConfusionMatrix.result (L170)                                  | COVERED |
+|     ConfusionMatrix.reset (L188)                                   | COVERED |
+|     ConfusionMatrix.nan_to_num (L216)                              |  MISSED |
+|   StreamConfusionMatrix (L226)                                     | COVERED |
+|     StreamConfusionMatrix.__init__ (L242)                          | COVERED |
+|     StreamConfusionMatrix.reset (L286)                             |  MISSED |
+|     StreamConfusionMatrix.result (L290)                            |  MISSED |
+|     StreamConfusionMatrix.update (L294)                            |  MISSED |
+|     StreamConfusionMatrix.before_eval (L297)                       |  MISSED |
+|     StreamConfusionMatrix.after_eval_iteration (L300)              |  MISSED |
+|     StreamConfusionMatrix.after_eval (L305)                        |  MISSED |
+|   WandBStreamConfusionMatrix (L333)                                | COVERED |
+|     WandBStreamConfusionMatrix.__init__ (L344)                     | COVERED |
+|     WandBStreamConfusionMatrix.reset (L357)                        |  MISSED |
+|     WandBStreamConfusionMatrix.before_eval (L361)                  |  MISSED |
+|     WandBStreamConfusionMatrix.result (L364)                       |  MISSED |
+|     WandBStreamConfusionMatrix.update (L369)                       |  MISSED |
+|     WandBStreamConfusionMatrix.after_eval_iteration (L373)         |  MISSED |
+|     WandBStreamConfusionMatrix.after_eval (L377)                   |  MISSED |
+|   confusion_matrix_metrics (L406)                                  | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/cpu_usage.py (module)                           |  MISSED |
 |   CPUUsage (L28)                                                   | COVERED |
@@ -888,8 +897,21 @@
 |     MTSimpleMLP.__init__ (L46)                                     | COVERED |
 |     MTSimpleMLP.forward (L60)                                      |  MISSED |
 |--------------------------------------------------------------------|---------|
+| models/slda_resnet.py (module)                                     |  MISSED |
+|   SLDAResNetModel (L7)                                             | COVERED |
+|     SLDAResNetModel.__init__ (L14)                                 | COVERED |
+|     SLDAResNetModel.pool_feat (L34)                                |  MISSED |
+|     SLDAResNetModel.forward (L45)                                  | COVERED |
+|--------------------------------------------------------------------|---------|
 | models/utils.py (module)                                           |  MISSED |
-|   avalanche_forward (L4)                                           |  MISSED |
+|   avalanche_forward (L5)                                           |  MISSED |
+|   FeatureExtractorBackbone (L12)                                   | COVERED |
+|     FeatureExtractorBackbone.__init__ (L18)                        |  MISSED |
+|     FeatureExtractorBackbone.forward (L25)                         |  MISSED |
+|     FeatureExtractorBackbone.get_name_to_module (L29)              |  MISSED |
+|     FeatureExtractorBackbone.get_activation (L35)                  |  MISSED |
+|       FeatureExtractorBackbone.get_activation.hook (L36)           |  MISSED |
+|     FeatureExtractorBackbone.add_hooks (L41)                       | COVERED |
 |--------------------------------------------------------------------|---------|
 | training/utils.py (module)                                         | COVERED |
 |   load_all_dataset (L30)                                           | COVERED |
@@ -1135,6 +1157,18 @@
 |     Cumulative.__init__ (L15)                                      | COVERED |
 |     Cumulative.train_dataset_adaptation (L51)                      | COVERED |
 |--------------------------------------------------------------------|---------|
+| training/strategies/deep_slda.py (module)                          |  MISSED |
+|   StreamingLDA (L14)                                               | COVERED |
+|     StreamingLDA.__init__ (L26)                                    | COVERED |
+|     StreamingLDA.forward (L82)                                     |  MISSED |
+|     StreamingLDA.training_epoch (L94)                              | COVERED |
+|     StreamingLDA.make_optimizer (L124)                             |  MISSED |
+|     StreamingLDA.fit (L128)                                        | COVERED |
+|     StreamingLDA.predict (L150)                                    | COVERED |
+|     StreamingLDA.fit_base (L179)                                   | COVERED |
+|     StreamingLDA.save_model (L201)                                 | COVERED |
+|     StreamingLDA.load_model (L218)                                 | COVERED |
+|--------------------------------------------------------------------|---------|
 | training/strategies/joint_training.py (module)                     |  MISSED |
 |   JointTraining (L27)                                              |  MISSED |
 |     JointTraining.__init__ (L28)                                   | COVERED |
@@ -1214,7 +1248,7 @@
 | evaluation/metric_results.py                            |     6 |    2 |     4 |    67% |
 | evaluation/metric_utils.py                              |     7 |    2 |     5 |    71% |
 | evaluation/metrics/accuracy.py                          |    37 |   21 |    16 |    43% |
-| evaluation/metrics/confusion_matrix.py                  |    15 |    8 |     7 |    47% |
+| evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                         |    38 |   22 |    16 |    42% |
 | evaluation/metrics/disk_usage.py                        |    32 |   18 |    14 |    44% |
 | evaluation/metrics/forgetting.py                        |    34 |   17 |    17 |    50% |
@@ -1238,7 +1272,8 @@
 | models/pytorchcv_wrapper.py                             |     6 |    0 |     6 |   100% |
 | models/simple_cnn.py                                    |     7 |    6 |     1 |    14% |
 | models/simple_mlp.py                                    |     7 |    6 |     1 |    14% |
-| models/utils.py                                         |     2 |    2 |     0 |     0% |
+| models/slda_resnet.py                                   |     5 |    2 |     3 |    60% |
+| models/utils.py                                         |     9 |    7 |     2 |    22% |
 | training/utils.py                                       |    16 |   11 |     5 |    31% |
 | training/plugins/agem.py                                |     8 |    1 |     7 |    88% |
 | training/plugins/cope.py                                |    15 |    3 |    12 |    80% |
@@ -1255,8 +1290,9 @@
 | training/strategies/ar1.py                              |     8 |    5 |     3 |    38% |
 | training/strategies/base_strategy.py                    |    42 |   29 |    13 |    31% |
 | training/strategies/cumulative.py                       |     4 |    2 |     2 |    50% |
+| training/strategies/deep_slda.py                        |    11 |    3 |     8 |    73% |
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1071 |  579 |   492 |  45.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 45.9%) -----------------
+| TOTAL                                                   |  1103 |  595 |   508 |  46.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 46.1%) -----------------
