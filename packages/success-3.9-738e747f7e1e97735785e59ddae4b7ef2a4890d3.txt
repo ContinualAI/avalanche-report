@@ -29,8 +29,10 @@ dbus                      1.13.6               h48d8840_2    conda-forge
 docker-pycreds            0.4.0                      py_0    conda-forge
 expat                     2.3.0                h9c3ff4c_0    conda-forge
 ffmpeg                    4.3                  hf484d3e_0    pytorch
+filelock                  3.0.12                   pypi_0    pypi
 fontconfig                2.13.1            he4413a7_1000    conda-forge
 freetype                  2.10.4               h0708190_1    conda-forge
+gdown                     3.13.0                   pypi_0    pypi
 gettext                   0.19.8.1          h0b5b191_1005    conda-forge
 gitdb                     4.0.7              pyhd8ed1ab_0    conda-forge
 gitpython                 3.1.17             pyhd8ed1ab_0    conda-forge
@@ -40,7 +42,6 @@ gmp                       6.2.1                h58526e2_0    conda-forge
 gnutls                    3.6.13               h85f3911_1    conda-forge
 google-auth               1.30.0             pyh44b312d_0    conda-forge
 google-auth-oauthlib      0.4.1                      py_2    conda-forge
-googledrivedownloader     0.4                      pypi_0    pypi
 gputil                    1.4.0              pyh9f0ad1d_0    conda-forge
 gql                       0.1.0                      py_0    conda-forge
 graphql-core              3.1.4              pyhd8ed1ab_0    conda-forge
@@ -68,7 +69,7 @@ libgomp                   9.3.0               h2828fa1_19    conda-forge
 libiconv                  1.16                 h516909a_0    conda-forge
 liblapack                 3.9.0                     9_mkl    conda-forge
 libpng                    1.6.37               h21135ba_2    conda-forge
-libprotobuf               3.16.0               h780b84a_0    conda-forge
+libprotobuf               3.17.0               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_19    conda-forge
 libtiff                   4.1.0                h2733197_1  
 libuuid                   2.32.1            h7f98852_1000    conda-forge
@@ -99,7 +100,7 @@ pcre                      8.44                 he1b5a44_0    conda-forge
 pillow                    8.2.0            py39he98fc37_0  
 pip                       21.1.1             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py39hf3d152e_3    conda-forge
-protobuf                  3.16.0           py39he80948d_0    conda-forge
+protobuf                  3.17.0           py39he80948d_0    conda-forge
 psutil                    5.8.0            py39h3811e60_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
