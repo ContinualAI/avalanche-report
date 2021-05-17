@@ -29,8 +29,10 @@ dbus                      1.13.6               he372182_0    conda-forge
 docker-pycreds            0.4.0                      py_0    conda-forge
 expat                     2.3.0                h9c3ff4c_0    conda-forge
 ffmpeg                    4.3                  hf484d3e_0    pytorch
+filelock                  3.0.12                   pypi_0    pypi
 fontconfig                2.13.1            he4413a7_1000    conda-forge
 freetype                  2.10.4               h5ab3b9f_0  
+gdown                     3.13.0                   pypi_0    pypi
 gitdb                     4.0.7              pyhd8ed1ab_0    conda-forge
 gitpython                 3.1.17             pyhd8ed1ab_0    conda-forge
 glib                      2.68.1               h36276a3_0  
@@ -38,7 +40,6 @@ gmp                       6.2.1                h2531618_2
 gnutls                    3.6.15               he1e5248_0  
 google-auth               1.30.0             pyh44b312d_0    conda-forge
 google-auth-oauthlib      0.4.1                      py_2    conda-forge
-googledrivedownloader     0.4                      pypi_0    pypi
 gputil                    1.4.0              pyh9f0ad1d_0    conda-forge
 gql                       0.1.0                      py_0    conda-forge
 graphql-core              3.1.4              pyhd8ed1ab_0    conda-forge
@@ -66,7 +67,7 @@ libiconv                  1.15                 h63c8f33_5
 libidn2                   2.3.0                h27cfd23_0  
 liblapack                 3.9.0                     9_mkl    conda-forge
 libpng                    1.6.37               hbc83047_0  
-libprotobuf               3.16.0               h780b84a_0    conda-forge
+libprotobuf               3.17.0               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_19    conda-forge
 libtasn1                  4.16.0               h27cfd23_0  
 libtiff                   4.1.0                h2733197_1  
@@ -99,7 +100,7 @@ pcre                      8.44                 he1b5a44_0    conda-forge
 pillow                    8.2.0            py37he98fc37_0  
 pip                       21.1.1             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py37h89c1867_3    conda-forge
-protobuf                  3.16.0           py37hcd2ae1e_0    conda-forge
+protobuf                  3.17.0           py37hcd2ae1e_0    conda-forge
 psutil                    5.8.0            py37h5e8e339_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
