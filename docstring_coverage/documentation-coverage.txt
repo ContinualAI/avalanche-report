@@ -505,7 +505,7 @@
 |     StreamDiskUsage.__init__ (L185)                                | COVERED |
 |   disk_usage_metrics (L197)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
-| evaluation/metrics/forgetting.py (module)                          |  MISSED |
+| evaluation/metrics/forgetting_bwt.py (module)                      |  MISSED |
 |   Forgetting (L24)                                                 | COVERED |
 |     Forgetting.__init__ (L37)                                      | COVERED |
 |     Forgetting.update_initial (L54)                                |  MISSED |
@@ -525,20 +525,28 @@
 |     ExperienceForgetting.before_eval_exp (L194)                    |  MISSED |
 |     ExperienceForgetting.after_eval_iteration (L197)               |  MISSED |
 |     ExperienceForgetting.after_eval_exp (L203)                     |  MISSED |
-|   StreamForgetting (L239)                                          | COVERED |
-|     StreamForgetting.__init__ (L252)                               | COVERED |
-|     StreamForgetting.reset (L284)                                  | COVERED |
-|     StreamForgetting.reset_last_accuracy (L296)                    | COVERED |
-|     StreamForgetting.exp_update (L307)                             | COVERED |
-|     StreamForgetting.exp_result (L319)                             | COVERED |
-|     StreamForgetting.result (L328)                                 | COVERED |
-|     StreamForgetting.before_training_exp (L336)                    |  MISSED |
-|     StreamForgetting.before_eval (L339)                            |  MISSED |
-|     StreamForgetting.before_eval_exp (L343)                        |  MISSED |
-|     StreamForgetting.after_eval_iteration (L346)                   |  MISSED |
-|     StreamForgetting.after_eval_exp (L352)                         |  MISSED |
-|     StreamForgetting.after_eval (L373)                             |  MISSED |
-|   forgetting_metrics (L395)                                        | COVERED |
+|   StreamForgetting (L238)                                          | COVERED |
+|     StreamForgetting.__init__ (L251)                               | COVERED |
+|     StreamForgetting.reset (L283)                                  | COVERED |
+|     StreamForgetting.reset_last_accuracy (L295)                    | COVERED |
+|     StreamForgetting.exp_update (L306)                             | COVERED |
+|     StreamForgetting.exp_result (L318)                             | COVERED |
+|     StreamForgetting.result (L327)                                 | COVERED |
+|     StreamForgetting.before_training_exp (L335)                    |  MISSED |
+|     StreamForgetting.before_eval (L338)                            |  MISSED |
+|     StreamForgetting.before_eval_exp (L342)                        |  MISSED |
+|     StreamForgetting.after_eval_iteration (L345)                   |  MISSED |
+|     StreamForgetting.after_eval_exp (L351)                         |  MISSED |
+|     StreamForgetting.after_eval (L372)                             |  MISSED |
+|   forgetting_metrics (L394)                                        | COVERED |
+|   forgetting_to_bwt (L420)                                         | COVERED |
+|   BWT (L437)                                                       | COVERED |
+|     BWT.result (L450)                                              | COVERED |
+|   ExperienceBWT (L474)                                             | COVERED |
+|     ExperienceBWT.result (L486)                                    | COVERED |
+|   StreamBWT (L499)                                                 | COVERED |
+|     StreamBWT.exp_result (L512)                                    | COVERED |
+|   bwt_metrics (L526)                                               | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/gpu_usage.py (module)                           |  MISSED |
 |   MaxGPU (L25)                                                     | COVERED |
@@ -1181,7 +1189,7 @@
 | evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                         |    28 |   12 |    16 |    57% |
 | evaluation/metrics/disk_usage.py                        |    19 |    5 |    14 |    74% |
-| evaluation/metrics/forgetting.py                        |    34 |   17 |    17 |    50% |
+| evaluation/metrics/forgetting_bwt.py                    |    42 |   17 |    25 |    60% |
 | evaluation/metrics/gpu_usage.py                         |    28 |   15 |    13 |    46% |
 | evaluation/metrics/loss.py                              |    20 |    4 |    16 |    80% |
 | evaluation/metrics/mac.py                               |    19 |    8 |    11 |    58% |
@@ -1224,5 +1232,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1033 |  515 |   518 |  50.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 50.1%) -----------------
+| TOTAL                                                   |  1041 |  515 |   526 |  50.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 50.5%) -----------------
