@@ -61,7 +61,7 @@ libgfortran-ng            9.3.0               hff62375_19    conda-forge
 libgfortran5              9.3.0               hff62375_19    conda-forge
 libgomp                   9.3.0               h2828fa1_19    conda-forge
 libiconv                  1.15                 h63c8f33_5  
-libidn2                   2.3.0                h27cfd23_0  
+libidn2                   2.3.1                h27cfd23_0  
 liblapack                 3.9.0           5_h92ddd45_netlib    conda-forge
 libpng                    1.6.37               hbc83047_0  
 libprotobuf               3.17.0               h780b84a_0    conda-forge
