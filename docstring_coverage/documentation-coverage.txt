@@ -934,9 +934,9 @@
 |     EWCPlugin.update_importances (L138)                            | COVERED |
 |--------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                 |  MISSED |
-|   GDumbPlugin (L13)                                                | COVERED |
-|     GDumbPlugin.__init__ (L25)                                     |  MISSED |
-|     GDumbPlugin.after_train_dataset_adaptation (L34)               | COVERED |
+|   GDumbPlugin (L25)                                                | COVERED |
+|     GDumbPlugin.__init__ (L37)                                     |  MISSED |
+|     GDumbPlugin.after_train_dataset_adaptation (L44)               | COVERED |
 |--------------------------------------------------------------------|---------|
 | training/plugins/gem.py (module)                                   |  MISSED |
 |   GEMPlugin (L9)                                                   | COVERED |
