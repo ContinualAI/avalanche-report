@@ -375,59 +375,61 @@
 |     PluginMetric.before_eval_forward (L191)                        |  MISSED |
 |     PluginMetric.after_eval_forward (L195)                         |  MISSED |
 |     PluginMetric.after_eval_iteration (L199)                       |  MISSED |
+|   GenericPluginMetric (L204)                                       | COVERED |
+|     GenericPluginMetric.__init__ (L210)                            |  MISSED |
+|     GenericPluginMetric.reset (L225)                               |  MISSED |
+|     GenericPluginMetric.result (L228)                              |  MISSED |
+|     GenericPluginMetric.update (L231)                              |  MISSED |
+|     GenericPluginMetric.before_training (L245)                     |  MISSED |
+|     GenericPluginMetric.before_training_exp (L250)                 |  MISSED |
+|     GenericPluginMetric.before_training_epoch (L255)               |  MISSED |
+|     GenericPluginMetric.before_training_iteration (L260)           |  MISSED |
+|     GenericPluginMetric.after_training_iteration (L265)            |  MISSED |
+|     GenericPluginMetric.after_training_epoch (L271)                |  MISSED |
+|     GenericPluginMetric.after_training_exp (L276)                  |  MISSED |
+|     GenericPluginMetric.after_training (L281)                      |  MISSED |
+|     GenericPluginMetric.before_eval (L286)                         |  MISSED |
+|     GenericPluginMetric.before_eval_exp (L291)                     |  MISSED |
+|     GenericPluginMetric.after_eval_exp (L296)                      |  MISSED |
+|     GenericPluginMetric.after_eval (L301)                          |  MISSED |
+|     GenericPluginMetric.before_eval_iteration (L306)               |  MISSED |
+|     GenericPluginMetric.after_eval_iteration (L311)                |  MISSED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metric_results.py (module)                              |  MISSED |
-|   AlternativeValues (L23)                                          | COVERED |
-|     AlternativeValues.__init__ (L27)                               |  MISSED |
-|     AlternativeValues.best_supported_value (L30)                   | COVERED |
-|   MetricValue (L45)                                                | COVERED |
-|     MetricValue.__init__ (L58)                                     | COVERED |
+|   AlternativeValues (L24)                                          | COVERED |
+|     AlternativeValues.__init__ (L28)                               |  MISSED |
+|     AlternativeValues.best_supported_value (L31)                   | COVERED |
+|   MetricValue (L46)                                                | COVERED |
+|     MetricValue.__init__ (L59)                                     | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metric_utils.py (module)                                |  MISSED |
-|   default_cm_image_creator (L31)                                   | COVERED |
-|   get_task_label (L119)                                            | COVERED |
-|   stream_type (L134)                                               | COVERED |
-|   phase_and_task (L145)                                            | COVERED |
-|   bytes2human (L165)                                               |  MISSED |
-|   get_metric_name (L182)                                           | COVERED |
+|   default_cm_image_creator (L28)                                   | COVERED |
+|   get_task_label (L116)                                            | COVERED |
+|   stream_type (L131)                                               | COVERED |
+|   phase_and_task (L142)                                            | COVERED |
+|   bytes2human (L162)                                               |  MISSED |
+|   get_metric_name (L179)                                           | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/accuracy.py (module)                            |  MISSED |
-|   Accuracy (L27)                                                   | COVERED |
-|     Accuracy.__init__ (L45)                                        | COVERED |
-|     Accuracy.update (L60)                                          | COVERED |
-|     Accuracy.result (L91)                                          | COVERED |
-|     Accuracy.reset (L101)                                          | COVERED |
-|   MinibatchAccuracy (L110)                                         | COVERED |
-|     MinibatchAccuracy.__init__ (L123)                              | COVERED |
-|     MinibatchAccuracy.result (L132)                                |  MISSED |
-|     MinibatchAccuracy.reset (L135)                                 |  MISSED |
-|     MinibatchAccuracy.after_training_iteration (L138)              |  MISSED |
-|   EpochAccuracy (L158)                                             | COVERED |
-|     EpochAccuracy.__init__ (L168)                                  | COVERED |
-|     EpochAccuracy.reset (L176)                                     |  MISSED |
-|     EpochAccuracy.result (L179)                                    |  MISSED |
-|     EpochAccuracy.after_training_iteration (L182)                  |  MISSED |
-|     EpochAccuracy.before_training_epoch (L187)                     |  MISSED |
-|     EpochAccuracy.after_training_epoch (L190)                      |  MISSED |
-|   RunningEpochAccuracy (L206)                                      | COVERED |
-|     RunningEpochAccuracy.__init__ (L217)                           | COVERED |
-|     RunningEpochAccuracy.after_training_iteration (L224)           |  MISSED |
-|     RunningEpochAccuracy.after_training_epoch (L229)               |  MISSED |
-|   ExperienceAccuracy (L246)                                        | COVERED |
-|     ExperienceAccuracy.__init__ (L253)                             | COVERED |
-|     ExperienceAccuracy.reset (L261)                                |  MISSED |
-|     ExperienceAccuracy.result (L264)                               |  MISSED |
-|     ExperienceAccuracy.before_eval_exp (L267)                      |  MISSED |
-|     ExperienceAccuracy.after_eval_iteration (L270)                 |  MISSED |
-|     ExperienceAccuracy.after_eval_exp (L275)                       |  MISSED |
-|   StreamAccuracy (L293)                                            | COVERED |
-|     StreamAccuracy.__init__ (L300)                                 | COVERED |
-|     StreamAccuracy.reset (L308)                                    |  MISSED |
-|     StreamAccuracy.result (L311)                                   |  MISSED |
-|     StreamAccuracy.before_eval (L314)                              |  MISSED |
-|     StreamAccuracy.after_eval_iteration (L317)                     |  MISSED |
-|     StreamAccuracy.after_eval (L322)                               |  MISSED |
-|   accuracy_metrics (L344)                                          | COVERED |
+|   Accuracy (L20)                                                   | COVERED |
+|     Accuracy.__init__ (L38)                                        | COVERED |
+|     Accuracy.update (L53)                                          | COVERED |
+|     Accuracy.result (L84)                                          | COVERED |
+|     Accuracy.reset (L94)                                           | COVERED |
+|   AccuracyPluginMetric (L103)                                      | COVERED |
+|     AccuracyPluginMetric.__init__ (L107)                           |  MISSED |
+|     AccuracyPluginMetric.update (L113)                             |  MISSED |
+|   MinibatchAccuracy (L117)                                         | COVERED |
+|     MinibatchAccuracy.__init__ (L129)                              | COVERED |
+|   EpochAccuracy (L140)                                             | COVERED |
+|     EpochAccuracy.__init__ (L150)                                  | COVERED |
+|   RunningEpochAccuracy (L162)                                      | COVERED |
+|     RunningEpochAccuracy.__init__ (L173)                           | COVERED |
+|   ExperienceAccuracy (L185)                                        | COVERED |
+|     ExperienceAccuracy.__init__ (L192)                             | COVERED |
+|   StreamAccuracy (L203)                                            | COVERED |
+|     StreamAccuracy.__init__ (L210)                                 | COVERED |
+|   accuracy_metrics (L221)                                          | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                    |  MISSED |
 |   ConfusionMatrix (L32)                                            | COVERED |
@@ -455,76 +457,53 @@
 |   confusion_matrix_metrics (L406)                                  | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/cpu_usage.py (module)                           |  MISSED |
-|   CPUUsage (L28)                                                   | COVERED |
-|     CPUUsage.__init__ (L47)                                        | COVERED |
-|     CPUUsage.update (L71)                                          | COVERED |
-|     CPUUsage.result (L101)                                         | COVERED |
-|     CPUUsage.reset (L111)                                          | COVERED |
-|   MinibatchCPUUsage (L122)                                         | COVERED |
-|     MinibatchCPUUsage.__init__ (L133)                              | COVERED |
-|     MinibatchCPUUsage.result (L141)                                |  MISSED |
-|     MinibatchCPUUsage.reset (L144)                                 |  MISSED |
-|     MinibatchCPUUsage.before_training_iteration (L147)             |  MISSED |
-|     MinibatchCPUUsage.after_training_iteration (L151)              |  MISSED |
-|   EpochCPUUsage (L170)                                             | COVERED |
-|     EpochCPUUsage.__init__ (L178)                                  | COVERED |
-|     EpochCPUUsage.before_training_epoch (L186)                     |  MISSED |
-|     EpochCPUUsage.after_training_epoch (L190)                      |  MISSED |
-|     EpochCPUUsage.reset (L195)                                     |  MISSED |
-|     EpochCPUUsage.result (L198)                                    |  MISSED |
-|   RunningEpochCPUUsage (L213)                                      | COVERED |
-|     RunningEpochCPUUsage.__init__ (L222)                           | COVERED |
-|     RunningEpochCPUUsage.before_training_epoch (L231)              |  MISSED |
-|     RunningEpochCPUUsage.before_training_iteration (L234)          |  MISSED |
-|     RunningEpochCPUUsage.after_training_iteration (L238)           |  MISSED |
-|     RunningEpochCPUUsage.reset (L246)                              |  MISSED |
-|     RunningEpochCPUUsage.result (L250)                             |  MISSED |
-|   ExperienceCPUUsage (L267)                                        | COVERED |
-|     ExperienceCPUUsage.__init__ (L276)                             | COVERED |
-|     ExperienceCPUUsage.before_eval_exp (L284)                      |  MISSED |
-|     ExperienceCPUUsage.after_eval_exp (L288)                       |  MISSED |
-|     ExperienceCPUUsage.reset (L292)                                |  MISSED |
-|     ExperienceCPUUsage.result (L295)                               |  MISSED |
-|   StreamCPUUsage (L310)                                            | COVERED |
-|     StreamCPUUsage.__init__ (L319)                                 | COVERED |
-|     StreamCPUUsage.before_eval (L327)                              |  MISSED |
-|     StreamCPUUsage.after_eval (L331)                               |  MISSED |
-|     StreamCPUUsage.reset (L335)                                    |  MISSED |
-|     StreamCPUUsage.result (L338)                                   |  MISSED |
-|   cpu_usage_metrics (L358)                                         | COVERED |
+|   CPUUsage (L22)                                                   | COVERED |
+|     CPUUsage.__init__ (L41)                                        | COVERED |
+|     CPUUsage.update (L65)                                          | COVERED |
+|     CPUUsage.result (L95)                                          | COVERED |
+|     CPUUsage.reset (L105)                                          | COVERED |
+|   CPUPluginMetric (L116)                                           |  MISSED |
+|     CPUPluginMetric.__init__ (L117)                                |  MISSED |
+|     CPUPluginMetric.update (L124)                                  |  MISSED |
+|   MinibatchCPUUsage (L128)                                         | COVERED |
+|     MinibatchCPUUsage.__init__ (L139)                              | COVERED |
+|     MinibatchCPUUsage.before_training_iteration (L146)             |  MISSED |
+|   EpochCPUUsage (L154)                                             | COVERED |
+|     EpochCPUUsage.__init__ (L162)                                  | COVERED |
+|     EpochCPUUsage.before_training_epoch (L169)                     |  MISSED |
+|   RunningEpochCPUUsage (L177)                                      | COVERED |
+|     RunningEpochCPUUsage.__init__ (L186)                           | COVERED |
+|     RunningEpochCPUUsage.result (L194)                             |  MISSED |
+|     RunningEpochCPUUsage.before_training_epoch (L197)              |  MISSED |
+|     RunningEpochCPUUsage.before_training_iteration (L201)          |  MISSED |
+|     RunningEpochCPUUsage.after_training_iteration (L205)           |  MISSED |
+|   ExperienceCPUUsage (L216)                                        | COVERED |
+|     ExperienceCPUUsage.__init__ (L225)                             | COVERED |
+|     ExperienceCPUUsage.before_eval_exp (L232)                      |  MISSED |
+|   StreamCPUUsage (L240)                                            | COVERED |
+|     StreamCPUUsage.__init__ (L249)                                 | COVERED |
+|     StreamCPUUsage.before_eval (L256)                              |  MISSED |
+|   cpu_usage_metrics (L264)                                         | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/disk_usage.py (module)                          |  MISSED |
-|   DiskUsage (L27)                                                  | COVERED |
-|     DiskUsage.__init__ (L34)                                       | COVERED |
-|     DiskUsage.update (L56)                                         | COVERED |
-|     DiskUsage.result (L69)                                         | COVERED |
-|     DiskUsage.reset (L81)                                          | COVERED |
-|     DiskUsage.get_dir_size (L90)                                   |  MISSED |
-|   MinibatchDiskUsage (L104)                                        | COVERED |
-|     MinibatchDiskUsage.__init__ (L116)                             | COVERED |
-|     MinibatchDiskUsage.result (L124)                               |  MISSED |
-|     MinibatchDiskUsage.reset (L127)                                |  MISSED |
-|     MinibatchDiskUsage.before_training_iteration (L130)            |  MISSED |
-|     MinibatchDiskUsage.after_training_iteration (L133)             |  MISSED |
-|   EpochDiskUsage (L152)                                            | COVERED |
-|     EpochDiskUsage.__init__ (L161)                                 | COVERED |
-|     EpochDiskUsage.before_training_epoch (L169)                    |  MISSED |
-|     EpochDiskUsage.after_training_epoch (L172)                     |  MISSED |
-|     EpochDiskUsage.reset (L177)                                    |  MISSED |
-|     EpochDiskUsage.result (L180)                                   |  MISSED |
-|   ExperienceDiskUsage (L195)                                       | COVERED |
-|     ExperienceDiskUsage.__init__ (L204)                            | COVERED |
-|     ExperienceDiskUsage.before_eval_exp (L212)                     |  MISSED |
-|     ExperienceDiskUsage.after_eval_exp (L215)                      |  MISSED |
-|     ExperienceDiskUsage.reset (L219)                               |  MISSED |
-|     ExperienceDiskUsage.result (L222)                              |  MISSED |
-|   StreamDiskUsage (L237)                                           | COVERED |
-|     StreamDiskUsage.__init__ (L246)                                | COVERED |
-|     StreamDiskUsage.before_eval (L254)                             |  MISSED |
-|     StreamDiskUsage.after_eval (L257)                              |  MISSED |
-|     StreamDiskUsage.reset (L261)                                   |  MISSED |
-|     StreamDiskUsage.result (L264)                                  |  MISSED |
-|   disk_usage_metrics (L284)                                        | COVERED |
+|   DiskUsage (L21)                                                  | COVERED |
+|     DiskUsage.__init__ (L28)                                       | COVERED |
+|     DiskUsage.update (L50)                                         | COVERED |
+|     DiskUsage.result (L63)                                         | COVERED |
+|     DiskUsage.reset (L75)                                          | COVERED |
+|     DiskUsage.get_dir_size (L84)                                   |  MISSED |
+|   DiskPluginMetric (L98)                                           |  MISSED |
+|     DiskPluginMetric.__init__ (L99)                                |  MISSED |
+|     DiskPluginMetric.update (L106)                                 |  MISSED |
+|   MinibatchDiskUsage (L110)                                        | COVERED |
+|     MinibatchDiskUsage.__init__ (L122)                             | COVERED |
+|   EpochDiskUsage (L134)                                            | COVERED |
+|     EpochDiskUsage.__init__ (L143)                                 | COVERED |
+|   ExperienceDiskUsage (L155)                                       | COVERED |
+|     ExperienceDiskUsage.__init__ (L164)                            | COVERED |
+|   StreamDiskUsage (L176)                                           | COVERED |
+|     StreamDiskUsage.__init__ (L185)                                | COVERED |
+|   disk_usage_metrics (L197)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/forgetting.py (module)                          |  MISSED |
 |   Forgetting (L24)                                                 | COVERED |
@@ -562,106 +541,74 @@
 |   forgetting_metrics (L395)                                        | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/gpu_usage.py (module)                           |  MISSED |
-|   MaxGPU (L27)                                                     | COVERED |
-|     MaxGPU.__init__ (L43)                                          | COVERED |
-|     MaxGPU.start_thread (L98)                                      |  MISSED |
-|     MaxGPU.stop_thread (L105)                                      |  MISSED |
-|     MaxGPU.reset (L112)                                            | COVERED |
-|     MaxGPU.result (L120)                                           | COVERED |
-|   MinibatchMaxGPU (L129)                                           | COVERED |
-|     MinibatchMaxGPU.__init__ (L135)                                | COVERED |
-|     MinibatchMaxGPU.before_training (L148)                         |  MISSED |
-|     MinibatchMaxGPU.before_training_iteration (L152)               |  MISSED |
-|     MinibatchMaxGPU.after_training_iteration (L155)                |  MISSED |
-|     MinibatchMaxGPU.after_training (L160)                          |  MISSED |
-|     MinibatchMaxGPU.reset (L163)                                   |  MISSED |
-|     MinibatchMaxGPU.result (L166)                                  |  MISSED |
-|   EpochMaxGPU (L181)                                               | COVERED |
-|     EpochMaxGPU.__init__ (L187)                                    | COVERED |
-|     EpochMaxGPU.before_training (L200)                             |  MISSED |
-|     EpochMaxGPU.before_training_epoch (L204)                       |  MISSED |
-|     EpochMaxGPU.after_training_epoch (L207)                        |  MISSED |
-|     EpochMaxGPU.after_training (L211)                              |  MISSED |
-|     EpochMaxGPU.reset (L214)                                       |  MISSED |
-|     EpochMaxGPU.result (L217)                                      |  MISSED |
-|   ExperienceMaxGPU (L232)                                          | COVERED |
-|     ExperienceMaxGPU.__init__ (L238)                               | COVERED |
-|     ExperienceMaxGPU.before_eval (L251)                            |  MISSED |
-|     ExperienceMaxGPU.before_eval_exp (L255)                        |  MISSED |
-|     ExperienceMaxGPU.after_eval_exp (L258)                         |  MISSED |
-|     ExperienceMaxGPU.after_eval (L262)                             |  MISSED |
-|     ExperienceMaxGPU.reset (L265)                                  |  MISSED |
-|     ExperienceMaxGPU.result (L268)                                 |  MISSED |
-|   StreamMaxGPU (L283)                                              | COVERED |
-|     StreamMaxGPU.__init__ (L289)                                   | COVERED |
-|     StreamMaxGPU.before_eval (L302)                                |  MISSED |
-|     StreamMaxGPU.after_eval (L306)                                 |  MISSED |
-|     StreamMaxGPU.reset (L312)                                      |  MISSED |
-|     StreamMaxGPU.result (L315)                                     |  MISSED |
-|   gpu_usage_metrics (L335)                                         | COVERED |
+|   MaxGPU (L25)                                                     | COVERED |
+|     MaxGPU.__init__ (L41)                                          | COVERED |
+|     MaxGPU.start_thread (L96)                                      |  MISSED |
+|     MaxGPU.stop_thread (L103)                                      |  MISSED |
+|     MaxGPU.reset (L110)                                            | COVERED |
+|     MaxGPU.result (L118)                                           | COVERED |
+|     MaxGPU.update (L126)                                           |  MISSED |
+|   GPUPluginMetric (L130)                                           |  MISSED |
+|     GPUPluginMetric.__init__ (L131)                                |  MISSED |
+|     GPUPluginMetric.update (L139)                                  |  MISSED |
+|   MinibatchMaxGPU (L143)                                           | COVERED |
+|     MinibatchMaxGPU.__init__ (L149)                                | COVERED |
+|     MinibatchMaxGPU.before_training (L161)                         |  MISSED |
+|     MinibatchMaxGPU.after_training (L166)                          |  MISSED |
+|   EpochMaxGPU (L174)                                               | COVERED |
+|     EpochMaxGPU.__init__ (L180)                                    | COVERED |
+|     EpochMaxGPU.before_training (L192)                             |  MISSED |
+|     EpochMaxGPU.after_training (L196)                              |  MISSED |
+|   ExperienceMaxGPU (L203)                                          | COVERED |
+|     ExperienceMaxGPU.__init__ (L209)                               | COVERED |
+|     ExperienceMaxGPU.before_eval (L221)                            |  MISSED |
+|     ExperienceMaxGPU.after_eval (L225)                             |  MISSED |
+|   StreamMaxGPU (L233)                                              | COVERED |
+|     StreamMaxGPU.__init__ (L239)                                   | COVERED |
+|     StreamMaxGPU.before_eval (L251)                                |  MISSED |
+|     StreamMaxGPU.after_eval (L255)                                 |  MISSED |
+|   gpu_usage_metrics (L265)                                         | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/loss.py (module)                                |  MISSED |
-|   Loss (L26)                                                       | COVERED |
-|     Loss.__init__ (L43)                                            | COVERED |
-|     Loss.update (L54)                                              | COVERED |
-|     Loss.result (L65)                                              | COVERED |
-|     Loss.reset (L75)                                               | COVERED |
-|   MinibatchLoss (L84)                                              | COVERED |
-|     MinibatchLoss.__init__ (L97)                                   | COVERED |
-|     MinibatchLoss.result (L105)                                    |  MISSED |
-|     MinibatchLoss.reset (L108)                                     |  MISSED |
-|     MinibatchLoss.after_training_iteration (L111)                  |  MISSED |
-|   EpochLoss (L131)                                                 | COVERED |
-|     EpochLoss.__init__ (L141)                                      | COVERED |
-|     EpochLoss.before_training_epoch (L150)                         |  MISSED |
-|     EpochLoss.after_training_iteration (L153)                      |  MISSED |
-|     EpochLoss.after_training_epoch (L157)                          |  MISSED |
-|     EpochLoss.reset (L161)                                         |  MISSED |
-|     EpochLoss.result (L164)                                        |  MISSED |
-|   RunningEpochLoss (L179)                                          | COVERED |
-|     RunningEpochLoss.__init__ (L190)                               | COVERED |
-|     RunningEpochLoss.after_training_iteration (L197)               |  MISSED |
-|     RunningEpochLoss.after_training_epoch (L202)                   |  MISSED |
-|   ExperienceLoss (L219)                                            | COVERED |
-|     ExperienceLoss.__init__ (L226)                                 | COVERED |
-|     ExperienceLoss.reset (L234)                                    |  MISSED |
-|     ExperienceLoss.result (L237)                                   |  MISSED |
-|     ExperienceLoss.before_eval_exp (L240)                          |  MISSED |
-|     ExperienceLoss.after_eval_iteration (L243)                     |  MISSED |
-|     ExperienceLoss.after_eval_exp (L247)                           |  MISSED |
-|   StreamLoss (L265)                                                | COVERED |
-|     StreamLoss.__init__ (L272)                                     | COVERED |
-|     StreamLoss.reset (L280)                                        |  MISSED |
-|     StreamLoss.result (L283)                                       |  MISSED |
-|     StreamLoss.before_eval (L286)                                  |  MISSED |
-|     StreamLoss.after_eval_iteration (L289)                         |  MISSED |
-|     StreamLoss.after_eval (L293)                                   |  MISSED |
-|   loss_metrics (L316)                                              | COVERED |
+|   Loss (L21)                                                       | COVERED |
+|     Loss.__init__ (L38)                                            | COVERED |
+|     Loss.update (L49)                                              | COVERED |
+|     Loss.result (L60)                                              | COVERED |
+|     Loss.reset (L70)                                               | COVERED |
+|   LossPluginMetric (L79)                                           |  MISSED |
+|     LossPluginMetric.__init__ (L80)                                |  MISSED |
+|     LossPluginMetric.update (L85)                                  |  MISSED |
+|   MinibatchLoss (L89)                                              | COVERED |
+|     MinibatchLoss.__init__ (L102)                                  | COVERED |
+|   EpochLoss (L113)                                                 | COVERED |
+|     EpochLoss.__init__ (L123)                                      | COVERED |
+|   RunningEpochLoss (L135)                                          | COVERED |
+|     RunningEpochLoss.__init__ (L146)                               | COVERED |
+|   ExperienceLoss (L158)                                            | COVERED |
+|     ExperienceLoss.__init__ (L165)                                 | COVERED |
+|   StreamLoss (L176)                                                | COVERED |
+|     StreamLoss.__init__ (L183)                                     | COVERED |
+|   loss_metrics (L194)                                              | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/mac.py (module)                                 |  MISSED |
-|   MAC (L24)                                                        | COVERED |
-|     MAC.__init__ (L31)                                             | COVERED |
-|     MAC.update (L38)                                               | COVERED |
-|       MAC.update.foo (L50)                                         |  MISSED |
-|     MAC.result (L62)                                               | COVERED |
-|     MAC.update_compute_cost (L72)                                  |  MISSED |
-|     MAC.is_recognized_module (L82)                                 |  MISSED |
-|   MinibatchMAC (L87)                                               | COVERED |
-|     MinibatchMAC.__init__ (L100)                                   | COVERED |
-|     MinibatchMAC.reset (L109)                                      |  MISSED |
-|     MinibatchMAC.result (L112)                                     |  MISSED |
-|     MinibatchMAC.after_training_iteration (L115)                   |  MISSED |
-|   EpochMAC (L134)                                                  | COVERED |
-|     EpochMAC.__init__ (L143)                                       | COVERED |
-|     EpochMAC.reset (L151)                                          |  MISSED |
-|     EpochMAC.result (L154)                                         |  MISSED |
-|     EpochMAC.after_training_epoch (L157)                           |  MISSED |
-|   ExperienceMAC (L175)                                             | COVERED |
-|     ExperienceMAC.__init__ (L182)                                  | COVERED |
-|     ExperienceMAC.reset (L190)                                     |  MISSED |
-|     ExperienceMAC.result (L193)                                    |  MISSED |
-|     ExperienceMAC.after_eval_exp (L196)                            |  MISSED |
-|   MAC_metrics (L216)                                               | COVERED |
+|   MAC (L19)                                                        | COVERED |
+|     MAC.__init__ (L26)                                             | COVERED |
+|     MAC.update (L33)                                               | COVERED |
+|       MAC.update.foo (L45)                                         |  MISSED |
+|     MAC.result (L57)                                               | COVERED |
+|     MAC.reset (L67)                                                |  MISSED |
+|     MAC.update_compute_cost (L70)                                  |  MISSED |
+|     MAC.is_recognized_module (L80)                                 |  MISSED |
+|   MACPluginMetric (L85)                                            |  MISSED |
+|     MACPluginMetric.__init__ (L86)                                 |  MISSED |
+|     MACPluginMetric.update (L92)                                   |  MISSED |
+|   MinibatchMAC (L97)                                               | COVERED |
+|     MinibatchMAC.__init__ (L110)                                   | COVERED |
+|   EpochMAC (L121)                                                  | COVERED |
+|     EpochMAC.__init__ (L130)                                       | COVERED |
+|   ExperienceMAC (L141)                                             | COVERED |
+|     ExperienceMAC.__init__ (L148)                                  | COVERED |
+|   MAC_metrics (L159)                                               | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/mean.py (module)                                |  MISSED |
 |   Mean (L17)                                                       | COVERED |
@@ -676,43 +623,33 @@
 |     Sum.reset (L115)                                               | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/ram_usage.py (module)                           |  MISSED |
-|   MaxRAM (L27)                                                     | COVERED |
-|     MaxRAM.__init__ (L43)                                          | COVERED |
-|     MaxRAM.result (L87)                                            | COVERED |
-|     MaxRAM.start_thread (L97)                                      |  MISSED |
-|     MaxRAM.stop_thread (L103)                                      |  MISSED |
-|     MaxRAM.reset (L110)                                            | COVERED |
-|   MinibatchMaxRAM (L119)                                           | COVERED |
-|     MinibatchMaxRAM.__init__ (L125)                                | COVERED |
-|     MinibatchMaxRAM.before_training (L135)                         |  MISSED |
-|     MinibatchMaxRAM.before_training_iteration (L139)               |  MISSED |
-|     MinibatchMaxRAM.after_training_iteration (L142)                |  MISSED |
-|     MinibatchMaxRAM.after_training (L147)                          |  MISSED |
-|     MinibatchMaxRAM.reset (L150)                                   |  MISSED |
-|     MinibatchMaxRAM.result (L153)                                  |  MISSED |
-|   EpochMaxRAM (L168)                                               | COVERED |
-|     EpochMaxRAM.__init__ (L174)                                    | COVERED |
-|     EpochMaxRAM.before_training (L184)                             |  MISSED |
-|     EpochMaxRAM.before_training_epoch (L188)                       |  MISSED |
-|     EpochMaxRAM.after_training_epoch (L191)                        |  MISSED |
-|     EpochMaxRAM.after_training (L195)                              |  MISSED |
-|     EpochMaxRAM.reset (L198)                                       |  MISSED |
-|     EpochMaxRAM.result (L201)                                      |  MISSED |
-|   ExperienceMaxRAM (L216)                                          | COVERED |
-|     ExperienceMaxRAM.__init__ (L222)                               | COVERED |
-|     ExperienceMaxRAM.before_eval (L232)                            |  MISSED |
-|     ExperienceMaxRAM.before_eval_exp (L236)                        |  MISSED |
-|     ExperienceMaxRAM.after_eval_exp (L239)                         |  MISSED |
-|     ExperienceMaxRAM.after_eval (L243)                             |  MISSED |
-|     ExperienceMaxRAM.reset (L246)                                  |  MISSED |
-|     ExperienceMaxRAM.result (L249)                                 |  MISSED |
-|   StreamMaxRAM (L264)                                              | COVERED |
-|     StreamMaxRAM.__init__ (L270)                                   | COVERED |
-|     StreamMaxRAM.before_eval (L280)                                |  MISSED |
-|     StreamMaxRAM.after_eval (L284)                                 |  MISSED |
-|     StreamMaxRAM.reset (L290)                                      |  MISSED |
-|     StreamMaxRAM.result (L293)                                     |  MISSED |
-|   ram_usage_metrics (L313)                                         | COVERED |
+|   MaxRAM (L25)                                                     | COVERED |
+|     MaxRAM.__init__ (L41)                                          | COVERED |
+|     MaxRAM.result (L85)                                            | COVERED |
+|     MaxRAM.start_thread (L95)                                      |  MISSED |
+|     MaxRAM.stop_thread (L101)                                      |  MISSED |
+|     MaxRAM.reset (L108)                                            | COVERED |
+|     MaxRAM.update (L116)                                           |  MISSED |
+|   RAMPluginMetric (L120)                                           |  MISSED |
+|     RAMPluginMetric.__init__ (L121)                                |  MISSED |
+|     RAMPluginMetric.update (L127)                                  |  MISSED |
+|   MinibatchMaxRAM (L131)                                           | COVERED |
+|     MinibatchMaxRAM.__init__ (L137)                                | COVERED |
+|     MinibatchMaxRAM.before_training (L146)                         |  MISSED |
+|     MinibatchMaxRAM.after_training (L151)                          |  MISSED |
+|   EpochMaxRAM (L159)                                               | COVERED |
+|     EpochMaxRAM.__init__ (L165)                                    | COVERED |
+|     EpochMaxRAM.before_training (L174)                             |  MISSED |
+|     EpochMaxRAM.after_training (L179)                              |  MISSED |
+|   ExperienceMaxRAM (L187)                                          | COVERED |
+|     ExperienceMaxRAM.__init__ (L193)                               | COVERED |
+|     ExperienceMaxRAM.before_eval (L202)                            |  MISSED |
+|     ExperienceMaxRAM.after_eval (L207)                             |  MISSED |
+|   StreamMaxRAM (L215)                                              | COVERED |
+|     StreamMaxRAM.__init__ (L221)                                   | COVERED |
+|     StreamMaxRAM.before_eval (L230)                                |  MISSED |
+|     StreamMaxRAM.after_eval (L234)                                 |  MISSED |
+|   ram_usage_metrics (L244)                                         | COVERED |
 |--------------------------------------------------------------------|---------|
 | evaluation/metrics/timing.py (module)                              |  MISSED |
 |   ElapsedTime (L23)                                                | COVERED |
@@ -720,38 +657,27 @@
 |     ElapsedTime.update (L54)                                       | COVERED |
 |     ElapsedTime.result (L67)                                       | COVERED |
 |     ElapsedTime.reset (L79)                                        | COVERED |
-|   MinibatchTime (L89)                                              | COVERED |
-|     MinibatchTime.__init__ (L100)                                  | COVERED |
-|     MinibatchTime.result (L108)                                    |  MISSED |
-|     MinibatchTime.reset (L111)                                     |  MISSED |
-|     MinibatchTime.before_training_iteration (L114)                 |  MISSED |
-|     MinibatchTime.after_training_iteration (L118)                  |  MISSED |
-|   EpochTime (L136)                                                 | COVERED |
-|     EpochTime.__init__ (L144)                                      | COVERED |
-|     EpochTime.before_training_epoch (L153)                         |  MISSED |
-|     EpochTime.after_training_epoch (L157)                          |  MISSED |
-|     EpochTime.reset (L162)                                         |  MISSED |
-|     EpochTime.result (L165)                                        |  MISSED |
-|   RunningEpochTime (L180)                                          | COVERED |
-|     RunningEpochTime.__init__ (L190)                               | COVERED |
-|     RunningEpochTime.before_training_epoch (L199)                  |  MISSED |
-|     RunningEpochTime.before_training_iteration (L203)              |  MISSED |
-|     RunningEpochTime.after_training_iteration (L207)               |  MISSED |
-|     RunningEpochTime.reset (L215)                                  |  MISSED |
-|     RunningEpochTime.result (L219)                                 |  MISSED |
-|   ExperienceTime (L235)                                            | COVERED |
-|     ExperienceTime.__init__ (L244)                                 | COVERED |
-|     ExperienceTime.before_eval_exp (L252)                          |  MISSED |
-|     ExperienceTime.after_eval_exp (L256)                           |  MISSED |
-|     ExperienceTime.reset (L260)                                    |  MISSED |
-|     ExperienceTime.result (L263)                                   |  MISSED |
-|   StreamTime (L278)                                                | COVERED |
-|     StreamTime.__init__ (L287)                                     | COVERED |
-|     StreamTime.before_eval (L295)                                  |  MISSED |
-|     StreamTime.after_eval (L299)                                   |  MISSED |
-|     StreamTime.reset (L303)                                        |  MISSED |
-|     StreamTime.result (L306)                                       |  MISSED |
-|   timing_metrics (L321)                                            | COVERED |
+|   TimePluginMetric (L89)                                           |  MISSED |
+|     TimePluginMetric.__init__ (L90)                                |  MISSED |
+|     TimePluginMetric.update (L96)                                  |  MISSED |
+|   MinibatchTime (L100)                                             | COVERED |
+|     MinibatchTime.__init__ (L111)                                  | COVERED |
+|     MinibatchTime.before_training_iteration (L118)                 |  MISSED |
+|   EpochTime (L126)                                                 | COVERED |
+|     EpochTime.__init__ (L134)                                      | COVERED |
+|     EpochTime.before_training_epoch (L142)                         |  MISSED |
+|   RunningEpochTime (L150)                                          | COVERED |
+|     RunningEpochTime.__init__ (L160)                               | COVERED |
+|     RunningEpochTime.before_training_epoch (L169)                  |  MISSED |
+|     RunningEpochTime.after_training_iteration (L174)               |  MISSED |
+|     RunningEpochTime.result (L181)                                 |  MISSED |
+|   ExperienceTime (L188)                                            | COVERED |
+|     ExperienceTime.__init__ (L197)                                 | COVERED |
+|     ExperienceTime.before_eval_exp (L204)                          |  MISSED |
+|   StreamTime (L212)                                                | COVERED |
+|     StreamTime.__init__ (L221)                                     | COVERED |
+|     StreamTime.before_eval (L228)                                  |  MISSED |
+|   timing_metrics (L236)                                            | COVERED |
 |--------------------------------------------------------------------|---------|
 | logging/csv_logger.py (module)                                     |  MISSED |
 |   CSVLogger (L24)                                                  | COVERED |
@@ -1248,20 +1174,20 @@
 | benchmarks/utils/datasets_from_filelists.py             |    10 |    1 |     9 |    90% |
 | benchmarks/utils/torchvision_wrapper.py                 |     3 |    2 |     1 |    33% |
 | benchmarks/utils/utils.py                               |     3 |    1 |     2 |    67% |
-| evaluation/metric_definitions.py                        |    35 |   29 |     6 |    17% |
+| evaluation/metric_definitions.py                        |    54 |   47 |     7 |    13% |
 | evaluation/metric_results.py                            |     6 |    2 |     4 |    67% |
 | evaluation/metric_utils.py                              |     7 |    2 |     5 |    71% |
-| evaluation/metrics/accuracy.py                          |    37 |   21 |    16 |    43% |
+| evaluation/metrics/accuracy.py                          |    20 |    3 |    17 |    85% |
 | evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
-| evaluation/metrics/cpu_usage.py                         |    38 |   22 |    16 |    42% |
-| evaluation/metrics/disk_usage.py                        |    32 |   18 |    14 |    44% |
+| evaluation/metrics/cpu_usage.py                         |    28 |   12 |    16 |    57% |
+| evaluation/metrics/disk_usage.py                        |    19 |    5 |    14 |    74% |
 | evaluation/metrics/forgetting.py                        |    34 |   17 |    17 |    50% |
-| evaluation/metrics/gpu_usage.py                         |    38 |   25 |    13 |    34% |
-| evaluation/metrics/loss.py                              |    37 |   21 |    16 |    43% |
-| evaluation/metrics/mac.py                               |    24 |   13 |    11 |    46% |
+| evaluation/metrics/gpu_usage.py                         |    28 |   15 |    13 |    46% |
+| evaluation/metrics/loss.py                              |    20 |    4 |    16 |    80% |
+| evaluation/metrics/mac.py                               |    19 |    8 |    11 |    58% |
 | evaluation/metrics/mean.py                              |    11 |    1 |    10 |    91% |
-| evaluation/metrics/ram_usage.py                         |    38 |   25 |    13 |    34% |
-| evaluation/metrics/timing.py                            |    38 |   22 |    16 |    42% |
+| evaluation/metrics/ram_usage.py                         |    28 |   15 |    13 |    46% |
+| evaluation/metrics/timing.py                            |    27 |   11 |    16 |    59% |
 | logging/csv_logger.py                                   |    13 |   10 |     3 |    23% |
 | logging/interactive_logging.py                          |     9 |    8 |     1 |    11% |
 | logging/strategy_logger.py                              |    28 |   26 |     2 |     7% |
@@ -1298,5 +1224,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1107 |  591 |   516 |  46.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 46.6%) -----------------
+| TOTAL                                                   |  1033 |  515 |   518 |  50.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 50.1%) -----------------
