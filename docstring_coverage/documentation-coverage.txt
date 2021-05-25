@@ -741,9 +741,9 @@
 |     StrategyLogger.after_eval_iteration (L166)                     |  MISSED |
 |--------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                             | COVERED |
-|   TensorboardLogger (L26)                                          | COVERED |
-|     TensorboardLogger.__init__ (L43)                               | COVERED |
-|     TensorboardLogger.log_metric (L59)                             |  MISSED |
+|   TensorboardLogger (L27)                                          | COVERED |
+|     TensorboardLogger.__init__ (L47)                               | COVERED |
+|     TensorboardLogger.log_metric (L66)                             |  MISSED |
 |--------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                   |  MISSED |
 |   TextLogger (L24)                                                 | COVERED |
