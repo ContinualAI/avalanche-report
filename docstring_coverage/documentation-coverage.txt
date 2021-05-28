@@ -119,9 +119,9 @@
 |     CORe50.__init__ (L36)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50_data.py (module)                                  | COVERED |
-|   CORE50_DATA (L73)                                                                 | COVERED |
-|     CORE50_DATA.__init__ (L78)                                                      | COVERED |
-|     CORE50_DATA.download_core50 (L112)                                              | COVERED |
+|   CORE50_DATA (L74)                                                                 | COVERED |
+|     CORE50_DATA.__init__ (L79)                                                      | COVERED |
+|     CORE50_DATA.download_core50 (L123)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/cub200/cub200.py (module)                                       | COVERED |
 |   CUB200 (L31)                                                                      | COVERED |
