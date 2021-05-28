@@ -142,7 +142,7 @@ tornado                   6.1              py37h5e8e339_1    conda-forge
 tqdm                      4.61.0             pyhd8ed1ab_0    conda-forge
 typing_extensions         3.7.4.3            pyha847dfd_0  
 urllib3                   1.26.5             pyhd8ed1ab_0    conda-forge
-wandb                     0.10.30            pyhd8ed1ab_0    conda-forge
+wandb                     0.10.31            pyhd8ed1ab_0    conda-forge
 watchdog                  0.10.4           py37h89c1867_0    conda-forge
 werkzeug                  2.0.1              pyhd8ed1ab_0    conda-forge
 wheel                     0.36.2             pyhd3deb0d_0    conda-forge
