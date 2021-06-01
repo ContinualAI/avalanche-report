@@ -13,9 +13,9 @@ blinker                   1.4                        py_1    conda-forge
 brotlipy                  0.7.0           py37h5e8e339_1001    conda-forge
 bzip2                     1.0.8                h7b6447c_0  
 c-ares                    1.17.1               h7f98852_1    conda-forge
-ca-certificates           2020.12.5            ha878542_0    conda-forge
+ca-certificates           2021.5.30            ha878542_0    conda-forge
 cachetools                4.2.2              pyhd8ed1ab_0    conda-forge
-certifi                   2020.12.5        py37h89c1867_1    conda-forge
+certifi                   2021.5.30        py37h89c1867_0    conda-forge
 cffi                      1.14.5           py37hc58025e_0    conda-forge
 chardet                   3.0.4           py37he5f6b98_1008    conda-forge
 click                     8.0.1            py37h89c1867_0    conda-forge
@@ -48,7 +48,7 @@ gst-plugins-base          1.14.0               hbbd80ab_1
 gstreamer                 1.14.0               h28cd5cc_2  
 icu                       58.2              hf484d3e_1000    conda-forge
 idna                      2.10               pyh9f0ad1d_0    conda-forge
-importlib-metadata        4.3.0            py37h89c1867_0    conda-forge
+importlib-metadata        4.4.0            py37h89c1867_0    conda-forge
 intel-openmp              2021.2.0           h06a4308_610  
 joblib                    1.0.1              pyhd8ed1ab_0    conda-forge
 jpeg                      9b                   h024ee3a_2  
@@ -70,10 +70,11 @@ libpng                    1.6.37               hbc83047_0
 libprotobuf               3.17.1               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_19    conda-forge
 libtasn1                  4.16.0               h27cfd23_0  
-libtiff                   4.1.0                h2733197_1  
+libtiff                   4.2.0                h85742a9_0  
 libunistring              0.9.10               h27cfd23_0  
 libuuid                   2.32.1            h7f98852_1000    conda-forge
 libuv                     1.40.0               h7b6447c_0  
+libwebp-base              1.2.0                h27cfd23_0  
 libxcb                    1.13              h7f98852_1003    conda-forge
 libxml2                   2.9.9                h13577e0_2    conda-forge
 lz4-c                     1.9.3                h2531618_0  
@@ -91,7 +92,7 @@ ninja                     1.10.2               hff7bd54_1
 numpy                     1.20.2           py37h2d18471_0  
 numpy-base                1.20.2           py37hfae3a4d_0  
 nvidia-ml                 7.352.0                    py_0    conda-forge
-oauthlib                  3.0.1                      py_0    conda-forge
+oauthlib                  3.1.0              pyhd8ed1ab_0    conda-forge
 olefile                   0.46                     py37_0  
 openh264                  2.1.0                hd408876_0  
 openssl                   1.1.1k               h7f98852_0    conda-forge
@@ -105,6 +106,7 @@ psutil                    5.8.0            py37h5e8e339_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
 pyasn1-modules            0.2.7                      py_0    conda-forge
+pycocotools               2.0.2            py37h5e8e339_1    conda-forge
 pycparser                 2.20               pyh9f0ad1d_2    conda-forge
 pyjwt                     2.1.0              pyhd8ed1ab_0    conda-forge
 pyopenssl                 20.0.1             pyhd8ed1ab_0    conda-forge
