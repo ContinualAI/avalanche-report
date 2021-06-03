@@ -67,7 +67,7 @@ libiconv                  1.15                 h63c8f33_5
 libidn2                   2.3.1                h27cfd23_0  
 liblapack                 3.9.0                     9_mkl    conda-forge
 libpng                    1.6.37               hbc83047_0  
-libprotobuf               3.17.1               h780b84a_0    conda-forge
+libprotobuf               3.17.2               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_19    conda-forge
 libtasn1                  4.16.0               h27cfd23_0  
 libtiff                   4.2.0                h85742a9_0  
@@ -92,7 +92,7 @@ ninja                     1.10.2               hff7bd54_1
 numpy                     1.20.2           py38h2d18471_0  
 numpy-base                1.20.2           py38hfae3a4d_0  
 nvidia-ml                 7.352.0                    py_0    conda-forge
-oauthlib                  3.1.0              pyhd8ed1ab_0    conda-forge
+oauthlib                  3.1.1              pyhd8ed1ab_0    conda-forge
 olefile                   0.46                       py_0  
 openh264                  2.1.0                hd408876_0  
 openssl                   1.1.1k               h7f98852_0    conda-forge
@@ -101,7 +101,7 @@ pcre                      8.44                 he1b5a44_0    conda-forge
 pillow                    8.2.0            py38he98fc37_0  
 pip                       21.1.2             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py38h578d9bd_3    conda-forge
-protobuf                  3.17.1           py38h709712a_0    conda-forge
+protobuf                  3.17.2           py38h709712a_0    conda-forge
 psutil                    5.8.0            py38h497a2fe_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
