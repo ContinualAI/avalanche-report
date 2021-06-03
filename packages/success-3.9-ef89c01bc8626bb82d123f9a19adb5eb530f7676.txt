@@ -36,8 +36,8 @@ gdown                     3.13.0                   pypi_0    pypi
 gettext                   0.19.8.1          h0b5b191_1005    conda-forge
 gitdb                     4.0.7              pyhd8ed1ab_0    conda-forge
 gitpython                 3.1.17             pyhd8ed1ab_0    conda-forge
-glib                      2.68.2               h9c3ff4c_1    conda-forge
-glib-tools                2.68.2               h9c3ff4c_1    conda-forge
+glib                      2.68.2               h9c3ff4c_2    conda-forge
+glib-tools                2.68.2               h9c3ff4c_2    conda-forge
 gmp                       6.2.1                h58526e2_0    conda-forge
 gnutls                    3.6.13               h85f3911_1    conda-forge
 google-auth               1.30.0             pyh44b312d_0    conda-forge
@@ -64,12 +64,12 @@ libffi                    3.3                  h58526e2_2    conda-forge
 libgcc-ng                 9.3.0               h2828fa1_19    conda-forge
 libgfortran-ng            9.3.0               hff62375_19    conda-forge
 libgfortran5              9.3.0               hff62375_19    conda-forge
-libglib                   2.68.2               h3e27bee_1    conda-forge
+libglib                   2.68.2               h3e27bee_2    conda-forge
 libgomp                   9.3.0               h2828fa1_19    conda-forge
 libiconv                  1.16                 h516909a_0    conda-forge
 liblapack                 3.9.0                     9_mkl    conda-forge
 libpng                    1.6.37               h21135ba_2    conda-forge
-libprotobuf               3.17.1               h780b84a_0    conda-forge
+libprotobuf               3.17.2               h780b84a_0    conda-forge
 libstdcxx-ng              9.3.0               h6de172a_19    conda-forge
 libtiff                   4.2.0                h85742a9_0  
 libuuid                   2.32.1            h7f98852_1000    conda-forge
@@ -92,7 +92,7 @@ ninja                     1.10.2               h4bd325d_0    conda-forge
 numpy                     1.20.2           py39h2d18471_0  
 numpy-base                1.20.2           py39hfae3a4d_0  
 nvidia-ml                 7.352.0                    py_0    conda-forge
-oauthlib                  3.1.0              pyhd8ed1ab_0    conda-forge
+oauthlib                  3.1.1              pyhd8ed1ab_0    conda-forge
 olefile                   0.46               pyh9f0ad1d_1    conda-forge
 openh264                  2.1.1                h780b84a_0    conda-forge
 openssl                   1.1.1k               h7f98852_0    conda-forge
@@ -101,7 +101,7 @@ pcre                      8.44                 he1b5a44_0    conda-forge
 pillow                    8.2.0            py39he98fc37_0  
 pip                       21.1.2             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py39hf3d152e_3    conda-forge
-protobuf                  3.17.1           py39he80948d_0    conda-forge
+protobuf                  3.17.2           py39he80948d_0    conda-forge
 psutil                    5.8.0            py39h3811e60_1    conda-forge
 pthread-stubs             0.4               h36c2ea0_1001    conda-forge
 pyasn1                    0.4.8                      py_0    conda-forge
