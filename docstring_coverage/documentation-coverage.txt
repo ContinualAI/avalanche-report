@@ -799,11 +799,31 @@
 |     MultiHeadClassifier.__init__ (L172)                                             | COVERED |
 |     MultiHeadClassifier.adaptation (L209)                                           | COVERED |
 |     MultiHeadClassifier.forward_single_task (L228)                                  | COVERED |
+|   TrainEvalModel (L239)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L247)                                                  | COVERED |
+|     TrainEvalModel.forward (L262)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L266)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L269)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
 |   update_optimizer (L35)                                                            | COVERED |
 |   add_new_params_to_optimizer (L65)                                                 | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| models/icarl_resnet.py (module)                                                     |  MISSED |
+|   IdentityShortcut (L12)                                                            |  MISSED |
+|     IdentityShortcut.__init__ (L13)                                                 |  MISSED |
+|     IdentityShortcut.forward (L17)                                                  |  MISSED |
+|   conv3x3 (L21)                                                                     |  MISSED |
+|   batch_norm (L27)                                                                  |  MISSED |
+|   ResidualBlock (L31)                                                               |  MISSED |
+|     ResidualBlock.__init__ (L33)                                                    |  MISSED |
+|     ResidualBlock.forward (L77)                                                     |  MISSED |
+|   IcarlNet (L84)                                                                    |  MISSED |
+|     IcarlNet.__init__ (L85)                                                         |  MISSED |
+|     IcarlNet.forward (L137)                                                         |  MISSED |
+|   make_icarl_net (L143)                                                             |  MISSED |
+|   initialize_icarl_net (L147)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/mlp_tiny_imagenet.py (module)                                                | COVERED |
 |   SimpleMLP_TinyImageNet (L17)                                                      |  MISSED |
@@ -816,6 +836,11 @@
 |   MobilenetV1 (L51)                                                                 |  MISSED |
 |     MobilenetV1.__init__ (L52)                                                      |  MISSED |
 |     MobilenetV1.forward (L76)                                                       |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| models/ncm_classifier.py (module)                                                   |  MISSED |
+|   NCMClassifier (L5)                                                                | COVERED |
+|     NCMClassifier.__init__ (L12)                                                    | COVERED |
+|     NCMClassifier.forward (L20)                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/pytorchcv_wrapper.py (module)                                                | COVERED |
 |   vgg (L32)                                                                         | COVERED |
@@ -855,6 +880,12 @@
 |     FeatureExtractorBackbone.get_activation (L35)                                   |  MISSED |
 |       FeatureExtractorBackbone.get_activation.hook (L36)                            |  MISSED |
 |     FeatureExtractorBackbone.add_hooks (L41)                                        | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/losses.py (module)                                                         |  MISSED |
+|   ICaRLLossPlugin (L9)                                                              | COVERED |
+|     ICaRLLossPlugin.__init__ (L20)                                                  |  MISSED |
+|     ICaRLLossPlugin.before_forward (L28)                                            |  MISSED |
+|     ICaRLLossPlugin.after_training_exp (L47)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                          | COVERED |
 |   load_all_dataset (L30)                                                            | COVERED |
@@ -1129,6 +1160,10 @@
 |     StreamingLDA.save_model (L201)                                                  | COVERED |
 |     StreamingLDA.load_model (L218)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/strategies/icarl.py (module)                                               |  MISSED |
+|   ICaRL (L20)                                                                       |  MISSED |
+|     ICaRL.__init__ (L21)                                                            | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/strategies/joint_training.py (module)                                      |  MISSED |
 |   JointTraining (L27)                                                               |  MISSED |
 |     JointTraining.__init__ (L28)                                                    | COVERED |
@@ -1230,15 +1265,18 @@
 | logging/text_logging.py                                 |    13 |   11 |     2 |    15% |
 | logging/wandb_logger.py                                 |     7 |    4 |     3 |    43% |
 | models/batch_renorm.py                                  |     4 |    3 |     1 |    25% |
-| models/dynamic_modules.py                               |    18 |    4 |    14 |    78% |
+| models/dynamic_modules.py                               |    23 |    7 |    16 |    70% |
 | models/dynamic_optimizers.py                            |     4 |    0 |     4 |   100% |
+| models/icarl_resnet.py                                  |    14 |   14 |     0 |     0% |
 | models/mlp_tiny_imagenet.py                             |     4 |    3 |     1 |    25% |
 | models/mobilenetv1.py                                   |     6 |    5 |     1 |    17% |
+| models/ncm_classifier.py                                |     4 |    2 |     2 |    50% |
 | models/pytorchcv_wrapper.py                             |     6 |    0 |     6 |   100% |
 | models/simple_cnn.py                                    |     7 |    6 |     1 |    14% |
 | models/simple_mlp.py                                    |     7 |    6 |     1 |    14% |
 | models/slda_resnet.py                                   |     5 |    2 |     3 |    60% |
 | models/utils.py                                         |     9 |    7 |     2 |    22% |
+| training/losses.py                                      |     5 |    4 |     1 |    20% |
 | training/utils.py                                       |    16 |   11 |     5 |    31% |
 | training/plugins/agem.py                                |     8 |    1 |     7 |    88% |
 | training/plugins/cope.py                                |    15 |    3 |    12 |    80% |
@@ -1256,8 +1294,9 @@
 | training/strategies/base_strategy.py                    |    46 |   30 |    16 |    35% |
 | training/strategies/cumulative.py                       |     4 |    2 |     2 |    50% |
 | training/strategies/deep_slda.py                        |    11 |    3 |     8 |    73% |
+| training/strategies/icarl.py                            |     3 |    2 |     1 |    33% |
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1058 |  521 |   537 |  50.8% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 50.8%) -----------------
+| TOTAL                                                   |  1089 |  546 |   543 |  49.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.9%) -----------------
