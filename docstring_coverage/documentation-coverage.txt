@@ -33,52 +33,55 @@
 |     StrategyCallbacks.after_eval_iteration (L172)                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar10.py (module)                                             |  MISSED |
-|   SplitCIFAR10 (L35)                                                                | COVERED |
+|   SplitCIFAR10 (L36)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar100.py (module)                                            |  MISSED |
-|   SplitCIFAR100 (L38)                                                               | COVERED |
-|   SplitCIFAR110 (L130)                                                              | COVERED |
+|   SplitCIFAR100 (L40)                                                               | COVERED |
+|   SplitCIFAR110 (L142)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccub200.py (module)                                              |  MISSED |
-|   SplitCUB200 (L33)                                                                 | COVERED |
+|   SplitCUB200 (L38)                                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cfashion_mnist.py (module)                                       | COVERED |
-|   SplitFMNIST (L33)                                                                 | COVERED |
+|   SplitFMNIST (L35)                                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cimagenet.py (module)                                            |  MISSED |
-|   SplitImageNet (L36)                                                               | COVERED |
+|   SplitImageNet (L39)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cinaturalist.py (module)                                         |  MISSED |
-|   SplitInaturalist (L36)                                                            | COVERED |
+|   SplitInaturalist (L40)                                                            | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/classic/classic_benchmarks_utils.py (module)                             |  MISSED |
+|   check_vision_benchmark (L6)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                                               |  MISSED |
-|   PixelsPermutation (L37)                                                           | COVERED |
-|     PixelsPermutation.__init__ (L45)                                                |  MISSED |
-|   SplitMNIST (L66)                                                                  | COVERED |
-|   PermutedMNIST (L151)                                                              | COVERED |
-|   RotatedMNIST (L245)                                                               | COVERED |
+|   PixelsPermutation (L38)                                                           | COVERED |
+|     PixelsPermutation.__init__ (L46)                                                |  MISSED |
+|   SplitMNIST (L67)                                                                  | COVERED |
+|   PermutedMNIST (L161)                                                              | COVERED |
+|   RotatedMNIST (L259)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/comniglot.py (module)                                            |  MISSED |
-|   PixelsPermutation (L34)                                                           | COVERED |
-|     PixelsPermutation.__init__ (L42)                                                |  MISSED |
-|   SplitOmniglot (L63)                                                               | COVERED |
-|   PermutedOmniglot (L150)                                                           | COVERED |
-|   RotatedOmniglot (L243)                                                            | COVERED |
+|   PixelsPermutation (L36)                                                           | COVERED |
+|     PixelsPermutation.__init__ (L44)                                                |  MISSED |
+|   SplitOmniglot (L65)                                                               | COVERED |
+|   PermutedOmniglot (L161)                                                           | COVERED |
+|   RotatedOmniglot (L258)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                                               | COVERED |
-|   CORe50 (L44)                                                                      | COVERED |
+|   CORe50 (L62)                                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ctiny_imagenet.py (module)                                       |  MISSED |
-|   SplitTinyImageNet (L31)                                                           | COVERED |
+|   SplitTinyImageNet (L36)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/openloris.py (module)                                            | COVERED |
-|   OpenLORIS (L39)                                                                   | COVERED |
+|   OpenLORIS (L44)                                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/stream51.py (module)                                             |  MISSED |
-|   CLStream51 (L59)                                                                  | COVERED |
+|   CLStream51 (L60)                                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/dataset_utils.py (module)                                       |  MISSED |
-|   get_default_dataset_location (L15)                                                | COVERED |
+|   default_dataset_location (L15)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/downloadable_dataset.py (module)                                |  MISSED |
 |   DownloadableDataset (L27)                                                         | COVERED |
@@ -128,7 +131,7 @@
 | benchmarks/datasets/core50/core50.py (module)                                       | COVERED |
 |   CORe50Dataset (L31)                                                               | COVERED |
 |     CORe50Dataset.__init__ (L34)                                                    | COVERED |
-|   CORe50 (L239)                                                                     |  MISSED |
+|   CORe50 (L243)                                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50_data.py (module)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
@@ -155,25 +158,25 @@
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py (module)                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris.py (module)                                 | COVERED |
-|   OpenLORIS (L24)                                                                   | COVERED |
-|     OpenLORIS.__init__ (L27)                                                        |  MISSED |
+|   OpenLORIS (L26)                                                                   | COVERED |
+|     OpenLORIS.__init__ (L29)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris_data.py (module)                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/stream51/stream51.py (module)                                   | COVERED |
-|   Stream51 (L30)                                                                    | COVERED |
-|     Stream51.__init__ (L33)                                                         |  MISSED |
-|     Stream51.make_dataset (L155)                                                    | COVERED |
+|   Stream51 (L32)                                                                    | COVERED |
+|     Stream51.__init__ (L35)                                                         | COVERED |
+|     Stream51.make_dataset (L173)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/stream51/stream51_data.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py (module)                         | COVERED |
 |   TinyImagenet (L25)                                                                | COVERED |
 |     TinyImagenet.__init__ (L32)                                                     | COVERED |
-|     TinyImagenet.labels2dict (L72)                                                  | COVERED |
-|     TinyImagenet.load_data (L96)                                                    | COVERED |
-|     TinyImagenet.get_train_images_paths (L122)                                      | COVERED |
-|     TinyImagenet.get_test_images_paths (L136)                                       | COVERED |
+|     TinyImagenet.labels2dict (L77)                                                  | COVERED |
+|     TinyImagenet.load_data (L101)                                                   | COVERED |
+|     TinyImagenet.get_train_images_paths (L127)                                      | COVERED |
+|     TinyImagenet.get_test_images_paths (L141)                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/generators/benchmark_generators.py (module)                              | COVERED |
 |   nc_benchmark (L37)                                                                | COVERED |
@@ -243,10 +246,10 @@
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)                            |  MISSED |
 |   NCScenario (L22)                                                                  | COVERED |
 |     NCScenario.__init__ (L32)                                                       | COVERED |
-|     NCScenario.get_reproducibility_data (L429)                                      |  MISSED |
-|     NCScenario.classes_in_exp_range (L443)                                          | COVERED |
-|   NCExperience (L469)                                                               | COVERED |
-|     NCExperience.__init__ (L477)                                                    | COVERED |
+|     NCScenario.get_reproducibility_data (L430)                                      |  MISSED |
+|     NCScenario.classes_in_exp_range (L444)                                          | COVERED |
+|   NCExperience (L470)                                                               | COVERED |
+|     NCExperience.__init__ (L478)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)                               |  MISSED |
 |   make_nc_transformation_subset (L147)                                              | COVERED |
@@ -1203,6 +1206,7 @@
 | benchmarks/classic/cfashion_mnist.py                    |     2 |    0 |     2 |   100% |
 | benchmarks/classic/cimagenet.py                         |     2 |    1 |     1 |    50% |
 | benchmarks/classic/cinaturalist.py                      |     2 |    1 |     1 |    50% |
+| benchmarks/classic/classic_benchmarks_utils.py          |     2 |    2 |     0 |     0% |
 | benchmarks/classic/cmnist.py                            |     6 |    2 |     4 |    67% |
 | benchmarks/classic/comniglot.py                         |     6 |    2 |     4 |    67% |
 | benchmarks/classic/core50.py                            |     2 |    0 |     2 |   100% |
@@ -1221,9 +1225,9 @@
 | benchmarks/datasets/inaturalist/inaturalist_data.py     |     4 |    0 |     4 |   100% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py      |     5 |    3 |     2 |    40% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py |     1 |    1 |     0 |     0% |
-| benchmarks/datasets/openloris/openloris.py              |     3 |    1 |     2 |    67% |
+| benchmarks/datasets/openloris/openloris.py              |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/openloris/openloris_data.py         |     1 |    0 |     1 |   100% |
-| benchmarks/datasets/stream51/stream51.py                |     4 |    1 |     3 |    75% |
+| benchmarks/datasets/stream51/stream51.py                |     4 |    0 |     4 |   100% |
 | benchmarks/datasets/stream51/stream51_data.py           |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py      |     7 |    0 |     7 |   100% |
 | benchmarks/generators/benchmark_generators.py           |     7 |    0 |     7 |   100% |
@@ -1298,5 +1302,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    21 |    9 |    12 |    57% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1089 |  546 |   543 |  49.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 49.9%) -----------------
+| TOTAL                                                   |  1091 |  546 |   545 |  50.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 50.0%) -----------------
