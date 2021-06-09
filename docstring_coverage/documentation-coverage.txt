@@ -155,8 +155,8 @@
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py (module)                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris.py (module)                                 | COVERED |
-|   OpenLORIS (L25)                                                                   | COVERED |
-|     OpenLORIS.__init__ (L28)                                                        |  MISSED |
+|   OpenLORIS (L24)                                                                   | COVERED |
+|     OpenLORIS.__init__ (L27)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris_data.py (module)                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
