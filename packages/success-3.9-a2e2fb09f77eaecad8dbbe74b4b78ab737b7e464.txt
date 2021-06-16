@@ -3,8 +3,8 @@
 # Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                 conda_forge    conda-forge
 _openmp_mutex             4.5                       1_gnu    conda-forge
-absl-py                   0.12.0             pyhd8ed1ab_0    conda-forge
-aiohttp                   3.7.4            py39h3811e60_0    conda-forge
+absl-py                   0.13.0             pyhd8ed1ab_0    conda-forge
+aiohttp                   3.7.4.post0      py39h3811e60_0    conda-forge
 argh                      0.26.2          pyh9f0ad1d_1002    conda-forge
 async-timeout             3.0.1                   py_1000    conda-forge
 attrs                     21.2.0             pyhd8ed1ab_0    conda-forge
@@ -82,22 +82,18 @@ markdown                  3.3.4              pyhd8ed1ab_0    conda-forge
 matplotlib                3.4.2            py39hf3d152e_0    conda-forge
 matplotlib-base           3.4.2            py39h2fa2bec_0    conda-forge
 mkl                       2021.2.0           h06a4308_296  
-mkl-service               2.4.0            py39h3811e60_0    conda-forge
-mkl_fft                   1.3.0            py39h42c9631_2  
-mkl_random                1.2.2            py39hde0f152_0    conda-forge
 multidict                 5.1.0            py39h3811e60_1    conda-forge
 ncurses                   6.2                  h58526e2_4    conda-forge
 nettle                    3.6                  he412f7d_0    conda-forge
 ninja                     1.10.2               h4bd325d_0    conda-forge
-numpy                     1.20.2           py39h2d18471_0  
-numpy-base                1.20.2           py39hfae3a4d_0  
+numpy                     1.20.3           py39hdbf815f_1    conda-forge
 nvidia-ml                 7.352.0                    py_0    conda-forge
 oauthlib                  3.1.1              pyhd8ed1ab_0    conda-forge
 olefile                   0.46               pyh9f0ad1d_1    conda-forge
 openh264                  2.1.1                h780b84a_0    conda-forge
 openssl                   1.1.1k               h7f98852_0    conda-forge
 pathtools                 0.1.2                      py_1    conda-forge
-pcre                      8.44                 he1b5a44_0    conda-forge
+pcre                      8.45                 h9c3ff4c_0    conda-forge
 pillow                    8.2.0            py39he98fc37_0  
 pip                       21.1.2             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py39hf3d152e_3    conda-forge
@@ -116,7 +112,7 @@ pysocks                   1.7.1            py39hf3d152e_3    conda-forge
 python                    3.9.4           hffdb5ce_0_cpython    conda-forge
 python-dateutil           2.8.1                      py_0    conda-forge
 python_abi                3.9                      1_cp39    conda-forge
-pytorch                   1.8.1               py3.9_cpu_0  [cpuonly]  pytorch
+pytorch                   1.9.0               py3.9_cpu_0  [cpuonly]  pytorch
 pytorchcv                 0.0.65                   pypi_0    pypi
 pyyaml                    5.4.1            py39h3811e60_0    conda-forge
 qt                        5.9.7                h5867ecd_1  
@@ -140,14 +136,14 @@ tensorboard-data-server   0.6.0            py39h3da14fd_0    conda-forge
 tensorboard-plugin-wit    1.8.0              pyh44b312d_0    conda-forge
 threadpoolctl             2.1.0              pyh5ca1d4c_0    conda-forge
 tk                        8.6.10               h21135ba_1    conda-forge
-torchvision               0.9.1                  py39_cpu  [cpuonly]  pytorch
+torchvision               0.10.0                 py39_cpu  [cpuonly]  pytorch
 tornado                   6.1              py39h3811e60_1    conda-forge
 tqdm                      4.61.1             pyhd8ed1ab_0    conda-forge
 typing-extensions         3.10.0.0             hd8ed1ab_0    conda-forge
 typing_extensions         3.10.0.0           pyha770c72_0    conda-forge
 tzdata                    2021a                he74cb21_0    conda-forge
 urllib3                   1.26.5             pyhd8ed1ab_0    conda-forge
-wandb                     0.10.31            pyhd8ed1ab_0    conda-forge
+wandb                     0.10.32            pyhd8ed1ab_0    conda-forge
 watchdog                  0.10.4           py39hf3d152e_0    conda-forge
 werkzeug                  2.0.1              pyhd8ed1ab_0    conda-forge
 wheel                     0.36.2             pyhd3deb0d_0    conda-forge
