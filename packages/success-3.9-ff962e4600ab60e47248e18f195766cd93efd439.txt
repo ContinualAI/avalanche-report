@@ -109,7 +109,7 @@ pyopenssl                 20.0.1             pyhd8ed1ab_0    conda-forge
 pyparsing                 2.4.7              pyh9f0ad1d_0    conda-forge
 pyqt                      5.9.2            py39h2531618_6  
 pysocks                   1.7.1            py39hf3d152e_3    conda-forge
-python                    3.9.4           hffdb5ce_0_cpython    conda-forge
+python                    3.9.5           h49503c6_0_cpython    conda-forge
 python-dateutil           2.8.1                      py_0    conda-forge
 python_abi                3.9                      1_cp39    conda-forge
 pytorch                   1.9.0               py3.9_cpu_0  [cpuonly]  pytorch
@@ -130,7 +130,7 @@ shortuuid                 1.0.1            py39hf3d152e_4    conda-forge
 sip                       4.19.13          py39h2531618_0  
 six                       1.16.0             pyh6c4a22f_0    conda-forge
 smmap                     3.0.5              pyh44b312d_0    conda-forge
-sqlite                    3.35.5               h74cdb3f_0    conda-forge
+sqlite                    3.36.0               h9cd32fc_0    conda-forge
 subprocess32              3.5.4                      py_1    conda-forge
 tensorboard               2.5.0              pyhd8ed1ab_0    conda-forge
 tensorboard-data-server   0.6.0            py39h3da14fd_0    conda-forge
