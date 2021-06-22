@@ -135,7 +135,7 @@ shortuuid                 1.0.1            py36h5fab9bb_4    conda-forge
 sip                       4.19.8          py36hf484d3e_1000    conda-forge
 six                       1.16.0             pyhd3eb1b0_0  
 smmap                     3.0.5              pyh44b312d_0    conda-forge
-sqlite                    3.35.5               h74cdb3f_0    conda-forge
+sqlite                    3.36.0               h9cd32fc_0    conda-forge
 subprocess32              3.5.4                      py_1    conda-forge
 tensorboard               2.5.0              pyhd8ed1ab_0    conda-forge
 tensorboard-data-server   0.6.0            py36h0a59100_0    conda-forge
