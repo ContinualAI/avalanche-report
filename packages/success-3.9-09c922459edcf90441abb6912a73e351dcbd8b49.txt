@@ -45,7 +45,7 @@ google-auth-oauthlib      0.4.1                      py_2    conda-forge
 gputil                    1.4.0              pyh9f0ad1d_0    conda-forge
 gql                       0.1.0                      py_0    conda-forge
 graphql-core              3.1.5              pyhd8ed1ab_0    conda-forge
-grpcio                    1.38.0           py39hff7568b_0    conda-forge
+grpcio                    1.38.1           py39hff7568b_0    conda-forge
 gst-plugins-base          1.14.0               hbbd80ab_1  
 gstreamer                 1.14.0               h28cd5cc_2  
 icu                       58.2              hf484d3e_1000    conda-forge
@@ -86,7 +86,7 @@ multidict                 5.1.0            py39h3811e60_1    conda-forge
 ncurses                   6.2                  h58526e2_4    conda-forge
 nettle                    3.6                  he412f7d_0    conda-forge
 ninja                     1.10.2               h4bd325d_0    conda-forge
-numpy                     1.20.3           py39hdbf815f_1    conda-forge
+numpy                     1.21.0           py39hdbf815f_0    conda-forge
 nvidia-ml                 7.352.0                    py_0    conda-forge
 oauthlib                  3.1.1              pyhd8ed1ab_0    conda-forge
 olefile                   0.46               pyh9f0ad1d_1    conda-forge
