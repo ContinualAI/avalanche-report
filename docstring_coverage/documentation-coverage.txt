@@ -400,20 +400,20 @@
 |     GenericPluginMetric.reset (L225)                                                |  MISSED |
 |     GenericPluginMetric.result (L228)                                               |  MISSED |
 |     GenericPluginMetric.update (L231)                                               |  MISSED |
-|     GenericPluginMetric.before_training (L245)                                      |  MISSED |
-|     GenericPluginMetric.before_training_exp (L250)                                  |  MISSED |
-|     GenericPluginMetric.before_training_epoch (L255)                                |  MISSED |
-|     GenericPluginMetric.before_training_iteration (L260)                            |  MISSED |
-|     GenericPluginMetric.after_training_iteration (L265)                             |  MISSED |
-|     GenericPluginMetric.after_training_epoch (L272)                                 |  MISSED |
-|     GenericPluginMetric.after_training_exp (L277)                                   |  MISSED |
-|     GenericPluginMetric.after_training (L282)                                       |  MISSED |
-|     GenericPluginMetric.before_eval (L287)                                          |  MISSED |
-|     GenericPluginMetric.before_eval_exp (L292)                                      |  MISSED |
-|     GenericPluginMetric.after_eval_iteration (L297)                                 |  MISSED |
-|     GenericPluginMetric.after_eval_exp (L304)                                       |  MISSED |
-|     GenericPluginMetric.after_eval (L309)                                           |  MISSED |
-|     GenericPluginMetric.before_eval_iteration (L314)                                |  MISSED |
+|     GenericPluginMetric.before_training (L254)                                      |  MISSED |
+|     GenericPluginMetric.before_training_exp (L259)                                  |  MISSED |
+|     GenericPluginMetric.before_training_epoch (L264)                                |  MISSED |
+|     GenericPluginMetric.before_training_iteration (L269)                            |  MISSED |
+|     GenericPluginMetric.after_training_iteration (L274)                             |  MISSED |
+|     GenericPluginMetric.after_training_epoch (L281)                                 |  MISSED |
+|     GenericPluginMetric.after_training_exp (L286)                                   |  MISSED |
+|     GenericPluginMetric.after_training (L291)                                       |  MISSED |
+|     GenericPluginMetric.before_eval (L296)                                          |  MISSED |
+|     GenericPluginMetric.before_eval_exp (L301)                                      |  MISSED |
+|     GenericPluginMetric.after_eval_exp (L306)                                       |  MISSED |
+|     GenericPluginMetric.after_eval (L311)                                           |  MISSED |
+|     GenericPluginMetric.before_eval_iteration (L316)                                |  MISSED |
+|     GenericPluginMetric.after_eval_iteration (L321)                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metric_results.py (module)                                               |  MISSED |
 |   TensorImage (L25)                                                                 |  MISSED |
@@ -428,32 +428,33 @@
 |   repartition_pie_chart_image_creator (L132)                                        | COVERED |
 |   repartition_bar_chart_image_creator (L159)                                        | COVERED |
 |   default_history_repartition_image_creator (L194)                                  | COVERED |
-|   get_task_label (L224)                                                             | COVERED |
-|   stream_type (L239)                                                                | COVERED |
-|   phase_and_task (L250)                                                             | COVERED |
-|   bytes2human (L270)                                                                |  MISSED |
-|   get_metric_name (L287)                                                            | COVERED |
+|   stream_type (L224)                                                                | COVERED |
+|   phase_and_task (L235)                                                             | COVERED |
+|   bytes2human (L261)                                                                |  MISSED |
+|   get_metric_name (L278)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/accuracy.py (module)                                             |  MISSED |
-|   Accuracy (L20)                                                                    | COVERED |
-|     Accuracy.__init__ (L38)                                                         | COVERED |
-|     Accuracy.update (L53)                                                           | COVERED |
-|     Accuracy.result (L84)                                                           | COVERED |
-|     Accuracy.reset (L94)                                                            | COVERED |
-|   AccuracyPluginMetric (L103)                                                       | COVERED |
-|     AccuracyPluginMetric.__init__ (L107)                                            |  MISSED |
-|     AccuracyPluginMetric.update (L113)                                              |  MISSED |
-|   MinibatchAccuracy (L117)                                                          | COVERED |
-|     MinibatchAccuracy.__init__ (L129)                                               | COVERED |
-|   EpochAccuracy (L140)                                                              | COVERED |
-|     EpochAccuracy.__init__ (L150)                                                   | COVERED |
-|   RunningEpochAccuracy (L162)                                                       | COVERED |
-|     RunningEpochAccuracy.__init__ (L173)                                            | COVERED |
-|   ExperienceAccuracy (L185)                                                         | COVERED |
-|     ExperienceAccuracy.__init__ (L192)                                              | COVERED |
-|   StreamAccuracy (L203)                                                             | COVERED |
-|     StreamAccuracy.__init__ (L210)                                                  | COVERED |
-|   accuracy_metrics (L221)                                                           | COVERED |
+|   Accuracy (L22)                                                                    | COVERED |
+|     Accuracy.__init__ (L39)                                                         | COVERED |
+|     Accuracy.update (L55)                                                           | COVERED |
+|     Accuracy.result (L106)                                                          | COVERED |
+|     Accuracy.reset (L124)                                                           | COVERED |
+|   AccuracyPluginMetric (L139)                                                       | COVERED |
+|     AccuracyPluginMetric.__init__ (L143)                                            |  MISSED |
+|     AccuracyPluginMetric.reset (L149)                                               |  MISSED |
+|     AccuracyPluginMetric.result (L155)                                              |  MISSED |
+|     AccuracyPluginMetric.update (L161)                                              |  MISSED |
+|   MinibatchAccuracy (L172)                                                          | COVERED |
+|     MinibatchAccuracy.__init__ (L184)                                               | COVERED |
+|   EpochAccuracy (L195)                                                              | COVERED |
+|     EpochAccuracy.__init__ (L205)                                                   | COVERED |
+|   RunningEpochAccuracy (L217)                                                       | COVERED |
+|     RunningEpochAccuracy.__init__ (L228)                                            | COVERED |
+|   ExperienceAccuracy (L240)                                                         | COVERED |
+|     ExperienceAccuracy.__init__ (L247)                                              | COVERED |
+|   StreamAccuracy (L258)                                                             | COVERED |
+|     StreamAccuracy.__init__ (L265)                                                  | COVERED |
+|   accuracy_metrics (L276)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                                     |  MISSED |
 |   ConfusionMatrix (L34)                                                             | COVERED |
@@ -538,39 +539,63 @@
 |     Forgetting.result (L66)                                                         | COVERED |
 |     Forgetting.reset_last (L98)                                                     |  MISSED |
 |     Forgetting.reset (L101)                                                         |  MISSED |
-|   ExperienceForgetting (L106)                                                       | COVERED |
-|     ExperienceForgetting.__init__ (L119)                                            | COVERED |
-|     ExperienceForgetting.reset (L146)                                               | COVERED |
-|     ExperienceForgetting.reset_last_accuracy (L157)                                 | COVERED |
-|     ExperienceForgetting.update (L168)                                              | COVERED |
-|     ExperienceForgetting.result (L180)                                              | COVERED |
-|     ExperienceForgetting.before_training_exp (L188)                                 |  MISSED |
-|     ExperienceForgetting.before_eval (L191)                                         |  MISSED |
-|     ExperienceForgetting.before_eval_exp (L194)                                     |  MISSED |
-|     ExperienceForgetting.after_eval_iteration (L197)                                |  MISSED |
-|     ExperienceForgetting.after_eval_exp (L203)                                      |  MISSED |
-|   StreamForgetting (L238)                                                           | COVERED |
-|     StreamForgetting.__init__ (L251)                                                | COVERED |
-|     StreamForgetting.reset (L283)                                                   | COVERED |
-|     StreamForgetting.reset_last_accuracy (L295)                                     | COVERED |
-|     StreamForgetting.exp_update (L306)                                              | COVERED |
-|     StreamForgetting.exp_result (L318)                                              | COVERED |
-|     StreamForgetting.result (L327)                                                  | COVERED |
-|     StreamForgetting.before_training_exp (L335)                                     |  MISSED |
-|     StreamForgetting.before_eval (L338)                                             |  MISSED |
-|     StreamForgetting.before_eval_exp (L342)                                         |  MISSED |
-|     StreamForgetting.after_eval_iteration (L345)                                    |  MISSED |
-|     StreamForgetting.after_eval_exp (L351)                                          |  MISSED |
-|     StreamForgetting.after_eval (L372)                                              |  MISSED |
-|   forgetting_metrics (L394)                                                         | COVERED |
-|   forgetting_to_bwt (L420)                                                          | COVERED |
-|   BWT (L437)                                                                        | COVERED |
-|     BWT.result (L450)                                                               | COVERED |
-|   ExperienceBWT (L474)                                                              | COVERED |
-|     ExperienceBWT.result (L486)                                                     | COVERED |
-|   StreamBWT (L499)                                                                  | COVERED |
-|     StreamBWT.exp_result (L512)                                                     | COVERED |
-|   bwt_metrics (L526)                                                                | COVERED |
+|   GenericExperienceForgetting (L106)                                                | COVERED |
+|     GenericExperienceForgetting.__init__ (L127)                                     | COVERED |
+|     GenericExperienceForgetting.reset (L154)                                        | COVERED |
+|     GenericExperienceForgetting.reset_last (L165)                                   | COVERED |
+|     GenericExperienceForgetting.update (L176)                                       | COVERED |
+|     GenericExperienceForgetting.result (L188)                                       | COVERED |
+|     GenericExperienceForgetting.before_training_exp (L196)                          |  MISSED |
+|     GenericExperienceForgetting.before_eval (L199)                                  |  MISSED |
+|     GenericExperienceForgetting.before_eval_exp (L202)                              |  MISSED |
+|     GenericExperienceForgetting.after_eval_iteration (L205)                         |  MISSED |
+|     GenericExperienceForgetting.after_eval_exp (L210)                               |  MISSED |
+|     GenericExperienceForgetting.metric_update (L241)                                |  MISSED |
+|     GenericExperienceForgetting.metric_result (L244)                                |  MISSED |
+|   ExperienceForgetting (L251)                                                       | COVERED |
+|     ExperienceForgetting.__init__ (L264)                                            | COVERED |
+|     ExperienceForgetting.metric_update (L276)                                       |  MISSED |
+|     ExperienceForgetting.metric_result (L280)                                       |  MISSED |
+|   GenericStreamForgetting (L287)                                                    | COVERED |
+|     GenericStreamForgetting.__init__ (L308)                                         | COVERED |
+|     GenericStreamForgetting.reset (L320)                                            | COVERED |
+|     GenericStreamForgetting.exp_update (L332)                                       | COVERED |
+|     GenericStreamForgetting.exp_result (L344)                                       | COVERED |
+|     GenericStreamForgetting.result (L353)                                           | COVERED |
+|     GenericStreamForgetting.before_eval (L361)                                      |  MISSED |
+|     GenericStreamForgetting.after_eval_exp (L365)                                   |  MISSED |
+|     GenericStreamForgetting.after_eval (L386)                                       |  MISSED |
+|     GenericStreamForgetting.metric_update (L404)                                    |  MISSED |
+|     GenericStreamForgetting.metric_result (L407)                                    |  MISSED |
+|   StreamForgetting (L414)                                                           | COVERED |
+|     StreamForgetting.__init__ (L427)                                                | COVERED |
+|     StreamForgetting.metric_update (L439)                                           |  MISSED |
+|     StreamForgetting.metric_result (L443)                                           |  MISSED |
+|   GenericTaskForgetting (L450)                                                      | COVERED |
+|     GenericTaskForgetting.__init__ (L471)                                           |  MISSED |
+|     GenericTaskForgetting.reset (L477)                                              |  MISSED |
+|     GenericTaskForgetting.result (L480)                                             |  MISSED |
+|     GenericTaskForgetting.update (L483)                                             |  MISSED |
+|     GenericTaskForgetting.before_training (L486)                                    |  MISSED |
+|     GenericTaskForgetting.after_training_iteration (L489)                           |  MISSED |
+|     GenericTaskForgetting.before_eval (L499)                                        |  MISSED |
+|     GenericTaskForgetting.after_eval_iteration (L505)                               |  MISSED |
+|     GenericTaskForgetting.after_eval (L509)                                         |  MISSED |
+|     GenericTaskForgetting.metric_update (L526)                                      |  MISSED |
+|   TaskForgetting (L533)                                                             | COVERED |
+|     TaskForgetting.__init__ (L541)                                                  |  MISSED |
+|     TaskForgetting.metric_update (L546)                                             |  MISSED |
+|   forgetting_metrics (L565)                                                         | COVERED |
+|   forgetting_to_bwt (L596)                                                          | COVERED |
+|   BWT (L613)                                                                        | COVERED |
+|     BWT.result (L626)                                                               | COVERED |
+|   ExperienceBWT (L650)                                                              | COVERED |
+|     ExperienceBWT.result (L662)                                                     | COVERED |
+|   StreamBWT (L675)                                                                  | COVERED |
+|     StreamBWT.exp_result (L688)                                                     | COVERED |
+|   TaskBWT (L702)                                                                    | COVERED |
+|     TaskBWT.result (L714)                                                           | COVERED |
+|   bwt_metrics (L727)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/gpu_usage.py (module)                                            |  MISSED |
 |   MaxGPU (L25)                                                                      | COVERED |
@@ -629,25 +654,27 @@
 |   labels_repartition_metrics (L162)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/loss.py (module)                                                 |  MISSED |
-|   Loss (L21)                                                                        | COVERED |
-|     Loss.__init__ (L38)                                                             | COVERED |
-|     Loss.update (L49)                                                               | COVERED |
-|     Loss.result (L60)                                                               | COVERED |
-|     Loss.reset (L70)                                                                | COVERED |
-|   LossPluginMetric (L79)                                                            |  MISSED |
-|     LossPluginMetric.__init__ (L80)                                                 |  MISSED |
-|     LossPluginMetric.update (L85)                                                   |  MISSED |
-|   MinibatchLoss (L89)                                                               | COVERED |
-|     MinibatchLoss.__init__ (L102)                                                   | COVERED |
-|   EpochLoss (L113)                                                                  | COVERED |
-|     EpochLoss.__init__ (L123)                                                       | COVERED |
-|   RunningEpochLoss (L135)                                                           | COVERED |
-|     RunningEpochLoss.__init__ (L146)                                                | COVERED |
-|   ExperienceLoss (L158)                                                             | COVERED |
-|     ExperienceLoss.__init__ (L165)                                                  | COVERED |
-|   StreamLoss (L176)                                                                 | COVERED |
-|     StreamLoss.__init__ (L183)                                                      | COVERED |
-|   loss_metrics (L194)                                                               | COVERED |
+|   Loss (L23)                                                                        | COVERED |
+|     Loss.__init__ (L40)                                                             | COVERED |
+|     Loss.update (L55)                                                               | COVERED |
+|     Loss.result (L67)                                                               | COVERED |
+|     Loss.reset (L82)                                                                | COVERED |
+|   LossPluginMetric (L97)                                                            |  MISSED |
+|     LossPluginMetric.__init__ (L98)                                                 |  MISSED |
+|     LossPluginMetric.reset (L103)                                                   |  MISSED |
+|     LossPluginMetric.result (L109)                                                  |  MISSED |
+|     LossPluginMetric.update (L115)                                                  |  MISSED |
+|   MinibatchLoss (L128)                                                              | COVERED |
+|     MinibatchLoss.__init__ (L141)                                                   | COVERED |
+|   EpochLoss (L152)                                                                  | COVERED |
+|     EpochLoss.__init__ (L162)                                                       | COVERED |
+|   RunningEpochLoss (L174)                                                           | COVERED |
+|     RunningEpochLoss.__init__ (L185)                                                | COVERED |
+|   ExperienceLoss (L197)                                                             | COVERED |
+|     ExperienceLoss.__init__ (L204)                                                  | COVERED |
+|   StreamLoss (L215)                                                                 | COVERED |
+|     StreamLoss.__init__ (L222)                                                      | COVERED |
+|   loss_metrics (L233)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/mac.py (module)                                                  |  MISSED |
 |   MAC (L19)                                                                         | COVERED |
@@ -805,10 +832,10 @@
 |     TextLogger.before_eval_exp (L90)                                                |  MISSED |
 |     TextLogger.after_training_epoch (L95)                                           |  MISSED |
 |     TextLogger.after_eval_exp (L102)                                                |  MISSED |
-|     TextLogger.before_training (L113)                                               |  MISSED |
-|     TextLogger.before_eval (L118)                                                   |  MISSED |
-|     TextLogger.after_training (L123)                                                |  MISSED |
-|     TextLogger.after_eval (L128)                                                    |  MISSED |
+|     TextLogger.before_training (L119)                                               |  MISSED |
+|     TextLogger.before_eval (L124)                                                   |  MISSED |
+|     TextLogger.after_training (L129)                                                |  MISSED |
+|     TextLogger.after_eval (L134)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L25)                                                                 | COVERED |
@@ -1317,16 +1344,16 @@
 | benchmarks/utils/utils.py                               |     3 |    1 |     2 |    67% |
 | evaluation/metric_definitions.py                        |    54 |   47 |     7 |    13% |
 | evaluation/metric_results.py                            |     7 |    3 |     4 |    57% |
-| evaluation/metric_utils.py                              |    10 |    2 |     8 |    80% |
-| evaluation/metrics/accuracy.py                          |    20 |    3 |    17 |    85% |
+| evaluation/metric_utils.py                              |     9 |    2 |     7 |    78% |
+| evaluation/metrics/accuracy.py                          |    22 |    5 |    17 |    77% |
 | evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                         |    28 |   12 |    16 |    57% |
 | evaluation/metrics/disk_usage.py                        |    19 |    5 |    14 |    74% |
-| evaluation/metrics/forgetting_bwt.py                    |    42 |   17 |    25 |    60% |
+| evaluation/metrics/forgetting_bwt.py                    |    66 |   34 |    32 |    48% |
 | evaluation/metrics/gpu_usage.py                         |    28 |   15 |    13 |    46% |
 | evaluation/metrics/images_samples.py                    |    13 |   11 |     2 |    15% |
 | evaluation/metrics/labels_repartition.py                |    12 |    9 |     3 |    25% |
-| evaluation/metrics/loss.py                              |    20 |    4 |    16 |    80% |
+| evaluation/metrics/loss.py                              |    22 |    6 |    16 |    73% |
 | evaluation/metrics/mac.py                               |    19 |    8 |    11 |    58% |
 | evaluation/metrics/mean.py                              |    11 |    1 |    10 |    91% |
 | evaluation/metrics/ram_usage.py                         |    28 |   15 |    13 |    46% |
@@ -1373,5 +1400,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1152 |  582 |   570 |  49.5% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 49.5%) -----------------
+| TOTAL                                                   |  1179 |  603 |   576 |  48.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.9%) -----------------
