@@ -99,7 +99,7 @@ openssl                   1.1.1k               h7f98852_0    conda-forge
 pathtools                 0.1.2                      py_1    conda-forge
 pcre                      8.45                 h9c3ff4c_0    conda-forge
 pillow                    8.2.0            py37he98fc37_0  
-pip                       21.1.2             pyhd8ed1ab_0    conda-forge
+pip                       21.1.3             pyhd8ed1ab_0    conda-forge
 promise                   2.3              py37h89c1867_3    conda-forge
 protobuf                  3.17.2           py37hcd2ae1e_0    conda-forge
 psutil                    5.8.0            py37h5e8e339_1    conda-forge
@@ -115,7 +115,7 @@ pyqt                      5.9.2            py37hcca6a23_4    conda-forge
 pysocks                   1.7.1            py37h89c1867_3    conda-forge
 python                    3.7.10          hffdb5ce_100_cpython    conda-forge
 python-dateutil           2.8.1                      py_0    conda-forge
-python_abi                3.7                     1_cp37m    conda-forge
+python_abi                3.7                     2_cp37m    conda-forge
 pytorch                   1.8.1               py3.7_cpu_0  [cpuonly]  pytorch
 pytorchcv                 0.0.65                   pypi_0    pypi
 pyu2f                     0.1.5              pyhd8ed1ab_0    conda-forge
@@ -145,7 +145,7 @@ torchvision               0.9.1                  py37_cpu  [cpuonly]  pytorch
 tornado                   6.1              py37h5e8e339_1    conda-forge
 tqdm                      4.61.1             pyhd8ed1ab_0    conda-forge
 typing_extensions         3.7.4.3            pyha847dfd_0  
-urllib3                   1.26.5             pyhd8ed1ab_0    conda-forge
+urllib3                   1.26.6             pyhd8ed1ab_0    conda-forge
 wandb                     0.10.32            pyhd8ed1ab_0    conda-forge
 watchdog                  0.10.4           py37h89c1867_0    conda-forge
 werkzeug                  2.0.1              pyhd8ed1ab_0    conda-forge
