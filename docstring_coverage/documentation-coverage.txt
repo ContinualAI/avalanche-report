@@ -75,7 +75,7 @@
 |   SplitTinyImageNet (L36)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/openloris.py (module)                                            | COVERED |
-|   OpenLORIS (L44)                                                                   | COVERED |
+|   OpenLORIS (L45)                                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/stream51.py (module)                                             |  MISSED |
 |   CLStream51 (L60)                                                                  | COVERED |
@@ -229,10 +229,12 @@
 |     GenericExperience.task_labels (L804)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_definitions.py (module)                                |  MISSED |
-|   Experience (L30)                                                                  | COVERED |
-|     Experience.task_labels (L75)                                                    | COVERED |
-|     Experience.task_label (L87)                                                     | COVERED |
-|   ScenarioStream (L99)                                                              | COVERED |
+|   Experience (L32)                                                                  | COVERED |
+|     Experience.task_labels (L77)                                                    | COVERED |
+|     Experience.task_label (L89)                                                     | COVERED |
+|     Experience.scenario (L101)                                                      | COVERED |
+|   ScenarioStream (L109)                                                             | COVERED |
+|     ScenarioStream.scenario (L131)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_scenario_creation.py (module)                          | COVERED |
 |   create_multi_dataset_generic_scenario (L30)                                       | COVERED |
@@ -249,7 +251,7 @@
 |     LazyDatasetSequence.load_all_experiences (L167)                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/scenario_utils.py (module)                                     | COVERED |
-|   train_eval_transforms (L7)                                                        | COVERED |
+|   train_eval_transforms (L18)                                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)                            |  MISSED |
 |   NCScenario (L22)                                                                  | COVERED |
@@ -1327,7 +1329,7 @@
 | benchmarks/generators/scenario_generators.py            |     8 |    0 |     8 |   100% |
 | benchmarks/scenarios/generic_benchmark_creation.py      |     7 |    0 |     7 |   100% |
 | benchmarks/scenarios/generic_cl_scenario.py             |    24 |   11 |    13 |    54% |
-| benchmarks/scenarios/generic_definitions.py             |     5 |    1 |     4 |    80% |
+| benchmarks/scenarios/generic_definitions.py             |     7 |    1 |     6 |    86% |
 | benchmarks/scenarios/generic_scenario_creation.py       |     6 |    0 |     6 |   100% |
 | benchmarks/scenarios/lazy_dataset_sequence.py           |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/scenario_utils.py                  |     2 |    0 |     2 |   100% |
@@ -1400,5 +1402,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1179 |  603 |   576 |  48.9% |
+| TOTAL                                                   |  1181 |  603 |   578 |  48.9% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.9%) -----------------
