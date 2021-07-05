@@ -704,11 +704,41 @@
 |     Mean.update (L36)                                                               | COVERED |
 |     Mean.result (L52)                                                               | COVERED |
 |     Mean.reset (L64)                                                                | COVERED |
-|   Sum (L74)                                                                         | COVERED |
-|     Sum.__init__ (L85)                                                              | COVERED |
-|     Sum.update (L96)                                                                | COVERED |
-|     Sum.result (L105)                                                               | COVERED |
-|     Sum.reset (L115)                                                                | COVERED |
+|   Sum (L85)                                                                         | COVERED |
+|     Sum.__init__ (L96)                                                              | COVERED |
+|     Sum.update (L107)                                                               | COVERED |
+|     Sum.result (L116)                                                               | COVERED |
+|     Sum.reset (L126)                                                                | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/mean_scores.py (module)                                          | COVERED |
+|   MeanScores (L42)                                                                  | COVERED |
+|     MeanScores.__init__ (L47)                                                       |  MISSED |
+|     MeanScores.reset (L52)                                                          |  MISSED |
+|     MeanScores.update (L56)                                                         |  MISSED |
+|     MeanScores.result (L69)                                                         |  MISSED |
+|   MeanNewOldScores (L73)                                                            | COVERED |
+|     MeanNewOldScores.__init__ (L78)                                                 |  MISSED |
+|     MeanNewOldScores.reset (L82)                                                    |  MISSED |
+|     MeanNewOldScores.update_new_classes (L86)                                       |  MISSED |
+|     MeanNewOldScores.old_classes (L90)                                              |  MISSED |
+|     MeanNewOldScores.result (L93)                                                   |  MISSED |
+|   default_mean_scores_image_creator (L112)                                          | COVERED |
+|   MeanScoresPluginMetricABC (L150)                                                  | COVERED |
+|     MeanScoresPluginMetricABC.__init__ (L159)                                       |  MISSED |
+|     MeanScoresPluginMetricABC.reset (L172)                                          |  MISSED |
+|     MeanScoresPluginMetricABC.update_new_classes (L175)                             |  MISSED |
+|     MeanScoresPluginMetricABC.update (L180)                                         |  MISSED |
+|     MeanScoresPluginMetricABC.result (L185)                                         |  MISSED |
+|   MeanScoresTrainPluginMetric (L236)                                                | COVERED |
+|     MeanScoresTrainPluginMetric.before_training_epoch (L242)                        |  MISSED |
+|     MeanScoresTrainPluginMetric.after_training_iteration (L246)                     |  MISSED |
+|     MeanScoresTrainPluginMetric.after_training_epoch (L251)                         |  MISSED |
+|   MeanScoresEvalPluginMetric (L256)                                                 | COVERED |
+|     MeanScoresEvalPluginMetric.before_training (L262)                               |  MISSED |
+|     MeanScoresEvalPluginMetric.before_training_exp (L265)                           |  MISSED |
+|     MeanScoresEvalPluginMetric.after_eval_iteration (L268)                          |  MISSED |
+|     MeanScoresEvalPluginMetric.after_eval (L272)                                    |  MISSED |
+|   mean_scores_metrics (L276)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/ram_usage.py (module)                                            |  MISSED |
 |   MaxRAM (L25)                                                                      | COVERED |
@@ -1358,6 +1388,7 @@
 | evaluation/metrics/loss.py                              |    22 |    6 |    16 |    73% |
 | evaluation/metrics/mac.py                               |    19 |    8 |    11 |    58% |
 | evaluation/metrics/mean.py                              |    11 |    1 |    10 |    91% |
+| evaluation/metrics/mean_scores.py                       |    29 |   21 |     8 |    28% |
 | evaluation/metrics/ram_usage.py                         |    28 |   15 |    13 |    46% |
 | evaluation/metrics/timing.py                            |    27 |   11 |    16 |    59% |
 | logging/csv_logger.py                                   |    13 |   10 |     3 |    23% |
@@ -1402,5 +1433,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1181 |  603 |   578 |  48.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.9%) -----------------
+| TOTAL                                                   |  1210 |  624 |   586 |  48.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
