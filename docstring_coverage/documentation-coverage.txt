@@ -414,8 +414,8 @@
 |     GenericPluginMetric.before_eval_exp (L301)                                      |  MISSED |
 |     GenericPluginMetric.after_eval_exp (L306)                                       |  MISSED |
 |     GenericPluginMetric.after_eval (L311)                                           |  MISSED |
-|     GenericPluginMetric.before_eval_iteration (L316)                                |  MISSED |
-|     GenericPluginMetric.after_eval_iteration (L321)                                 |  MISSED |
+|     GenericPluginMetric.after_eval_iteration (L316)                                 |  MISSED |
+|     GenericPluginMetric.before_eval_iteration (L323)                                |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metric_results.py (module)                                               |  MISSED |
 |   TensorImage (L25)                                                                 |  MISSED |
@@ -1068,35 +1068,37 @@
 | training/plugins/evaluation.py (module)                                             |  MISSED |
 |   EvaluationPlugin (L16)                                                            | COVERED |
 |     EvaluationPlugin.__init__ (L30)                                                 | COVERED |
-|     EvaluationPlugin.get_last_metrics (L100)                                        | COVERED |
-|     EvaluationPlugin.get_all_metrics (L110)                                         | COVERED |
-|     EvaluationPlugin.reset_last_metrics (L128)                                      | COVERED |
-|     EvaluationPlugin.before_training (L135)                                         |  MISSED |
-|     EvaluationPlugin.before_training_exp (L138)                                     |  MISSED |
-|     EvaluationPlugin.before_train_dataset_adaptation (L141)                         |  MISSED |
-|     EvaluationPlugin.after_train_dataset_adaptation (L145)                          |  MISSED |
-|     EvaluationPlugin.before_training_epoch (L149)                                   |  MISSED |
-|     EvaluationPlugin.before_training_iteration (L152)                               |  MISSED |
-|     EvaluationPlugin.before_forward (L155)                                          |  MISSED |
-|     EvaluationPlugin.after_forward (L158)                                           |  MISSED |
-|     EvaluationPlugin.before_backward (L161)                                         |  MISSED |
-|     EvaluationPlugin.after_backward (L164)                                          |  MISSED |
-|     EvaluationPlugin.after_training_iteration (L167)                                |  MISSED |
-|     EvaluationPlugin.before_update (L170)                                           |  MISSED |
-|     EvaluationPlugin.after_update (L173)                                            |  MISSED |
-|     EvaluationPlugin.after_training_epoch (L176)                                    |  MISSED |
-|     EvaluationPlugin.after_training_exp (L179)                                      |  MISSED |
-|     EvaluationPlugin.after_training (L182)                                          |  MISSED |
-|     EvaluationPlugin.before_eval (L185)                                             |  MISSED |
-|     EvaluationPlugin.before_eval_dataset_adaptation (L188)                          |  MISSED |
-|     EvaluationPlugin.after_eval_dataset_adaptation (L192)                           |  MISSED |
-|     EvaluationPlugin.before_eval_exp (L195)                                         |  MISSED |
-|     EvaluationPlugin.after_eval_exp (L198)                                          |  MISSED |
-|     EvaluationPlugin.after_eval (L201)                                              |  MISSED |
-|     EvaluationPlugin.before_eval_iteration (L204)                                   |  MISSED |
-|     EvaluationPlugin.before_eval_forward (L207)                                     |  MISSED |
-|     EvaluationPlugin.after_eval_forward (L210)                                      |  MISSED |
-|     EvaluationPlugin.after_eval_iteration (L213)                                    |  MISSED |
+|     EvaluationPlugin.active (L105)                                                  |  MISSED |
+|     EvaluationPlugin.active (L109)                                                  |  MISSED |
+|     EvaluationPlugin.get_last_metrics (L140)                                        | COVERED |
+|     EvaluationPlugin.get_all_metrics (L150)                                         | COVERED |
+|     EvaluationPlugin.reset_last_metrics (L168)                                      | COVERED |
+|     EvaluationPlugin.before_training (L175)                                         |  MISSED |
+|     EvaluationPlugin.before_training_exp (L178)                                     |  MISSED |
+|     EvaluationPlugin.before_train_dataset_adaptation (L181)                         |  MISSED |
+|     EvaluationPlugin.after_train_dataset_adaptation (L185)                          |  MISSED |
+|     EvaluationPlugin.before_training_epoch (L189)                                   |  MISSED |
+|     EvaluationPlugin.before_training_iteration (L192)                               |  MISSED |
+|     EvaluationPlugin.before_forward (L195)                                          |  MISSED |
+|     EvaluationPlugin.after_forward (L198)                                           |  MISSED |
+|     EvaluationPlugin.before_backward (L201)                                         |  MISSED |
+|     EvaluationPlugin.after_backward (L204)                                          |  MISSED |
+|     EvaluationPlugin.after_training_iteration (L207)                                |  MISSED |
+|     EvaluationPlugin.before_update (L210)                                           |  MISSED |
+|     EvaluationPlugin.after_update (L213)                                            |  MISSED |
+|     EvaluationPlugin.after_training_epoch (L216)                                    |  MISSED |
+|     EvaluationPlugin.after_training_exp (L219)                                      |  MISSED |
+|     EvaluationPlugin.after_training (L222)                                          |  MISSED |
+|     EvaluationPlugin.before_eval (L225)                                             |  MISSED |
+|     EvaluationPlugin.before_eval_dataset_adaptation (L246)                          |  MISSED |
+|     EvaluationPlugin.after_eval_dataset_adaptation (L250)                           |  MISSED |
+|     EvaluationPlugin.before_eval_exp (L253)                                         |  MISSED |
+|     EvaluationPlugin.after_eval_exp (L256)                                          |  MISSED |
+|     EvaluationPlugin.after_eval (L259)                                              |  MISSED |
+|     EvaluationPlugin.before_eval_iteration (L262)                                   |  MISSED |
+|     EvaluationPlugin.before_eval_forward (L265)                                     |  MISSED |
+|     EvaluationPlugin.after_eval_forward (L268)                                      |  MISSED |
+|     EvaluationPlugin.after_eval_iteration (L271)                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
 |   EWCPlugin (L13)                                                                   | COVERED |
@@ -1224,50 +1226,50 @@
 | training/strategies/base_strategy.py (module)                                       |  MISSED |
 |   BaseStrategy (L38)                                                                |  MISSED |
 |     BaseStrategy.__init__ (L41)                                                     | COVERED |
-|     BaseStrategy.is_eval (L186)                                                     | COVERED |
-|     BaseStrategy.mb_x (L191)                                                        | COVERED |
-|     BaseStrategy.mb_y (L196)                                                        | COVERED |
-|     BaseStrategy.mb_task_id (L201)                                                  |  MISSED |
-|     BaseStrategy.criterion (L205)                                                   | COVERED |
-|     BaseStrategy.train (L209)                                                       | COVERED |
-|     BaseStrategy.train_exp (L250)                                                   | COVERED |
-|     BaseStrategy.stop_training (L321)                                               | COVERED |
-|     BaseStrategy.train_dataset_adaptation (L325)                                    | COVERED |
-|     BaseStrategy.eval (L331)                                                        | COVERED |
-|     BaseStrategy.before_training_exp (L371)                                         | COVERED |
-|     BaseStrategy.make_train_dataloader (L379)                                       | COVERED |
-|     BaseStrategy.make_eval_dataloader (L396)                                        | COVERED |
-|     BaseStrategy.after_train_dataset_adaptation (L414)                              | COVERED |
-|     BaseStrategy.before_training_epoch (L424)                                       | COVERED |
-|     BaseStrategy.training_epoch (L433)                                              | COVERED |
-|     BaseStrategy.before_training (L478)                                             |  MISSED |
-|     BaseStrategy.after_training (L482)                                              |  MISSED |
-|     BaseStrategy.before_training_iteration (L486)                                   |  MISSED |
-|     BaseStrategy.before_forward (L490)                                              |  MISSED |
-|     BaseStrategy.after_forward (L494)                                               |  MISSED |
-|     BaseStrategy.before_backward (L498)                                             |  MISSED |
-|     BaseStrategy.after_backward (L502)                                              |  MISSED |
-|     BaseStrategy.after_training_iteration (L506)                                    |  MISSED |
-|     BaseStrategy.before_update (L510)                                               |  MISSED |
-|     BaseStrategy.after_update (L514)                                                |  MISSED |
-|     BaseStrategy.after_training_epoch (L518)                                        |  MISSED |
-|     BaseStrategy.after_training_exp (L522)                                          |  MISSED |
-|     BaseStrategy.before_eval (L527)                                                 |  MISSED |
-|     BaseStrategy.before_eval_exp (L531)                                             |  MISSED |
-|     BaseStrategy.eval_dataset_adaptation (L535)                                     | COVERED |
-|     BaseStrategy.before_eval_dataset_adaptation (L540)                              |  MISSED |
-|     BaseStrategy.after_eval_dataset_adaptation (L544)                               |  MISSED |
-|     BaseStrategy.eval_epoch (L548)                                                  |  MISSED |
-|     BaseStrategy.after_eval_exp (L561)                                              |  MISSED |
-|     BaseStrategy.after_eval (L565)                                                  |  MISSED |
-|     BaseStrategy.before_eval_iteration (L569)                                       |  MISSED |
-|     BaseStrategy.before_eval_forward (L573)                                         |  MISSED |
-|     BaseStrategy.after_eval_forward (L577)                                          |  MISSED |
-|     BaseStrategy.after_eval_iteration (L581)                                        |  MISSED |
-|     BaseStrategy.before_train_dataset_adaptation (L585)                             |  MISSED |
-|     BaseStrategy.model_adaptation (L589)                                            |  MISSED |
-|     BaseStrategy.forward (L595)                                                     |  MISSED |
-|     BaseStrategy.make_optimizer (L598)                                              |  MISSED |
+|     BaseStrategy.is_eval (L189)                                                     | COVERED |
+|     BaseStrategy.mb_x (L194)                                                        | COVERED |
+|     BaseStrategy.mb_y (L199)                                                        | COVERED |
+|     BaseStrategy.mb_task_id (L204)                                                  |  MISSED |
+|     BaseStrategy.criterion (L208)                                                   | COVERED |
+|     BaseStrategy.train (L212)                                                       | COVERED |
+|     BaseStrategy.train_exp (L253)                                                   | COVERED |
+|     BaseStrategy.stop_training (L324)                                               | COVERED |
+|     BaseStrategy.train_dataset_adaptation (L328)                                    | COVERED |
+|     BaseStrategy.eval (L334)                                                        | COVERED |
+|     BaseStrategy.before_training_exp (L375)                                         | COVERED |
+|     BaseStrategy.make_train_dataloader (L383)                                       | COVERED |
+|     BaseStrategy.make_eval_dataloader (L400)                                        | COVERED |
+|     BaseStrategy.after_train_dataset_adaptation (L418)                              | COVERED |
+|     BaseStrategy.before_training_epoch (L428)                                       | COVERED |
+|     BaseStrategy.training_epoch (L437)                                              | COVERED |
+|     BaseStrategy.before_training (L482)                                             |  MISSED |
+|     BaseStrategy.after_training (L486)                                              |  MISSED |
+|     BaseStrategy.before_training_iteration (L490)                                   |  MISSED |
+|     BaseStrategy.before_forward (L494)                                              |  MISSED |
+|     BaseStrategy.after_forward (L498)                                               |  MISSED |
+|     BaseStrategy.before_backward (L502)                                             |  MISSED |
+|     BaseStrategy.after_backward (L506)                                              |  MISSED |
+|     BaseStrategy.after_training_iteration (L510)                                    |  MISSED |
+|     BaseStrategy.before_update (L514)                                               |  MISSED |
+|     BaseStrategy.after_update (L518)                                                |  MISSED |
+|     BaseStrategy.after_training_epoch (L522)                                        |  MISSED |
+|     BaseStrategy.after_training_exp (L526)                                          |  MISSED |
+|     BaseStrategy.before_eval (L531)                                                 |  MISSED |
+|     BaseStrategy.before_eval_exp (L535)                                             |  MISSED |
+|     BaseStrategy.eval_dataset_adaptation (L539)                                     | COVERED |
+|     BaseStrategy.before_eval_dataset_adaptation (L544)                              |  MISSED |
+|     BaseStrategy.after_eval_dataset_adaptation (L548)                               |  MISSED |
+|     BaseStrategy.eval_epoch (L552)                                                  |  MISSED |
+|     BaseStrategy.after_eval_exp (L565)                                              |  MISSED |
+|     BaseStrategy.after_eval (L569)                                                  |  MISSED |
+|     BaseStrategy.before_eval_iteration (L573)                                       |  MISSED |
+|     BaseStrategy.before_eval_forward (L577)                                         |  MISSED |
+|     BaseStrategy.after_eval_forward (L581)                                          |  MISSED |
+|     BaseStrategy.after_eval_iteration (L585)                                        |  MISSED |
+|     BaseStrategy.before_train_dataset_adaptation (L589)                             |  MISSED |
+|     BaseStrategy.model_adaptation (L593)                                            |  MISSED |
+|     BaseStrategy.forward (L599)                                                     |  MISSED |
+|     BaseStrategy.make_optimizer (L602)                                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  |  MISSED |
@@ -1416,7 +1418,7 @@
 | training/plugins/cope.py                                |    15 |    3 |    12 |    80% |
 | training/plugins/cwr_star.py                            |    10 |    6 |     4 |    40% |
 | training/plugins/early_stopping.py                      |     5 |    4 |     1 |    20% |
-| training/plugins/evaluation.py                          |    32 |   27 |     5 |    16% |
+| training/plugins/evaluation.py                          |    34 |   29 |     5 |    15% |
 | training/plugins/ewc.py                                 |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                               |     4 |    2 |     2 |    50% |
 | training/plugins/gem.py                                 |     8 |    1 |     7 |    88% |
@@ -1433,5 +1435,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1210 |  624 |   586 |  48.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
+| TOTAL                                                   |  1212 |  626 |   586 |  48.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.3%) -----------------
