@@ -55,7 +55,7 @@ jpeg                      9b                   h024ee3a_2
 kiwisolver                1.3.1            py37h2527ec5_1    conda-forge
 lame                      3.100                h7b6447c_0  
 lcms2                     2.12                 h3be6417_0  
-ld_impl_linux-64          2.36.1               hea4e1c9_0    conda-forge
+ld_impl_linux-64          2.36.1               hea4e1c9_1    conda-forge
 libblas                   3.9.0                     9_mkl    conda-forge
 libcblas                  3.9.0                     9_mkl    conda-forge
 libffi                    3.3                  h58526e2_2    conda-forge
@@ -128,7 +128,7 @@ requests-oauthlib         1.3.0              pyh9f0ad1d_0    conda-forge
 rsa                       4.7.2              pyh44b312d_0    conda-forge
 scikit-learn              0.24.2           py37h18a542f_0    conda-forge
 scipy                     1.7.0            py37h29e03ee_0    conda-forge
-sentry-sdk                1.1.0              pyhd8ed1ab_0    conda-forge
+sentry-sdk                1.2.0              pyhd8ed1ab_0    conda-forge
 setuptools                49.6.0           py37h89c1867_3    conda-forge
 shortuuid                 1.0.1            py37h89c1867_4    conda-forge
 sip                       4.19.8          py37hf484d3e_1000    conda-forge
@@ -143,7 +143,7 @@ threadpoolctl             2.1.0              pyh5ca1d4c_0    conda-forge
 tk                        8.6.10               h21135ba_1    conda-forge
 torchvision               0.9.1                  py37_cpu  [cpuonly]  pytorch
 tornado                   6.1              py37h5e8e339_1    conda-forge
-tqdm                      4.61.1             pyhd8ed1ab_0    conda-forge
+tqdm                      4.61.2             pyhd8ed1ab_0    conda-forge
 typing_extensions         3.10.0.0           pyh06a4308_0  
 urllib3                   1.26.6             pyhd8ed1ab_0    conda-forge
 wandb                     0.10.33            pyhd8ed1ab_0    conda-forge
