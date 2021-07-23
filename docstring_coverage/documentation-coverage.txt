@@ -302,12 +302,14 @@
 |   train_eval_avalanche_datasets (L2081)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
-|   TaskBalancedDataLoader (L42)                                                      |  MISSED |
-|     TaskBalancedDataLoader.__init__ (L43)                                           | COVERED |
-|   GroupBalancedDataLoader (L96)                                                     |  MISSED |
-|     GroupBalancedDataLoader.__init__ (L97)                                          | COVERED |
-|   ReplayDataLoader (L167)                                                           |  MISSED |
-|     ReplayDataLoader.__init__ (L168)                                                | COVERED |
+|   TaskBalancedDataLoader (L43)                                                      |  MISSED |
+|     TaskBalancedDataLoader.__init__ (L44)                                           | COVERED |
+|   GroupBalancedDataLoader (L97)                                                     |  MISSED |
+|     GroupBalancedDataLoader.__init__ (L98)                                          | COVERED |
+|   GroupBalancedInfiniteDataLoader (L168)                                            |  MISSED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L169)                                 | COVERED |
+|   ReplayDataLoader (L216)                                                           |  MISSED |
+|     ReplayDataLoader.__init__ (L217)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L23)                                                                    | COVERED |
@@ -1024,13 +1026,13 @@
 |   examples_per_class (L270)                                                         |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/agem.py (module)                                                   |  MISSED |
-|   AGEMPlugin (L8)                                                                   | COVERED |
-|     AGEMPlugin.__init__ (L18)                                                       | COVERED |
-|     AGEMPlugin.before_training_iteration (L34)                                      | COVERED |
-|     AGEMPlugin.after_backward (L52)                                                 | COVERED |
-|     AGEMPlugin.after_training_exp (L73)                                             | COVERED |
-|     AGEMPlugin.sample_from_memory (L80)                                             | COVERED |
-|     AGEMPlugin.update_memory (L96)                                                  | COVERED |
+|   AGEMPlugin (L13)                                                                  | COVERED |
+|     AGEMPlugin.__init__ (L23)                                                       | COVERED |
+|     AGEMPlugin.before_training_iteration (L43)                                      | COVERED |
+|     AGEMPlugin.after_backward (L64)                                                 | COVERED |
+|     AGEMPlugin.after_training_exp (L92)                                             | COVERED |
+|     AGEMPlugin.sample_from_memory (L96)                                             | COVERED |
+|     AGEMPlugin.update_memory (L104)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/cope.py (module)                                                   |  MISSED |
 |   CoPEPlugin (L16)                                                                  | COVERED |
@@ -1370,7 +1372,7 @@
 | benchmarks/scenarios/new_instances/ni_scenario.py       |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/new_instances/ni_utils.py          |     1 |    1 |     0 |     0% |
 | benchmarks/utils/avalanche_dataset.py                   |    27 |    7 |    20 |    74% |
-| benchmarks/utils/data_loader.py                         |     7 |    3 |     4 |    57% |
+| benchmarks/utils/data_loader.py                         |     9 |    4 |     5 |    56% |
 | benchmarks/utils/dataset_definitions.py                 |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                       |    24 |   12 |    12 |    50% |
 | benchmarks/utils/datasets_from_filelists.py             |    10 |    1 |     9 |    90% |
@@ -1435,5 +1437,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1212 |  626 |   586 |  48.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.3%) -----------------
+| TOTAL                                                   |  1214 |  627 |   587 |  48.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
