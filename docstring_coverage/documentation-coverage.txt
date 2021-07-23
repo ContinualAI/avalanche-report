@@ -460,6 +460,14 @@
 |     StreamAccuracy.__init__ (L265)                                                  | COVERED |
 |   accuracy_metrics (L276)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/checkpoint.py (module)                                           |  MISSED |
+|   WeightCheckpoint (L25)                                                            | COVERED |
+|     WeightCheckpoint.__init__ (L38)                                                 | COVERED |
+|     WeightCheckpoint.update (L50)                                                   | COVERED |
+|     WeightCheckpoint.result (L59)                                                   | COVERED |
+|     WeightCheckpoint.reset (L67)                                                    | COVERED |
+|     WeightCheckpoint.after_eval_exp (L82)                                           |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                                     |  MISSED |
 |   ConfusionMatrix (L34)                                                             | COVERED |
 |     ConfusionMatrix.__init__ (L62)                                                  | COVERED |
@@ -872,12 +880,12 @@
 |     TextLogger.after_eval (L134)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
-|   WandBLogger (L25)                                                                 | COVERED |
-|     WandBLogger.__init__ (L32)                                                      | COVERED |
-|     WandBLogger.import_wandb (L52)                                                  |  MISSED |
-|     WandBLogger.args_parse (L60)                                                    |  MISSED |
-|     WandBLogger.before_run (L65)                                                    |  MISSED |
-|     WandBLogger.log_metric (L73)                                                    |  MISSED |
+|   WandBLogger (L33)                                                                 | COVERED |
+|     WandBLogger.__init__ (L48)                                                      | COVERED |
+|     WandBLogger.import_wandb (L84)                                                  |  MISSED |
+|     WandBLogger.args_parse (L92)                                                    |  MISSED |
+|     WandBLogger.before_run (L100)                                                   |  MISSED |
+|     WandBLogger.log_metric (L109)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/batch_renorm.py (module)                                                     | COVERED |
 |   BatchRenorm2D (L18)                                                               |  MISSED |
@@ -1382,6 +1390,7 @@
 | evaluation/metric_results.py                            |     7 |    3 |     4 |    57% |
 | evaluation/metric_utils.py                              |     9 |    2 |     7 |    78% |
 | evaluation/metrics/accuracy.py                          |    22 |    5 |    17 |    77% |
+| evaluation/metrics/checkpoint.py                        |     7 |    2 |     5 |    71% |
 | evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                         |    28 |   12 |    16 |    57% |
 | evaluation/metrics/disk_usage.py                        |    19 |    5 |    14 |    74% |
@@ -1437,5 +1446,5 @@
 | training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1214 |  627 |   587 |  48.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
+| TOTAL                                                   |  1221 |  629 |   592 |  48.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.5%) -----------------
