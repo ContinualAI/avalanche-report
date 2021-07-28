@@ -1303,10 +1303,11 @@
 |     ICaRL.__init__ (L22)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/joint_training.py (module)                                      |  MISSED |
-|   JointTraining (L27)                                                               |  MISSED |
-|     JointTraining.__init__ (L28)                                                    | COVERED |
-|     JointTraining.train (L59)                                                       | COVERED |
-|     JointTraining.train_dataset_adaptation (L102)                                   | COVERED |
+|   AlreadyTrainedError (L27)                                                         |  MISSED |
+|   JointTraining (L31)                                                               |  MISSED |
+|     JointTraining.__init__ (L32)                                                    | COVERED |
+|     JointTraining.train (L65)                                                       | COVERED |
+|     JointTraining.train_dataset_adaptation (L115)                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L24)                                                                       | COVERED |
@@ -1443,8 +1444,8 @@
 | training/strategies/cumulative.py                       |     4 |    2 |     2 |    50% |
 | training/strategies/deep_slda.py                        |    11 |    4 |     7 |    64% |
 | training/strategies/icarl.py                            |     3 |    2 |     1 |    33% |
-| training/strategies/joint_training.py                   |     5 |    2 |     3 |    60% |
+| training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1221 |  629 |   592 |  48.5% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.5%) -----------------
+| TOTAL                                                   |  1222 |  630 |   592 |  48.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
