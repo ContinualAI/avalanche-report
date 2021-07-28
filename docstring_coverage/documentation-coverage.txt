@@ -1045,18 +1045,19 @@
 | training/plugins/cope.py (module)                                                   |  MISSED |
 |   CoPEPlugin (L16)                                                                  | COVERED |
 |     CoPEPlugin.__init__ (L29)                                                       | COVERED |
-|     CoPEPlugin.before_training (L64)                                                | COVERED |
-|     CoPEPlugin.before_training_exp (L76)                                            | COVERED |
-|     CoPEPlugin.after_forward (L93)                                                  | COVERED |
-|     CoPEPlugin.after_training_exp (L138)                                            | COVERED |
-|     CoPEPlugin.after_eval_iteration (L156)                                          | COVERED |
-|   L2Normalization (L195)                                                            | COVERED |
-|     L2Normalization.__init__ (L199)                                                 |  MISSED |
-|     L2Normalization.forward (L202)                                                  |  MISSED |
-|   PPPloss (L206)                                                                    | COVERED |
-|     PPPloss.__init__ (L212)                                                         | COVERED |
-|     PPPloss.attractor (L259)                                                        | COVERED |
-|     PPPloss.repellor (L280)                                                         | COVERED |
+|     CoPEPlugin.before_training (L69)                                                | COVERED |
+|     CoPEPlugin.before_training_exp (L90)                                            | COVERED |
+|     CoPEPlugin.after_training_iteration (L111)                                      | COVERED |
+|     CoPEPlugin.after_forward (L123)                                                 | COVERED |
+|     CoPEPlugin.after_training_exp (L165)                                            | COVERED |
+|     CoPEPlugin.after_eval_iteration (L183)                                          | COVERED |
+|   L2Normalization (L222)                                                            | COVERED |
+|     L2Normalization.__init__ (L226)                                                 |  MISSED |
+|     L2Normalization.forward (L229)                                                  |  MISSED |
+|   PPPloss (L233)                                                                    | COVERED |
+|     PPPloss.__init__ (L239)                                                         | COVERED |
+|     PPPloss.attractor (L286)                                                        | COVERED |
+|     PPPloss.repellor (L307)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/cwr_star.py (module)                                               |  MISSED |
 |   CWRStarPlugin (L14)                                                               |  MISSED |
@@ -1427,7 +1428,7 @@
 | training/losses.py                                      |     5 |    4 |     1 |    20% |
 | training/utils.py                                       |    16 |   11 |     5 |    31% |
 | training/plugins/agem.py                                |     8 |    1 |     7 |    88% |
-| training/plugins/cope.py                                |    15 |    3 |    12 |    80% |
+| training/plugins/cope.py                                |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                            |    10 |    6 |     4 |    40% |
 | training/plugins/early_stopping.py                      |     5 |    4 |     1 |    20% |
 | training/plugins/evaluation.py                          |    34 |   29 |     5 |    15% |
@@ -1447,5 +1448,5 @@
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1222 |  630 |   592 |  48.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.4%) -----------------
+| TOTAL                                                   |  1223 |  630 |   593 |  48.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.5%) -----------------
