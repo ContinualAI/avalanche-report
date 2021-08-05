@@ -458,7 +458,11 @@
 |     ExperienceAccuracy.__init__ (L247)                                              | COVERED |
 |   StreamAccuracy (L258)                                                             | COVERED |
 |     StreamAccuracy.__init__ (L265)                                                  | COVERED |
-|   accuracy_metrics (L276)                                                           | COVERED |
+|   TrainedExperienceAccuracy (L276)                                                  | COVERED |
+|     TrainedExperienceAccuracy.__init__ (L284)                                       | COVERED |
+|     TrainedExperienceAccuracy.after_training_exp (L293)                             |  MISSED |
+|     TrainedExperienceAccuracy.update (L299)                                         | COVERED |
+|   accuracy_metrics (L311)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/checkpoint.py (module)                                           |  MISSED |
 |   WeightCheckpoint (L25)                                                            | COVERED |
@@ -1416,7 +1420,7 @@
 | evaluation/metric_definitions.py                        |    54 |   47 |     7 |    13% |
 | evaluation/metric_results.py                            |     7 |    3 |     4 |    57% |
 | evaluation/metric_utils.py                              |     9 |    2 |     7 |    78% |
-| evaluation/metrics/accuracy.py                          |    22 |    5 |    17 |    77% |
+| evaluation/metrics/accuracy.py                          |    26 |    6 |    20 |    77% |
 | evaluation/metrics/checkpoint.py                        |     7 |    2 |     5 |    71% |
 | evaluation/metrics/confusion_matrix.py                  |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                         |    28 |   12 |    16 |    57% |
@@ -1474,5 +1478,5 @@
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1247 |  641 |   606 |  48.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.6%) -----------------
+| TOTAL                                                   |  1251 |  642 |   609 |  48.7% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.7%) -----------------
