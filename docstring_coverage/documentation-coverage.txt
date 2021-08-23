@@ -1162,6 +1162,17 @@
 |     GEMPlugin.update_memory (L101)                                                  | COVERED |
 |     GEMPlugin.solve_quadprog (L128)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/plugins/gss_greedy.py (module)                                             |  MISSED |
+|   GSS_greedyPlugin (L7)                                                             | COVERED |
+|     GSS_greedyPlugin.__init__ (L22)                                                 |  MISSED |
+|     GSS_greedyPlugin.cosine_similarity (L33)                                        |  MISSED |
+|     GSS_greedyPlugin.get_grad_vector (L43)                                          | COVERED |
+|     GSS_greedyPlugin.get_batch_sim (L58)                                            | COVERED |
+|     GSS_greedyPlugin.get_rand_mem_grads (L76)                                       | COVERED |
+|     GSS_greedyPlugin.get_each_batch_sample_sim (L105)                               | COVERED |
+|     GSS_greedyPlugin.before_training_exp (L134)                                     | COVERED |
+|     GSS_greedyPlugin.after_forward (L158)                                           | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/plugins/lr_scheduling.py (module)                                          |  MISSED |
 |   LRSchedulerPlugin (L4)                                                            | COVERED |
 |     LRSchedulerPlugin.__init__ (L12)                                                | COVERED |
@@ -1348,20 +1359,22 @@
 |     CWRStar.__init__ (L136)                                                         | COVERED |
 |   Replay (L176)                                                                     |  MISSED |
 |     Replay.__init__ (L178)                                                          | COVERED |
-|   GDumb (L218)                                                                      |  MISSED |
-|     GDumb.__init__ (L220)                                                           | COVERED |
-|   LwF (L262)                                                                        |  MISSED |
-|     LwF.__init__ (L264)                                                             | COVERED |
-|   AGEM (L309)                                                                       |  MISSED |
-|     AGEM.__init__ (L311)                                                            | COVERED |
-|   GEM (L356)                                                                        |  MISSED |
-|     GEM.__init__ (L358)                                                             | COVERED |
-|   EWC (L403)                                                                        |  MISSED |
-|     EWC.__init__ (L405)                                                             | COVERED |
-|   SynapticIntelligence (L462)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L479)                                            | COVERED |
-|   CoPE (L520)                                                                       |  MISSED |
-|     CoPE.__init__ (L522)                                                            | COVERED |
+|   GSS_greedy (L221)                                                                 |  MISSED |
+|     GSS_greedy.__init__ (L223)                                                      | COVERED |
+|   GDumb (L265)                                                                      |  MISSED |
+|     GDumb.__init__ (L267)                                                           | COVERED |
+|   LwF (L309)                                                                        |  MISSED |
+|     LwF.__init__ (L311)                                                             | COVERED |
+|   AGEM (L356)                                                                       |  MISSED |
+|     AGEM.__init__ (L358)                                                            | COVERED |
+|   GEM (L403)                                                                        |  MISSED |
+|     GEM.__init__ (L405)                                                             | COVERED |
+|   EWC (L450)                                                                        |  MISSED |
+|     EWC.__init__ (L452)                                                             | COVERED |
+|   SynapticIntelligence (L509)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L526)                                            | COVERED |
+|   CoPE (L567)                                                                       |  MISSED |
+|     CoPE.__init__ (L569)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1465,6 +1478,7 @@
 | training/plugins/ewc.py                                 |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                               |     4 |    2 |     2 |    50% |
 | training/plugins/gem.py                                 |     8 |    1 |     7 |    88% |
+| training/plugins/gss_greedy.py                          |    10 |    3 |     7 |    70% |
 | training/plugins/lr_scheduling.py                       |     5 |    3 |     2 |    40% |
 | training/plugins/lwf.py                                 |     6 |    1 |     5 |    83% |
 | training/plugins/replay.py                              |    27 |   13 |    14 |    52% |
@@ -1476,7 +1490,7 @@
 | training/strategies/deep_slda.py                        |    11 |    4 |     7 |    64% |
 | training/strategies/icarl.py                            |     3 |    2 |     1 |    33% |
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
-| training/strategies/strategy_wrappers.py                |    23 |    9 |    14 |    61% |
+| training/strategies/strategy_wrappers.py                |    25 |   10 |    15 |    60% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1251 |  642 |   609 |  48.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.7%) -----------------
+| TOTAL                                                   |  1263 |  646 |   617 |  48.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 48.9%) -----------------
