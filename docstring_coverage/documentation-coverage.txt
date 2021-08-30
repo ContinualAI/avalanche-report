@@ -1166,12 +1166,12 @@
 |   GSS_greedyPlugin (L7)                                                             | COVERED |
 |     GSS_greedyPlugin.__init__ (L22)                                                 |  MISSED |
 |     GSS_greedyPlugin.cosine_similarity (L33)                                        |  MISSED |
-|     GSS_greedyPlugin.get_grad_vector (L43)                                          | COVERED |
-|     GSS_greedyPlugin.get_batch_sim (L58)                                            | COVERED |
-|     GSS_greedyPlugin.get_rand_mem_grads (L76)                                       | COVERED |
-|     GSS_greedyPlugin.get_each_batch_sample_sim (L105)                               | COVERED |
-|     GSS_greedyPlugin.before_training_exp (L134)                                     | COVERED |
-|     GSS_greedyPlugin.after_forward (L158)                                           | COVERED |
+|     GSS_greedyPlugin.get_grad_vector (L41)                                          | COVERED |
+|     GSS_greedyPlugin.get_batch_sim (L56)                                            | COVERED |
+|     GSS_greedyPlugin.get_rand_mem_grads (L74)                                       | COVERED |
+|     GSS_greedyPlugin.get_each_batch_sample_sim (L103)                               | COVERED |
+|     GSS_greedyPlugin.before_training_exp (L132)                                     | COVERED |
+|     GSS_greedyPlugin.after_forward (L156)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lr_scheduling.py (module)                                          |  MISSED |
 |   LRSchedulerPlugin (L4)                                                            | COVERED |
