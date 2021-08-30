@@ -1144,9 +1144,9 @@
 |   EWCPlugin (L13)                                                                   | COVERED |
 |     EWCPlugin.__init__ (L24)                                                        | COVERED |
 |     EWCPlugin.before_backward (L59)                                                 | COVERED |
-|     EWCPlugin.after_training_exp (L87)                                              | COVERED |
-|     EWCPlugin.compute_importances (L106)                                            | COVERED |
-|     EWCPlugin.update_importances (L138)                                             | COVERED |
+|     EWCPlugin.after_training_exp (L88)                                              | COVERED |
+|     EWCPlugin.compute_importances (L107)                                            | COVERED |
+|     EWCPlugin.update_importances (L139)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L25)                                                                 | COVERED |
