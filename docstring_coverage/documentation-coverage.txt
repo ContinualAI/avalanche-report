@@ -916,6 +916,10 @@
 |     WandBLogger.before_run (L100)                                                   |  MISSED |
 |     WandBLogger.log_metric (L109)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| models/base_model.py (module)                                                       |  MISSED |
+|   BaseModel (L4)                                                                    | COVERED |
+|     BaseModel.get_features (L10)                                                    | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | models/batch_renorm.py (module)                                                     | COVERED |
 |   BatchRenorm2D (L18)                                                               |  MISSED |
 |     BatchRenorm2D.__init__ (L20)                                                    |  MISSED |
@@ -1016,12 +1020,13 @@
 |     MTSimpleCNN.forward (L61)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/simple_mlp.py (module)                                                       |  MISSED |
-|   SimpleMLP (L18)                                                                   |  MISSED |
-|     SimpleMLP.__init__ (L19)                                                        |  MISSED |
-|     SimpleMLP.forward (L37)                                                         |  MISSED |
-|   MTSimpleMLP (L45)                                                                 |  MISSED |
-|     MTSimpleMLP.__init__ (L46)                                                      | COVERED |
-|     MTSimpleMLP.forward (L60)                                                       |  MISSED |
+|   SimpleMLP (L19)                                                                   |  MISSED |
+|     SimpleMLP.__init__ (L20)                                                        |  MISSED |
+|     SimpleMLP.forward (L38)                                                         |  MISSED |
+|     SimpleMLP.get_features (L45)                                                    |  MISSED |
+|   MTSimpleMLP (L52)                                                                 |  MISSED |
+|     MTSimpleMLP.__init__ (L53)                                                      | COVERED |
+|     MTSimpleMLP.forward (L67)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/slda_resnet.py (module)                                                      |  MISSED |
 |   SLDAResNetModel (L7)                                                              | COVERED |
@@ -1172,6 +1177,15 @@
 |     GSS_greedyPlugin.get_each_batch_sample_sim (L103)                               | COVERED |
 |     GSS_greedyPlugin.before_training_exp (L132)                                     | COVERED |
 |     GSS_greedyPlugin.after_forward (L156)                                           | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/plugins/lfl.py (module)                                                    |  MISSED |
+|   LFLPlugin (L10)                                                                   | COVERED |
+|     LFLPlugin.__init__ (L23)                                                        | COVERED |
+|     LFLPlugin.penalty (L38)                                                         | COVERED |
+|     LFLPlugin.compute_features (L49)                                                | COVERED |
+|     LFLPlugin.before_backward (L61)                                                 | COVERED |
+|     LFLPlugin.after_training_exp (L71)                                              | COVERED |
+|     LFLPlugin.before_training (L86)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lr_scheduling.py (module)                                          |  MISSED |
 |   LRSchedulerPlugin (L4)                                                            | COVERED |
@@ -1351,30 +1365,32 @@
 |     JointTraining.train_dataset_adaptation (L115)                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
-|   Naive (L24)                                                                       | COVERED |
-|     Naive.__init__ (L35)                                                            | COVERED |
-|   PNNStrategy (L69)                                                                 | COVERED |
-|     PNNStrategy.__init__ (L80)                                                      | COVERED |
-|   CWRStar (L134)                                                                    |  MISSED |
-|     CWRStar.__init__ (L136)                                                         | COVERED |
-|   Replay (L176)                                                                     |  MISSED |
-|     Replay.__init__ (L178)                                                          | COVERED |
-|   GSS_greedy (L221)                                                                 |  MISSED |
-|     GSS_greedy.__init__ (L223)                                                      | COVERED |
-|   GDumb (L265)                                                                      |  MISSED |
-|     GDumb.__init__ (L267)                                                           | COVERED |
-|   LwF (L309)                                                                        |  MISSED |
-|     LwF.__init__ (L311)                                                             | COVERED |
-|   AGEM (L356)                                                                       |  MISSED |
-|     AGEM.__init__ (L358)                                                            | COVERED |
-|   GEM (L403)                                                                        |  MISSED |
-|     GEM.__init__ (L405)                                                             | COVERED |
-|   EWC (L450)                                                                        |  MISSED |
-|     EWC.__init__ (L452)                                                             | COVERED |
-|   SynapticIntelligence (L509)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L526)                                            | COVERED |
-|   CoPE (L567)                                                                       |  MISSED |
-|     CoPE.__init__ (L569)                                                            | COVERED |
+|   Naive (L25)                                                                       | COVERED |
+|     Naive.__init__ (L36)                                                            | COVERED |
+|   PNNStrategy (L70)                                                                 | COVERED |
+|     PNNStrategy.__init__ (L81)                                                      | COVERED |
+|   CWRStar (L135)                                                                    |  MISSED |
+|     CWRStar.__init__ (L137)                                                         | COVERED |
+|   Replay (L177)                                                                     |  MISSED |
+|     Replay.__init__ (L179)                                                          | COVERED |
+|   GSS_greedy (L222)                                                                 |  MISSED |
+|     GSS_greedy.__init__ (L224)                                                      | COVERED |
+|   GDumb (L266)                                                                      |  MISSED |
+|     GDumb.__init__ (L268)                                                           | COVERED |
+|   LwF (L310)                                                                        |  MISSED |
+|     LwF.__init__ (L312)                                                             | COVERED |
+|   AGEM (L357)                                                                       |  MISSED |
+|     AGEM.__init__ (L359)                                                            | COVERED |
+|   GEM (L404)                                                                        |  MISSED |
+|     GEM.__init__ (L406)                                                             | COVERED |
+|   EWC (L451)                                                                        |  MISSED |
+|     EWC.__init__ (L453)                                                             | COVERED |
+|   SynapticIntelligence (L510)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L527)                                            | COVERED |
+|   CoPE (L568)                                                                       |  MISSED |
+|     CoPE.__init__ (L570)                                                            | COVERED |
+|   LFL (L622)                                                                        |  MISSED |
+|     LFL.__init__ (L624)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1455,6 +1471,7 @@
 | logging/tensorboard_logger.py                           |     4 |    1 |     3 |    75% |
 | logging/text_logging.py                                 |    13 |   11 |     2 |    15% |
 | logging/wandb_logger.py                                 |     7 |    4 |     3 |    43% |
+| models/base_model.py                                    |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                  |     4 |    3 |     1 |    25% |
 | models/dynamic_modules.py                               |    21 |    5 |    16 |    76% |
 | models/dynamic_optimizers.py                            |     4 |    0 |     4 |   100% |
@@ -1465,7 +1482,7 @@
 | models/pnn.py                                           |    19 |   11 |     8 |    42% |
 | models/pytorchcv_wrapper.py                             |     6 |    0 |     6 |   100% |
 | models/simple_cnn.py                                    |     7 |    6 |     1 |    14% |
-| models/simple_mlp.py                                    |     7 |    6 |     1 |    14% |
+| models/simple_mlp.py                                    |     8 |    7 |     1 |    12% |
 | models/slda_resnet.py                                   |     5 |    2 |     3 |    60% |
 | models/utils.py                                         |     9 |    7 |     2 |    22% |
 | training/losses.py                                      |     5 |    4 |     1 |    20% |
@@ -1479,6 +1496,7 @@
 | training/plugins/gdumb.py                               |     4 |    2 |     2 |    50% |
 | training/plugins/gem.py                                 |     8 |    1 |     7 |    88% |
 | training/plugins/gss_greedy.py                          |    10 |    3 |     7 |    70% |
+| training/plugins/lfl.py                                 |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                       |     5 |    3 |     2 |    40% |
 | training/plugins/lwf.py                                 |     6 |    1 |     5 |    83% |
 | training/plugins/replay.py                              |    27 |   13 |    14 |    52% |
@@ -1490,7 +1508,7 @@
 | training/strategies/deep_slda.py                        |    11 |    4 |     7 |    64% |
 | training/strategies/icarl.py                            |     3 |    2 |     1 |    33% |
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
-| training/strategies/strategy_wrappers.py                |    25 |   10 |    15 |    60% |
+| training/strategies/strategy_wrappers.py                |    27 |   11 |    16 |    59% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1263 |  646 |   617 |  48.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 48.9%) -----------------
+| TOTAL                                                   |  1277 |  650 |   627 |  49.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.1%) -----------------
