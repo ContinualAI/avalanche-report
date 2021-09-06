@@ -932,20 +932,22 @@
 |     DynamicModule.eval_adaptation (L64)                                             | COVERED |
 |   MultiTaskModule (L80)                                                             | COVERED |
 |     MultiTaskModule.forward (L91)                                                   | COVERED |
-|     MultiTaskModule.forward_single_task (L117)                                      | COVERED |
-|   IncrementalClassifier (L128)                                                      |  MISSED |
-|     IncrementalClassifier.__init__ (L129)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L144)                                         | COVERED |
-|     IncrementalClassifier.forward (L162)                                            | COVERED |
-|   MultiHeadClassifier (L172)                                                        |  MISSED |
-|     MultiHeadClassifier.__init__ (L173)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L210)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L229)                                  | COVERED |
-|   TrainEvalModel (L240)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L248)                                                  | COVERED |
-|     TrainEvalModel.forward (L263)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L267)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L270)                                           |  MISSED |
+|     MultiTaskModule.forward_single_task (L123)                                      | COVERED |
+|     MultiTaskModule.forward_all_tasks (L133)                                        | COVERED |
+|   IncrementalClassifier (L144)                                                      |  MISSED |
+|     IncrementalClassifier.__init__ (L145)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L160)                                         | COVERED |
+|     IncrementalClassifier.forward (L178)                                            | COVERED |
+|   MultiHeadClassifier (L188)                                                        |  MISSED |
+|     MultiHeadClassifier.__init__ (L189)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L226)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L245)                                  | COVERED |
+|     MultiHeadClassifier.forward_all_tasks (L255)                                    |  MISSED |
+|   TrainEvalModel (L262)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L270)                                                  | COVERED |
+|     TrainEvalModel.forward (L285)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L289)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L292)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -1194,11 +1196,11 @@
 |     LRSchedulerPlugin.after_training_exp (L33)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lwf.py (module)                                                    |  MISSED |
-|   LwFPlugin (L8)                                                                    | COVERED |
-|     LwFPlugin.__init__ (L16)                                                        | COVERED |
-|     LwFPlugin.penalty (L40)                                                         | COVERED |
-|     LwFPlugin.before_backward (L52)                                                 | COVERED |
-|     LwFPlugin.after_training_exp (L61)                                              | COVERED |
+|   LwFPlugin (L9)                                                                    | COVERED |
+|     LwFPlugin.__init__ (L17)                                                        | COVERED |
+|     LwFPlugin.penalty (L50)                                                         | COVERED |
+|     LwFPlugin.before_backward (L80)                                                 | COVERED |
+|     LwFPlugin.after_training_exp (L90)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L22)                                                                | COVERED |
@@ -1473,7 +1475,7 @@
 | logging/wandb_logger.py                                 |     7 |    4 |     3 |    43% |
 | models/base_model.py                                    |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                  |     4 |    3 |     1 |    25% |
-| models/dynamic_modules.py                               |    21 |    5 |    16 |    76% |
+| models/dynamic_modules.py                               |    23 |    6 |    17 |    74% |
 | models/dynamic_optimizers.py                            |     4 |    0 |     4 |   100% |
 | models/icarl_resnet.py                                  |    14 |   14 |     0 |     0% |
 | models/mlp_tiny_imagenet.py                             |     4 |    3 |     1 |    25% |
@@ -1510,5 +1512,5 @@
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    27 |   11 |    16 |    59% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1277 |  650 |   627 |  49.1% |
+| TOTAL                                                   |  1279 |  651 |   628 |  49.1% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.1%) -----------------
