@@ -1264,7 +1264,7 @@
 |   SynapticIntelligencePlugin (L21)                                                  | COVERED |
 |     SynapticIntelligencePlugin.__init__ (L42)                                       | COVERED |
 |     SynapticIntelligencePlugin.before_training_exp (L80)                            |  MISSED |
-|     SynapticIntelligencePlugin.after_backward (L90)                                 |  MISSED |
+|     SynapticIntelligencePlugin.before_backward (L90)                                |  MISSED |
 |     SynapticIntelligencePlugin.before_training_iteration (L99)                      |  MISSED |
 |     SynapticIntelligencePlugin.after_training_iteration (L104)                      |  MISSED |
 |     SynapticIntelligencePlugin.after_training_exp (L109)                            |  MISSED |
