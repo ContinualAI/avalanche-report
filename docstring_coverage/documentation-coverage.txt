@@ -955,6 +955,12 @@
 |   update_optimizer (L35)                                                            | COVERED |
 |   add_new_params_to_optimizer (L65)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| models/helper_method.py (module)                                                    |  MISSED |
+|   MultiTaskDecorator (L9)                                                           | COVERED |
+|     MultiTaskDecorator.__init__ (L21)                                               | COVERED |
+|     MultiTaskDecorator.forward_single_task (L60)                                    |  MISSED |
+|   as_multitask (L88)                                                                | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | models/icarl_resnet.py (module)                                                     |  MISSED |
 |   IdentityShortcut (L12)                                                            |  MISSED |
 |     IdentityShortcut.__init__ (L13)                                                 |  MISSED |
@@ -1478,6 +1484,7 @@
 | models/batch_renorm.py                                  |     4 |    3 |     1 |    25% |
 | models/dynamic_modules.py                               |    24 |    6 |    18 |    75% |
 | models/dynamic_optimizers.py                            |     4 |    0 |     4 |   100% |
+| models/helper_method.py                                 |     5 |    2 |     3 |    60% |
 | models/icarl_resnet.py                                  |    14 |   14 |     0 |     0% |
 | models/mlp_tiny_imagenet.py                             |     4 |    3 |     1 |    25% |
 | models/mobilenetv1.py                                   |     6 |    5 |     1 |    17% |
@@ -1513,5 +1520,5 @@
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    27 |   11 |    16 |    59% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1280 |  651 |   629 |  49.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 49.1%) -----------------
+| TOTAL                                                   |  1285 |  653 |   632 |  49.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.2%) -----------------
