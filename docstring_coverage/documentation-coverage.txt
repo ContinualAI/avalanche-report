@@ -839,7 +839,7 @@
 | logging/csv_logger.py (module)                                                      |  MISSED |
 |   CSVLogger (L24)                                                                   | COVERED |
 |     CSVLogger.__init__ (L53)                                                        | COVERED |
-|     CSVLogger.log_metric (L89)                                                      |  MISSED |
+|     CSVLogger.log_single_metric (L89)                                               |  MISSED |
 |     CSVLogger.print_train_metrics (L100)                                            |  MISSED |
 |     CSVLogger.print_eval_metrics (L107)                                             |  MISSED |
 |     CSVLogger.after_training_epoch (L113)                                           |  MISSED |
@@ -863,50 +863,51 @@
 | logging/strategy_logger.py (module)                                                 |  MISSED |
 |   StrategyLogger (L12)                                                              | COVERED |
 |     StrategyLogger.__init__ (L31)                                                   |  MISSED |
-|     StrategyLogger.log_metric (L34)                                                 | COVERED |
-|     StrategyLogger.before_training (L48)                                            |  MISSED |
-|     StrategyLogger.before_training_exp (L53)                                        |  MISSED |
-|     StrategyLogger.after_train_dataset_adaptation (L58)                             |  MISSED |
-|     StrategyLogger.before_training_epoch (L64)                                      |  MISSED |
-|     StrategyLogger.before_training_iteration (L69)                                  |  MISSED |
-|     StrategyLogger.before_forward (L75)                                             |  MISSED |
-|     StrategyLogger.after_forward (L80)                                              |  MISSED |
-|     StrategyLogger.before_backward (L85)                                            |  MISSED |
-|     StrategyLogger.after_backward (L90)                                             |  MISSED |
-|     StrategyLogger.after_training_iteration (L95)                                   |  MISSED |
-|     StrategyLogger.before_update (L100)                                             |  MISSED |
-|     StrategyLogger.after_update (L105)                                              |  MISSED |
-|     StrategyLogger.after_training_epoch (L110)                                      |  MISSED |
-|     StrategyLogger.after_training_exp (L115)                                        |  MISSED |
-|     StrategyLogger.after_training (L120)                                            |  MISSED |
-|     StrategyLogger.before_eval (L125)                                               |  MISSED |
-|     StrategyLogger.after_eval_dataset_adaptation (L130)                             |  MISSED |
-|     StrategyLogger.before_eval_exp (L136)                                           |  MISSED |
-|     StrategyLogger.after_eval_exp (L141)                                            |  MISSED |
-|     StrategyLogger.after_eval (L146)                                                |  MISSED |
-|     StrategyLogger.before_eval_iteration (L151)                                     |  MISSED |
-|     StrategyLogger.before_eval_forward (L156)                                       |  MISSED |
-|     StrategyLogger.after_eval_forward (L161)                                        |  MISSED |
-|     StrategyLogger.after_eval_iteration (L166)                                      |  MISSED |
+|     StrategyLogger.log_single_metric (L34)                                          | COVERED |
+|     StrategyLogger.log_metric (L48)                                                 | COVERED |
+|     StrategyLogger.before_training (L70)                                            |  MISSED |
+|     StrategyLogger.before_training_exp (L75)                                        |  MISSED |
+|     StrategyLogger.after_train_dataset_adaptation (L80)                             |  MISSED |
+|     StrategyLogger.before_training_epoch (L86)                                      |  MISSED |
+|     StrategyLogger.before_training_iteration (L91)                                  |  MISSED |
+|     StrategyLogger.before_forward (L97)                                             |  MISSED |
+|     StrategyLogger.after_forward (L102)                                             |  MISSED |
+|     StrategyLogger.before_backward (L107)                                           |  MISSED |
+|     StrategyLogger.after_backward (L112)                                            |  MISSED |
+|     StrategyLogger.after_training_iteration (L117)                                  |  MISSED |
+|     StrategyLogger.before_update (L122)                                             |  MISSED |
+|     StrategyLogger.after_update (L127)                                              |  MISSED |
+|     StrategyLogger.after_training_epoch (L132)                                      |  MISSED |
+|     StrategyLogger.after_training_exp (L137)                                        |  MISSED |
+|     StrategyLogger.after_training (L142)                                            |  MISSED |
+|     StrategyLogger.before_eval (L147)                                               |  MISSED |
+|     StrategyLogger.after_eval_dataset_adaptation (L152)                             |  MISSED |
+|     StrategyLogger.before_eval_exp (L158)                                           |  MISSED |
+|     StrategyLogger.after_eval_exp (L163)                                            |  MISSED |
+|     StrategyLogger.after_eval (L168)                                                |  MISSED |
+|     StrategyLogger.before_eval_iteration (L173)                                     |  MISSED |
+|     StrategyLogger.before_eval_forward (L178)                                       |  MISSED |
+|     StrategyLogger.after_eval_forward (L183)                                        |  MISSED |
+|     StrategyLogger.after_eval_iteration (L188)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
 |     TensorboardLogger.__init__ (L48)                                                | COVERED |
-|     TensorboardLogger.log_metric (L67)                                              |  MISSED |
+|     TensorboardLogger.log_single_metric (L67)                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                                    |  MISSED |
 |   TextLogger (L27)                                                                  | COVERED |
 |     TextLogger.__init__ (L51)                                                       | COVERED |
-|     TextLogger.log_metric (L62)                                                     |  MISSED |
-|     TextLogger.print_current_metrics (L76)                                          |  MISSED |
-|     TextLogger.before_training_exp (L85)                                            |  MISSED |
-|     TextLogger.before_eval_exp (L90)                                                |  MISSED |
-|     TextLogger.after_training_epoch (L95)                                           |  MISSED |
-|     TextLogger.after_eval_exp (L102)                                                |  MISSED |
-|     TextLogger.before_training (L119)                                               |  MISSED |
-|     TextLogger.before_eval (L124)                                                   |  MISSED |
-|     TextLogger.after_training (L129)                                                |  MISSED |
-|     TextLogger.after_eval (L134)                                                    |  MISSED |
+|     TextLogger.log_single_metric (L62)                                              |  MISSED |
+|     TextLogger.print_current_metrics (L73)                                          |  MISSED |
+|     TextLogger.before_training_exp (L82)                                            |  MISSED |
+|     TextLogger.before_eval_exp (L87)                                                |  MISSED |
+|     TextLogger.after_training_epoch (L92)                                           |  MISSED |
+|     TextLogger.after_eval_exp (L99)                                                 |  MISSED |
+|     TextLogger.before_training (L116)                                               |  MISSED |
+|     TextLogger.before_eval (L121)                                                   |  MISSED |
+|     TextLogger.after_training (L126)                                                |  MISSED |
+|     TextLogger.after_eval (L131)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L33)                                                                 | COVERED |
@@ -914,7 +915,7 @@
 |     WandBLogger.import_wandb (L84)                                                  |  MISSED |
 |     WandBLogger.args_parse (L92)                                                    |  MISSED |
 |     WandBLogger.before_run (L100)                                                   |  MISSED |
-|     WandBLogger.log_metric (L109)                                                   |  MISSED |
+|     WandBLogger.log_single_metric (L109)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/base_model.py (module)                                                       |  MISSED |
 |   BaseModel (L4)                                                                    | COVERED |
@@ -1108,10 +1109,10 @@
 |     CWRStarPlugin.after_training_exp (L43)                                          |  MISSED |
 |     CWRStarPlugin.before_training_exp (L47)                                         |  MISSED |
 |     CWRStarPlugin.consolidate_weights (L59)                                         | COVERED |
-|     CWRStarPlugin.set_consolidate_weights (L81)                                     | COVERED |
-|     CWRStarPlugin.reset_weights (L91)                                               | COVERED |
-|     CWRStarPlugin.get_cwr_layer (L102)                                              |  MISSED |
-|     CWRStarPlugin.freeze_other_layers (L113)                                        |  MISSED |
+|     CWRStarPlugin.set_consolidate_weights (L82)                                     | COVERED |
+|     CWRStarPlugin.reset_weights (L92)                                               | COVERED |
+|     CWRStarPlugin.get_cwr_layer (L103)                                              |  MISSED |
+|     CWRStarPlugin.freeze_other_layers (L114)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/early_stopping.py (module)                                         |  MISSED |
 |   EarlyStoppingPlugin (L7)                                                          |  MISSED |
@@ -1476,7 +1477,7 @@
 | evaluation/metrics/timing.py                            |    27 |   11 |    16 |    59% |
 | logging/csv_logger.py                                   |    13 |   10 |     3 |    23% |
 | logging/interactive_logging.py                          |     9 |    8 |     1 |    11% |
-| logging/strategy_logger.py                              |    28 |   26 |     2 |     7% |
+| logging/strategy_logger.py                              |    29 |   26 |     3 |    10% |
 | logging/tensorboard_logger.py                           |     4 |    1 |     3 |    75% |
 | logging/text_logging.py                                 |    13 |   11 |     2 |    15% |
 | logging/wandb_logger.py                                 |     7 |    4 |     3 |    43% |
@@ -1520,5 +1521,5 @@
 | training/strategies/joint_training.py                   |     6 |    3 |     3 |    50% |
 | training/strategies/strategy_wrappers.py                |    27 |   11 |    16 |    59% |
 |---------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                   |  1285 |  653 |   632 |  49.2% |
+| TOTAL                                                   |  1286 |  653 |   633 |  49.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.2%) -----------------
