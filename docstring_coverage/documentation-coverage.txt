@@ -223,12 +223,12 @@
 |     LazyStreamClassesInExps.__init__ (L606)                                         |  MISSED |
 |   LazyClassesInExps (L628)                                                          |  MISSED |
 |     LazyClassesInExps.__init__ (L629)                                               |  MISSED |
-|   AbstractExperience (L690)                                                         | COVERED |
-|     AbstractExperience.__init__ (L703)                                              | COVERED |
-|     AbstractExperience.task_label (L747)                                            | COVERED |
-|   GenericExperience (L763)                                                          | COVERED |
-|     GenericExperience.__init__ (L776)                                               | COVERED |
-|     GenericExperience.task_labels (L804)                                            |  MISSED |
+|   AbstractExperience (L692)                                                         | COVERED |
+|     AbstractExperience.__init__ (L705)                                              | COVERED |
+|     AbstractExperience.task_label (L749)                                            | COVERED |
+|   GenericExperience (L765)                                                          | COVERED |
+|     GenericExperience.__init__ (L778)                                               | COVERED |
+|     GenericExperience.task_labels (L806)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_definitions.py (module)                                |  MISSED |
 |   Experience (L32)                                                                  | COVERED |
@@ -1288,23 +1288,23 @@
 | training/plugins/synaptic_intelligence.py (module)                                  |  MISSED |
 |   SynapticIntelligencePlugin (L21)                                                  | COVERED |
 |     SynapticIntelligencePlugin.__init__ (L42)                                       | COVERED |
-|     SynapticIntelligencePlugin.before_training_exp (L80)                            |  MISSED |
-|     SynapticIntelligencePlugin.before_backward (L90)                                |  MISSED |
-|     SynapticIntelligencePlugin.before_training_iteration (L99)                      |  MISSED |
-|     SynapticIntelligencePlugin.after_training_iteration (L104)                      |  MISSED |
-|     SynapticIntelligencePlugin.after_training_exp (L109)                            |  MISSED |
-|     SynapticIntelligencePlugin.device (L115)                                        |  MISSED |
-|     SynapticIntelligencePlugin.create_syn_data (L123)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_weights (L154)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_grad (L164)                                  |  MISSED |
-|     SynapticIntelligencePlugin.init_batch (L174)                                    |  MISSED |
-|     SynapticIntelligencePlugin.pre_update (L184)                                    |  MISSED |
-|     SynapticIntelligencePlugin.post_update (L191)                                   |  MISSED |
-|     SynapticIntelligencePlugin.compute_ewc_loss (L205)                              |  MISSED |
-|     SynapticIntelligencePlugin.update_ewc_data (L229)                               |  MISSED |
-|     SynapticIntelligencePlugin.explode_excluded_parameters (L257)                   | COVERED |
-|     SynapticIntelligencePlugin.not_excluded_parameters (L275)                       |  MISSED |
-|     SynapticIntelligencePlugin.allowed_parameters (L301)                            |  MISSED |
+|     SynapticIntelligencePlugin.before_training_exp (L82)                            |  MISSED |
+|     SynapticIntelligencePlugin.before_backward (L92)                                |  MISSED |
+|     SynapticIntelligencePlugin.before_training_iteration (L101)                     |  MISSED |
+|     SynapticIntelligencePlugin.after_training_iteration (L106)                      |  MISSED |
+|     SynapticIntelligencePlugin.after_training_exp (L111)                            |  MISSED |
+|     SynapticIntelligencePlugin.device (L117)                                        |  MISSED |
+|     SynapticIntelligencePlugin.create_syn_data (L125)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_weights (L156)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_grad (L166)                                  |  MISSED |
+|     SynapticIntelligencePlugin.init_batch (L176)                                    |  MISSED |
+|     SynapticIntelligencePlugin.pre_update (L186)                                    |  MISSED |
+|     SynapticIntelligencePlugin.post_update (L193)                                   |  MISSED |
+|     SynapticIntelligencePlugin.compute_ewc_loss (L207)                              |  MISSED |
+|     SynapticIntelligencePlugin.update_ewc_data (L231)                               |  MISSED |
+|     SynapticIntelligencePlugin.explode_excluded_parameters (L258)                   | COVERED |
+|     SynapticIntelligencePlugin.not_excluded_parameters (L276)                       |  MISSED |
+|     SynapticIntelligencePlugin.allowed_parameters (L302)                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/ar1.py (module)                                                 |  MISSED |
 |   AR1 (L21)                                                                         | COVERED |
@@ -1417,10 +1417,10 @@
 |     EWC.__init__ (L453)                                                             | COVERED |
 |   SynapticIntelligence (L509)                                                       | COVERED |
 |     SynapticIntelligence.__init__ (L526)                                            | COVERED |
-|   CoPE (L567)                                                                       |  MISSED |
-|     CoPE.__init__ (L569)                                                            | COVERED |
-|   LFL (L621)                                                                        |  MISSED |
-|     LFL.__init__ (L623)                                                             | COVERED |
+|   CoPE (L569)                                                                       |  MISSED |
+|     CoPE.__init__ (L571)                                                            | COVERED |
+|   LFL (L623)                                                                        |  MISSED |
+|     LFL.__init__ (L625)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
