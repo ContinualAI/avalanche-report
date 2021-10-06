@@ -1288,23 +1288,23 @@
 | training/plugins/synaptic_intelligence.py (module)                                  |  MISSED |
 |   SynapticIntelligencePlugin (L21)                                                  | COVERED |
 |     SynapticIntelligencePlugin.__init__ (L42)                                       | COVERED |
-|     SynapticIntelligencePlugin.before_training_exp (L82)                            |  MISSED |
-|     SynapticIntelligencePlugin.before_backward (L92)                                |  MISSED |
-|     SynapticIntelligencePlugin.before_training_iteration (L101)                     |  MISSED |
-|     SynapticIntelligencePlugin.after_training_iteration (L106)                      |  MISSED |
-|     SynapticIntelligencePlugin.after_training_exp (L111)                            |  MISSED |
-|     SynapticIntelligencePlugin.device (L117)                                        |  MISSED |
-|     SynapticIntelligencePlugin.create_syn_data (L125)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_weights (L156)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_grad (L166)                                  |  MISSED |
-|     SynapticIntelligencePlugin.init_batch (L176)                                    |  MISSED |
-|     SynapticIntelligencePlugin.pre_update (L186)                                    |  MISSED |
-|     SynapticIntelligencePlugin.post_update (L193)                                   |  MISSED |
-|     SynapticIntelligencePlugin.compute_ewc_loss (L207)                              |  MISSED |
-|     SynapticIntelligencePlugin.update_ewc_data (L231)                               |  MISSED |
-|     SynapticIntelligencePlugin.explode_excluded_parameters (L258)                   | COVERED |
-|     SynapticIntelligencePlugin.not_excluded_parameters (L276)                       |  MISSED |
-|     SynapticIntelligencePlugin.allowed_parameters (L302)                            |  MISSED |
+|     SynapticIntelligencePlugin.before_training_exp (L87)                            |  MISSED |
+|     SynapticIntelligencePlugin.before_backward (L97)                                |  MISSED |
+|     SynapticIntelligencePlugin.before_training_iteration (L113)                     |  MISSED |
+|     SynapticIntelligencePlugin.after_training_iteration (L118)                      |  MISSED |
+|     SynapticIntelligencePlugin.after_training_exp (L123)                            |  MISSED |
+|     SynapticIntelligencePlugin.device (L129)                                        |  MISSED |
+|     SynapticIntelligencePlugin.create_syn_data (L137)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_weights (L168)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_grad (L178)                                  |  MISSED |
+|     SynapticIntelligencePlugin.init_batch (L188)                                    |  MISSED |
+|     SynapticIntelligencePlugin.pre_update (L198)                                    |  MISSED |
+|     SynapticIntelligencePlugin.post_update (L205)                                   |  MISSED |
+|     SynapticIntelligencePlugin.compute_ewc_loss (L219)                              |  MISSED |
+|     SynapticIntelligencePlugin.update_ewc_data (L243)                               |  MISSED |
+|     SynapticIntelligencePlugin.explode_excluded_parameters (L270)                   | COVERED |
+|     SynapticIntelligencePlugin.not_excluded_parameters (L288)                       |  MISSED |
+|     SynapticIntelligencePlugin.allowed_parameters (L314)                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/ar1.py (module)                                                 |  MISSED |
 |   AR1 (L21)                                                                         | COVERED |
@@ -1417,10 +1417,10 @@
 |     EWC.__init__ (L453)                                                             | COVERED |
 |   SynapticIntelligence (L509)                                                       | COVERED |
 |     SynapticIntelligence.__init__ (L526)                                            | COVERED |
-|   CoPE (L569)                                                                       |  MISSED |
-|     CoPE.__init__ (L571)                                                            | COVERED |
-|   LFL (L623)                                                                        |  MISSED |
-|     LFL.__init__ (L625)                                                             | COVERED |
+|   CoPE (L572)                                                                       |  MISSED |
+|     CoPE.__init__ (L574)                                                            | COVERED |
+|   LFL (L626)                                                                        |  MISSED |
+|     LFL.__init__ (L628)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
