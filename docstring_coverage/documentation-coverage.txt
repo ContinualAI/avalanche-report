@@ -1232,7 +1232,7 @@
 |     EWCPlugin.before_backward (L63)                                                 | COVERED |
 |     EWCPlugin.after_training_exp (L92)                                              | COVERED |
 |     EWCPlugin.compute_importances (L111)                                            | COVERED |
-|     EWCPlugin.update_importances (L156)                                             | COVERED |
+|     EWCPlugin.update_importances (L158)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L27)                                                                 | COVERED |
