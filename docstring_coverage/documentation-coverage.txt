@@ -1425,9 +1425,9 @@
 |   AlreadyTrainedError (L28)                                                         |  MISSED |
 |   JointTraining (L32)                                                               |  MISSED |
 |     JointTraining.__init__ (L33)                                                    | COVERED |
-|     JointTraining.train (L66)                                                       | COVERED |
-|     JointTraining.train_dataset_adaptation (L116)                                   | COVERED |
-|     JointTraining.model_adaptation (L125)                                           | COVERED |
+|     JointTraining.train (L75)                                                       | COVERED |
+|     JointTraining.train_dataset_adaptation (L125)                                   | COVERED |
+|     JointTraining.model_adaptation (L134)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L25)                                                                       | COVERED |
