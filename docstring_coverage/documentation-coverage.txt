@@ -1250,15 +1250,16 @@
 |     GEMPlugin.solve_quadprog (L137)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gss_greedy.py (module)                                             |  MISSED |
-|   GSS_greedyPlugin (L7)                                                             | COVERED |
-|     GSS_greedyPlugin.__init__ (L22)                                                 |  MISSED |
-|     GSS_greedyPlugin.cosine_similarity (L33)                                        |  MISSED |
-|     GSS_greedyPlugin.get_grad_vector (L41)                                          | COVERED |
-|     GSS_greedyPlugin.get_batch_sim (L56)                                            | COVERED |
-|     GSS_greedyPlugin.get_rand_mem_grads (L74)                                       | COVERED |
-|     GSS_greedyPlugin.get_each_batch_sample_sim (L103)                               | COVERED |
-|     GSS_greedyPlugin.before_training_exp (L132)                                     | COVERED |
-|     GSS_greedyPlugin.after_forward (L156)                                           | COVERED |
+|   GSS_greedyPlugin (L12)                                                            | COVERED |
+|     GSS_greedyPlugin.__init__ (L23)                                                 | COVERED |
+|     GSS_greedyPlugin.before_training (L42)                                          |  MISSED |
+|     GSS_greedyPlugin.cosine_similarity (L48)                                        |  MISSED |
+|     GSS_greedyPlugin.get_grad_vector (L56)                                          | COVERED |
+|     GSS_greedyPlugin.get_batch_sim (L71)                                            | COVERED |
+|     GSS_greedyPlugin.get_rand_mem_grads (L89)                                       | COVERED |
+|     GSS_greedyPlugin.get_each_batch_sample_sim (L119)                               | COVERED |
+|     GSS_greedyPlugin.before_training_exp (L148)                                     | COVERED |
+|     GSS_greedyPlugin.after_forward (L173)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lfl.py (module)                                                    |  MISSED |
 |   LFLPlugin (L10)                                                                   | COVERED |
@@ -1567,7 +1568,7 @@
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                                 |     5 |    3 |     2 |    40% |
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
-| training/plugins/gss_greedy.py                            |    10 |    3 |     7 |    70% |
+| training/plugins/gss_greedy.py                            |    11 |    3 |     8 |    73% |
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                         |     5 |    3 |     2 |    40% |
 | training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
@@ -1582,5 +1583,5 @@
 | training/strategies/joint_training.py                     |     7 |    3 |     4 |    57% |
 | training/strategies/strategy_wrappers.py                  |    27 |   11 |    16 |    59% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1335 |  676 |   659 |  49.4% |
+| TOTAL                                                     |  1336 |  676 |   660 |  49.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.4%) -----------------
