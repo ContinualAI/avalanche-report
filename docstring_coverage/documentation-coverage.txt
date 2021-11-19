@@ -856,17 +856,17 @@
 |-------------------------------------------------------------------------------------|---------|
 | logging/csv_logger.py (module)                                                      |  MISSED |
 |   CSVLogger (L24)                                                                   | COVERED |
-|     CSVLogger.__init__ (L53)                                                        | COVERED |
-|     CSVLogger.log_single_metric (L89)                                               |  MISSED |
-|     CSVLogger.print_train_metrics (L100)                                            |  MISSED |
-|     CSVLogger.print_eval_metrics (L107)                                             |  MISSED |
-|     CSVLogger.after_training_epoch (L113)                                           |  MISSED |
-|     CSVLogger.after_eval_exp (L129)                                                 |  MISSED |
-|     CSVLogger.before_training_exp (L153)                                            |  MISSED |
-|     CSVLogger.before_eval (L158)                                                    | COVERED |
-|     CSVLogger.before_training (L166)                                                |  MISSED |
-|     CSVLogger.after_training (L170)                                                 |  MISSED |
-|     CSVLogger.close (L174)                                                          |  MISSED |
+|     CSVLogger.__init__ (L58)                                                        | COVERED |
+|     CSVLogger.log_single_metric (L94)                                               |  MISSED |
+|     CSVLogger.print_train_metrics (L105)                                            |  MISSED |
+|     CSVLogger.print_eval_metrics (L112)                                             |  MISSED |
+|     CSVLogger.after_training_epoch (L118)                                           |  MISSED |
+|     CSVLogger.after_eval_exp (L134)                                                 |  MISSED |
+|     CSVLogger.before_training_exp (L158)                                            |  MISSED |
+|     CSVLogger.before_eval (L163)                                                    | COVERED |
+|     CSVLogger.before_training (L171)                                                |  MISSED |
+|     CSVLogger.after_training (L175)                                                 |  MISSED |
+|     CSVLogger.close (L179)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/interactive_logging.py (module)                                             |  MISSED |
 |   InteractiveLogger (L23)                                                           | COVERED |
@@ -880,33 +880,33 @@
 |-------------------------------------------------------------------------------------|---------|
 | logging/strategy_logger.py (module)                                                 |  MISSED |
 |   StrategyLogger (L12)                                                              | COVERED |
-|     StrategyLogger.__init__ (L31)                                                   |  MISSED |
-|     StrategyLogger.log_single_metric (L34)                                          | COVERED |
-|     StrategyLogger.log_metric (L48)                                                 | COVERED |
-|     StrategyLogger.before_training (L70)                                            |  MISSED |
-|     StrategyLogger.before_training_exp (L75)                                        |  MISSED |
-|     StrategyLogger.after_train_dataset_adaptation (L80)                             |  MISSED |
-|     StrategyLogger.before_training_epoch (L86)                                      |  MISSED |
-|     StrategyLogger.before_training_iteration (L91)                                  |  MISSED |
-|     StrategyLogger.before_forward (L97)                                             |  MISSED |
-|     StrategyLogger.after_forward (L102)                                             |  MISSED |
-|     StrategyLogger.before_backward (L107)                                           |  MISSED |
-|     StrategyLogger.after_backward (L112)                                            |  MISSED |
-|     StrategyLogger.after_training_iteration (L117)                                  |  MISSED |
-|     StrategyLogger.before_update (L122)                                             |  MISSED |
-|     StrategyLogger.after_update (L127)                                              |  MISSED |
-|     StrategyLogger.after_training_epoch (L132)                                      |  MISSED |
-|     StrategyLogger.after_training_exp (L137)                                        |  MISSED |
-|     StrategyLogger.after_training (L142)                                            |  MISSED |
-|     StrategyLogger.before_eval (L147)                                               |  MISSED |
-|     StrategyLogger.after_eval_dataset_adaptation (L152)                             |  MISSED |
-|     StrategyLogger.before_eval_exp (L158)                                           |  MISSED |
-|     StrategyLogger.after_eval_exp (L163)                                            |  MISSED |
-|     StrategyLogger.after_eval (L168)                                                |  MISSED |
-|     StrategyLogger.before_eval_iteration (L173)                                     |  MISSED |
-|     StrategyLogger.before_eval_forward (L178)                                       |  MISSED |
-|     StrategyLogger.after_eval_forward (L183)                                        |  MISSED |
-|     StrategyLogger.after_eval_iteration (L188)                                      |  MISSED |
+|     StrategyLogger.__init__ (L32)                                                   |  MISSED |
+|     StrategyLogger.log_single_metric (L35)                                          | COVERED |
+|     StrategyLogger.log_metric (L49)                                                 | COVERED |
+|     StrategyLogger.before_training (L71)                                            |  MISSED |
+|     StrategyLogger.before_training_exp (L76)                                        |  MISSED |
+|     StrategyLogger.after_train_dataset_adaptation (L81)                             |  MISSED |
+|     StrategyLogger.before_training_epoch (L87)                                      |  MISSED |
+|     StrategyLogger.before_training_iteration (L92)                                  |  MISSED |
+|     StrategyLogger.before_forward (L98)                                             |  MISSED |
+|     StrategyLogger.after_forward (L103)                                             |  MISSED |
+|     StrategyLogger.before_backward (L108)                                           |  MISSED |
+|     StrategyLogger.after_backward (L113)                                            |  MISSED |
+|     StrategyLogger.after_training_iteration (L118)                                  |  MISSED |
+|     StrategyLogger.before_update (L123)                                             |  MISSED |
+|     StrategyLogger.after_update (L128)                                              |  MISSED |
+|     StrategyLogger.after_training_epoch (L133)                                      |  MISSED |
+|     StrategyLogger.after_training_exp (L138)                                        |  MISSED |
+|     StrategyLogger.after_training (L143)                                            |  MISSED |
+|     StrategyLogger.before_eval (L148)                                               |  MISSED |
+|     StrategyLogger.after_eval_dataset_adaptation (L153)                             |  MISSED |
+|     StrategyLogger.before_eval_exp (L159)                                           |  MISSED |
+|     StrategyLogger.after_eval_exp (L164)                                            |  MISSED |
+|     StrategyLogger.after_eval (L169)                                                |  MISSED |
+|     StrategyLogger.before_eval_iteration (L174)                                     |  MISSED |
+|     StrategyLogger.before_eval_forward (L179)                                       |  MISSED |
+|     StrategyLogger.after_eval_forward (L184)                                        |  MISSED |
+|     StrategyLogger.after_eval_iteration (L189)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
@@ -955,19 +955,19 @@
 |     MultiTaskModule.forward (L107)                                                  | COVERED |
 |     MultiTaskModule.forward_single_task (L139)                                      | COVERED |
 |     MultiTaskModule.forward_all_tasks (L149)                                        | COVERED |
-|   IncrementalClassifier (L164)                                                      |  MISSED |
-|     IncrementalClassifier.__init__ (L165)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L180)                                         | COVERED |
-|     IncrementalClassifier.forward (L198)                                            | COVERED |
-|   MultiHeadClassifier (L208)                                                        |  MISSED |
-|     MultiHeadClassifier.__init__ (L209)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L246)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L266)                                  | COVERED |
-|   TrainEvalModel (L277)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L285)                                                  | COVERED |
-|     TrainEvalModel.forward (L300)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L304)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L307)                                           |  MISSED |
+|   IncrementalClassifier (L164)                                                      | COVERED |
+|     IncrementalClassifier.__init__ (L172)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L182)                                         | COVERED |
+|     IncrementalClassifier.forward (L200)                                            | COVERED |
+|   MultiHeadClassifier (L210)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L232)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L249)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L269)                                  | COVERED |
+|   TrainEvalModel (L280)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L288)                                                  | COVERED |
+|     TrainEvalModel.forward (L303)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L307)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L310)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -992,20 +992,20 @@
 |   IcarlNet (L84)                                                                    |  MISSED |
 |     IcarlNet.__init__ (L85)                                                         |  MISSED |
 |     IcarlNet.forward (L137)                                                         |  MISSED |
-|   make_icarl_net (L143)                                                             |  MISSED |
-|   initialize_icarl_net (L147)                                                       |  MISSED |
+|   make_icarl_net (L143)                                                             | COVERED |
+|   initialize_icarl_net (L153)                                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/mlp_tiny_imagenet.py (module)                                                | COVERED |
-|   SimpleMLP_TinyImageNet (L17)                                                      |  MISSED |
-|     SimpleMLP_TinyImageNet.__init__ (L19)                                           |  MISSED |
-|     SimpleMLP_TinyImageNet.forward (L29)                                            |  MISSED |
+|   SimpleMLP_TinyImageNet (L17)                                                      | COVERED |
+|     SimpleMLP_TinyImageNet.__init__ (L20)                                           | COVERED |
+|     SimpleMLP_TinyImageNet.forward (L34)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/mobilenetv1.py (module)                                                      | COVERED |
 |   remove_sequential (L26)                                                           |  MISSED |
 |   remove_DwsConvBlock (L38)                                                         |  MISSED |
-|   MobilenetV1 (L51)                                                                 |  MISSED |
-|     MobilenetV1.__init__ (L52)                                                      |  MISSED |
-|     MobilenetV1.forward (L76)                                                       |  MISSED |
+|   MobilenetV1 (L51)                                                                 | COVERED |
+|     MobilenetV1.__init__ (L54)                                                      |  MISSED |
+|     MobilenetV1.forward (L78)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/ncm_classifier.py (module)                                                   |  MISSED |
 |   NCMClassifier (L5)                                                                | COVERED |
@@ -1013,24 +1013,24 @@
 |     NCMClassifier.forward (L20)                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                              |  MISSED |
-|   LinearAdapter (L11)                                                               |  MISSED |
-|     LinearAdapter.__init__ (L12)                                                    | COVERED |
-|     LinearAdapter.forward (L27)                                                     |  MISSED |
-|   MLPAdapter (L35)                                                                  |  MISSED |
-|     MLPAdapter.__init__ (L36)                                                       | COVERED |
-|     MLPAdapter.forward (L58)                                                        |  MISSED |
-|   PNNColumn (L73)                                                                   |  MISSED |
-|     PNNColumn.__init__ (L74)                                                        | COVERED |
-|     PNNColumn.freeze (L99)                                                          |  MISSED |
-|     PNNColumn.forward (L103)                                                        |  MISSED |
-|   PNNLayer (L110)                                                                   |  MISSED |
-|     PNNLayer.__init__ (L111)                                                        | COVERED |
-|     PNNLayer.num_columns (L135)                                                     |  MISSED |
-|     PNNLayer.train_adaptation (L138)                                                | COVERED |
-|     PNNLayer.forward_single_task (L181)                                             | COVERED |
-|   PNN (L195)                                                                        |  MISSED |
-|     PNN.__init__ (L196)                                                             | COVERED |
-|     PNN.forward_single_task (L225)                                                  | COVERED |
+|   LinearAdapter (L11)                                                               | COVERED |
+|     LinearAdapter.__init__ (L15)                                                    | COVERED |
+|     LinearAdapter.forward (L29)                                                     |  MISSED |
+|   MLPAdapter (L37)                                                                  | COVERED |
+|     MLPAdapter.__init__ (L41)                                                       | COVERED |
+|     MLPAdapter.forward (L62)                                                        |  MISSED |
+|   PNNColumn (L77)                                                                   | COVERED |
+|     PNNColumn.__init__ (L81)                                                        | COVERED |
+|     PNNColumn.freeze (L105)                                                         |  MISSED |
+|     PNNColumn.forward (L109)                                                        |  MISSED |
+|   PNNLayer (L116)                                                                   | COVERED |
+|     PNNLayer.__init__ (L123)                                                        | COVERED |
+|     PNNLayer.num_columns (L142)                                                     |  MISSED |
+|     PNNLayer.train_adaptation (L145)                                                | COVERED |
+|     PNNLayer.forward_single_task (L188)                                             | COVERED |
+|   PNN (L202)                                                                        | COVERED |
+|     PNN.__init__ (L210)                                                             | COVERED |
+|     PNN.forward_single_task (L234)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/pytorchcv_wrapper.py (module)                                                | COVERED |
 |   vgg (L32)                                                                         | COVERED |
@@ -1040,21 +1040,21 @@
 |   get_model (L143)                                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/simple_cnn.py (module)                                                       |  MISSED |
-|   SimpleCNN (L18)                                                                   |  MISSED |
-|     SimpleCNN.__init__ (L20)                                                        |  MISSED |
-|     SimpleCNN.forward (L45)                                                         |  MISSED |
-|   MTSimpleCNN (L52)                                                                 |  MISSED |
-|     MTSimpleCNN.__init__ (L54)                                                      | COVERED |
+|   SimpleCNN (L18)                                                                   | COVERED |
+|     SimpleCNN.__init__ (L22)                                                        |  MISSED |
+|     SimpleCNN.forward (L47)                                                         |  MISSED |
+|   MTSimpleCNN (L54)                                                                 | COVERED |
+|     MTSimpleCNN.__init__ (L57)                                                      |  MISSED |
 |     MTSimpleCNN.forward (L61)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/simple_mlp.py (module)                                                       |  MISSED |
-|   SimpleMLP (L19)                                                                   |  MISSED |
-|     SimpleMLP.__init__ (L20)                                                        |  MISSED |
-|     SimpleMLP.forward (L38)                                                         |  MISSED |
-|     SimpleMLP.get_features (L45)                                                    |  MISSED |
-|   MTSimpleMLP (L52)                                                                 |  MISSED |
-|     MTSimpleMLP.__init__ (L53)                                                      | COVERED |
-|     MTSimpleMLP.forward (L67)                                                       |  MISSED |
+|   SimpleMLP (L19)                                                                   | COVERED |
+|     SimpleMLP.__init__ (L24)                                                        | COVERED |
+|     SimpleMLP.forward (L49)                                                         |  MISSED |
+|     SimpleMLP.get_features (L56)                                                    |  MISSED |
+|   MTSimpleMLP (L63)                                                                 | COVERED |
+|     MTSimpleMLP.__init__ (L65)                                                      |  MISSED |
+|     MTSimpleMLP.forward (L76)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/slda_resnet.py (module)                                                      |  MISSED |
 |   SLDAResNetModel (L7)                                                              | COVERED |
@@ -1544,17 +1544,17 @@
 | logging/wandb_logger.py                                   |     7 |    4 |     3 |    43% |
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
-| models/dynamic_modules.py                                 |    24 |    6 |    18 |    75% |
+| models/dynamic_modules.py                                 |    24 |    4 |    20 |    83% |
 | models/dynamic_optimizers.py                              |     4 |    0 |     4 |   100% |
 | models/helper_method.py                                   |     5 |    2 |     3 |    60% |
-| models/icarl_resnet.py                                    |    14 |   14 |     0 |     0% |
-| models/mlp_tiny_imagenet.py                               |     4 |    3 |     1 |    25% |
-| models/mobilenetv1.py                                     |     6 |    5 |     1 |    17% |
+| models/icarl_resnet.py                                    |    14 |   12 |     2 |    14% |
+| models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
+| models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
 | models/ncm_classifier.py                                  |     4 |    2 |     2 |    50% |
-| models/pnn.py                                             |    19 |   11 |     8 |    42% |
+| models/pnn.py                                             |    19 |    6 |    13 |    68% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
-| models/simple_cnn.py                                      |     7 |    6 |     1 |    14% |
-| models/simple_mlp.py                                      |     8 |    7 |     1 |    12% |
+| models/simple_cnn.py                                      |     7 |    5 |     2 |    29% |
+| models/simple_mlp.py                                      |     8 |    5 |     3 |    38% |
 | models/slda_resnet.py                                     |     5 |    2 |     3 |    60% |
 | models/utils.py                                           |     9 |    7 |     2 |    22% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
@@ -1584,5 +1584,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1337 |  653 |   684 |  51.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 51.2%) -----------------
+| TOTAL                                                     |  1337 |  638 |   699 |  52.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 52.3%) -----------------
