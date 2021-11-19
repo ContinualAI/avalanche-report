@@ -1235,10 +1235,11 @@
 |     EWCPlugin.update_importances (L158)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
-|   GDumbPlugin (L27)                                                                 | COVERED |
-|     GDumbPlugin.__init__ (L40)                                                      |  MISSED |
-|     GDumbPlugin.before_train_dataset_adaptation (L52)                               | COVERED |
-|     GDumbPlugin.after_train_dataset_adaptation (L60)                                |  MISSED |
+|   GDumbPlugin (L12)                                                                 | COVERED |
+|     GDumbPlugin.__init__ (L25)                                                      |  MISSED |
+|     GDumbPlugin.before_train_dataset_adaptation (L37)                               | COVERED |
+|     GDumbPlugin.before_eval_dataset_adaptation (L46)                                |  MISSED |
+|     GDumbPlugin.after_train_dataset_adaptation (L50)                                |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gem.py (module)                                                    |  MISSED |
 |   GEMPlugin (L10)                                                                   | COVERED |
@@ -1398,8 +1399,8 @@
 |     BaseStrategy.after_eval_iteration (L623)                                        |  MISSED |
 |     BaseStrategy.before_train_dataset_adaptation (L627)                             |  MISSED |
 |     BaseStrategy.model_adaptation (L631)                                            |  MISSED |
-|     BaseStrategy.forward (L637)                                                     |  MISSED |
-|     BaseStrategy.make_optimizer (L640)                                              |  MISSED |
+|     BaseStrategy.forward (L640)                                                     |  MISSED |
+|     BaseStrategy.make_optimizer (L643)                                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  |  MISSED |
@@ -1566,7 +1567,7 @@
 | training/plugins/early_stopping.py                        |     5 |    4 |     1 |    20% |
 | training/plugins/evaluation.py                            |    34 |   29 |     5 |    15% |
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
-| training/plugins/gdumb.py                                 |     5 |    3 |     2 |    40% |
+| training/plugins/gdumb.py                                 |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/gss_greedy.py                            |    11 |    3 |     8 |    73% |
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
@@ -1583,5 +1584,5 @@
 | training/strategies/joint_training.py                     |     7 |    3 |     4 |    57% |
 | training/strategies/strategy_wrappers.py                  |    27 |   11 |    16 |    59% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1336 |  676 |   660 |  49.4% |
+| TOTAL                                                     |  1337 |  677 |   660 |  49.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 49.4%) -----------------
