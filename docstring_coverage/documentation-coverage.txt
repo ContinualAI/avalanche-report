@@ -1345,67 +1345,39 @@
 | training/strategies/ar1.py (module)                                                 |  MISSED |
 |   AR1 (L21)                                                                         | COVERED |
 |     AR1.__init__ (L33)                                                              | COVERED |
-|     AR1.before_training_exp (L135)                                                  |  MISSED |
 |     AR1.make_train_dataloader (L176)                                                | COVERED |
 |     AR1.training_epoch (L213)                                                       |  MISSED |
-|     AR1.after_training_exp (L262)                                                   |  MISSED |
 |     AR1.filter_bn_and_brn (L289)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/base_strategy.py (module)                                       |  MISSED |
 |   BaseStrategy (L40)                                                                | COVERED |
-|     BaseStrategy.__init__ (L86)                                                     | COVERED |
-|     BaseStrategy.training_exp_counter (L191)                                        | COVERED |
-|     BaseStrategy.epoch (L200)                                                       | COVERED |
-|     BaseStrategy.mb_it (L208)                                                       | COVERED |
-|     BaseStrategy.is_eval (L217)                                                     | COVERED |
-|     BaseStrategy.mb_x (L222)                                                        | COVERED |
-|     BaseStrategy.mb_y (L227)                                                        | COVERED |
-|     BaseStrategy.mb_task_id (L232)                                                  |  MISSED |
-|     BaseStrategy.criterion (L236)                                                   | COVERED |
-|     BaseStrategy.train (L240)                                                       | COVERED |
-|     BaseStrategy.train_exp (L281)                                                   | COVERED |
+|     BaseStrategy.__init__ (L88)                                                     | COVERED |
+|     BaseStrategy.training_exp_counter (L192)                                        | COVERED |
+|     BaseStrategy.epoch (L201)                                                       | COVERED |
+|     BaseStrategy.mb_it (L209)                                                       | COVERED |
+|     BaseStrategy.is_eval (L218)                                                     | COVERED |
+|     BaseStrategy.mb_x (L223)                                                        | COVERED |
+|     BaseStrategy.mb_y (L228)                                                        | COVERED |
+|     BaseStrategy.mb_task_id (L233)                                                  |  MISSED |
+|     BaseStrategy.criterion (L237)                                                   | COVERED |
+|     BaseStrategy.train (L241)                                                       | COVERED |
+|     BaseStrategy.train_exp (L282)                                                   | COVERED |
 |     BaseStrategy.stop_training (L367)                                               | COVERED |
 |     BaseStrategy.train_dataset_adaptation (L371)                                    | COVERED |
 |     BaseStrategy.eval (L377)                                                        | COVERED |
-|     BaseStrategy.before_training_exp (L418)                                         | COVERED |
 |     BaseStrategy.make_train_dataloader (L426)                                       | COVERED |
-|     BaseStrategy.make_eval_dataloader (L443)                                        | COVERED |
-|     BaseStrategy.after_train_dataset_adaptation (L461)                              | COVERED |
-|     BaseStrategy.before_training_epoch (L471)                                       | COVERED |
-|     BaseStrategy.training_epoch (L480)                                              | COVERED |
-|     BaseStrategy.before_training (L525)                                             |  MISSED |
-|     BaseStrategy.after_training (L529)                                              |  MISSED |
-|     BaseStrategy.before_training_iteration (L533)                                   |  MISSED |
-|     BaseStrategy.before_forward (L537)                                              |  MISSED |
-|     BaseStrategy.after_forward (L541)                                               |  MISSED |
-|     BaseStrategy.before_backward (L545)                                             |  MISSED |
-|     BaseStrategy.after_backward (L549)                                              |  MISSED |
-|     BaseStrategy.after_training_iteration (L553)                                    |  MISSED |
-|     BaseStrategy.before_update (L557)                                               |  MISSED |
-|     BaseStrategy.after_update (L561)                                                |  MISSED |
-|     BaseStrategy.after_training_epoch (L565)                                        |  MISSED |
-|     BaseStrategy.after_training_exp (L569)                                          |  MISSED |
-|     BaseStrategy.before_eval (L573)                                                 |  MISSED |
-|     BaseStrategy.before_eval_exp (L577)                                             |  MISSED |
-|     BaseStrategy.eval_dataset_adaptation (L581)                                     | COVERED |
-|     BaseStrategy.before_eval_dataset_adaptation (L586)                              |  MISSED |
-|     BaseStrategy.after_eval_dataset_adaptation (L590)                               |  MISSED |
-|     BaseStrategy.eval_epoch (L594)                                                  |  MISSED |
-|     BaseStrategy.after_eval_exp (L606)                                              |  MISSED |
-|     BaseStrategy.after_eval (L610)                                                  |  MISSED |
-|     BaseStrategy.before_eval_iteration (L614)                                       |  MISSED |
-|     BaseStrategy.before_eval_forward (L618)                                         |  MISSED |
-|     BaseStrategy.after_eval_forward (L622)                                          |  MISSED |
-|     BaseStrategy.after_eval_iteration (L626)                                        |  MISSED |
-|     BaseStrategy.before_train_dataset_adaptation (L630)                             |  MISSED |
-|     BaseStrategy.model_adaptation (L634)                                            |  MISSED |
-|     BaseStrategy.forward (L643)                                                     |  MISSED |
-|     BaseStrategy.make_optimizer (L646)                                              |  MISSED |
+|     BaseStrategy.make_eval_dataloader (L446)                                        | COVERED |
+|     BaseStrategy.training_epoch (L483)                                              | COVERED |
+|     BaseStrategy.eval_dataset_adaptation (L584)                                     | COVERED |
+|     BaseStrategy.eval_epoch (L597)                                                  |  MISSED |
+|     BaseStrategy.model_adaptation (L637)                                            |  MISSED |
+|     BaseStrategy.forward (L646)                                                     |  MISSED |
+|     BaseStrategy.make_optimizer (L649)                                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
 |     Cumulative.__init__ (L20)                                                       | COVERED |
-|     Cumulative.train_dataset_adaptation (L53)                                       | COVERED |
+|     Cumulative.train_dataset_adaptation (L52)                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/deep_slda.py (module)                                           |  MISSED |
 |   StreamingLDA (L14)                                                                | COVERED |
@@ -1427,37 +1399,37 @@
 |   AlreadyTrainedError (L28)                                                         |  MISSED |
 |   JointTraining (L32)                                                               | COVERED |
 |     JointTraining.__init__ (L46)                                                    | COVERED |
-|     JointTraining.train (L77)                                                       | COVERED |
-|     JointTraining.train_dataset_adaptation (L127)                                   | COVERED |
-|     JointTraining.model_adaptation (L136)                                           | COVERED |
+|     JointTraining.train (L81)                                                       | COVERED |
+|     JointTraining.train_dataset_adaptation (L131)                                   | COVERED |
+|     JointTraining.model_adaptation (L140)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L25)                                                                       | COVERED |
 |     Naive.__init__ (L37)                                                            | COVERED |
-|   PNNStrategy (L71)                                                                 | COVERED |
-|     PNNStrategy.__init__ (L74)                                                      | COVERED |
-|   CWRStar (L127)                                                                    | COVERED |
-|     CWRStar.__init__ (L129)                                                         | COVERED |
-|   Replay (L168)                                                                     | COVERED |
-|     Replay.__init__ (L174)                                                          | COVERED |
-|   GSS_greedy (L215)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L221)                                                      | COVERED |
-|   GDumb (L261)                                                                      | COVERED |
-|     GDumb.__init__ (L267)                                                           | COVERED |
-|   LwF (L307)                                                                        | COVERED |
-|     LwF.__init__ (L314)                                                             | COVERED |
-|   AGEM (L356)                                                                       | COVERED |
-|     AGEM.__init__ (L363)                                                            | COVERED |
-|   GEM (L405)                                                                        | COVERED |
-|     GEM.__init__ (L412)                                                             | COVERED |
-|   EWC (L454)                                                                        | COVERED |
-|     EWC.__init__ (L461)                                                             | COVERED |
-|   SynapticIntelligence (L514)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L530)                                            | COVERED |
-|   CoPE (L576)                                                                       | COVERED |
-|     CoPE.__init__ (L583)                                                            | COVERED |
-|   LFL (L632)                                                                        | COVERED |
-|     LFL.__init__ (L640)                                                             | COVERED |
+|   PNNStrategy (L69)                                                                 | COVERED |
+|     PNNStrategy.__init__ (L72)                                                      | COVERED |
+|   CWRStar (L123)                                                                    | COVERED |
+|     CWRStar.__init__ (L125)                                                         | COVERED |
+|   Replay (L162)                                                                     | COVERED |
+|     Replay.__init__ (L168)                                                          | COVERED |
+|   GSS_greedy (L207)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L213)                                                      | COVERED |
+|   GDumb (L251)                                                                      | COVERED |
+|     GDumb.__init__ (L257)                                                           | COVERED |
+|   LwF (L295)                                                                        | COVERED |
+|     LwF.__init__ (L302)                                                             | COVERED |
+|   AGEM (L342)                                                                       | COVERED |
+|     AGEM.__init__ (L349)                                                            | COVERED |
+|   GEM (L390)                                                                        | COVERED |
+|     GEM.__init__ (L397)                                                             | COVERED |
+|   EWC (L438)                                                                        | COVERED |
+|     EWC.__init__ (L445)                                                             | COVERED |
+|   SynapticIntelligence (L497)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L513)                                            | COVERED |
+|   CoPE (L558)                                                                       | COVERED |
+|     CoPE.__init__ (L565)                                                            | COVERED |
+|   LFL (L613)                                                                        | COVERED |
+|     LFL.__init__ (L621)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1576,13 +1548,13 @@
 | training/plugins/replay.py                                |     6 |    3 |     3 |    50% |
 | training/plugins/strategy_plugin.py                       |    29 |   28 |     1 |     3% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
-| training/strategies/ar1.py                                |     8 |    5 |     3 |    38% |
-| training/strategies/base_strategy.py                      |    50 |   29 |    21 |    42% |
+| training/strategies/ar1.py                                |     6 |    3 |     3 |    50% |
+| training/strategies/base_strategy.py                      |    24 |    6 |    18 |    75% |
 | training/strategies/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/strategies/deep_slda.py                          |    11 |    3 |     8 |    73% |
 | training/strategies/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1337 |  638 |   699 |  52.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 52.3%) -----------------
+| TOTAL                                                     |  1309 |  613 |   696 |  53.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.2%) -----------------
