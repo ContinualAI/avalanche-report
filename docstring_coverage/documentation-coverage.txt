@@ -686,18 +686,14 @@
 |   gpu_usage_metrics (L265)                                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/images_samples.py (module)                                       |  MISSED |
-|   ImagesSamplePlugin (L27)                                                          | COVERED |
-|     ImagesSamplePlugin.__init__ (L41)                                               |  MISSED |
-|     ImagesSamplePlugin.after_train_dataset_adaptation (L58)                         |  MISSED |
-|     ImagesSamplePlugin.after_eval_dataset_adaptation (L64)                          |  MISSED |
-|     ImagesSamplePlugin.make_grid_sample (L70)                                       |  MISSED |
-|     ImagesSamplePlugin.load_sorted_images (L91)                                     |  MISSED |
-|     ImagesSamplePlugin.load_data (L97)                                              |  MISSED |
-|     ImagesSamplePlugin.sort_images (L112)                                           |  MISSED |
-|     ImagesSamplePlugin.make_dataloader (L120)                                       |  MISSED |
-|     ImagesSamplePlugin.reset (L129)                                                 |  MISSED |
-|     ImagesSamplePlugin.result (L132)                                                |  MISSED |
-|   images_samples_metrics (L139)                                                     | COVERED |
+|   ImagesSamplePlugin (L28)                                                          | COVERED |
+|     ImagesSamplePlugin.__init__ (L44)                                               |  MISSED |
+|     ImagesSamplePlugin.after_train_dataset_adaptation (L63)                         |  MISSED |
+|     ImagesSamplePlugin.after_eval_dataset_adaptation (L69)                          |  MISSED |
+|     ImagesSamplePlugin.reset (L75)                                                  |  MISSED |
+|     ImagesSamplePlugin.result (L78)                                                 |  MISSED |
+|   MaybeToTensor (L148)                                                              | COVERED |
+|   images_samples_metrics (L166)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/labels_repartition.py (module)                                   |  MISSED |
 |   LabelsRepartition (L33)                                                           | COVERED |
@@ -1081,45 +1077,44 @@
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L19)                                                             | COVERED |
 |     ExemplarsBuffer.__init__ (L26)                                                  | COVERED |
-|     ExemplarsBuffer.buffer (L35)                                                    | COVERED |
-|     ExemplarsBuffer.buffer (L40)                                                    |  MISSED |
-|     ExemplarsBuffer.update (L44)                                                    | COVERED |
-|     ExemplarsBuffer.resize (L54)                                                    | COVERED |
-|   ReservoirSamplingBuffer (L64)                                                     | COVERED |
-|     ReservoirSamplingBuffer.__init__ (L67)                                          | COVERED |
-|     ReservoirSamplingBuffer.update (L81)                                            | COVERED |
-|     ReservoirSamplingBuffer.update_from_dataset (L85)                               |  MISSED |
-|     ReservoirSamplingBuffer.resize (L96)                                            | COVERED |
-|   BalancedExemplarsBuffer (L105)                                                    | COVERED |
-|     BalancedExemplarsBuffer.__init__ (L117)                                         | COVERED |
-|     BalancedExemplarsBuffer.buffer_datasets (L142)                                  | COVERED |
-|     BalancedExemplarsBuffer.get_group_lengths (L146)                                | COVERED |
-|     BalancedExemplarsBuffer.buffer (L160)                                           |  MISSED |
-|     BalancedExemplarsBuffer.buffer (L165)                                           |  MISSED |
-|     BalancedExemplarsBuffer.update (L171)                                           | COVERED |
-|     BalancedExemplarsBuffer.resize (L180)                                           | COVERED |
-|   ExperienceBalancedBuffer (L188)                                                   | COVERED |
-|     ExperienceBalancedBuffer.__init__ (L196)                                        | COVERED |
-|     ExperienceBalancedBuffer.update (L208)                                          |  MISSED |
-|   ClassBalancedBuffer (L221)                                                        | COVERED |
-|     ClassBalancedBuffer.__init__ (L233)                                             | COVERED |
-|     ClassBalancedBuffer.update (L251)                                               |  MISSED |
-|   ParametricBuffer (L293)                                                           | COVERED |
-|     ParametricBuffer.__init__ (L297)                                                | COVERED |
-|     ParametricBuffer.update (L318)                                                  |  MISSED |
-|     ParametricBuffer.make_groups (L347)                                             |  MISSED |
-|   ExemplarsSelectionStrategy (L421)                                                 | COVERED |
-|     ExemplarsSelectionStrategy.make_sorted_indices (L427)                           | COVERED |
-|   RandomExemplarsSelectionStrategy (L437)                                           | COVERED |
-|     RandomExemplarsSelectionStrategy.make_sorted_indices (L440)                     |  MISSED |
-|   FeatureBasedExemplarsSelectionStrategy (L447)                                     | COVERED |
-|     FeatureBasedExemplarsSelectionStrategy.__init__ (L451)                          |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L455)               |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L467) | COVERED |
-|   HerdingSelectionStrategy (L476)                                                   | COVERED |
-|     HerdingSelectionStrategy.make_sorted_indices_from_features (L484)               |  MISSED |
-|   ClosestToCenterSelectionStrategy (L506)                                           | COVERED |
-|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L511)       |  MISSED |
+|     ExemplarsBuffer.buffer (L36)                                                    | COVERED |
+|     ExemplarsBuffer.buffer (L41)                                                    |  MISSED |
+|     ExemplarsBuffer.update (L45)                                                    | COVERED |
+|     ExemplarsBuffer.resize (L55)                                                    | COVERED |
+|   ReservoirSamplingBuffer (L65)                                                     | COVERED |
+|     ReservoirSamplingBuffer.__init__ (L68)                                          | COVERED |
+|     ReservoirSamplingBuffer.update (L82)                                            | COVERED |
+|     ReservoirSamplingBuffer.update_from_dataset (L86)                               | COVERED |
+|     ReservoirSamplingBuffer.resize (L102)                                           | COVERED |
+|   BalancedExemplarsBuffer (L111)                                                    | COVERED |
+|     BalancedExemplarsBuffer.__init__ (L123)                                         | COVERED |
+|     BalancedExemplarsBuffer.buffer_datasets (L148)                                  | COVERED |
+|     BalancedExemplarsBuffer.get_group_lengths (L152)                                | COVERED |
+|     BalancedExemplarsBuffer.buffer (L166)                                           |  MISSED |
+|     BalancedExemplarsBuffer.buffer (L171)                                           |  MISSED |
+|     BalancedExemplarsBuffer.update (L177)                                           | COVERED |
+|     BalancedExemplarsBuffer.resize (L186)                                           | COVERED |
+|   ExperienceBalancedBuffer (L194)                                                   | COVERED |
+|     ExperienceBalancedBuffer.__init__ (L202)                                        | COVERED |
+|     ExperienceBalancedBuffer.update (L214)                                          |  MISSED |
+|   ClassBalancedBuffer (L227)                                                        | COVERED |
+|     ClassBalancedBuffer.__init__ (L239)                                             | COVERED |
+|     ClassBalancedBuffer.update (L257)                                               |  MISSED |
+|   ParametricBuffer (L299)                                                           | COVERED |
+|     ParametricBuffer.__init__ (L303)                                                | COVERED |
+|     ParametricBuffer.update (L324)                                                  |  MISSED |
+|   ExemplarsSelectionStrategy (L428)                                                 | COVERED |
+|     ExemplarsSelectionStrategy.make_sorted_indices (L434)                           | COVERED |
+|   RandomExemplarsSelectionStrategy (L444)                                           | COVERED |
+|     RandomExemplarsSelectionStrategy.make_sorted_indices (L447)                     |  MISSED |
+|   FeatureBasedExemplarsSelectionStrategy (L454)                                     | COVERED |
+|     FeatureBasedExemplarsSelectionStrategy.__init__ (L458)                          |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L462)               |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L474) | COVERED |
+|   HerdingSelectionStrategy (L483)                                                   | COVERED |
+|     HerdingSelectionStrategy.make_sorted_indices_from_features (L491)               |  MISSED |
+|   ClosestToCenterSelectionStrategy (L513)                                           | COVERED |
+|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L518)       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                          | COVERED |
 |   load_all_dataset (L28)                                                            | COVERED |
@@ -1351,28 +1346,28 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/base_strategy.py (module)                                       |  MISSED |
 |   BaseStrategy (L40)                                                                | COVERED |
-|     BaseStrategy.__init__ (L88)                                                     | COVERED |
-|     BaseStrategy.training_exp_counter (L192)                                        | COVERED |
-|     BaseStrategy.epoch (L201)                                                       | COVERED |
-|     BaseStrategy.mb_it (L209)                                                       | COVERED |
-|     BaseStrategy.is_eval (L218)                                                     | COVERED |
-|     BaseStrategy.mb_x (L223)                                                        | COVERED |
-|     BaseStrategy.mb_y (L228)                                                        | COVERED |
-|     BaseStrategy.mb_task_id (L233)                                                  |  MISSED |
-|     BaseStrategy.criterion (L237)                                                   | COVERED |
-|     BaseStrategy.train (L241)                                                       | COVERED |
-|     BaseStrategy.train_exp (L282)                                                   | COVERED |
-|     BaseStrategy.stop_training (L367)                                               | COVERED |
-|     BaseStrategy.train_dataset_adaptation (L371)                                    | COVERED |
-|     BaseStrategy.eval (L377)                                                        | COVERED |
-|     BaseStrategy.make_train_dataloader (L426)                                       | COVERED |
-|     BaseStrategy.make_eval_dataloader (L446)                                        | COVERED |
-|     BaseStrategy.training_epoch (L483)                                              | COVERED |
-|     BaseStrategy.eval_dataset_adaptation (L584)                                     | COVERED |
-|     BaseStrategy.eval_epoch (L597)                                                  |  MISSED |
-|     BaseStrategy.model_adaptation (L637)                                            |  MISSED |
-|     BaseStrategy.forward (L646)                                                     |  MISSED |
-|     BaseStrategy.make_optimizer (L649)                                              |  MISSED |
+|     BaseStrategy.__init__ (L90)                                                     | COVERED |
+|     BaseStrategy.training_exp_counter (L194)                                        | COVERED |
+|     BaseStrategy.epoch (L203)                                                       | COVERED |
+|     BaseStrategy.mb_it (L211)                                                       | COVERED |
+|     BaseStrategy.is_eval (L220)                                                     | COVERED |
+|     BaseStrategy.mb_x (L225)                                                        | COVERED |
+|     BaseStrategy.mb_y (L230)                                                        | COVERED |
+|     BaseStrategy.mb_task_id (L235)                                                  | COVERED |
+|     BaseStrategy.criterion (L240)                                                   | COVERED |
+|     BaseStrategy.train (L244)                                                       | COVERED |
+|     BaseStrategy.train_exp (L285)                                                   | COVERED |
+|     BaseStrategy.stop_training (L370)                                               | COVERED |
+|     BaseStrategy.train_dataset_adaptation (L374)                                    | COVERED |
+|     BaseStrategy.eval (L380)                                                        | COVERED |
+|     BaseStrategy.make_train_dataloader (L429)                                       | COVERED |
+|     BaseStrategy.make_eval_dataloader (L449)                                        | COVERED |
+|     BaseStrategy.training_epoch (L486)                                              | COVERED |
+|     BaseStrategy.eval_dataset_adaptation (L587)                                     | COVERED |
+|     BaseStrategy.eval_epoch (L600)                                                  | COVERED |
+|     BaseStrategy.model_adaptation (L641)                                            | COVERED |
+|     BaseStrategy.forward (L654)                                                     | COVERED |
+|     BaseStrategy.make_optimizer (L658)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
@@ -1382,14 +1377,14 @@
 | training/strategies/deep_slda.py (module)                                           |  MISSED |
 |   StreamingLDA (L14)                                                                | COVERED |
 |     StreamingLDA.__init__ (L28)                                                     | COVERED |
-|     StreamingLDA.forward (L84)                                                      |  MISSED |
-|     StreamingLDA.training_epoch (L96)                                               | COVERED |
-|     StreamingLDA.make_optimizer (L126)                                              |  MISSED |
-|     StreamingLDA.fit (L130)                                                         | COVERED |
-|     StreamingLDA.predict (L152)                                                     | COVERED |
-|     StreamingLDA.fit_base (L181)                                                    | COVERED |
-|     StreamingLDA.save_model (L203)                                                  | COVERED |
-|     StreamingLDA.load_model (L220)                                                  | COVERED |
+|     StreamingLDA.forward (L84)                                                      | COVERED |
+|     StreamingLDA.training_epoch (L97)                                               | COVERED |
+|     StreamingLDA.make_optimizer (L127)                                              | COVERED |
+|     StreamingLDA.fit (L133)                                                         | COVERED |
+|     StreamingLDA.predict (L155)                                                     | COVERED |
+|     StreamingLDA.fit_base (L184)                                                    | COVERED |
+|     StreamingLDA.save_model (L206)                                                  | COVERED |
+|     StreamingLDA.load_model (L223)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L21)                                                                       | COVERED |
@@ -1399,9 +1394,9 @@
 |   AlreadyTrainedError (L28)                                                         |  MISSED |
 |   JointTraining (L32)                                                               | COVERED |
 |     JointTraining.__init__ (L46)                                                    | COVERED |
-|     JointTraining.train (L81)                                                       | COVERED |
-|     JointTraining.train_dataset_adaptation (L131)                                   | COVERED |
-|     JointTraining.model_adaptation (L140)                                           | COVERED |
+|     JointTraining.train (L82)                                                       | COVERED |
+|     JointTraining.train_dataset_adaptation (L132)                                   | COVERED |
+|     JointTraining.model_adaptation (L141)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L25)                                                                       | COVERED |
@@ -1412,24 +1407,24 @@
 |     CWRStar.__init__ (L125)                                                         | COVERED |
 |   Replay (L162)                                                                     | COVERED |
 |     Replay.__init__ (L168)                                                          | COVERED |
-|   GSS_greedy (L207)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L213)                                                      | COVERED |
-|   GDumb (L251)                                                                      | COVERED |
-|     GDumb.__init__ (L257)                                                           | COVERED |
-|   LwF (L295)                                                                        | COVERED |
-|     LwF.__init__ (L302)                                                             | COVERED |
-|   AGEM (L342)                                                                       | COVERED |
-|     AGEM.__init__ (L349)                                                            | COVERED |
-|   GEM (L390)                                                                        | COVERED |
-|     GEM.__init__ (L397)                                                             | COVERED |
-|   EWC (L438)                                                                        | COVERED |
-|     EWC.__init__ (L445)                                                             | COVERED |
-|   SynapticIntelligence (L497)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L513)                                            | COVERED |
-|   CoPE (L558)                                                                       | COVERED |
-|     CoPE.__init__ (L565)                                                            | COVERED |
-|   LFL (L613)                                                                        | COVERED |
-|     LFL.__init__ (L621)                                                             | COVERED |
+|   GSS_greedy (L208)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L214)                                                      | COVERED |
+|   GDumb (L253)                                                                      | COVERED |
+|     GDumb.__init__ (L259)                                                           | COVERED |
+|   LwF (L298)                                                                        | COVERED |
+|     LwF.__init__ (L305)                                                             | COVERED |
+|   AGEM (L346)                                                                       | COVERED |
+|     AGEM.__init__ (L353)                                                            | COVERED |
+|   GEM (L394)                                                                        | COVERED |
+|     GEM.__init__ (L401)                                                             | COVERED |
+|   EWC (L442)                                                                        | COVERED |
+|     EWC.__init__ (L449)                                                             | COVERED |
+|   SynapticIntelligence (L501)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L517)                                            | COVERED |
+|   CoPE (L562)                                                                       | COVERED |
+|     CoPE.__init__ (L569)                                                            | COVERED |
+|   LFL (L617)                                                                        | COVERED |
+|     LFL.__init__ (L625)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1500,7 +1495,7 @@
 | evaluation/metrics/forgetting_bwt.py                      |    50 |   22 |    28 |    56% |
 | evaluation/metrics/forward_transfer.py                    |    40 |   23 |    17 |    42% |
 | evaluation/metrics/gpu_usage.py                           |    28 |   15 |    13 |    46% |
-| evaluation/metrics/images_samples.py                      |    13 |   11 |     2 |    15% |
+| evaluation/metrics/images_samples.py                      |     9 |    6 |     3 |    33% |
 | evaluation/metrics/labels_repartition.py                  |    12 |    9 |     3 |    25% |
 | evaluation/metrics/loss.py                                |    22 |    6 |    16 |    73% |
 | evaluation/metrics/mac.py                                 |    19 |    8 |    11 |    58% |
@@ -1530,7 +1525,7 @@
 | models/slda_resnet.py                                     |     5 |    2 |     3 |    60% |
 | models/utils.py                                           |     9 |    7 |     2 |    22% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
-| training/storage_policy.py                                |    42 |   14 |    28 |    67% |
+| training/storage_policy.py                                |    41 |   12 |    29 |    71% |
 | training/utils.py                                         |    16 |   11 |     5 |    31% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
 | training/plugins/clock.py                                 |     9 |    8 |     1 |    11% |
@@ -1549,12 +1544,12 @@
 | training/plugins/strategy_plugin.py                       |    29 |   28 |     1 |     3% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
 | training/strategies/ar1.py                                |     6 |    3 |     3 |    50% |
-| training/strategies/base_strategy.py                      |    24 |    6 |    18 |    75% |
+| training/strategies/base_strategy.py                      |    24 |    1 |    23 |    96% |
 | training/strategies/cumulative.py                         |     4 |    1 |     3 |    75% |
-| training/strategies/deep_slda.py                          |    11 |    3 |     8 |    73% |
+| training/strategies/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/strategies/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1309 |  613 |   696 |  53.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 53.2%) -----------------
+| TOTAL                                                     |  1304 |  599 |   705 |  54.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.1%) -----------------
