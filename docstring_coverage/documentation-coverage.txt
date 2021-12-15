@@ -318,14 +318,14 @@
 |   train_eval_avalanche_datasets (L2079)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
-|   TaskBalancedDataLoader (L43)                                                      |  MISSED |
-|     TaskBalancedDataLoader.__init__ (L44)                                           | COVERED |
-|   GroupBalancedDataLoader (L97)                                                     |  MISSED |
-|     GroupBalancedDataLoader.__init__ (L98)                                          | COVERED |
-|   GroupBalancedInfiniteDataLoader (L168)                                            |  MISSED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L169)                                 | COVERED |
-|   ReplayDataLoader (L216)                                                           |  MISSED |
-|     ReplayDataLoader.__init__ (L217)                                                | COVERED |
+|   TaskBalancedDataLoader (L43)                                                      | COVERED |
+|     TaskBalancedDataLoader.__init__ (L46)                                           | COVERED |
+|   GroupBalancedDataLoader (L99)                                                     | COVERED |
+|     GroupBalancedDataLoader.__init__ (L102)                                         | COVERED |
+|   GroupBalancedInfiniteDataLoader (L172)                                            | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L176)                                 | COVERED |
+|   ReplayDataLoader (L223)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L226)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L23)                                                                    | COVERED |
@@ -1477,7 +1477,7 @@
 | benchmarks/scenarios/new_instances/ni_scenario.py         |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/new_instances/ni_utils.py            |     1 |    1 |     0 |     0% |
 | benchmarks/utils/avalanche_dataset.py                     |    27 |    7 |    20 |    74% |
-| benchmarks/utils/data_loader.py                           |     9 |    4 |     5 |    56% |
+| benchmarks/utils/data_loader.py                           |     9 |    0 |     9 |   100% |
 | benchmarks/utils/dataset_definitions.py                   |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                         |    24 |   12 |    12 |    50% |
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
@@ -1551,5 +1551,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1304 |  599 |   705 |  54.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.1%) -----------------
+| TOTAL                                                     |  1304 |  595 |   709 |  54.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
