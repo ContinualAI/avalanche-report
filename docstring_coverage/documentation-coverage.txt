@@ -1347,19 +1347,19 @@
 | training/strategies/base_strategy.py (module)                                       |  MISSED |
 |   BaseStrategy (L40)                                                                | COVERED |
 |     BaseStrategy.__init__ (L90)                                                     | COVERED |
-|     BaseStrategy.training_exp_counter (L194)                                        | COVERED |
-|     BaseStrategy.epoch (L203)                                                       | COVERED |
-|     BaseStrategy.mb_it (L211)                                                       | COVERED |
-|     BaseStrategy.is_eval (L220)                                                     | COVERED |
-|     BaseStrategy.mb_x (L225)                                                        | COVERED |
-|     BaseStrategy.mb_y (L230)                                                        | COVERED |
-|     BaseStrategy.mb_task_id (L235)                                                  | COVERED |
-|     BaseStrategy.criterion (L240)                                                   | COVERED |
-|     BaseStrategy.train (L244)                                                       | COVERED |
-|     BaseStrategy.train_exp (L285)                                                   | COVERED |
-|     BaseStrategy.stop_training (L370)                                               | COVERED |
-|     BaseStrategy.train_dataset_adaptation (L374)                                    | COVERED |
-|     BaseStrategy.eval (L380)                                                        | COVERED |
+|     BaseStrategy.training_exp_counter (L200)                                        | COVERED |
+|     BaseStrategy.epoch (L209)                                                       | COVERED |
+|     BaseStrategy.mb_it (L217)                                                       | COVERED |
+|     BaseStrategy.is_eval (L226)                                                     | COVERED |
+|     BaseStrategy.mb_x (L231)                                                        | COVERED |
+|     BaseStrategy.mb_y (L236)                                                        | COVERED |
+|     BaseStrategy.mb_task_id (L241)                                                  | COVERED |
+|     BaseStrategy.criterion (L246)                                                   | COVERED |
+|     BaseStrategy.train (L250)                                                       | COVERED |
+|     BaseStrategy.train_exp (L290)                                                   | COVERED |
+|     BaseStrategy.stop_training (L366)                                               | COVERED |
+|     BaseStrategy.train_dataset_adaptation (L370)                                    | COVERED |
+|     BaseStrategy.eval (L376)                                                        | COVERED |
 |     BaseStrategy.make_train_dataloader (L429)                                       | COVERED |
 |     BaseStrategy.make_eval_dataloader (L449)                                        | COVERED |
 |     BaseStrategy.training_epoch (L486)                                              | COVERED |
@@ -1368,6 +1368,13 @@
 |     BaseStrategy.model_adaptation (L641)                                            | COVERED |
 |     BaseStrategy.forward (L654)                                                     | COVERED |
 |     BaseStrategy.make_optimizer (L658)                                              | COVERED |
+|   PeriodicEval (L699)                                                               | COVERED |
+|     PeriodicEval.__init__ (L705)                                                    | COVERED |
+|     PeriodicEval.before_training (L728)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L737)                                         |  MISSED |
+|     PeriodicEval.after_training_exp (L752)                                          | COVERED |
+|     PeriodicEval.after_training_epoch (L765)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L771)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
@@ -1401,30 +1408,30 @@
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L25)                                                                       | COVERED |
 |     Naive.__init__ (L37)                                                            | COVERED |
-|   PNNStrategy (L69)                                                                 | COVERED |
-|     PNNStrategy.__init__ (L72)                                                      | COVERED |
-|   CWRStar (L123)                                                                    | COVERED |
-|     CWRStar.__init__ (L125)                                                         | COVERED |
-|   Replay (L162)                                                                     | COVERED |
-|     Replay.__init__ (L168)                                                          | COVERED |
-|   GSS_greedy (L208)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L214)                                                      | COVERED |
-|   GDumb (L253)                                                                      | COVERED |
-|     GDumb.__init__ (L259)                                                           | COVERED |
-|   LwF (L298)                                                                        | COVERED |
-|     LwF.__init__ (L305)                                                             | COVERED |
-|   AGEM (L346)                                                                       | COVERED |
-|     AGEM.__init__ (L353)                                                            | COVERED |
-|   GEM (L394)                                                                        | COVERED |
-|     GEM.__init__ (L401)                                                             | COVERED |
-|   EWC (L442)                                                                        | COVERED |
-|     EWC.__init__ (L449)                                                             | COVERED |
-|   SynapticIntelligence (L501)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L517)                                            | COVERED |
-|   CoPE (L562)                                                                       | COVERED |
-|     CoPE.__init__ (L569)                                                            | COVERED |
-|   LFL (L617)                                                                        | COVERED |
-|     LFL.__init__ (L625)                                                             | COVERED |
+|   PNNStrategy (L72)                                                                 | COVERED |
+|     PNNStrategy.__init__ (L75)                                                      | COVERED |
+|   CWRStar (L129)                                                                    | COVERED |
+|     CWRStar.__init__ (L131)                                                         | COVERED |
+|   Replay (L171)                                                                     | COVERED |
+|     Replay.__init__ (L177)                                                          | COVERED |
+|   GSS_greedy (L220)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L226)                                                      | COVERED |
+|   GDumb (L268)                                                                      | COVERED |
+|     GDumb.__init__ (L274)                                                           | COVERED |
+|   LwF (L316)                                                                        | COVERED |
+|     LwF.__init__ (L323)                                                             | COVERED |
+|   AGEM (L367)                                                                       | COVERED |
+|     AGEM.__init__ (L374)                                                            | COVERED |
+|   GEM (L418)                                                                        | COVERED |
+|     GEM.__init__ (L425)                                                             | COVERED |
+|   EWC (L469)                                                                        | COVERED |
+|     EWC.__init__ (L476)                                                             | COVERED |
+|   SynapticIntelligence (L531)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L547)                                            | COVERED |
+|   CoPE (L594)                                                                       | COVERED |
+|     CoPE.__init__ (L601)                                                            | COVERED |
+|   LFL (L651)                                                                        | COVERED |
+|     LFL.__init__ (L659)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1544,12 +1551,12 @@
 | training/plugins/strategy_plugin.py                       |    29 |   28 |     1 |     3% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
 | training/strategies/ar1.py                                |     6 |    3 |     3 |    50% |
-| training/strategies/base_strategy.py                      |    24 |    1 |    23 |    96% |
+| training/strategies/base_strategy.py                      |    31 |    2 |    29 |    94% |
 | training/strategies/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/strategies/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/strategies/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1304 |  595 |   709 |  54.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
+| TOTAL                                                     |  1311 |  596 |   715 |  54.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.5%) -----------------
