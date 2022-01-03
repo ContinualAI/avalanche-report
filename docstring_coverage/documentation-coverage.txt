@@ -310,12 +310,12 @@
 |   AvalancheConcatDataset (L1495)                                                    | COVERED |
 |     AvalancheConcatDataset.__init__ (L1506)                                         | COVERED |
 |   concat_datasets_sequentially (L1946)                                              | COVERED |
-|   as_avalanche_dataset (L2032)                                                      |  MISSED |
-|   as_classification_dataset (L2055)                                                 |  MISSED |
-|   as_regression_dataset (L2061)                                                     |  MISSED |
-|   as_segmentation_dataset (L2067)                                                   |  MISSED |
-|   as_undefined_dataset (L2073)                                                      |  MISSED |
-|   train_eval_avalanche_datasets (L2079)                                             |  MISSED |
+|   as_avalanche_dataset (L2046)                                                      |  MISSED |
+|   as_classification_dataset (L2069)                                                 |  MISSED |
+|   as_regression_dataset (L2075)                                                     |  MISSED |
+|   as_segmentation_dataset (L2081)                                                   |  MISSED |
+|   as_undefined_dataset (L2087)                                                      |  MISSED |
+|   train_eval_avalanche_datasets (L2093)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
 |   TaskBalancedDataLoader (L43)                                                      | COVERED |
