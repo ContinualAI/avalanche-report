@@ -74,6 +74,9 @@
 | benchmarks/classic/ctiny_imagenet.py (module)                                       |  MISSED |
 |   SplitTinyImageNet (L36)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/classic/ctrl.py (module)                                                 |  MISSED |
+|   CTrL (L27)                                                                        | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/endless_cl_sim.py (module)                                       | COVERED |
 |   EndlessCLSim (L42)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1454,6 +1457,7 @@
 | benchmarks/classic/comniglot.py                           |     6 |    2 |     4 |    67% |
 | benchmarks/classic/core50.py                              |     2 |    0 |     2 |   100% |
 | benchmarks/classic/ctiny_imagenet.py                      |     2 |    1 |     1 |    50% |
+| benchmarks/classic/ctrl.py                                |     2 |    1 |     1 |    50% |
 | benchmarks/classic/endless_cl_sim.py                      |     2 |    0 |     2 |   100% |
 | benchmarks/classic/openloris.py                           |     2 |    0 |     2 |   100% |
 | benchmarks/classic/stream51.py                            |     2 |    1 |     1 |    50% |
@@ -1563,5 +1567,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1316 |  601 |   715 |  54.3% |
+| TOTAL                                                     |  1318 |  602 |   716 |  54.3% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
