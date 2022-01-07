@@ -325,10 +325,10 @@
 |     TaskBalancedDataLoader.__init__ (L46)                                           | COVERED |
 |   GroupBalancedDataLoader (L99)                                                     | COVERED |
 |     GroupBalancedDataLoader.__init__ (L102)                                         | COVERED |
-|   GroupBalancedInfiniteDataLoader (L172)                                            | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L176)                                 | COVERED |
-|   ReplayDataLoader (L223)                                                           | COVERED |
-|     ReplayDataLoader.__init__ (L226)                                                | COVERED |
+|   GroupBalancedInfiniteDataLoader (L186)                                            | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L190)                                 | COVERED |
+|   ReplayDataLoader (L237)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L240)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L23)                                                                    | COVERED |
@@ -1289,10 +1289,10 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L14)                                                                | COVERED |
-|     ReplayPlugin.__init__ (L33)                                                     | COVERED |
-|     ReplayPlugin.ext_mem (L51)                                                      |  MISSED |
-|     ReplayPlugin.before_training_exp (L54)                                          | COVERED |
-|     ReplayPlugin.after_training_exp (L73)                                           |  MISSED |
+|     ReplayPlugin.__init__ (L38)                                                     |  MISSED |
+|     ReplayPlugin.ext_mem (L54)                                                      |  MISSED |
+|     ReplayPlugin.before_training_exp (L57)                                          | COVERED |
+|     ReplayPlugin.after_training_exp (L77)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/strategy_plugin.py (module)                                        |  MISSED |
 |   StrategyPlugin (L9)                                                               | COVERED |
@@ -1556,7 +1556,7 @@
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                         |    10 |    8 |     2 |    20% |
 | training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
-| training/plugins/replay.py                                |     6 |    3 |     3 |    50% |
+| training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
 | training/plugins/strategy_plugin.py                       |    29 |   28 |     1 |     3% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
 | training/strategies/ar1.py                                |     6 |    3 |     3 |    50% |
@@ -1567,5 +1567,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1318 |  602 |   716 |  54.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
+| TOTAL                                                     |  1318 |  603 |   715 |  54.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
