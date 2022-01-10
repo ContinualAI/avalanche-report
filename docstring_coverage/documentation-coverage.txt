@@ -927,12 +927,13 @@
 |     TextLogger.after_eval (L132)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
-|   WandBLogger (L33)                                                                 | COVERED |
-|     WandBLogger.__init__ (L48)                                                      | COVERED |
-|     WandBLogger.import_wandb (L84)                                                  |  MISSED |
-|     WandBLogger.args_parse (L92)                                                    |  MISSED |
-|     WandBLogger.before_run (L100)                                                   |  MISSED |
-|     WandBLogger.log_single_metric (L109)                                            |  MISSED |
+|   WandBLogger (L37)                                                                 | COVERED |
+|     WandBLogger.__init__ (L52)                                                      | COVERED |
+|     WandBLogger.import_wandb (L90)                                                  |  MISSED |
+|     WandBLogger.args_parse (L98)                                                    |  MISSED |
+|     WandBLogger.before_run (L106)                                                   |  MISSED |
+|     WandBLogger.after_training_exp (L115)                                           |  MISSED |
+|     WandBLogger.log_single_metric (L124)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/base_model.py (module)                                                       |  MISSED |
 |   BaseModel (L4)                                                                    | COVERED |
@@ -1524,7 +1525,7 @@
 | logging/strategy_logger.py                                |    29 |   26 |     3 |    10% |
 | logging/tensorboard_logger.py                             |     4 |    1 |     3 |    75% |
 | logging/text_logging.py                                   |    13 |   11 |     2 |    15% |
-| logging/wandb_logger.py                                   |     7 |    4 |     3 |    43% |
+| logging/wandb_logger.py                                   |     8 |    5 |     3 |    38% |
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
 | models/dynamic_modules.py                                 |    24 |    4 |    20 |    83% |
@@ -1567,5 +1568,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1318 |  603 |   715 |  54.2% |
+| TOTAL                                                     |  1319 |  604 |   715 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
