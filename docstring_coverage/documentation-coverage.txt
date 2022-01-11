@@ -1191,39 +1191,40 @@
 |     EarlyStoppingPlugin.before_training_epoch (L47)                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/evaluation.py (module)                                             |  MISSED |
-|   EvaluationPlugin (L16)                                                            | COVERED |
-|     EvaluationPlugin.__init__ (L31)                                                 | COVERED |
-|     EvaluationPlugin.active (L114)                                                  |  MISSED |
+|   EvaluationPlugin (L17)                                                            | COVERED |
+|     EvaluationPlugin.__init__ (L32)                                                 | COVERED |
 |     EvaluationPlugin.active (L118)                                                  |  MISSED |
-|     EvaluationPlugin.get_last_metrics (L149)                                        | COVERED |
-|     EvaluationPlugin.get_all_metrics (L159)                                         | COVERED |
-|     EvaluationPlugin.reset_last_metrics (L177)                                      | COVERED |
-|     EvaluationPlugin.before_training (L184)                                         |  MISSED |
-|     EvaluationPlugin.before_training_exp (L187)                                     |  MISSED |
-|     EvaluationPlugin.before_train_dataset_adaptation (L190)                         |  MISSED |
-|     EvaluationPlugin.after_train_dataset_adaptation (L194)                          |  MISSED |
-|     EvaluationPlugin.before_training_epoch (L198)                                   |  MISSED |
-|     EvaluationPlugin.before_training_iteration (L201)                               |  MISSED |
-|     EvaluationPlugin.before_forward (L204)                                          |  MISSED |
-|     EvaluationPlugin.after_forward (L207)                                           |  MISSED |
-|     EvaluationPlugin.before_backward (L210)                                         |  MISSED |
-|     EvaluationPlugin.after_backward (L213)                                          |  MISSED |
-|     EvaluationPlugin.after_training_iteration (L216)                                |  MISSED |
-|     EvaluationPlugin.before_update (L219)                                           |  MISSED |
-|     EvaluationPlugin.after_update (L222)                                            |  MISSED |
-|     EvaluationPlugin.after_training_epoch (L225)                                    |  MISSED |
-|     EvaluationPlugin.after_training_exp (L228)                                      |  MISSED |
-|     EvaluationPlugin.after_training (L231)                                          |  MISSED |
-|     EvaluationPlugin.before_eval (L234)                                             |  MISSED |
-|     EvaluationPlugin.before_eval_dataset_adaptation (L256)                          |  MISSED |
-|     EvaluationPlugin.after_eval_dataset_adaptation (L260)                           |  MISSED |
-|     EvaluationPlugin.before_eval_exp (L263)                                         |  MISSED |
-|     EvaluationPlugin.after_eval_exp (L266)                                          |  MISSED |
-|     EvaluationPlugin.after_eval (L269)                                              |  MISSED |
-|     EvaluationPlugin.before_eval_iteration (L272)                                   |  MISSED |
-|     EvaluationPlugin.before_eval_forward (L275)                                     |  MISSED |
-|     EvaluationPlugin.after_eval_forward (L278)                                      |  MISSED |
-|     EvaluationPlugin.after_eval_iteration (L281)                                    |  MISSED |
+|     EvaluationPlugin.active (L122)                                                  |  MISSED |
+|     EvaluationPlugin.publish_metric_value (L127)                                    | COVERED |
+|     EvaluationPlugin.get_last_metrics (L157)                                        | COVERED |
+|     EvaluationPlugin.get_all_metrics (L167)                                         | COVERED |
+|     EvaluationPlugin.reset_last_metrics (L185)                                      | COVERED |
+|     EvaluationPlugin.before_training (L192)                                         |  MISSED |
+|     EvaluationPlugin.before_training_exp (L195)                                     |  MISSED |
+|     EvaluationPlugin.before_train_dataset_adaptation (L198)                         |  MISSED |
+|     EvaluationPlugin.after_train_dataset_adaptation (L202)                          |  MISSED |
+|     EvaluationPlugin.before_training_epoch (L206)                                   |  MISSED |
+|     EvaluationPlugin.before_training_iteration (L209)                               |  MISSED |
+|     EvaluationPlugin.before_forward (L212)                                          |  MISSED |
+|     EvaluationPlugin.after_forward (L215)                                           |  MISSED |
+|     EvaluationPlugin.before_backward (L218)                                         |  MISSED |
+|     EvaluationPlugin.after_backward (L221)                                          |  MISSED |
+|     EvaluationPlugin.after_training_iteration (L224)                                |  MISSED |
+|     EvaluationPlugin.before_update (L227)                                           |  MISSED |
+|     EvaluationPlugin.after_update (L230)                                            |  MISSED |
+|     EvaluationPlugin.after_training_epoch (L233)                                    |  MISSED |
+|     EvaluationPlugin.after_training_exp (L236)                                      |  MISSED |
+|     EvaluationPlugin.after_training (L239)                                          |  MISSED |
+|     EvaluationPlugin.before_eval (L242)                                             |  MISSED |
+|     EvaluationPlugin.before_eval_dataset_adaptation (L264)                          |  MISSED |
+|     EvaluationPlugin.after_eval_dataset_adaptation (L268)                           |  MISSED |
+|     EvaluationPlugin.before_eval_exp (L271)                                         |  MISSED |
+|     EvaluationPlugin.after_eval_exp (L274)                                          |  MISSED |
+|     EvaluationPlugin.after_eval (L277)                                              |  MISSED |
+|     EvaluationPlugin.before_eval_iteration (L280)                                   |  MISSED |
+|     EvaluationPlugin.before_eval_forward (L283)                                     |  MISSED |
+|     EvaluationPlugin.after_eval_forward (L286)                                      |  MISSED |
+|     EvaluationPlugin.after_eval_iteration (L289)                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
 |   EWCPlugin (L14)                                                                   | COVERED |
@@ -1549,7 +1550,7 @@
 | training/plugins/cope.py                                  |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                              |    10 |    5 |     5 |    50% |
 | training/plugins/early_stopping.py                        |     5 |    3 |     2 |    40% |
-| training/plugins/evaluation.py                            |    34 |   29 |     5 |    15% |
+| training/plugins/evaluation.py                            |    35 |   29 |     6 |    17% |
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                                 |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
@@ -1568,5 +1569,5 @@
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1319 |  604 |   715 |  54.2% |
+| TOTAL                                                     |  1320 |  604 |   716 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
