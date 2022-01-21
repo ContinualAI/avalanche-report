@@ -1354,6 +1354,14 @@
 |     AR1.training_epoch (L213)                                                       |  MISSED |
 |     AR1.filter_bn_and_brn (L289)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/strategies/base_online_strategy.py (module)                                |  MISSED |
+|   BaseOnlineStrategy (L17)                                                          |  MISSED |
+|     BaseOnlineStrategy.__init__ (L18)                                               |  MISSED |
+|     BaseOnlineStrategy.create_sub_experience_list (L37)                             | COVERED |
+|     BaseOnlineStrategy.train (L63)                                                  | COVERED |
+|     BaseOnlineStrategy.train_exp (L119)                                             | COVERED |
+|     BaseOnlineStrategy.model_adaptation (L168)                                      | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/strategies/base_strategy.py (module)                                       |  MISSED |
 |   BaseStrategy (L40)                                                                | COVERED |
 |     BaseStrategy.__init__ (L90)                                                     | COVERED |
@@ -1442,6 +1450,10 @@
 |     CoPE.__init__ (L601)                                                            | COVERED |
 |   LFL (L651)                                                                        | COVERED |
 |     LFL.__init__ (L659)                                                             | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/strategies/strategy_wrappers_online.py (module)                            |  MISSED |
+|   OnlineNaive (L22)                                                                 | COVERED |
+|     OnlineNaive.__init__ (L34)                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1562,12 +1574,14 @@
 | training/plugins/strategy_plugin.py                       |    29 |   28 |     1 |     3% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
 | training/strategies/ar1.py                                |     6 |    3 |     3 |    50% |
+| training/strategies/base_online_strategy.py               |     7 |    3 |     4 |    57% |
 | training/strategies/base_strategy.py                      |    31 |    2 |    29 |    94% |
 | training/strategies/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/strategies/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/strategies/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/strategies/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
+| training/strategies/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1320 |  604 |   716 |  54.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
+| TOTAL                                                     |  1330 |  608 |   722 |  54.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
