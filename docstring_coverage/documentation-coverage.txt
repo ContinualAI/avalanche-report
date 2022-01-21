@@ -202,7 +202,8 @@
 |   fixed_size_experience_split_strategy (L375)                                       | COVERED |
 |   data_incremental_benchmark (L430)                                                 | COVERED |
 |   random_validation_split_strategy (L533)                                           | COVERED |
-|   benchmark_with_validation_stream (L631)                                           | COVERED |
+|   class_balanced_split_strategy (L593)                                              | COVERED |
+|   benchmark_with_validation_stream (L682)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)                               | COVERED |
 |   nc_scenario (L34)                                                                 | COVERED |
@@ -1185,10 +1186,11 @@
 |     CWRStarPlugin.freeze_other_layers (L114)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/early_stopping.py (module)                                         |  MISSED |
-|   EarlyStoppingPlugin (L7)                                                          | COVERED |
-|     EarlyStoppingPlugin.__init__ (L16)                                              | COVERED |
-|     EarlyStoppingPlugin.before_training (L42)                                       |  MISSED |
-|     EarlyStoppingPlugin.before_training_epoch (L47)                                 |  MISSED |
+|   EarlyStoppingPlugin (L8)                                                          | COVERED |
+|     EarlyStoppingPlugin.__init__ (L27)                                              | COVERED |
+|     EarlyStoppingPlugin.before_training (L63)                                       |  MISSED |
+|     EarlyStoppingPlugin.before_training_iteration (L68)                             |  MISSED |
+|     EarlyStoppingPlugin.before_training_epoch (L76)                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/evaluation.py (module)                                             |  MISSED |
 |   EvaluationPlugin (L17)                                                            | COVERED |
@@ -1494,7 +1496,7 @@
 | benchmarks/datasets/stream51/stream51.py                  |     4 |    0 |     4 |   100% |
 | benchmarks/datasets/stream51/stream51_data.py             |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py        |     7 |    0 |     7 |   100% |
-| benchmarks/generators/benchmark_generators.py             |     7 |    0 |     7 |   100% |
+| benchmarks/generators/benchmark_generators.py             |     8 |    0 |     8 |   100% |
 | benchmarks/generators/scenario_generators.py              |     8 |    0 |     8 |   100% |
 | benchmarks/scenarios/generic_benchmark_creation.py        |     7 |    0 |     7 |   100% |
 | benchmarks/scenarios/generic_cl_scenario.py               |    25 |   12 |    13 |    52% |
@@ -1561,7 +1563,7 @@
 | training/plugins/clock.py                                 |     9 |    8 |     1 |    11% |
 | training/plugins/cope.py                                  |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                              |    10 |    5 |     5 |    50% |
-| training/plugins/early_stopping.py                        |     5 |    3 |     2 |    40% |
+| training/plugins/early_stopping.py                        |     6 |    4 |     2 |    33% |
 | training/plugins/evaluation.py                            |    35 |   29 |     6 |    17% |
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                                 |     6 |    4 |     2 |    33% |
@@ -1583,5 +1585,5 @@
 | training/strategies/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 | training/strategies/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1330 |  608 |   722 |  54.3% |
+| TOTAL                                                     |  1332 |  609 |   723 |  54.3% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
