@@ -1423,8 +1423,8 @@
 |   JointTraining (L32)                                                               | COVERED |
 |     JointTraining.__init__ (L47)                                                    | COVERED |
 |     JointTraining.train (L92)                                                       | COVERED |
-|     JointTraining.train_dataset_adaptation (L145)                                   | COVERED |
-|     JointTraining.model_adaptation (L155)                                           | COVERED |
+|     JointTraining.train_dataset_adaptation (L146)                                   | COVERED |
+|     JointTraining.model_adaptation (L156)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/strategies/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L36)                                                                       | COVERED |
