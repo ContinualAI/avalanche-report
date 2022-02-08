@@ -929,23 +929,25 @@
 |     DynamicModule.eval_adaptation (L64)                                             | COVERED |
 |   MultiTaskModule (L80)                                                             | COVERED |
 |     MultiTaskModule.__init__ (L94)                                                  |  MISSED |
-|     MultiTaskModule.train_adaptation (L99)                                          | COVERED |
-|     MultiTaskModule.forward (L109)                                                  | COVERED |
-|     MultiTaskModule.forward_single_task (L143)                                      | COVERED |
-|     MultiTaskModule.forward_all_tasks (L154)                                        | COVERED |
-|   IncrementalClassifier (L169)                                                      | COVERED |
-|     IncrementalClassifier.__init__ (L178)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L188)                                         | COVERED |
-|     IncrementalClassifier.forward (L207)                                            | COVERED |
-|   MultiHeadClassifier (L217)                                                        | COVERED |
-|     MultiHeadClassifier.__init__ (L240)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L258)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L279)                                  | COVERED |
-|   TrainEvalModel (L290)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L299)                                                  | COVERED |
-|     TrainEvalModel.forward (L314)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L318)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L321)                                           |  MISSED |
+|     MultiTaskModule.adaptation (L100)                                               | COVERED |
+|     MultiTaskModule.eval_adaptation (L124)                                          |  MISSED |
+|     MultiTaskModule.train_adaptation (L127)                                         | COVERED |
+|     MultiTaskModule.forward (L137)                                                  | COVERED |
+|     MultiTaskModule.forward_single_task (L170)                                      | COVERED |
+|     MultiTaskModule.forward_all_tasks (L181)                                        | COVERED |
+|   IncrementalClassifier (L196)                                                      | COVERED |
+|     IncrementalClassifier.__init__ (L205)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L215)                                         | COVERED |
+|     IncrementalClassifier.forward (L234)                                            | COVERED |
+|   MultiHeadClassifier (L244)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L267)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L287)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L308)                                  | COVERED |
+|   TrainEvalModel (L319)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L328)                                                  | COVERED |
+|     TrainEvalModel.forward (L343)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L347)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L350)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -955,8 +957,8 @@
 | models/helper_method.py (module)                                                    |  MISSED |
 |   MultiTaskDecorator (L11)                                                          | COVERED |
 |     MultiTaskDecorator.__init__ (L24)                                               | COVERED |
-|     MultiTaskDecorator.forward_single_task (L68)                                    |  MISSED |
-|   as_multitask (L97)                                                                | COVERED |
+|     MultiTaskDecorator.forward_single_task (L70)                                    |  MISSED |
+|   as_multitask (L99)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/icarl_resnet.py (module)                                                     |  MISSED |
 |   IdentityShortcut (L21)                                                            |  MISSED |
@@ -1247,10 +1249,10 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L15)                                                                | COVERED |
-|     ReplayPlugin.__init__ (L39)                                                     |  MISSED |
-|     ReplayPlugin.ext_mem (L58)                                                      |  MISSED |
-|     ReplayPlugin.before_training_exp (L61)                                          | COVERED |
-|     ReplayPlugin.after_training_exp (L86)                                           |  MISSED |
+|     ReplayPlugin.__init__ (L47)                                                     |  MISSED |
+|     ReplayPlugin.ext_mem (L66)                                                      |  MISSED |
+|     ReplayPlugin.before_training_exp (L69)                                          | COVERED |
+|     ReplayPlugin.after_training_exp (L99)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/strategy_plugin.py (module)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1480,7 +1482,7 @@
 | logging/wandb_logger.py                                   |     8 |    5 |     3 |    38% |
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
-| models/dynamic_modules.py                                 |    24 |    4 |    20 |    83% |
+| models/dynamic_modules.py                                 |    26 |    5 |    21 |    81% |
 | models/dynamic_optimizers.py                              |     4 |    0 |     4 |   100% |
 | models/helper_method.py                                   |     5 |    2 |     3 |    60% |
 | models/icarl_resnet.py                                    |    14 |   12 |     2 |    14% |
@@ -1524,5 +1526,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    15 |    1 |    14 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1267 |  536 |   731 |  57.7% |
+| TOTAL                                                     |  1269 |  537 |   732 |  57.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
