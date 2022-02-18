@@ -169,6 +169,16 @@
 |     INATURALIST_DATA.__init__ (L109)                                                | COVERED |
 |     INATURALIST_DATA.download_inaturalist (L140)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/lvis/lvis.py (module)                                           | COVERED |
+|   LvisDataset (L32)                                                                 | COVERED |
+|     LvisDataset.__init__ (L35)                                                      | COVERED |
+|   LVISImgEntry (L206)                                                               |  MISSED |
+|   LVISAnnotationEntry (L218)                                                        |  MISSED |
+|   LVISDetectionTargets (L227)                                                       |  MISSED |
+|     LVISDetectionTargets.__init__ (L228)                                            |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/lvis/lvis_data.py (module)                                      |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py (module)                         |  MISSED |
 |   MiniImageNetDataset (L88)                                                         | COVERED |
 |     MiniImageNetDataset.__init__ (L109)                                             | COVERED |
@@ -1428,6 +1438,8 @@
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/inaturalist/inaturalist.py            |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/inaturalist/inaturalist_data.py       |     4 |    0 |     4 |   100% |
+| benchmarks/datasets/lvis/lvis.py                          |     7 |    4 |     3 |    43% |
+| benchmarks/datasets/lvis/lvis_data.py                     |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py        |     5 |    3 |     2 |    40% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py   |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/openloris/openloris.py                |     3 |    0 |     3 |   100% |
@@ -1526,5 +1538,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    15 |    1 |    14 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1269 |  537 |   732 |  57.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
+| TOTAL                                                     |  1277 |  542 |   735 |  57.6% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
