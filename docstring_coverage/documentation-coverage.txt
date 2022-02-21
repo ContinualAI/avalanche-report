@@ -305,33 +305,44 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_utils.py (module)                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/adaptive_transform.py (module)                                     |  MISSED |
+|   Compose (L6)                                                                      | COVERED |
+|     Compose.__init__ (L24)                                                          |  MISSED |
+|   MultiParamTransform (L68)                                                         |  MISSED |
+|     MultiParamTransform.__init__ (L69)                                              |  MISSED |
+|   ComposeMaxParamsWarning (L147)                                                    |  MISSED |
+|     ComposeMaxParamsWarning.__init__ (L148)                                         |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/avalanche_dataset.py (module)                                      | COVERED |
-|   AvalancheDatasetType (L75)                                                        |  MISSED |
-|   AvalancheDataset (L82)                                                            | COVERED |
-|     AvalancheDataset.__init__ (L119)                                                | COVERED |
-|     AvalancheDataset.train (L365)                                                   | COVERED |
-|     AvalancheDataset.eval (L376)                                                    | COVERED |
-|     AvalancheDataset.freeze_transforms (L391)                                       | COVERED |
-|     AvalancheDataset.freeze_group_transforms (L417)                                 | COVERED |
-|     AvalancheDataset.get_transforms (L444)                                          | COVERED |
-|     AvalancheDataset.add_transforms (L467)                                          | COVERED |
-|     AvalancheDataset.add_transforms_to_group (L512)                                 | COVERED |
-|     AvalancheDataset.replace_transforms (L571)                                      | COVERED |
-|     AvalancheDataset.with_transforms (L614)                                         | COVERED |
-|     AvalancheDataset.add_transforms_group (L648)                                    | COVERED |
-|   AvalancheSubset (L1112)                                                           | COVERED |
-|     AvalancheSubset.__init__ (L1120)                                                | COVERED |
-|   AvalancheTensorDataset (L1506)                                                    | COVERED |
-|     AvalancheTensorDataset.__init__ (L1515)                                         | COVERED |
-|   AvalancheConcatDataset (L1615)                                                    | COVERED |
-|     AvalancheConcatDataset.__init__ (L1627)                                         | COVERED |
-|   concat_datasets_sequentially (L2109)                                              | COVERED |
-|   as_avalanche_dataset (L2217)                                                      |  MISSED |
-|   as_classification_dataset (L2244)                                                 |  MISSED |
-|   as_regression_dataset (L2252)                                                     |  MISSED |
-|   as_segmentation_dataset (L2260)                                                   |  MISSED |
-|   as_undefined_dataset (L2268)                                                      |  MISSED |
-|   train_eval_avalanche_datasets (L2276)                                             |  MISSED |
+|   XComposedTransformDef (L72)                                                       |  MISSED |
+|   XTransformDef (L77)                                                               |  MISSED |
+|   YTransformDef (L82)                                                               |  MISSED |
+|   AvalancheDatasetType (L101)                                                       |  MISSED |
+|   AvalancheDataset (L108)                                                           | COVERED |
+|     AvalancheDataset.__init__ (L145)                                                | COVERED |
+|     AvalancheDataset.train (L391)                                                   | COVERED |
+|     AvalancheDataset.eval (L402)                                                    | COVERED |
+|     AvalancheDataset.freeze_transforms (L417)                                       | COVERED |
+|     AvalancheDataset.freeze_group_transforms (L443)                                 | COVERED |
+|     AvalancheDataset.get_transforms (L470)                                          | COVERED |
+|     AvalancheDataset.add_transforms (L493)                                          | COVERED |
+|     AvalancheDataset.add_transforms_to_group (L538)                                 | COVERED |
+|     AvalancheDataset.replace_transforms (L597)                                      | COVERED |
+|     AvalancheDataset.with_transforms (L640)                                         | COVERED |
+|     AvalancheDataset.add_transforms_group (L674)                                    | COVERED |
+|   AvalancheSubset (L1156)                                                           | COVERED |
+|     AvalancheSubset.__init__ (L1164)                                                | COVERED |
+|   AvalancheTensorDataset (L1550)                                                    | COVERED |
+|     AvalancheTensorDataset.__init__ (L1559)                                         | COVERED |
+|   AvalancheConcatDataset (L1659)                                                    | COVERED |
+|     AvalancheConcatDataset.__init__ (L1671)                                         | COVERED |
+|   concat_datasets_sequentially (L2153)                                              | COVERED |
+|   as_avalanche_dataset (L2261)                                                      |  MISSED |
+|   as_classification_dataset (L2288)                                                 |  MISSED |
+|   as_regression_dataset (L2296)                                                     |  MISSED |
+|   as_segmentation_dataset (L2304)                                                   |  MISSED |
+|   as_undefined_dataset (L2312)                                                      |  MISSED |
+|   train_eval_avalanche_datasets (L2320)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
 |   TaskBalancedDataLoader (L43)                                                      | COVERED |
@@ -1459,7 +1470,8 @@
 | benchmarks/scenarios/new_classes/nc_utils.py              |     2 |    1 |     1 |    50% |
 | benchmarks/scenarios/new_instances/ni_scenario.py         |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/new_instances/ni_utils.py            |     1 |    1 |     0 |     0% |
-| benchmarks/utils/avalanche_dataset.py                     |    27 |    7 |    20 |    74% |
+| benchmarks/utils/adaptive_transform.py                    |     7 |    6 |     1 |    14% |
+| benchmarks/utils/avalanche_dataset.py                     |    30 |   10 |    20 |    67% |
 | benchmarks/utils/data_loader.py                           |     9 |    0 |     9 |   100% |
 | benchmarks/utils/dataset_definitions.py                   |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                         |    24 |   12 |    12 |    50% |
@@ -1538,5 +1550,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    15 |    1 |    14 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1277 |  542 |   735 |  57.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
+| TOTAL                                                     |  1287 |  551 |   736 |  57.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
