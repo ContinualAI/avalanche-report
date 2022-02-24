@@ -476,8 +476,8 @@
 |   default_history_repartition_image_creator (L197)                                  | COVERED |
 |   stream_type (L227)                                                                | COVERED |
 |   phase_and_task (L238)                                                             | COVERED |
-|   bytes2human (L264)                                                                |  MISSED |
-|   get_metric_name (L281)                                                            | COVERED |
+|   bytes2human (L266)                                                                |  MISSED |
+|   get_metric_name (L283)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/plot_utils.py (module)                                                   |  MISSED |
 |   learning_curves_plot (L14)                                                        | COVERED |
@@ -1369,30 +1369,33 @@
 | training/templates/base.py (module)                                                 |  MISSED |
 |   BaseTemplate (L12)                                                                | COVERED |
 |     BaseTemplate.__init__ (L32)                                                     | COVERED |
-|     BaseTemplate.train (L64)                                                        | COVERED |
-|     BaseTemplate.eval (L109)                                                        | COVERED |
+|     BaseTemplate.is_eval (L65)                                                      | COVERED |
+|     BaseTemplate.train (L69)                                                        | COVERED |
+|     BaseTemplate.eval (L114)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
 |   BaseSGDTemplate (L21)                                                             | COVERED |
 |     BaseSGDTemplate.__init__ (L38)                                                  | COVERED |
 |     BaseSGDTemplate.train (L121)                                                    |  MISSED |
 |     BaseSGDTemplate.eval (L133)                                                     | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L184)                                    | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L188)                                     | COVERED |
-|     BaseSGDTemplate.make_optimizer (L192)                                           | COVERED |
-|     BaseSGDTemplate.criterion (L196)                                                | COVERED |
-|     BaseSGDTemplate.forward (L200)                                                  | COVERED |
-|     BaseSGDTemplate.model_adaptation (L204)                                         | COVERED |
-|     BaseSGDTemplate.stop_training (L208)                                            | COVERED |
-|     BaseSGDTemplate.training_epoch (L212)                                           | COVERED |
-|     BaseSGDTemplate.eval_epoch (L247)                                               | COVERED |
-|   PeriodicEval (L312)                                                               | COVERED |
-|     PeriodicEval.__init__ (L318)                                                    | COVERED |
-|     PeriodicEval.before_training (L341)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L350)                                         |  MISSED |
-|     PeriodicEval.after_training_exp (L367)                                          | COVERED |
-|     PeriodicEval.after_training_epoch (L380)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L386)                                    | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L187)                                    | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L191)                                     | COVERED |
+|     BaseSGDTemplate.make_optimizer (L195)                                           | COVERED |
+|     BaseSGDTemplate.criterion (L199)                                                | COVERED |
+|     BaseSGDTemplate.forward (L203)                                                  | COVERED |
+|     BaseSGDTemplate.model_adaptation (L207)                                         | COVERED |
+|     BaseSGDTemplate.stop_training (L211)                                            | COVERED |
+|     BaseSGDTemplate.training_epoch (L215)                                           | COVERED |
+|     BaseSGDTemplate.backward (L250)                                                 |  MISSED |
+|     BaseSGDTemplate.optimizer_step (L253)                                           |  MISSED |
+|     BaseSGDTemplate.eval_epoch (L256)                                               | COVERED |
+|   PeriodicEval (L321)                                                               | COVERED |
+|     PeriodicEval.__init__ (L327)                                                    | COVERED |
+|     PeriodicEval.before_training (L350)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L359)                                         |  MISSED |
+|     PeriodicEval.after_training_exp (L376)                                          | COVERED |
+|     PeriodicEval.after_training_epoch (L389)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L395)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/online_supervised.py (module)                                    |  MISSED |
 |   SupervisedOnlineTemplate (L17)                                                    |  MISSED |
@@ -1404,18 +1407,17 @@
 | training/templates/supervised.py (module)                                           |  MISSED |
 |   SupervisedTemplate (L17)                                                          | COVERED |
 |     SupervisedTemplate.__init__ (L64)                                               | COVERED |
-|     SupervisedTemplate.is_eval (L129)                                               | COVERED |
-|     SupervisedTemplate.mb_x (L134)                                                  | COVERED |
-|     SupervisedTemplate.mb_y (L139)                                                  | COVERED |
-|     SupervisedTemplate.mb_task_id (L144)                                            | COVERED |
-|     SupervisedTemplate.criterion (L149)                                             | COVERED |
-|     SupervisedTemplate.train_dataset_adaptation (L181)                              | COVERED |
-|     SupervisedTemplate.make_train_dataloader (L193)                                 | COVERED |
-|     SupervisedTemplate.make_eval_dataloader (L215)                                  | COVERED |
-|     SupervisedTemplate.forward (L233)                                               | COVERED |
-|     SupervisedTemplate.model_adaptation (L237)                                      | COVERED |
-|     SupervisedTemplate.eval_dataset_adaptation (L256)                               | COVERED |
-|     SupervisedTemplate.make_optimizer (L261)                                        | COVERED |
+|     SupervisedTemplate.mb_x (L129)                                                  | COVERED |
+|     SupervisedTemplate.mb_y (L134)                                                  | COVERED |
+|     SupervisedTemplate.mb_task_id (L139)                                            | COVERED |
+|     SupervisedTemplate.criterion (L144)                                             | COVERED |
+|     SupervisedTemplate.train_dataset_adaptation (L176)                              | COVERED |
+|     SupervisedTemplate.make_train_dataloader (L188)                                 | COVERED |
+|     SupervisedTemplate.make_eval_dataloader (L210)                                  | COVERED |
+|     SupervisedTemplate.forward (L228)                                               | COVERED |
+|     SupervisedTemplate.model_adaptation (L232)                                      | COVERED |
+|     SupervisedTemplate.eval_dataset_adaptation (L251)                               | COVERED |
+|     SupervisedTemplate.make_optimizer (L256)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1545,10 +1547,10 @@
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
-| training/templates/base.py                                |     5 |    1 |     4 |    80% |
-| training/templates/base_sgd.py                            |    21 |    3 |    18 |    86% |
+| training/templates/base.py                                |     6 |    1 |     5 |    83% |
+| training/templates/base_sgd.py                            |    23 |    5 |    18 |    78% |
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
-| training/templates/supervised.py                          |    15 |    1 |    14 |    93% |
+| training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1287 |  551 |   736 |  57.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
+| TOTAL                                                     |  1289 |  553 |   736 |  57.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.1%) -----------------
