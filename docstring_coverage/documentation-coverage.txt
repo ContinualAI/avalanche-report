@@ -456,8 +456,8 @@
 |   default_history_repartition_image_creator (L197)                                  | COVERED |
 |   stream_type (L227)                                                                | COVERED |
 |   phase_and_task (L238)                                                             | COVERED |
-|   bytes2human (L264)                                                                |  MISSED |
-|   get_metric_name (L281)                                                            | COVERED |
+|   bytes2human (L266)                                                                |  MISSED |
+|   get_metric_name (L283)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/plot_utils.py (module)                                                   |  MISSED |
 |   learning_curves_plot (L14)                                                        | COVERED |
@@ -473,21 +473,21 @@
 |     AccuracyPluginMetric.reset (L155)                                               |  MISSED |
 |     AccuracyPluginMetric.result (L161)                                              |  MISSED |
 |     AccuracyPluginMetric.update (L167)                                              |  MISSED |
-|   MinibatchAccuracy (L178)                                                          | COVERED |
-|     MinibatchAccuracy.__init__ (L191)                                               | COVERED |
-|   EpochAccuracy (L203)                                                              | COVERED |
-|     EpochAccuracy.__init__ (L213)                                                   | COVERED |
-|   RunningEpochAccuracy (L226)                                                       | COVERED |
-|     RunningEpochAccuracy.__init__ (L237)                                            | COVERED |
-|   ExperienceAccuracy (L250)                                                         | COVERED |
-|     ExperienceAccuracy.__init__ (L257)                                              | COVERED |
-|   StreamAccuracy (L269)                                                             | COVERED |
-|     StreamAccuracy.__init__ (L276)                                                  | COVERED |
-|   TrainedExperienceAccuracy (L288)                                                  | COVERED |
-|     TrainedExperienceAccuracy.__init__ (L296)                                       | COVERED |
-|     TrainedExperienceAccuracy.after_training_exp (L306)                             |  MISSED |
-|     TrainedExperienceAccuracy.update (L312)                                         | COVERED |
-|   accuracy_metrics (L324)                                                           | COVERED |
+|   MinibatchAccuracy (L182)                                                          | COVERED |
+|     MinibatchAccuracy.__init__ (L195)                                               | COVERED |
+|   EpochAccuracy (L207)                                                              | COVERED |
+|     EpochAccuracy.__init__ (L217)                                                   | COVERED |
+|   RunningEpochAccuracy (L230)                                                       | COVERED |
+|     RunningEpochAccuracy.__init__ (L241)                                            | COVERED |
+|   ExperienceAccuracy (L254)                                                         | COVERED |
+|     ExperienceAccuracy.__init__ (L261)                                              | COVERED |
+|   StreamAccuracy (L273)                                                             | COVERED |
+|     StreamAccuracy.__init__ (L280)                                                  | COVERED |
+|   TrainedExperienceAccuracy (L292)                                                  | COVERED |
+|     TrainedExperienceAccuracy.__init__ (L300)                                       | COVERED |
+|     TrainedExperienceAccuracy.after_training_exp (L310)                             |  MISSED |
+|     TrainedExperienceAccuracy.update (L316)                                         | COVERED |
+|   accuracy_metrics (L328)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/checkpoint.py (module)                                           |  MISSED |
 |   WeightCheckpoint (L25)                                                            | COVERED |
@@ -726,17 +726,17 @@
 |     LossPluginMetric.reset (L105)                                                   |  MISSED |
 |     LossPluginMetric.result (L111)                                                  |  MISSED |
 |     LossPluginMetric.update (L117)                                                  |  MISSED |
-|   MinibatchLoss (L131)                                                              | COVERED |
-|     MinibatchLoss.__init__ (L144)                                                   | COVERED |
-|   EpochLoss (L156)                                                                  | COVERED |
-|     EpochLoss.__init__ (L166)                                                       | COVERED |
-|   RunningEpochLoss (L179)                                                           | COVERED |
-|     RunningEpochLoss.__init__ (L190)                                                | COVERED |
-|   ExperienceLoss (L203)                                                             | COVERED |
-|     ExperienceLoss.__init__ (L210)                                                  | COVERED |
-|   StreamLoss (L222)                                                                 | COVERED |
-|     StreamLoss.__init__ (L229)                                                      | COVERED |
-|   loss_metrics (L241)                                                               | COVERED |
+|   MinibatchLoss (L135)                                                              | COVERED |
+|     MinibatchLoss.__init__ (L148)                                                   | COVERED |
+|   EpochLoss (L160)                                                                  | COVERED |
+|     EpochLoss.__init__ (L170)                                                       | COVERED |
+|   RunningEpochLoss (L183)                                                           | COVERED |
+|     RunningEpochLoss.__init__ (L194)                                                | COVERED |
+|   ExperienceLoss (L207)                                                             | COVERED |
+|     ExperienceLoss.__init__ (L214)                                                  | COVERED |
+|   StreamLoss (L226)                                                                 | COVERED |
+|     StreamLoss.__init__ (L233)                                                      | COVERED |
+|   loss_metrics (L245)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/mac.py (module)                                                  |  MISSED |
 |   MAC (L19)                                                                         | COVERED |
@@ -1189,9 +1189,9 @@
 |   EWCPlugin (L14)                                                                   | COVERED |
 |     EWCPlugin.__init__ (L25)                                                        | COVERED |
 |     EWCPlugin.before_backward (L71)                                                 | COVERED |
-|     EWCPlugin.after_training_exp (L102)                                             | COVERED |
-|     EWCPlugin.compute_importances (L121)                                            | COVERED |
-|     EWCPlugin.update_importances (L170)                                             | COVERED |
+|     EWCPlugin.after_training_exp (L110)                                             | COVERED |
+|     EWCPlugin.compute_importances (L129)                                            | COVERED |
+|     EWCPlugin.update_importances (L178)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L11)                                                                 | COVERED |
@@ -1349,30 +1349,31 @@
 | training/templates/base.py (module)                                                 |  MISSED |
 |   BaseTemplate (L12)                                                                | COVERED |
 |     BaseTemplate.__init__ (L32)                                                     | COVERED |
-|     BaseTemplate.train (L64)                                                        | COVERED |
-|     BaseTemplate.eval (L109)                                                        | COVERED |
+|     BaseTemplate.is_eval (L65)                                                      | COVERED |
+|     BaseTemplate.train (L69)                                                        | COVERED |
+|     BaseTemplate.eval (L114)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
 |   BaseSGDTemplate (L21)                                                             | COVERED |
 |     BaseSGDTemplate.__init__ (L38)                                                  | COVERED |
 |     BaseSGDTemplate.train (L121)                                                    |  MISSED |
 |     BaseSGDTemplate.eval (L133)                                                     | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L184)                                    | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L188)                                     | COVERED |
-|     BaseSGDTemplate.make_optimizer (L192)                                           | COVERED |
-|     BaseSGDTemplate.criterion (L196)                                                | COVERED |
-|     BaseSGDTemplate.forward (L200)                                                  | COVERED |
-|     BaseSGDTemplate.model_adaptation (L204)                                         | COVERED |
-|     BaseSGDTemplate.stop_training (L208)                                            | COVERED |
-|     BaseSGDTemplate.training_epoch (L212)                                           | COVERED |
-|     BaseSGDTemplate.eval_epoch (L247)                                               | COVERED |
-|   PeriodicEval (L312)                                                               | COVERED |
-|     PeriodicEval.__init__ (L318)                                                    | COVERED |
-|     PeriodicEval.before_training (L341)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L350)                                         |  MISSED |
-|     PeriodicEval.after_training_exp (L367)                                          | COVERED |
-|     PeriodicEval.after_training_epoch (L380)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L386)                                    | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L187)                                    | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L191)                                     | COVERED |
+|     BaseSGDTemplate.make_optimizer (L195)                                           | COVERED |
+|     BaseSGDTemplate.criterion (L199)                                                | COVERED |
+|     BaseSGDTemplate.forward (L203)                                                  | COVERED |
+|     BaseSGDTemplate.model_adaptation (L207)                                         | COVERED |
+|     BaseSGDTemplate.stop_training (L211)                                            | COVERED |
+|     BaseSGDTemplate.training_epoch (L215)                                           | COVERED |
+|     BaseSGDTemplate.eval_epoch (L250)                                               | COVERED |
+|   PeriodicEval (L315)                                                               | COVERED |
+|     PeriodicEval.__init__ (L321)                                                    | COVERED |
+|     PeriodicEval.before_training (L344)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L353)                                         |  MISSED |
+|     PeriodicEval.after_training_exp (L370)                                          | COVERED |
+|     PeriodicEval.after_training_epoch (L383)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L389)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/online_supervised.py (module)                                    |  MISSED |
 |   SupervisedOnlineTemplate (L17)                                                    |  MISSED |
@@ -1384,18 +1385,17 @@
 | training/templates/supervised.py (module)                                           |  MISSED |
 |   SupervisedTemplate (L17)                                                          | COVERED |
 |     SupervisedTemplate.__init__ (L64)                                               | COVERED |
-|     SupervisedTemplate.is_eval (L129)                                               | COVERED |
-|     SupervisedTemplate.mb_x (L134)                                                  | COVERED |
-|     SupervisedTemplate.mb_y (L139)                                                  | COVERED |
-|     SupervisedTemplate.mb_task_id (L144)                                            | COVERED |
-|     SupervisedTemplate.criterion (L149)                                             | COVERED |
-|     SupervisedTemplate.train_dataset_adaptation (L181)                              | COVERED |
-|     SupervisedTemplate.make_train_dataloader (L193)                                 | COVERED |
-|     SupervisedTemplate.make_eval_dataloader (L215)                                  | COVERED |
-|     SupervisedTemplate.forward (L233)                                               | COVERED |
-|     SupervisedTemplate.model_adaptation (L237)                                      | COVERED |
-|     SupervisedTemplate.eval_dataset_adaptation (L256)                               | COVERED |
-|     SupervisedTemplate.make_optimizer (L261)                                        | COVERED |
+|     SupervisedTemplate.mb_x (L129)                                                  | COVERED |
+|     SupervisedTemplate.mb_y (L134)                                                  | COVERED |
+|     SupervisedTemplate.mb_task_id (L139)                                            | COVERED |
+|     SupervisedTemplate.criterion (L144)                                             | COVERED |
+|     SupervisedTemplate.train_dataset_adaptation (L176)                              | COVERED |
+|     SupervisedTemplate.make_train_dataloader (L188)                                 | COVERED |
+|     SupervisedTemplate.make_eval_dataloader (L210)                                  | COVERED |
+|     SupervisedTemplate.forward (L228)                                               | COVERED |
+|     SupervisedTemplate.model_adaptation (L232)                                      | COVERED |
+|     SupervisedTemplate.eval_dataset_adaptation (L251)                               | COVERED |
+|     SupervisedTemplate.make_optimizer (L256)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -1522,10 +1522,10 @@
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
-| training/templates/base.py                                |     5 |    1 |     4 |    80% |
+| training/templates/base.py                                |     6 |    1 |     5 |    83% |
 | training/templates/base_sgd.py                            |    21 |    3 |    18 |    86% |
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
-| training/templates/supervised.py                          |    15 |    1 |    14 |    93% |
+| training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
 | TOTAL                                                     |  1270 |  537 |   733 |  57.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
