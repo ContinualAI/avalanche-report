@@ -309,19 +309,19 @@
 |     AvalancheDataset.replace_transforms (L571)                                      | COVERED |
 |     AvalancheDataset.with_transforms (L614)                                         | COVERED |
 |     AvalancheDataset.add_transforms_group (L648)                                    | COVERED |
-|   AvalancheSubset (L1112)                                                           | COVERED |
-|     AvalancheSubset.__init__ (L1120)                                                | COVERED |
-|   AvalancheTensorDataset (L1506)                                                    | COVERED |
-|     AvalancheTensorDataset.__init__ (L1515)                                         | COVERED |
-|   AvalancheConcatDataset (L1615)                                                    | COVERED |
-|     AvalancheConcatDataset.__init__ (L1627)                                         | COVERED |
-|   concat_datasets_sequentially (L2109)                                              | COVERED |
-|   as_avalanche_dataset (L2217)                                                      |  MISSED |
-|   as_classification_dataset (L2244)                                                 |  MISSED |
-|   as_regression_dataset (L2252)                                                     |  MISSED |
-|   as_segmentation_dataset (L2260)                                                   |  MISSED |
-|   as_undefined_dataset (L2268)                                                      |  MISSED |
-|   train_eval_avalanche_datasets (L2276)                                             |  MISSED |
+|   AvalancheSubset (L1104)                                                           | COVERED |
+|     AvalancheSubset.__init__ (L1112)                                                | COVERED |
+|   AvalancheTensorDataset (L1498)                                                    | COVERED |
+|     AvalancheTensorDataset.__init__ (L1507)                                         | COVERED |
+|   AvalancheConcatDataset (L1607)                                                    | COVERED |
+|     AvalancheConcatDataset.__init__ (L1619)                                         | COVERED |
+|   concat_datasets_sequentially (L2101)                                              | COVERED |
+|   as_avalanche_dataset (L2209)                                                      |  MISSED |
+|   as_classification_dataset (L2236)                                                 |  MISSED |
+|   as_regression_dataset (L2244)                                                     |  MISSED |
+|   as_segmentation_dataset (L2252)                                                   |  MISSED |
+|   as_undefined_dataset (L2260)                                                      |  MISSED |
+|   train_eval_avalanche_datasets (L2268)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
 |   TaskBalancedDataLoader (L43)                                                      | COVERED |
@@ -1383,19 +1383,19 @@
 |     SupervisedOnlineTemplate.model_adaptation (L197)                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/supervised.py (module)                                           |  MISSED |
-|   SupervisedTemplate (L17)                                                          | COVERED |
-|     SupervisedTemplate.__init__ (L64)                                               | COVERED |
-|     SupervisedTemplate.mb_x (L129)                                                  | COVERED |
-|     SupervisedTemplate.mb_y (L134)                                                  | COVERED |
-|     SupervisedTemplate.mb_task_id (L139)                                            | COVERED |
-|     SupervisedTemplate.criterion (L144)                                             | COVERED |
-|     SupervisedTemplate.train_dataset_adaptation (L176)                              | COVERED |
-|     SupervisedTemplate.make_train_dataloader (L188)                                 | COVERED |
-|     SupervisedTemplate.make_eval_dataloader (L210)                                  | COVERED |
-|     SupervisedTemplate.forward (L228)                                               | COVERED |
-|     SupervisedTemplate.model_adaptation (L232)                                      | COVERED |
-|     SupervisedTemplate.eval_dataset_adaptation (L251)                               | COVERED |
-|     SupervisedTemplate.make_optimizer (L256)                                        | COVERED |
+|   SupervisedTemplate (L19)                                                          | COVERED |
+|     SupervisedTemplate.__init__ (L66)                                               | COVERED |
+|     SupervisedTemplate.mb_x (L131)                                                  | COVERED |
+|     SupervisedTemplate.mb_y (L136)                                                  | COVERED |
+|     SupervisedTemplate.mb_task_id (L141)                                            | COVERED |
+|     SupervisedTemplate.criterion (L146)                                             | COVERED |
+|     SupervisedTemplate.train_dataset_adaptation (L178)                              | COVERED |
+|     SupervisedTemplate.make_train_dataloader (L190)                                 | COVERED |
+|     SupervisedTemplate.make_eval_dataloader (L220)                                  | COVERED |
+|     SupervisedTemplate.forward (L246)                                               | COVERED |
+|     SupervisedTemplate.model_adaptation (L250)                                      | COVERED |
+|     SupervisedTemplate.eval_dataset_adaptation (L269)                               | COVERED |
+|     SupervisedTemplate.make_optimizer (L274)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
