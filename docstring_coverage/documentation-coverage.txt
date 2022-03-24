@@ -1231,15 +1231,17 @@
 |     LFLPlugin.before_training (L89)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lr_scheduling.py (module)                                          |  MISSED |
-|   LRSchedulerPlugin (L12)                                                           | COVERED |
-|     LRSchedulerPlugin.__init__ (L22)                                                | COVERED |
-|     LRSchedulerPlugin.after_training_epoch (L83)                                    |  MISSED |
-|     LRSchedulerPlugin.after_training_exp (L91)                                      |  MISSED |
-|     LRSchedulerPlugin.before_training (L114)                                        |  MISSED |
-|     LRSchedulerPlugin.after_training (L117)                                         |  MISSED |
-|     LRSchedulerPlugin.after_eval (L120)                                             |  MISSED |
-|     LRSchedulerPlugin.after_training_iteration (L149)                               |  MISSED |
-|     LRSchedulerPlugin.after_eval_iteration (L156)                                   |  MISSED |
+|   LRSchedulerPlugin (L14)                                                           | COVERED |
+|     LRSchedulerPlugin.__init__ (L24)                                                | COVERED |
+|     LRSchedulerPlugin.after_training_epoch (L106)                                   |  MISSED |
+|     LRSchedulerPlugin.before_training_iteration (L111)                              |  MISSED |
+|     LRSchedulerPlugin.after_training_exp (L114)                                     |  MISSED |
+|     LRSchedulerPlugin.before_training (L137)                                        |  MISSED |
+|     LRSchedulerPlugin.after_training (L140)                                         |  MISSED |
+|     LRSchedulerPlugin.before_training_exp (L143)                                    |  MISSED |
+|     LRSchedulerPlugin.after_eval (L146)                                             |  MISSED |
+|     LRSchedulerPlugin.after_training_iteration (L170)                               |  MISSED |
+|     LRSchedulerPlugin.after_eval_iteration (L182)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lwf.py (module)                                                    |  MISSED |
 |   LwFPlugin (L9)                                                                    | COVERED |
@@ -1510,7 +1512,7 @@
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/gss_greedy.py                            |    11 |    3 |     8 |    73% |
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
-| training/plugins/lr_scheduling.py                         |    10 |    8 |     2 |    20% |
+| training/plugins/lr_scheduling.py                         |    12 |   10 |     2 |    17% |
 | training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
 | training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
 | training/plugins/strategy_plugin.py                       |     1 |    1 |     0 |     0% |
@@ -1527,5 +1529,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1270 |  537 |   733 |  57.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
+| TOTAL                                                     |  1272 |  539 |   733 |  57.6% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
