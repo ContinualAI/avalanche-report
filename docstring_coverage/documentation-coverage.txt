@@ -1121,13 +1121,13 @@
 |   examples_per_class (L299)                                                         |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/agem.py (module)                                                   |  MISSED |
-|   AGEMPlugin (L11)                                                                  | COVERED |
-|     AGEMPlugin.__init__ (L21)                                                       | COVERED |
-|     AGEMPlugin.before_training_iteration (L41)                                      | COVERED |
-|     AGEMPlugin.after_backward (L66)                                                 | COVERED |
-|     AGEMPlugin.after_training_exp (L101)                                            | COVERED |
-|     AGEMPlugin.sample_from_memory (L105)                                            | COVERED |
-|     AGEMPlugin.update_memory (L113)                                                 | COVERED |
+|   AGEMPlugin (L13)                                                                  | COVERED |
+|     AGEMPlugin.__init__ (L23)                                                       | COVERED |
+|     AGEMPlugin.before_training_iteration (L43)                                      | COVERED |
+|     AGEMPlugin.after_backward (L68)                                                 | COVERED |
+|     AGEMPlugin.after_training_exp (L103)                                            | COVERED |
+|     AGEMPlugin.sample_from_memory (L107)                                            | COVERED |
+|     AGEMPlugin.update_memory (L115)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/clock.py (module)                                                  |  MISSED |
 |   Clock (L14)                                                                       | COVERED |
