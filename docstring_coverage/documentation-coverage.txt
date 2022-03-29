@@ -1250,6 +1250,13 @@
 |     LwFPlugin.before_backward (L80)                                                 | COVERED |
 |     LwFPlugin.after_training_exp (L94)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/plugins/mas.py (module)                                                    |  MISSED |
+|   MASPlugin (L13)                                                                   | COVERED |
+|     MASPlugin.__init__ (L32)                                                        | COVERED |
+|     MASPlugin.before_backward (L115)                                                |  MISSED |
+|     MASPlugin.before_training (L140)                                                |  MISSED |
+|     MASPlugin.after_training_exp (L149)                                             |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L15)                                                                | COVERED |
 |     ReplayPlugin.__init__ (L47)                                                     |  MISSED |
@@ -1317,32 +1324,34 @@
 |     JointTraining.model_adaptation (L157)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                   |  MISSED |
-|   Naive (L36)                                                                       | COVERED |
-|     Naive.__init__ (L48)                                                            | COVERED |
-|   PNNStrategy (L98)                                                                 | COVERED |
-|     PNNStrategy.__init__ (L104)                                                     | COVERED |
-|   CWRStar (L155)                                                                    | COVERED |
-|     CWRStar.__init__ (L158)                                                         | COVERED |
-|   Replay (L215)                                                                     | COVERED |
-|     Replay.__init__ (L222)                                                          | COVERED |
-|   GSS_greedy (L279)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L286)                                                      | COVERED |
-|   GDumb (L347)                                                                      | COVERED |
-|     GDumb.__init__ (L354)                                                           | COVERED |
-|   LwF (L412)                                                                        | COVERED |
-|     LwF.__init__ (L419)                                                             | COVERED |
-|   AGEM (L480)                                                                       | COVERED |
-|     AGEM.__init__ (L487)                                                            | COVERED |
-|   GEM (L548)                                                                        | COVERED |
-|     GEM.__init__ (L555)                                                             | COVERED |
-|   EWC (L616)                                                                        | COVERED |
-|     EWC.__init__ (L623)                                                             | COVERED |
-|   SynapticIntelligence (L695)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L711)                                            | COVERED |
-|   CoPE (L776)                                                                       | COVERED |
-|     CoPE.__init__ (L783)                                                            | COVERED |
-|   LFL (L852)                                                                        | COVERED |
-|     LFL.__init__ (L860)                                                             | COVERED |
+|   Naive (L37)                                                                       | COVERED |
+|     Naive.__init__ (L49)                                                            | COVERED |
+|   PNNStrategy (L99)                                                                 | COVERED |
+|     PNNStrategy.__init__ (L105)                                                     | COVERED |
+|   CWRStar (L156)                                                                    | COVERED |
+|     CWRStar.__init__ (L159)                                                         | COVERED |
+|   Replay (L216)                                                                     | COVERED |
+|     Replay.__init__ (L223)                                                          | COVERED |
+|   GSS_greedy (L280)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L287)                                                      | COVERED |
+|   GDumb (L348)                                                                      | COVERED |
+|     GDumb.__init__ (L355)                                                           | COVERED |
+|   LwF (L413)                                                                        | COVERED |
+|     LwF.__init__ (L420)                                                             | COVERED |
+|   AGEM (L481)                                                                       | COVERED |
+|     AGEM.__init__ (L488)                                                            | COVERED |
+|   GEM (L549)                                                                        | COVERED |
+|     GEM.__init__ (L556)                                                             | COVERED |
+|   EWC (L617)                                                                        | COVERED |
+|     EWC.__init__ (L624)                                                             | COVERED |
+|   SynapticIntelligence (L696)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L712)                                            | COVERED |
+|   CoPE (L777)                                                                       | COVERED |
+|     CoPE.__init__ (L784)                                                            | COVERED |
+|   LFL (L853)                                                                        | COVERED |
+|     LFL.__init__ (L861)                                                             | COVERED |
+|   MAS (L920)                                                                        | COVERED |
+|     MAS.__init__ (L927)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L23)                                                                 | COVERED |
@@ -1514,6 +1523,7 @@
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                         |    12 |   10 |     2 |    17% |
 | training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
+| training/plugins/mas.py                                   |     6 |    4 |     2 |    33% |
 | training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
 | training/plugins/strategy_plugin.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
@@ -1522,12 +1532,12 @@
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
-| training/supervised/strategy_wrappers.py                  |    27 |    1 |    26 |    96% |
+| training/supervised/strategy_wrappers.py                  |    29 |    1 |    28 |    97% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
 | training/templates/base_sgd.py                            |    21 |    3 |    18 |    86% |
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1272 |  539 |   733 |  57.6% |
+| TOTAL                                                     |  1280 |  543 |   737 |  57.6% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
