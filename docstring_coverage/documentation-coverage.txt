@@ -1442,14 +1442,14 @@
 |     JointTraining.model_adaptation (L157)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                              |  MISSED |
-|   ObjectDetectionTemplate (L26)                                                     | COVERED |
-|     ObjectDetectionTemplate.__init__ (L45)                                          | COVERED |
-|     ObjectDetectionTemplate.make_train_dataloader (L120)                            | COVERED |
-|     ObjectDetectionTemplate.make_eval_dataloader (L144)                             | COVERED |
-|     ObjectDetectionTemplate.criterion (L163)                                        | COVERED |
-|     ObjectDetectionTemplate.forward (L186)                                          | COVERED |
-|     ObjectDetectionTemplate.backward (L212)                                         |  MISSED |
-|     ObjectDetectionTemplate.optimizer_step (L218)                                   |  MISSED |
+|   ObjectDetectionTemplate (L27)                                                     | COVERED |
+|     ObjectDetectionTemplate.__init__ (L47)                                          | COVERED |
+|     ObjectDetectionTemplate.make_train_dataloader (L122)                            | COVERED |
+|     ObjectDetectionTemplate.make_eval_dataloader (L156)                             | COVERED |
+|     ObjectDetectionTemplate.criterion (L175)                                        | COVERED |
+|     ObjectDetectionTemplate.forward (L198)                                          | COVERED |
+|     ObjectDetectionTemplate.backward (L224)                                         |  MISSED |
+|     ObjectDetectionTemplate.optimizer_step (L230)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L37)                                                                       | COVERED |
