@@ -857,6 +857,33 @@
 |     StreamTime.before_eval (L237)                                                   |  MISSED |
 |   timing_metrics (L245)                                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/topk_acc.py (module)                                             |  MISSED |
+|   TopkAccuracy (L25)                                                                | COVERED |
+|     TopkAccuracy.__init__ (L31)                                                     | COVERED |
+|     TopkAccuracy.update (L45)                                                       | COVERED |
+|     TopkAccuracy.result (L93)                                                       | COVERED |
+|     TopkAccuracy.reset (L111)                                                       | COVERED |
+|   TopkAccuracyPluginMetric (L126)                                                   | COVERED |
+|     TopkAccuracyPluginMetric.__init__ (L131)                                        |  MISSED |
+|     TopkAccuracyPluginMetric.reset (L137)                                           |  MISSED |
+|     TopkAccuracyPluginMetric.result (L143)                                          |  MISSED |
+|     TopkAccuracyPluginMetric.update (L149)                                          |  MISSED |
+|   MinibatchTopkAccuracy (L160)                                                      | COVERED |
+|     MinibatchTopkAccuracy.__init__ (L170)                                           | COVERED |
+|   EpochTopkAccuracy (L183)                                                          | COVERED |
+|     EpochTopkAccuracy.__init__ (L193)                                               | COVERED |
+|   RunningEpochTopkAccurac (L207)                                                    | COVERED |
+|     RunningEpochTopkAccurac.__init__ (L218)                                         | COVERED |
+|   ExperienceTopkAccuracy (L232)                                                     | COVERED |
+|     ExperienceTopkAccuracy.__init__ (L239)                                          | COVERED |
+|   TrainedExperienceTopkAccuracy (L253)                                              | COVERED |
+|     TrainedExperienceTopkAccuracy.__init__ (L262)                                   | COVERED |
+|     TrainedExperienceTopkAccuracy.after_training_exp (L273)                         |  MISSED |
+|     TrainedExperienceTopkAccuracy.update (L279)                                     | COVERED |
+|   StreamTopkAccuracy (L291)                                                         | COVERED |
+|     StreamTopkAccuracy.__init__ (L298)                                              | COVERED |
+|   topk_acc_metrics (L312)                                                           | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | logging/base_logger.py (module)                                                     |  MISSED |
 |   BaseLogger (L10)                                                                  | COVERED |
 |     BaseLogger.__init__ (L28)                                                       |  MISSED |
@@ -1486,6 +1513,7 @@
 | evaluation/metrics/mean_scores.py                         |    29 |   21 |     8 |    28% |
 | evaluation/metrics/ram_usage.py                           |    28 |   15 |    13 |    46% |
 | evaluation/metrics/timing.py                              |    27 |   11 |    16 |    59% |
+| evaluation/metrics/topk_acc.py                            |    26 |    6 |    20 |    77% |
 | logging/base_logger.py                                    |     5 |    2 |     3 |    60% |
 | logging/csv_logger.py                                     |    12 |    9 |     3 |    25% |
 | logging/interactive_logging.py                            |     9 |    8 |     1 |    11% |
@@ -1539,5 +1567,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1280 |  543 |   737 |  57.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
+| TOTAL                                                     |  1306 |  549 |   757 |  58.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
