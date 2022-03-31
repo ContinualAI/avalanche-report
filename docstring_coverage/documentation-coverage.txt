@@ -1382,6 +1382,15 @@
 |     ReplayPlugin.before_training_exp (L69)                                          | COVERED |
 |     ReplayPlugin.after_training_exp (L99)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/plugins/rwalk.py (module)                                                  |  MISSED |
+|   RWalkPlugin (L11)                                                                 | COVERED |
+|     RWalkPlugin.__init__ (L28)                                                      | COVERED |
+|     RWalkPlugin.before_training (L143)                                              |  MISSED |
+|     RWalkPlugin.before_training_iteration (L150)                                    |  MISSED |
+|     RWalkPlugin.before_backward (L156)                                              |  MISSED |
+|     RWalkPlugin.after_training_iteration (L171)                                     |  MISSED |
+|     RWalkPlugin.after_training_exp (L181)                                           |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | training/plugins/strategy_plugin.py (module)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/synaptic_intelligence.py (module)                                  |  MISSED |
@@ -1665,6 +1674,7 @@
 | training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
 | training/plugins/mas.py                                   |     6 |    4 |     2 |    33% |
 | training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
+| training/plugins/rwalk.py                                 |     8 |    6 |     2 |    25% |
 | training/plugins/strategy_plugin.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/synaptic_intelligence.py                 |    20 |   17 |     3 |    15% |
 | training/supervised/ar1.py                                |     6 |    3 |     3 |    50% |
@@ -1680,5 +1690,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1399 |  608 |   791 |  56.5% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
+| TOTAL                                                     |  1407 |  614 |   793 |  56.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
