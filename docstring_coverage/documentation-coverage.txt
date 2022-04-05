@@ -56,6 +56,9 @@
 | benchmarks/classic/classic_benchmarks_utils.py (module)                             |  MISSED |
 |   check_vision_benchmark (L6)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/classic/clear.py (module)                                                | COVERED |
+|   CLEAR (L47)                                                                       | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                                               |  MISSED |
 |   PixelsPermutation (L42)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L50)                                                |  MISSED |
@@ -137,6 +140,16 @@
 |   HMDB51 (L154)                                                                     |  MISSED |
 |   UCF101 (L158)                                                                     |  MISSED |
 |   CelebA (L162)                                                                     |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/clear/clear.py (module)                                         | COVERED |
+|   CLEARDataset (L51)                                                                | COVERED |
+|     CLEARDataset.__init__ (L54)                                                     | COVERED |
+|   CLEARImage (L179)                                                                 | COVERED |
+|     CLEARImage.__init__ (L182)                                                      | COVERED |
+|   CLEARFeature (L299)                                                               | COVERED |
+|     CLEARFeature.__init__ (L302)                                                    | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/clear/clear10_data.py (module)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50.py (module)                                       | COVERED |
 |   CORe50Dataset (L32)                                                               | COVERED |
@@ -1568,6 +1581,7 @@
 | benchmarks/classic/cimagenet.py                           |     2 |    1 |     1 |    50% |
 | benchmarks/classic/cinaturalist.py                        |     2 |    1 |     1 |    50% |
 | benchmarks/classic/classic_benchmarks_utils.py            |     2 |    2 |     0 |     0% |
+| benchmarks/classic/clear.py                               |     2 |    0 |     2 |   100% |
 | benchmarks/classic/cmnist.py                              |     6 |    2 |     4 |    67% |
 | benchmarks/classic/comniglot.py                           |     6 |    2 |     4 |    67% |
 | benchmarks/classic/core50.py                              |     2 |    0 |     2 |   100% |
@@ -1581,6 +1595,8 @@
 | benchmarks/datasets/imagenet_data.py                      |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
 | benchmarks/datasets/torchvision_wrapper.py                |    31 |   30 |     1 |     3% |
+| benchmarks/datasets/clear/clear.py                        |     7 |    0 |     7 |   100% |
+| benchmarks/datasets/clear/clear10_data.py                 |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/core50/core50.py                      |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/core50/core50_data.py                 |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/cub200/cub200.py                      |     3 |    0 |     3 |   100% |
@@ -1700,5 +1716,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1415 |  620 |   795 |  56.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.2%) -----------------
+| TOTAL                                                     |  1425 |  620 |   805 |  56.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
