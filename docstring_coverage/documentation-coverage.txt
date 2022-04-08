@@ -146,8 +146,9 @@
 |     CLEARDataset.__init__ (L54)                                                     | COVERED |
 |   CLEARImage (L179)                                                                 | COVERED |
 |     CLEARImage.__init__ (L182)                                                      | COVERED |
-|   CLEARFeature (L299)                                                               | COVERED |
-|     CLEARFeature.__init__ (L302)                                                    | COVERED |
+|     CLEARImage.get_paths_and_targets (L284)                                         | COVERED |
+|   CLEARFeature (L316)                                                               | COVERED |
+|     CLEARFeature.__init__ (L319)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear10_data.py (module)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1633,7 +1634,7 @@
 | benchmarks/datasets/imagenet_data.py                      |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
 | benchmarks/datasets/torchvision_wrapper.py                |    31 |   30 |     1 |     3% |
-| benchmarks/datasets/clear/clear.py                        |     7 |    0 |     7 |   100% |
+| benchmarks/datasets/clear/clear.py                        |     8 |    0 |     8 |   100% |
 | benchmarks/datasets/clear/clear10_data.py                 |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/core50/core50.py                      |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/core50/core50_data.py                 |     1 |    0 |     1 |   100% |
@@ -1756,5 +1757,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1461 |  628 |   833 |  57.0% |
+| TOTAL                                                     |  1462 |  628 |   834 |  57.0% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.0%) -----------------
