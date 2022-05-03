@@ -1550,7 +1550,7 @@
 |     JointTraining.__init__ (L46)                                                    | COVERED |
 |     JointTraining.train (L91)                                                       | COVERED |
 |     JointTraining.train_dataset_adaptation (L153)                                   | COVERED |
-|     JointTraining.model_adaptation (L163)                                           | COVERED |
+|     JointTraining.model_adaptation (L164)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml.py (module)                                              |  MISSED |
 |   init_kaiming_normal (L17)                                                         |  MISSED |
