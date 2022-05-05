@@ -1640,7 +1640,7 @@
 |     PeriodicEval.before_training_exp (L364)                                         |  MISSED |
 |     PeriodicEval.after_training_exp (L381)                                          | COVERED |
 |     PeriodicEval.after_training_epoch (L394)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L400)                                    | COVERED |
+|     PeriodicEval.after_training_iteration (L401)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/online_supervised.py (module)                                    |  MISSED |
 |   SupervisedOnlineTemplate (L18)                                                    |  MISSED |
