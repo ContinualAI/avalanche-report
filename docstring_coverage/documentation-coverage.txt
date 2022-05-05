@@ -1373,10 +1373,10 @@
 |     CWRStarPlugin.after_training_exp (L49)                                          |  MISSED |
 |     CWRStarPlugin.before_training_exp (L53)                                         |  MISSED |
 |     CWRStarPlugin.consolidate_weights (L68)                                         | COVERED |
-|     CWRStarPlugin.set_consolidate_weights (L93)                                     | COVERED |
-|     CWRStarPlugin.reset_weights (L103)                                              | COVERED |
-|     CWRStarPlugin.get_cwr_layer (L114)                                              |  MISSED |
-|     CWRStarPlugin.freeze_other_layers (L125)                                        |  MISSED |
+|     CWRStarPlugin.set_consolidate_weights (L97)                                     | COVERED |
+|     CWRStarPlugin.reset_weights (L107)                                              | COVERED |
+|     CWRStarPlugin.get_cwr_layer (L118)                                              |  MISSED |
+|     CWRStarPlugin.freeze_other_layers (L129)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/early_stopping.py (module)                                         |  MISSED |
 |   EarlyStoppingPlugin (L8)                                                          | COVERED |
