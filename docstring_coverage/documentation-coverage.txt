@@ -313,22 +313,22 @@
 |     ClassificationExperience.scenario (L123)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_scenario.py (module)                                   |  MISSED |
-|   MaskedAttributeError (L18)                                                        | COVERED |
-|   ExperienceMode (L25)                                                              | COVERED |
-|   ExperienceAttribute (L42)                                                         | COVERED |
-|     ExperienceAttribute.__init__ (L51)                                              | COVERED |
-|   CLExperience (L73)                                                                | COVERED |
-|     CLExperience.__init__ (L80)                                                     |  MISSED |
-|     CLExperience.train (L123)                                                       | COVERED |
-|     CLExperience.inference (L133)                                                   | COVERED |
-|     CLExperience.logging (L143)                                                     | COVERED |
-|   CLStream (L154)                                                                   | COVERED |
-|     CLStream.__init__ (L164)                                                        |  MISSED |
-|   EagerCLStream (L190)                                                              | COVERED |
-|     EagerCLStream.__init__ (L199)                                                   | COVERED |
-|   CLScenario (L239)                                                                 | COVERED |
-|     CLScenario.__init__ (L253)                                                      | COVERED |
-|     CLScenario.streams (L265)                                                       |  MISSED |
+|   MaskedAttributeError (L19)                                                        | COVERED |
+|   ExperienceMode (L26)                                                              | COVERED |
+|   ExperienceAttribute (L43)                                                         | COVERED |
+|     ExperienceAttribute.__init__ (L52)                                              | COVERED |
+|   CLExperience (L74)                                                                | COVERED |
+|     CLExperience.__init__ (L81)                                                     |  MISSED |
+|     CLExperience.train (L124)                                                       | COVERED |
+|     CLExperience.inference (L134)                                                   | COVERED |
+|     CLExperience.logging (L144)                                                     | COVERED |
+|   CLStream (L155)                                                                   | COVERED |
+|     CLStream.__init__ (L165)                                                        |  MISSED |
+|   EagerCLStream (L191)                                                              | COVERED |
+|     EagerCLStream.__init__ (L200)                                                   | COVERED |
+|   CLScenario (L240)                                                                 | COVERED |
+|     CLScenario.__init__ (L254)                                                      | COVERED |
+|     CLScenario.streams (L266)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_scenario_creation.py (module)                          | COVERED |
 |   create_multi_dataset_generic_scenario (L34)                                       | COVERED |
@@ -364,8 +364,9 @@
 |     RLExperience.environment (L50)                                                  |  MISSED |
 |   RLScenario (L57)                                                                  | COVERED |
 |     RLScenario.__init__ (L70)                                                       | COVERED |
-|     RLScenario.train_stream (L148)                                                  |  MISSED |
-|     RLScenario.eval_stream (L152)                                                   |  MISSED |
+|       RLScenario.__init__.get_unique_task_labels (L112)                             |  MISSED |
+|     RLScenario.train_stream (L155)                                                  |  MISSED |
+|     RLScenario.eval_stream (L159)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/scenario_utils.py (module)                                     | COVERED |
 |   train_eval_transforms (L18)                                                       | COVERED |
@@ -1721,7 +1722,7 @@
 | benchmarks/scenarios/generic_scenario_creation.py         |     6 |    0 |     6 |   100% |
 | benchmarks/scenarios/lazy_dataset_sequence.py             |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/online_scenario.py                   |    11 |    7 |     4 |    36% |
-| benchmarks/scenarios/rl_scenario.py                       |    10 |    6 |     4 |    40% |
+| benchmarks/scenarios/rl_scenario.py                       |    11 |    7 |     4 |    36% |
 | benchmarks/scenarios/scenario_utils.py                    |     2 |    0 |     2 |   100% |
 | benchmarks/scenarios/new_classes/nc_scenario.py           |     7 |    2 |     5 |    71% |
 | benchmarks/scenarios/new_classes/nc_utils.py              |     2 |    1 |     1 |    50% |
@@ -1817,5 +1818,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1512 |  646 |   866 |  57.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.3%) -----------------
+| TOTAL                                                     |  1513 |  647 |   866 |  57.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
