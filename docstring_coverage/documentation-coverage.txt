@@ -58,6 +58,14 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/clear.py (module)                                                | COVERED |
 |   CLEAR (L47)                                                                       | COVERED |
+|   CLEARMetric (L194)                                                                | COVERED |
+|     CLEARMetric.__init__ (L199)                                                     |  MISSED |
+|     CLEARMetric.get_metrics (L202)                                                  | COVERED |
+|     CLEARMetric.accuracy (L226)                                                     | COVERED |
+|     CLEARMetric.in_domain (L235)                                                    | COVERED |
+|     CLEARMetric.next_domain (L244)                                                  | COVERED |
+|     CLEARMetric.forward_transfer (L253)                                             | COVERED |
+|     CLEARMetric.backward_transfer (L262)                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                                               |  MISSED |
 |   PixelsPermutation (L42)                                                           | COVERED |
@@ -1676,7 +1684,7 @@
 | benchmarks/classic/cimagenet.py                           |     2 |    1 |     1 |    50% |
 | benchmarks/classic/cinaturalist.py                        |     2 |    1 |     1 |    50% |
 | benchmarks/classic/classic_benchmarks_utils.py            |     2 |    2 |     0 |     0% |
-| benchmarks/classic/clear.py                               |     2 |    0 |     2 |   100% |
+| benchmarks/classic/clear.py                               |    10 |    1 |     9 |    90% |
 | benchmarks/classic/cmnist.py                              |     6 |    2 |     4 |    67% |
 | benchmarks/classic/comniglot.py                           |     6 |    2 |     4 |    67% |
 | benchmarks/classic/core50.py                              |     2 |    0 |     2 |   100% |
@@ -1818,5 +1826,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1513 |  647 |   866 |  57.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
+| TOTAL                                                     |  1521 |  648 |   873 |  57.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.4%) -----------------
