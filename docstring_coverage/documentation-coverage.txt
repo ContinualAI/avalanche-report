@@ -57,15 +57,15 @@
 |   check_vision_benchmark (L6)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/clear.py (module)                                                | COVERED |
-|   CLEAR (L47)                                                                       | COVERED |
-|   CLEARMetric (L194)                                                                | COVERED |
-|     CLEARMetric.__init__ (L199)                                                     |  MISSED |
-|     CLEARMetric.get_metrics (L202)                                                  | COVERED |
-|     CLEARMetric.accuracy (L226)                                                     | COVERED |
-|     CLEARMetric.in_domain (L235)                                                    | COVERED |
-|     CLEARMetric.next_domain (L244)                                                  | COVERED |
-|     CLEARMetric.forward_transfer (L253)                                             | COVERED |
-|     CLEARMetric.backward_transfer (L262)                                            | COVERED |
+|   CLEAR (L44)                                                                       | COVERED |
+|   CLEARMetric (L191)                                                                | COVERED |
+|     CLEARMetric.__init__ (L196)                                                     |  MISSED |
+|     CLEARMetric.get_metrics (L199)                                                  | COVERED |
+|     CLEARMetric.accuracy (L223)                                                     | COVERED |
+|     CLEARMetric.in_domain (L232)                                                    | COVERED |
+|     CLEARMetric.next_domain (L241)                                                  | COVERED |
+|     CLEARMetric.forward_transfer (L250)                                             | COVERED |
+|     CLEARMetric.backward_transfer (L259)                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                                               |  MISSED |
 |   PixelsPermutation (L42)                                                           | COVERED |
@@ -115,9 +115,9 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/downloadable_dataset.py (module)                                |  MISSED |
 |   DownloadableDataset (L30)                                                         | COVERED |
-|     DownloadableDataset.__init__ (L68)                                              | COVERED |
-|   SimpleDownloadableDataset (L325)                                                  | COVERED |
-|     SimpleDownloadableDataset.__init__ (L347)                                       | COVERED |
+|     DownloadableDataset.__init__ (L67)                                              | COVERED |
+|   SimpleDownloadableDataset (L323)                                                  | COVERED |
+|     SimpleDownloadableDataset.__init__ (L345)                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/imagenet_data.py (module)                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -161,18 +161,13 @@
 | benchmarks/datasets/clear/clear.py (module)                                         | COVERED |
 |   CLEARDataset (L47)                                                                | COVERED |
 |     CLEARDataset.__init__ (L50)                                                     | COVERED |
-|   CLEARImage (L166)                                                                 | COVERED |
-|     CLEARImage.__init__ (L169)                                                      | COVERED |
-|     CLEARImage.get_paths_and_targets (L264)                                         | COVERED |
-|   CLEARFeature (L293)                                                               | COVERED |
-|     CLEARFeature.__init__ (L296)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear10_data.py (module)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50.py (module)                                       | COVERED |
 |   CORe50Dataset (L32)                                                               | COVERED |
 |     CORe50Dataset.__init__ (L35)                                                    | COVERED |
-|   CORe50 (L249)                                                                     |  MISSED |
+|   CORe50 (L248)                                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50_data.py (module)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
@@ -183,17 +178,17 @@
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim.py (module)                       | COVERED |
 |   ClassificationSubSequence (L34)                                                   | COVERED |
 |     ClassificationSubSequence.__init__ (L37)                                        | COVERED |
-|   VideoSubSequence (L117)                                                           | COVERED |
-|     VideoSubSequence.__init__ (L120)                                                | COVERED |
-|   EndlessCLSimDataset (L254)                                                        | COVERED |
-|     EndlessCLSimDataset.__init__ (L257)                                             | COVERED |
+|   VideoSubSequence (L116)                                                           | COVERED |
+|     VideoSubSequence.__init__ (L119)                                                | COVERED |
+|   EndlessCLSimDataset (L252)                                                        | COVERED |
+|     EndlessCLSimDataset.__init__ (L255)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py (module)                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist.py (module)                             | COVERED |
-|   pil_loader (L40)                                                                  | COVERED |
-|   INATURALIST2018 (L53)                                                             | COVERED |
-|     INATURALIST2018.__init__ (L88)                                                  |  MISSED |
+|   pil_loader (L41)                                                                  | COVERED |
+|   INATURALIST2018 (L54)                                                             | COVERED |
+|     INATURALIST2018.__init__ (L91)                                                  |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist_data.py (module)                        | COVERED |
 |   INATURALIST_DATA (L104)                                                           | COVERED |
@@ -303,8 +298,8 @@
 | benchmarks/scenarios/exmodel_scenario.py (module)                                   |  MISSED |
 |   ExModelExperience (L18)                                                           | COVERED |
 |     ExModelExperience.__init__ (L25)                                                |  MISSED |
-|   ExModelCLScenario (L34)                                                           | COVERED |
-|     ExModelCLScenario.__init__ (L48)                                                | COVERED |
+|   ExModelCLScenario (L39)                                                           | COVERED |
+|     ExModelCLScenario.__init__ (L53)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_benchmark_creation.py (module)                         | COVERED |
 |   create_multi_dataset_generic_benchmark (L41)                                      | COVERED |
@@ -612,32 +607,32 @@
 |     WeightCheckpoint.update (L51)                                                   | COVERED |
 |     WeightCheckpoint.result (L60)                                                   | COVERED |
 |     WeightCheckpoint.reset (L68)                                                    | COVERED |
-|     WeightCheckpoint.after_eval_exp (L87)                                           |  MISSED |
+|     WeightCheckpoint.after_training_exp (L87)                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                                     |  MISSED |
 |   ConfusionMatrix (L47)                                                             | COVERED |
-|     ConfusionMatrix.__init__ (L75)                                                  | COVERED |
-|     ConfusionMatrix.update (L107)                                                   | COVERED |
-|     ConfusionMatrix.result (L195)                                                   | COVERED |
-|     ConfusionMatrix.reset (L214)                                                    | COVERED |
-|     ConfusionMatrix.nan_to_num (L245)                                               |  MISSED |
-|   StreamConfusionMatrix (L255)                                                      | COVERED |
-|     StreamConfusionMatrix.__init__ (L271)                                           | COVERED |
-|     StreamConfusionMatrix.reset (L323)                                              |  MISSED |
-|     StreamConfusionMatrix.result (L328)                                             |  MISSED |
-|     StreamConfusionMatrix.update (L332)                                             |  MISSED |
-|     StreamConfusionMatrix.before_eval (L335)                                        |  MISSED |
-|     StreamConfusionMatrix.after_eval_iteration (L338)                               |  MISSED |
-|     StreamConfusionMatrix.after_eval (L342)                                         |  MISSED |
-|   WandBStreamConfusionMatrix (L387)                                                 | COVERED |
-|     WandBStreamConfusionMatrix.__init__ (L398)                                      | COVERED |
-|     WandBStreamConfusionMatrix.reset (L411)                                         |  MISSED |
-|     WandBStreamConfusionMatrix.before_eval (L415)                                   |  MISSED |
-|     WandBStreamConfusionMatrix.result (L418)                                        |  MISSED |
-|     WandBStreamConfusionMatrix.update (L423)                                        |  MISSED |
-|     WandBStreamConfusionMatrix.after_eval_iteration (L427)                          |  MISSED |
-|     WandBStreamConfusionMatrix.after_eval (L431)                                    |  MISSED |
-|   confusion_matrix_metrics (L461)                                                   | COVERED |
+|     ConfusionMatrix.__init__ (L74)                                                  | COVERED |
+|     ConfusionMatrix.update (L105)                                                   | COVERED |
+|     ConfusionMatrix.result (L193)                                                   | COVERED |
+|     ConfusionMatrix.reset (L212)                                                    | COVERED |
+|     ConfusionMatrix.nan_to_num (L243)                                               |  MISSED |
+|   StreamConfusionMatrix (L253)                                                      | COVERED |
+|     StreamConfusionMatrix.__init__ (L269)                                           | COVERED |
+|     StreamConfusionMatrix.reset (L321)                                              |  MISSED |
+|     StreamConfusionMatrix.result (L326)                                             |  MISSED |
+|     StreamConfusionMatrix.update (L330)                                             |  MISSED |
+|     StreamConfusionMatrix.before_eval (L333)                                        |  MISSED |
+|     StreamConfusionMatrix.after_eval_iteration (L336)                               |  MISSED |
+|     StreamConfusionMatrix.after_eval (L340)                                         |  MISSED |
+|   WandBStreamConfusionMatrix (L385)                                                 | COVERED |
+|     WandBStreamConfusionMatrix.__init__ (L396)                                      | COVERED |
+|     WandBStreamConfusionMatrix.reset (L409)                                         |  MISSED |
+|     WandBStreamConfusionMatrix.before_eval (L413)                                   |  MISSED |
+|     WandBStreamConfusionMatrix.result (L416)                                        |  MISSED |
+|     WandBStreamConfusionMatrix.update (L421)                                        |  MISSED |
+|     WandBStreamConfusionMatrix.after_eval_iteration (L425)                          |  MISSED |
+|     WandBStreamConfusionMatrix.after_eval (L429)                                    |  MISSED |
+|   confusion_matrix_metrics (L459)                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/cpu_usage.py (module)                                            |  MISSED |
 |   CPUUsage (L22)                                                                    | COVERED |
@@ -837,7 +832,6 @@
 |     ImagesSamplePlugin.after_eval_dataset_adaptation (L69)                          |  MISSED |
 |     ImagesSamplePlugin.reset (L75)                                                  |  MISSED |
 |     ImagesSamplePlugin.result (L78)                                                 |  MISSED |
-|   MaybeToTensor (L154)                                                              | COVERED |
 |   images_samples_metrics (L172)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/labels_repartition.py (module)                                   |  MISSED |
@@ -941,31 +935,31 @@
 | evaluation/metrics/ram_usage.py (module)                                            |  MISSED |
 |   MaxRAM (L25)                                                                      | COVERED |
 |     MaxRAM.__init__ (L41)                                                           | COVERED |
-|     MaxRAM.result (L86)                                                             | COVERED |
-|     MaxRAM.start_thread (L96)                                                       |  MISSED |
-|     MaxRAM.stop_thread (L103)                                                       |  MISSED |
-|     MaxRAM.reset (L110)                                                             | COVERED |
-|     MaxRAM.update (L118)                                                            |  MISSED |
-|   RAMPluginMetric (L122)                                                            |  MISSED |
-|     RAMPluginMetric.__init__ (L123)                                                 |  MISSED |
-|     RAMPluginMetric.update (L130)                                                   |  MISSED |
-|   MinibatchMaxRAM (L134)                                                            | COVERED |
-|     MinibatchMaxRAM.__init__ (L140)                                                 | COVERED |
-|     MinibatchMaxRAM.before_training (L150)                                          |  MISSED |
-|     MinibatchMaxRAM.after_training (L154)                                           |  MISSED |
-|   EpochMaxRAM (L162)                                                                | COVERED |
-|     EpochMaxRAM.__init__ (L168)                                                     | COVERED |
-|     EpochMaxRAM.before_training (L178)                                              |  MISSED |
-|     EpochMaxRAM.after_training (L182)                                               |  MISSED |
-|   ExperienceMaxRAM (L190)                                                           | COVERED |
-|     ExperienceMaxRAM.__init__ (L196)                                                | COVERED |
-|     ExperienceMaxRAM.before_eval (L206)                                             |  MISSED |
-|     ExperienceMaxRAM.after_eval (L210)                                              |  MISSED |
-|   StreamMaxRAM (L218)                                                               | COVERED |
-|     StreamMaxRAM.__init__ (L224)                                                    | COVERED |
-|     StreamMaxRAM.before_eval (L234)                                                 |  MISSED |
-|     StreamMaxRAM.after_eval (L238)                                                  |  MISSED |
-|   ram_usage_metrics (L247)                                                          | COVERED |
+|     MaxRAM.result (L81)                                                             | COVERED |
+|     MaxRAM.start_thread (L91)                                                       |  MISSED |
+|     MaxRAM.stop_thread (L98)                                                        |  MISSED |
+|     MaxRAM.reset (L105)                                                             | COVERED |
+|     MaxRAM.update (L113)                                                            |  MISSED |
+|   RAMPluginMetric (L117)                                                            |  MISSED |
+|     RAMPluginMetric.__init__ (L118)                                                 |  MISSED |
+|     RAMPluginMetric.update (L125)                                                   |  MISSED |
+|   MinibatchMaxRAM (L129)                                                            | COVERED |
+|     MinibatchMaxRAM.__init__ (L135)                                                 | COVERED |
+|     MinibatchMaxRAM.before_training (L145)                                          |  MISSED |
+|     MinibatchMaxRAM.after_training (L149)                                           |  MISSED |
+|   EpochMaxRAM (L157)                                                                | COVERED |
+|     EpochMaxRAM.__init__ (L163)                                                     | COVERED |
+|     EpochMaxRAM.before_training (L172)                                              |  MISSED |
+|     EpochMaxRAM.after_training (L176)                                               |  MISSED |
+|   ExperienceMaxRAM (L184)                                                           | COVERED |
+|     ExperienceMaxRAM.__init__ (L190)                                                | COVERED |
+|     ExperienceMaxRAM.before_eval (L199)                                             |  MISSED |
+|     ExperienceMaxRAM.after_eval (L203)                                              |  MISSED |
+|   StreamMaxRAM (L211)                                                               | COVERED |
+|     StreamMaxRAM.__init__ (L217)                                                    | COVERED |
+|     StreamMaxRAM.before_eval (L226)                                                 |  MISSED |
+|     StreamMaxRAM.after_eval (L230)                                                  |  MISSED |
+|   ram_usage_metrics (L239)                                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/timing.py (module)                                               |  MISSED |
 |   ElapsedTime (L24)                                                                 | COVERED |
@@ -1061,16 +1055,16 @@
 |-------------------------------------------------------------------------------------|---------|
 | logging/csv_logger.py (module)                                                      |  MISSED |
 |   CSVLogger (L25)                                                                   | COVERED |
-|     CSVLogger.__init__ (L59)                                                        | COVERED |
-|     CSVLogger.print_train_metrics (L121)                                            |  MISSED |
-|     CSVLogger.print_eval_metrics (L136)                                             |  MISSED |
-|     CSVLogger.after_training_epoch (L150)                                           |  MISSED |
-|     CSVLogger.after_eval_exp (L174)                                                 |  MISSED |
-|     CSVLogger.before_training_exp (L206)                                            |  MISSED |
-|     CSVLogger.before_eval (L215)                                                    | COVERED |
-|     CSVLogger.before_training (L227)                                                |  MISSED |
-|     CSVLogger.after_training (L235)                                                 |  MISSED |
-|     CSVLogger.close (L243)                                                          |  MISSED |
+|     CSVLogger.__init__ (L63)                                                        | COVERED |
+|     CSVLogger.print_train_metrics (L124)                                            |  MISSED |
+|     CSVLogger.print_eval_metrics (L139)                                             |  MISSED |
+|     CSVLogger.after_training_epoch (L153)                                           |  MISSED |
+|     CSVLogger.after_eval_exp (L177)                                                 |  MISSED |
+|     CSVLogger.before_training_exp (L209)                                            |  MISSED |
+|     CSVLogger.before_eval (L218)                                                    | COVERED |
+|     CSVLogger.before_training (L230)                                                |  MISSED |
+|     CSVLogger.after_training (L238)                                                 |  MISSED |
+|     CSVLogger.close (L246)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/interactive_logging.py (module)                                             |  MISSED |
 |   InteractiveLogger (L24)                                                           | COVERED |
@@ -1084,8 +1078,8 @@
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
-|     TensorboardLogger.__init__ (L48)                                                | COVERED |
-|     TensorboardLogger.log_single_metric (L72)                                       |  MISSED |
+|     TensorboardLogger.__init__ (L51)                                                | COVERED |
+|     TensorboardLogger.log_single_metric (L74)                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                                    |  MISSED |
 |   TextLogger (L27)                                                                  | COVERED |
@@ -1103,12 +1097,12 @@
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L40)                                                                 | COVERED |
-|     WandBLogger.__init__ (L55)                                                      | COVERED |
-|     WandBLogger.import_wandb (L100)                                                 |  MISSED |
-|     WandBLogger.args_parse (L107)                                                   |  MISSED |
-|     WandBLogger.before_run (L119)                                                   |  MISSED |
-|     WandBLogger.after_training_exp (L128)                                           |  MISSED |
-|     WandBLogger.log_single_metric (L140)                                            |  MISSED |
+|     WandBLogger.__init__ (L57)                                                      | COVERED |
+|     WandBLogger.import_wandb (L102)                                                 |  MISSED |
+|     WandBLogger.args_parse (L109)                                                   |  MISSED |
+|     WandBLogger.before_run (L121)                                                   |  MISSED |
+|     WandBLogger.after_training_exp (L130)                                           |  MISSED |
+|     WandBLogger.log_single_metric (L142)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/base_model.py (module)                                                       |  MISSED |
 |   BaseModel (L4)                                                                    | COVERED |
@@ -1120,31 +1114,31 @@
 |     BatchRenorm2D.forward (L73)                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_modules.py (module)                                                  | COVERED |
-|   DynamicModule (L23)                                                               | COVERED |
-|     DynamicModule.adaptation (L34)                                                  | COVERED |
-|     DynamicModule.train_adaptation (L56)                                            | COVERED |
-|     DynamicModule.eval_adaptation (L64)                                             | COVERED |
-|   MultiTaskModule (L80)                                                             | COVERED |
-|     MultiTaskModule.__init__ (L94)                                                  |  MISSED |
-|     MultiTaskModule.adaptation (L100)                                               | COVERED |
-|     MultiTaskModule.eval_adaptation (L125)                                          |  MISSED |
-|     MultiTaskModule.train_adaptation (L128)                                         | COVERED |
-|     MultiTaskModule.forward (L138)                                                  | COVERED |
-|     MultiTaskModule.forward_single_task (L172)                                      | COVERED |
-|     MultiTaskModule.forward_all_tasks (L183)                                        | COVERED |
-|   IncrementalClassifier (L198)                                                      | COVERED |
-|     IncrementalClassifier.__init__ (L207)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L217)                                         | COVERED |
-|     IncrementalClassifier.forward (L236)                                            | COVERED |
-|   MultiHeadClassifier (L246)                                                        | COVERED |
-|     MultiHeadClassifier.__init__ (L269)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L288)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L309)                                  | COVERED |
-|   TrainEvalModel (L320)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L329)                                                  | COVERED |
-|     TrainEvalModel.forward (L344)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L348)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L351)                                           |  MISSED |
+|   DynamicModule (L22)                                                               | COVERED |
+|     DynamicModule.adaptation (L32)                                                  | COVERED |
+|     DynamicModule.train_adaptation (L54)                                            | COVERED |
+|     DynamicModule.eval_adaptation (L62)                                             | COVERED |
+|   MultiTaskModule (L78)                                                             | COVERED |
+|     MultiTaskModule.__init__ (L91)                                                  |  MISSED |
+|     MultiTaskModule.adaptation (L97)                                                | COVERED |
+|     MultiTaskModule.eval_adaptation (L122)                                          |  MISSED |
+|     MultiTaskModule.train_adaptation (L125)                                         | COVERED |
+|     MultiTaskModule.forward (L135)                                                  | COVERED |
+|     MultiTaskModule.forward_single_task (L169)                                      | COVERED |
+|     MultiTaskModule.forward_all_tasks (L180)                                        | COVERED |
+|   IncrementalClassifier (L195)                                                      | COVERED |
+|     IncrementalClassifier.__init__ (L204)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L214)                                         | COVERED |
+|     IncrementalClassifier.forward (L233)                                            | COVERED |
+|   MultiHeadClassifier (L243)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L267)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L287)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L308)                                  | COVERED |
+|   TrainEvalModel (L319)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L328)                                                  | COVERED |
+|     TrainEvalModel.forward (L343)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L347)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L350)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -1253,8 +1247,8 @@
 | models/slda_resnet.py (module)                                                      |  MISSED |
 |   SLDAResNetModel (L7)                                                              | COVERED |
 |     SLDAResNetModel.__init__ (L14)                                                  | COVERED |
-|     SLDAResNetModel.pool_feat (L43)                                                 |  MISSED |
-|     SLDAResNetModel.forward (L54)                                                   | COVERED |
+|     SLDAResNetModel.pool_feat (L44)                                                 |  MISSED |
+|     SLDAResNetModel.forward (L55)                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/utils.py (module)                                                            |  MISSED |
 |   avalanche_forward (L7)                                                            |  MISSED |
@@ -1303,23 +1297,23 @@
 |     ExperienceBalancedBuffer.__init__ (L212)                                        | COVERED |
 |     ExperienceBalancedBuffer.update (L225)                                          |  MISSED |
 |   ClassBalancedBuffer (L238)                                                        | COVERED |
-|     ClassBalancedBuffer.__init__ (L250)                                             | COVERED |
+|     ClassBalancedBuffer.__init__ (L249)                                             | COVERED |
 |     ClassBalancedBuffer.update (L273)                                               |  MISSED |
 |   ParametricBuffer (L316)                                                           | COVERED |
 |     ParametricBuffer.__init__ (L320)                                                | COVERED |
-|     ParametricBuffer.update (L344)                                                  |  MISSED |
-|   ExemplarsSelectionStrategy (L452)                                                 | COVERED |
-|     ExemplarsSelectionStrategy.make_sorted_indices (L458)                           | COVERED |
-|   RandomExemplarsSelectionStrategy (L469)                                           | COVERED |
-|     RandomExemplarsSelectionStrategy.make_sorted_indices (L472)                     |  MISSED |
-|   FeatureBasedExemplarsSelectionStrategy (L480)                                     | COVERED |
-|     FeatureBasedExemplarsSelectionStrategy.__init__ (L483)                          |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L487)               |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L500) | COVERED |
-|   HerdingSelectionStrategy (L508)                                                   | COVERED |
-|     HerdingSelectionStrategy.make_sorted_indices_from_features (L516)               |  MISSED |
-|   ClosestToCenterSelectionStrategy (L538)                                           | COVERED |
-|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L543)       |  MISSED |
+|     ParametricBuffer.update (L345)                                                  |  MISSED |
+|   ExemplarsSelectionStrategy (L453)                                                 | COVERED |
+|     ExemplarsSelectionStrategy.make_sorted_indices (L459)                           | COVERED |
+|   RandomExemplarsSelectionStrategy (L470)                                           | COVERED |
+|     RandomExemplarsSelectionStrategy.make_sorted_indices (L473)                     |  MISSED |
+|   FeatureBasedExemplarsSelectionStrategy (L481)                                     | COVERED |
+|     FeatureBasedExemplarsSelectionStrategy.__init__ (L484)                          |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L488)               |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L501) | COVERED |
+|   HerdingSelectionStrategy (L509)                                                   | COVERED |
+|     HerdingSelectionStrategy.make_sorted_indices_from_features (L517)               |  MISSED |
+|   ClosestToCenterSelectionStrategy (L539)                                           | COVERED |
+|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L544)       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                          | COVERED |
 |   trigger_plugins (L28)                                                             | COVERED |
@@ -1506,31 +1500,31 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/synaptic_intelligence.py (module)                                  |  MISSED |
 |   SynapticIntelligencePlugin (L21)                                                  | COVERED |
-|     SynapticIntelligencePlugin.__init__ (L42)                                       | COVERED |
-|     SynapticIntelligencePlugin.before_training_exp (L94)                            |  MISSED |
-|     SynapticIntelligencePlugin.before_backward (L110)                               |  MISSED |
-|     SynapticIntelligencePlugin.before_training_iteration (L130)                     |  MISSED |
-|     SynapticIntelligencePlugin.after_training_iteration (L138)                      |  MISSED |
-|     SynapticIntelligencePlugin.after_training_exp (L146)                            |  MISSED |
-|     SynapticIntelligencePlugin.device (L158)                                        |  MISSED |
-|     SynapticIntelligencePlugin.create_syn_data (L166)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_weights (L207)                               |  MISSED |
-|     SynapticIntelligencePlugin.extract_grad (L219)                                  |  MISSED |
-|     SynapticIntelligencePlugin.init_batch (L230)                                    |  MISSED |
-|     SynapticIntelligencePlugin.pre_update (L245)                                    |  MISSED |
-|     SynapticIntelligencePlugin.post_update (L252)                                   |  MISSED |
-|     SynapticIntelligencePlugin.compute_ewc_loss (L271)                              |  MISSED |
-|     SynapticIntelligencePlugin.update_ewc_data (L301)                               |  MISSED |
-|     SynapticIntelligencePlugin.explode_excluded_parameters (L342)                   | COVERED |
-|     SynapticIntelligencePlugin.not_excluded_parameters (L360)                       |  MISSED |
-|     SynapticIntelligencePlugin.allowed_parameters (L390)                            |  MISSED |
+|     SynapticIntelligencePlugin.__init__ (L41)                                       | COVERED |
+|     SynapticIntelligencePlugin.before_training_exp (L92)                            |  MISSED |
+|     SynapticIntelligencePlugin.before_backward (L108)                               |  MISSED |
+|     SynapticIntelligencePlugin.before_training_iteration (L128)                     |  MISSED |
+|     SynapticIntelligencePlugin.after_training_iteration (L136)                      |  MISSED |
+|     SynapticIntelligencePlugin.after_training_exp (L144)                            |  MISSED |
+|     SynapticIntelligencePlugin.device (L156)                                        |  MISSED |
+|     SynapticIntelligencePlugin.create_syn_data (L164)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_weights (L205)                               |  MISSED |
+|     SynapticIntelligencePlugin.extract_grad (L217)                                  |  MISSED |
+|     SynapticIntelligencePlugin.init_batch (L228)                                    |  MISSED |
+|     SynapticIntelligencePlugin.pre_update (L243)                                    |  MISSED |
+|     SynapticIntelligencePlugin.post_update (L250)                                   |  MISSED |
+|     SynapticIntelligencePlugin.compute_ewc_loss (L269)                              |  MISSED |
+|     SynapticIntelligencePlugin.update_ewc_data (L299)                               |  MISSED |
+|     SynapticIntelligencePlugin.explode_excluded_parameters (L340)                   | COVERED |
+|     SynapticIntelligencePlugin.not_excluded_parameters (L358)                       |  MISSED |
+|     SynapticIntelligencePlugin.allowed_parameters (L388)                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/ar1.py (module)                                                 |  MISSED |
 |   AR1 (L31)                                                                         | COVERED |
 |     AR1.__init__ (L43)                                                              | COVERED |
-|     AR1.make_train_dataloader (L228)                                                | COVERED |
-|     AR1.training_epoch (L269)                                                       |  MISSED |
-|     AR1.filter_bn_and_brn (L354)                                                    |  MISSED |
+|     AR1.make_train_dataloader (L226)                                                | COVERED |
+|     AR1.training_epoch (L267)                                                       |  MISSED |
+|     AR1.filter_bn_and_brn (L352)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
@@ -1539,15 +1533,15 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/deep_slda.py (module)                                           |  MISSED |
 |   StreamingLDA (L14)                                                                | COVERED |
-|     StreamingLDA.__init__ (L27)                                                     | COVERED |
-|     StreamingLDA.forward (L102)                                                     | COVERED |
-|     StreamingLDA.training_epoch (L115)                                              | COVERED |
-|     StreamingLDA.make_optimizer (L145)                                              | COVERED |
-|     StreamingLDA.fit (L151)                                                         | COVERED |
-|     StreamingLDA.predict (L174)                                                     | COVERED |
-|     StreamingLDA.fit_base (L203)                                                    | COVERED |
-|     StreamingLDA.save_model (L227)                                                  | COVERED |
-|     StreamingLDA.load_model (L244)                                                  | COVERED |
+|     StreamingLDA.__init__ (L26)                                                     | COVERED |
+|     StreamingLDA.forward (L101)                                                     | COVERED |
+|     StreamingLDA.training_epoch (L114)                                              | COVERED |
+|     StreamingLDA.make_optimizer (L144)                                              | COVERED |
+|     StreamingLDA.fit (L150)                                                         | COVERED |
+|     StreamingLDA.predict (L173)                                                     | COVERED |
+|     StreamingLDA.fit_base (L202)                                                    | COVERED |
+|     StreamingLDA.save_model (L226)                                                  | COVERED |
+|     StreamingLDA.load_model (L243)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L24)                                                                       | COVERED |
@@ -1612,8 +1606,8 @@
 |     CoPE.__init__ (L987)                                                            | COVERED |
 |   LFL (L1056)                                                                       | COVERED |
 |     LFL.__init__ (L1064)                                                            | COVERED |
-|   MAS (L1123)                                                                       | COVERED |
-|     MAS.__init__ (L1130)                                                            | COVERED |
+|   MAS (L1122)                                                                       | COVERED |
+|     MAS.__init__ (L1129)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L23)                                                                 | COVERED |
@@ -1699,7 +1693,7 @@
 | benchmarks/datasets/imagenet_data.py                      |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
 | benchmarks/datasets/torchvision_wrapper.py                |    31 |   30 |     1 |     3% |
-| benchmarks/datasets/clear/clear.py                        |     8 |    0 |     8 |   100% |
+| benchmarks/datasets/clear/clear.py                        |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/clear/clear10_data.py                 |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/core50/core50.py                      |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/core50/core50_data.py                 |     1 |    0 |     1 |   100% |
@@ -1757,7 +1751,7 @@
 | evaluation/metrics/forgetting_bwt.py                      |    50 |   22 |    28 |    56% |
 | evaluation/metrics/forward_transfer.py                    |    40 |   23 |    17 |    42% |
 | evaluation/metrics/gpu_usage.py                           |    28 |   15 |    13 |    46% |
-| evaluation/metrics/images_samples.py                      |     9 |    6 |     3 |    33% |
+| evaluation/metrics/images_samples.py                      |     8 |    6 |     2 |    25% |
 | evaluation/metrics/labels_repartition.py                  |    12 |    9 |     3 |    25% |
 | evaluation/metrics/loss.py                                |    22 |    6 |    16 |    73% |
 | evaluation/metrics/mac.py                                 |    19 |    8 |    11 |    58% |
@@ -1826,5 +1820,5 @@
 | training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1521 |  648 |   873 |  57.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.4%) -----------------
+| TOTAL                                                     |  1515 |  648 |   867 |  57.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
