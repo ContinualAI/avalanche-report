@@ -57,15 +57,15 @@
 |   check_vision_benchmark (L6)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/clear.py (module)                                                | COVERED |
-|   CLEAR (L44)                                                                       | COVERED |
-|   CLEARMetric (L191)                                                                | COVERED |
-|     CLEARMetric.__init__ (L196)                                                     |  MISSED |
-|     CLEARMetric.get_metrics (L199)                                                  | COVERED |
-|     CLEARMetric.accuracy (L223)                                                     | COVERED |
-|     CLEARMetric.in_domain (L232)                                                    | COVERED |
-|     CLEARMetric.next_domain (L241)                                                  | COVERED |
-|     CLEARMetric.forward_transfer (L250)                                             | COVERED |
-|     CLEARMetric.backward_transfer (L259)                                            | COVERED |
+|   CLEAR (L45)                                                                       | COVERED |
+|   CLEARMetric (L190)                                                                | COVERED |
+|     CLEARMetric.__init__ (L195)                                                     |  MISSED |
+|     CLEARMetric.get_metrics (L198)                                                  | COVERED |
+|     CLEARMetric.accuracy (L222)                                                     | COVERED |
+|     CLEARMetric.in_domain (L231)                                                    | COVERED |
+|     CLEARMetric.next_domain (L240)                                                  | COVERED |
+|     CLEARMetric.forward_transfer (L249)                                             | COVERED |
+|     CLEARMetric.backward_transfer (L258)                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/cmnist.py (module)                                               |  MISSED |
 |   PixelsPermutation (L42)                                                           | COVERED |
@@ -162,7 +162,7 @@
 |   CLEARDataset (L47)                                                                | COVERED |
 |     CLEARDataset.__init__ (L50)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
-| benchmarks/datasets/clear/clear10_data.py (module)                                  | COVERED |
+| benchmarks/datasets/clear/clear_data.py (module)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50.py (module)                                       | COVERED |
 |   CORe50Dataset (L32)                                                               | COVERED |
@@ -1694,7 +1694,7 @@
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
 | benchmarks/datasets/torchvision_wrapper.py                |    31 |   30 |     1 |     3% |
 | benchmarks/datasets/clear/clear.py                        |     3 |    0 |     3 |   100% |
-| benchmarks/datasets/clear/clear10_data.py                 |     1 |    0 |     1 |   100% |
+| benchmarks/datasets/clear/clear_data.py                   |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/core50/core50.py                      |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/core50/core50_data.py                 |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/cub200/cub200.py                      |     3 |    0 |     3 |   100% |
