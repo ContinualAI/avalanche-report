@@ -1004,8 +1004,8 @@
 |     MinibatchTopkAccuracy.__init__ (L170)                                           | COVERED |
 |   EpochTopkAccuracy (L183)                                                          | COVERED |
 |     EpochTopkAccuracy.__init__ (L193)                                               | COVERED |
-|   RunningEpochTopkAccurac (L207)                                                    | COVERED |
-|     RunningEpochTopkAccurac.__init__ (L218)                                         | COVERED |
+|   RunningEpochTopkAccuracy (L207)                                                   | COVERED |
+|     RunningEpochTopkAccuracy.__init__ (L218)                                        | COVERED |
 |   ExperienceTopkAccuracy (L232)                                                     | COVERED |
 |     ExperienceTopkAccuracy.__init__ (L239)                                          | COVERED |
 |   TrainedExperienceTopkAccuracy (L255)                                              | COVERED |
