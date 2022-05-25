@@ -1129,16 +1129,16 @@
 |   IncrementalClassifier (L197)                                                      | COVERED |
 |     IncrementalClassifier.__init__ (L206)                                           | COVERED |
 |     IncrementalClassifier.adaptation (L224)                                         | COVERED |
-|     IncrementalClassifier.forward (L254)                                            | COVERED |
-|   MultiHeadClassifier (L267)                                                        | COVERED |
-|     MultiHeadClassifier.__init__ (L291)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L321)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L376)                                  | COVERED |
-|   TrainEvalModel (L398)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L407)                                                  | COVERED |
-|     TrainEvalModel.forward (L422)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L426)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L429)                                           |  MISSED |
+|     IncrementalClassifier.forward (L255)                                            | COVERED |
+|   MultiHeadClassifier (L268)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L292)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L322)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L378)                                  | COVERED |
+|   TrainEvalModel (L400)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L409)                                                  | COVERED |
+|     TrainEvalModel.forward (L424)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L428)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L431)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
