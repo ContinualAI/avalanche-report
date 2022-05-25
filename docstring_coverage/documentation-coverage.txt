@@ -1229,20 +1229,20 @@
 |-------------------------------------------------------------------------------------|---------|
 | models/simple_cnn.py (module)                                                       |  MISSED |
 |   SimpleCNN (L20)                                                                   | COVERED |
-|     SimpleCNN.__init__ (L25)                                                        |  MISSED |
-|     SimpleCNN.forward (L48)                                                         |  MISSED |
-|   MTSimpleCNN (L55)                                                                 | COVERED |
-|     MTSimpleCNN.__init__ (L59)                                                      |  MISSED |
-|     MTSimpleCNN.forward (L63)                                                       |  MISSED |
+|     SimpleCNN.__init__ (L32)                                                        |  MISSED |
+|     SimpleCNN.forward (L55)                                                         |  MISSED |
+|   MTSimpleCNN (L62)                                                                 | COVERED |
+|     MTSimpleCNN.__init__ (L68)                                                      |  MISSED |
+|     MTSimpleCNN.forward (L72)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/simple_mlp.py (module)                                                       |  MISSED |
 |   SimpleMLP (L21)                                                                   | COVERED |
-|     SimpleMLP.__init__ (L27)                                                        | COVERED |
-|     SimpleMLP.forward (L67)                                                         |  MISSED |
-|     SimpleMLP.get_features (L74)                                                    |  MISSED |
-|   MTSimpleMLP (L81)                                                                 | COVERED |
-|     MTSimpleMLP.__init__ (L84)                                                      |  MISSED |
-|     MTSimpleMLP.forward (L95)                                                       |  MISSED |
+|     SimpleMLP.__init__ (L34)                                                        | COVERED |
+|     SimpleMLP.forward (L74)                                                         |  MISSED |
+|     SimpleMLP.get_features (L81)                                                    |  MISSED |
+|   MTSimpleMLP (L88)                                                                 | COVERED |
+|     MTSimpleMLP.__init__ (L91)                                                      |  MISSED |
+|     MTSimpleMLP.forward (L102)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/slda_resnet.py (module)                                                      |  MISSED |
 |   SLDAResNetModel (L7)                                                              | COVERED |
