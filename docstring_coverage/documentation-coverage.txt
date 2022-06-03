@@ -350,14 +350,14 @@
 | benchmarks/scenarios/online_scenario.py (module)                                    |  MISSED |
 |   OnlineCLExperience (L26)                                                          | COVERED |
 |     OnlineCLExperience.__init__ (L33)                                               | COVERED |
-|   fixed_size_experience_split (L57)                                                 | COVERED |
-|     fixed_size_experience_split.gen (L77)                                           |  MISSED |
-|   split_online_stream (L109)                                                        | COVERED |
-|     split_online_stream.split_foo (L149)                                            |  MISSED |
-|     split_online_stream.exps_iter (L152)                                            |  MISSED |
-|   OnlineCLScenario (L162)                                                           |  MISSED |
-|     OnlineCLScenario.__init__ (L163)                                                |  MISSED |
-|       OnlineCLScenario.__init__.split_foo (L172)                                    |  MISSED |
+|   fixed_size_experience_split (L73)                                                 | COVERED |
+|     fixed_size_experience_split.gen (L94)                                           |  MISSED |
+|   split_online_stream (L134)                                                        | COVERED |
+|     split_online_stream.split_foo (L175)                                            |  MISSED |
+|     split_online_stream.exps_iter (L180)                                            |  MISSED |
+|   OnlineCLScenario (L192)                                                           |  MISSED |
+|     OnlineCLScenario.__init__ (L193)                                                | COVERED |
+|       OnlineCLScenario.__init__.split_foo (L223)                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/rl_scenario.py (module)                                        | COVERED |
 |   Env (L24)                                                                         |  MISSED |
@@ -1067,14 +1067,16 @@
 |     CSVLogger.close (L246)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/interactive_logging.py (module)                                             |  MISSED |
-|   InteractiveLogger (L24)                                                           | COVERED |
-|     InteractiveLogger.__init__ (L52)                                                |  MISSED |
-|     InteractiveLogger.before_training_epoch (L56)                                   |  MISSED |
-|     InteractiveLogger.after_training_epoch (L65)                                    |  MISSED |
-|     InteractiveLogger.before_eval_exp (L74)                                         |  MISSED |
-|     InteractiveLogger.after_eval_exp (L83)                                          |  MISSED |
-|     InteractiveLogger.after_training_iteration (L92)                                |  MISSED |
-|     InteractiveLogger.after_eval_iteration (L102)                                   |  MISSED |
+|   InteractiveLogger (L25)                                                           | COVERED |
+|     InteractiveLogger.__init__ (L53)                                                |  MISSED |
+|     InteractiveLogger.before_training_epoch (L58)                                   |  MISSED |
+|     InteractiveLogger.after_training_epoch (L67)                                    |  MISSED |
+|     InteractiveLogger.before_training_exp (L76)                                     |  MISSED |
+|     InteractiveLogger.after_training_exp (L92)                                      |  MISSED |
+|     InteractiveLogger.before_eval_exp (L104)                                        |  MISSED |
+|     InteractiveLogger.after_eval_exp (L113)                                         |  MISSED |
+|     InteractiveLogger.after_training_iteration (L122)                               |  MISSED |
+|     InteractiveLogger.after_eval_iteration (L132)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
@@ -1620,6 +1622,28 @@
 |     BaseTemplate.train (L71)                                                        | COVERED |
 |     BaseTemplate.eval (L117)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/templates/base_online_sgd.py (module)                                      |  MISSED |
+|   BaseOnlineSGDTemplate (L22)                                                       | COVERED |
+|     BaseOnlineSGDTemplate.__init__ (L41)                                            | COVERED |
+|     BaseOnlineSGDTemplate.train (L124)                                              |  MISSED |
+|     BaseOnlineSGDTemplate.eval (L134)                                               | COVERED |
+|     BaseOnlineSGDTemplate.make_train_dataloader (L194)                              | COVERED |
+|     BaseOnlineSGDTemplate.make_eval_dataloader (L198)                               | COVERED |
+|     BaseOnlineSGDTemplate.make_optimizer (L202)                                     | COVERED |
+|     BaseOnlineSGDTemplate.criterion (L206)                                          | COVERED |
+|     BaseOnlineSGDTemplate.forward (L210)                                            | COVERED |
+|     BaseOnlineSGDTemplate.model_adaptation (L214)                                   | COVERED |
+|     BaseOnlineSGDTemplate.stop_training (L218)                                      | COVERED |
+|     BaseOnlineSGDTemplate.training_pass (L222)                                      | COVERED |
+|     BaseOnlineSGDTemplate.backward (L258)                                           | COVERED |
+|     BaseOnlineSGDTemplate.optimizer_step (L262)                                     | COVERED |
+|     BaseOnlineSGDTemplate.eval_epoch (L266)                                         | COVERED |
+|   PeriodicEval (L325)                                                               | COVERED |
+|     PeriodicEval.__init__ (L331)                                                    | COVERED |
+|     PeriodicEval.before_training (L356)                                             | COVERED |
+|     PeriodicEval.after_training_exp (L373)                                          | COVERED |
+|     PeriodicEval.after_training_iteration (L380)                                    | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
 |   BaseSGDTemplate (L22)                                                             | COVERED |
 |     BaseSGDTemplate.__init__ (L41)                                                  | COVERED |
@@ -1645,11 +1669,19 @@
 |     PeriodicEval.after_training_iteration (L401)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/online_supervised.py (module)                                    |  MISSED |
-|   SupervisedOnlineTemplate (L18)                                                    |  MISSED |
-|     SupervisedOnlineTemplate.__init__ (L19)                                         |  MISSED |
-|     SupervisedOnlineTemplate.create_sub_experience_list (L52)                       | COVERED |
-|     SupervisedOnlineTemplate.train (L83)                                            | COVERED |
-|     SupervisedOnlineTemplate.model_adaptation (L197)                                | COVERED |
+|   OnlineSupervisedTemplate (L21)                                                    | COVERED |
+|     OnlineSupervisedTemplate.__init__ (L70)                                         | COVERED |
+|     OnlineSupervisedTemplate.mb_x (L135)                                            | COVERED |
+|     OnlineSupervisedTemplate.mb_y (L140)                                            | COVERED |
+|     OnlineSupervisedTemplate.mb_task_id (L145)                                      | COVERED |
+|     OnlineSupervisedTemplate.criterion (L150)                                       | COVERED |
+|     OnlineSupervisedTemplate.train_dataset_adaptation (L182)                        | COVERED |
+|     OnlineSupervisedTemplate.make_train_dataloader (L194)                           | COVERED |
+|     OnlineSupervisedTemplate.make_eval_dataloader (L228)                            | COVERED |
+|     OnlineSupervisedTemplate.forward (L255)                                         | COVERED |
+|     OnlineSupervisedTemplate.model_adaptation (L259)                                | COVERED |
+|     OnlineSupervisedTemplate.eval_dataset_adaptation (L294)                         | COVERED |
+|     OnlineSupervisedTemplate.make_optimizer (L299)                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/supervised.py (module)                                           |  MISSED |
 |   SupervisedTemplate (L19)                                                          | COVERED |
@@ -1723,7 +1755,7 @@
 | benchmarks/scenarios/generic_scenario.py                  |    17 |    4 |    13 |    76% |
 | benchmarks/scenarios/generic_scenario_creation.py         |     6 |    0 |     6 |   100% |
 | benchmarks/scenarios/lazy_dataset_sequence.py             |     6 |    2 |     4 |    67% |
-| benchmarks/scenarios/online_scenario.py                   |    11 |    7 |     4 |    36% |
+| benchmarks/scenarios/online_scenario.py                   |    11 |    6 |     5 |    45% |
 | benchmarks/scenarios/rl_scenario.py                       |    11 |    7 |     4 |    36% |
 | benchmarks/scenarios/scenario_utils.py                    |     2 |    0 |     2 |   100% |
 | benchmarks/scenarios/new_classes/nc_scenario.py           |     7 |    2 |     5 |    71% |
@@ -1764,7 +1796,7 @@
 | evaluation/metrics/detection_evaluators/lvis_evaluator.py |    11 |    8 |     3 |    27% |
 | logging/base_logger.py                                    |     5 |    2 |     3 |    60% |
 | logging/csv_logger.py                                     |    12 |    9 |     3 |    25% |
-| logging/interactive_logging.py                            |     9 |    8 |     1 |    11% |
+| logging/interactive_logging.py                            |    11 |   10 |     1 |     9% |
 | logging/tensorboard_logger.py                             |     4 |    1 |     3 |    75% |
 | logging/text_logging.py                                   |    13 |   11 |     2 |    15% |
 | logging/wandb_logger.py                                   |     8 |    5 |     3 |    38% |
@@ -1816,9 +1848,10 @@
 | training/supervised/strategy_wrappers.py                  |    34 |    1 |    33 |    97% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
+| training/templates/base_online_sgd.py                     |    21 |    2 |    19 |    90% |
 | training/templates/base_sgd.py                            |    23 |    3 |    20 |    87% |
-| training/templates/online_supervised.py                   |     6 |    3 |     3 |    50% |
+| training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1515 |  648 |   867 |  57.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.2%) -----------------
+| TOTAL                                                     |  1546 |  649 |   897 |  58.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
