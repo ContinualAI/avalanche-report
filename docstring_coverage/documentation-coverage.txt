@@ -921,16 +921,16 @@
 |     MeanScoresPluginMetricABC.update_new_classes (L174)                             |  MISSED |
 |     MeanScoresPluginMetricABC.update (L179)                                         |  MISSED |
 |     MeanScoresPluginMetricABC.result (L184)                                         |  MISSED |
-|   MeanScoresTrainPluginMetric (L235)                                                | COVERED |
-|     MeanScoresTrainPluginMetric.before_training_epoch (L241)                        |  MISSED |
-|     MeanScoresTrainPluginMetric.after_training_iteration (L245)                     |  MISSED |
-|     MeanScoresTrainPluginMetric.after_training_epoch (L250)                         |  MISSED |
-|   MeanScoresEvalPluginMetric (L257)                                                 | COVERED |
-|     MeanScoresEvalPluginMetric.before_training (L263)                               |  MISSED |
-|     MeanScoresEvalPluginMetric.before_training_exp (L266)                           |  MISSED |
-|     MeanScoresEvalPluginMetric.after_eval_iteration (L269)                          |  MISSED |
-|     MeanScoresEvalPluginMetric.after_eval (L273)                                    |  MISSED |
-|   mean_scores_metrics (L277)                                                        | COVERED |
+|   MeanScoresTrainPluginMetric (L236)                                                | COVERED |
+|     MeanScoresTrainPluginMetric.before_training_epoch (L242)                        |  MISSED |
+|     MeanScoresTrainPluginMetric.after_training_iteration (L246)                     |  MISSED |
+|     MeanScoresTrainPluginMetric.after_training_epoch (L251)                         |  MISSED |
+|   MeanScoresEvalPluginMetric (L258)                                                 | COVERED |
+|     MeanScoresEvalPluginMetric.before_training (L264)                               |  MISSED |
+|     MeanScoresEvalPluginMetric.before_training_exp (L267)                           |  MISSED |
+|     MeanScoresEvalPluginMetric.after_eval_iteration (L270)                          |  MISSED |
+|     MeanScoresEvalPluginMetric.after_eval (L274)                                    |  MISSED |
+|   mean_scores_metrics (L278)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/ram_usage.py (module)                                            |  MISSED |
 |   MaxRAM (L25)                                                                      | COVERED |
@@ -1471,9 +1471,9 @@
 | training/plugins/lwf.py (module)                                                    |  MISSED |
 |   LwFPlugin (L9)                                                                    | COVERED |
 |     LwFPlugin.__init__ (L18)                                                        | COVERED |
-|     LwFPlugin.penalty (L50)                                                         | COVERED |
-|     LwFPlugin.before_backward (L80)                                                 | COVERED |
-|     LwFPlugin.after_training_exp (L94)                                              | COVERED |
+|     LwFPlugin.penalty (L51)                                                         | COVERED |
+|     LwFPlugin.before_backward (L81)                                                 | COVERED |
+|     LwFPlugin.after_training_exp (L95)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mas.py (module)                                                    |  MISSED |
 |   MASPlugin (L13)                                                                   | COVERED |
@@ -1526,7 +1526,7 @@
 |     AR1.__init__ (L43)                                                              | COVERED |
 |     AR1.make_train_dataloader (L226)                                                | COVERED |
 |     AR1.training_epoch (L267)                                                       |  MISSED |
-|     AR1.filter_bn_and_brn (L352)                                                    |  MISSED |
+|     AR1.filter_bn_and_brn (L353)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
