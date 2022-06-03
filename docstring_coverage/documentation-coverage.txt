@@ -1420,12 +1420,12 @@
 |     EvaluationPlugin.before_eval (L210)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
-|   EWCPlugin (L14)                                                                   | COVERED |
-|     EWCPlugin.__init__ (L25)                                                        | COVERED |
-|     EWCPlugin.before_backward (L71)                                                 | COVERED |
-|     EWCPlugin.after_training_exp (L110)                                             | COVERED |
-|     EWCPlugin.compute_importances (L129)                                            | COVERED |
-|     EWCPlugin.update_importances (L178)                                             | COVERED |
+|   EWCPlugin (L15)                                                                   | COVERED |
+|     EWCPlugin.__init__ (L26)                                                        | COVERED |
+|     EWCPlugin.before_backward (L72)                                                 | COVERED |
+|     EWCPlugin.after_training_exp (L111)                                             | COVERED |
+|     EWCPlugin.compute_importances (L130)                                            | COVERED |
+|     EWCPlugin.update_importances (L179)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L11)                                                                 | COVERED |
