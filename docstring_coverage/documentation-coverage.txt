@@ -88,7 +88,7 @@
 |   SplitTinyImageNet (L43)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ctrl.py (module)                                                 |  MISSED |
-|   CTrL (L31)                                                                        | COVERED |
+|   CTrL (L38)                                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/endless_cl_sim.py (module)                                       | COVERED |
 |   EndlessCLSim (L40)                                                                | COVERED |
@@ -198,12 +198,12 @@
 | benchmarks/datasets/lvis_dataset/lvis_data.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/lvis_dataset/lvis_dataset.py (module)                           | COVERED |
-|   LvisDataset (L32)                                                                 | COVERED |
-|     LvisDataset.__init__ (L35)                                                      | COVERED |
-|   LVISImgEntry (L205)                                                               |  MISSED |
-|   LVISAnnotationEntry (L217)                                                        |  MISSED |
-|   LVISDetectionTargets (L226)                                                       |  MISSED |
-|     LVISDetectionTargets.__init__ (L227)                                            |  MISSED |
+|   LvisDataset (L37)                                                                 | COVERED |
+|     LvisDataset.__init__ (L40)                                                      | COVERED |
+|   LVISImgEntry (L210)                                                               |  MISSED |
+|   LVISAnnotationEntry (L222)                                                        |  MISSED |
+|   LVISDetectionTargets (L231)                                                       |  MISSED |
+|     LVISDetectionTargets.__init__ (L232)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py (module)                         |  MISSED |
 |   MiniImageNetDataset (L88)                                                         | COVERED |
@@ -360,16 +360,14 @@
 |       OnlineCLScenario.__init__.split_foo (L223)                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/rl_scenario.py (module)                                        | COVERED |
-|   Env (L24)                                                                         |  MISSED |
-|   Wrapper (L27)                                                                     |  MISSED |
-|   RLExperience (L31)                                                                | COVERED |
-|     RLExperience.__init__ (L39)                                                     |  MISSED |
-|     RLExperience.environment (L50)                                                  |  MISSED |
-|   RLScenario (L57)                                                                  | COVERED |
-|     RLScenario.__init__ (L70)                                                       | COVERED |
-|       RLScenario.__init__.get_unique_task_labels (L112)                             |  MISSED |
-|     RLScenario.train_stream (L155)                                                  |  MISSED |
-|     RLScenario.eval_stream (L159)                                                   |  MISSED |
+|   RLExperience (L29)                                                                | COVERED |
+|     RLExperience.__init__ (L37)                                                     |  MISSED |
+|     RLExperience.environment (L48)                                                  |  MISSED |
+|   RLScenario (L55)                                                                  | COVERED |
+|     RLScenario.__init__ (L68)                                                       | COVERED |
+|       RLScenario.__init__.get_unique_task_labels (L110)                             |  MISSED |
+|     RLScenario.train_stream (L153)                                                  |  MISSED |
+|     RLScenario.eval_stream (L157)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/scenario_utils.py (module)                                     | COVERED |
 |   train_eval_transforms (L18)                                                       | COVERED |
@@ -664,25 +662,25 @@
 |   cpu_usage_metrics (L271)                                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/detection.py (module)                                            |  MISSED |
-|   TensorEncoder (L52)                                                               |  MISSED |
-|     TensorEncoder.__init__ (L53)                                                    |  MISSED |
-|     TensorEncoder.default (L56)                                                     |  MISSED |
-|   tensor_decoder (L63)                                                              |  MISSED |
-|   DetectionEvaluator (L78)                                                          | COVERED |
-|     DetectionEvaluator.update (L86)                                                 | COVERED |
-|     DetectionEvaluator.evaluate (L98)                                               | COVERED |
-|     DetectionEvaluator.summarize (L115)                                             | COVERED |
-|   DetectionMetrics (L135)                                                           | COVERED |
-|     DetectionMetrics.__init__ (L149)                                                | COVERED |
-|     DetectionMetrics.reset (L268)                                                   |  MISSED |
-|     DetectionMetrics.update (L274)                                                  |  MISSED |
-|     DetectionMetrics.result (L279)                                                  |  MISSED |
-|     DetectionMetrics.before_eval_exp (L290)                                         |  MISSED |
-|     DetectionMetrics.after_eval_iteration (L303)                                    |  MISSED |
-|     DetectionMetrics.after_eval_exp (L307)                                          |  MISSED |
-|   make_lvis_metrics (L357)                                                          | COVERED |
-|   get_detection_api_from_dataset (L399)                                             | COVERED |
-|   convert_to_coco_api (L465)                                                        | COVERED |
+|   TensorEncoder (L60)                                                               |  MISSED |
+|     TensorEncoder.__init__ (L61)                                                    |  MISSED |
+|     TensorEncoder.default (L64)                                                     |  MISSED |
+|   tensor_decoder (L71)                                                              |  MISSED |
+|   DetectionEvaluator (L86)                                                          | COVERED |
+|     DetectionEvaluator.update (L94)                                                 | COVERED |
+|     DetectionEvaluator.evaluate (L106)                                              | COVERED |
+|     DetectionEvaluator.summarize (L123)                                             | COVERED |
+|   DetectionMetrics (L143)                                                           | COVERED |
+|     DetectionMetrics.__init__ (L157)                                                | COVERED |
+|     DetectionMetrics.reset (L276)                                                   |  MISSED |
+|     DetectionMetrics.update (L282)                                                  |  MISSED |
+|     DetectionMetrics.result (L287)                                                  |  MISSED |
+|     DetectionMetrics.before_eval_exp (L298)                                         |  MISSED |
+|     DetectionMetrics.after_eval_iteration (L311)                                    |  MISSED |
+|     DetectionMetrics.after_eval_exp (L315)                                          |  MISSED |
+|   make_lvis_metrics (L365)                                                          | COVERED |
+|   get_detection_api_from_dataset (L407)                                             | COVERED |
+|   convert_to_coco_api (L473)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/disk_usage.py (module)                                           |  MISSED |
 |   DiskUsage (L21)                                                                   | COVERED |
@@ -1425,14 +1423,14 @@
 |     GEMPlugin.solve_quadprog (L157)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/generative_replay.py (module)                                      | COVERED |
-|   GenerativeReplayPlugin (L24)                                                      | COVERED |
-|     GenerativeReplayPlugin.__init__ (L55)                                           | COVERED |
-|     GenerativeReplayPlugin.before_training (L76)                                    | COVERED |
-|     GenerativeReplayPlugin.before_training_exp (L88)                                | COVERED |
-|     GenerativeReplayPlugin.after_training_exp (L108)                                | COVERED |
-|     GenerativeReplayPlugin.before_training_iteration (L121)                         | COVERED |
-|   TrainGeneratorAfterExpPlugin (L168)                                               | COVERED |
-|     TrainGeneratorAfterExpPlugin.after_training_exp (L175)                          | COVERED |
+|   GenerativeReplayPlugin (L22)                                                      | COVERED |
+|     GenerativeReplayPlugin.__init__ (L53)                                           | COVERED |
+|     GenerativeReplayPlugin.before_training (L74)                                    | COVERED |
+|     GenerativeReplayPlugin.before_training_exp (L86)                                | COVERED |
+|     GenerativeReplayPlugin.after_training_exp (L106)                                | COVERED |
+|     GenerativeReplayPlugin.before_training_iteration (L119)                         | COVERED |
+|   TrainGeneratorAfterExpPlugin (L166)                                               | COVERED |
+|     TrainGeneratorAfterExpPlugin.after_training_exp (L173)                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gss_greedy.py (module)                                             |  MISSED |
 |   GSS_greedyPlugin (L12)                                                            | COVERED |
@@ -1476,11 +1474,11 @@
 |     LwFPlugin.after_training_exp (L95)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mas.py (module)                                                    |  MISSED |
-|   MASPlugin (L13)                                                                   | COVERED |
-|     MASPlugin.__init__ (L32)                                                        | COVERED |
-|     MASPlugin.before_backward (L117)                                                |  MISSED |
-|     MASPlugin.before_training (L143)                                                |  MISSED |
-|     MASPlugin.after_training_exp (L152)                                             |  MISSED |
+|   MASPlugin (L12)                                                                   | COVERED |
+|     MASPlugin.__init__ (L31)                                                        | COVERED |
+|     MASPlugin.before_backward (L116)                                                |  MISSED |
+|     MASPlugin.before_training (L142)                                                |  MISSED |
+|     MASPlugin.after_training_exp (L151)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L15)                                                                | COVERED |
@@ -1558,13 +1556,13 @@
 |     JointTraining.model_adaptation (L164)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml.py (module)                                              |  MISSED |
-|   init_kaiming_normal (L17)                                                         |  MISSED |
-|   LaMAML (L31)                                                                      |  MISSED |
-|     LaMAML.__init__ (L32)                                                           | COVERED |
-|     LaMAML.training_epoch (L135)                                                    |  MISSED |
-|     LaMAML.inner_update (L149)                                                      | COVERED |
-|     LaMAML.apply_grad (L186)                                                        |  MISSED |
-|     LaMAML.train_batch (L197)                                                       |  MISSED |
+|   init_kaiming_normal (L24)                                                         |  MISSED |
+|   LaMAML (L38)                                                                      |  MISSED |
+|     LaMAML.__init__ (L39)                                                           | COVERED |
+|     LaMAML.training_epoch (L142)                                                    |  MISSED |
+|     LaMAML.inner_update (L156)                                                      | COVERED |
+|     LaMAML.apply_grad (L193)                                                        |  MISSED |
+|     LaMAML.train_batch (L204)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                              |  MISSED |
 |   ObjectDetectionTemplate (L30)                                                     | COVERED |
@@ -1756,7 +1754,7 @@
 | benchmarks/scenarios/generic_scenario_creation.py         |     6 |    0 |     6 |   100% |
 | benchmarks/scenarios/lazy_dataset_sequence.py             |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/online_scenario.py                   |    11 |    6 |     5 |    45% |
-| benchmarks/scenarios/rl_scenario.py                       |    11 |    7 |     4 |    36% |
+| benchmarks/scenarios/rl_scenario.py                       |     9 |    5 |     4 |    44% |
 | benchmarks/scenarios/scenario_utils.py                    |     2 |    0 |     2 |   100% |
 | benchmarks/scenarios/new_classes/nc_scenario.py           |     7 |    2 |     5 |    71% |
 | benchmarks/scenarios/new_classes/nc_utils.py              |     2 |    1 |     1 |    50% |
@@ -1853,5 +1851,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1546 |  649 |   897 |  58.0% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
+| TOTAL                                                     |  1544 |  647 |   897 |  58.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.1%) -----------------
