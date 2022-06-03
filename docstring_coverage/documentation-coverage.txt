@@ -94,13 +94,13 @@
 |   EndlessCLSim (L40)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ex_model.py (module)                                             | COVERED |
-|   check_experts_accuracy (L73)                                                      | COVERED |
-|   ExMLMNIST (L94)                                                                   | COVERED |
-|     ExMLMNIST.__init__ (L101)                                                       | COVERED |
-|   ExMLCoRE50 (L145)                                                                 | COVERED |
-|     ExMLCoRE50.__init__ (L152)                                                      | COVERED |
-|   ExMLCIFAR10 (L216)                                                                | COVERED |
-|     ExMLCIFAR10.__init__ (L223)                                                     | COVERED |
+|   check_experts_accuracy (L79)                                                      | COVERED |
+|   ExMLMNIST (L101)                                                                  | COVERED |
+|     ExMLMNIST.__init__ (L108)                                                       | COVERED |
+|   ExMLCoRE50 (L154)                                                                 | COVERED |
+|     ExMLCoRE50.__init__ (L161)                                                      | COVERED |
+|   ExMLCIFAR10 (L231)                                                                | COVERED |
+|     ExMLCIFAR10.__init__ (L238)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/openloris.py (module)                                            | COVERED |
 |   OpenLORIS (L48)                                                                   | COVERED |
@@ -1183,6 +1183,11 @@
 |   make_icarl_net (L178)                                                             | COVERED |
 |   initialize_icarl_net (L188)                                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| models/lenet5.py (module)                                                           |  MISSED |
+|   LeNet5 (L5)                                                                       |  MISSED |
+|     LeNet5.__init__ (L6)                                                            | COVERED |
+|     LeNet5.forward (L36)                                                            |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | models/mlp_tiny_imagenet.py (module)                                                | COVERED |
 |   SimpleMLP_TinyImageNet (L17)                                                      | COVERED |
 |     SimpleMLP_TinyImageNet.__init__ (L20)                                           | COVERED |
@@ -1249,6 +1254,22 @@
 |     SLDAResNetModel.__init__ (L14)                                                  | COVERED |
 |     SLDAResNetModel.pool_feat (L44)                                                 |  MISSED |
 |     SLDAResNetModel.forward (L55)                                                   | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| models/slim_resnet18.py (module)                                                    | COVERED |
+|   MLP (L7)                                                                          |  MISSED |
+|     MLP.__init__ (L8)                                                               |  MISSED |
+|     MLP.forward (L17)                                                               |  MISSED |
+|   conv3x3 (L21)                                                                     |  MISSED |
+|   BasicBlock (L26)                                                                  |  MISSED |
+|     BasicBlock.__init__ (L29)                                                       |  MISSED |
+|     BasicBlock.forward (L44)                                                        |  MISSED |
+|   ResNet (L52)                                                                      |  MISSED |
+|     ResNet.__init__ (L54)                                                           |  MISSED |
+|     ResNet.forward (L74)                                                            |  MISSED |
+|   SlimResNet18 (L87)                                                                | COVERED |
+|   MTSlimResNet18 (L92)                                                              | COVERED |
+|     MTSlimResNet18.__init__ (L95)                                                   |  MISSED |
+|     MTSlimResNet18.forward (L118)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/utils.py (module)                                                            |  MISSED |
 |   avalanche_forward (L9)                                                            |  MISSED |
@@ -1805,6 +1826,7 @@
 | models/generator.py                                       |    16 |    4 |    12 |    75% |
 | models/helper_method.py                                   |     5 |    2 |     3 |    60% |
 | models/icarl_resnet.py                                    |    14 |   12 |     2 |    14% |
+| models/lenet5.py                                          |     4 |    3 |     1 |    25% |
 | models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
 | models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
 | models/ncm_classifier.py                                  |     4 |    2 |     2 |    50% |
@@ -1813,6 +1835,7 @@
 | models/simple_cnn.py                                      |     7 |    5 |     2 |    29% |
 | models/simple_mlp.py                                      |     8 |    5 |     3 |    38% |
 | models/slda_resnet.py                                     |     5 |    2 |     3 |    60% |
+| models/slim_resnet18.py                                   |    15 |   12 |     3 |    20% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
@@ -1851,5 +1874,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1544 |  647 |   897 |  58.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 58.1%) -----------------
+| TOTAL                                                     |  1563 |  662 |   901 |  57.6% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
