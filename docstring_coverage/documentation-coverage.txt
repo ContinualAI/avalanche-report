@@ -497,58 +497,58 @@
 |   grouped_and_ordered_indexes (L88)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metric_definitions.py (module)                                           |  MISSED |
-|   Metric (L26)                                                                      | COVERED |
-|     Metric.result (L47)                                                             | COVERED |
-|     Metric.reset (L55)                                                              | COVERED |
-|   PluginMetric (L64)                                                                | COVERED |
-|     PluginMetric.__init__ (L81)                                                     | COVERED |
-|     PluginMetric.result (L91)                                                       |  MISSED |
-|     PluginMetric.reset (L95)                                                        |  MISSED |
-|     PluginMetric.before_training (L98)                                              |  MISSED |
-|     PluginMetric.before_training_exp (L101)                                         |  MISSED |
-|     PluginMetric.before_train_dataset_adaptation (L106)                             |  MISSED |
-|     PluginMetric.after_train_dataset_adaptation (L111)                              |  MISSED |
-|     PluginMetric.before_training_epoch (L116)                                       |  MISSED |
-|     PluginMetric.before_training_iteration (L121)                                   |  MISSED |
-|     PluginMetric.before_forward (L126)                                              |  MISSED |
-|     PluginMetric.after_forward (L129)                                               |  MISSED |
-|     PluginMetric.before_backward (L132)                                             |  MISSED |
-|     PluginMetric.after_backward (L135)                                              |  MISSED |
-|     PluginMetric.after_training_iteration (L138)                                    |  MISSED |
-|     PluginMetric.before_update (L143)                                               |  MISSED |
-|     PluginMetric.after_update (L146)                                                |  MISSED |
-|     PluginMetric.after_training_epoch (L149)                                        |  MISSED |
-|     PluginMetric.after_training_exp (L154)                                          |  MISSED |
-|     PluginMetric.after_training (L159)                                              |  MISSED |
-|     PluginMetric.before_eval (L162)                                                 |  MISSED |
-|     PluginMetric.before_eval_dataset_adaptation (L165)                              |  MISSED |
-|     PluginMetric.after_eval_dataset_adaptation (L170)                               |  MISSED |
-|     PluginMetric.before_eval_exp (L175)                                             |  MISSED |
-|     PluginMetric.after_eval_exp (L178)                                              |  MISSED |
-|     PluginMetric.after_eval (L181)                                                  |  MISSED |
-|     PluginMetric.before_eval_iteration (L184)                                       |  MISSED |
-|     PluginMetric.before_eval_forward (L189)                                         |  MISSED |
-|     PluginMetric.after_eval_forward (L194)                                          |  MISSED |
-|     PluginMetric.after_eval_iteration (L199)                                        |  MISSED |
-|   GenericPluginMetric (L205)                                                        | COVERED |
-|     GenericPluginMetric.__init__ (L212)                                             |  MISSED |
-|     GenericPluginMetric.reset (L228)                                                |  MISSED |
-|     GenericPluginMetric.result (L231)                                               |  MISSED |
-|     GenericPluginMetric.update (L234)                                               |  MISSED |
-|     GenericPluginMetric.before_training (L260)                                      |  MISSED |
-|     GenericPluginMetric.before_training_exp (L265)                                  |  MISSED |
-|     GenericPluginMetric.before_training_epoch (L270)                                |  MISSED |
-|     GenericPluginMetric.before_training_iteration (L275)                            |  MISSED |
-|     GenericPluginMetric.after_training_iteration (L280)                             |  MISSED |
-|     GenericPluginMetric.after_training_epoch (L287)                                 |  MISSED |
-|     GenericPluginMetric.after_training_exp (L292)                                   |  MISSED |
-|     GenericPluginMetric.after_training (L297)                                       |  MISSED |
-|     GenericPluginMetric.before_eval (L302)                                          |  MISSED |
-|     GenericPluginMetric.before_eval_exp (L307)                                      |  MISSED |
-|     GenericPluginMetric.after_eval_exp (L312)                                       |  MISSED |
-|     GenericPluginMetric.after_eval (L317)                                           |  MISSED |
-|     GenericPluginMetric.after_eval_iteration (L322)                                 |  MISSED |
-|     GenericPluginMetric.before_eval_iteration (L329)                                |  MISSED |
+|   Metric (L27)                                                                      | COVERED |
+|     Metric.result (L48)                                                             | COVERED |
+|     Metric.reset (L56)                                                              | COVERED |
+|   PluginMetric (L65)                                                                | COVERED |
+|     PluginMetric.__init__ (L82)                                                     | COVERED |
+|     PluginMetric.result (L92)                                                       |  MISSED |
+|     PluginMetric.reset (L96)                                                        |  MISSED |
+|     PluginMetric.before_training (L99)                                              |  MISSED |
+|     PluginMetric.before_training_exp (L102)                                         |  MISSED |
+|     PluginMetric.before_train_dataset_adaptation (L107)                             |  MISSED |
+|     PluginMetric.after_train_dataset_adaptation (L112)                              |  MISSED |
+|     PluginMetric.before_training_epoch (L117)                                       |  MISSED |
+|     PluginMetric.before_training_iteration (L122)                                   |  MISSED |
+|     PluginMetric.before_forward (L127)                                              |  MISSED |
+|     PluginMetric.after_forward (L130)                                               |  MISSED |
+|     PluginMetric.before_backward (L133)                                             |  MISSED |
+|     PluginMetric.after_backward (L136)                                              |  MISSED |
+|     PluginMetric.after_training_iteration (L139)                                    |  MISSED |
+|     PluginMetric.before_update (L144)                                               |  MISSED |
+|     PluginMetric.after_update (L147)                                                |  MISSED |
+|     PluginMetric.after_training_epoch (L150)                                        |  MISSED |
+|     PluginMetric.after_training_exp (L155)                                          |  MISSED |
+|     PluginMetric.after_training (L160)                                              |  MISSED |
+|     PluginMetric.before_eval (L163)                                                 |  MISSED |
+|     PluginMetric.before_eval_dataset_adaptation (L166)                              |  MISSED |
+|     PluginMetric.after_eval_dataset_adaptation (L171)                               |  MISSED |
+|     PluginMetric.before_eval_exp (L176)                                             |  MISSED |
+|     PluginMetric.after_eval_exp (L179)                                              |  MISSED |
+|     PluginMetric.after_eval (L182)                                                  |  MISSED |
+|     PluginMetric.before_eval_iteration (L185)                                       |  MISSED |
+|     PluginMetric.before_eval_forward (L190)                                         |  MISSED |
+|     PluginMetric.after_eval_forward (L195)                                          |  MISSED |
+|     PluginMetric.after_eval_iteration (L200)                                        |  MISSED |
+|   GenericPluginMetric (L206)                                                        | COVERED |
+|     GenericPluginMetric.__init__ (L213)                                             |  MISSED |
+|     GenericPluginMetric.reset (L230)                                                |  MISSED |
+|     GenericPluginMetric.result (L233)                                               |  MISSED |
+|     GenericPluginMetric.update (L236)                                               |  MISSED |
+|     GenericPluginMetric.before_training (L262)                                      |  MISSED |
+|     GenericPluginMetric.before_training_exp (L267)                                  |  MISSED |
+|     GenericPluginMetric.before_training_epoch (L272)                                |  MISSED |
+|     GenericPluginMetric.before_training_iteration (L277)                            |  MISSED |
+|     GenericPluginMetric.after_training_iteration (L282)                             |  MISSED |
+|     GenericPluginMetric.after_training_epoch (L289)                                 |  MISSED |
+|     GenericPluginMetric.after_training_exp (L294)                                   |  MISSED |
+|     GenericPluginMetric.after_training (L299)                                       |  MISSED |
+|     GenericPluginMetric.before_eval (L304)                                          |  MISSED |
+|     GenericPluginMetric.before_eval_exp (L309)                                      |  MISSED |
+|     GenericPluginMetric.after_eval_exp (L314)                                       |  MISSED |
+|     GenericPluginMetric.after_eval (L319)                                           |  MISSED |
+|     GenericPluginMetric.after_eval_iteration (L324)                                 |  MISSED |
+|     GenericPluginMetric.before_eval_iteration (L331)                                |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metric_results.py (module)                                               |  MISSED |
 |   LoggingType (L25)                                                                 | COVERED |
@@ -560,14 +560,16 @@
 |     MetricValue.__init__ (L94)                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metric_utils.py (module)                                                 |  MISSED |
-|   default_cm_image_creator (L30)                                                    | COVERED |
-|   repartition_pie_chart_image_creator (L135)                                        | COVERED |
-|   repartition_bar_chart_image_creator (L162)                                        | COVERED |
-|   default_history_repartition_image_creator (L197)                                  | COVERED |
-|   stream_type (L227)                                                                | COVERED |
-|   phase_and_task (L238)                                                             | COVERED |
-|   bytes2human (L266)                                                                |  MISSED |
-|   get_metric_name (L283)                                                            | COVERED |
+|   default_cm_image_creator (L31)                                                    | COVERED |
+|   repartition_pie_chart_image_creator (L136)                                        | COVERED |
+|   repartition_bar_chart_image_creator (L163)                                        | COVERED |
+|   default_history_repartition_image_creator (L198)                                  | COVERED |
+|   stream_type (L228)                                                                | COVERED |
+|   phase_and_task (L239)                                                             | COVERED |
+|   bytes2human (L267)                                                                |  MISSED |
+|   default_metric_name_template (L284)                                               |  MISSED |
+|   generic_get_metric_name (L309)                                                    |  MISSED |
+|   get_metric_name (L322)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/plot_utils.py (module)                                                   |  MISSED |
 |   learning_curves_plot (L14)                                                        | COVERED |
@@ -599,6 +601,31 @@
 |     TrainedExperienceAccuracy.update (L316)                                         | COVERED |
 |   accuracy_metrics (L328)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/amca.py (module)                                                 |  MISSED |
+|   AverageMeanClassAccuracy (L30)                                                    | COVERED |
+|     AverageMeanClassAccuracy.__init__ (L64)                                         | COVERED |
+|     AverageMeanClassAccuracy.update (L109)                                          | COVERED |
+|     AverageMeanClassAccuracy.result (L129)                                          | COVERED |
+|     AverageMeanClassAccuracy.next_experience (L151)                                 | COVERED |
+|     AverageMeanClassAccuracy.reset (L167)                                           | COVERED |
+|   MultiStreamAMCA (L188)                                                            | COVERED |
+|     MultiStreamAMCA.__init__ (L194)                                                 | COVERED |
+|     MultiStreamAMCA.update (L217)                                                   | COVERED |
+|     MultiStreamAMCA.result (L247)                                                   | COVERED |
+|     MultiStreamAMCA.set_stream (L263)                                               | COVERED |
+|     MultiStreamAMCA.finish_phase (L279)                                             | COVERED |
+|     MultiStreamAMCA.reset (L290)                                                    | COVERED |
+|   AMCAPluginMetric (L306)                                                           | COVERED |
+|     AMCAPluginMetric.__init__ (L313)                                                |  MISSED |
+|     AMCAPluginMetric.update (L324)                                                  |  MISSED |
+|     AMCAPluginMetric.before_training (L334)                                         |  MISSED |
+|     AMCAPluginMetric.after_training (L338)                                          |  MISSED |
+|     AMCAPluginMetric.before_eval (L342)                                             |  MISSED |
+|     AMCAPluginMetric.before_eval_exp (L350)                                         |  MISSED |
+|     AMCAPluginMetric.result (L356)                                                  |  MISSED |
+|     AMCAPluginMetric.metric_value_name (L379)                                       |  MISSED |
+|   amca_metrics (L389)                                                               | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/checkpoint.py (module)                                           |  MISSED |
 |   WeightCheckpoint (L25)                                                            | COVERED |
 |     WeightCheckpoint.__init__ (L39)                                                 | COVERED |
@@ -606,6 +633,29 @@
 |     WeightCheckpoint.result (L60)                                                   | COVERED |
 |     WeightCheckpoint.reset (L68)                                                    | COVERED |
 |     WeightCheckpoint.after_training_exp (L87)                                       |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/class_accuracy.py (module)                                       |  MISSED |
+|   ClassAccuracy (L30)                                                               | COVERED |
+|     ClassAccuracy.__init__ (L52)                                                    | COVERED |
+|     ClassAccuracy.update (L107)                                                     | COVERED |
+|     ClassAccuracy.result (L165)                                                     | COVERED |
+|     ClassAccuracy.reset (L184)                                                      | COVERED |
+|   ClassAccuracyPluginMetric (L203)                                                  | COVERED |
+|     ClassAccuracyPluginMetric.__init__ (L208)                                       |  MISSED |
+|     ClassAccuracyPluginMetric.update (L214)                                         |  MISSED |
+|     ClassAccuracyPluginMetric.result (L220)                                         |  MISSED |
+|     ClassAccuracyPluginMetric.metric_value_name (L244)                              |  MISSED |
+|   MinibatchClassAccuracy (L257)                                                     | COVERED |
+|     MinibatchClassAccuracy.__init__ (L269)                                          | COVERED |
+|   EpochClassAccuracy (L283)                                                         | COVERED |
+|     EpochClassAccuracy.__init__ (L293)                                              | COVERED |
+|   RunningEpochClassAccuracy (L307)                                                  | COVERED |
+|     RunningEpochClassAccuracy.__init__ (L317)                                       | COVERED |
+|   ExperienceClassAccuracy (L332)                                                    | COVERED |
+|     ExperienceClassAccuracy.__init__ (L340)                                         | COVERED |
+|   StreamClassAccuracy (L354)                                                        | COVERED |
+|     StreamClassAccuracy.__init__ (L362)                                             | COVERED |
+|   class_accuracy_metrics (L376)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/confusion_matrix.py (module)                                     |  MISSED |
 |   ConfusionMatrix (L47)                                                             | COVERED |
@@ -1791,10 +1841,12 @@
 | benchmarks/utils/utils.py                                 |     3 |    1 |     2 |    67% |
 | evaluation/metric_definitions.py                          |    53 |   47 |     6 |    11% |
 | evaluation/metric_results.py                              |     8 |    3 |     5 |    62% |
-| evaluation/metric_utils.py                                |     9 |    2 |     7 |    78% |
+| evaluation/metric_utils.py                                |    11 |    4 |     7 |    64% |
 | evaluation/plot_utils.py                                  |     2 |    1 |     1 |    50% |
 | evaluation/metrics/accuracy.py                            |    26 |    6 |    20 |    77% |
+| evaluation/metrics/amca.py                                |    24 |    9 |    15 |    62% |
 | evaluation/metrics/checkpoint.py                          |     7 |    2 |     5 |    71% |
+| evaluation/metrics/class_accuracy.py                      |    22 |    5 |    17 |    77% |
 | evaluation/metrics/confusion_matrix.py                    |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                           |    28 |   12 |    16 |    57% |
 | evaluation/metrics/detection.py                           |    20 |   11 |     9 |    45% |
@@ -1874,5 +1926,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1563 |  662 |   901 |  57.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.6%) -----------------
+| TOTAL                                                     |  1611 |  678 |   933 |  57.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.9%) -----------------
