@@ -603,28 +603,28 @@
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/amca.py (module)                                                 |  MISSED |
 |   AverageMeanClassAccuracy (L30)                                                    | COVERED |
-|     AverageMeanClassAccuracy.__init__ (L64)                                         | COVERED |
-|     AverageMeanClassAccuracy.update (L109)                                          | COVERED |
-|     AverageMeanClassAccuracy.result (L129)                                          | COVERED |
-|     AverageMeanClassAccuracy.next_experience (L151)                                 | COVERED |
-|     AverageMeanClassAccuracy.reset (L167)                                           | COVERED |
-|   MultiStreamAMCA (L188)                                                            | COVERED |
-|     MultiStreamAMCA.__init__ (L194)                                                 | COVERED |
-|     MultiStreamAMCA.update (L217)                                                   | COVERED |
-|     MultiStreamAMCA.result (L247)                                                   | COVERED |
-|     MultiStreamAMCA.set_stream (L263)                                               | COVERED |
-|     MultiStreamAMCA.finish_phase (L279)                                             | COVERED |
-|     MultiStreamAMCA.reset (L290)                                                    | COVERED |
-|   AMCAPluginMetric (L306)                                                           | COVERED |
-|     AMCAPluginMetric.__init__ (L313)                                                |  MISSED |
-|     AMCAPluginMetric.update (L324)                                                  |  MISSED |
-|     AMCAPluginMetric.before_training (L334)                                         |  MISSED |
-|     AMCAPluginMetric.after_training (L338)                                          |  MISSED |
-|     AMCAPluginMetric.before_eval (L342)                                             |  MISSED |
-|     AMCAPluginMetric.before_eval_exp (L350)                                         |  MISSED |
-|     AMCAPluginMetric.result (L356)                                                  |  MISSED |
-|     AMCAPluginMetric.metric_value_name (L379)                                       |  MISSED |
-|   amca_metrics (L389)                                                               | COVERED |
+|     AverageMeanClassAccuracy.__init__ (L66)                                         | COVERED |
+|     AverageMeanClassAccuracy.update (L111)                                          | COVERED |
+|     AverageMeanClassAccuracy.result (L131)                                          | COVERED |
+|     AverageMeanClassAccuracy.next_experience (L153)                                 | COVERED |
+|     AverageMeanClassAccuracy.reset (L169)                                           | COVERED |
+|   MultiStreamAMCA (L190)                                                            | COVERED |
+|     MultiStreamAMCA.__init__ (L196)                                                 | COVERED |
+|     MultiStreamAMCA.update (L219)                                                   | COVERED |
+|     MultiStreamAMCA.result (L249)                                                   | COVERED |
+|     MultiStreamAMCA.set_stream (L265)                                               | COVERED |
+|     MultiStreamAMCA.finish_phase (L281)                                             | COVERED |
+|     MultiStreamAMCA.reset (L292)                                                    | COVERED |
+|   AMCAPluginMetric (L308)                                                           | COVERED |
+|     AMCAPluginMetric.__init__ (L320)                                                | COVERED |
+|     AMCAPluginMetric.update (L343)                                                  |  MISSED |
+|     AMCAPluginMetric.before_training (L353)                                         |  MISSED |
+|     AMCAPluginMetric.after_training (L357)                                          |  MISSED |
+|     AMCAPluginMetric.before_eval (L361)                                             |  MISSED |
+|     AMCAPluginMetric.before_eval_exp (L369)                                         |  MISSED |
+|     AMCAPluginMetric.result (L375)                                                  |  MISSED |
+|     AMCAPluginMetric.metric_value_name (L398)                                       |  MISSED |
+|   amca_metrics (L408)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/checkpoint.py (module)                                           |  MISSED |
 |   WeightCheckpoint (L25)                                                            | COVERED |
@@ -1844,7 +1844,7 @@
 | evaluation/metric_utils.py                                |    11 |    4 |     7 |    64% |
 | evaluation/plot_utils.py                                  |     2 |    1 |     1 |    50% |
 | evaluation/metrics/accuracy.py                            |    26 |    6 |    20 |    77% |
-| evaluation/metrics/amca.py                                |    24 |    9 |    15 |    62% |
+| evaluation/metrics/amca.py                                |    24 |    8 |    16 |    67% |
 | evaluation/metrics/checkpoint.py                          |     7 |    2 |     5 |    71% |
 | evaluation/metrics/class_accuracy.py                      |    22 |    5 |    17 |    77% |
 | evaluation/metrics/confusion_matrix.py                    |    24 |   14 |    10 |    42% |
@@ -1926,5 +1926,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1611 |  678 |   933 |  57.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.9%) -----------------
+| TOTAL                                                     |  1611 |  677 |   934 |  58.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
