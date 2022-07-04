@@ -1173,22 +1173,22 @@
 |     MultiTaskModule.adaptation (L97)                                                | COVERED |
 |     MultiTaskModule.eval_adaptation (L123)                                          |  MISSED |
 |     MultiTaskModule.train_adaptation (L126)                                         | COVERED |
-|     MultiTaskModule.forward (L137)                                                  | COVERED |
-|     MultiTaskModule.forward_single_task (L171)                                      | COVERED |
-|     MultiTaskModule.forward_all_tasks (L182)                                        | COVERED |
-|   IncrementalClassifier (L197)                                                      | COVERED |
-|     IncrementalClassifier.__init__ (L206)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L224)                                         | COVERED |
-|     IncrementalClassifier.forward (L255)                                            | COVERED |
-|   MultiHeadClassifier (L268)                                                        | COVERED |
-|     MultiHeadClassifier.__init__ (L292)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L322)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L378)                                  | COVERED |
-|   TrainEvalModel (L400)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L409)                                                  | COVERED |
-|     TrainEvalModel.forward (L424)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L428)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L431)                                           |  MISSED |
+|     MultiTaskModule.forward (L133)                                                  | COVERED |
+|     MultiTaskModule.forward_single_task (L167)                                      | COVERED |
+|     MultiTaskModule.forward_all_tasks (L178)                                        | COVERED |
+|   IncrementalClassifier (L193)                                                      | COVERED |
+|     IncrementalClassifier.__init__ (L202)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L220)                                         | COVERED |
+|     IncrementalClassifier.forward (L251)                                            | COVERED |
+|   MultiHeadClassifier (L264)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L288)                                             | COVERED |
+|     MultiHeadClassifier.adaptation (L318)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L374)                                  | COVERED |
+|   TrainEvalModel (L396)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L405)                                                  | COVERED |
+|     TrainEvalModel.forward (L420)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L424)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L427)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -1215,8 +1215,9 @@
 | models/helper_method.py (module)                                                    |  MISSED |
 |   MultiTaskDecorator (L11)                                                          | COVERED |
 |     MultiTaskDecorator.__init__ (L24)                                               | COVERED |
-|     MultiTaskDecorator.forward_single_task (L69)                                    |  MISSED |
-|   as_multitask (L98)                                                                | COVERED |
+|     MultiTaskDecorator.forward_single_task (L72)                                    |  MISSED |
+|     MultiTaskDecorator.forward_all_tasks (L78)                                      | COVERED |
+|   as_multitask (L115)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/icarl_resnet.py (module)                                                     |  MISSED |
 |   IdentityShortcut (L21)                                                            |  MISSED |
@@ -1876,7 +1877,7 @@
 | models/dynamic_modules.py                                 |    26 |    5 |    21 |    81% |
 | models/dynamic_optimizers.py                              |     4 |    0 |     4 |   100% |
 | models/generator.py                                       |    16 |    4 |    12 |    75% |
-| models/helper_method.py                                   |     5 |    2 |     3 |    60% |
+| models/helper_method.py                                   |     6 |    2 |     4 |    67% |
 | models/icarl_resnet.py                                    |    14 |   12 |     2 |    14% |
 | models/lenet5.py                                          |     4 |    3 |     1 |    25% |
 | models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
@@ -1926,5 +1927,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1611 |  677 |   934 |  58.0% |
+| TOTAL                                                     |  1612 |  677 |   935 |  58.0% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
