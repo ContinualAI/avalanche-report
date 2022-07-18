@@ -436,18 +436,22 @@
 |   as_undefined_dataset (L2112)                                                      |  MISSED |
 |   train_eval_avalanche_datasets (L2120)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/collate_functions.py (module)                                      |  MISSED |
+|   classification_collate_mbatches_fn (L18)                                          | COVERED |
+|   classification_single_values_collate_fn (L35)                                     | COVERED |
+|   detection_collate_fn (L51)                                                        | COVERED |
+|   detection_collate_mbatches_fn (L61)                                               | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
-|   detection_collate_fn (L45)                                                        | COVERED |
-|   detection_collate_mbatches_fn (L52)                                               | COVERED |
-|   collate_from_data_or_kwargs (L70)                                                 |  MISSED |
-|   TaskBalancedDataLoader (L77)                                                      | COVERED |
-|     TaskBalancedDataLoader.__init__ (L80)                                           | COVERED |
-|   GroupBalancedDataLoader (L136)                                                    | COVERED |
-|     GroupBalancedDataLoader.__init__ (L139)                                         | COVERED |
-|   GroupBalancedInfiniteDataLoader (L228)                                            | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L232)                                 | COVERED |
-|   ReplayDataLoader (L282)                                                           | COVERED |
-|     ReplayDataLoader.__init__ (L285)                                                | COVERED |
+|   collate_from_data_or_kwargs (L39)                                                 |  MISSED |
+|   TaskBalancedDataLoader (L46)                                                      | COVERED |
+|     TaskBalancedDataLoader.__init__ (L49)                                           | COVERED |
+|   GroupBalancedDataLoader (L105)                                                    | COVERED |
+|     GroupBalancedDataLoader.__init__ (L108)                                         | COVERED |
+|   GroupBalancedInfiniteDataLoader (L226)                                            | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L230)                                 | COVERED |
+|   ReplayDataLoader (L292)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L295)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L23)                                                                    | COVERED |
@@ -1849,7 +1853,8 @@
 | benchmarks/scenarios/new_instances/ni_utils.py            |     1 |    1 |     0 |     0% |
 | benchmarks/utils/adaptive_transform.py                    |     7 |    6 |     1 |    14% |
 | benchmarks/utils/avalanche_dataset.py                     |    29 |    9 |    20 |    69% |
-| benchmarks/utils/data_loader.py                           |    12 |    1 |    11 |    92% |
+| benchmarks/utils/collate_functions.py                     |     5 |    1 |     4 |    80% |
+| benchmarks/utils/data_loader.py                           |    10 |    1 |     9 |    90% |
 | benchmarks/utils/dataset_definitions.py                   |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                         |    24 |   12 |    12 |    50% |
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
@@ -1943,5 +1948,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1624 |  687 |   937 |  57.7% |
+| TOTAL                                                     |  1627 |  688 |   939 |  57.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
