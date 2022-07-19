@@ -39,7 +39,7 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar100.py (module)                                            |  MISSED |
 |   SplitCIFAR100 (L48)                                                               | COVERED |
-|   SplitCIFAR110 (L153)                                                              | COVERED |
+|   SplitCIFAR110 (L139)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccub200.py (module)                                              |  MISSED |
 |   SplitCUB200 (L45)                                                                 | COVERED |
@@ -71,15 +71,15 @@
 |   PixelsPermutation (L42)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L50)                                                |  MISSED |
 |   SplitMNIST (L71)                                                                  | COVERED |
-|   PermutedMNIST (L168)                                                              | COVERED |
-|   RotatedMNIST (L270)                                                               | COVERED |
+|   PermutedMNIST (L155)                                                              | COVERED |
+|   RotatedMNIST (L260)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/comniglot.py (module)                                            |  MISSED |
 |   PixelsPermutation (L40)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L48)                                                |  MISSED |
 |   SplitOmniglot (L69)                                                               | COVERED |
-|   PermutedOmniglot (L168)                                                           | COVERED |
-|   RotatedOmniglot (L269)                                                            | COVERED |
+|   PermutedOmniglot (L154)                                                           | COVERED |
+|   RotatedOmniglot (L255)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                                               | COVERED |
 |   CORe50 (L62)                                                                      | COVERED |
@@ -587,29 +587,34 @@
 | evaluation/metrics/accuracy.py (module)                                             |  MISSED |
 |   Accuracy (L22)                                                                    | COVERED |
 |     Accuracy.__init__ (L39)                                                         | COVERED |
-|     Accuracy.update (L54)                                                           | COVERED |
-|     Accuracy.result (L111)                                                          | COVERED |
-|     Accuracy.reset (L129)                                                           | COVERED |
-|   AccuracyPluginMetric (L144)                                                       | COVERED |
-|     AccuracyPluginMetric.__init__ (L149)                                            |  MISSED |
-|     AccuracyPluginMetric.reset (L155)                                               |  MISSED |
-|     AccuracyPluginMetric.result (L161)                                              |  MISSED |
-|     AccuracyPluginMetric.update (L167)                                              |  MISSED |
-|   MinibatchAccuracy (L182)                                                          | COVERED |
-|     MinibatchAccuracy.__init__ (L195)                                               | COVERED |
-|   EpochAccuracy (L207)                                                              | COVERED |
-|     EpochAccuracy.__init__ (L217)                                                   | COVERED |
-|   RunningEpochAccuracy (L230)                                                       | COVERED |
-|     RunningEpochAccuracy.__init__ (L241)                                            | COVERED |
-|   ExperienceAccuracy (L254)                                                         | COVERED |
-|     ExperienceAccuracy.__init__ (L261)                                              | COVERED |
-|   StreamAccuracy (L273)                                                             | COVERED |
-|     StreamAccuracy.__init__ (L280)                                                  | COVERED |
-|   TrainedExperienceAccuracy (L292)                                                  | COVERED |
-|     TrainedExperienceAccuracy.__init__ (L300)                                       | COVERED |
-|     TrainedExperienceAccuracy.after_training_exp (L310)                             |  MISSED |
-|     TrainedExperienceAccuracy.update (L316)                                         | COVERED |
-|   accuracy_metrics (L328)                                                           | COVERED |
+|     Accuracy.update (L50)                                                           | COVERED |
+|     Accuracy.result (L85)                                                           | COVERED |
+|     Accuracy.reset (L95)                                                            | COVERED |
+|   TaskAwareAccuracy (L103)                                                          | COVERED |
+|     TaskAwareAccuracy.__init__ (L113)                                               | COVERED |
+|     TaskAwareAccuracy.update (L124)                                                 | COVERED |
+|     TaskAwareAccuracy.result (L167)                                                 | COVERED |
+|     TaskAwareAccuracy.reset (L188)                                                  | COVERED |
+|   AccuracyPluginMetric (L205)                                                       | COVERED |
+|     AccuracyPluginMetric.__init__ (L210)                                            | COVERED |
+|     AccuracyPluginMetric.reset (L227)                                               |  MISSED |
+|     AccuracyPluginMetric.result (L230)                                              |  MISSED |
+|     AccuracyPluginMetric.update (L233)                                              |  MISSED |
+|   MinibatchAccuracy (L248)                                                          | COVERED |
+|     MinibatchAccuracy.__init__ (L261)                                               | COVERED |
+|   EpochAccuracy (L273)                                                              | COVERED |
+|     EpochAccuracy.__init__ (L283)                                                   | COVERED |
+|   RunningEpochAccuracy (L296)                                                       | COVERED |
+|     RunningEpochAccuracy.__init__ (L307)                                            | COVERED |
+|   ExperienceAccuracy (L320)                                                         | COVERED |
+|     ExperienceAccuracy.__init__ (L327)                                              | COVERED |
+|   StreamAccuracy (L339)                                                             | COVERED |
+|     StreamAccuracy.__init__ (L346)                                                  | COVERED |
+|   TrainedExperienceAccuracy (L358)                                                  | COVERED |
+|     TrainedExperienceAccuracy.__init__ (L366)                                       | COVERED |
+|     TrainedExperienceAccuracy.after_training_exp (L376)                             |  MISSED |
+|     TrainedExperienceAccuracy.update (L382)                                         | COVERED |
+|   accuracy_metrics (L394)                                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/amca.py (module)                                                 |  MISSED |
 |   AverageMeanClassAccuracy (L30)                                                    | COVERED |
@@ -906,27 +911,32 @@
 |   labels_repartition_metrics (L163)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/loss.py (module)                                                 |  MISSED |
-|   Loss (L23)                                                                        | COVERED |
-|     Loss.__init__ (L41)                                                             | COVERED |
-|     Loss.update (L56)                                                               | COVERED |
-|     Loss.result (L68)                                                               | COVERED |
-|     Loss.reset (L83)                                                                | COVERED |
-|   LossPluginMetric (L98)                                                            |  MISSED |
-|     LossPluginMetric.__init__ (L99)                                                 |  MISSED |
-|     LossPluginMetric.reset (L105)                                                   |  MISSED |
-|     LossPluginMetric.result (L111)                                                  |  MISSED |
-|     LossPluginMetric.update (L117)                                                  |  MISSED |
-|   MinibatchLoss (L135)                                                              | COVERED |
-|     MinibatchLoss.__init__ (L148)                                                   | COVERED |
-|   EpochLoss (L160)                                                                  | COVERED |
-|     EpochLoss.__init__ (L170)                                                       | COVERED |
-|   RunningEpochLoss (L183)                                                           | COVERED |
-|     RunningEpochLoss.__init__ (L194)                                                | COVERED |
-|   ExperienceLoss (L207)                                                             | COVERED |
-|     ExperienceLoss.__init__ (L214)                                                  | COVERED |
-|   StreamLoss (L226)                                                                 | COVERED |
-|     StreamLoss.__init__ (L233)                                                      | COVERED |
-|   loss_metrics (L245)                                                               | COVERED |
+|   LossMetric (L23)                                                                  | COVERED |
+|     LossMetric.__init__ (L37)                                                       | COVERED |
+|     LossMetric.update (L52)                                                         | COVERED |
+|     LossMetric.result (L62)                                                         | COVERED |
+|     LossMetric.reset (L71)                                                          | COVERED |
+|   TaskAwareLoss (L79)                                                               | COVERED |
+|     TaskAwareLoss.__init__ (L96)                                                    | COVERED |
+|     TaskAwareLoss.update (L111)                                                     | COVERED |
+|     TaskAwareLoss.result (L123)                                                     | COVERED |
+|     TaskAwareLoss.reset (L138)                                                      | COVERED |
+|   LossPluginMetric (L153)                                                           |  MISSED |
+|     LossPluginMetric.__init__ (L154)                                                |  MISSED |
+|     LossPluginMetric.reset (L164)                                                   |  MISSED |
+|     LossPluginMetric.result (L167)                                                  |  MISSED |
+|     LossPluginMetric.update (L170)                                                  |  MISSED |
+|   MinibatchLoss (L179)                                                              | COVERED |
+|     MinibatchLoss.__init__ (L192)                                                   | COVERED |
+|   EpochLoss (L204)                                                                  | COVERED |
+|     EpochLoss.__init__ (L214)                                                       | COVERED |
+|   RunningEpochLoss (L227)                                                           | COVERED |
+|     RunningEpochLoss.__init__ (L238)                                                | COVERED |
+|   ExperienceLoss (L251)                                                             | COVERED |
+|     ExperienceLoss.__init__ (L258)                                                  | COVERED |
+|   StreamLoss (L270)                                                                 | COVERED |
+|     StreamLoss.__init__ (L277)                                                      | COVERED |
+|   loss_metrics (L289)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/mac.py (module)                                                  |  MISSED |
 |   MAC (L19)                                                                         | COVERED |
@@ -1480,13 +1490,14 @@
 | training/plugins/evaluation.py (module)                                             |  MISSED |
 |   EvaluationPlugin (L16)                                                            | COVERED |
 |     EvaluationPlugin.__init__ (L31)                                                 | COVERED |
-|     EvaluationPlugin.active (L115)                                                  |  MISSED |
-|     EvaluationPlugin.active (L119)                                                  |  MISSED |
-|     EvaluationPlugin.publish_metric_value (L125)                                    | COVERED |
-|     EvaluationPlugin.get_last_metrics (L160)                                        | COVERED |
-|     EvaluationPlugin.get_all_metrics (L170)                                         | COVERED |
-|     EvaluationPlugin.reset_last_metrics (L188)                                      | COVERED |
-|     EvaluationPlugin.before_eval (L210)                                             |  MISSED |
+|     EvaluationPlugin.active (L92)                                                   |  MISSED |
+|     EvaluationPlugin.active (L96)                                                   |  MISSED |
+|     EvaluationPlugin.publish_metric_value (L102)                                    | COVERED |
+|     EvaluationPlugin.get_last_metrics (L137)                                        | COVERED |
+|     EvaluationPlugin.get_all_metrics (L147)                                         | COVERED |
+|     EvaluationPlugin.reset_last_metrics (L165)                                      | COVERED |
+|     EvaluationPlugin.before_eval (L187)                                             |  MISSED |
+|   default_evaluator (L209)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
 |   EWCPlugin (L15)                                                                   | COVERED |
@@ -1614,7 +1625,7 @@
 |     AR1.__init__ (L43)                                                              | COVERED |
 |     AR1.make_train_dataloader (L226)                                                | COVERED |
 |     AR1.training_epoch (L270)                                                       |  MISSED |
-|     AR1.filter_bn_and_brn (L356)                                                    |  MISSED |
+|     AR1.filter_bn_and_brn (L358)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L13)                                                                  | COVERED |
@@ -1675,29 +1686,30 @@
 |     Replay.__init__ (L228)                                                          | COVERED |
 |   GenerativeReplay (L285)                                                           | COVERED |
 |     GenerativeReplay.__init__ (L304)                                                | COVERED |
-|   VAETraining (L411)                                                                | COVERED |
-|     VAETraining.__init__ (L424)                                                     | COVERED |
-|     VAETraining.criterion (L477)                                                    | COVERED |
-|   GSS_greedy (L483)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L490)                                                      | COVERED |
-|   GDumb (L551)                                                                      | COVERED |
-|     GDumb.__init__ (L558)                                                           | COVERED |
-|   LwF (L616)                                                                        | COVERED |
-|     LwF.__init__ (L623)                                                             | COVERED |
-|   AGEM (L684)                                                                       | COVERED |
-|     AGEM.__init__ (L691)                                                            | COVERED |
-|   GEM (L752)                                                                        | COVERED |
-|     GEM.__init__ (L759)                                                             | COVERED |
-|   EWC (L820)                                                                        | COVERED |
-|     EWC.__init__ (L827)                                                             | COVERED |
-|   SynapticIntelligence (L899)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L915)                                            | COVERED |
-|   CoPE (L980)                                                                       | COVERED |
-|     CoPE.__init__ (L987)                                                            | COVERED |
-|   LFL (L1056)                                                                       | COVERED |
-|     LFL.__init__ (L1064)                                                            | COVERED |
-|   MAS (L1122)                                                                       | COVERED |
-|     MAS.__init__ (L1129)                                                            | COVERED |
+|   get_default_vae_logger (L411)                                                     |  MISSED |
+|   VAETraining (L415)                                                                | COVERED |
+|     VAETraining.__init__ (L428)                                                     | COVERED |
+|     VAETraining.criterion (L478)                                                    | COVERED |
+|   GSS_greedy (L484)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L491)                                                      | COVERED |
+|   GDumb (L552)                                                                      | COVERED |
+|     GDumb.__init__ (L559)                                                           | COVERED |
+|   LwF (L617)                                                                        | COVERED |
+|     LwF.__init__ (L624)                                                             | COVERED |
+|   AGEM (L685)                                                                       | COVERED |
+|     AGEM.__init__ (L692)                                                            | COVERED |
+|   GEM (L753)                                                                        | COVERED |
+|     GEM.__init__ (L760)                                                             | COVERED |
+|   EWC (L821)                                                                        | COVERED |
+|     EWC.__init__ (L828)                                                             | COVERED |
+|   SynapticIntelligence (L900)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L916)                                            | COVERED |
+|   CoPE (L981)                                                                       | COVERED |
+|     CoPE.__init__ (L988)                                                            | COVERED |
+|   LFL (L1057)                                                                       | COVERED |
+|     LFL.__init__ (L1065)                                                            | COVERED |
+|   MAS (L1123)                                                                       | COVERED |
+|     MAS.__init__ (L1130)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L23)                                                                 | COVERED |
@@ -1864,7 +1876,7 @@
 | evaluation/metric_results.py                              |     8 |    3 |     5 |    62% |
 | evaluation/metric_utils.py                                |    11 |    4 |     7 |    64% |
 | evaluation/plot_utils.py                                  |     2 |    1 |     1 |    50% |
-| evaluation/metrics/accuracy.py                            |    26 |    6 |    20 |    77% |
+| evaluation/metrics/accuracy.py                            |    31 |    5 |    26 |    84% |
 | evaluation/metrics/amca.py                                |    24 |    8 |    16 |    67% |
 | evaluation/metrics/checkpoint.py                          |     7 |    2 |     5 |    71% |
 | evaluation/metrics/class_accuracy.py                      |    22 |    5 |    17 |    77% |
@@ -1877,7 +1889,7 @@
 | evaluation/metrics/gpu_usage.py                           |    28 |   15 |    13 |    46% |
 | evaluation/metrics/images_samples.py                      |     8 |    6 |     2 |    25% |
 | evaluation/metrics/labels_repartition.py                  |    12 |    9 |     3 |    25% |
-| evaluation/metrics/loss.py                                |    22 |    6 |    16 |    73% |
+| evaluation/metrics/loss.py                                |    27 |    6 |    21 |    78% |
 | evaluation/metrics/mac.py                                 |    19 |    8 |    11 |    58% |
 | evaluation/metrics/mean.py                                |    11 |    1 |    10 |    91% |
 | evaluation/metrics/mean_scores.py                         |    29 |   21 |     8 |    28% |
@@ -1919,7 +1931,7 @@
 | training/plugins/cope.py                                  |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                              |    10 |    5 |     5 |    50% |
 | training/plugins/early_stopping.py                        |     6 |    4 |     2 |    33% |
-| training/plugins/evaluation.py                            |    10 |    4 |     6 |    60% |
+| training/plugins/evaluation.py                            |    11 |    5 |     6 |    55% |
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
 | training/plugins/gdumb.py                                 |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
@@ -1940,7 +1952,7 @@
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/lamaml.py                             |     8 |    6 |     2 |    25% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
-| training/supervised/strategy_wrappers.py                  |    34 |    1 |    33 |    97% |
+| training/supervised/strategy_wrappers.py                  |    35 |    2 |    33 |    94% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
 | training/templates/base_online_sgd.py                     |    21 |    2 |    19 |    90% |
@@ -1948,5 +1960,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1627 |  688 |   939 |  57.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.7%) -----------------
+| TOTAL                                                     |  1639 |  689 |   950 |  58.0% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.0%) -----------------
