@@ -39,7 +39,7 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar100.py (module)                                            |  MISSED |
 |   SplitCIFAR100 (L48)                                                               | COVERED |
-|   SplitCIFAR110 (L139)                                                              | COVERED |
+|   SplitCIFAR110 (L144)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccub200.py (module)                                              |  MISSED |
 |   SplitCUB200 (L45)                                                                 | COVERED |
@@ -71,15 +71,15 @@
 |   PixelsPermutation (L42)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L50)                                                |  MISSED |
 |   SplitMNIST (L71)                                                                  | COVERED |
-|   PermutedMNIST (L155)                                                              | COVERED |
-|   RotatedMNIST (L260)                                                               | COVERED |
+|   PermutedMNIST (L160)                                                              | COVERED |
+|   RotatedMNIST (L265)                                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/comniglot.py (module)                                            |  MISSED |
 |   PixelsPermutation (L40)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L48)                                                |  MISSED |
 |   SplitOmniglot (L69)                                                               | COVERED |
-|   PermutedOmniglot (L154)                                                           | COVERED |
-|   RotatedOmniglot (L255)                                                            | COVERED |
+|   PermutedOmniglot (L159)                                                           | COVERED |
+|   RotatedOmniglot (L260)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                                               | COVERED |
 |   CORe50 (L62)                                                                      | COVERED |
