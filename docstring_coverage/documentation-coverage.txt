@@ -77,7 +77,8 @@
 | benchmarks/classic/comniglot.py (module)                                            |  MISSED |
 |   PixelsPermutation (L37)                                                           | COVERED |
 |     PixelsPermutation.__init__ (L44)                                                |  MISSED |
-|   SplitOmniglot (L65)                                                               | COVERED |
+|   SplitAlphabetOmniglot (L65)                                                       | COVERED |
+|   SplitOmniglot (L133)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                                               | COVERED |
 |   CORe50 (L62)                                                                      | COVERED |
@@ -1239,13 +1240,15 @@
 |     IncrementalClassifier.forward (L252)                                            | COVERED |
 |   MultiHeadClassifier (L265)                                                        | COVERED |
 |     MultiHeadClassifier.__init__ (L289)                                             | COVERED |
-|     MultiHeadClassifier.adaptation (L324)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L384)                                  | COVERED |
-|   TrainEvalModel (L406)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L415)                                                  | COVERED |
-|     TrainEvalModel.forward (L430)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L434)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L437)                                           |  MISSED |
+|     MultiHeadClassifier.active_units (L325)                                         |  MISSED |
+|     MultiHeadClassifier.task_masks (L334)                                           |  MISSED |
+|     MultiHeadClassifier.adaptation (L340)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L400)                                  | COVERED |
+|   TrainEvalModel (L422)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L431)                                                  | COVERED |
+|     TrainEvalModel.forward (L446)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L450)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L453)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -1410,6 +1413,13 @@
 |     ICaRLLossPlugin.before_forward (L28)                                            |  MISSED |
 |     ICaRLLossPlugin.after_training_exp (L51)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/regularization.py (module)                                                 | COVERED |
+|   RegularizationMethod (L9)                                                         | COVERED |
+|     RegularizationMethod.update (L17)                                               |  MISSED |
+|   LearningWithoutForgetting (L24)                                                   | COVERED |
+|     LearningWithoutForgetting.__init__ (L31)                                        | COVERED |
+|     LearningWithoutForgetting.update (L104)                                         | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L23)                                                             | COVERED |
 |     ExemplarsBuffer.__init__ (L30)                                                  | COVERED |
@@ -1527,14 +1537,14 @@
 | training/plugins/evaluation.py (module)                                             |  MISSED |
 |   EvaluationPlugin (L16)                                                            | COVERED |
 |     EvaluationPlugin.__init__ (L31)                                                 | COVERED |
-|     EvaluationPlugin.active (L92)                                                   |  MISSED |
-|     EvaluationPlugin.active (L96)                                                   |  MISSED |
-|     EvaluationPlugin.publish_metric_value (L102)                                    | COVERED |
-|     EvaluationPlugin.get_last_metrics (L137)                                        | COVERED |
-|     EvaluationPlugin.get_all_metrics (L147)                                         | COVERED |
-|     EvaluationPlugin.reset_last_metrics (L165)                                      | COVERED |
-|     EvaluationPlugin.before_eval (L187)                                             |  MISSED |
-|   default_evaluator (L209)                                                          |  MISSED |
+|     EvaluationPlugin.active (L91)                                                   |  MISSED |
+|     EvaluationPlugin.active (L95)                                                   |  MISSED |
+|     EvaluationPlugin.publish_metric_value (L101)                                    | COVERED |
+|     EvaluationPlugin.get_last_metrics (L136)                                        | COVERED |
+|     EvaluationPlugin.get_all_metrics (L146)                                         | COVERED |
+|     EvaluationPlugin.reset_last_metrics (L164)                                      | COVERED |
+|     EvaluationPlugin.before_eval (L186)                                             |  MISSED |
+|   default_evaluator (L201)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
 |   EWCPlugin (L15)                                                                   | COVERED |
@@ -1605,11 +1615,10 @@
 |     LRSchedulerPlugin.after_eval_iteration (L192)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/lwf.py (module)                                                    |  MISSED |
-|   LwFPlugin (L9)                                                                    | COVERED |
-|     LwFPlugin.__init__ (L18)                                                        | COVERED |
-|     LwFPlugin.penalty (L51)                                                         | COVERED |
-|     LwFPlugin.before_backward (L81)                                                 | COVERED |
-|     LwFPlugin.after_training_exp (L95)                                              | COVERED |
+|   LwFPlugin (L5)                                                                    | COVERED |
+|     LwFPlugin.__init__ (L13)                                                        | COVERED |
+|     LwFPlugin.before_backward (L22)                                                 | COVERED |
+|     LwFPlugin.after_training_exp (L29)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mas.py (module)                                                    |  MISSED |
 |   MASPlugin (L12)                                                                   | COVERED |
@@ -1732,21 +1741,21 @@
 |   GDumb (L552)                                                                      | COVERED |
 |     GDumb.__init__ (L559)                                                           | COVERED |
 |   LwF (L617)                                                                        | COVERED |
-|     LwF.__init__ (L624)                                                             | COVERED |
-|   AGEM (L685)                                                                       | COVERED |
-|     AGEM.__init__ (L692)                                                            | COVERED |
-|   GEM (L753)                                                                        | COVERED |
-|     GEM.__init__ (L760)                                                             | COVERED |
-|   EWC (L821)                                                                        | COVERED |
-|     EWC.__init__ (L828)                                                             | COVERED |
-|   SynapticIntelligence (L900)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L916)                                            | COVERED |
-|   CoPE (L981)                                                                       | COVERED |
-|     CoPE.__init__ (L988)                                                            | COVERED |
-|   LFL (L1057)                                                                       | COVERED |
-|     LFL.__init__ (L1065)                                                            | COVERED |
-|   MAS (L1123)                                                                       | COVERED |
-|     MAS.__init__ (L1130)                                                            | COVERED |
+|     LwF.__init__ (L623)                                                             | COVERED |
+|   AGEM (L684)                                                                       | COVERED |
+|     AGEM.__init__ (L691)                                                            | COVERED |
+|   GEM (L752)                                                                        | COVERED |
+|     GEM.__init__ (L759)                                                             | COVERED |
+|   EWC (L820)                                                                        | COVERED |
+|     EWC.__init__ (L827)                                                             | COVERED |
+|   SynapticIntelligence (L899)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L915)                                            | COVERED |
+|   CoPE (L980)                                                                       | COVERED |
+|     CoPE.__init__ (L987)                                                            | COVERED |
+|   LFL (L1056)                                                                       | COVERED |
+|     LFL.__init__ (L1064)                                                            | COVERED |
+|   MAS (L1122)                                                                       | COVERED |
+|     MAS.__init__ (L1129)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L23)                                                                 | COVERED |
@@ -1849,7 +1858,7 @@
 | benchmarks/classic/classic_benchmarks_utils.py            |     2 |    2 |     0 |     0% |
 | benchmarks/classic/clear.py                               |    10 |    1 |     9 |    90% |
 | benchmarks/classic/cmnist.py                              |     6 |    2 |     4 |    67% |
-| benchmarks/classic/comniglot.py                           |     4 |    2 |     2 |    50% |
+| benchmarks/classic/comniglot.py                           |     5 |    2 |     3 |    60% |
 | benchmarks/classic/core50.py                              |     2 |    0 |     2 |   100% |
 | benchmarks/classic/ctiny_imagenet.py                      |     2 |    1 |     1 |    50% |
 | benchmarks/classic/ctrl.py                                |     2 |    1 |     1 |    50% |
@@ -1948,7 +1957,7 @@
 | logging/wandb_logger.py                                   |     8 |    5 |     3 |    38% |
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
-| models/dynamic_modules.py                                 |    26 |    5 |    21 |    81% |
+| models/dynamic_modules.py                                 |    28 |    7 |    21 |    75% |
 | models/dynamic_optimizers.py                              |     4 |    0 |     4 |   100% |
 | models/generator.py                                       |    16 |    4 |    12 |    75% |
 | models/helper_method.py                                   |     6 |    2 |     4 |    67% |
@@ -1966,6 +1975,7 @@
 | models/slim_resnet18.py                                   |    15 |   12 |     3 |    20% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
+| training/regularization.py                                |     6 |    1 |     5 |    83% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
 | training/utils.py                                         |    17 |   11 |     6 |    35% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
@@ -1981,7 +1991,7 @@
 | training/plugins/gss_greedy.py                            |    11 |    3 |     8 |    73% |
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                         |    12 |   10 |     2 |    17% |
-| training/plugins/lwf.py                                   |     6 |    1 |     5 |    83% |
+| training/plugins/lwf.py                                   |     5 |    1 |     4 |    80% |
 | training/plugins/mas.py                                   |     6 |    4 |     2 |    33% |
 | training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
 | training/plugins/rwalk.py                                 |     8 |    6 |     2 |    25% |
@@ -2002,5 +2012,5 @@
 | training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
 | training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1671 |  699 |   972 |  58.2% |
+| TOTAL                                                     |  1679 |  702 |   977 |  58.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 58.2%) -----------------
