@@ -1244,11 +1244,11 @@
 |     MultiHeadClassifier.task_masks (L334)                                           |  MISSED |
 |     MultiHeadClassifier.adaptation (L340)                                           | COVERED |
 |     MultiHeadClassifier.forward_single_task (L400)                                  | COVERED |
-|   TrainEvalModel (L422)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L431)                                                  | COVERED |
-|     TrainEvalModel.forward (L446)                                                   |  MISSED |
-|     TrainEvalModel.train_adaptation (L450)                                          |  MISSED |
-|     TrainEvalModel.eval_adaptation (L453)                                           |  MISSED |
+|   TrainEvalModel (L423)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L432)                                                  | COVERED |
+|     TrainEvalModel.forward (L447)                                                   |  MISSED |
+|     TrainEvalModel.train_adaptation (L451)                                          |  MISSED |
+|     TrainEvalModel.eval_adaptation (L454)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   reset_optimizer (L20)                                                             | COVERED |
@@ -1414,11 +1414,11 @@
 |     ICaRLLossPlugin.after_training_exp (L51)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/regularization.py (module)                                                 | COVERED |
-|   RegularizationMethod (L9)                                                         | COVERED |
+|   RegularizationMethod (L10)                                                        | COVERED |
 |     RegularizationMethod.update (L17)                                               |  MISSED |
 |   LearningWithoutForgetting (L24)                                                   | COVERED |
 |     LearningWithoutForgetting.__init__ (L31)                                        | COVERED |
-|     LearningWithoutForgetting.update (L104)                                         | COVERED |
+|     LearningWithoutForgetting.update (L105)                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L23)                                                             | COVERED |
@@ -1618,7 +1618,7 @@
 |   LwFPlugin (L5)                                                                    | COVERED |
 |     LwFPlugin.__init__ (L13)                                                        | COVERED |
 |     LwFPlugin.before_backward (L22)                                                 | COVERED |
-|     LwFPlugin.after_training_exp (L29)                                              | COVERED |
+|     LwFPlugin.after_training_exp (L30)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mas.py (module)                                                    |  MISSED |
 |   MASPlugin (L12)                                                                   | COVERED |
