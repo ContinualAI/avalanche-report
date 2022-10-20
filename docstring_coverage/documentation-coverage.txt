@@ -33,6 +33,11 @@
 |     SupervisedPlugin.after_train_dataset_adaptation (L179)                          | COVERED |
 |     SupervisedPlugin.before_eval_dataset_adaptation (L185)                          | COVERED |
 |     SupervisedPlugin.after_eval_dataset_adaptation (L191)                           | COVERED |
+|   SupervisedMetaLearningPlugin (L198)                                               | COVERED |
+|     SupervisedMetaLearningPlugin.before_inner_updates (L203)                        | COVERED |
+|     SupervisedMetaLearningPlugin.after_inner_updates (L209)                         | COVERED |
+|     SupervisedMetaLearningPlugin.before_outer_update (L215)                         | COVERED |
+|     SupervisedMetaLearningPlugin.after_outer_update (L221)                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar10.py (module)                                             |  MISSED |
 |   SplitCIFAR10 (L43)                                                                | COVERED |
@@ -1176,13 +1181,13 @@
 |   InteractiveLogger (L25)                                                           | COVERED |
 |     InteractiveLogger.__init__ (L53)                                                |  MISSED |
 |     InteractiveLogger.before_training_epoch (L58)                                   |  MISSED |
-|     InteractiveLogger.after_training_epoch (L67)                                    |  MISSED |
-|     InteractiveLogger.before_training_exp (L76)                                     |  MISSED |
-|     InteractiveLogger.after_training_exp (L93)                                      |  MISSED |
-|     InteractiveLogger.before_eval_exp (L105)                                        |  MISSED |
-|     InteractiveLogger.after_eval_exp (L114)                                         |  MISSED |
-|     InteractiveLogger.after_training_iteration (L123)                               |  MISSED |
-|     InteractiveLogger.after_eval_iteration (L133)                                   |  MISSED |
+|     InteractiveLogger.after_training_epoch (L69)                                    |  MISSED |
+|     InteractiveLogger.before_training_exp (L80)                                     |  MISSED |
+|     InteractiveLogger.after_training_exp (L97)                                      |  MISSED |
+|     InteractiveLogger.before_eval_exp (L109)                                        |  MISSED |
+|     InteractiveLogger.after_eval_exp (L118)                                         |  MISSED |
+|     InteractiveLogger.after_training_iteration (L127)                               |  MISSED |
+|     InteractiveLogger.after_eval_iteration (L137)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
@@ -1703,13 +1708,11 @@
 |     JointTraining.model_adaptation (L163)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml.py (module)                                              |  MISSED |
-|   init_kaiming_normal (L26)                                                         |  MISSED |
-|   LaMAML (L40)                                                                      |  MISSED |
-|     LaMAML.__init__ (L41)                                                           | COVERED |
-|     LaMAML.training_epoch (L144)                                                    |  MISSED |
-|     LaMAML.inner_update (L158)                                                      | COVERED |
-|     LaMAML.apply_grad (L195)                                                        |  MISSED |
-|     LaMAML.train_batch (L206)                                                       |  MISSED |
+|   LaMAML (L24)                                                                      |  MISSED |
+|     LaMAML.__init__ (L25)                                                           | COVERED |
+|     LaMAML.apply_grad (L128)                                                        |  MISSED |
+|     LaMAML.inner_update_step (L139)                                                 | COVERED |
+|   init_kaiming_normal (L254)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                              |  MISSED |
 |   ObjectDetectionTemplate (L30)                                                     | COVERED |
@@ -1769,86 +1772,75 @@
 |     BaseTemplate.eval (L116)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_online_sgd.py (module)                                      |  MISSED |
-|   BaseOnlineSGDTemplate (L22)                                                       | COVERED |
-|     BaseOnlineSGDTemplate.__init__ (L41)                                            | COVERED |
-|     BaseOnlineSGDTemplate.train (L124)                                              |  MISSED |
-|     BaseOnlineSGDTemplate.eval (L136)                                               | COVERED |
-|     BaseOnlineSGDTemplate.make_train_dataloader (L194)                              | COVERED |
-|     BaseOnlineSGDTemplate.make_eval_dataloader (L198)                               | COVERED |
-|     BaseOnlineSGDTemplate.make_optimizer (L202)                                     | COVERED |
-|     BaseOnlineSGDTemplate.criterion (L206)                                          | COVERED |
-|     BaseOnlineSGDTemplate.forward (L210)                                            | COVERED |
-|     BaseOnlineSGDTemplate.model_adaptation (L214)                                   | COVERED |
-|     BaseOnlineSGDTemplate.stop_training (L218)                                      | COVERED |
-|     BaseOnlineSGDTemplate.training_pass (L222)                                      | COVERED |
-|     BaseOnlineSGDTemplate.backward (L258)                                           | COVERED |
-|     BaseOnlineSGDTemplate.optimizer_step (L262)                                     | COVERED |
-|     BaseOnlineSGDTemplate.eval_epoch (L266)                                         | COVERED |
-|   PeriodicEval (L325)                                                               | COVERED |
-|     PeriodicEval.__init__ (L331)                                                    | COVERED |
-|     PeriodicEval.before_training (L355)                                             | COVERED |
-|     PeriodicEval.after_training_exp (L372)                                          | COVERED |
-|     PeriodicEval.after_training_iteration (L380)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
-|   BaseSGDTemplate (L22)                                                             | COVERED |
-|     BaseSGDTemplate.__init__ (L41)                                                  | COVERED |
-|     BaseSGDTemplate.train (L124)                                                    |  MISSED |
-|     BaseSGDTemplate.eval (L136)                                                     | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L190)                                    | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L194)                                     | COVERED |
-|     BaseSGDTemplate.make_optimizer (L198)                                           | COVERED |
-|     BaseSGDTemplate.criterion (L202)                                                | COVERED |
-|     BaseSGDTemplate.forward (L206)                                                  | COVERED |
-|     BaseSGDTemplate.model_adaptation (L210)                                         | COVERED |
-|     BaseSGDTemplate.stop_training (L214)                                            | COVERED |
-|     BaseSGDTemplate.training_epoch (L218)                                           | COVERED |
-|     BaseSGDTemplate.backward (L253)                                                 | COVERED |
-|     BaseSGDTemplate.optimizer_step (L257)                                           | COVERED |
-|     BaseSGDTemplate.eval_epoch (L261)                                               | COVERED |
-|   PeriodicEval (L326)                                                               | COVERED |
-|     PeriodicEval.__init__ (L332)                                                    | COVERED |
-|     PeriodicEval.before_training (L355)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L364)                                         |  MISSED |
-|     PeriodicEval.after_training_exp (L381)                                          | COVERED |
-|     PeriodicEval.after_training_epoch (L394)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L402)                                    | COVERED |
+|   BaseSGDTemplate (L21)                                                             | COVERED |
+|     BaseSGDTemplate.__init__ (L40)                                                  | COVERED |
+|     BaseSGDTemplate.train (L139)                                                    |  MISSED |
+|     BaseSGDTemplate.eval (L150)                                                     | COVERED |
+|     BaseSGDTemplate.make_optimizer (L173)                                           | COVERED |
+|     BaseSGDTemplate.criterion (L178)                                                | COVERED |
+|     BaseSGDTemplate.forward (L182)                                                  | COVERED |
+|     BaseSGDTemplate.model_adaptation (L186)                                         | COVERED |
+|     BaseSGDTemplate.stop_training (L190)                                            | COVERED |
+|     BaseSGDTemplate.training_epoch (L194)                                           |  MISSED |
+|     BaseSGDTemplate.backward (L198)                                                 | COVERED |
+|     BaseSGDTemplate.optimizer_step (L202)                                           | COVERED |
+|     BaseSGDTemplate.eval_epoch (L206)                                               | COVERED |
+|     BaseSGDTemplate.check_model_and_optimizer (L221)                                |  MISSED |
+|     BaseSGDTemplate.train_dataset_adaptation (L282)                                 | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L305)                                    | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L341)                                     | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L371)                                  | COVERED |
+|   PeriodicEval (L445)                                                               | COVERED |
+|     PeriodicEval.__init__ (L451)                                                    | COVERED |
+|     PeriodicEval.before_training (L474)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L483)                                         |  MISSED |
+|     PeriodicEval.after_training_epoch (L508)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L516)                                    | COVERED |
+|     PeriodicEval.after_training_exp (L525)                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
-| training/templates/online_supervised.py (module)                                    |  MISSED |
-|   OnlineSupervisedTemplate (L24)                                                    | COVERED |
-|     OnlineSupervisedTemplate.__init__ (L73)                                         | COVERED |
-|     OnlineSupervisedTemplate.mb_x (L138)                                            | COVERED |
-|     OnlineSupervisedTemplate.mb_y (L143)                                            | COVERED |
-|     OnlineSupervisedTemplate.mb_task_id (L148)                                      | COVERED |
-|     OnlineSupervisedTemplate.criterion (L153)                                       | COVERED |
-|     OnlineSupervisedTemplate.train_dataset_adaptation (L185)                        | COVERED |
-|     OnlineSupervisedTemplate.make_train_dataloader (L197)                           | COVERED |
-|     OnlineSupervisedTemplate.make_eval_dataloader (L234)                            | COVERED |
-|     OnlineSupervisedTemplate.forward (L263)                                         | COVERED |
-|     OnlineSupervisedTemplate.model_adaptation (L267)                                | COVERED |
-|     OnlineSupervisedTemplate.eval_dataset_adaptation (L303)                         | COVERED |
-|     OnlineSupervisedTemplate.make_optimizer (L308)                                  | COVERED |
+| training/templates/common_templates.py (module)                                     |  MISSED |
+|   SupervisedTemplate (L15)                                                          | COVERED |
+|     SupervisedTemplate.__init__ (L65)                                               | COVERED |
+|   SupervisedMetaLearningTemplate (L128)                                             | COVERED |
+|     SupervisedMetaLearningTemplate.__init__ (L178)                                  | COVERED |
+|   OnlineSupervisedTemplate (L241)                                                   | COVERED |
+|     OnlineSupervisedTemplate.__init__ (L291)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
-| training/templates/supervised.py (module)                                           |  MISSED |
-|   SupervisedTemplate (L22)                                                          | COVERED |
-|     SupervisedTemplate.__init__ (L71)                                               | COVERED |
-|     SupervisedTemplate.mb_x (L136)                                                  | COVERED |
-|     SupervisedTemplate.mb_y (L141)                                                  | COVERED |
-|     SupervisedTemplate.mb_task_id (L146)                                            | COVERED |
-|     SupervisedTemplate.criterion (L151)                                             | COVERED |
-|     SupervisedTemplate.train_dataset_adaptation (L183)                              | COVERED |
-|     SupervisedTemplate.make_train_dataloader (L195)                                 | COVERED |
-|     SupervisedTemplate.make_eval_dataloader (L231)                                  | COVERED |
-|     SupervisedTemplate.forward (L260)                                               | COVERED |
-|     SupervisedTemplate.model_adaptation (L264)                                      | COVERED |
-|     SupervisedTemplate.eval_dataset_adaptation (L283)                               | COVERED |
-|     SupervisedTemplate.make_optimizer (L288)                                        | COVERED |
+| training/templates/observation_type/batch_observation.py (module)                   |  MISSED |
+|   BatchObservation (L8)                                                             |  MISSED |
+|     BatchObservation.model_adaptation (L9)                                          | COVERED |
+|     BatchObservation.make_optimizer (L19)                                           | COVERED |
+|     BatchObservation.check_model_and_optimizer (L29)                                |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| training/templates/observation_type/online_observation.py (module)                  |  MISSED |
+|   OnlineObservation (L9)                                                            |  MISSED |
+|     OnlineObservation.make_optimizer (L10)                                          | COVERED |
+|     OnlineObservation.model_adaptation (L29)                                        | COVERED |
+|     OnlineObservation.check_model_and_optimizer (L55)                               |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| training/templates/problem_type/supervised_problem.py (module)                      |  MISSED |
+|   SupervisedProblem (L4)                                                            |  MISSED |
+|     SupervisedProblem.mb_x (L6)                                                     | COVERED |
+|     SupervisedProblem.mb_y (L11)                                                    | COVERED |
+|     SupervisedProblem.mb_task_id (L16)                                              | COVERED |
+|     SupervisedProblem.criterion (L21)                                               | COVERED |
+|     SupervisedProblem.forward (L25)                                                 | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/templates/update_type/meta_update.py (module)                              |  MISSED |
+|   MetaUpdate (L4)                                                                   |  MISSED |
+|     MetaUpdate.training_epoch (L5)                                                  | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/templates/update_type/sgd_update.py (module)                               |  MISSED |
+|   SGDUpdate (L2)                                                                    |  MISSED |
+|     SGDUpdate.training_epoch (L3)                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
 | Name                                                      | Total | Miss | Cover | Cover% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| core.py                                                   |    31 |    2 |    29 |    94% |
+| core.py                                                   |    36 |    2 |    34 |    94% |
 | benchmarks/classic/ccifar10.py                            |     2 |    1 |     1 |    50% |
 | benchmarks/classic/ccifar100.py                           |     3 |    1 |     2 |    67% |
 | benchmarks/classic/ccub200.py                             |     2 |    1 |     1 |    50% |
@@ -2002,15 +1994,19 @@
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
-| training/supervised/lamaml.py                             |     8 |    6 |     2 |    25% |
+| training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
 | training/supervised/strategy_wrappers.py                  |    35 |    2 |    33 |    94% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
-| training/templates/base_online_sgd.py                     |    21 |    2 |    19 |    90% |
-| training/templates/base_sgd.py                            |    23 |    3 |    20 |    87% |
-| training/templates/online_supervised.py                   |    14 |    1 |    13 |    93% |
-| training/templates/supervised.py                          |    14 |    1 |    13 |    93% |
+| training/templates/base_online_sgd.py                     |     1 |    1 |     0 |     0% |
+| training/templates/base_sgd.py                            |    26 |    5 |    21 |    81% |
+| training/templates/common_templates.py                    |     7 |    1 |     6 |    86% |
+| training/templates/observation_type/batch_observation.py  |     5 |    3 |     2 |    40% |
+| training/templates/observation_type/online_observation.py |     5 |    3 |     2 |    40% |
+| training/templates/problem_type/supervised_problem.py     |     7 |    2 |     5 |    71% |
+| training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
+| training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1679 |  702 |   977 |  58.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 58.2%) -----------------
+| TOTAL                                                     |  1667 |  712 |   955 |  57.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 57.3%) -----------------
