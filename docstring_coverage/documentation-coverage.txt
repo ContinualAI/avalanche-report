@@ -437,14 +437,14 @@
 | benchmarks/utils/data_attribute.py (module)                                         | COVERED |
 |   DataAttribute (L25)                                                               | COVERED |
 |     DataAttribute.__init__ (L35)                                                    | COVERED |
-|     DataAttribute.data (L61)                                                        |  MISSED |
-|     DataAttribute.uniques (L65)                                                     | COVERED |
-|     DataAttribute.count (L80)                                                       | COVERED |
-|     DataAttribute.val_to_idx (L91)                                                  | COVERED |
-|     DataAttribute.subset (L105)                                                     | COVERED |
-|     DataAttribute.concat (L119)                                                     | COVERED |
-|   TaskLabels (L144)                                                                 | COVERED |
-|     TaskLabels.__init__ (L148)                                                      |  MISSED |
+|     DataAttribute.data (L67)                                                        |  MISSED |
+|     DataAttribute.uniques (L71)                                                     | COVERED |
+|     DataAttribute.count (L86)                                                       | COVERED |
+|     DataAttribute.val_to_idx (L97)                                                  | COVERED |
+|     DataAttribute.subset (L111)                                                     | COVERED |
+|     DataAttribute.concat (L125)                                                     | COVERED |
+|   TaskLabels (L150)                                                                 | COVERED |
+|     TaskLabels.__init__ (L154)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
 |   collate_from_data_or_kwargs (L42)                                                 |  MISSED |
