@@ -40,11 +40,11 @@
 |     SupervisedMetaLearningPlugin.after_outer_update (L221)                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar10.py (module)                                             |  MISSED |
-|   SplitCIFAR10 (L43)                                                                | COVERED |
+|   SplitCIFAR10 (L45)                                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccifar100.py (module)                                            |  MISSED |
-|   SplitCIFAR100 (L46)                                                               | COVERED |
-|   SplitCIFAR110 (L142)                                                              | COVERED |
+|   SplitCIFAR100 (L49)                                                               | COVERED |
+|   SplitCIFAR110 (L145)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/ccub200.py (module)                                              |  MISSED |
 |   SplitCUB200 (L45)                                                                 | COVERED |
@@ -195,15 +195,35 @@
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py (module)                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/external_datasets/cifar.py (module)                             |  MISSED |
+|   get_cifar10_dataset (L7)                                                          |  MISSED |
+|   get_cifar100_dataset (L17)                                                        |  MISSED |
+|   load_CIFAR100 (L27)                                                               |  MISSED |
+|   save_CIFAR100 (L33)                                                               |  MISSED |
+|   load_CIFAR10 (L39)                                                                |  MISSED |
+|   save_CIFAR10 (L45)                                                                |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/external_datasets/fmnist.py (module)                            |  MISSED |
+|   get_fmnist_dataset (L7)                                                           |  MISSED |
+|   load_FashionMNIST (L16)                                                           |  MISSED |
+|   save_FashionMNIST (L22)                                                           |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/external_datasets/mnist.py (module)                             |  MISSED |
+|   get_mnist_dataset (L7)                                                            |  MISSED |
+|   load_MNIST (L18)                                                                  |  MISSED |
+|   save_MNIST (L24)                                                                  |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist.py (module)                             | COVERED |
 |   pil_loader (L41)                                                                  | COVERED |
 |   INATURALIST2018 (L54)                                                             | COVERED |
 |     INATURALIST2018.__init__ (L91)                                                  |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist_data.py (module)                        | COVERED |
-|   INATURALIST_DATA (L104)                                                           | COVERED |
-|     INATURALIST_DATA.__init__ (L109)                                                | COVERED |
-|     INATURALIST_DATA.download_inaturalist (L140)                                    | COVERED |
+|   TqdmUpTo (L106)                                                                   | COVERED |
+|     TqdmUpTo.update_to (L112)                                                       | COVERED |
+|   INATURALIST_DATA (L126)                                                           | COVERED |
+|     INATURALIST_DATA.__init__ (L131)                                                | COVERED |
+|     INATURALIST_DATA.download_inaturalist (L162)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/lvis_dataset/lvis_data.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1192,21 +1212,22 @@
 | logging/tensorboard_logger.py (module)                                              | COVERED |
 |   TensorboardLogger (L28)                                                           | COVERED |
 |     TensorboardLogger.__init__ (L51)                                                | COVERED |
-|     TensorboardLogger.log_single_metric (L74)                                       |  MISSED |
+|     TensorboardLogger.log_single_metric (L68)                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                                    |  MISSED |
-|   TextLogger (L27)                                                                  | COVERED |
-|     TextLogger.__init__ (L52)                                                       | COVERED |
-|     TextLogger.log_single_metric (L63)                                              |  MISSED |
-|     TextLogger.print_current_metrics (L75)                                          |  MISSED |
-|     TextLogger.before_training_exp (L83)                                            |  MISSED |
-|     TextLogger.before_eval_exp (L92)                                                |  MISSED |
-|     TextLogger.after_training_epoch (L101)                                          |  MISSED |
-|     TextLogger.after_eval_exp (L116)                                                |  MISSED |
-|     TextLogger.before_training (L143)                                               |  MISSED |
-|     TextLogger.before_eval (L152)                                                   |  MISSED |
-|     TextLogger.after_training (L161)                                                |  MISSED |
-|     TextLogger.after_eval (L170)                                                    |  MISSED |
+|   TextLogger (L30)                                                                  | COVERED |
+|     TextLogger.__init__ (L55)                                                       | COVERED |
+|     TextLogger.log_single_metric (L66)                                              |  MISSED |
+|     TextLogger.print_current_metrics (L78)                                          |  MISSED |
+|     TextLogger.before_training_exp (L86)                                            |  MISSED |
+|     TextLogger.before_eval_exp (L95)                                                |  MISSED |
+|     TextLogger.after_training_epoch (L104)                                          |  MISSED |
+|     TextLogger.after_eval_exp (L119)                                                |  MISSED |
+|     TextLogger.before_training (L146)                                               |  MISSED |
+|     TextLogger.before_eval (L155)                                                   |  MISSED |
+|     TextLogger.after_training (L164)                                                |  MISSED |
+|     TextLogger.after_eval (L173)                                                    |  MISSED |
+|     TextLogger.on_checkpoint_resume (L232)                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L40)                                                                 | COVERED |
@@ -1214,8 +1235,8 @@
 |     WandBLogger.import_wandb (L102)                                                 |  MISSED |
 |     WandBLogger.args_parse (L109)                                                   |  MISSED |
 |     WandBLogger.before_run (L121)                                                   |  MISSED |
-|     WandBLogger.after_training_exp (L130)                                           |  MISSED |
-|     WandBLogger.log_single_metric (L142)                                            |  MISSED |
+|     WandBLogger.after_training_exp (L139)                                           |  MISSED |
+|     WandBLogger.log_single_metric (L151)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/base_model.py (module)                                                       |  MISSED |
 |   BaseModel (L4)                                                                    | COVERED |
@@ -1271,11 +1292,11 @@
 |     VAEMLPDecoder.forward (L94)                                                     |  MISSED |
 |   MlpVAE (L103)                                                                     | COVERED |
 |     MlpVAE.__init__ (L116)                                                          | COVERED |
-|     MlpVAE.get_features (L132)                                                      | COVERED |
-|     MlpVAE.generate (L138)                                                          | COVERED |
-|     MlpVAE.sampling (L154)                                                          | COVERED |
-|     MlpVAE.forward (L162)                                                           | COVERED |
-|   VAE_loss (L180)                                                                   | COVERED |
+|     MlpVAE.get_features (L135)                                                      | COVERED |
+|     MlpVAE.generate (L141)                                                          | COVERED |
+|     MlpVAE.sampling (L157)                                                          | COVERED |
+|     MlpVAE.forward (L165)                                                           | COVERED |
+|   VAE_loss (L183)                                                                   | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/helper_method.py (module)                                                    |  MISSED |
 |   MultiTaskDecorator (L11)                                                          | COVERED |
@@ -1485,6 +1506,15 @@
 |   freeze_up_to (L246)                                                               | COVERED |
 |   examples_per_class (L307)                                                         |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/determinism/cuda_rng.py (module)                                           |  MISSED |
+|   cuda_rng_seed (L7)                                                                | COVERED |
+|   cpu_rng_seed (L14)                                                                | COVERED |
+|   cuda_rng_save_state (L24)                                                         | COVERED |
+|   cuda_rng_load_state (L31)                                                         | COVERED |
+|   cuda_rng_step (L56)                                                               |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| training/determinism/rng_manager.py (module)                                        |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | training/plugins/agem.py (module)                                                   |  MISSED |
 |   AGEMPlugin (L15)                                                                  | COVERED |
 |     AGEMPlugin.__init__ (L25)                                                       | COVERED |
@@ -1493,6 +1523,30 @@
 |     AGEMPlugin.after_training_exp (L108)                                            | COVERED |
 |     AGEMPlugin.sample_from_memory (L112)                                            | COVERED |
 |     AGEMPlugin.update_memory (L120)                                                 | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| training/plugins/checkpoint.py (module)                                             |  MISSED |
+|   CheckpointStorage (L16)                                                           | COVERED |
+|     CheckpointStorage.__init__ (L24)                                                | COVERED |
+|     CheckpointStorage.store_checkpoint (L31)                                        | COVERED |
+|     CheckpointStorage.list_checkpoints (L56)                                        | COVERED |
+|     CheckpointStorage.checkpoint_exists (L65)                                       | COVERED |
+|     CheckpointStorage.load_checkpoint (L75)                                         | COVERED |
+|   CheckpointPlugin (L98)                                                            | COVERED |
+|     CheckpointPlugin.__init__ (L137)                                                | COVERED |
+|     CheckpointPlugin.load_checkpoint_if_exists (L164)                               | COVERED |
+|     CheckpointPlugin.after_eval (L217)                                              |  MISSED |
+|     CheckpointPlugin.before_training (L236)                                         |  MISSED |
+|     CheckpointPlugin.after_training (L240)                                          |  MISSED |
+|     CheckpointPlugin.save_checkpoint (L245)                                         |  MISSED |
+|     CheckpointPlugin.load_checkpoint (L250)                                         | COVERED |
+|   FileSystemCheckpointStorage (L283)                                                | COVERED |
+|     FileSystemCheckpointStorage.__init__ (L288)                                     | COVERED |
+|     FileSystemCheckpointStorage.store_checkpoint (L301)                             |  MISSED |
+|     FileSystemCheckpointStorage.list_checkpoints (L322)                             |  MISSED |
+|     FileSystemCheckpointStorage.checkpoint_exists (L332)                            |  MISSED |
+|     FileSystemCheckpointStorage.load_checkpoint (L335)                              |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| training/plugins/checkpoint_common_recipes.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/clock.py (module)                                                  |  MISSED |
 |   Clock (L14)                                                                       | COVERED |
@@ -1767,9 +1821,9 @@
 | training/templates/base.py (module)                                                 |  MISSED |
 |   BaseTemplate (L14)                                                                | COVERED |
 |     BaseTemplate.__init__ (L34)                                                     | COVERED |
-|     BaseTemplate.is_eval (L67)                                                      | COVERED |
-|     BaseTemplate.train (L71)                                                        | COVERED |
-|     BaseTemplate.eval (L116)                                                        | COVERED |
+|     BaseTemplate.is_eval (L70)                                                      | COVERED |
+|     BaseTemplate.train (L74)                                                        | COVERED |
+|     BaseTemplate.eval (L119)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_online_sgd.py (module)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1871,8 +1925,11 @@
 | benchmarks/datasets/cub200/cub200.py                      |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim.py      |     7 |    0 |     7 |   100% |
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py |     1 |    0 |     1 |   100% |
+| benchmarks/datasets/external_datasets/cifar.py            |     7 |    7 |     0 |     0% |
+| benchmarks/datasets/external_datasets/fmnist.py           |     4 |    4 |     0 |     0% |
+| benchmarks/datasets/external_datasets/mnist.py            |     4 |    4 |     0 |     0% |
 | benchmarks/datasets/inaturalist/inaturalist.py            |     4 |    1 |     3 |    75% |
-| benchmarks/datasets/inaturalist/inaturalist_data.py       |     4 |    0 |     4 |   100% |
+| benchmarks/datasets/inaturalist/inaturalist_data.py       |     6 |    0 |     6 |   100% |
 | benchmarks/datasets/lvis_dataset/lvis_data.py             |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/lvis_dataset/lvis_dataset.py          |     7 |    4 |     3 |    43% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py        |     5 |    3 |     2 |    40% |
@@ -1945,7 +2002,7 @@
 | logging/csv_logger.py                                     |    12 |    9 |     3 |    25% |
 | logging/interactive_logging.py                            |    11 |   10 |     1 |     9% |
 | logging/tensorboard_logger.py                             |     4 |    1 |     3 |    75% |
-| logging/text_logging.py                                   |    13 |   11 |     2 |    15% |
+| logging/text_logging.py                                   |    14 |   12 |     2 |    14% |
 | logging/wandb_logger.py                                   |     8 |    5 |     3 |    38% |
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
@@ -1970,7 +2027,11 @@
 | training/regularization.py                                |     6 |    1 |     5 |    83% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
 | training/utils.py                                         |    17 |   11 |     6 |    35% |
+| training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
+| training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
+| training/plugins/checkpoint.py                            |    21 |    9 |    12 |    57% |
+| training/plugins/checkpoint_common_recipes.py             |     1 |    1 |     0 |     0% |
 | training/plugins/clock.py                                 |     9 |    7 |     2 |    22% |
 | training/plugins/cope.py                                  |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                              |    10 |    5 |     5 |    50% |
@@ -2008,5 +2069,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1667 |  712 |   955 |  57.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 57.3%) -----------------
+| TOTAL                                                     |  1714 |  741 |   973 |  56.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.8%) -----------------
