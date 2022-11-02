@@ -1492,19 +1492,25 @@
 |   trigger_plugins (L28)                                                             | COVERED |
 |   load_all_dataset (L38)                                                            | COVERED |
 |   zerolike_params_dict (L82)                                                        | COVERED |
-|   copy_params_dict (L96)                                                            | COVERED |
-|   LayerAndParameter (L111)                                                          |  MISSED |
-|   get_layers_and_params (L118)                                                      |  MISSED |
-|   get_layer_by_name (L138)                                                          |  MISSED |
-|   get_last_fc_layer (L145)                                                          |  MISSED |
-|   swap_last_fc_layer (L157)                                                         |  MISSED |
-|   adapt_classification_layer (L162)                                                 |  MISSED |
-|   replace_bn_with_brn (L178)                                                        |  MISSED |
-|   change_brn_pars (L215)                                                            |  MISSED |
-|   freeze_everything (L230)                                                          |  MISSED |
-|   unfreeze_everything (L238)                                                        |  MISSED |
-|   freeze_up_to (L246)                                                               | COVERED |
-|   examples_per_class (L307)                                                         |  MISSED |
+|   copy_params_dict (L94)                                                            | COVERED |
+|   LayerAndParameter (L112)                                                          |  MISSED |
+|   get_layers_and_params (L119)                                                      |  MISSED |
+|   get_layer_by_name (L139)                                                          |  MISSED |
+|   get_last_fc_layer (L146)                                                          |  MISSED |
+|   swap_last_fc_layer (L158)                                                         |  MISSED |
+|   adapt_classification_layer (L163)                                                 |  MISSED |
+|   replace_bn_with_brn (L179)                                                        |  MISSED |
+|   change_brn_pars (L216)                                                            |  MISSED |
+|   freeze_everything (L231)                                                          |  MISSED |
+|   unfreeze_everything (L239)                                                        |  MISSED |
+|   freeze_up_to (L247)                                                               | COVERED |
+|   examples_per_class (L308)                                                         |  MISSED |
+|   ParamData (L322)                                                                  |  MISSED |
+|     ParamData.__init__ (L323)                                                       | COVERED |
+|     ParamData.reset_like (L358)                                                     | COVERED |
+|     ParamData.expand (L374)                                                         | COVERED |
+|     ParamData.data (L408)                                                           |  MISSED |
+|     ParamData.data (L412)                                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/determinism/cuda_rng.py (module)                                           |  MISSED |
 |   cuda_rng_seed (L7)                                                                | COVERED |
@@ -1609,9 +1615,9 @@
 |   EWCPlugin (L15)                                                                   | COVERED |
 |     EWCPlugin.__init__ (L26)                                                        | COVERED |
 |     EWCPlugin.before_backward (L72)                                                 | COVERED |
-|     EWCPlugin.after_training_exp (L111)                                             | COVERED |
-|     EWCPlugin.compute_importances (L130)                                            | COVERED |
-|     EWCPlugin.update_importances (L184)                                             | COVERED |
+|     EWCPlugin.after_training_exp (L112)                                             | COVERED |
+|     EWCPlugin.compute_importances (L131)                                            | COVERED |
+|     EWCPlugin.update_importances (L185)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L11)                                                                 | COVERED |
@@ -1682,9 +1688,9 @@
 | training/plugins/mas.py (module)                                                    |  MISSED |
 |   MASPlugin (L12)                                                                   | COVERED |
 |     MASPlugin.__init__ (L31)                                                        | COVERED |
-|     MASPlugin.before_backward (L122)                                                |  MISSED |
-|     MASPlugin.before_training (L148)                                                |  MISSED |
-|     MASPlugin.after_training_exp (L157)                                             |  MISSED |
+|     MASPlugin.before_backward (L120)                                                |  MISSED |
+|     MASPlugin.before_training (L147)                                                |  MISSED |
+|     MASPlugin.after_training_exp (L156)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                 |  MISSED |
 |   ReplayPlugin (L15)                                                                | COVERED |
@@ -1694,13 +1700,13 @@
 |     ReplayPlugin.after_training_exp (L108)                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/rwalk.py (module)                                                  |  MISSED |
-|   RWalkPlugin (L11)                                                                 | COVERED |
-|     RWalkPlugin.__init__ (L28)                                                      | COVERED |
-|     RWalkPlugin.before_training (L157)                                              |  MISSED |
-|     RWalkPlugin.before_training_iteration (L164)                                    |  MISSED |
-|     RWalkPlugin.before_backward (L170)                                              |  MISSED |
-|     RWalkPlugin.after_training_iteration (L187)                                     |  MISSED |
-|     RWalkPlugin.after_training_exp (L197)                                           |  MISSED |
+|   RWalkPlugin (L12)                                                                 | COVERED |
+|     RWalkPlugin.__init__ (L29)                                                      | COVERED |
+|     RWalkPlugin.before_training (L160)                                              |  MISSED |
+|     RWalkPlugin.before_training_iteration (L167)                                    |  MISSED |
+|     RWalkPlugin.before_backward (L173)                                              |  MISSED |
+|     RWalkPlugin.after_training_iteration (L191)                                     |  MISSED |
+|     RWalkPlugin.after_training_exp (L201)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/strategy_plugin.py (module)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1720,7 +1726,7 @@
 |     SynapticIntelligencePlugin.pre_update (L237)                                    |  MISSED |
 |     SynapticIntelligencePlugin.post_update (L244)                                   |  MISSED |
 |     SynapticIntelligencePlugin.compute_ewc_loss (L263)                              |  MISSED |
-|     SynapticIntelligencePlugin.update_ewc_data (L293)                               |  MISSED |
+|     SynapticIntelligencePlugin.update_ewc_data (L292)                               |  MISSED |
 |     SynapticIntelligencePlugin.explode_excluded_parameters (L334)                   | COVERED |
 |     SynapticIntelligencePlugin.not_excluded_parameters (L352)                       |  MISSED |
 |     SynapticIntelligencePlugin.allowed_parameters (L382)                            |  MISSED |
@@ -1764,9 +1770,9 @@
 | training/supervised/lamaml.py (module)                                              |  MISSED |
 |   LaMAML (L24)                                                                      |  MISSED |
 |     LaMAML.__init__ (L25)                                                           | COVERED |
-|     LaMAML.apply_grad (L128)                                                        |  MISSED |
-|     LaMAML.inner_update_step (L139)                                                 | COVERED |
-|   init_kaiming_normal (L254)                                                        |  MISSED |
+|     LaMAML.apply_grad (L147)                                                        |  MISSED |
+|     LaMAML.inner_update_step (L158)                                                 | COVERED |
+|   init_kaiming_normal (L273)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                              |  MISSED |
 |   ObjectDetectionTemplate (L30)                                                     | COVERED |
@@ -2026,7 +2032,7 @@
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
 | training/regularization.py                                |     6 |    1 |     5 |    83% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
-| training/utils.py                                         |    17 |   11 |     6 |    35% |
+| training/utils.py                                         |    23 |   14 |     9 |    39% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
 | training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
@@ -2069,5 +2075,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1714 |  741 |   973 |  56.8% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.8%) -----------------
+| TOTAL                                                     |  1720 |  744 |   976 |  56.7% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.7%) -----------------
