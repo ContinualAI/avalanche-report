@@ -113,9 +113,10 @@
 |   CLStream51 (L61)                                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/dataset_utils.py (module)                                       |  MISSED |
-|   default_dataset_location (L22)                                                    | COVERED |
-|   load_config_file (L37)                                                            |  MISSED |
-|   maybe_init_config_file (L42)                                                      | COVERED |
+|   set_dataset_root (L22)                                                            | COVERED |
+|   default_dataset_location (L30)                                                    | COVERED |
+|   load_config_file (L45)                                                            |  MISSED |
+|   maybe_init_config_file (L50)                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/downloadable_dataset.py (module)                                |  MISSED |
 |   DownloadableDataset (L30)                                                         | COVERED |
@@ -1918,7 +1919,7 @@
 | benchmarks/classic/ex_model.py                            |     8 |    0 |     8 |   100% |
 | benchmarks/classic/openloris.py                           |     2 |    0 |     2 |   100% |
 | benchmarks/classic/stream51.py                            |     2 |    1 |     1 |    50% |
-| benchmarks/datasets/dataset_utils.py                      |     4 |    2 |     2 |    50% |
+| benchmarks/datasets/dataset_utils.py                      |     5 |    2 |     3 |    60% |
 | benchmarks/datasets/downloadable_dataset.py               |     5 |    1 |     4 |    80% |
 | benchmarks/datasets/imagenet_data.py                      |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
@@ -2075,5 +2076,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1720 |  744 |   976 |  56.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.7%) -----------------
+| TOTAL                                                     |  1721 |  744 |   977 |  56.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.8%) -----------------
