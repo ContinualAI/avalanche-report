@@ -1734,9 +1734,9 @@
 | training/supervised/ar1.py (module)                                                 |  MISSED |
 |   AR1 (L31)                                                                         | COVERED |
 |     AR1.__init__ (L43)                                                              | COVERED |
-|     AR1.make_train_dataloader (L226)                                                | COVERED |
-|     AR1.training_epoch (L273)                                                       |  MISSED |
-|     AR1.filter_bn_and_brn (L361)                                                    |  MISSED |
+|     AR1.make_train_dataloader (L229)                                                | COVERED |
+|     AR1.training_epoch (L276)                                                       |  MISSED |
+|     AR1.filter_bn_and_brn (L364)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/cumulative.py (module)                                          |  MISSED |
 |   Cumulative (L14)                                                                  | COVERED |
