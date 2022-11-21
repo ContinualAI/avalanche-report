@@ -446,14 +446,14 @@
 | benchmarks/utils/data.py (module)                                                   | COVERED |
 |   AvalancheDataset (L37)                                                            | COVERED |
 |     AvalancheDataset.__init__ (L76)                                                 | COVERED |
-|     AvalancheDataset.transform (L215)                                               |  MISSED |
-|     AvalancheDataset.train (L273)                                                   | COVERED |
-|     AvalancheDataset.eval (L283)                                                    | COVERED |
-|     AvalancheDataset.with_transforms (L298)                                         | COVERED |
-|     AvalancheDataset.freeze_transforms (L315)                                       | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L331)                          | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L345)                         | COVERED |
-|   make_avalanche_dataset (L383)                                                     | COVERED |
+|     AvalancheDataset.transform (L219)                                               |  MISSED |
+|     AvalancheDataset.train (L277)                                                   | COVERED |
+|     AvalancheDataset.eval (L287)                                                    | COVERED |
+|     AvalancheDataset.with_transforms (L302)                                         | COVERED |
+|     AvalancheDataset.freeze_transforms (L319)                                       | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L335)                          | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L349)                         | COVERED |
+|   make_avalanche_dataset (L387)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                         | COVERED |
 |   DataAttribute (L25)                                                               | COVERED |
@@ -1826,11 +1826,11 @@
 |     OnlineNaive.__init__ (L35)                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base.py (module)                                                 |  MISSED |
-|   BaseTemplate (L14)                                                                | COVERED |
-|     BaseTemplate.__init__ (L34)                                                     | COVERED |
-|     BaseTemplate.is_eval (L70)                                                      | COVERED |
-|     BaseTemplate.train (L74)                                                        | COVERED |
-|     BaseTemplate.eval (L119)                                                        | COVERED |
+|   BaseTemplate (L15)                                                                | COVERED |
+|     BaseTemplate.__init__ (L35)                                                     | COVERED |
+|     BaseTemplate.is_eval (L71)                                                      | COVERED |
+|     BaseTemplate.train (L75)                                                        | COVERED |
+|     BaseTemplate.eval (L123)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_online_sgd.py (module)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
