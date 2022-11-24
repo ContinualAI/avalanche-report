@@ -430,12 +430,12 @@
 |   ClassificationDataset (L104)                                                      |  MISSED |
 |     ClassificationDataset.subset (L105)                                             |  MISSED |
 |     ClassificationDataset.concat (L109)                                             |  MISSED |
-|   make_classification_dataset (L114)                                                | COVERED |
-|   classification_subset (L350)                                                      | COVERED |
-|   make_tensor_classification_dataset (L490)                                         | COVERED |
-|   concat_classification_datasets (L581)                                             | COVERED |
-|   TaskSet (L878)                                                                    | COVERED |
-|     TaskSet.__init__ (L895)                                                         | COVERED |
+|   make_classification_dataset (L117)                                                | COVERED |
+|   classification_subset (L353)                                                      | COVERED |
+|   make_tensor_classification_dataset (L511)                                         | COVERED |
+|   concat_classification_datasets (L602)                                             | COVERED |
+|   TaskSet (L899)                                                                    | COVERED |
+|     TaskSet.__init__ (L916)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                      |  MISSED |
 |   classification_collate_mbatches_fn (L18)                                          | COVERED |
@@ -446,14 +446,14 @@
 | benchmarks/utils/data.py (module)                                                   | COVERED |
 |   AvalancheDataset (L37)                                                            | COVERED |
 |     AvalancheDataset.__init__ (L76)                                                 | COVERED |
-|     AvalancheDataset.transform (L219)                                               |  MISSED |
-|     AvalancheDataset.train (L277)                                                   | COVERED |
-|     AvalancheDataset.eval (L287)                                                    | COVERED |
-|     AvalancheDataset.with_transforms (L302)                                         | COVERED |
-|     AvalancheDataset.freeze_transforms (L319)                                       | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L335)                          | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L349)                         | COVERED |
-|   make_avalanche_dataset (L387)                                                     | COVERED |
+|     AvalancheDataset.transform (L230)                                               |  MISSED |
+|     AvalancheDataset.train (L288)                                                   | COVERED |
+|     AvalancheDataset.eval (L298)                                                    | COVERED |
+|     AvalancheDataset.with_transforms (L313)                                         | COVERED |
+|     AvalancheDataset.freeze_transforms (L330)                                       | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L346)                          | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L360)                         | COVERED |
+|   make_avalanche_dataset (L398)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                         | COVERED |
 |   DataAttribute (L25)                                                               | COVERED |
@@ -528,14 +528,14 @@
 |   AvalancheConcatDataset (L83)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/flat_data.py (module)                                              | COVERED |
-|   FlatData (L22)                                                                    | COVERED |
-|     FlatData.__init__ (L43)                                                         | COVERED |
-|     FlatData.subset (L72)                                                           | COVERED |
-|     FlatData.concat (L87)                                                           | COVERED |
-|   ConstantSequence (L193)                                                           | COVERED |
-|     ConstantSequence.__init__ (L196)                                                | COVERED |
-|     ConstantSequence.subset (L213)                                                  | COVERED |
-|     ConstantSequence.concat (L221)                                                  | COVERED |
+|   FlatData (L27)                                                                    | COVERED |
+|     FlatData.__init__ (L48)                                                         | COVERED |
+|     FlatData.subset (L87)                                                           | COVERED |
+|     FlatData.concat (L102)                                                          | COVERED |
+|   ConstantSequence (L211)                                                           | COVERED |
+|     ConstantSequence.__init__ (L214)                                                | COVERED |
+|     ConstantSequence.subset (L231)                                                  | COVERED |
+|     ConstantSequence.concat (L239)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/torchvision_wrapper.py (module)                                    | COVERED |
 |   ImageFolder (L19)                                                                 |  MISSED |
