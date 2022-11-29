@@ -138,36 +138,35 @@
 |   SpeechCommands (L98)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchvision_wrapper.py (module)                                 | COVERED |
-|   MNIST (L46)                                                                       |  MISSED |
-|   FashionMNIST (L50)                                                                |  MISSED |
-|   KMNIST (L54)                                                                      |  MISSED |
-|   EMNIST (L58)                                                                      |  MISSED |
-|   QMNIST (L62)                                                                      |  MISSED |
-|   FakeData (L66)                                                                    |  MISSED |
-|   CocoCaptions (L70)                                                                |  MISSED |
-|   CocoDetection (L74)                                                               |  MISSED |
-|   LSUN (L78)                                                                        |  MISSED |
-|   LSUN (L82)                                                                        |  MISSED |
-|   ImageFolder (L86)                                                                 |  MISSED |
-|   DatasetFolder (L90)                                                               |  MISSED |
-|   ImageNet (L94)                                                                    |  MISSED |
-|   CIFAR10 (L98)                                                                     |  MISSED |
-|   CIFAR100 (L102)                                                                   |  MISSED |
-|   STL10 (L106)                                                                      |  MISSED |
-|   SVHN (L110)                                                                       |  MISSED |
-|   PhotoTour (L114)                                                                  |  MISSED |
-|   SBU (L118)                                                                        |  MISSED |
-|   Flickr8k (L122)                                                                   |  MISSED |
-|   Flickr30k (L126)                                                                  |  MISSED |
-|   VOCDetection (L130)                                                               |  MISSED |
-|   VOCSegmentation (L134)                                                            |  MISSED |
-|   Cityscapes (L138)                                                                 |  MISSED |
-|   SBDataset (L142)                                                                  |  MISSED |
-|   USPS (L146)                                                                       |  MISSED |
-|   Kinetics (L150)                                                                   |  MISSED |
-|   HMDB51 (L154)                                                                     |  MISSED |
-|   UCF101 (L158)                                                                     |  MISSED |
-|   CelebA (L162)                                                                     |  MISSED |
+|   MNIST (L45)                                                                       |  MISSED |
+|   FashionMNIST (L49)                                                                |  MISSED |
+|   KMNIST (L53)                                                                      |  MISSED |
+|   EMNIST (L57)                                                                      |  MISSED |
+|   QMNIST (L61)                                                                      |  MISSED |
+|   FakeData (L65)                                                                    |  MISSED |
+|   CocoCaptions (L69)                                                                |  MISSED |
+|   CocoDetection (L73)                                                               |  MISSED |
+|   LSUN (L77)                                                                        |  MISSED |
+|   LSUN (L81)                                                                        |  MISSED |
+|   ImageFolder (L85)                                                                 |  MISSED |
+|   DatasetFolder (L89)                                                               |  MISSED |
+|   ImageNet (L93)                                                                    |  MISSED |
+|   CIFAR10 (L97)                                                                     |  MISSED |
+|   CIFAR100 (L101)                                                                   |  MISSED |
+|   STL10 (L105)                                                                      |  MISSED |
+|   SVHN (L109)                                                                       |  MISSED |
+|   PhotoTour (L113)                                                                  |  MISSED |
+|   SBU (L117)                                                                        |  MISSED |
+|   Flickr8k (L121)                                                                   |  MISSED |
+|   Flickr30k (L125)                                                                  |  MISSED |
+|   VOCDetection (L129)                                                               |  MISSED |
+|   VOCSegmentation (L133)                                                            |  MISSED |
+|   Cityscapes (L137)                                                                 |  MISSED |
+|   SBDataset (L141)                                                                  |  MISSED |
+|   USPS (L145)                                                                       |  MISSED |
+|   HMDB51 (L149)                                                                     |  MISSED |
+|   UCF101 (L153)                                                                     |  MISSED |
+|   CelebA (L157)                                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear.py (module)                                         | COVERED |
 |   CLEARDataset (L47)                                                                | COVERED |
@@ -1980,7 +1979,7 @@
 | benchmarks/datasets/imagenet_data.py                      |     1 |    1 |     0 |     0% |
 | benchmarks/datasets/omniglot.py                           |     4 |    3 |     1 |    25% |
 | benchmarks/datasets/torchaudio_wrapper.py                 |     5 |    3 |     2 |    40% |
-| benchmarks/datasets/torchvision_wrapper.py                |    31 |   30 |     1 |     3% |
+| benchmarks/datasets/torchvision_wrapper.py                |    30 |   29 |     1 |     3% |
 | benchmarks/datasets/clear/clear.py                        |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/clear/clear_data.py                   |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/core50/core50.py                      |     4 |    1 |     3 |    75% |
@@ -2137,5 +2136,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1772 |  777 |   995 |  56.2% |
+| TOTAL                                                     |  1771 |  776 |   995 |  56.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.2%) -----------------
