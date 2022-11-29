@@ -1201,13 +1201,13 @@
 | logging/interactive_logging.py (module)                                             |  MISSED |
 |   InteractiveLogger (L25)                                                           | COVERED |
 |     InteractiveLogger.__init__ (L53)                                                |  MISSED |
-|     InteractiveLogger.before_training_epoch (L58)                                   |  MISSED |
-|     InteractiveLogger.after_training_epoch (L69)                                    |  MISSED |
-|     InteractiveLogger.before_training_exp (L80)                                     |  MISSED |
-|     InteractiveLogger.after_training_exp (L97)                                      |  MISSED |
-|     InteractiveLogger.before_eval_exp (L109)                                        |  MISSED |
-|     InteractiveLogger.after_eval_exp (L118)                                         |  MISSED |
-|     InteractiveLogger.after_training_iteration (L127)                               |  MISSED |
+|     InteractiveLogger.before_training_epoch (L57)                                   |  MISSED |
+|     InteractiveLogger.after_training_epoch (L68)                                    |  MISSED |
+|     InteractiveLogger.before_training_exp (L79)                                     |  MISSED |
+|     InteractiveLogger.after_training_exp (L91)                                      |  MISSED |
+|     InteractiveLogger.before_eval_exp (L106)                                        |  MISSED |
+|     InteractiveLogger.after_eval_exp (L115)                                         |  MISSED |
+|     InteractiveLogger.after_training_iteration (L124)                               |  MISSED |
 |     InteractiveLogger.after_eval_iteration (L137)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/tensorboard_logger.py (module)                                              | COVERED |
@@ -1817,6 +1817,14 @@
 |     LaMAML.inner_update_step (L158)                                                 | COVERED |
 |   init_kaiming_normal (L273)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/supervised/mer.py (module)                                                 |  MISSED |
+|   MERBuffer (L16)                                                                   |  MISSED |
+|     MERBuffer.__init__ (L17)                                                        |  MISSED |
+|     MERBuffer.update (L23)                                                          |  MISSED |
+|     MERBuffer.get_batch (L29)                                                       |  MISSED |
+|   MER (L49)                                                                         |  MISSED |
+|     MER.__init__ (L50)                                                              | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                              |  MISSED |
 |   ObjectDetectionTemplate (L30)                                                     | COVERED |
 |     ObjectDetectionTemplate.__init__ (L50)                                          | COVERED |
@@ -1876,7 +1884,7 @@
 |     BaseTemplate.__init__ (L35)                                                     | COVERED |
 |     BaseTemplate.is_eval (L71)                                                      | COVERED |
 |     BaseTemplate.train (L75)                                                        | COVERED |
-|     BaseTemplate.eval (L123)                                                        | COVERED |
+|     BaseTemplate.eval (L124)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_online_sgd.py (module)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1914,6 +1922,8 @@
 |     SupervisedMetaLearningTemplate.__init__ (L178)                                  | COVERED |
 |   OnlineSupervisedTemplate (L241)                                                   | COVERED |
 |     OnlineSupervisedTemplate.__init__ (L291)                                        | COVERED |
+|   OnlineSupervisedMetaLearningTemplate (L343)                                       | COVERED |
+|     OnlineSupervisedMetaLearningTemplate.__init__ (L393)                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/observation_type/batch_observation.py (module)                   |  MISSED |
 |   BatchObservation (L8)                                                             |  MISSED |
@@ -2113,18 +2123,19 @@
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
+| training/supervised/mer.py                                |     7 |    6 |     1 |    14% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
 | training/supervised/strategy_wrappers.py                  |    39 |    2 |    37 |    95% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
 | training/templates/base_online_sgd.py                     |     1 |    1 |     0 |     0% |
 | training/templates/base_sgd.py                            |    26 |    5 |    21 |    81% |
-| training/templates/common_templates.py                    |     7 |    1 |     6 |    86% |
+| training/templates/common_templates.py                    |     9 |    1 |     8 |    89% |
 | training/templates/observation_type/batch_observation.py  |     5 |    3 |     2 |    40% |
 | training/templates/observation_type/online_observation.py |     5 |    3 |     2 |    40% |
 | training/templates/problem_type/supervised_problem.py     |     7 |    2 |     5 |    71% |
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1763 |  771 |   992 |  56.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.3%) -----------------
+| TOTAL                                                     |  1772 |  777 |   995 |  56.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.2%) -----------------
