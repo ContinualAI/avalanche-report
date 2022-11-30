@@ -209,9 +209,10 @@
 |   save_FashionMNIST (L22)                                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/external_datasets/mnist.py (module)                             |  MISSED |
-|   get_mnist_dataset (L7)                                                            |  MISSED |
-|   load_MNIST (L18)                                                                  |  MISSED |
-|   save_MNIST (L24)                                                                  |  MISSED |
+|   TensorMNIST (L6)                                                                  |  MISSED |
+|   get_mnist_dataset (L27)                                                           |  MISSED |
+|   load_MNIST (L38)                                                                  |  MISSED |
+|   save_MNIST (L44)                                                                  |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist.py (module)                             | COVERED |
 |   pil_loader (L41)                                                                  | COVERED |
@@ -474,8 +475,8 @@
 |     GroupBalancedDataLoader.__init__ (L113)                                         | COVERED |
 |   GroupBalancedInfiniteDataLoader (L247)                                            | COVERED |
 |     GroupBalancedInfiniteDataLoader.__init__ (L251)                                 | COVERED |
-|   ReplayDataLoader (L316)                                                           | COVERED |
-|     ReplayDataLoader.__init__ (L319)                                                | COVERED |
+|   ReplayDataLoader (L314)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L317)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L34)                                                                    | COVERED |
@@ -1541,13 +1542,13 @@
 | training/determinism/rng_manager.py (module)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/agem.py (module)                                                   |  MISSED |
-|   AGEMPlugin (L15)                                                                  | COVERED |
-|     AGEMPlugin.__init__ (L25)                                                       | COVERED |
-|     AGEMPlugin.before_training_iteration (L48)                                      | COVERED |
-|     AGEMPlugin.after_backward (L73)                                                 | COVERED |
-|     AGEMPlugin.after_training_exp (L108)                                            | COVERED |
-|     AGEMPlugin.sample_from_memory (L112)                                            | COVERED |
-|     AGEMPlugin.update_memory (L120)                                                 | COVERED |
+|   AGEMPlugin (L14)                                                                  | COVERED |
+|     AGEMPlugin.__init__ (L24)                                                       | COVERED |
+|     AGEMPlugin.before_training_iteration (L45)                                      | COVERED |
+|     AGEMPlugin.after_backward (L71)                                                 | COVERED |
+|     AGEMPlugin.after_training_exp (L106)                                            | COVERED |
+|     AGEMPlugin.sample_from_memory (L110)                                            | COVERED |
+|     AGEMPlugin.update_memory (L118)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/bic.py (module)                                                    |  MISSED |
 |   BiCPlugin (L24)                                                                   | COVERED |
@@ -1719,11 +1720,10 @@
 |     LwFPlugin.after_training_exp (L31)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mas.py (module)                                                    |  MISSED |
-|   MASPlugin (L12)                                                                   | COVERED |
-|     MASPlugin.__init__ (L31)                                                        | COVERED |
-|     MASPlugin.before_backward (L120)                                                |  MISSED |
-|     MASPlugin.before_training (L147)                                                |  MISSED |
-|     MASPlugin.after_training_exp (L156)                                             |  MISSED |
+|   MASPlugin (L13)                                                                   | COVERED |
+|     MASPlugin.__init__ (L32)                                                        | COVERED |
+|     MASPlugin.before_backward (L121)                                                |  MISSED |
+|     MASPlugin.after_training_exp (L149)                                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/mir.py (module)                                                    |  MISSED |
 |   cycle (L14)                                                                       |  MISSED |
@@ -1989,7 +1989,7 @@
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/external_datasets/cifar.py            |     7 |    7 |     0 |     0% |
 | benchmarks/datasets/external_datasets/fmnist.py           |     4 |    4 |     0 |     0% |
-| benchmarks/datasets/external_datasets/mnist.py            |     4 |    4 |     0 |     0% |
+| benchmarks/datasets/external_datasets/mnist.py            |     5 |    5 |     0 |     0% |
 | benchmarks/datasets/inaturalist/inaturalist.py            |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/inaturalist/inaturalist_data.py       |     6 |    0 |     6 |   100% |
 | benchmarks/datasets/lvis_dataset/lvis_data.py             |     1 |    1 |     0 |     0% |
@@ -2110,7 +2110,7 @@
 | training/plugins/lfl.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                         |    12 |   10 |     2 |    17% |
 | training/plugins/lwf.py                                   |     5 |    1 |     4 |    80% |
-| training/plugins/mas.py                                   |     6 |    4 |     2 |    33% |
+| training/plugins/mas.py                                   |     5 |    3 |     2 |    40% |
 | training/plugins/mir.py                                   |     8 |    6 |     2 |    25% |
 | training/plugins/replay.py                                |     6 |    4 |     2 |    33% |
 | training/plugins/rwalk.py                                 |     8 |    6 |     2 |    25% |
