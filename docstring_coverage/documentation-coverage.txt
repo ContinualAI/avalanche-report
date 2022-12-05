@@ -446,14 +446,14 @@
 | benchmarks/utils/data.py (module)                                                   | COVERED |
 |   AvalancheDataset (L37)                                                            | COVERED |
 |     AvalancheDataset.__init__ (L76)                                                 | COVERED |
-|     AvalancheDataset.transform (L230)                                               |  MISSED |
-|     AvalancheDataset.train (L288)                                                   | COVERED |
-|     AvalancheDataset.eval (L298)                                                    | COVERED |
-|     AvalancheDataset.with_transforms (L313)                                         | COVERED |
-|     AvalancheDataset.freeze_transforms (L330)                                       | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L346)                          | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L360)                         | COVERED |
-|   make_avalanche_dataset (L398)                                                     | COVERED |
+|     AvalancheDataset.transform (L234)                                               |  MISSED |
+|     AvalancheDataset.train (L292)                                                   | COVERED |
+|     AvalancheDataset.eval (L302)                                                    | COVERED |
+|     AvalancheDataset.with_transforms (L317)                                         | COVERED |
+|     AvalancheDataset.freeze_transforms (L334)                                       | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L350)                          | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L364)                         | COVERED |
+|   make_avalanche_dataset (L402)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                         | COVERED |
 |   DataAttribute (L25)                                                               | COVERED |
