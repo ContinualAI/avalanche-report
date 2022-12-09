@@ -280,7 +280,7 @@
 |   data_incremental_benchmark (L473)                                                 | COVERED |
 |   random_validation_split_strategy (L591)                                           | COVERED |
 |   class_balanced_split_strategy (L648)                                              | COVERED |
-|   benchmark_with_validation_stream (L743)                                           | COVERED |
+|   benchmark_with_validation_stream (L749)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)                               | COVERED |
 |   nc_scenario (L45)                                                                 | COVERED |
@@ -1464,7 +1464,7 @@
 |     RegularizationMethod.update (L17)                                               |  MISSED |
 |   LearningWithoutForgetting (L24)                                                   | COVERED |
 |     LearningWithoutForgetting.__init__ (L31)                                        | COVERED |
-|     LearningWithoutForgetting.update (L105)                                         | COVERED |
+|     LearningWithoutForgetting.update (L111)                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L23)                                                             | COVERED |
@@ -1629,9 +1629,9 @@
 | training/plugins/early_stopping.py (module)                                         |  MISSED |
 |   EarlyStoppingPlugin (L8)                                                          | COVERED |
 |     EarlyStoppingPlugin.__init__ (L27)                                              | COVERED |
-|     EarlyStoppingPlugin.before_training (L77)                                       |  MISSED |
-|     EarlyStoppingPlugin.before_training_iteration (L83)                             |  MISSED |
-|     EarlyStoppingPlugin.before_training_epoch (L93)                                 |  MISSED |
+|     EarlyStoppingPlugin.before_training (L81)                                       |  MISSED |
+|     EarlyStoppingPlugin.before_training_iteration (L87)                             |  MISSED |
+|     EarlyStoppingPlugin.before_training_epoch (L97)                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/evaluation.py (module)                                             |  MISSED |
 |   EvaluationPlugin (L16)                                                            | COVERED |
