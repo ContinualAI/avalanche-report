@@ -59,7 +59,7 @@
 |   SplitInaturalist (L48)                                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/classic_benchmarks_utils.py (module)                             |  MISSED |
-|   check_vision_benchmark (L6)                                                       |  MISSED |
+|   check_vision_benchmark (L7)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/clear.py (module)                                                | COVERED |
 |   CLEAR (L45)                                                                       | COVERED |
@@ -229,12 +229,12 @@
 | benchmarks/datasets/lvis_dataset/lvis_data.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/lvis_dataset/lvis_dataset.py (module)                           | COVERED |
-|   LvisDataset (L40)                                                                 | COVERED |
-|     LvisDataset.__init__ (L43)                                                      | COVERED |
-|   LVISImgEntry (L213)                                                               |  MISSED |
-|   LVISAnnotationEntry (L225)                                                        |  MISSED |
-|   LVISDetectionTargets (L234)                                                       |  MISSED |
-|     LVISDetectionTargets.__init__ (L235)                                            |  MISSED |
+|   LvisDataset (L41)                                                                 | COVERED |
+|     LvisDataset.__init__ (L44)                                                      | COVERED |
+|   LVISImgEntry (L214)                                                               |  MISSED |
+|   LVISAnnotationEntry (L226)                                                        |  MISSED |
+|   LVISDetectionTargets (L235)                                                       |  MISSED |
+|     LVISDetectionTargets.__init__ (L236)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py (module)                         |  MISSED |
 |   MiniImageNetDataset (L88)                                                         | COVERED |
@@ -274,13 +274,13 @@
 |     TinyImagenet.get_test_images_paths (L148)                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/generators/benchmark_generators.py (module)                              | COVERED |
-|   nc_benchmark (L56)                                                                | COVERED |
-|   ni_benchmark (L249)                                                               | COVERED |
-|   fixed_size_experience_split_strategy (L415)                                       | COVERED |
-|   data_incremental_benchmark (L473)                                                 | COVERED |
-|   random_validation_split_strategy (L591)                                           | COVERED |
-|   class_balanced_split_strategy (L648)                                              | COVERED |
-|   benchmark_with_validation_stream (L749)                                           | COVERED |
+|   nc_benchmark (L55)                                                                | COVERED |
+|   ni_benchmark (L248)                                                               | COVERED |
+|   fixed_size_experience_split_strategy (L414)                                       | COVERED |
+|   data_incremental_benchmark (L472)                                                 | COVERED |
+|   random_validation_split_strategy (L590)                                           | COVERED |
+|   class_balanced_split_strategy (L647)                                              | COVERED |
+|   benchmark_with_validation_stream (L748)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/generators/scenario_generators.py (module)                               | COVERED |
 |   nc_scenario (L45)                                                                 | COVERED |
@@ -319,12 +319,12 @@
 |     GenericClassificationExperience.task_labels (L964)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/detection_scenario.py (module)                                 |  MISSED |
-|   DetectionCLScenario (L30)                                                         | COVERED |
-|     DetectionCLScenario.__init__ (L40)                                              | COVERED |
-|   DetectionExperience (L83)                                                         | COVERED |
-|     DetectionExperience.__init__ (L93)                                              | COVERED |
-|     DetectionExperience.task_labels (L120)                                          |  MISSED |
-|     DetectionExperience.task_label (L125)                                           |  MISSED |
+|   DetectionCLScenario (L31)                                                         | COVERED |
+|     DetectionCLScenario.__init__ (L41)                                              | COVERED |
+|   DetectionExperience (L84)                                                         | COVERED |
+|     DetectionExperience.__init__ (L94)                                              | COVERED |
+|     DetectionExperience.task_labels (L121)                                          |  MISSED |
+|     DetectionExperience.task_label (L126)                                           |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/exmodel_scenario.py (module)                                   |  MISSED |
 |   ExModelExperience (L18)                                                           | COVERED |
@@ -341,10 +341,10 @@
 |   create_generic_benchmark_from_tensor_lists (L602)                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_definitions.py (module)                                |  MISSED |
-|   ClassificationExperience (L54)                                                    | COVERED |
-|     ClassificationExperience.task_labels (L100)                                     | COVERED |
-|     ClassificationExperience.task_label (L112)                                      | COVERED |
-|     ClassificationExperience.scenario (L124)                                        | COVERED |
+|   ClassificationExperience (L57)                                                    | COVERED |
+|     ClassificationExperience.task_labels (L103)                                     | COVERED |
+|     ClassificationExperience.task_label (L115)                                      | COVERED |
+|     ClassificationExperience.scenario (L127)                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/generic_scenario.py (module)                                   |  MISSED |
 |   MaskedAttributeError (L19)                                                        | COVERED |
@@ -372,11 +372,11 @@
 |   create_generic_scenario_from_tensors (L453)                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/lazy_dataset_sequence.py (module)                              |  MISSED |
-|   LazyDatasetSequence (L21)                                                         | COVERED |
-|     LazyDatasetSequence.__init__ (L34)                                              |  MISSED |
-|     LazyDatasetSequence.get_experience_if_loaded (L131)                             | COVERED |
-|     LazyDatasetSequence.drop_previous_experiences (L152)                            | COVERED |
-|     LazyDatasetSequence.load_all_experiences (L179)                                 | COVERED |
+|   LazyDatasetSequence (L22)                                                         | COVERED |
+|     LazyDatasetSequence.__init__ (L35)                                              |  MISSED |
+|     LazyDatasetSequence.get_experience_if_loaded (L132)                             | COVERED |
+|     LazyDatasetSequence.drop_previous_experiences (L153)                            | COVERED |
+|     LazyDatasetSequence.load_all_experiences (L180)                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/online_scenario.py (module)                                    |  MISSED |
 |   OnlineCLExperience (L26)                                                          | COVERED |
@@ -404,22 +404,22 @@
 |   train_eval_transforms (L18)                                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)                            |  MISSED |
-|   NCScenario (L28)                                                                  | COVERED |
-|     NCScenario.__init__ (L38)                                                       | COVERED |
-|     NCScenario.get_reproducibility_data (L482)                                      |  MISSED |
-|     NCScenario.classes_in_exp_range (L499)                                          | COVERED |
-|   NCExperience (L530)                                                               | COVERED |
-|     NCExperience.__init__ (L541)                                                    | COVERED |
+|   NCScenario (L30)                                                                  | COVERED |
+|     NCScenario.__init__ (L40)                                                       | COVERED |
+|     NCScenario.get_reproducibility_data (L484)                                      |  MISSED |
+|     NCScenario.classes_in_exp_range (L501)                                          | COVERED |
+|   NCExperience (L532)                                                               | COVERED |
+|     NCExperience.__init__ (L543)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)                               |  MISSED |
 |   make_nc_transformation_subset (L154)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_scenario.py (module)                          |  MISSED |
-|   NIScenario (L31)                                                                  | COVERED |
-|     NIScenario.__init__ (L48)                                                       | COVERED |
-|     NIScenario.get_reproducibility_data (L446)                                      |  MISSED |
-|   NIExperience (L454)                                                               | COVERED |
-|     NIExperience.__init__ (L465)                                                    | COVERED |
+|   NIScenario (L30)                                                                  | COVERED |
+|     NIScenario.__init__ (L47)                                                       | COVERED |
+|     NIScenario.get_reproducibility_data (L445)                                      |  MISSED |
+|   NIExperience (L453)                                                               | COVERED |
+|     NIExperience.__init__ (L464)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_instances/ni_utils.py (module)                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -427,15 +427,15 @@
 |   XComposedTransformDef (L60)                                                       |  MISSED |
 |   XTransformDef (L65)                                                               |  MISSED |
 |   YTransformDef (L70)                                                               |  MISSED |
-|   ClassificationDataset (L104)                                                      |  MISSED |
-|     ClassificationDataset.subset (L105)                                             |  MISSED |
-|     ClassificationDataset.concat (L109)                                             |  MISSED |
-|   make_classification_dataset (L117)                                                | COVERED |
-|   classification_subset (L353)                                                      | COVERED |
-|   make_tensor_classification_dataset (L511)                                         | COVERED |
-|   concat_classification_datasets (L602)                                             | COVERED |
-|   TaskSet (L899)                                                                    | COVERED |
-|     TaskSet.__init__ (L916)                                                         | COVERED |
+|   ClassificationDataset (L96)                                                       |  MISSED |
+|     ClassificationDataset.subset (L97)                                              |  MISSED |
+|     ClassificationDataset.concat (L101)                                             |  MISSED |
+|   make_classification_dataset (L118)                                                | COVERED |
+|   classification_subset (L354)                                                      | COVERED |
+|   make_tensor_classification_dataset (L512)                                         | COVERED |
+|   concat_classification_datasets (L603)                                             | COVERED |
+|   TaskSet (L900)                                                                    | COVERED |
+|     TaskSet.__init__ (L917)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                      |  MISSED |
 |   classification_collate_mbatches_fn (L18)                                          | COVERED |
@@ -468,15 +468,15 @@
 |     TaskLabels.__init__ (L154)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
-|   collate_from_data_or_kwargs (L42)                                                 |  MISSED |
-|   TaskBalancedDataLoader (L49)                                                      | COVERED |
-|     TaskBalancedDataLoader.__init__ (L52)                                           | COVERED |
-|   GroupBalancedDataLoader (L110)                                                    | COVERED |
-|     GroupBalancedDataLoader.__init__ (L113)                                         | COVERED |
-|   GroupBalancedInfiniteDataLoader (L247)                                            | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L251)                                 | COVERED |
-|   ReplayDataLoader (L314)                                                           | COVERED |
-|     ReplayDataLoader.__init__ (L317)                                                | COVERED |
+|   collate_from_data_or_kwargs (L43)                                                 |  MISSED |
+|   TaskBalancedDataLoader (L50)                                                      | COVERED |
+|     TaskBalancedDataLoader.__init__ (L53)                                           | COVERED |
+|   GroupBalancedDataLoader (L111)                                                    | COVERED |
+|     GroupBalancedDataLoader.__init__ (L114)                                         | COVERED |
+|   GroupBalancedInfiniteDataLoader (L248)                                            | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L252)                                 | COVERED |
+|   ReplayDataLoader (L315)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L318)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L34)                                                                    | COVERED |
@@ -1828,11 +1828,11 @@
 |   ObjectDetectionTemplate (L30)                                                     | COVERED |
 |     ObjectDetectionTemplate.__init__ (L50)                                          | COVERED |
 |     ObjectDetectionTemplate.make_train_dataloader (L126)                            | COVERED |
-|     ObjectDetectionTemplate.make_eval_dataloader (L165)                             | COVERED |
-|     ObjectDetectionTemplate.criterion (L184)                                        | COVERED |
-|     ObjectDetectionTemplate.forward (L207)                                          | COVERED |
-|     ObjectDetectionTemplate.backward (L234)                                         |  MISSED |
-|     ObjectDetectionTemplate.optimizer_step (L240)                                   |  MISSED |
+|     ObjectDetectionTemplate.make_eval_dataloader (L164)                             | COVERED |
+|     ObjectDetectionTemplate.criterion (L183)                                        | COVERED |
+|     ObjectDetectionTemplate.forward (L206)                                          | COVERED |
+|     ObjectDetectionTemplate.backward (L235)                                         |  MISSED |
+|     ObjectDetectionTemplate.optimizer_step (L241)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                   |  MISSED |
 |   Naive (L44)                                                                       | COVERED |
