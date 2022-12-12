@@ -1460,11 +1460,16 @@
 |     ICaRLLossPlugin.after_training_exp (L51)                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/regularization.py (module)                                                 | COVERED |
-|   RegularizationMethod (L10)                                                        | COVERED |
-|     RegularizationMethod.update (L17)                                               |  MISSED |
-|   LearningWithoutForgetting (L24)                                                   | COVERED |
-|     LearningWithoutForgetting.__init__ (L31)                                        | COVERED |
-|     LearningWithoutForgetting.update (L111)                                         | COVERED |
+|   cross_entropy_with_oh_targets (L12)                                               | COVERED |
+|   RegularizationMethod (L21)                                                        | COVERED |
+|     RegularizationMethod.update (L28)                                               |  MISSED |
+|   LearningWithoutForgetting (L35)                                                   | COVERED |
+|     LearningWithoutForgetting.__init__ (L42)                                        | COVERED |
+|     LearningWithoutForgetting.update (L122)                                         | COVERED |
+|   ACECriterion (L146)                                                               | COVERED |
+|     ACECriterion.__init__ (L155)                                                    | COVERED |
+|     ACECriterion.update (L173)                                                      |  MISSED |
+|     ACECriterion.all_classes (L204)                                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L23)                                                             | COVERED |
@@ -1797,6 +1802,16 @@
 |     StreamingLDA.save_model (L226)                                                  | COVERED |
 |     StreamingLDA.load_model (L243)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/supervised/er_ace.py (module)                                              |  MISSED |
+|   cycle (L21)                                                                       |  MISSED |
+|   er_ace_criterion (L27)                                                            |  MISSED |
+|   OnlineER_ACE (L38)                                                                | COVERED |
+|     OnlineER_ACE.__init__ (L47)                                                     | COVERED |
+|     OnlineER_ACE.training_epoch (L108)                                              | COVERED |
+|   ER_ACE (L185)                                                                     | COVERED |
+|     ER_ACE.__init__ (L199)                                                          | COVERED |
+|     ER_ACE.training_epoch (L258)                                                    | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L25)                                                                       | COVERED |
 |     ICaRL.__init__ (L31)                                                            | COVERED |
@@ -2088,7 +2103,7 @@
 | models/slim_resnet18.py                                   |    15 |   12 |     3 |    20% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
-| training/regularization.py                                |     6 |    1 |     5 |    83% |
+| training/regularization.py                                |    11 |    3 |     8 |    73% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
 | training/utils.py                                         |    23 |   14 |     9 |    39% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
@@ -2119,6 +2134,7 @@
 | training/supervised/ar1.py                                |     6 |    3 |     3 |    50% |
 | training/supervised/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
+| training/supervised/er_ace.py                             |     9 |    3 |     6 |    67% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
@@ -2136,5 +2152,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1771 |  776 |   995 |  56.2% |
+| TOTAL                                                     |  1785 |  781 |  1004 |  56.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.2%) -----------------
