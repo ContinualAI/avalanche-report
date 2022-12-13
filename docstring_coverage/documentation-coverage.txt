@@ -433,9 +433,9 @@
 |   make_classification_dataset (L118)                                                | COVERED |
 |   classification_subset (L354)                                                      | COVERED |
 |   make_tensor_classification_dataset (L512)                                         | COVERED |
-|   concat_classification_datasets (L603)                                             | COVERED |
-|   TaskSet (L900)                                                                    | COVERED |
-|     TaskSet.__init__ (L917)                                                         | COVERED |
+|   concat_classification_datasets (L608)                                             | COVERED |
+|   TaskSet (L905)                                                                    | COVERED |
+|     TaskSet.__init__ (L922)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                      |  MISSED |
 |   classification_collate_mbatches_fn (L18)                                          | COVERED |
@@ -1920,13 +1920,13 @@
 |     BaseSGDTemplate.make_train_dataloader (L305)                                    | COVERED |
 |     BaseSGDTemplate.make_eval_dataloader (L341)                                     | COVERED |
 |     BaseSGDTemplate.eval_dataset_adaptation (L371)                                  | COVERED |
-|   PeriodicEval (L445)                                                               | COVERED |
-|     PeriodicEval.__init__ (L451)                                                    | COVERED |
-|     PeriodicEval.before_training (L474)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L483)                                         |  MISSED |
-|     PeriodicEval.after_training_epoch (L508)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L516)                                    | COVERED |
-|     PeriodicEval.after_training_exp (L525)                                          | COVERED |
+|   PeriodicEval (L447)                                                               | COVERED |
+|     PeriodicEval.__init__ (L453)                                                    | COVERED |
+|     PeriodicEval.before_training (L476)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L485)                                         |  MISSED |
+|     PeriodicEval.after_training_epoch (L510)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L518)                                    | COVERED |
+|     PeriodicEval.after_training_exp (L527)                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                     |  MISSED |
 |   SupervisedTemplate (L15)                                                          | COVERED |
