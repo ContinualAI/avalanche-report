@@ -1228,7 +1228,7 @@
 |     TextLogger.before_eval (L155)                                                   |  MISSED |
 |     TextLogger.after_training (L164)                                                |  MISSED |
 |     TextLogger.after_eval (L173)                                                    |  MISSED |
-|     TextLogger.on_checkpoint_resume (L232)                                          |  MISSED |
+|     TextLogger.on_checkpoint_resume (L231)                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L40)                                                                 | COVERED |
