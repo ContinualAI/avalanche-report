@@ -1804,13 +1804,12 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/er_ace.py (module)                                              |  MISSED |
 |   cycle (L21)                                                                       |  MISSED |
-|   er_ace_criterion (L27)                                                            |  MISSED |
-|   OnlineER_ACE (L38)                                                                | COVERED |
-|     OnlineER_ACE.__init__ (L47)                                                     | COVERED |
-|     OnlineER_ACE.training_epoch (L108)                                              | COVERED |
-|   ER_ACE (L185)                                                                     | COVERED |
-|     ER_ACE.__init__ (L199)                                                          | COVERED |
-|     ER_ACE.training_epoch (L258)                                                    | COVERED |
+|   OnlineER_ACE (L27)                                                                | COVERED |
+|     OnlineER_ACE.__init__ (L36)                                                     | COVERED |
+|     OnlineER_ACE.training_epoch (L97)                                               | COVERED |
+|   ER_ACE (L174)                                                                     | COVERED |
+|     ER_ACE.__init__ (L188)                                                          | COVERED |
+|     ER_ACE.training_epoch (L247)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L25)                                                                       | COVERED |
@@ -2134,7 +2133,7 @@
 | training/supervised/ar1.py                                |     6 |    3 |     3 |    50% |
 | training/supervised/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
-| training/supervised/er_ace.py                             |     9 |    3 |     6 |    67% |
+| training/supervised/er_ace.py                             |     8 |    2 |     6 |    75% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
@@ -2152,5 +2151,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1785 |  781 |  1004 |  56.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.2%) -----------------
+| TOTAL                                                     |  1784 |  780 |  1004 |  56.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.3%) -----------------
