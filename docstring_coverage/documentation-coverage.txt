@@ -1658,6 +1658,12 @@
 |     EWCPlugin.compute_importances (L131)                                            | COVERED |
 |     EWCPlugin.update_importances (L185)                                             | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/plugins/from_scratch_training.py (module)                                  |  MISSED |
+|   FromScratchTrainingPlugin (L8)                                                    | COVERED |
+|     FromScratchTrainingPlugin.__init__ (L17)                                        | COVERED |
+|     FromScratchTrainingPlugin.before_training (L32)                                 | COVERED |
+|     FromScratchTrainingPlugin.before_training_exp (L40)                             | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/plugins/gdumb.py (module)                                                  |  MISSED |
 |   GDumbPlugin (L11)                                                                 | COVERED |
 |     GDumbPlugin.__init__ (L24)                                                      |  MISSED |
@@ -1849,44 +1855,46 @@
 |     ObjectDetectionTemplate.optimizer_step (L241)                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                   |  MISSED |
-|   Naive (L44)                                                                       | COVERED |
-|     Naive.__init__ (L56)                                                            | COVERED |
-|   PNNStrategy (L106)                                                                | COVERED |
-|     PNNStrategy.__init__ (L112)                                                     | COVERED |
-|   CWRStar (L163)                                                                    | COVERED |
-|     CWRStar.__init__ (L166)                                                         | COVERED |
-|   Replay (L223)                                                                     | COVERED |
-|     Replay.__init__ (L230)                                                          | COVERED |
-|   GenerativeReplay (L287)                                                           | COVERED |
-|     GenerativeReplay.__init__ (L306)                                                | COVERED |
-|   get_default_vae_logger (L413)                                                     |  MISSED |
-|   VAETraining (L417)                                                                | COVERED |
-|     VAETraining.__init__ (L430)                                                     | COVERED |
-|     VAETraining.criterion (L480)                                                    | COVERED |
-|   GSS_greedy (L486)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L493)                                                      | COVERED |
-|   GDumb (L554)                                                                      | COVERED |
-|     GDumb.__init__ (L561)                                                           | COVERED |
-|   LwF (L619)                                                                        | COVERED |
-|     LwF.__init__ (L625)                                                             | COVERED |
-|   AGEM (L686)                                                                       | COVERED |
-|     AGEM.__init__ (L693)                                                            | COVERED |
-|   GEM (L754)                                                                        | COVERED |
-|     GEM.__init__ (L761)                                                             | COVERED |
-|   EWC (L822)                                                                        | COVERED |
-|     EWC.__init__ (L829)                                                             | COVERED |
-|   SynapticIntelligence (L901)                                                       | COVERED |
-|     SynapticIntelligence.__init__ (L917)                                            | COVERED |
-|   CoPE (L982)                                                                       | COVERED |
-|     CoPE.__init__ (L989)                                                            | COVERED |
-|   LFL (L1058)                                                                       | COVERED |
-|     LFL.__init__ (L1066)                                                            | COVERED |
-|   MAS (L1124)                                                                       | COVERED |
-|     MAS.__init__ (L1131)                                                            | COVERED |
-|   BiC (L1199)                                                                       | COVERED |
-|     BiC.__init__ (L1206)                                                            | COVERED |
-|   MIR (L1288)                                                                       | COVERED |
-|     MIR.__init__ (L1293)                                                            | COVERED |
+|   Naive (L45)                                                                       | COVERED |
+|     Naive.__init__ (L57)                                                            | COVERED |
+|   PNNStrategy (L107)                                                                | COVERED |
+|     PNNStrategy.__init__ (L113)                                                     | COVERED |
+|   CWRStar (L164)                                                                    | COVERED |
+|     CWRStar.__init__ (L167)                                                         | COVERED |
+|   Replay (L224)                                                                     | COVERED |
+|     Replay.__init__ (L231)                                                          | COVERED |
+|   GenerativeReplay (L288)                                                           | COVERED |
+|     GenerativeReplay.__init__ (L307)                                                | COVERED |
+|   get_default_vae_logger (L414)                                                     |  MISSED |
+|   VAETraining (L418)                                                                | COVERED |
+|     VAETraining.__init__ (L431)                                                     | COVERED |
+|     VAETraining.criterion (L481)                                                    | COVERED |
+|   GSS_greedy (L487)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L494)                                                      | COVERED |
+|   GDumb (L555)                                                                      | COVERED |
+|     GDumb.__init__ (L562)                                                           | COVERED |
+|   LwF (L620)                                                                        | COVERED |
+|     LwF.__init__ (L626)                                                             | COVERED |
+|   AGEM (L687)                                                                       | COVERED |
+|     AGEM.__init__ (L694)                                                            | COVERED |
+|   GEM (L755)                                                                        | COVERED |
+|     GEM.__init__ (L762)                                                             | COVERED |
+|   EWC (L823)                                                                        | COVERED |
+|     EWC.__init__ (L830)                                                             | COVERED |
+|   SynapticIntelligence (L902)                                                       | COVERED |
+|     SynapticIntelligence.__init__ (L918)                                            | COVERED |
+|   CoPE (L983)                                                                       | COVERED |
+|     CoPE.__init__ (L990)                                                            | COVERED |
+|   LFL (L1059)                                                                       | COVERED |
+|     LFL.__init__ (L1067)                                                            | COVERED |
+|   MAS (L1125)                                                                       | COVERED |
+|     MAS.__init__ (L1132)                                                            | COVERED |
+|   BiC (L1200)                                                                       | COVERED |
+|     BiC.__init__ (L1207)                                                            | COVERED |
+|   MIR (L1289)                                                                       | COVERED |
+|     MIR.__init__ (L1294)                                                            | COVERED |
+|   FromScratchTraining (L1364)                                                       | COVERED |
+|     FromScratchTraining.__init__ (L1373)                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L23)                                                                 | COVERED |
@@ -2117,6 +2125,7 @@
 | training/plugins/early_stopping.py                        |     6 |    4 |     2 |    33% |
 | training/plugins/evaluation.py                            |    11 |    5 |     6 |    55% |
 | training/plugins/ewc.py                                   |     7 |    1 |     6 |    86% |
+| training/plugins/from_scratch_training.py                 |     5 |    1 |     4 |    80% |
 | training/plugins/gdumb.py                                 |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                   |     8 |    1 |     7 |    88% |
 | training/plugins/generative_replay.py                     |     9 |    0 |     9 |   100% |
@@ -2139,7 +2148,7 @@
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
 | training/supervised/mer.py                                |     7 |    6 |     1 |    14% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
-| training/supervised/strategy_wrappers.py                  |    39 |    2 |    37 |    95% |
+| training/supervised/strategy_wrappers.py                  |    41 |    2 |    39 |    95% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
 | training/templates/base_online_sgd.py                     |     1 |    1 |     0 |     0% |
@@ -2151,5 +2160,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1784 |  780 |  1004 |  56.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.3%) -----------------
+| TOTAL                                                     |  1791 |  781 |  1010 |  56.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
