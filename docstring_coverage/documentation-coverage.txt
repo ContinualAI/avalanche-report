@@ -1750,7 +1750,7 @@
 |     ReplayPlugin.__init__ (L47)                                                     |  MISSED |
 |     ReplayPlugin.ext_mem (L70)                                                      |  MISSED |
 |     ReplayPlugin.before_training_exp (L73)                                          | COVERED |
-|     ReplayPlugin.after_training_exp (L108)                                          |  MISSED |
+|     ReplayPlugin.after_training_exp (L110)                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/rwalk.py (module)                                                  |  MISSED |
 |   RWalkPlugin (L12)                                                                 | COVERED |
