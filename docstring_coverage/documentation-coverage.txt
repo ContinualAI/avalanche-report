@@ -383,12 +383,12 @@
 |     OnlineCLExperience.__init__ (L33)                                               | COVERED |
 |   fixed_size_experience_split (L73)                                                 | COVERED |
 |     fixed_size_experience_split.gen (L94)                                           |  MISSED |
-|   split_online_stream (L134)                                                        | COVERED |
-|     split_online_stream.split_foo (L175)                                            |  MISSED |
-|     split_online_stream.exps_iter (L184)                                            |  MISSED |
-|   OnlineCLScenario (L197)                                                           |  MISSED |
-|     OnlineCLScenario.__init__ (L198)                                                | COVERED |
-|       OnlineCLScenario.__init__.split_foo (L228)                                    |  MISSED |
+|   split_online_stream (L141)                                                        | COVERED |
+|     split_online_stream.split_foo (L182)                                            |  MISSED |
+|     split_online_stream.exps_iter (L191)                                            |  MISSED |
+|   OnlineCLScenario (L204)                                                           |  MISSED |
+|     OnlineCLScenario.__init__ (L205)                                                | COVERED |
+|       OnlineCLScenario.__init__.split_foo (L235)                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/rl_scenario.py (module)                                        | COVERED |
 |   RLExperience (L34)                                                                | COVERED |
@@ -1907,8 +1907,6 @@
 |     BaseTemplate.train (L75)                                                        | COVERED |
 |     BaseTemplate.eval (L124)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
-| training/templates/base_online_sgd.py (module)                                      |  MISSED |
-|-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
 |   BaseSGDTemplate (L21)                                                             | COVERED |
 |     BaseSGDTemplate.__init__ (L40)                                                  | COVERED |
@@ -1938,13 +1936,13 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                     |  MISSED |
 |   SupervisedTemplate (L15)                                                          | COVERED |
-|     SupervisedTemplate.__init__ (L65)                                               | COVERED |
-|   SupervisedMetaLearningTemplate (L128)                                             | COVERED |
-|     SupervisedMetaLearningTemplate.__init__ (L178)                                  | COVERED |
-|   OnlineSupervisedTemplate (L241)                                                   | COVERED |
+|     SupervisedTemplate.__init__ (L63)                                               | COVERED |
+|   SupervisedMetaLearningTemplate (L129)                                             | COVERED |
+|     SupervisedMetaLearningTemplate.__init__ (L177)                                  | COVERED |
+|   OnlineSupervisedTemplate (L243)                                                   | COVERED |
 |     OnlineSupervisedTemplate.__init__ (L291)                                        | COVERED |
-|   OnlineSupervisedMetaLearningTemplate (L343)                                       | COVERED |
-|     OnlineSupervisedMetaLearningTemplate.__init__ (L393)                            | COVERED |
+|   OnlineSupervisedMetaLearningTemplate (L346)                                       | COVERED |
+|     OnlineSupervisedMetaLearningTemplate.__init__ (L394)                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/observation_type/batch_observation.py (module)                   |  MISSED |
 |   BatchObservation (L8)                                                             |  MISSED |
@@ -1955,8 +1953,8 @@
 | training/templates/observation_type/online_observation.py (module)                  |  MISSED |
 |   OnlineObservation (L9)                                                            |  MISSED |
 |     OnlineObservation.make_optimizer (L10)                                          | COVERED |
-|     OnlineObservation.model_adaptation (L29)                                        | COVERED |
-|     OnlineObservation.check_model_and_optimizer (L55)                               |  MISSED |
+|     OnlineObservation.model_adaptation (L28)                                        | COVERED |
+|     OnlineObservation.check_model_and_optimizer (L54)                               |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/problem_type/supervised_problem.py (module)                      |  MISSED |
 |   SupervisedProblem (L4)                                                            |  MISSED |
@@ -2151,7 +2149,6 @@
 | training/supervised/strategy_wrappers.py                  |    41 |    2 |    39 |    95% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    1 |     5 |    83% |
-| training/templates/base_online_sgd.py                     |     1 |    1 |     0 |     0% |
 | training/templates/base_sgd.py                            |    26 |    5 |    21 |    81% |
 | training/templates/common_templates.py                    |     9 |    1 |     8 |    89% |
 | training/templates/observation_type/batch_observation.py  |     5 |    3 |     2 |    40% |
@@ -2160,5 +2157,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1791 |  781 |  1010 |  56.4% |
+| TOTAL                                                     |  1790 |  780 |  1010 |  56.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
