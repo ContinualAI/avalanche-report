@@ -1467,9 +1467,7 @@
 |     LearningWithoutForgetting.__init__ (L42)                                        | COVERED |
 |     LearningWithoutForgetting.update (L122)                                         | COVERED |
 |   ACECriterion (L146)                                                               | COVERED |
-|     ACECriterion.__init__ (L155)                                                    | COVERED |
-|     ACECriterion.update (L173)                                                      |  MISSED |
-|     ACECriterion.all_classes (L204)                                                 |  MISSED |
+|     ACECriterion.__init__ (L155)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                 |  MISSED |
 |   ExemplarsBuffer (L23)                                                             | COVERED |
@@ -1813,9 +1811,9 @@
 |   OnlineER_ACE (L27)                                                                | COVERED |
 |     OnlineER_ACE.__init__ (L36)                                                     | COVERED |
 |     OnlineER_ACE.training_epoch (L97)                                               | COVERED |
-|   ER_ACE (L174)                                                                     | COVERED |
-|     ER_ACE.__init__ (L188)                                                          | COVERED |
-|     ER_ACE.training_epoch (L247)                                                    | COVERED |
+|   ER_ACE (L173)                                                                     | COVERED |
+|     ER_ACE.__init__ (L187)                                                          | COVERED |
+|     ER_ACE.training_epoch (L246)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L25)                                                                       | COVERED |
@@ -2108,7 +2106,7 @@
 | models/slim_resnet18.py                                   |    15 |   12 |     3 |    20% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
-| training/regularization.py                                |    11 |    3 |     8 |    73% |
+| training/regularization.py                                |     9 |    2 |     7 |    78% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
 | training/utils.py                                         |    23 |   14 |     9 |    39% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
@@ -2157,5 +2155,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1790 |  780 |  1010 |  56.4% |
+| TOTAL                                                     |  1788 |  779 |  1009 |  56.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
