@@ -424,18 +424,19 @@
 | benchmarks/scenarios/new_instances/ni_utils.py (module)                             |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/classification_dataset.py (module)                                 | COVERED |
-|   XComposedTransformDef (L60)                                                       |  MISSED |
-|   XTransformDef (L65)                                                               |  MISSED |
-|   YTransformDef (L70)                                                               |  MISSED |
-|   ClassificationDataset (L96)                                                       |  MISSED |
-|     ClassificationDataset.subset (L97)                                              |  MISSED |
-|     ClassificationDataset.concat (L101)                                             |  MISSED |
-|   make_classification_dataset (L118)                                                | COVERED |
-|   classification_subset (L354)                                                      | COVERED |
-|   make_tensor_classification_dataset (L512)                                         | COVERED |
-|   concat_classification_datasets (L608)                                             | COVERED |
-|   TaskSet (L905)                                                                    | COVERED |
-|     TaskSet.__init__ (L922)                                                         | COVERED |
+|   lookup (L60)                                                                      | COVERED |
+|   XComposedTransformDef (L70)                                                       |  MISSED |
+|   XTransformDef (L75)                                                               |  MISSED |
+|   YTransformDef (L80)                                                               |  MISSED |
+|   ClassificationDataset (L106)                                                      |  MISSED |
+|     ClassificationDataset.subset (L107)                                             |  MISSED |
+|     ClassificationDataset.concat (L111)                                             |  MISSED |
+|   make_classification_dataset (L128)                                                | COVERED |
+|   classification_subset (L364)                                                      | COVERED |
+|   make_tensor_classification_dataset (L522)                                         | COVERED |
+|   concat_classification_datasets (L618)                                             | COVERED |
+|   TaskSet (L915)                                                                    | COVERED |
+|     TaskSet.__init__ (L932)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                      |  MISSED |
 |   classification_collate_mbatches_fn (L18)                                          | COVERED |
@@ -468,15 +469,16 @@
 |     TaskLabels.__init__ (L154)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
-|   collate_from_data_or_kwargs (L43)                                                 |  MISSED |
-|   TaskBalancedDataLoader (L50)                                                      | COVERED |
-|     TaskBalancedDataLoader.__init__ (L53)                                           | COVERED |
-|   GroupBalancedDataLoader (L111)                                                    | COVERED |
-|     GroupBalancedDataLoader.__init__ (L114)                                         | COVERED |
-|   GroupBalancedInfiniteDataLoader (L248)                                            | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L252)                                 | COVERED |
-|   ReplayDataLoader (L315)                                                           | COVERED |
-|     ReplayDataLoader.__init__ (L318)                                                | COVERED |
+|   return_identity (L43)                                                             | COVERED |
+|   collate_from_data_or_kwargs (L52)                                                 |  MISSED |
+|   TaskBalancedDataLoader (L59)                                                      | COVERED |
+|     TaskBalancedDataLoader.__init__ (L62)                                           | COVERED |
+|   GroupBalancedDataLoader (L120)                                                    | COVERED |
+|     GroupBalancedDataLoader.__init__ (L123)                                         | COVERED |
+|   GroupBalancedInfiniteDataLoader (L257)                                            | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L261)                                 | COVERED |
+|   ReplayDataLoader (L324)                                                           | COVERED |
+|     ReplayDataLoader.__init__ (L327)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                    |  MISSED |
 |   IDataset (L34)                                                                    | COVERED |
@@ -542,14 +544,15 @@
 |   DatasetFolder (L23)                                                               |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/transform_groups.py (module)                                       | COVERED |
-|   TransformGroups (L29)                                                             | COVERED |
-|     TransformGroups.__init__ (L38)                                                  | COVERED |
-|     TransformGroups.with_transform (L102)                                           |  MISSED |
-|   DefaultTransformGroups (L125)                                                     | COVERED |
-|     DefaultTransformGroups.__init__ (L128)                                          |  MISSED |
-|     DefaultTransformGroups.with_transform (L133)                                    |  MISSED |
-|   EmptyTransformGroups (L137)                                                       |  MISSED |
-|     EmptyTransformGroups.__init__ (L138)                                            |  MISSED |
+|   identity (L30)                                                                    | COVERED |
+|   TransformGroups (L38)                                                             | COVERED |
+|     TransformGroups.__init__ (L47)                                                  | COVERED |
+|     TransformGroups.with_transform (L111)                                           |  MISSED |
+|   DefaultTransformGroups (L134)                                                     | COVERED |
+|     DefaultTransformGroups.__init__ (L137)                                          |  MISSED |
+|     DefaultTransformGroups.with_transform (L142)                                    |  MISSED |
+|   EmptyTransformGroups (L146)                                                       |  MISSED |
+|     EmptyTransformGroups.__init__ (L147)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/transforms.py (module)                                             | COVERED |
 |   MultiParamTransform (L21)                                                         | COVERED |
@@ -2070,18 +2073,18 @@
 | benchmarks/scenarios/new_classes/nc_utils.py              |     2 |    1 |     1 |    50% |
 | benchmarks/scenarios/new_instances/ni_scenario.py         |     6 |    2 |     4 |    67% |
 | benchmarks/scenarios/new_instances/ni_utils.py            |     1 |    1 |     0 |     0% |
-| benchmarks/utils/classification_dataset.py                |    13 |    6 |     7 |    54% |
+| benchmarks/utils/classification_dataset.py                |    14 |    6 |     8 |    57% |
 | benchmarks/utils/collate_functions.py                     |     5 |    1 |     4 |    80% |
 | benchmarks/utils/data.py                                  |    11 |    1 |    10 |    91% |
 | benchmarks/utils/data_attribute.py                        |    11 |    2 |     9 |    82% |
-| benchmarks/utils/data_loader.py                           |    10 |    1 |     9 |    90% |
+| benchmarks/utils/data_loader.py                           |    11 |    1 |    10 |    91% |
 | benchmarks/utils/dataset_definitions.py                   |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                         |    22 |   11 |    11 |    50% |
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
 | benchmarks/utils/deprecated.py                            |     5 |    5 |     0 |     0% |
 | benchmarks/utils/flat_data.py                             |     9 |    0 |     9 |   100% |
 | benchmarks/utils/torchvision_wrapper.py                   |     3 |    2 |     1 |    33% |
-| benchmarks/utils/transform_groups.py                      |     9 |    5 |     4 |    44% |
+| benchmarks/utils/transform_groups.py                      |    10 |    5 |     5 |    50% |
 | benchmarks/utils/transforms.py                            |    10 |    5 |     5 |    50% |
 | benchmarks/utils/utils.py                                 |     7 |    3 |     4 |    57% |
 | evaluation/metric_definitions.py                          |    53 |   47 |     6 |    11% |
@@ -2191,5 +2194,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1816 |  791 |  1025 |  56.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
+| TOTAL                                                     |  1819 |  791 |  1028 |  56.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
