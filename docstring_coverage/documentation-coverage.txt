@@ -1368,6 +1368,12 @@
 |     PNN.__init__ (L234)                                                             | COVERED |
 |     PNN.forward_single_task (L265)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| models/prompt.py (module)                                                           |  MISSED |
+|   Prompt (L10)                                                                      | COVERED |
+|     Prompt.__init__ (L24)                                                           | COVERED |
+|     Prompt.l2_normalize (L87)                                                       | COVERED |
+|     Prompt.forward (L98)                                                            | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | models/pytorchcv_wrapper.py (module)                                                | COVERED |
 |   vgg (L32)                                                                         | COVERED |
 |   resnet (L55)                                                                      | COVERED |
@@ -1436,6 +1442,16 @@
 |     MTSlimResNet18.__init__ (L105)                                                  |  MISSED |
 |     MTSlimResNet18.forward (L129)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| models/timm_vit.py (module)                                                         | COVERED |
+|   ViTWithPrompt (L55)                                                               | COVERED |
+|     ViTWithPrompt.__init__ (L63)                                                    | COVERED |
+|     ViTWithPrompt.forward_features (L190)                                           |  MISSED |
+|     ViTWithPrompt.forward_head (L230)                                               |  MISSED |
+|     ViTWithPrompt.forward (L259)                                                    |  MISSED |
+|     ViTWithPrompt.load_pretrained (L270)                                            |  MISSED |
+|   resize_pos_embed (L410)                                                           |  MISSED |
+|   checkpoint_filter_fn (L445)                                                       | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | models/utils.py (module)                                                            |  MISSED |
 |   avalanche_forward (L9)                                                            |  MISSED |
 |   avalanche_model_adaptation (L16)                                                  |  MISSED |
@@ -1452,6 +1468,16 @@
 |   MLP (L78)                                                                         | COVERED |
 |     MLP.__init__ (L90)                                                              |  MISSED |
 |     MLP.forward (L104)                                                              |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
+| models/vit.py (module)                                                              |  MISSED |
+|   vit_tiny_patch16_224 (L4)                                                         | COVERED |
+|   vit_base_patch16_224 (L16)                                                        | COVERED |
+|   vit_large_patch16_224 (L35)                                                       | COVERED |
+|   vit_small_patch32_224 (L52)                                                       | COVERED |
+|   vit_base_patch32_224 (L64)                                                        | COVERED |
+|   vit_large_patch32_224 (L80)                                                       | COVERED |
+|   simpleMLP (L95)                                                                   |  MISSED |
+|   create_model (L101)                                                               |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/losses.py (module)                                                         |  MISSED |
 |   ICaRLLossPlugin (L9)                                                              | COVERED |
@@ -1827,6 +1853,12 @@
 |     JointTraining.train_dataset_adaptation (L154)                                   | COVERED |
 |     JointTraining.model_adaptation (L163)                                           | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/supervised/l2p.py (module)                                                 |  MISSED |
+|   LearningToPrompt (L13)                                                            | COVERED |
+|     LearningToPrompt.__init__ (L32)                                                 | COVERED |
+|     LearningToPrompt.forward (L167)                                                 |  MISSED |
+|     LearningToPrompt.criterion (L198)                                               |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml.py (module)                                              |  MISSED |
 |   LaMAML (L24)                                                                      |  MISSED |
 |     LaMAML.__init__ (L25)                                                           | COVERED |
@@ -1910,27 +1942,27 @@
 |     BaseSGDTemplate.__init__ (L40)                                                  | COVERED |
 |     BaseSGDTemplate.train (L139)                                                    |  MISSED |
 |     BaseSGDTemplate.eval (L150)                                                     | COVERED |
-|     BaseSGDTemplate.make_optimizer (L173)                                           | COVERED |
-|     BaseSGDTemplate.criterion (L178)                                                | COVERED |
-|     BaseSGDTemplate.forward (L182)                                                  | COVERED |
-|     BaseSGDTemplate.model_adaptation (L186)                                         | COVERED |
-|     BaseSGDTemplate.stop_training (L190)                                            | COVERED |
-|     BaseSGDTemplate.training_epoch (L194)                                           |  MISSED |
-|     BaseSGDTemplate.backward (L198)                                                 | COVERED |
-|     BaseSGDTemplate.optimizer_step (L202)                                           | COVERED |
-|     BaseSGDTemplate.eval_epoch (L206)                                               | COVERED |
-|     BaseSGDTemplate.check_model_and_optimizer (L221)                                |  MISSED |
-|     BaseSGDTemplate.train_dataset_adaptation (L282)                                 | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L305)                                    | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L341)                                     | COVERED |
-|     BaseSGDTemplate.eval_dataset_adaptation (L371)                                  | COVERED |
-|   PeriodicEval (L447)                                                               | COVERED |
-|     PeriodicEval.__init__ (L453)                                                    | COVERED |
-|     PeriodicEval.before_training (L476)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L485)                                         |  MISSED |
-|     PeriodicEval.after_training_epoch (L510)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L518)                                    | COVERED |
-|     PeriodicEval.after_training_exp (L527)                                          | COVERED |
+|     BaseSGDTemplate.make_optimizer (L167)                                           | COVERED |
+|     BaseSGDTemplate.criterion (L172)                                                | COVERED |
+|     BaseSGDTemplate.forward (L176)                                                  | COVERED |
+|     BaseSGDTemplate.model_adaptation (L180)                                         | COVERED |
+|     BaseSGDTemplate.stop_training (L184)                                            | COVERED |
+|     BaseSGDTemplate.training_epoch (L188)                                           |  MISSED |
+|     BaseSGDTemplate.backward (L192)                                                 | COVERED |
+|     BaseSGDTemplate.optimizer_step (L196)                                           | COVERED |
+|     BaseSGDTemplate.eval_epoch (L200)                                               | COVERED |
+|     BaseSGDTemplate.check_model_and_optimizer (L215)                                |  MISSED |
+|     BaseSGDTemplate.train_dataset_adaptation (L276)                                 | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L299)                                    | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L335)                                     | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L365)                                  | COVERED |
+|   PeriodicEval (L441)                                                               | COVERED |
+|     PeriodicEval.__init__ (L447)                                                    | COVERED |
+|     PeriodicEval.before_training (L470)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L479)                                         |  MISSED |
+|     PeriodicEval.after_training_epoch (L504)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L512)                                    | COVERED |
+|     PeriodicEval.after_training_exp (L521)                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                     |  MISSED |
 |   SupervisedTemplate (L15)                                                          | COVERED |
@@ -2097,6 +2129,7 @@
 | models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
 | models/ncm_classifier.py                                  |     4 |    2 |     2 |    50% |
 | models/pnn.py                                             |    19 |    6 |    13 |    68% |
+| models/prompt.py                                          |     5 |    1 |     4 |    80% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
 | models/resnet32.py                                        |    13 |   11 |     2 |    15% |
 | models/simple_cnn.py                                      |     7 |    5 |     2 |    29% |
@@ -2104,7 +2137,9 @@
 | models/simple_sequence_classifier.py                      |     7 |    7 |     0 |     0% |
 | models/slda_resnet.py                                     |     5 |    2 |     3 |    60% |
 | models/slim_resnet18.py                                   |    15 |   12 |     3 |    20% |
+| models/timm_vit.py                                        |     9 |    5 |     4 |    44% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
+| models/vit.py                                             |     9 |    3 |     6 |    67% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
 | training/regularization.py                                |     9 |    2 |     7 |    78% |
 | training/storage_policy.py                                |    41 |   12 |    29 |    71% |
@@ -2141,6 +2176,7 @@
 | training/supervised/er_ace.py                             |     8 |    2 |     6 |    75% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
+| training/supervised/l2p.py                                |     5 |    3 |     2 |    40% |
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
 | training/supervised/mer.py                                |     7 |    6 |     1 |    14% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
@@ -2155,5 +2191,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1788 |  779 |  1009 |  56.4% |
+| TOTAL                                                     |  1816 |  791 |  1025 |  56.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
