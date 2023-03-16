@@ -1631,21 +1631,21 @@
 |     Clock.after_eval_iteration (L62)                                                |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/cope.py (module)                                                   |  MISSED |
-|   CoPEPlugin (L17)                                                                  | COVERED |
-|     CoPEPlugin.__init__ (L30)                                                       | COVERED |
-|     CoPEPlugin.before_training (L81)                                                | COVERED |
-|     CoPEPlugin.before_training_exp (L104)                                           | COVERED |
-|     CoPEPlugin.after_training_iteration (L127)                                      | COVERED |
-|     CoPEPlugin.after_forward (L139)                                                 | COVERED |
-|     CoPEPlugin.after_training_exp (L192)                                            | COVERED |
-|     CoPEPlugin.after_eval_iteration (L211)                                          | COVERED |
-|   L2Normalization (L253)                                                            | COVERED |
-|     L2Normalization.__init__ (L257)                                                 |  MISSED |
-|     L2Normalization.forward (L260)                                                  |  MISSED |
-|   PPPloss (L264)                                                                    | COVERED |
-|     PPPloss.__init__ (L270)                                                         | COVERED |
-|     PPPloss.attractor (L317)                                                        | COVERED |
-|     PPPloss.repellor (L338)                                                         | COVERED |
+|   CoPEPlugin (L14)                                                                  | COVERED |
+|     CoPEPlugin.__init__ (L27)                                                       | COVERED |
+|     CoPEPlugin.before_training (L72)                                                | COVERED |
+|     CoPEPlugin.before_training_exp (L95)                                            | COVERED |
+|     CoPEPlugin.after_training_iteration (L118)                                      | COVERED |
+|     CoPEPlugin.after_forward (L130)                                                 | COVERED |
+|     CoPEPlugin.after_training_exp (L183)                                            | COVERED |
+|     CoPEPlugin.after_eval_iteration (L202)                                          | COVERED |
+|   L2Normalization (L244)                                                            | COVERED |
+|     L2Normalization.__init__ (L248)                                                 |  MISSED |
+|     L2Normalization.forward (L251)                                                  |  MISSED |
+|   PPPloss (L255)                                                                    | COVERED |
+|     PPPloss.__init__ (L261)                                                         | COVERED |
+|     PPPloss.attractor (L308)                                                        | COVERED |
+|     PPPloss.repellor (L329)                                                         | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/cwr_star.py (module)                                               |  MISSED |
 |   CWRStarPlugin (L19)                                                               | COVERED |
