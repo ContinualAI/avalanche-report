@@ -1523,22 +1523,23 @@
 |     ExperienceBalancedBuffer.update (L226)                                          |  MISSED |
 |   ClassBalancedBuffer (L239)                                                        | COVERED |
 |     ClassBalancedBuffer.__init__ (L250)                                             | COVERED |
-|     ClassBalancedBuffer.update (L274)                                               |  MISSED |
-|   ParametricBuffer (L317)                                                           | COVERED |
-|     ParametricBuffer.__init__ (L321)                                                | COVERED |
-|     ParametricBuffer.update (L346)                                                  |  MISSED |
-|   ExemplarsSelectionStrategy (L454)                                                 | COVERED |
-|     ExemplarsSelectionStrategy.make_sorted_indices (L460)                           | COVERED |
-|   RandomExemplarsSelectionStrategy (L471)                                           | COVERED |
-|     RandomExemplarsSelectionStrategy.make_sorted_indices (L474)                     |  MISSED |
-|   FeatureBasedExemplarsSelectionStrategy (L482)                                     | COVERED |
-|     FeatureBasedExemplarsSelectionStrategy.__init__ (L485)                          |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L489)               |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L507) | COVERED |
-|   HerdingSelectionStrategy (L515)                                                   | COVERED |
-|     HerdingSelectionStrategy.make_sorted_indices_from_features (L523)               |  MISSED |
-|   ClosestToCenterSelectionStrategy (L545)                                           | COVERED |
-|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L550)       |  MISSED |
+|     ClassBalancedBuffer.update (L274)                                               | COVERED |
+|     ClassBalancedBuffer.update_from_dataset (L278)                                  |  MISSED |
+|   ParametricBuffer (L325)                                                           | COVERED |
+|     ParametricBuffer.__init__ (L329)                                                | COVERED |
+|     ParametricBuffer.update (L354)                                                  |  MISSED |
+|   ExemplarsSelectionStrategy (L462)                                                 | COVERED |
+|     ExemplarsSelectionStrategy.make_sorted_indices (L468)                           | COVERED |
+|   RandomExemplarsSelectionStrategy (L479)                                           | COVERED |
+|     RandomExemplarsSelectionStrategy.make_sorted_indices (L482)                     |  MISSED |
+|   FeatureBasedExemplarsSelectionStrategy (L490)                                     | COVERED |
+|     FeatureBasedExemplarsSelectionStrategy.__init__ (L493)                          |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L497)               |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L515) | COVERED |
+|   HerdingSelectionStrategy (L523)                                                   | COVERED |
+|     HerdingSelectionStrategy.make_sorted_indices_from_features (L531)               |  MISSED |
+|   ClosestToCenterSelectionStrategy (L553)                                           | COVERED |
+|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L558)       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                          | COVERED |
 |   trigger_plugins (L28)                                                             | COVERED |
@@ -2145,7 +2146,7 @@
 | models/vit.py                                             |     9 |    3 |     6 |    67% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
 | training/regularization.py                                |     9 |    2 |     7 |    78% |
-| training/storage_policy.py                                |    41 |   12 |    29 |    71% |
+| training/storage_policy.py                                |    42 |   12 |    30 |    71% |
 | training/utils.py                                         |    23 |   14 |     9 |    39% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
 | training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
@@ -2194,5 +2195,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1819 |  791 |  1028 |  56.5% |
+| TOTAL                                                     |  1820 |  791 |  1029 |  56.5% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
