@@ -445,28 +445,33 @@
 |   detection_collate_mbatches_fn (L62)                                               | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data.py (module)                                                   | COVERED |
-|   AvalancheDataset (L37)                                                            | COVERED |
-|     AvalancheDataset.__init__ (L76)                                                 | COVERED |
-|     AvalancheDataset.transform (L234)                                               |  MISSED |
-|     AvalancheDataset.train (L292)                                                   | COVERED |
-|     AvalancheDataset.eval (L302)                                                    | COVERED |
-|     AvalancheDataset.with_transforms (L317)                                         | COVERED |
-|     AvalancheDataset.freeze_transforms (L334)                                       | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L350)                          | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L364)                         | COVERED |
-|   make_avalanche_dataset (L402)                                                     | COVERED |
+|   AvalancheDataset (L38)                                                            | COVERED |
+|     AvalancheDataset.__init__ (L77)                                                 | COVERED |
+|     AvalancheDataset.transform (L236)                                               |  MISSED |
+|     AvalancheDataset.train (L294)                                                   | COVERED |
+|     AvalancheDataset.eval (L304)                                                    | COVERED |
+|     AvalancheDataset.with_transforms (L319)                                         | COVERED |
+|     AvalancheDataset.freeze_transforms (L336)                                       | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L352)                          | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L366)                         | COVERED |
+|   make_avalanche_dataset (L404)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                         | COVERED |
-|   DataAttribute (L25)                                                               | COVERED |
-|     DataAttribute.__init__ (L35)                                                    | COVERED |
-|     DataAttribute.data (L67)                                                        |  MISSED |
-|     DataAttribute.uniques (L71)                                                     | COVERED |
-|     DataAttribute.count (L86)                                                       | COVERED |
-|     DataAttribute.val_to_idx (L97)                                                  | COVERED |
-|     DataAttribute.subset (L111)                                                     | COVERED |
-|     DataAttribute.concat (L125)                                                     | COVERED |
-|   TaskLabels (L150)                                                                 | COVERED |
-|     TaskLabels.__init__ (L154)                                                      |  MISSED |
+|   TensorDataAttribute (L25)                                                         | COVERED |
+|     TensorDataAttribute.__init__ (L32)                                              | COVERED |
+|     TensorDataAttribute.data (L59)                                                  |  MISSED |
+|     TensorDataAttribute.subset (L62)                                                | COVERED |
+|     TensorDataAttribute.concat (L76)                                                | COVERED |
+|   DataAttribute (L101)                                                              | COVERED |
+|     DataAttribute.__init__ (L111)                                                   | COVERED |
+|     DataAttribute.data (L143)                                                       |  MISSED |
+|     DataAttribute.uniques (L147)                                                    | COVERED |
+|     DataAttribute.count (L162)                                                      | COVERED |
+|     DataAttribute.val_to_idx (L173)                                                 | COVERED |
+|     DataAttribute.subset (L187)                                                     | COVERED |
+|     DataAttribute.concat (L201)                                                     | COVERED |
+|   TaskLabels (L226)                                                                 | COVERED |
+|     TaskLabels.__init__ (L230)                                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                            | COVERED |
 |   return_identity (L43)                                                             | COVERED |
@@ -1510,36 +1515,36 @@
 |     ReservoirSamplingBuffer.update (L86)                                            | COVERED |
 |     ReservoirSamplingBuffer.update_from_dataset (L90)                               | COVERED |
 |     ReservoirSamplingBuffer.resize (L106)                                           | COVERED |
-|   BalancedExemplarsBuffer (L117)                                                    | COVERED |
-|     BalancedExemplarsBuffer.__init__ (L129)                                         | COVERED |
-|     BalancedExemplarsBuffer.buffer_datasets (L157)                                  | COVERED |
-|     BalancedExemplarsBuffer.get_group_lengths (L161)                                | COVERED |
-|     BalancedExemplarsBuffer.buffer (L177)                                           |  MISSED |
-|     BalancedExemplarsBuffer.buffer (L181)                                           |  MISSED |
-|     BalancedExemplarsBuffer.update (L188)                                           | COVERED |
-|     BalancedExemplarsBuffer.resize (L197)                                           | COVERED |
-|   ExperienceBalancedBuffer (L205)                                                   | COVERED |
-|     ExperienceBalancedBuffer.__init__ (L213)                                        | COVERED |
-|     ExperienceBalancedBuffer.update (L226)                                          |  MISSED |
-|   ClassBalancedBuffer (L239)                                                        | COVERED |
-|     ClassBalancedBuffer.__init__ (L250)                                             | COVERED |
-|     ClassBalancedBuffer.update (L274)                                               | COVERED |
-|     ClassBalancedBuffer.update_from_dataset (L278)                                  |  MISSED |
-|   ParametricBuffer (L325)                                                           | COVERED |
-|     ParametricBuffer.__init__ (L329)                                                | COVERED |
-|     ParametricBuffer.update (L354)                                                  |  MISSED |
-|   ExemplarsSelectionStrategy (L462)                                                 | COVERED |
-|     ExemplarsSelectionStrategy.make_sorted_indices (L468)                           | COVERED |
-|   RandomExemplarsSelectionStrategy (L479)                                           | COVERED |
-|     RandomExemplarsSelectionStrategy.make_sorted_indices (L482)                     |  MISSED |
-|   FeatureBasedExemplarsSelectionStrategy (L490)                                     | COVERED |
-|     FeatureBasedExemplarsSelectionStrategy.__init__ (L493)                          |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L497)               |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L515) | COVERED |
-|   HerdingSelectionStrategy (L523)                                                   | COVERED |
-|     HerdingSelectionStrategy.make_sorted_indices_from_features (L531)               |  MISSED |
-|   ClosestToCenterSelectionStrategy (L553)                                           | COVERED |
-|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L558)       |  MISSED |
+|   BalancedExemplarsBuffer (L115)                                                    | COVERED |
+|     BalancedExemplarsBuffer.__init__ (L127)                                         | COVERED |
+|     BalancedExemplarsBuffer.buffer_datasets (L155)                                  | COVERED |
+|     BalancedExemplarsBuffer.get_group_lengths (L159)                                | COVERED |
+|     BalancedExemplarsBuffer.buffer (L175)                                           |  MISSED |
+|     BalancedExemplarsBuffer.buffer (L179)                                           |  MISSED |
+|     BalancedExemplarsBuffer.update (L186)                                           | COVERED |
+|     BalancedExemplarsBuffer.resize (L195)                                           | COVERED |
+|   ExperienceBalancedBuffer (L203)                                                   | COVERED |
+|     ExperienceBalancedBuffer.__init__ (L211)                                        | COVERED |
+|     ExperienceBalancedBuffer.update (L224)                                          |  MISSED |
+|   ClassBalancedBuffer (L237)                                                        | COVERED |
+|     ClassBalancedBuffer.__init__ (L248)                                             | COVERED |
+|     ClassBalancedBuffer.update (L272)                                               | COVERED |
+|     ClassBalancedBuffer.update_from_dataset (L276)                                  |  MISSED |
+|   ParametricBuffer (L323)                                                           | COVERED |
+|     ParametricBuffer.__init__ (L327)                                                | COVERED |
+|     ParametricBuffer.update (L352)                                                  |  MISSED |
+|   ExemplarsSelectionStrategy (L460)                                                 | COVERED |
+|     ExemplarsSelectionStrategy.make_sorted_indices (L466)                           | COVERED |
+|   RandomExemplarsSelectionStrategy (L477)                                           | COVERED |
+|     RandomExemplarsSelectionStrategy.make_sorted_indices (L480)                     |  MISSED |
+|   FeatureBasedExemplarsSelectionStrategy (L488)                                     | COVERED |
+|     FeatureBasedExemplarsSelectionStrategy.__init__ (L491)                          |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L495)               |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L513) | COVERED |
+|   HerdingSelectionStrategy (L521)                                                   | COVERED |
+|     HerdingSelectionStrategy.make_sorted_indices_from_features (L529)               |  MISSED |
+|   ClosestToCenterSelectionStrategy (L551)                                           | COVERED |
+|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L556)       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                          | COVERED |
 |   trigger_plugins (L28)                                                             | COVERED |
@@ -1836,6 +1841,16 @@
 |     StreamingLDA.save_model (L226)                                                  | COVERED |
 |     StreamingLDA.load_model (L243)                                                  | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| training/supervised/der.py (module)                                                 |  MISSED |
+|   compute_dataset_logits (L23)                                                      |  MISSED |
+|   cycle (L39)                                                                       |  MISSED |
+|   ClassBalancedBufferWithLogits (L45)                                               | COVERED |
+|     ClassBalancedBufferWithLogits.__init__ (L50)                                    | COVERED |
+|     ClassBalancedBufferWithLogits.update (L75)                                      |  MISSED |
+|   DER (L129)                                                                        | COVERED |
+|     DER.__init__ (L136)                                                             | COVERED |
+|     DER.training_epoch (L249)                                                       | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/supervised/er_ace.py (module)                                              |  MISSED |
 |   cycle (L21)                                                                       |  MISSED |
 |   OnlineER_ACE (L27)                                                                | COVERED |
@@ -2077,7 +2092,7 @@
 | benchmarks/utils/classification_dataset.py                |    14 |    6 |     8 |    57% |
 | benchmarks/utils/collate_functions.py                     |     5 |    1 |     4 |    80% |
 | benchmarks/utils/data.py                                  |    11 |    1 |    10 |    91% |
-| benchmarks/utils/data_attribute.py                        |    11 |    2 |     9 |    82% |
+| benchmarks/utils/data_attribute.py                        |    16 |    3 |    13 |    81% |
 | benchmarks/utils/data_loader.py                           |    11 |    1 |    10 |    91% |
 | benchmarks/utils/dataset_definitions.py                   |     8 |    2 |     6 |    75% |
 | benchmarks/utils/dataset_utils.py                         |    22 |   11 |    11 |    50% |
@@ -2177,6 +2192,7 @@
 | training/supervised/ar1.py                                |     6 |    3 |     3 |    50% |
 | training/supervised/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
+| training/supervised/der.py                                |     9 |    4 |     5 |    56% |
 | training/supervised/er_ace.py                             |     8 |    2 |     6 |    75% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
@@ -2195,5 +2211,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1820 |  791 |  1029 |  56.5% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
+| TOTAL                                                     |  1834 |  796 |  1038 |  56.6% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.6%) -----------------
