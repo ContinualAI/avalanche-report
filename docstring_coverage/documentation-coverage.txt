@@ -1885,6 +1885,17 @@
 |     LaMAML.inner_update_step (L158)                                                 | COVERED |
 |   init_kaiming_normal (L273)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/supervised/lamaml_v2.py (module)                                           |  MISSED |
+|   LaMAML (L25)                                                                      |  MISSED |
+|     LaMAML.__init__ (L26)                                                           | COVERED |
+|     LaMAML.copy_grads (L156)                                                        |  MISSED |
+|     LaMAML.inner_update_step (L161)                                                 | COVERED |
+|   Buffer (L276)                                                                     |  MISSED |
+|     Buffer.__init__ (L277)                                                          |  MISSED |
+|     Buffer.update (L283)                                                            |  MISSED |
+|     Buffer.get_buffer_batch (L289)                                                  |  MISSED |
+|   init_kaiming_normal (L301)                                                        |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | training/supervised/mer.py (module)                                                 |  MISSED |
 |   MERBuffer (L16)                                                                   |  MISSED |
 |     MERBuffer.__init__ (L17)                                                        |  MISSED |
@@ -2198,6 +2209,7 @@
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/l2p.py                                |     5 |    3 |     2 |    40% |
 | training/supervised/lamaml.py                             |     6 |    4 |     2 |    33% |
+| training/supervised/lamaml_v2.py                          |    10 |    8 |     2 |    20% |
 | training/supervised/mer.py                                |     7 |    6 |     1 |    14% |
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
 | training/supervised/strategy_wrappers.py                  |    41 |    2 |    39 |    95% |
@@ -2211,5 +2223,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1834 |  796 |  1038 |  56.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.6%) -----------------
+| TOTAL                                                     |  1844 |  804 |  1040 |  56.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
