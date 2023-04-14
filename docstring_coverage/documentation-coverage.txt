@@ -2,6 +2,14 @@
 ------------------------------ Detailed Coverage -------------------------------
 | Name                                                                                |  Status |
 |-------------------------------------------------------------------------------------|---------|
+| _annotations.py (module)                                                            | COVERED |
+|   experimental (L13)                                                                | COVERED |
+|     experimental.decorator (L35)                                                    |  MISSED |
+|       experimental.decorator.wrapper (L44)                                          |  MISSED |
+|   deprecated (L52)                                                                  | COVERED |
+|     deprecated.decorator (L62)                                                      |  MISSED |
+|       deprecated.decorator.wrapper (L80)                                            |  MISSED |
+|-------------------------------------------------------------------------------------|---------|
 | core.py (module)                                                                    |  MISSED |
 |   BasePlugin (L12)                                                                  | COVERED |
 |     BasePlugin.__init__ (L30)                                                       |  MISSED |
@@ -1487,6 +1495,10 @@
 |   simpleMLP (L95)                                                                   |  MISSED |
 |   create_model (L101)                                                               |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
+| training/checkpoint.py (module)                                                     |  MISSED |
+|   maybe_load_checkpoint (L10)                                                       | COVERED |
+|   save_checkpoint (L58)                                                             | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | training/losses.py (module)                                                         |  MISSED |
 |   ICaRLLossPlugin (L9)                                                              | COVERED |
 |     ICaRLLossPlugin.__init__ (L20)                                                  |  MISSED |
@@ -1603,26 +1615,14 @@
 |     BiCPlugin.get_group_lengths (L297)                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/checkpoint.py (module)                                             |  MISSED |
-|   CheckpointStorage (L16)                                                           | COVERED |
-|     CheckpointStorage.__init__ (L24)                                                | COVERED |
-|     CheckpointStorage.store_checkpoint (L31)                                        | COVERED |
-|     CheckpointStorage.list_checkpoints (L56)                                        | COVERED |
-|     CheckpointStorage.checkpoint_exists (L65)                                       | COVERED |
-|     CheckpointStorage.load_checkpoint (L75)                                         | COVERED |
+|   CheckpointStorage (L14)                                                           | COVERED |
+|     CheckpointStorage.__init__ (L22)                                                | COVERED |
+|     CheckpointStorage.store_checkpoint (L29)                                        | COVERED |
+|     CheckpointStorage.list_checkpoints (L54)                                        | COVERED |
+|     CheckpointStorage.checkpoint_exists (L63)                                       | COVERED |
+|     CheckpointStorage.load_checkpoint (L73)                                         | COVERED |
 |   CheckpointPlugin (L98)                                                            | COVERED |
 |     CheckpointPlugin.__init__ (L137)                                                | COVERED |
-|     CheckpointPlugin.load_checkpoint_if_exists (L164)                               | COVERED |
-|     CheckpointPlugin.after_eval (L217)                                              |  MISSED |
-|     CheckpointPlugin.before_training (L236)                                         |  MISSED |
-|     CheckpointPlugin.after_training (L240)                                          |  MISSED |
-|     CheckpointPlugin.save_checkpoint (L245)                                         |  MISSED |
-|     CheckpointPlugin.load_checkpoint (L250)                                         | COVERED |
-|   FileSystemCheckpointStorage (L283)                                                | COVERED |
-|     FileSystemCheckpointStorage.__init__ (L288)                                     | COVERED |
-|     FileSystemCheckpointStorage.store_checkpoint (L301)                             |  MISSED |
-|     FileSystemCheckpointStorage.list_checkpoints (L322)                             |  MISSED |
-|     FileSystemCheckpointStorage.checkpoint_exists (L332)                            |  MISSED |
-|     FileSystemCheckpointStorage.load_checkpoint (L335)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/checkpoint_common_recipes.py (module)                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
@@ -1672,16 +1672,16 @@
 |     EarlyStoppingPlugin.before_training_epoch (L97)                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/evaluation.py (module)                                             |  MISSED |
-|   EvaluationPlugin (L16)                                                            | COVERED |
-|     EvaluationPlugin.__init__ (L31)                                                 | COVERED |
-|     EvaluationPlugin.active (L91)                                                   |  MISSED |
-|     EvaluationPlugin.active (L95)                                                   |  MISSED |
-|     EvaluationPlugin.publish_metric_value (L101)                                    | COVERED |
-|     EvaluationPlugin.get_last_metrics (L136)                                        | COVERED |
-|     EvaluationPlugin.get_all_metrics (L146)                                         | COVERED |
-|     EvaluationPlugin.reset_last_metrics (L164)                                      | COVERED |
-|     EvaluationPlugin.before_eval (L186)                                             |  MISSED |
-|   default_evaluator (L201)                                                          |  MISSED |
+|   EvaluationPlugin (L22)                                                            | COVERED |
+|     EvaluationPlugin.__init__ (L37)                                                 | COVERED |
+|     EvaluationPlugin.active (L99)                                                   |  MISSED |
+|     EvaluationPlugin.active (L103)                                                  |  MISSED |
+|     EvaluationPlugin.publish_metric_value (L109)                                    | COVERED |
+|     EvaluationPlugin.get_last_metrics (L144)                                        | COVERED |
+|     EvaluationPlugin.get_all_metrics (L154)                                         | COVERED |
+|     EvaluationPlugin.reset_last_metrics (L172)                                      | COVERED |
+|     EvaluationPlugin.before_eval (L194)                                             |  MISSED |
+|   default_evaluator (L209)                                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/ewc.py (module)                                                    |  MISSED |
 |   EWCPlugin (L15)                                                                   | COVERED |
@@ -1856,9 +1856,9 @@
 |   OnlineER_ACE (L27)                                                                | COVERED |
 |     OnlineER_ACE.__init__ (L36)                                                     | COVERED |
 |     OnlineER_ACE.training_epoch (L97)                                               | COVERED |
-|   ER_ACE (L173)                                                                     | COVERED |
-|     ER_ACE.__init__ (L187)                                                          | COVERED |
-|     ER_ACE.training_epoch (L246)                                                    | COVERED |
+|   ER_ACE (L178)                                                                     | COVERED |
+|     ER_ACE.__init__ (L192)                                                          | COVERED |
+|     ER_ACE.training_epoch (L251)                                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                               |  MISSED |
 |   ICaRL (L25)                                                                       | COVERED |
@@ -1965,7 +1965,7 @@
 |     BaseTemplate.__init__ (L35)                                                     | COVERED |
 |     BaseTemplate.is_eval (L71)                                                      | COVERED |
 |     BaseTemplate.train (L75)                                                        | COVERED |
-|     BaseTemplate.eval (L124)                                                        | COVERED |
+|     BaseTemplate.eval (L130)                                                        | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                             |  MISSED |
 |   BaseSGDTemplate (L21)                                                             | COVERED |
@@ -1982,17 +1982,17 @@
 |     BaseSGDTemplate.optimizer_step (L196)                                           | COVERED |
 |     BaseSGDTemplate.eval_epoch (L200)                                               | COVERED |
 |     BaseSGDTemplate.check_model_and_optimizer (L215)                                |  MISSED |
-|     BaseSGDTemplate.train_dataset_adaptation (L276)                                 | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L299)                                    | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L335)                                     | COVERED |
-|     BaseSGDTemplate.eval_dataset_adaptation (L365)                                  | COVERED |
-|   PeriodicEval (L441)                                                               | COVERED |
-|     PeriodicEval.__init__ (L447)                                                    | COVERED |
-|     PeriodicEval.before_training (L470)                                             | COVERED |
-|     PeriodicEval.before_training_exp (L479)                                         |  MISSED |
-|     PeriodicEval.after_training_epoch (L504)                                        | COVERED |
-|     PeriodicEval.after_training_iteration (L512)                                    | COVERED |
-|     PeriodicEval.after_training_exp (L521)                                          | COVERED |
+|     BaseSGDTemplate.train_dataset_adaptation (L292)                                 | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L315)                                    | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L351)                                     | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L381)                                  | COVERED |
+|   PeriodicEval (L457)                                                               | COVERED |
+|     PeriodicEval.__init__ (L463)                                                    | COVERED |
+|     PeriodicEval.before_training (L486)                                             | COVERED |
+|     PeriodicEval.before_training_exp (L495)                                         |  MISSED |
+|     PeriodicEval.after_training_epoch (L520)                                        | COVERED |
+|     PeriodicEval.after_training_iteration (L528)                                    | COVERED |
+|     PeriodicEval.after_training_exp (L537)                                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                     |  MISSED |
 |   SupervisedTemplate (L15)                                                          | COVERED |
@@ -2036,6 +2036,7 @@
 ----------------------------------- Summary ------------------------------------
 | Name                                                      | Total | Miss | Cover | Cover% |
 |-----------------------------------------------------------|-------|------|-------|--------|
+| _annotations.py                                           |     7 |    4 |     3 |    43% |
 | core.py                                                   |    36 |    2 |    34 |    94% |
 | benchmarks/classic/ccifar10.py                            |     2 |    1 |     1 |    50% |
 | benchmarks/classic/ccifar100.py                           |     3 |    1 |     2 |    67% |
@@ -2170,6 +2171,7 @@
 | models/timm_vit.py                                        |     9 |    5 |     4 |    44% |
 | models/utils.py                                           |    16 |   12 |     4 |    25% |
 | models/vit.py                                             |     9 |    3 |     6 |    67% |
+| training/checkpoint.py                                    |     3 |    1 |     2 |    67% |
 | training/losses.py                                        |     5 |    4 |     1 |    20% |
 | training/regularization.py                                |     9 |    2 |     7 |    78% |
 | training/storage_policy.py                                |    42 |   12 |    30 |    71% |
@@ -2178,7 +2180,7 @@
 | training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
 | training/plugins/bic.py                                   |    13 |    8 |     5 |    38% |
-| training/plugins/checkpoint.py                            |    21 |    9 |    12 |    57% |
+| training/plugins/checkpoint.py                            |     9 |    1 |     8 |    89% |
 | training/plugins/checkpoint_common_recipes.py             |     1 |    1 |     0 |     0% |
 | training/plugins/clock.py                                 |     9 |    7 |     2 |    22% |
 | training/plugins/cope.py                                  |    16 |    3 |    13 |    81% |
@@ -2223,5 +2225,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1844 |  804 |  1040 |  56.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 56.4%) -----------------
+| TOTAL                                                     |  1842 |  801 |  1041 |  56.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 56.5%) -----------------
