@@ -1239,12 +1239,12 @@
 |     TextLogger.before_training_exp (L86)                                            |  MISSED |
 |     TextLogger.before_eval_exp (L95)                                                |  MISSED |
 |     TextLogger.after_training_epoch (L104)                                          |  MISSED |
-|     TextLogger.after_eval_exp (L119)                                                |  MISSED |
-|     TextLogger.before_training (L146)                                               |  MISSED |
-|     TextLogger.before_eval (L155)                                                   |  MISSED |
-|     TextLogger.after_training (L164)                                                |  MISSED |
-|     TextLogger.after_eval (L173)                                                    |  MISSED |
-|     TextLogger.on_checkpoint_resume (L231)                                          |  MISSED |
+|     TextLogger.after_eval_exp (L118)                                                |  MISSED |
+|     TextLogger.before_training (L143)                                               |  MISSED |
+|     TextLogger.before_eval (L152)                                                   |  MISSED |
+|     TextLogger.after_training (L161)                                                |  MISSED |
+|     TextLogger.after_eval (L170)                                                    |  MISSED |
+|     TextLogger.on_checkpoint_resume (L226)                                          |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                    | COVERED |
 |   WandBLogger (L40)                                                                 | COVERED |
