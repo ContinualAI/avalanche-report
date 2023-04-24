@@ -177,8 +177,8 @@
 |   CelebA (L157)                                                                     |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear.py (module)                                         | COVERED |
-|   CLEARDataset (L47)                                                                | COVERED |
-|     CLEARDataset.__init__ (L50)                                                     | COVERED |
+|   CLEARDataset (L51)                                                                | COVERED |
+|     CLEARDataset.__init__ (L54)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear_data.py (module)                                    | COVERED |
 |-------------------------------------------------------------------------------------|---------|
