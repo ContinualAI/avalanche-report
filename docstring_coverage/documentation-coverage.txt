@@ -490,19 +490,19 @@
 |   make_classification_dataset (L157)                                                 |  MISSED |
 |   make_classification_dataset (L172)                                                 |  MISSED |
 |   make_classification_dataset (L186)                                                 | COVERED |
-|   classification_subset (L351)                                                       |  MISSED |
-|   classification_subset (L369)                                                       |  MISSED |
-|   classification_subset (L387)                                                       |  MISSED |
-|   classification_subset (L404)                                                       | COVERED |
-|   make_tensor_classification_dataset (L591)                                          |  MISSED |
-|   make_tensor_classification_dataset (L605)                                          |  MISSED |
-|   make_tensor_classification_dataset (L618)                                          | COVERED |
-|   concat_classification_datasets (L732)                                              |  MISSED |
-|   concat_classification_datasets (L751)                                              |  MISSED |
-|   concat_classification_datasets (L768)                                              |  MISSED |
-|   concat_classification_datasets (L786)                                              | COVERED |
-|   concat_classification_datasets_sequentially (L958)                                 | COVERED |
-|   as_supervised_classification_dataset (L1079)                                       |  MISSED |
+|   classification_subset (L349)                                                       |  MISSED |
+|   classification_subset (L367)                                                       |  MISSED |
+|   classification_subset (L385)                                                       |  MISSED |
+|   classification_subset (L402)                                                       | COVERED |
+|   make_tensor_classification_dataset (L589)                                          |  MISSED |
+|   make_tensor_classification_dataset (L603)                                          |  MISSED |
+|   make_tensor_classification_dataset (L616)                                          | COVERED |
+|   concat_classification_datasets (L730)                                              |  MISSED |
+|   concat_classification_datasets (L749)                                              |  MISSED |
+|   concat_classification_datasets (L766)                                              |  MISSED |
+|   concat_classification_datasets (L784)                                              | COVERED |
+|   concat_classification_datasets_sequentially (L956)                                 | COVERED |
+|   as_supervised_classification_dataset (L1077)                                       |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                       |  MISSED |
 |   classification_collate_mbatches_fn (L51)                                           | COVERED |
@@ -604,14 +604,14 @@
 |   make_detection_dataset (L157)                                                      |  MISSED |
 |   make_detection_dataset (L172)                                                      |  MISSED |
 |   make_detection_dataset (L186)                                                      | COVERED |
-|   detection_subset (L366)                                                            |  MISSED |
-|   detection_subset (L384)                                                            |  MISSED |
-|   detection_subset (L402)                                                            |  MISSED |
-|   detection_subset (L419)                                                            | COVERED |
-|   concat_detection_datasets (L594)                                                   |  MISSED |
-|   concat_detection_datasets (L614)                                                   |  MISSED |
-|   concat_detection_datasets (L632)                                                   |  MISSED |
-|   concat_detection_datasets (L651)                                                   | COVERED |
+|   detection_subset (L363)                                                            |  MISSED |
+|   detection_subset (L381)                                                            |  MISSED |
+|   detection_subset (L399)                                                            |  MISSED |
+|   detection_subset (L416)                                                            | COVERED |
+|   concat_detection_datasets (L591)                                                   |  MISSED |
+|   concat_detection_datasets (L611)                                                   |  MISSED |
+|   concat_detection_datasets (L629)                                                   |  MISSED |
+|   concat_detection_datasets (L648)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/flat_data.py (module)                                               | COVERED |
 |   FlatData (L47)                                                                     | COVERED |
@@ -659,8 +659,8 @@
 |   as_classification_dataset (L189)                                                   |  MISSED |
 |   concat_datasets (L211)                                                             | COVERED |
 |   find_common_transforms_group (L226)                                                | COVERED |
-|   TaskSet (L630)                                                                     | COVERED |
-|     TaskSet.__init__ (L647)                                                          | COVERED |
+|   TaskSet (L631)                                                                     | COVERED |
+|     TaskSet.__init__ (L648)                                                          | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | evaluation/metric_definitions.py (module)                                            |  MISSED |
 |   Metric (L38)                                                                       | COVERED |
