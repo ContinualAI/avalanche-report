@@ -889,6 +889,25 @@
 |     StreamCPUUsage.before_eval (L264)                                                |  MISSED |
 |   cpu_usage_metrics (L272)                                                           | COVERED |
 |--------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/cumulative_accuracies.py (module)                                 |  MISSED |
+|   CumulativeAccuracy (L33)                                                           | COVERED |
+|     CumulativeAccuracy.__init__ (L45)                                                |  MISSED |
+|     CumulativeAccuracy.update (L49)                                                  |  MISSED |
+|     CumulativeAccuracy.result (L84)                                                  | COVERED |
+|     CumulativeAccuracy.reset (L94)                                                   | COVERED |
+|   CumulativeAccuracyPluginMetric (L103)                                              |  MISSED |
+|     CumulativeAccuracyPluginMetric.__init__ (L104)                                   | COVERED |
+|     CumulativeAccuracyPluginMetric.before_training_exp (L120)                        |  MISSED |
+|     CumulativeAccuracyPluginMetric.reset (L146)                                      |  MISSED |
+|     CumulativeAccuracyPluginMetric.result (L149)                                     |  MISSED |
+|     CumulativeAccuracyPluginMetric.update (L152)                                     |  MISSED |
+|   CumulativeForgettingPluginMetric (L185)                                            | COVERED |
+|     CumulativeForgettingPluginMetric.__init__ (L198)                                 | COVERED |
+|     CumulativeForgettingPluginMetric.before_training_exp (L217)                      |  MISSED |
+|     CumulativeForgettingPluginMetric.reset (L250)                                    |  MISSED |
+|     CumulativeForgettingPluginMetric.result (L253)                                   |  MISSED |
+|     CumulativeForgettingPluginMetric.update (L281)                                   |  MISSED |
+|--------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/detection.py (module)                                             |  MISSED |
 |   TensorEncoder (L57)                                                                |  MISSED |
 |     TensorEncoder.__init__ (L58)                                                     |  MISSED |
@@ -2254,6 +2273,7 @@
 | evaluation/metrics/class_accuracy.py                      |    22 |    5 |    17 |    77% |
 | evaluation/metrics/confusion_matrix.py                    |    24 |   14 |    10 |    42% |
 | evaluation/metrics/cpu_usage.py                           |    28 |   12 |    16 |    57% |
+| evaluation/metrics/cumulative_accuracies.py               |    18 |   12 |     6 |    33% |
 | evaluation/metrics/detection.py                           |    23 |   14 |     9 |    39% |
 | evaluation/metrics/disk_usage.py                          |    19 |    4 |    15 |    79% |
 | evaluation/metrics/forgetting_bwt.py                      |    61 |   28 |    33 |    54% |
@@ -2355,5 +2375,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  1966 |  896 |  1070 |  54.4% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
+| TOTAL                                                     |  1984 |  908 |  1076 |  54.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
