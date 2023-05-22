@@ -453,14 +453,14 @@
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)                              |  MISSED |
 |   NCScenario (L28)                                                                    | COVERED |
 |     NCScenario.__init__ (L43)                                                         | COVERED |
-|     NCScenario.get_reproducibility_data (L495)                                        |  MISSED |
-|     NCScenario.classes_in_exp_range (L512)                                            | COVERED |
-|   NCStream (L543)                                                                     |  MISSED |
-|     NCStream.__init__ (L544)                                                          |  MISSED |
-|   NCExperience (L560)                                                                 | COVERED |
-|     NCExperience.__init__ (L567)                                                      | COVERED |
-|     NCExperience.benchmark (L586)                                                     |  MISSED |
-|     NCExperience.benchmark (L594)                                                     |  MISSED |
+|     NCScenario.get_reproducibility_data (L497)                                        |  MISSED |
+|     NCScenario.classes_in_exp_range (L514)                                            | COVERED |
+|   NCStream (L545)                                                                     |  MISSED |
+|     NCStream.__init__ (L546)                                                          |  MISSED |
+|   NCExperience (L562)                                                                 | COVERED |
+|     NCExperience.__init__ (L569)                                                      | COVERED |
+|     NCExperience.benchmark (L588)                                                     |  MISSED |
+|     NCExperience.benchmark (L596)                                                     |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)                                 |  MISSED |
 |   make_nc_transformation_subset (L162)                                                | COVERED |
