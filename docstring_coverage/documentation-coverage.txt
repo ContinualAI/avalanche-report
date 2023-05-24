@@ -436,8 +436,8 @@
 |   split_online_stream (L270)                                                          | COVERED |
 |     split_online_stream.default_online_split_wrapper (L319)                           |  MISSED |
 |     split_online_stream.exps_iter (L333)                                              |  MISSED |
-|   OnlineCLScenario (L364)                                                             |  MISSED |
-|     OnlineCLScenario.__init__ (L365)                                                  | COVERED |
+|   OnlineCLScenario (L366)                                                             |  MISSED |
+|     OnlineCLScenario.__init__ (L367)                                                  | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/rl_scenario.py (module)                                          | COVERED |
 |   RLExperience (L38)                                                                  | COVERED |
