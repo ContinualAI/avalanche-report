@@ -484,28 +484,28 @@
 |     ClassificationDataset.task_pattern_indices (L90)                                  | COVERED |
 |     ClassificationDataset.task_set (L95)                                              | COVERED |
 |     ClassificationDataset.subset (L101)                                               |  MISSED |
-|     ClassificationDataset.concat (L105)                                               |  MISSED |
-|   SupervisedClassificationDataset (L113)                                              |  MISSED |
-|     SupervisedClassificationDataset.__init__ (L114)                                   |  MISSED |
-|     SupervisedClassificationDataset.targets (L124)                                    |  MISSED |
-|     SupervisedClassificationDataset.targets_task_labels (L128)                        |  MISSED |
-|   make_classification_dataset (L142)                                                  |  MISSED |
-|   make_classification_dataset (L157)                                                  |  MISSED |
-|   make_classification_dataset (L172)                                                  |  MISSED |
-|   make_classification_dataset (L186)                                                  | COVERED |
-|   classification_subset (L349)                                                        |  MISSED |
-|   classification_subset (L367)                                                        |  MISSED |
-|   classification_subset (L385)                                                        |  MISSED |
-|   classification_subset (L402)                                                        | COVERED |
-|   make_tensor_classification_dataset (L589)                                           |  MISSED |
-|   make_tensor_classification_dataset (L603)                                           |  MISSED |
-|   make_tensor_classification_dataset (L616)                                           | COVERED |
-|   concat_classification_datasets (L730)                                               |  MISSED |
-|   concat_classification_datasets (L749)                                               |  MISSED |
-|   concat_classification_datasets (L766)                                               |  MISSED |
-|   concat_classification_datasets (L784)                                               | COVERED |
-|   concat_classification_datasets_sequentially (L956)                                  | COVERED |
-|   as_supervised_classification_dataset (L1077)                                        |  MISSED |
+|     ClassificationDataset.concat (L106)                                               |  MISSED |
+|   SupervisedClassificationDataset (L115)                                              |  MISSED |
+|     SupervisedClassificationDataset.__init__ (L116)                                   |  MISSED |
+|     SupervisedClassificationDataset.targets (L126)                                    |  MISSED |
+|     SupervisedClassificationDataset.targets_task_labels (L130)                        |  MISSED |
+|   make_classification_dataset (L144)                                                  |  MISSED |
+|   make_classification_dataset (L159)                                                  |  MISSED |
+|   make_classification_dataset (L174)                                                  |  MISSED |
+|   make_classification_dataset (L188)                                                  | COVERED |
+|   classification_subset (L351)                                                        |  MISSED |
+|   classification_subset (L369)                                                        |  MISSED |
+|   classification_subset (L387)                                                        |  MISSED |
+|   classification_subset (L404)                                                        | COVERED |
+|   make_tensor_classification_dataset (L591)                                           |  MISSED |
+|   make_tensor_classification_dataset (L605)                                           |  MISSED |
+|   make_tensor_classification_dataset (L618)                                           | COVERED |
+|   concat_classification_datasets (L732)                                               |  MISSED |
+|   concat_classification_datasets (L751)                                               |  MISSED |
+|   concat_classification_datasets (L768)                                               |  MISSED |
+|   concat_classification_datasets (L786)                                               | COVERED |
+|   concat_classification_datasets_sequentially (L958)                                  | COVERED |
+|   as_supervised_classification_dataset (L1079)                                        |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/collate_functions.py (module)                                        |  MISSED |
 |   classification_collate_mbatches_fn (L51)                                            | COVERED |
@@ -515,17 +515,19 @@
 |   detection_collate_mbatches_fn (L127)                                                | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data.py (module)                                                     | COVERED |
-|   AvalancheDataset (L49)                                                              | COVERED |
-|     AvalancheDataset.__init__ (L88)                                                   | COVERED |
+|   AvalancheDataset (L50)                                                              | COVERED |
+|     AvalancheDataset.__init__ (L89)                                                   | COVERED |
+|     AvalancheDataset.concat (L251)                                                    | COVERED |
+|     AvalancheDataset.subset (L260)                                                    | COVERED |
 |     AvalancheDataset.transform (L270)                                                 |  MISSED |
 |     AvalancheDataset.update_data_attribute (L277)                                     | COVERED |
-|     AvalancheDataset.train (L397)                                                     | COVERED |
-|     AvalancheDataset.eval (L407)                                                      | COVERED |
-|     AvalancheDataset.with_transforms (L422)                                           | COVERED |
-|     AvalancheDataset.freeze_transforms (L439)                                         | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L455)                            | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L469)                           | COVERED |
-|   make_avalanche_dataset (L507)                                                       | COVERED |
+|     AvalancheDataset.train (L361)                                                     | COVERED |
+|     AvalancheDataset.eval (L371)                                                      | COVERED |
+|     AvalancheDataset.with_transforms (L386)                                           | COVERED |
+|     AvalancheDataset.freeze_transforms (L402)                                         | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L408)                            | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L415)                           | COVERED |
+|   make_avalanche_dataset (L627)                                                       | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                           | COVERED |
 |   DataAttribute (L28)                                                                 | COVERED |
@@ -662,8 +664,8 @@
 |   as_classification_dataset (L189)                                                    |  MISSED |
 |   concat_datasets (L211)                                                              | COVERED |
 |   find_common_transforms_group (L226)                                                 | COVERED |
-|   TaskSet (L631)                                                                      | COVERED |
-|     TaskSet.__init__ (L648)                                                           | COVERED |
+|   TaskSet (L632)                                                                      | COVERED |
+|     TaskSet.__init__ (L649)                                                           | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | distributed/distributed_consistency_verification.py (module)                          |  MISSED |
 |   hash_benchmark (L17)                                                                |  MISSED |
@@ -1791,13 +1793,13 @@
 |     BiCPlugin.__init__ (L47)                                                          | COVERED |
 |     BiCPlugin.before_training (L121)                                                  |  MISSED |
 |     BiCPlugin.before_train_dataset_adaptation (L125)                                  |  MISSED |
-|     BiCPlugin.before_training_exp (L178)                                              | COVERED |
-|     BiCPlugin.after_forward (L223)                                                    |  MISSED |
-|     BiCPlugin.after_eval_forward (L227)                                               |  MISSED |
-|     BiCPlugin.before_backward (L231)                                                  |  MISSED |
-|     BiCPlugin.after_training_exp (L252)                                               |  MISSED |
-|     BiCPlugin.cross_entropy (L315)                                                    | COVERED |
-|     BiCPlugin.get_group_lengths (L321)                                                | COVERED |
+|     BiCPlugin.before_training_exp (L174)                                              | COVERED |
+|     BiCPlugin.after_forward (L219)                                                    |  MISSED |
+|     BiCPlugin.after_eval_forward (L223)                                               |  MISSED |
+|     BiCPlugin.before_backward (L227)                                                  |  MISSED |
+|     BiCPlugin.after_training_exp (L248)                                               |  MISSED |
+|     BiCPlugin.cross_entropy (L311)                                                    | COVERED |
+|     BiCPlugin.get_group_lengths (L317)                                                | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/plugins/checkpoint.py (module)                                               |  MISSED |
 |   CheckpointStorage (L14)                                                             | COVERED |
@@ -2295,7 +2297,7 @@
 | benchmarks/scenarios/new_instances/ni_utils.py            |     1 |    1 |     0 |     0% |
 | benchmarks/utils/classification_dataset.py                |    28 |   19 |     9 |    32% |
 | benchmarks/utils/collate_functions.py                     |     6 |    1 |     5 |    83% |
-| benchmarks/utils/data.py                                  |    12 |    1 |    11 |    92% |
+| benchmarks/utils/data.py                                  |    14 |    1 |    13 |    93% |
 | benchmarks/utils/data_attribute.py                        |    11 |    2 |     9 |    82% |
 | benchmarks/utils/data_loader.py                           |    11 |    1 |    10 |    91% |
 | benchmarks/utils/dataset_definitions.py                   |    11 |    2 |     9 |    82% |
@@ -2424,5 +2426,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2025 |  930 |  1095 |  54.1% |
+| TOTAL                                                     |  2027 |  930 |  1097 |  54.1% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.1%) -----------------
