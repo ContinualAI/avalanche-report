@@ -765,6 +765,19 @@
 | evaluation/plot_utils.py (module)                                                     |  MISSED |
 |   learning_curves_plot (L14)                                                          | COVERED |
 |---------------------------------------------------------------------------------------|---------|
+| evaluation/metrics/acc_matrix.py (module)                                             |  MISSED |
+|   AccuracyMatrixPluginMetric (L10)                                                    | COVERED |
+|     AccuracyMatrixPluginMetric.__init__ (L15)                                         | COVERED |
+|     AccuracyMatrixPluginMetric.reset (L28)                                            | COVERED |
+|     AccuracyMatrixPluginMetric.result (L36)                                           | COVERED |
+|     AccuracyMatrixPluginMetric.add_new_task (L44)                                     | COVERED |
+|     AccuracyMatrixPluginMetric.update (L54)                                           | COVERED |
+|     AccuracyMatrixPluginMetric.after_eval_iteration (L80)                             | COVERED |
+|     AccuracyMatrixPluginMetric.after_eval_exp (L88)                                   | COVERED |
+|     AccuracyMatrixPluginMetric.after_eval (L97)                                       | COVERED |
+|     AccuracyMatrixPluginMetric.before_training (L106)                                 | COVERED |
+|   accuracy_matrix_metrics (L118)                                                      | COVERED |
+|---------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/accuracy.py (module)                                               |  MISSED |
 |   Accuracy (L21)                                                                      | COVERED |
 |     Accuracy.__init__ (L38)                                                           | COVERED |
@@ -2301,6 +2314,7 @@
 | evaluation/metric_results.py                              |     8 |    3 |     5 |    62% |
 | evaluation/metric_utils.py                                |    11 |    4 |     7 |    64% |
 | evaluation/plot_utils.py                                  |     2 |    1 |     1 |    50% |
+| evaluation/metrics/acc_matrix.py                          |    12 |    1 |    11 |    92% |
 | evaluation/metrics/accuracy.py                            |    36 |    8 |    28 |    78% |
 | evaluation/metrics/amca.py                                |    24 |    8 |    16 |    67% |
 | evaluation/metrics/checkpoint.py                          |     7 |    2 |     5 |    71% |
@@ -2410,5 +2424,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2013 |  929 |  1084 |  53.8% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 53.8%) -----------------
+| TOTAL                                                     |  2025 |  930 |  1095 |  54.1% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.1%) -----------------
