@@ -1458,9 +1458,10 @@
 |     TrainEvalModel.eval_adaptation (L486)                                             |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                                 | COVERED |
-|   reset_optimizer (L20)                                                               | COVERED |
-|   update_optimizer (L35)                                                              | COVERED |
-|   add_new_params_to_optimizer (L67)                                                   | COVERED |
+|   compare_keys (L20)                                                                  |  MISSED |
+|   reset_optimizer (L27)                                                               | COVERED |
+|   update_optimizer (L51)                                                              | COVERED |
+|   add_new_params_to_optimizer (L131)                                                  | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | models/generator.py (module)                                                          | COVERED |
 |   Generator (L28)                                                                     | COVERED |
@@ -2010,13 +2011,10 @@
 |     DER.training_epoch (L266)                                                         | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/er_ace.py (module)                                                |  MISSED |
-|   cycle (L19)                                                                         |  MISSED |
-|   OnlineER_ACE (L25)                                                                  | COVERED |
-|     OnlineER_ACE.__init__ (L34)                                                       | COVERED |
-|     OnlineER_ACE.training_epoch (L98)                                                 | COVERED |
-|   ER_ACE (L179)                                                                       | COVERED |
-|     ER_ACE.__init__ (L193)                                                            | COVERED |
-|     ER_ACE.training_epoch (L255)                                                      | COVERED |
+|   cycle (L18)                                                                         |  MISSED |
+|   ER_ACE (L24)                                                                        | COVERED |
+|     ER_ACE.__init__ (L38)                                                             | COVERED |
+|     ER_ACE.training_epoch (L100)                                                      | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                                 |  MISSED |
 |   ICaRL (L23)                                                                         | COVERED |
@@ -2115,8 +2113,8 @@
 |     FromScratchTraining.__init__ (L1437)                                              | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                              |  MISSED |
-|   OnlineNaive (L25)                                                                   | COVERED |
-|     OnlineNaive.__init__ (L37)                                                        | COVERED |
+|   OnlineNaive (L30)                                                                   | COVERED |
+|     OnlineNaive.__init__ (L42)                                                        | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/base.py (module)                                                   |  MISSED |
 |   BaseTemplate (L21)                                                                  | COVERED |
@@ -2157,10 +2155,6 @@
 |     SupervisedTemplate.__init__ (L87)                                                 | COVERED |
 |   SupervisedMetaLearningTemplate (L158)                                               | COVERED |
 |     SupervisedMetaLearningTemplate.__init__ (L213)                                    | COVERED |
-|   OnlineSupervisedTemplate (L284)                                                     | COVERED |
-|     OnlineSupervisedTemplate.__init__ (L339)                                          | COVERED |
-|   OnlineSupervisedMetaLearningTemplate (L401)                                         | COVERED |
-|     OnlineSupervisedMetaLearningTemplate.__init__ (L456)                              | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/strategy_mixin_protocol.py (module)                                |  MISSED |
 |   BaseStrategyProtocol (L22)                                                          |  MISSED |
@@ -2175,17 +2169,11 @@
 |   MetaLearningStrategyProtocol (L126)                                                 |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/observation_type/batch_observation.py (module)                     |  MISSED |
-|   BatchObservation (L7)                                                               |  MISSED |
-|     BatchObservation.model_adaptation (L8)                                            | COVERED |
-|     BatchObservation.make_optimizer (L20)                                             | COVERED |
-|     BatchObservation.check_model_and_optimizer (L30)                                  |  MISSED |
-|---------------------------------------------------------------------------------------|---------|
-| training/templates/observation_type/online_observation.py (module)                    |  MISSED |
-|   SGDStrategyProtocolOnline (L19)                                                     |  MISSED |
-|   OnlineObservation (L29)                                                             |  MISSED |
-|     OnlineObservation.make_optimizer (L31)                                            | COVERED |
-|     OnlineObservation.model_adaptation (L52)                                          | COVERED |
-|     OnlineObservation.check_model_and_optimizer (L79)                                 |  MISSED |
+|   BatchObservation (L15)                                                              |  MISSED |
+|     BatchObservation.__init__ (L16)                                                   |  MISSED |
+|     BatchObservation.model_adaptation (L20)                                           | COVERED |
+|     BatchObservation.make_optimizer (L44)                                             | COVERED |
+|     BatchObservation.check_model_and_optimizer (L73)                                  |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/problem_type/supervised_problem.py (module)                        |  MISSED |
 |   SupervisedProblem (L9)                                                              |  MISSED |
@@ -2327,7 +2315,7 @@
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
 | models/bic_model.py                                       |     4 |    2 |     2 |    50% |
 | models/dynamic_modules.py                                 |    29 |    8 |    21 |    72% |
-| models/dynamic_optimizers.py                              |     4 |    0 |     4 |   100% |
+| models/dynamic_optimizers.py                              |     5 |    1 |     4 |    80% |
 | models/generator.py                                       |    16 |    4 |    12 |    75% |
 | models/helper_method.py                                   |     6 |    2 |     4 |    67% |
 | models/icarl_resnet.py                                    |    14 |   12 |     2 |    14% |
@@ -2382,7 +2370,7 @@
 | training/supervised/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/supervised/der.py                                |     9 |    4 |     5 |    56% |
-| training/supervised/er_ace.py                             |     8 |    2 |     6 |    75% |
+| training/supervised/er_ace.py                             |     5 |    2 |     3 |    60% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
 | training/supervised/l2p.py                                |     5 |    3 |     2 |    40% |
@@ -2394,13 +2382,12 @@
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
 | training/templates/base.py                                |     6 |    2 |     4 |    67% |
 | training/templates/base_sgd.py                            |    26 |    5 |    21 |    81% |
-| training/templates/common_templates.py                    |     9 |    1 |     8 |    89% |
+| training/templates/common_templates.py                    |     5 |    1 |     4 |    80% |
 | training/templates/strategy_mixin_protocol.py             |    11 |   10 |     1 |     9% |
-| training/templates/observation_type/batch_observation.py  |     5 |    3 |     2 |    40% |
-| training/templates/observation_type/online_observation.py |     6 |    4 |     2 |    33% |
+| training/templates/observation_type/batch_observation.py  |     6 |    4 |     2 |    33% |
 | training/templates/problem_type/supervised_problem.py     |     7 |    2 |     5 |    71% |
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2007 |  925 |  1082 |  53.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 53.9%) -----------------
+| TOTAL                                                     |  1996 |  923 |  1073 |  53.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.8%) -----------------
