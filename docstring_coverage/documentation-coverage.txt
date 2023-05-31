@@ -142,10 +142,10 @@
 |     Omniglot.data (L41)                                                               |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchaudio_wrapper.py (module)                                    | COVERED |
-|   speech_commands_collate (L28)                                                       |  MISSED |
-|   SpeechCommandsData (L46)                                                            |  MISSED |
-|     SpeechCommandsData.__init__ (L47)                                                 |  MISSED |
-|   SpeechCommands (L99)                                                                | COVERED |
+|   speech_commands_collate (L29)                                                       |  MISSED |
+|   SpeechCommandsData (L47)                                                            |  MISSED |
+|     SpeechCommandsData.__init__ (L48)                                                 |  MISSED |
+|   SpeechCommands (L101)                                                               | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchvision_wrapper.py (module)                                   | COVERED |
 |   MNIST (L45)                                                                         |  MISSED |
@@ -1443,34 +1443,31 @@
 |     BiasLayer.forward (L27)                                                           |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/dynamic_modules.py (module)                                                    | COVERED |
-|   DynamicModule (L24)                                                                 | COVERED |
-|     DynamicModule.adaptation (L33)                                                    | COVERED |
-|     DynamicModule.train_adaptation (L55)                                              | COVERED |
-|     DynamicModule.eval_adaptation (L63)                                               | COVERED |
-|   MultiTaskModule (L88)                                                               | COVERED |
-|     MultiTaskModule.__init__ (L101)                                                   |  MISSED |
-|     MultiTaskModule.adaptation (L107)                                                 | COVERED |
-|     MultiTaskModule.eval_adaptation (L131)                                            |  MISSED |
-|     MultiTaskModule.train_adaptation (L134)                                           | COVERED |
-|     MultiTaskModule.forward (L141)                                                    | COVERED |
-|     MultiTaskModule.forward_single_task (L175)                                        | COVERED |
-|     MultiTaskModule.forward_all_tasks (L186)                                          | COVERED |
-|   IncrementalClassifier (L201)                                                        | COVERED |
-|     IncrementalClassifier.__init__ (L210)                                             | COVERED |
-|     IncrementalClassifier.adaptation (L234)                                           | COVERED |
-|     IncrementalClassifier.forward (L267)                                              | COVERED |
-|   MultiHeadClassifier (L280)                                                          | COVERED |
-|     MultiHeadClassifier.__init__ (L304)                                               | COVERED |
-|     MultiHeadClassifier.active_units (L340)                                           |  MISSED |
-|     MultiHeadClassifier.task_masks (L349)                                             |  MISSED |
-|     MultiHeadClassifier.adaptation (L355)                                             | COVERED |
-|     MultiHeadClassifier.forward_single_task (L422)                                    | COVERED |
-|   TrainEvalModel (L449)                                                               | COVERED |
-|     TrainEvalModel.__init__ (L458)                                                    | COVERED |
-|     TrainEvalModel.forward (L473)                                                     |  MISSED |
-|     TrainEvalModel.adaptation (L477)                                                  |  MISSED |
-|     TrainEvalModel.train_adaptation (L483)                                            |  MISSED |
-|     TrainEvalModel.eval_adaptation (L486)                                             |  MISSED |
+|   DynamicModule (L23)                                                                 | COVERED |
+|     DynamicModule.adaptation (L32)                                                    | COVERED |
+|     DynamicModule.train_adaptation (L54)                                              | COVERED |
+|     DynamicModule.eval_adaptation (L62)                                               | COVERED |
+|   MultiTaskModule (L87)                                                               | COVERED |
+|     MultiTaskModule.__init__ (L100)                                                   |  MISSED |
+|     MultiTaskModule.adaptation (L106)                                                 | COVERED |
+|     MultiTaskModule.eval_adaptation (L130)                                            |  MISSED |
+|     MultiTaskModule.train_adaptation (L133)                                           | COVERED |
+|     MultiTaskModule.forward (L140)                                                    | COVERED |
+|     MultiTaskModule.forward_single_task (L174)                                        | COVERED |
+|     MultiTaskModule.forward_all_tasks (L185)                                          | COVERED |
+|   IncrementalClassifier (L200)                                                        | COVERED |
+|     IncrementalClassifier.__init__ (L209)                                             | COVERED |
+|     IncrementalClassifier.adaptation (L232)                                           | COVERED |
+|     IncrementalClassifier.forward (L265)                                              | COVERED |
+|   MultiHeadClassifier (L278)                                                          | COVERED |
+|     MultiHeadClassifier.__init__ (L302)                                               | COVERED |
+|     MultiHeadClassifier.active_units (L338)                                           |  MISSED |
+|     MultiHeadClassifier.task_masks (L347)                                             |  MISSED |
+|     MultiHeadClassifier.adaptation (L353)                                             | COVERED |
+|     MultiHeadClassifier.forward_single_task (L420)                                    | COVERED |
+|   TrainEvalModel (L447)                                                               | COVERED |
+|     TrainEvalModel.__init__ (L456)                                                    | COVERED |
+|     TrainEvalModel.forward (L469)                                                     |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                                 | COVERED |
 |   compare_keys (L20)                                                                  |  MISSED |
@@ -1549,7 +1546,7 @@
 | models/ncm_classifier.py (module)                                                     |  MISSED |
 |   NCMClassifier (L5)                                                                  | COVERED |
 |     NCMClassifier.__init__ (L13)                                                      | COVERED |
-|     NCMClassifier.forward (L21)                                                       |  MISSED |
+|     NCMClassifier.forward (L24)                                                       |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                                |  MISSED |
 |   LinearAdapter (L11)                                                                 | COVERED |
@@ -1597,6 +1594,11 @@
 |     ResNet.forward (L114)                                                             |  MISSED |
 |     ResNet.forward_rep (L124)                                                         |  MISSED |
 |   resnet32 (L134)                                                                     |  MISSED |
+|---------------------------------------------------------------------------------------|---------|
+| models/scr_model.py (module)                                                          |  MISSED |
+|   SCRModel (L6)                                                                       | COVERED |
+|     SCRModel.__init__ (L14)                                                           | COVERED |
+|     SCRModel.forward (L29)                                                            |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/simple_cnn.py (module)                                                         |  MISSED |
 |   SimpleCNN (L20)                                                                     | COVERED |
@@ -1688,10 +1690,13 @@
 |   save_checkpoint (L58)                                                               | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/losses.py (module)                                                           |  MISSED |
-|   ICaRLLossPlugin (L9)                                                                | COVERED |
-|     ICaRLLossPlugin.__init__ (L20)                                                    |  MISSED |
-|     ICaRLLossPlugin.before_forward (L28)                                              |  MISSED |
-|     ICaRLLossPlugin.after_training_exp (L51)                                          |  MISSED |
+|   ICaRLLossPlugin (L10)                                                               | COVERED |
+|     ICaRLLossPlugin.__init__ (L21)                                                    |  MISSED |
+|     ICaRLLossPlugin.before_forward (L29)                                              |  MISSED |
+|     ICaRLLossPlugin.after_training_exp (L52)                                          |  MISSED |
+|   SCRLoss (L65)                                                                       | COVERED |
+|     SCRLoss.__init__ (L75)                                                            |  MISSED |
+|     SCRLoss.forward (L82)                                                             | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/regularization.py (module)                                                   | COVERED |
 |   cross_entropy_with_oh_targets (L12)                                                 | COVERED |
@@ -2150,6 +2155,12 @@
 |   OnlineNaive (L30)                                                                   | COVERED |
 |     OnlineNaive.__init__ (L42)                                                        | COVERED |
 |---------------------------------------------------------------------------------------|---------|
+| training/supervised/supervised_contrastive_replay.py (module)                         |  MISSED |
+|   SCR (L18)                                                                           | COVERED |
+|     SCR.__init__ (L34)                                                                | COVERED |
+|     SCR.criterion (L121)                                                              |  MISSED |
+|     SCR.compute_class_means (L159)                                                    |  MISSED |
+|---------------------------------------------------------------------------------------|---------|
 | training/templates/base.py (module)                                                   |  MISSED |
 |   BaseTemplate (L21)                                                                  | COVERED |
 |     BaseTemplate.__init__ (L41)                                                       |  MISSED |
@@ -2349,7 +2360,7 @@
 | models/base_model.py                                      |     3 |    1 |     2 |    67% |
 | models/batch_renorm.py                                    |     4 |    3 |     1 |    25% |
 | models/bic_model.py                                       |     4 |    2 |     2 |    50% |
-| models/dynamic_modules.py                                 |    29 |    8 |    21 |    72% |
+| models/dynamic_modules.py                                 |    26 |    5 |    21 |    81% |
 | models/dynamic_optimizers.py                              |     5 |    1 |     4 |    80% |
 | models/expert_gate.py                                     |    11 |    4 |     7 |    64% |
 | models/generator.py                                       |    16 |    4 |    12 |    75% |
@@ -2363,6 +2374,7 @@
 | models/prompt.py                                          |     5 |    1 |     4 |    80% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
 | models/resnet32.py                                        |    13 |   11 |     2 |    15% |
+| models/scr_model.py                                       |     4 |    2 |     2 |    50% |
 | models/simple_cnn.py                                      |     7 |    5 |     2 |    29% |
 | models/simple_mlp.py                                      |     8 |    5 |     3 |    38% |
 | models/simple_sequence_classifier.py                      |     7 |    7 |     0 |     0% |
@@ -2372,7 +2384,7 @@
 | models/utils.py                                           |    17 |   13 |     4 |    24% |
 | models/vit.py                                             |     9 |    3 |     6 |    67% |
 | training/checkpoint.py                                    |     3 |    1 |     2 |    67% |
-| training/losses.py                                        |     5 |    4 |     1 |    20% |
+| training/losses.py                                        |     8 |    5 |     3 |    38% |
 | training/regularization.py                                |     9 |    2 |     7 |    78% |
 | training/storage_policy.py                                |    42 |   12 |    30 |    71% |
 | training/utils.py                                         |    23 |   14 |     9 |    39% |
@@ -2417,6 +2429,7 @@
 | training/supervised/naive_object_detection.py             |     9 |    3 |     6 |    67% |
 | training/supervised/strategy_wrappers.py                  |    44 |    3 |    41 |    93% |
 | training/supervised/strategy_wrappers_online.py           |     3 |    1 |     2 |    67% |
+| training/supervised/supervised_contrastive_replay.py      |     5 |    3 |     2 |    40% |
 | training/templates/base.py                                |     6 |    2 |     4 |    67% |
 | training/templates/base_sgd.py                            |    26 |    5 |    21 |    81% |
 | training/templates/common_templates.py                    |     5 |    1 |     4 |    80% |
@@ -2426,5 +2439,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2027 |  930 |  1097 |  54.1% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.1%) -----------------
+| TOTAL                                                     |  2036 |  933 |  1103 |  54.2% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
