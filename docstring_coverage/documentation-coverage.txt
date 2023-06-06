@@ -1544,9 +1544,11 @@
 |     MobilenetV1.forward (L81)                                                         |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | models/ncm_classifier.py (module)                                                     |  MISSED |
-|   NCMClassifier (L5)                                                                  | COVERED |
-|     NCMClassifier.__init__ (L13)                                                      | COVERED |
-|     NCMClassifier.forward (L24)                                                       |  MISSED |
+|   NCMClassifier (L6)                                                                  | COVERED |
+|     NCMClassifier.__init__ (L23)                                                      | COVERED |
+|     NCMClassifier.load_state_dict (L36)                                               |  MISSED |
+|     NCMClassifier.forward (L67)                                                       | COVERED |
+|     NCMClassifier.update_class_means_dict (L86)                                       | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                                |  MISSED |
 |   LinearAdapter (L11)                                                                 | COVERED |
@@ -2369,7 +2371,7 @@
 | models/lenet5.py                                          |     4 |    3 |     1 |    25% |
 | models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
 | models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
-| models/ncm_classifier.py                                  |     4 |    2 |     2 |    50% |
+| models/ncm_classifier.py                                  |     6 |    2 |     4 |    67% |
 | models/pnn.py                                             |    19 |    6 |    13 |    68% |
 | models/prompt.py                                          |     5 |    1 |     4 |    80% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
@@ -2439,5 +2441,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2036 |  933 |  1103 |  54.2% |
+| TOTAL                                                     |  2038 |  933 |  1105 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
