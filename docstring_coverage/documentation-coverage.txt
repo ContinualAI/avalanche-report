@@ -1906,7 +1906,7 @@
 |     GEMPlugin.after_backward (L76)                                                    | COVERED |
 |     GEMPlugin.after_training_exp (L110)                                               | COVERED |
 |     GEMPlugin.update_memory (L122)                                                    | COVERED |
-|     GEMPlugin.solve_quadprog (L166)                                                   | COVERED |
+|     GEMPlugin.solve_quadprog (L167)                                                   | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/plugins/generative_replay.py (module)                                        | COVERED |
 |   GenerativeReplayPlugin (L23)                                                        | COVERED |
