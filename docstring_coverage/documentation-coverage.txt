@@ -2188,14 +2188,14 @@
 |     BaseSGDTemplate.train_dataset_adaptation (L324)                                   | COVERED |
 |     BaseSGDTemplate.make_train_dataloader (L388)                                      | COVERED |
 |     BaseSGDTemplate.make_eval_dataloader (L427)                                       | COVERED |
-|     BaseSGDTemplate.eval_dataset_adaptation (L467)                                    | COVERED |
-|   PeriodicEval (L541)                                                                 | COVERED |
-|     PeriodicEval.__init__ (L547)                                                      | COVERED |
-|     PeriodicEval.before_training (L574)                                               | COVERED |
-|     PeriodicEval.before_training_exp (L583)                                           |  MISSED |
-|     PeriodicEval.after_training_epoch (L608)                                          | COVERED |
-|     PeriodicEval.after_training_iteration (L616)                                      | COVERED |
-|     PeriodicEval.after_training_exp (L625)                                            | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L465)                                    | COVERED |
+|   PeriodicEval (L539)                                                                 | COVERED |
+|     PeriodicEval.__init__ (L545)                                                      | COVERED |
+|     PeriodicEval.before_training (L572)                                               | COVERED |
+|     PeriodicEval.before_training_exp (L581)                                           |  MISSED |
+|     PeriodicEval.after_training_epoch (L606)                                          | COVERED |
+|     PeriodicEval.after_training_iteration (L614)                                      | COVERED |
+|     PeriodicEval.after_training_exp (L623)                                            | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                       |  MISSED |
 |   SupervisedTemplate (L27)                                                            | COVERED |
