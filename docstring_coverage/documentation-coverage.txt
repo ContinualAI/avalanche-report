@@ -453,14 +453,14 @@
 | benchmarks/scenarios/new_classes/nc_scenario.py (module)                              |  MISSED |
 |   NCScenario (L28)                                                                    | COVERED |
 |     NCScenario.__init__ (L43)                                                         | COVERED |
-|     NCScenario.get_reproducibility_data (L497)                                        |  MISSED |
-|     NCScenario.classes_in_exp_range (L514)                                            | COVERED |
-|   NCStream (L545)                                                                     |  MISSED |
-|     NCStream.__init__ (L546)                                                          |  MISSED |
-|   NCExperience (L562)                                                                 | COVERED |
-|     NCExperience.__init__ (L569)                                                      | COVERED |
-|     NCExperience.benchmark (L588)                                                     |  MISSED |
-|     NCExperience.benchmark (L596)                                                     |  MISSED |
+|     NCScenario.get_reproducibility_data (L499)                                        |  MISSED |
+|     NCScenario.classes_in_exp_range (L516)                                            | COVERED |
+|   NCStream (L547)                                                                     |  MISSED |
+|     NCStream.__init__ (L548)                                                          |  MISSED |
+|   NCExperience (L564)                                                                 | COVERED |
+|     NCExperience.__init__ (L571)                                                      | COVERED |
+|     NCExperience.benchmark (L590)                                                     |  MISSED |
+|     NCExperience.benchmark (L598)                                                     |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/new_classes/nc_utils.py (module)                                 |  MISSED |
 |   make_nc_transformation_subset (L162)                                                | COVERED |
@@ -517,17 +517,17 @@
 | benchmarks/utils/data.py (module)                                                     | COVERED |
 |   AvalancheDataset (L50)                                                              | COVERED |
 |     AvalancheDataset.__init__ (L89)                                                   | COVERED |
-|     AvalancheDataset.concat (L251)                                                    | COVERED |
-|     AvalancheDataset.subset (L260)                                                    | COVERED |
-|     AvalancheDataset.transform (L270)                                                 |  MISSED |
-|     AvalancheDataset.update_data_attribute (L277)                                     | COVERED |
-|     AvalancheDataset.train (L361)                                                     | COVERED |
-|     AvalancheDataset.eval (L371)                                                      | COVERED |
-|     AvalancheDataset.with_transforms (L386)                                           | COVERED |
-|     AvalancheDataset.freeze_transforms (L402)                                         | COVERED |
-|     AvalancheDataset.remove_current_transform_group (L408)                            | COVERED |
-|     AvalancheDataset.replace_current_transform_group (L415)                           | COVERED |
-|   make_avalanche_dataset (L627)                                                       | COVERED |
+|     AvalancheDataset.concat (L274)                                                    | COVERED |
+|     AvalancheDataset.subset (L283)                                                    | COVERED |
+|     AvalancheDataset.transform (L293)                                                 |  MISSED |
+|     AvalancheDataset.update_data_attribute (L300)                                     | COVERED |
+|     AvalancheDataset.train (L384)                                                     | COVERED |
+|     AvalancheDataset.eval (L394)                                                      | COVERED |
+|     AvalancheDataset.with_transforms (L409)                                           | COVERED |
+|     AvalancheDataset.freeze_transforms (L425)                                         | COVERED |
+|     AvalancheDataset.remove_current_transform_group (L431)                            | COVERED |
+|     AvalancheDataset.replace_current_transform_group (L438)                           | COVERED |
+|   make_avalanche_dataset (L659)                                                       | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                           | COVERED |
 |   DataAttribute (L28)                                                                 | COVERED |
@@ -623,10 +623,10 @@
 |     FlatData.__init__ (L68)                                                           | COVERED |
 |     FlatData.subset (L107)                                                            | COVERED |
 |     FlatData.concat (L125)                                                            | COVERED |
-|   ConstantSequence (L255)                                                             | COVERED |
-|     ConstantSequence.__init__ (L258)                                                  | COVERED |
-|     ConstantSequence.subset (L296)                                                    | COVERED |
-|     ConstantSequence.concat (L304)                                                    | COVERED |
+|   ConstantSequence (L264)                                                             | COVERED |
+|     ConstantSequence.__init__ (L267)                                                  | COVERED |
+|     ConstantSequence.subset (L305)                                                    | COVERED |
+|     ConstantSequence.concat (L313)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/torchvision_wrapper.py (module)                                      | COVERED |
 |   ImageFolder (L19)                                                                   |  MISSED |
