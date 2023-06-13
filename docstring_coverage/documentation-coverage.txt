@@ -1884,7 +1884,7 @@
 |     EWCPlugin.before_backward (L72)                                                   | COVERED |
 |     EWCPlugin.after_training_exp (L112)                                               | COVERED |
 |     EWCPlugin.compute_importances (L131)                                              | COVERED |
-|     EWCPlugin.update_importances (L185)                                               | COVERED |
+|     EWCPlugin.update_importances (L187)                                               | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/plugins/from_scratch_training.py (module)                                    |  MISSED |
 |   FromScratchTrainingPlugin (L11)                                                     | COVERED |
