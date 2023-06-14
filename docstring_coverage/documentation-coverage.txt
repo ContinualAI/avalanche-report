@@ -538,8 +538,8 @@
 |     DataAttribute.val_to_idx (L120)                                                   | COVERED |
 |     DataAttribute.subset (L134)                                                       | COVERED |
 |     DataAttribute.concat (L148)                                                       | COVERED |
-|   TaskLabels (L175)                                                                   | COVERED |
-|     TaskLabels.__init__ (L179)                                                        |  MISSED |
+|   TaskLabels (L176)                                                                   | COVERED |
+|     TaskLabels.__init__ (L180)                                                        |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                              | COVERED |
 |   return_identity (L43)                                                               | COVERED |
@@ -619,14 +619,18 @@
 |   concat_detection_datasets (L648)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/flat_data.py (module)                                                | COVERED |
-|   FlatData (L47)                                                                      | COVERED |
-|     FlatData.__init__ (L68)                                                           | COVERED |
-|     FlatData.subset (L107)                                                            | COVERED |
-|     FlatData.concat (L125)                                                            | COVERED |
-|   ConstantSequence (L264)                                                             | COVERED |
-|     ConstantSequence.__init__ (L267)                                                  | COVERED |
-|     ConstantSequence.subset (L305)                                                    | COVERED |
-|     ConstantSequence.concat (L313)                                                    | COVERED |
+|   LazyIndices (L47)                                                                   | COVERED |
+|     LazyIndices.__init__ (L56)                                                        |  MISSED |
+|   LazyRange (L107)                                                                    | COVERED |
+|     LazyRange.__init__ (L110)                                                         |  MISSED |
+|   FlatData (L138)                                                                     | COVERED |
+|     FlatData.__init__ (L159)                                                          | COVERED |
+|     FlatData.subset (L198)                                                            | COVERED |
+|     FlatData.concat (L216)                                                            | COVERED |
+|   ConstantSequence (L357)                                                             | COVERED |
+|     ConstantSequence.__init__ (L360)                                                  | COVERED |
+|     ConstantSequence.subset (L400)                                                    | COVERED |
+|     ConstantSequence.concat (L408)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/torchvision_wrapper.py (module)                                      | COVERED |
 |   ImageFolder (L19)                                                                   |  MISSED |
@@ -664,8 +668,8 @@
 |   as_classification_dataset (L189)                                                    |  MISSED |
 |   concat_datasets (L211)                                                              | COVERED |
 |   find_common_transforms_group (L226)                                                 | COVERED |
-|   TaskSet (L632)                                                                      | COVERED |
-|     TaskSet.__init__ (L649)                                                           | COVERED |
+|   TaskSet (L644)                                                                      | COVERED |
+|     TaskSet.__init__ (L661)                                                           | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | distributed/distributed_consistency_verification.py (module)                          |  MISSED |
 |   hash_benchmark (L17)                                                                |  MISSED |
@@ -2318,7 +2322,7 @@
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
 | benchmarks/utils/deprecated.py                            |     5 |    5 |     0 |     0% |
 | benchmarks/utils/detection_dataset.py                     |    22 |   16 |     6 |    27% |
-| benchmarks/utils/flat_data.py                             |     9 |    0 |     9 |   100% |
+| benchmarks/utils/flat_data.py                             |    13 |    2 |    11 |    85% |
 | benchmarks/utils/torchvision_wrapper.py                   |     3 |    2 |     1 |    33% |
 | benchmarks/utils/transform_groups.py                      |    13 |    8 |     5 |    38% |
 | benchmarks/utils/transforms.py                            |    10 |    5 |     5 |    50% |
@@ -2441,5 +2445,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2038 |  933 |  1105 |  54.2% |
+| TOTAL                                                     |  2042 |  935 |  1107 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
