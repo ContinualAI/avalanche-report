@@ -940,15 +940,15 @@
 |   CumulativeAccuracyPluginMetric (L107)                                               |  MISSED |
 |     CumulativeAccuracyPluginMetric.__init__ (L110)                                    | COVERED |
 |     CumulativeAccuracyPluginMetric.before_training_exp (L126)                         |  MISSED |
-|     CumulativeAccuracyPluginMetric.reset (L152)                                       |  MISSED |
-|     CumulativeAccuracyPluginMetric.result (L155)                                      |  MISSED |
-|     CumulativeAccuracyPluginMetric.update (L158)                                      |  MISSED |
-|   CumulativeForgettingPluginMetric (L193)                                             | COVERED |
-|     CumulativeForgettingPluginMetric.__init__ (L208)                                  | COVERED |
-|     CumulativeForgettingPluginMetric.before_training_exp (L226)                       |  MISSED |
-|     CumulativeForgettingPluginMetric.reset (L259)                                     |  MISSED |
-|     CumulativeForgettingPluginMetric.result (L262)                                    |  MISSED |
-|     CumulativeForgettingPluginMetric.update (L291)                                    |  MISSED |
+|     CumulativeAccuracyPluginMetric.reset (L149)                                       |  MISSED |
+|     CumulativeAccuracyPluginMetric.result (L152)                                      |  MISSED |
+|     CumulativeAccuracyPluginMetric.update (L155)                                      |  MISSED |
+|   CumulativeForgettingPluginMetric (L190)                                             | COVERED |
+|     CumulativeForgettingPluginMetric.__init__ (L205)                                  | COVERED |
+|     CumulativeForgettingPluginMetric.before_training_exp (L223)                       |  MISSED |
+|     CumulativeForgettingPluginMetric.reset (L256)                                     |  MISSED |
+|     CumulativeForgettingPluginMetric.result (L259)                                    |  MISSED |
+|     CumulativeForgettingPluginMetric.update (L288)                                    |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/detection.py (module)                                              |  MISSED |
 |   TensorEncoder (L57)                                                                 |  MISSED |
