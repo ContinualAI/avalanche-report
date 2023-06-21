@@ -935,20 +935,20 @@
 |   CumulativeAccuracy (L33)                                                            | COVERED |
 |     CumulativeAccuracy.__init__ (L45)                                                 |  MISSED |
 |     CumulativeAccuracy.update (L49)                                                   |  MISSED |
-|     CumulativeAccuracy.result (L88)                                                   | COVERED |
-|     CumulativeAccuracy.reset (L98)                                                    | COVERED |
-|   CumulativeAccuracyPluginMetric (L107)                                               |  MISSED |
-|     CumulativeAccuracyPluginMetric.__init__ (L110)                                    | COVERED |
-|     CumulativeAccuracyPluginMetric.before_training_exp (L126)                         |  MISSED |
-|     CumulativeAccuracyPluginMetric.reset (L149)                                       |  MISSED |
-|     CumulativeAccuracyPluginMetric.result (L152)                                      |  MISSED |
-|     CumulativeAccuracyPluginMetric.update (L155)                                      |  MISSED |
-|   CumulativeForgettingPluginMetric (L190)                                             | COVERED |
-|     CumulativeForgettingPluginMetric.__init__ (L205)                                  | COVERED |
-|     CumulativeForgettingPluginMetric.before_training_exp (L223)                       |  MISSED |
-|     CumulativeForgettingPluginMetric.reset (L256)                                     |  MISSED |
-|     CumulativeForgettingPluginMetric.result (L259)                                    |  MISSED |
-|     CumulativeForgettingPluginMetric.update (L288)                                    |  MISSED |
+|     CumulativeAccuracy.result (L91)                                                   | COVERED |
+|     CumulativeAccuracy.reset (L101)                                                   | COVERED |
+|   CumulativeAccuracyPluginMetric (L110)                                               |  MISSED |
+|     CumulativeAccuracyPluginMetric.__init__ (L113)                                    | COVERED |
+|     CumulativeAccuracyPluginMetric.before_training_exp (L129)                         |  MISSED |
+|     CumulativeAccuracyPluginMetric.reset (L152)                                       |  MISSED |
+|     CumulativeAccuracyPluginMetric.result (L155)                                      |  MISSED |
+|     CumulativeAccuracyPluginMetric.update (L158)                                      |  MISSED |
+|   CumulativeForgettingPluginMetric (L193)                                             | COVERED |
+|     CumulativeForgettingPluginMetric.__init__ (L208)                                  | COVERED |
+|     CumulativeForgettingPluginMetric.before_training_exp (L226)                       |  MISSED |
+|     CumulativeForgettingPluginMetric.reset (L259)                                     |  MISSED |
+|     CumulativeForgettingPluginMetric.result (L262)                                    |  MISSED |
+|     CumulativeForgettingPluginMetric.update (L291)                                    |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/detection.py (module)                                              |  MISSED |
 |   TensorEncoder (L57)                                                                 |  MISSED |
@@ -1759,28 +1759,30 @@
 |     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L587)         |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                            | COVERED |
-|   trigger_plugins (L28)                                                               | COVERED |
-|   load_all_dataset (L38)                                                              | COVERED |
-|   zerolike_params_dict (L82)                                                          | COVERED |
-|   copy_params_dict (L94)                                                              | COVERED |
-|   LayerAndParameter (L112)                                                            |  MISSED |
-|   get_layers_and_params (L119)                                                        |  MISSED |
-|   get_layer_by_name (L139)                                                            |  MISSED |
-|   get_last_fc_layer (L146)                                                            |  MISSED |
-|   swap_last_fc_layer (L158)                                                           |  MISSED |
-|   adapt_classification_layer (L163)                                                   |  MISSED |
-|   replace_bn_with_brn (L181)                                                          |  MISSED |
-|   change_brn_pars (L218)                                                              |  MISSED |
-|   freeze_everything (L233)                                                            |  MISSED |
-|   unfreeze_everything (L241)                                                          |  MISSED |
-|   freeze_up_to (L249)                                                                 | COVERED |
-|   examples_per_class (L310)                                                           |  MISSED |
-|   ParamData (L324)                                                                    |  MISSED |
-|     ParamData.__init__ (L325)                                                         | COVERED |
-|     ParamData.reset_like (L366)                                                       | COVERED |
-|     ParamData.expand (L382)                                                           | COVERED |
-|     ParamData.data (L416)                                                             |  MISSED |
-|     ParamData.data (L420)                                                             |  MISSED |
+|   at_task_boundary (L29)                                                              | COVERED |
+|   cycle (L56)                                                                         |  MISSED |
+|   trigger_plugins (L62)                                                               | COVERED |
+|   load_all_dataset (L72)                                                              | COVERED |
+|   zerolike_params_dict (L116)                                                         | COVERED |
+|   copy_params_dict (L128)                                                             | COVERED |
+|   LayerAndParameter (L146)                                                            |  MISSED |
+|   get_layers_and_params (L153)                                                        |  MISSED |
+|   get_layer_by_name (L173)                                                            |  MISSED |
+|   get_last_fc_layer (L180)                                                            |  MISSED |
+|   swap_last_fc_layer (L192)                                                           |  MISSED |
+|   adapt_classification_layer (L197)                                                   |  MISSED |
+|   replace_bn_with_brn (L215)                                                          |  MISSED |
+|   change_brn_pars (L252)                                                              |  MISSED |
+|   freeze_everything (L267)                                                            |  MISSED |
+|   unfreeze_everything (L275)                                                          |  MISSED |
+|   freeze_up_to (L283)                                                                 | COVERED |
+|   examples_per_class (L344)                                                           |  MISSED |
+|   ParamData (L358)                                                                    |  MISSED |
+|     ParamData.__init__ (L359)                                                         | COVERED |
+|     ParamData.reset_like (L400)                                                       | COVERED |
+|     ParamData.expand (L416)                                                           | COVERED |
+|     ParamData.data (L450)                                                             |  MISSED |
+|     ParamData.data (L454)                                                             |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/determinism/cuda_rng.py (module)                                             |  MISSED |
 |   cuda_rng_seed (L7)                                                                  | COVERED |
@@ -2040,8 +2042,7 @@
 |     StreamingLDA.load_model (L249)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/der.py (module)                                                   |  MISSED |
-|   compute_dataset_logits (L34)                                                        |  MISSED |
-|   cycle (L50)                                                                         |  MISSED |
+|   compute_dataset_logits (L35)                                                        |  MISSED |
 |   ClassBalancedBufferWithLogits (L56)                                                 | COVERED |
 |     ClassBalancedBufferWithLogits.__init__ (L61)                                      | COVERED |
 |     ClassBalancedBufferWithLogits.update (L85)                                        |  MISSED |
@@ -2050,10 +2051,9 @@
 |     DER.training_epoch (L266)                                                         | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/er_ace.py (module)                                                |  MISSED |
-|   cycle (L18)                                                                         |  MISSED |
-|   ER_ACE (L24)                                                                        | COVERED |
-|     ER_ACE.__init__ (L38)                                                             | COVERED |
-|     ER_ACE.training_epoch (L100)                                                      | COVERED |
+|   ER_ACE (L19)                                                                        | COVERED |
+|     ER_ACE.__init__ (L33)                                                             | COVERED |
+|     ER_ACE.training_epoch (L95)                                                       | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/expert_gate.py (module)                                           |  MISSED |
 |   ExpertGateStrategy (L34)                                                            | COVERED |
@@ -2221,11 +2221,11 @@
 |   MetaLearningStrategyProtocol (L126)                                                 |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/observation_type/batch_observation.py (module)                     |  MISSED |
-|   BatchObservation (L15)                                                              |  MISSED |
-|     BatchObservation.__init__ (L16)                                                   |  MISSED |
-|     BatchObservation.model_adaptation (L20)                                           | COVERED |
-|     BatchObservation.make_optimizer (L44)                                             | COVERED |
-|     BatchObservation.check_model_and_optimizer (L73)                                  |  MISSED |
+|   BatchObservation (L16)                                                              |  MISSED |
+|     BatchObservation.__init__ (L17)                                                   |  MISSED |
+|     BatchObservation.model_adaptation (L21)                                           | COVERED |
+|     BatchObservation.make_optimizer (L43)                                             | COVERED |
+|     BatchObservation.check_model_and_optimizer (L72)                                  |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/problem_type/supervised_problem.py (module)                        |  MISSED |
 |   SupervisedProblem (L9)                                                              |  MISSED |
@@ -2394,7 +2394,7 @@
 | training/losses.py                                        |     8 |    5 |     3 |    38% |
 | training/regularization.py                                |     9 |    2 |     7 |    78% |
 | training/storage_policy.py                                |    42 |   12 |    30 |    71% |
-| training/utils.py                                         |    23 |   14 |     9 |    39% |
+| training/utils.py                                         |    25 |   15 |    10 |    40% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
 | training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
@@ -2424,8 +2424,8 @@
 | training/supervised/ar1.py                                |     6 |    3 |     3 |    50% |
 | training/supervised/cumulative.py                         |     4 |    1 |     3 |    75% |
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
-| training/supervised/der.py                                |     9 |    4 |     5 |    56% |
-| training/supervised/er_ace.py                             |     5 |    2 |     3 |    60% |
+| training/supervised/der.py                                |     8 |    3 |     5 |    62% |
+| training/supervised/er_ace.py                             |     4 |    1 |     3 |    75% |
 | training/supervised/expert_gate.py                        |     3 |    1 |     2 |    67% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
@@ -2446,5 +2446,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2043 |  935 |  1108 |  54.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
+| TOTAL                                                     |  2043 |  934 |  1109 |  54.3% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
