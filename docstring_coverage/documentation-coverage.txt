@@ -1553,6 +1553,7 @@
 |     NCMClassifier.load_state_dict (L36)                                               |  MISSED |
 |     NCMClassifier.forward (L67)                                                       | COVERED |
 |     NCMClassifier.update_class_means_dict (L86)                                       | COVERED |
+|     NCMClassifier.replace_class_means_dict (L109)                                     | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                                |  MISSED |
 |   LinearAdapter (L11)                                                                 | COVERED |
@@ -2375,7 +2376,7 @@
 | models/lenet5.py                                          |     4 |    3 |     1 |    25% |
 | models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
 | models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
-| models/ncm_classifier.py                                  |     6 |    2 |     4 |    67% |
+| models/ncm_classifier.py                                  |     7 |    2 |     5 |    71% |
 | models/pnn.py                                             |    19 |    6 |    13 |    68% |
 | models/prompt.py                                          |     5 |    1 |     4 |    80% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
@@ -2445,5 +2446,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2042 |  935 |  1107 |  54.2% |
+| TOTAL                                                     |  2043 |  935 |  1108 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
