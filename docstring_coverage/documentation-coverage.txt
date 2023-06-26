@@ -1701,9 +1701,9 @@
 |     ICaRLLossPlugin.__init__ (L21)                                                    |  MISSED |
 |     ICaRLLossPlugin.before_forward (L29)                                              |  MISSED |
 |     ICaRLLossPlugin.after_training_exp (L52)                                          |  MISSED |
-|   SCRLoss (L65)                                                                       | COVERED |
-|     SCRLoss.__init__ (L75)                                                            |  MISSED |
-|     SCRLoss.forward (L82)                                                             | COVERED |
+|   SCRLoss (L64)                                                                       | COVERED |
+|     SCRLoss.__init__ (L74)                                                            |  MISSED |
+|     SCRLoss.forward (L81)                                                             | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/regularization.py (module)                                                   | COVERED |
 |   cross_entropy_with_oh_targets (L12)                                                 | COVERED |
