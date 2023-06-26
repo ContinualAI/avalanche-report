@@ -542,16 +542,20 @@
 |     TaskLabels.__init__ (L180)                                                        |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                              | COVERED |
-|   return_identity (L43)                                                               | COVERED |
-|   collate_from_data_or_kwargs (L52)                                                   |  MISSED |
-|   TaskBalancedDataLoader (L59)                                                        | COVERED |
-|     TaskBalancedDataLoader.__init__ (L62)                                             | COVERED |
-|   GroupBalancedDataLoader (L123)                                                      | COVERED |
-|     GroupBalancedDataLoader.__init__ (L126)                                           | COVERED |
-|   GroupBalancedInfiniteDataLoader (L260)                                              | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L264)                                   | COVERED |
-|   ReplayDataLoader (L327)                                                             | COVERED |
-|     ReplayDataLoader.__init__ (L330)                                                  | COVERED |
+|   return_identity (L41)                                                               | COVERED |
+|   collate_from_data_or_kwargs (L50)                                                   |  MISSED |
+|   MultiDatasetDataLoader (L57)                                                        | COVERED |
+|     MultiDatasetDataLoader.__init__ (L60)                                             | COVERED |
+|   GroupBalancedDataLoader (L240)                                                      | COVERED |
+|     GroupBalancedDataLoader.__init__ (L243)                                           | COVERED |
+|   TaskBalancedDataLoader (L297)                                                       | COVERED |
+|     TaskBalancedDataLoader.__init__ (L300)                                            | COVERED |
+|   GroupBalancedInfiniteDataLoader (L352)                                              | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L356)                                   | COVERED |
+|   ReplayDataLoader (L395)                                                             | COVERED |
+|     ReplayDataLoader.__init__ (L398)                                                  | COVERED |
+|   MultiDatasetSampler (L548)                                                          | COVERED |
+|     MultiDatasetSampler.__init__ (L552)                                               |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                      |  MISSED |
 |   IDataset (L35)                                                                      | COVERED |
@@ -598,25 +602,25 @@
 | benchmarks/utils/detection_dataset.py (module)                                        | COVERED |
 |   DetectionDataset (L75)                                                              |  MISSED |
 |     DetectionDataset.task_pattern_indices (L77)                                       | COVERED |
-|     DetectionDataset.task_set (L84)                                                   | COVERED |
-|     DetectionDataset.subset (L89)                                                     |  MISSED |
+|     DetectionDataset.task_set (L82)                                                   | COVERED |
+|     DetectionDataset.subset (L88)                                                     |  MISSED |
 |     DetectionDataset.concat (L93)                                                     |  MISSED |
-|   SupervisedDetectionDataset (L98)                                                    |  MISSED |
-|     SupervisedDetectionDataset.__init__ (L99)                                         |  MISSED |
-|     SupervisedDetectionDataset.targets (L125)                                         |  MISSED |
-|     SupervisedDetectionDataset.targets_task_labels (L129)                             |  MISSED |
-|   make_detection_dataset (L142)                                                       |  MISSED |
-|   make_detection_dataset (L157)                                                       |  MISSED |
-|   make_detection_dataset (L172)                                                       |  MISSED |
-|   make_detection_dataset (L186)                                                       | COVERED |
-|   detection_subset (L363)                                                             |  MISSED |
-|   detection_subset (L381)                                                             |  MISSED |
-|   detection_subset (L399)                                                             |  MISSED |
-|   detection_subset (L416)                                                             | COVERED |
-|   concat_detection_datasets (L591)                                                    |  MISSED |
-|   concat_detection_datasets (L611)                                                    |  MISSED |
-|   concat_detection_datasets (L629)                                                    |  MISSED |
-|   concat_detection_datasets (L648)                                                    | COVERED |
+|   SupervisedDetectionDataset (L102)                                                   |  MISSED |
+|     SupervisedDetectionDataset.__init__ (L103)                                        |  MISSED |
+|     SupervisedDetectionDataset.targets (L129)                                         |  MISSED |
+|     SupervisedDetectionDataset.targets_task_labels (L133)                             |  MISSED |
+|   make_detection_dataset (L146)                                                       |  MISSED |
+|   make_detection_dataset (L161)                                                       |  MISSED |
+|   make_detection_dataset (L176)                                                       |  MISSED |
+|   make_detection_dataset (L190)                                                       | COVERED |
+|   detection_subset (L367)                                                             |  MISSED |
+|   detection_subset (L385)                                                             |  MISSED |
+|   detection_subset (L403)                                                             |  MISSED |
+|   detection_subset (L420)                                                             | COVERED |
+|   concat_detection_datasets (L595)                                                    |  MISSED |
+|   concat_detection_datasets (L615)                                                    |  MISSED |
+|   concat_detection_datasets (L633)                                                    |  MISSED |
+|   concat_detection_datasets (L652)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/flat_data.py (module)                                                | COVERED |
 |   LazyIndices (L47)                                                                   | COVERED |
@@ -2104,14 +2108,14 @@
 |     MER.__init__ (L50)                                                                | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                                |  MISSED |
-|   ObjectDetectionTemplate (L31)                                                       | COVERED |
-|     ObjectDetectionTemplate.__init__ (L51)                                            | COVERED |
-|     ObjectDetectionTemplate.make_train_dataloader (L130)                              | COVERED |
-|     ObjectDetectionTemplate.make_eval_dataloader (L171)                               | COVERED |
-|     ObjectDetectionTemplate.criterion (L211)                                          | COVERED |
-|     ObjectDetectionTemplate.forward (L236)                                            | COVERED |
-|     ObjectDetectionTemplate.backward (L265)                                           |  MISSED |
-|     ObjectDetectionTemplate.optimizer_step (L271)                                     |  MISSED |
+|   ObjectDetectionTemplate (L32)                                                       | COVERED |
+|     ObjectDetectionTemplate.__init__ (L52)                                            | COVERED |
+|     ObjectDetectionTemplate.make_train_dataloader (L131)                              | COVERED |
+|     ObjectDetectionTemplate.make_eval_dataloader (L172)                               | COVERED |
+|     ObjectDetectionTemplate.criterion (L212)                                          | COVERED |
+|     ObjectDetectionTemplate.forward (L237)                                            | COVERED |
+|     ObjectDetectionTemplate.backward (L266)                                           |  MISSED |
+|     ObjectDetectionTemplate.optimizer_step (L272)                                     |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                     |  MISSED |
 |   Naive (L53)                                                                         | COVERED |
@@ -2240,8 +2244,8 @@
 |     MetaUpdate.training_epoch (L7)                                                    | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 | training/templates/update_type/sgd_update.py (module)                                 |  MISSED |
-|   SGDUpdate (L6)                                                                      |  MISSED |
-|     SGDUpdate.training_epoch (L8)                                                     | COVERED |
+|   SGDUpdate (L5)                                                                      |  MISSED |
+|     SGDUpdate.training_epoch (L7)                                                     | COVERED |
 |---------------------------------------------------------------------------------------|---------|
 
 ----------------------------------- Summary ------------------------------------
@@ -2317,7 +2321,7 @@
 | benchmarks/utils/collate_functions.py                     |     6 |    1 |     5 |    83% |
 | benchmarks/utils/data.py                                  |    14 |    1 |    13 |    93% |
 | benchmarks/utils/data_attribute.py                        |    11 |    2 |     9 |    82% |
-| benchmarks/utils/data_loader.py                           |    11 |    1 |    10 |    91% |
+| benchmarks/utils/data_loader.py                           |    15 |    2 |    13 |    87% |
 | benchmarks/utils/dataset_definitions.py                   |    11 |    2 |     9 |    82% |
 | benchmarks/utils/dataset_utils.py                         |    12 |    6 |     6 |    50% |
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
@@ -2446,5 +2450,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2043 |  934 |  1109 |  54.3% |
+| TOTAL                                                     |  2047 |  935 |  1112 |  54.3% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
