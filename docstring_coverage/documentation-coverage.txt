@@ -542,20 +542,20 @@
 |     TaskLabels.__init__ (L180)                                                        |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                              | COVERED |
-|   return_identity (L41)                                                               | COVERED |
-|   collate_from_data_or_kwargs (L50)                                                   |  MISSED |
-|   MultiDatasetDataLoader (L57)                                                        | COVERED |
-|     MultiDatasetDataLoader.__init__ (L60)                                             | COVERED |
-|   GroupBalancedDataLoader (L240)                                                      | COVERED |
-|     GroupBalancedDataLoader.__init__ (L243)                                           | COVERED |
-|   TaskBalancedDataLoader (L297)                                                       | COVERED |
-|     TaskBalancedDataLoader.__init__ (L300)                                            | COVERED |
-|   GroupBalancedInfiniteDataLoader (L352)                                              | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L356)                                   | COVERED |
-|   ReplayDataLoader (L395)                                                             | COVERED |
-|     ReplayDataLoader.__init__ (L398)                                                  | COVERED |
-|   MultiDatasetSampler (L548)                                                          | COVERED |
-|     MultiDatasetSampler.__init__ (L552)                                               |  MISSED |
+|   return_identity (L40)                                                               | COVERED |
+|   collate_from_data_or_kwargs (L49)                                                   |  MISSED |
+|   MultiDatasetDataLoader (L56)                                                        | COVERED |
+|     MultiDatasetDataLoader.__init__ (L59)                                             | COVERED |
+|   GroupBalancedDataLoader (L239)                                                      | COVERED |
+|     GroupBalancedDataLoader.__init__ (L242)                                           | COVERED |
+|   TaskBalancedDataLoader (L296)                                                       | COVERED |
+|     TaskBalancedDataLoader.__init__ (L299)                                            | COVERED |
+|   GroupBalancedInfiniteDataLoader (L351)                                              | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L355)                                   | COVERED |
+|   ReplayDataLoader (L394)                                                             | COVERED |
+|     ReplayDataLoader.__init__ (L397)                                                  | COVERED |
+|   MultiDatasetSampler (L547)                                                          | COVERED |
+|     MultiDatasetSampler.__init__ (L551)                                               |  MISSED |
 |---------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                      |  MISSED |
 |   IDataset (L35)                                                                      | COVERED |
