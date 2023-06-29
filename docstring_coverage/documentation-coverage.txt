@@ -1983,6 +1983,15 @@
 |     MIRPlugin.before_backward (L66)                                                  |  MISSED |
 |     MIRPlugin.after_training_exp (L115)                                              |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
+| training/plugins/rar.py (module)                                                     |  MISSED |
+|   RARPlugin (L21)                                                                    | COVERED |
+|     RARPlugin.__init__ (L48)                                                         | COVERED |
+|     RARPlugin.before_training_exp (L104)                                             | COVERED |
+|     RARPlugin.before_backward (L145)                                                 | COVERED |
+|     RARPlugin.after_training_exp (L215)                                              |  MISSED |
+|     RARPlugin.get_buffer_batch (L218)                                                | COVERED |
+|     RARPlugin.mifgsm_attack (L233)                                                   | COVERED |
+|--------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                  |  MISSED |
 |   ReplayPlugin (L15)                                                                 | COVERED |
 |     ReplayPlugin.__init__ (L47)                                                      |  MISSED |
@@ -2421,6 +2430,7 @@
 | training/plugins/lwf.py                                   |     5 |    1 |     4 |    80% |
 | training/plugins/mas.py                                   |     5 |    3 |     2 |    40% |
 | training/plugins/mir.py                                   |     7 |    5 |     2 |    29% |
+| training/plugins/rar.py                                   |     8 |    2 |     6 |    75% |
 | training/plugins/replay.py                                |     5 |    3 |     2 |    40% |
 | training/plugins/rwalk.py                                 |     8 |    6 |     2 |    25% |
 | training/plugins/strategy_plugin.py                       |     1 |    1 |     0 |     0% |
@@ -2450,5 +2460,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2047 |  935 |  1112 |  54.3% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.3%) -----------------
+| TOTAL                                                     |  2055 |  937 |  1118 |  54.4% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
