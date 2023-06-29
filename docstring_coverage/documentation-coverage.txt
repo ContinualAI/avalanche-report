@@ -1986,11 +1986,11 @@
 | training/plugins/rar.py (module)                                                     |  MISSED |
 |   RARPlugin (L21)                                                                    | COVERED |
 |     RARPlugin.__init__ (L48)                                                         | COVERED |
-|     RARPlugin.before_training_exp (L104)                                             | COVERED |
-|     RARPlugin.before_backward (L145)                                                 | COVERED |
-|     RARPlugin.after_training_exp (L215)                                              |  MISSED |
-|     RARPlugin.get_buffer_batch (L218)                                                | COVERED |
-|     RARPlugin.mifgsm_attack (L233)                                                   | COVERED |
+|     RARPlugin.before_training_exp (L102)                                             | COVERED |
+|     RARPlugin.before_backward (L143)                                                 | COVERED |
+|     RARPlugin.after_training_exp (L213)                                              |  MISSED |
+|     RARPlugin.get_buffer_batch (L216)                                                | COVERED |
+|     RARPlugin.mifgsm_attack (L231)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                  |  MISSED |
 |   ReplayPlugin (L15)                                                                 | COVERED |
