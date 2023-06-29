@@ -1552,12 +1552,12 @@
 |     MobilenetV1.forward (L79)                                                        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/ncm_classifier.py (module)                                                    |  MISSED |
-|   NCMClassifier (L6)                                                                 | COVERED |
-|     NCMClassifier.__init__ (L23)                                                     | COVERED |
-|     NCMClassifier.load_state_dict (L35)                                              |  MISSED |
-|     NCMClassifier.forward (L65)                                                      | COVERED |
-|     NCMClassifier.update_class_means_dict (L84)                                      | COVERED |
-|     NCMClassifier.replace_class_means_dict (L106)                                    | COVERED |
+|   NCMClassifier (L7)                                                                 | COVERED |
+|     NCMClassifier.__init__ (L24)                                                     | COVERED |
+|     NCMClassifier.load_state_dict (L36)                                              |  MISSED |
+|     NCMClassifier.forward (L66)                                                      | COVERED |
+|     NCMClassifier.update_class_means_dict (L85)                                      | COVERED |
+|     NCMClassifier.replace_class_means_dict (L114)                                    | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                               |  MISSED |
 |   LinearAdapter (L11)                                                                | COVERED |
