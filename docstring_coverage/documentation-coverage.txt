@@ -1467,15 +1467,15 @@
 |     IncrementalClassifier.__init__ (L204)                                            | COVERED |
 |     IncrementalClassifier.adaptation (L227)                                          | COVERED |
 |     IncrementalClassifier.forward (L259)                                             | COVERED |
-|   MultiHeadClassifier (L272)                                                         | COVERED |
-|     MultiHeadClassifier.__init__ (L296)                                              | COVERED |
-|     MultiHeadClassifier.active_units (L332)                                          |  MISSED |
-|     MultiHeadClassifier.task_masks (L341)                                            |  MISSED |
-|     MultiHeadClassifier.adaptation (L347)                                            | COVERED |
-|     MultiHeadClassifier.forward_single_task (L406)                                   | COVERED |
-|   TrainEvalModel (L432)                                                              | COVERED |
-|     TrainEvalModel.__init__ (L441)                                                   | COVERED |
-|     TrainEvalModel.forward (L454)                                                    |  MISSED |
+|   MultiHeadClassifier (L273)                                                         | COVERED |
+|     MultiHeadClassifier.__init__ (L297)                                              | COVERED |
+|     MultiHeadClassifier.active_units (L333)                                          |  MISSED |
+|     MultiHeadClassifier.task_masks (L342)                                            |  MISSED |
+|     MultiHeadClassifier.adaptation (L348)                                            | COVERED |
+|     MultiHeadClassifier.forward_single_task (L407)                                   | COVERED |
+|   TrainEvalModel (L433)                                                              | COVERED |
+|     TrainEvalModel.__init__ (L442)                                                   | COVERED |
+|     TrainEvalModel.forward (L455)                                                    |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                                | COVERED |
 |   compare_keys (L20)                                                                 |  MISSED |
@@ -1988,9 +1988,9 @@
 |     RARPlugin.__init__ (L48)                                                         | COVERED |
 |     RARPlugin.before_training_exp (L102)                                             | COVERED |
 |     RARPlugin.before_backward (L143)                                                 | COVERED |
-|     RARPlugin.after_training_exp (L213)                                              |  MISSED |
-|     RARPlugin.get_buffer_batch (L216)                                                | COVERED |
-|     RARPlugin.mifgsm_attack (L231)                                                   | COVERED |
+|     RARPlugin.after_training_exp (L207)                                              |  MISSED |
+|     RARPlugin.get_buffer_batch (L210)                                                | COVERED |
+|     RARPlugin.mifgsm_attack (L225)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                  |  MISSED |
 |   ReplayPlugin (L15)                                                                 | COVERED |
