@@ -2111,10 +2111,10 @@
 | training/supervised/mer.py (module)                                                  |  MISSED |
 |   MERBuffer (L16)                                                                    |  MISSED |
 |     MERBuffer.__init__ (L17)                                                         |  MISSED |
-|     MERBuffer.update (L24)                                                           |  MISSED |
-|     MERBuffer.get_batch (L30)                                                        |  MISSED |
-|   MER (L53)                                                                          |  MISSED |
-|     MER.__init__ (L54)                                                               | COVERED |
+|     MERBuffer.update (L22)                                                           |  MISSED |
+|     MERBuffer.get_batch (L28)                                                        |  MISSED |
+|   MER (L51)                                                                          |  MISSED |
+|     MER.__init__ (L52)                                                               | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/naive_object_detection.py (module)                               |  MISSED |
 |   ObjectDetectionTemplate (L32)                                                      | COVERED |
@@ -2179,7 +2179,7 @@
 |   SCR (L18)                                                                          | COVERED |
 |     SCR.__init__ (L35)                                                               | COVERED |
 |     SCR.criterion (L127)                                                             |  MISSED |
-|     SCR.compute_class_means (L163)                                                   |  MISSED |
+|     SCR.compute_class_means (L165)                                                   |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/templates/base.py (module)                                                  |  MISSED |
 |   BaseTemplate (L20)                                                                 | COVERED |
