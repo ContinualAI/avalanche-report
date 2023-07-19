@@ -851,12 +851,12 @@
 |   amca_metrics (L421)                                                                | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/checkpoint.py (module)                                            |  MISSED |
-|   WeightCheckpoint (L25)                                                             | COVERED |
-|     WeightCheckpoint.__init__ (L39)                                                  | COVERED |
-|     WeightCheckpoint.update (L51)                                                    | COVERED |
-|     WeightCheckpoint.result (L60)                                                    | COVERED |
-|     WeightCheckpoint.reset (L68)                                                     | COVERED |
-|     WeightCheckpoint.after_training_exp (L85)                                        |  MISSED |
+|   WeightCheckpoint (L27)                                                             | COVERED |
+|     WeightCheckpoint.__init__ (L41)                                                  | COVERED |
+|     WeightCheckpoint.update (L53)                                                    | COVERED |
+|     WeightCheckpoint.result (L62)                                                    | COVERED |
+|     WeightCheckpoint.reset (L70)                                                     | COVERED |
+|     WeightCheckpoint.after_training_exp (L90)                                        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/class_accuracy.py (module)                                        |  MISSED |
 |   ClassAccuracy (L36)                                                                | COVERED |
@@ -1413,28 +1413,28 @@
 |     TensorboardLogger.log_single_metric (L68)                                        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | logging/text_logging.py (module)                                                     |  MISSED |
-|   TextLogger (L30)                                                                   | COVERED |
-|     TextLogger.__init__ (L55)                                                        | COVERED |
-|     TextLogger.log_single_metric (L66)                                               |  MISSED |
-|     TextLogger.print_current_metrics (L78)                                           |  MISSED |
-|     TextLogger.before_training_exp (L86)                                             |  MISSED |
-|     TextLogger.before_eval_exp (L95)                                                 |  MISSED |
-|     TextLogger.after_training_epoch (L104)                                           |  MISSED |
-|     TextLogger.after_eval_exp (L115)                                                 |  MISSED |
-|     TextLogger.before_training (L140)                                                |  MISSED |
-|     TextLogger.before_eval (L149)                                                    |  MISSED |
-|     TextLogger.after_training (L158)                                                 |  MISSED |
-|     TextLogger.after_eval (L167)                                                     |  MISSED |
-|     TextLogger.on_checkpoint_resume (L223)                                           |  MISSED |
+|   TextLogger (L32)                                                                   | COVERED |
+|     TextLogger.__init__ (L57)                                                        | COVERED |
+|     TextLogger.log_single_metric (L68)                                               |  MISSED |
+|     TextLogger.print_current_metrics (L80)                                           |  MISSED |
+|     TextLogger.before_training_exp (L88)                                             |  MISSED |
+|     TextLogger.before_eval_exp (L97)                                                 |  MISSED |
+|     TextLogger.after_training_epoch (L106)                                           |  MISSED |
+|     TextLogger.after_eval_exp (L117)                                                 |  MISSED |
+|     TextLogger.before_training (L142)                                                |  MISSED |
+|     TextLogger.before_eval (L151)                                                    |  MISSED |
+|     TextLogger.after_training (L160)                                                 |  MISSED |
+|     TextLogger.after_eval (L169)                                                     |  MISSED |
+|     TextLogger.on_checkpoint_resume (L225)                                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | logging/wandb_logger.py (module)                                                     | COVERED |
-|   WandBLogger (L40)                                                                  | COVERED |
-|     WandBLogger.__init__ (L57)                                                       | COVERED |
-|     WandBLogger.import_wandb (L102)                                                  |  MISSED |
-|     WandBLogger.args_parse (L109)                                                    |  MISSED |
-|     WandBLogger.before_run (L121)                                                    |  MISSED |
-|     WandBLogger.after_training_exp (L139)                                            |  MISSED |
-|     WandBLogger.log_single_metric (L151)                                             |  MISSED |
+|   WandBLogger (L46)                                                                  | COVERED |
+|     WandBLogger.__init__ (L63)                                                       | COVERED |
+|     WandBLogger.import_wandb (L111)                                                  |  MISSED |
+|     WandBLogger.args_parse (L120)                                                    |  MISSED |
+|     WandBLogger.before_run (L132)                                                    |  MISSED |
+|     WandBLogger.after_training_exp (L150)                                            |  MISSED |
+|     WandBLogger.log_single_metric (L162)                                             |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/base_model.py (module)                                                        |  MISSED |
 |   BaseModel (L4)                                                                     | COVERED |
@@ -1895,8 +1895,8 @@
 |     EWCPlugin.__init__ (L25)                                                         | COVERED |
 |     EWCPlugin.before_backward (L71)                                                  | COVERED |
 |     EWCPlugin.after_training_exp (L112)                                              | COVERED |
-|     EWCPlugin.compute_importances (L131)                                             | COVERED |
-|     EWCPlugin.update_importances (L183)                                              | COVERED |
+|     EWCPlugin.compute_importances (L132)                                             | COVERED |
+|     EWCPlugin.update_importances (L189)                                              | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/from_scratch_training.py (module)                                   |  MISSED |
 |   FromScratchTrainingPlugin (L11)                                                    | COVERED |
