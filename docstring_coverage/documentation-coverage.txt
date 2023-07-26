@@ -1480,8 +1480,8 @@
 | models/dynamic_optimizers.py (module)                                                | COVERED |
 |   compare_keys (L20)                                                                 |  MISSED |
 |   reset_optimizer (L27)                                                              | COVERED |
-|   update_optimizer (L51)                                                             | COVERED |
-|   add_new_params_to_optimizer (L128)                                                 | COVERED |
+|   update_optimizer (L56)                                                             | COVERED |
+|   add_new_params_to_optimizer (L133)                                                 | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | models/expert_gate.py (module)                                                       |  MISSED |
 |   AE_loss (L20)                                                                      | COVERED |
