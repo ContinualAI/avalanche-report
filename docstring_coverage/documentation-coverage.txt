@@ -2099,15 +2099,15 @@
 |   init_kaiming_normal (L275)                                                         |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml_v2.py (module)                                            |  MISSED |
-|   LaMAML (L27)                                                                       |  MISSED |
-|     LaMAML.__init__ (L28)                                                            | COVERED |
-|     LaMAML.copy_grads (L166)                                                         |  MISSED |
-|     LaMAML.inner_update_step (L171)                                                  | COVERED |
-|   Buffer (L290)                                                                      |  MISSED |
-|     Buffer.__init__ (L291)                                                           |  MISSED |
-|     Buffer.update (L298)                                                             |  MISSED |
-|     Buffer.get_buffer_batch (L304)                                                   |  MISSED |
-|   init_kaiming_normal (L319)                                                         |  MISSED |
+|   LaMAML (L23)                                                                       |  MISSED |
+|     LaMAML.__init__ (L24)                                                            | COVERED |
+|     LaMAML.copy_grads (L162)                                                         |  MISSED |
+|     LaMAML.inner_update_step (L167)                                                  | COVERED |
+|   Buffer (L286)                                                                      |  MISSED |
+|     Buffer.__init__ (L287)                                                           |  MISSED |
+|     Buffer.update (L294)                                                             |  MISSED |
+|     Buffer.get_buffer_batch (L300)                                                   |  MISSED |
+|   init_kaiming_normal (L315)                                                         |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/mer.py (module)                                                  |  MISSED |
 |   MERBuffer (L16)                                                                    |  MISSED |
