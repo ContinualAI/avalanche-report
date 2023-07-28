@@ -1554,11 +1554,12 @@
 | models/ncm_classifier.py (module)                                                    |  MISSED |
 |   NCMClassifier (L9)                                                                 | COVERED |
 |     NCMClassifier.__init__ (L26)                                                     | COVERED |
-|     NCMClassifier.load_state_dict (L38)                                              |  MISSED |
-|     NCMClassifier.forward (L68)                                                      | COVERED |
-|     NCMClassifier.update_class_means_dict (L87)                                      | COVERED |
-|     NCMClassifier.replace_class_means_dict (L116)                                    | COVERED |
-|     NCMClassifier.eval_adaptation (L127)                                             |  MISSED |
+|     NCMClassifier.load_state_dict (L39)                                              |  MISSED |
+|     NCMClassifier.forward (L71)                                                      | COVERED |
+|     NCMClassifier.update_class_means_dict (L92)                                      | COVERED |
+|     NCMClassifier.replace_class_means_dict (L121)                                    | COVERED |
+|     NCMClassifier.init_missing_classes (L131)                                        |  MISSED |
+|     NCMClassifier.eval_adaptation (L137)                                             |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/pnn.py (module)                                                               |  MISSED |
 |   LinearAdapter (L11)                                                                | COVERED |
@@ -2390,7 +2391,7 @@
 | models/lenet5.py                                          |     4 |    3 |     1 |    25% |
 | models/mlp_tiny_imagenet.py                               |     4 |    1 |     3 |    75% |
 | models/mobilenetv1.py                                     |     6 |    4 |     2 |    33% |
-| models/ncm_classifier.py                                  |     8 |    3 |     5 |    62% |
+| models/ncm_classifier.py                                  |     9 |    4 |     5 |    56% |
 | models/pnn.py                                             |    19 |    6 |    13 |    68% |
 | models/prompt.py                                          |     5 |    1 |     4 |    80% |
 | models/pytorchcv_wrapper.py                               |     6 |    0 |     6 |   100% |
@@ -2461,5 +2462,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2056 |  938 |  1118 |  54.4% |
+| TOTAL                                                     |  2057 |  939 |  1118 |  54.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
