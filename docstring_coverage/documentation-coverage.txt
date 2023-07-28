@@ -2093,22 +2093,22 @@
 |     LearningToPrompt.criterion (L204)                                                |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml.py (module)                                               |  MISSED |
-|   LaMAML (L26)                                                                       |  MISSED |
-|     LaMAML.__init__ (L27)                                                            | COVERED |
-|     LaMAML.apply_grad (L154)                                                         |  MISSED |
-|     LaMAML.inner_update_step (L165)                                                  | COVERED |
-|   init_kaiming_normal (L275)                                                         |  MISSED |
+|   LaMAML (L27)                                                                       |  MISSED |
+|     LaMAML.__init__ (L28)                                                            | COVERED |
+|     LaMAML.apply_grad (L155)                                                         |  MISSED |
+|     LaMAML.inner_update_step (L166)                                                  | COVERED |
+|   init_kaiming_normal (L276)                                                         |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/lamaml_v2.py (module)                                            |  MISSED |
-|   LaMAML (L23)                                                                       |  MISSED |
-|     LaMAML.__init__ (L24)                                                            | COVERED |
-|     LaMAML.copy_grads (L162)                                                         |  MISSED |
-|     LaMAML.inner_update_step (L167)                                                  | COVERED |
-|   Buffer (L286)                                                                      |  MISSED |
-|     Buffer.__init__ (L287)                                                           |  MISSED |
-|     Buffer.update (L294)                                                             |  MISSED |
-|     Buffer.get_buffer_batch (L300)                                                   |  MISSED |
-|   init_kaiming_normal (L315)                                                         |  MISSED |
+|   LaMAML (L24)                                                                       |  MISSED |
+|     LaMAML.__init__ (L25)                                                            | COVERED |
+|     LaMAML.copy_grads (L163)                                                         |  MISSED |
+|     LaMAML.inner_update_step (L168)                                                  | COVERED |
+|   Buffer (L287)                                                                      |  MISSED |
+|     Buffer.__init__ (L288)                                                           |  MISSED |
+|     Buffer.update (L295)                                                             |  MISSED |
+|     Buffer.get_buffer_batch (L301)                                                   |  MISSED |
+|   init_kaiming_normal (L316)                                                         |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/mer.py (module)                                                  |  MISSED |
 |   MERBuffer (L16)                                                                    |  MISSED |
