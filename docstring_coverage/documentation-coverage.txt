@@ -1874,9 +1874,9 @@
 | training/plugins/early_stopping.py (module)                                          |  MISSED |
 |   EarlyStoppingPlugin (L9)                                                           | COVERED |
 |     EarlyStoppingPlugin.__init__ (L28)                                               | COVERED |
-|     EarlyStoppingPlugin.before_training (L80)                                        |  MISSED |
-|     EarlyStoppingPlugin.before_training_iteration (L86)                              |  MISSED |
-|     EarlyStoppingPlugin.before_training_epoch (L96)                                  |  MISSED |
+|     EarlyStoppingPlugin.before_training_exp (L80)                                    |  MISSED |
+|     EarlyStoppingPlugin.before_training_iteration (L85)                              |  MISSED |
+|     EarlyStoppingPlugin.before_training_epoch (L95)                                  |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/evaluation.py (module)                                              |  MISSED |
 |   EvaluationPlugin (L33)                                                             | COVERED |
