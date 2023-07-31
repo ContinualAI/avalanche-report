@@ -1720,6 +1720,8 @@
 |     LearningWithoutForgetting.update (L122)                                          | COVERED |
 |   ACECriterion (L146)                                                                | COVERED |
 |     ACECriterion.__init__ (L155)                                                     |  MISSED |
+|   AMLCriterion (L169)                                                                | COVERED |
+|     AMLCriterion.__init__ (L178)                                                     | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                  |  MISSED |
 |   ExemplarsBuffer (L32)                                                              | COVERED |
@@ -2070,6 +2072,11 @@
 |     ER_ACE.__init__ (L33)                                                            | COVERED |
 |     ER_ACE.training_epoch (L94)                                                      | COVERED |
 |--------------------------------------------------------------------------------------|---------|
+| training/supervised/er_aml.py (module)                                               |  MISSED |
+|   ER_AML (L19)                                                                       | COVERED |
+|     ER_AML.__init__ (L28)                                                            | COVERED |
+|     ER_AML.training_epoch (L103)                                                     | COVERED |
+|--------------------------------------------------------------------------------------|---------|
 | training/supervised/expert_gate.py (module)                                          |  MISSED |
 |   ExpertGateStrategy (L30)                                                           | COVERED |
 |     ExpertGateStrategy.__init__ (L45)                                                | COVERED |
@@ -2407,7 +2414,7 @@
 | models/vit.py                                             |     9 |    3 |     6 |    67% |
 | training/checkpoint.py                                    |     3 |    1 |     2 |    67% |
 | training/losses.py                                        |     8 |    5 |     3 |    38% |
-| training/regularization.py                                |     9 |    2 |     7 |    78% |
+| training/regularization.py                                |    11 |    2 |     9 |    82% |
 | training/storage_policy.py                                |    42 |   12 |    30 |    71% |
 | training/utils.py                                         |    25 |   15 |    10 |    40% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
@@ -2442,6 +2449,7 @@
 | training/supervised/deep_slda.py                          |    11 |    1 |    10 |    91% |
 | training/supervised/der.py                                |     8 |    3 |     5 |    62% |
 | training/supervised/er_ace.py                             |     4 |    1 |     3 |    75% |
+| training/supervised/er_aml.py                             |     4 |    1 |     3 |    75% |
 | training/supervised/expert_gate.py                        |     3 |    1 |     2 |    67% |
 | training/supervised/icarl.py                              |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                     |     7 |    2 |     5 |    71% |
@@ -2462,5 +2470,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2057 |  939 |  1118 |  54.4% |
+| TOTAL                                                     |  2063 |  940 |  1123 |  54.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
