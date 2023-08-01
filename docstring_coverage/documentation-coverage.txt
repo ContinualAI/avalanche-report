@@ -542,20 +542,22 @@
 |     TaskLabels.__init__ (L174)                                                       |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_loader.py (module)                                             | COVERED |
-|   return_identity (L40)                                                              | COVERED |
-|   collate_from_data_or_kwargs (L49)                                                  |  MISSED |
-|   MultiDatasetDataLoader (L56)                                                       | COVERED |
-|     MultiDatasetDataLoader.__init__ (L59)                                            | COVERED |
-|   GroupBalancedDataLoader (L241)                                                     | COVERED |
-|     GroupBalancedDataLoader.__init__ (L244)                                          | COVERED |
-|   TaskBalancedDataLoader (L297)                                                      | COVERED |
-|     TaskBalancedDataLoader.__init__ (L300)                                           | COVERED |
-|   GroupBalancedInfiniteDataLoader (L352)                                             | COVERED |
-|     GroupBalancedInfiniteDataLoader.__init__ (L356)                                  | COVERED |
-|   ReplayDataLoader (L395)                                                            | COVERED |
-|     ReplayDataLoader.__init__ (L398)                                                 | COVERED |
-|   MultiDatasetSampler (L545)                                                         | COVERED |
-|     MultiDatasetSampler.__init__ (L550)                                              |  MISSED |
+|   return_identity (L44)                                                              | COVERED |
+|   collate_from_data_or_kwargs (L53)                                                  |  MISSED |
+|   MultiDatasetDataLoader (L60)                                                       | COVERED |
+|     MultiDatasetDataLoader.__init__ (L63)                                            | COVERED |
+|   SingleDatasetDataLoader (L294)                                                     | COVERED |
+|     SingleDatasetDataLoader.__init__ (L301)                                          |  MISSED |
+|   GroupBalancedDataLoader (L305)                                                     | COVERED |
+|     GroupBalancedDataLoader.__init__ (L308)                                          | COVERED |
+|   TaskBalancedDataLoader (L363)                                                      | COVERED |
+|     TaskBalancedDataLoader.__init__ (L366)                                           | COVERED |
+|   GroupBalancedInfiniteDataLoader (L420)                                             | COVERED |
+|     GroupBalancedInfiniteDataLoader.__init__ (L424)                                  | COVERED |
+|   ReplayDataLoader (L465)                                                            | COVERED |
+|     ReplayDataLoader.__init__ (L468)                                                 | COVERED |
+|   MultiDatasetSampler (L617)                                                         | COVERED |
+|     MultiDatasetSampler.__init__ (L622)                                              |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_definitions.py (module)                                     |  MISSED |
 |   IDataset (L35)                                                                     | COVERED |
@@ -568,6 +570,14 @@
 |   IClassificationDataset (L107)                                                      | COVERED |
 |   ClassificationDataset (L124)                                                       | COVERED |
 |     ClassificationDataset.__init__ (L132)                                            |  MISSED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/dataset_traversal_utils.py (module)                                 |  MISSED |
+|   dataset_list_from_benchmark (L29)                                                  | COVERED |
+|   flat_datasets_from_benchmark (L49)                                                 | COVERED |
+|   leaf_datasets (L268)                                                               | COVERED |
+|     leaf_datasets.leaf_selector (L283)                                               |  MISSED |
+|     leaf_datasets.transform_selector (L299)                                          |  MISSED |
+|   single_flat_dataset (L333)                                                         | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/dataset_utils.py (module)                                           |  MISSED |
 |   SliceSequence (L49)                                                                |  MISSED |
@@ -655,15 +665,20 @@
 |     EmptyTransformGroups.__init__ (L199)                                             |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/transforms.py (module)                                              | COVERED |
-|   MultiParamTransform (L21)                                                          | COVERED |
-|   MultiParamCompose (L32)                                                            | COVERED |
-|     MultiParamCompose.__init__ (L49)                                                 |  MISSED |
-|   MultiParamTransformCallable (L101)                                                 | COVERED |
-|     MultiParamTransformCallable.__init__ (L104)                                      |  MISSED |
-|   TupleTransform (L196)                                                              | COVERED |
-|     TupleTransform.__init__ (L199)                                                   |  MISSED |
-|   ComposeMaxParamsWarning (L213)                                                     |  MISSED |
-|     ComposeMaxParamsWarning.__init__ (L214)                                          |  MISSED |
+|   MultiParamTransform (L23)                                                          | COVERED |
+|     MultiParamTransform.flat_transforms (L38)                                        | COVERED |
+|   MultiParamCompose (L62)                                                            | COVERED |
+|     MultiParamCompose.__init__ (L79)                                                 |  MISSED |
+|     MultiParamCompose.flat_transforms (L144)                                         |  MISSED |
+|   MultiParamTransformCallable (L156)                                                 | COVERED |
+|     MultiParamTransformCallable.__init__ (L159)                                      |  MISSED |
+|     MultiParamTransformCallable.flat_transforms (L250)                               |  MISSED |
+|   TupleTransform (L269)                                                              | COVERED |
+|     TupleTransform.__init__ (L272)                                                   |  MISSED |
+|     TupleTransform.flat_transforms (L297)                                            |  MISSED |
+|   flat_transforms_recursive (L303)                                                   | COVERED |
+|   ComposeMaxParamsWarning (L340)                                                     |  MISSED |
+|     ComposeMaxParamsWarning.__init__ (L341)                                          |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/utils.py (module)                                                   | COVERED |
 |   tensor_as_list (L61)                                                               |  MISSED |
@@ -674,6 +689,44 @@
 |   find_common_transforms_group (L220)                                                | COVERED |
 |   TaskSet (L622)                                                                     | COVERED |
 |     TaskSet.__init__ (L639)                                                          | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/ffcv_components.py (module)                            | COVERED |
+|   FFCVInfo (L47)                                                                     |  MISSED |
+|   enable_ffcv (L55)                                                                  | COVERED |
+|   has_ffcv_support (L327)                                                            | COVERED |
+|   HybridFfcvLoader (L384)                                                            | COVERED |
+|     HybridFfcvLoader.__init__ (L425)                                                 | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/ffcv_epoch_iterator.py (module)                        | COVERED |
+|   AtomicCounter (L22)                                                                | COVERED |
+|     AtomicCounter.__init__ (L30)                                                     | COVERED |
+|     AtomicCounter.increment (L35)                                                    | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/ffcv_loader.py (module)                                | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/ffcv_support_internals.py (module)                     | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/ffcv_transform_utils.py (module)                       | COVERED |
+|   CallableAdapter (L61)                                                              |  MISSED |
+|     CallableAdapter.__init__ (L62)                                                   |  MISSED |
+|   ScaleFrom_0_255_To_0_1 (L81)                                                       |  MISSED |
+|     ScaleFrom_0_255_To_0_1.__init__ (L82)                                            |  MISSED |
+|     ScaleFrom_0_255_To_0_1.forward (L85)                                             |  MISSED |
+|   FFCVTransformRegistry (L91)                                                        |  MISSED |
+|   make_transform_defs (L100)                                                         | COVERED |
+|   adapt_transforms (L171)                                                            | COVERED |
+|   check_transforms_consistency (L362)                                                | COVERED |
+|   SmartModuleWrapper (L418)                                                          | COVERED |
+|     SmartModuleWrapper.__init__ (L434)                                               | COVERED |
+|     SmartModuleWrapper.generate_code (L464)                                          | COVERED |
+|       SmartModuleWrapper.generate_code.convert_apply_convert_reshape (L472)          |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply_reshape (L482)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.apply_convert_reshape (L490)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply_convert (L497)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply (L502)                          |  MISSED |
+|       SmartModuleWrapper.generate_code.apply_convert (L507)                          |  MISSED |
+|       SmartModuleWrapper.generate_code.apply (L511)                                  |  MISSED |
+|     SmartModuleWrapper.declare_state_and_memory (L529)                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | distributed/distributed_consistency_verification.py (module)                         |  MISSED |
 |   hash_benchmark (L17)                                                               |  MISSED |
@@ -1997,10 +2050,10 @@
 |     RARPlugin.mifgsm_attack (L225)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/replay.py (module)                                                  |  MISSED |
-|   ReplayPlugin (L15)                                                                 | COVERED |
-|     ReplayPlugin.__init__ (L47)                                                      |  MISSED |
-|     ReplayPlugin.before_training_exp (L74)                                           | COVERED |
-|     ReplayPlugin.after_training_exp (L112)                                           |  MISSED |
+|   ReplayPlugin (L17)                                                                 | COVERED |
+|     ReplayPlugin.__init__ (L49)                                                      |  MISSED |
+|     ReplayPlugin.before_training_exp (L76)                                           | COVERED |
+|     ReplayPlugin.after_training_exp (L127)                                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/rwalk.py (module)                                                   |  MISSED |
 |   RWalkPlugin (L12)                                                                  | COVERED |
@@ -2038,8 +2091,8 @@
 |   AR1 (L31)                                                                          | COVERED |
 |     AR1.__init__ (L43)                                                               | COVERED |
 |     AR1.make_train_dataloader (L232)                                                 | COVERED |
-|     AR1.training_epoch (L284)                                                        |  MISSED |
-|     AR1.filter_bn_and_brn (L370)                                                     |  MISSED |
+|     AR1.training_epoch (L287)                                                        |  MISSED |
+|     AR1.filter_bn_and_brn (L373)                                                     |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/cumulative.py (module)                                           |  MISSED |
 |   Cumulative (L15)                                                                   | COVERED |
@@ -2198,31 +2251,31 @@
 |     BaseTemplate.eval (L158)                                                         | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/templates/base_sgd.py (module)                                              |  MISSED |
-|   BaseSGDTemplate (L31)                                                              | COVERED |
-|     BaseSGDTemplate.__init__ (L53)                                                   | COVERED |
-|     BaseSGDTemplate.train (L160)                                                     |  MISSED |
-|     BaseSGDTemplate.eval (L172)                                                      | COVERED |
-|     BaseSGDTemplate.make_optimizer (L189)                                            | COVERED |
-|     BaseSGDTemplate.criterion (L194)                                                 | COVERED |
-|     BaseSGDTemplate.forward (L198)                                                   | COVERED |
-|     BaseSGDTemplate.model_adaptation (L202)                                          | COVERED |
-|     BaseSGDTemplate.stop_training (L206)                                             | COVERED |
-|     BaseSGDTemplate.training_epoch (L210)                                            |  MISSED |
-|     BaseSGDTemplate.backward (L214)                                                  | COVERED |
-|     BaseSGDTemplate.optimizer_step (L218)                                            | COVERED |
-|     BaseSGDTemplate.eval_epoch (L222)                                                | COVERED |
-|     BaseSGDTemplate.check_model_and_optimizer (L237)                                 |  MISSED |
-|     BaseSGDTemplate.train_dataset_adaptation (L312)                                  | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L376)                                     | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L413)                                      | COVERED |
-|     BaseSGDTemplate.eval_dataset_adaptation (L446)                                   | COVERED |
-|   PeriodicEval (L520)                                                                | COVERED |
-|     PeriodicEval.__init__ (L526)                                                     | COVERED |
-|     PeriodicEval.before_training (L549)                                              | COVERED |
-|     PeriodicEval.before_training_exp (L558)                                          |  MISSED |
-|     PeriodicEval.after_training_epoch (L583)                                         | COVERED |
-|     PeriodicEval.after_training_iteration (L589)                                     | COVERED |
-|     PeriodicEval.after_training_exp (L596)                                           | COVERED |
+|   BaseSGDTemplate (L32)                                                              | COVERED |
+|     BaseSGDTemplate.__init__ (L54)                                                   | COVERED |
+|     BaseSGDTemplate.train (L161)                                                     |  MISSED |
+|     BaseSGDTemplate.eval (L173)                                                      | COVERED |
+|     BaseSGDTemplate.make_optimizer (L190)                                            | COVERED |
+|     BaseSGDTemplate.criterion (L195)                                                 | COVERED |
+|     BaseSGDTemplate.forward (L199)                                                   | COVERED |
+|     BaseSGDTemplate.model_adaptation (L203)                                          | COVERED |
+|     BaseSGDTemplate.stop_training (L207)                                             | COVERED |
+|     BaseSGDTemplate.training_epoch (L211)                                            |  MISSED |
+|     BaseSGDTemplate.backward (L215)                                                  | COVERED |
+|     BaseSGDTemplate.optimizer_step (L219)                                            | COVERED |
+|     BaseSGDTemplate.eval_epoch (L223)                                                | COVERED |
+|     BaseSGDTemplate.check_model_and_optimizer (L238)                                 |  MISSED |
+|     BaseSGDTemplate.train_dataset_adaptation (L313)                                  | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L380)                                     | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L418)                                      | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L456)                                   | COVERED |
+|   PeriodicEval (L530)                                                                | COVERED |
+|     PeriodicEval.__init__ (L536)                                                     | COVERED |
+|     PeriodicEval.before_training (L559)                                              | COVERED |
+|     PeriodicEval.before_training_exp (L568)                                          |  MISSED |
+|     PeriodicEval.after_training_epoch (L593)                                         | COVERED |
+|     PeriodicEval.after_training_iteration (L599)                                     | COVERED |
+|     PeriodicEval.after_training_exp (L606)                                           | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                      |  MISSED |
 |   SupervisedTemplate (L28)                                                           | COVERED |
@@ -2339,8 +2392,9 @@
 | benchmarks/utils/collate_functions.py                     |     6 |    1 |     5 |    83% |
 | benchmarks/utils/data.py                                  |    14 |    1 |    13 |    93% |
 | benchmarks/utils/data_attribute.py                        |    11 |    2 |     9 |    82% |
-| benchmarks/utils/data_loader.py                           |    15 |    2 |    13 |    87% |
+| benchmarks/utils/data_loader.py                           |    17 |    3 |    14 |    82% |
 | benchmarks/utils/dataset_definitions.py                   |    11 |    2 |     9 |    82% |
+| benchmarks/utils/dataset_traversal_utils.py               |     7 |    3 |     4 |    57% |
 | benchmarks/utils/dataset_utils.py                         |    12 |    6 |     6 |    50% |
 | benchmarks/utils/datasets_from_filelists.py               |    10 |    1 |     9 |    90% |
 | benchmarks/utils/deprecated.py                            |     5 |    5 |     0 |     0% |
@@ -2348,8 +2402,13 @@
 | benchmarks/utils/flat_data.py                             |    13 |    2 |    11 |    85% |
 | benchmarks/utils/torchvision_wrapper.py                   |     3 |    2 |     1 |    33% |
 | benchmarks/utils/transform_groups.py                      |    13 |    8 |     5 |    38% |
-| benchmarks/utils/transforms.py                            |    10 |    5 |     5 |    50% |
+| benchmarks/utils/transforms.py                            |    15 |    8 |     7 |    47% |
 | benchmarks/utils/utils.py                                 |     9 |    3 |     6 |    67% |
+| benchmarks/utils/ffcv_support/ffcv_components.py          |     6 |    1 |     5 |    83% |
+| benchmarks/utils/ffcv_support/ffcv_epoch_iterator.py      |     4 |    0 |     4 |   100% |
+| benchmarks/utils/ffcv_support/ffcv_loader.py              |     1 |    0 |     1 |   100% |
+| benchmarks/utils/ffcv_support/ffcv_support_internals.py   |     1 |    0 |     1 |   100% |
+| benchmarks/utils/ffcv_support/ffcv_transform_utils.py     |    21 |   14 |     7 |    33% |
 | distributed/distributed_consistency_verification.py       |     6 |    6 |     0 |     0% |
 | distributed/distributed_helper.py                         |    12 |    9 |     3 |    25% |
 | evaluation/metric_definitions.py                          |    55 |   49 |     6 |    11% |
@@ -2470,5 +2529,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2063 |  940 |  1123 |  54.4% |
+| TOTAL                                                     |  2110 |  962 |  1148 |  54.4% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.4%) -----------------
