@@ -142,10 +142,10 @@
 |     Omniglot.data (L41)                                                              |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchaudio_wrapper.py (module)                                   | COVERED |
-|   speech_commands_collate (L29)                                                      |  MISSED |
-|   SpeechCommandsData (L47)                                                           |  MISSED |
-|     SpeechCommandsData.__init__ (L48)                                                |  MISSED |
-|   SpeechCommands (L101)                                                              | COVERED |
+|   speech_commands_collate (L33)                                                      |  MISSED |
+|   SpeechCommandsData (L51)                                                           |  MISSED |
+|     SpeechCommandsData.__init__ (L52)                                                |  MISSED |
+|   SpeechCommands (L105)                                                              | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchvision_wrapper.py (module)                                  | COVERED |
 |   MNIST (L45)                                                                        |  MISSED |
@@ -1008,28 +1008,28 @@
 |     CumulativeForgettingPluginMetric.update (L271)                                   |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/detection.py (module)                                             |  MISSED |
-|   TensorEncoder (L57)                                                                |  MISSED |
-|     TensorEncoder.__init__ (L58)                                                     |  MISSED |
-|     TensorEncoder.default (L61)                                                      |  MISSED |
-|   tensor_decoder (L68)                                                               |  MISSED |
-|   DetectionEvaluator (L83)                                                           | COVERED |
-|     DetectionEvaluator.update (L91)                                                  | COVERED |
-|     DetectionEvaluator.evaluate (L103)                                               | COVERED |
-|     DetectionEvaluator.summarize (L118)                                              | COVERED |
-|   coco_evaluator_factory (L138)                                                      |  MISSED |
-|   DetectionMetrics (L146)                                                            | COVERED |
-|     DetectionMetrics.__init__ (L162)                                                 | COVERED |
-|     DetectionMetrics.reset (L283)                                                    |  MISSED |
-|     DetectionMetrics.initialize_evaluator (L289)                                     |  MISSED |
-|     DetectionMetrics.update (L297)                                                   |  MISSED |
-|     DetectionMetrics.result (L304)                                                   |  MISSED |
-|     DetectionMetrics.before_eval_exp (L318)                                          |  MISSED |
-|     DetectionMetrics.after_eval_iteration (L326)                                     |  MISSED |
-|     DetectionMetrics.after_eval_exp (L332)                                           |  MISSED |
-|   lvis_evaluator_factory (L392)                                                      |  MISSED |
-|   make_lvis_metrics (L400)                                                           | COVERED |
-|   get_detection_api_from_dataset (L440)                                              | COVERED |
-|   convert_to_coco_api (L502)                                                         | COVERED |
+|   TensorEncoder (L62)                                                                |  MISSED |
+|     TensorEncoder.__init__ (L63)                                                     |  MISSED |
+|     TensorEncoder.default (L66)                                                      |  MISSED |
+|   tensor_decoder (L73)                                                               |  MISSED |
+|   DetectionEvaluator (L88)                                                           | COVERED |
+|     DetectionEvaluator.update (L96)                                                  | COVERED |
+|     DetectionEvaluator.evaluate (L108)                                               | COVERED |
+|     DetectionEvaluator.summarize (L123)                                              | COVERED |
+|   coco_evaluator_factory (L143)                                                      |  MISSED |
+|   DetectionMetrics (L151)                                                            | COVERED |
+|     DetectionMetrics.__init__ (L167)                                                 | COVERED |
+|     DetectionMetrics.reset (L288)                                                    |  MISSED |
+|     DetectionMetrics.initialize_evaluator (L294)                                     |  MISSED |
+|     DetectionMetrics.update (L302)                                                   |  MISSED |
+|     DetectionMetrics.result (L309)                                                   |  MISSED |
+|     DetectionMetrics.before_eval_exp (L323)                                          |  MISSED |
+|     DetectionMetrics.after_eval_iteration (L331)                                     |  MISSED |
+|     DetectionMetrics.after_eval_exp (L337)                                           |  MISSED |
+|   lvis_evaluator_factory (L397)                                                      |  MISSED |
+|   make_lvis_metrics (L405)                                                           | COVERED |
+|   get_detection_api_from_dataset (L445)                                              | COVERED |
+|   convert_to_coco_api (L507)                                                         | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | evaluation/metrics/disk_usage.py (module)                                            |  MISSED |
 |   DiskUsage (L21)                                                                    | COVERED |
