@@ -1848,30 +1848,29 @@
 |     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L569)        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                           | COVERED |
-|   at_task_boundary (L29)                                                             | COVERED |
-|   cycle (L56)                                                                        |  MISSED |
-|   trigger_plugins (L62)                                                              | COVERED |
-|   load_all_dataset (L72)                                                             | COVERED |
-|   zerolike_params_dict (L116)                                                        | COVERED |
-|   copy_params_dict (L132)                                                            | COVERED |
-|   LayerAndParameter (L149)                                                           |  MISSED |
-|   get_layers_and_params (L156)                                                       |  MISSED |
-|   get_layer_by_name (L174)                                                           |  MISSED |
-|   get_last_fc_layer (L181)                                                           |  MISSED |
-|   swap_last_fc_layer (L193)                                                          |  MISSED |
-|   adapt_classification_layer (L198)                                                  |  MISSED |
-|   replace_bn_with_brn (L214)                                                         |  MISSED |
-|   change_brn_pars (L251)                                                             |  MISSED |
-|   freeze_everything (L266)                                                           |  MISSED |
-|   unfreeze_everything (L274)                                                         |  MISSED |
-|   freeze_up_to (L282)                                                                | COVERED |
-|   examples_per_class (L343)                                                          |  MISSED |
-|   ParamData (L355)                                                                   |  MISSED |
-|     ParamData.__init__ (L356)                                                        | COVERED |
-|     ParamData.reset_like (L398)                                                      | COVERED |
-|     ParamData.expand (L414)                                                          | COVERED |
-|     ParamData.data (L449)                                                            |  MISSED |
-|     ParamData.data (L453)                                                            |  MISSED |
+|   cycle (L62)                                                                        |  MISSED |
+|   trigger_plugins (L68)                                                              | COVERED |
+|   load_all_dataset (L78)                                                             | COVERED |
+|   zerolike_params_dict (L122)                                                        | COVERED |
+|   copy_params_dict (L138)                                                            | COVERED |
+|   LayerAndParameter (L155)                                                           |  MISSED |
+|   get_layers_and_params (L162)                                                       |  MISSED |
+|   get_layer_by_name (L180)                                                           |  MISSED |
+|   get_last_fc_layer (L187)                                                           |  MISSED |
+|   swap_last_fc_layer (L199)                                                          |  MISSED |
+|   adapt_classification_layer (L204)                                                  |  MISSED |
+|   replace_bn_with_brn (L220)                                                         |  MISSED |
+|   change_brn_pars (L257)                                                             |  MISSED |
+|   freeze_everything (L272)                                                           |  MISSED |
+|   unfreeze_everything (L280)                                                         |  MISSED |
+|   freeze_up_to (L288)                                                                | COVERED |
+|   examples_per_class (L349)                                                          |  MISSED |
+|   ParamData (L361)                                                                   |  MISSED |
+|     ParamData.__init__ (L362)                                                        | COVERED |
+|     ParamData.reset_like (L404)                                                      | COVERED |
+|     ParamData.expand (L420)                                                          | COVERED |
+|     ParamData.data (L455)                                                            |  MISSED |
+|     ParamData.data (L459)                                                            |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/determinism/cuda_rng.py (module)                                            |  MISSED |
 |   cuda_rng_seed (L7)                                                                 | COVERED |
@@ -2506,7 +2505,7 @@
 | training/losses.py                                        |     8 |    5 |     3 |    38% |
 | training/regularization.py                                |    11 |    2 |     9 |    82% |
 | training/storage_policy.py                                |    42 |   12 |    30 |    71% |
-| training/utils.py                                         |    25 |   15 |    10 |    40% |
+| training/utils.py                                         |    24 |   15 |     9 |    38% |
 | training/determinism/cuda_rng.py                          |     6 |    2 |     4 |    67% |
 | training/determinism/rng_manager.py                       |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                  |     8 |    1 |     7 |    88% |
@@ -2560,5 +2559,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2139 |  970 |  1169 |  54.7% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.7%) -----------------
+| TOTAL                                                     |  2138 |  970 |  1168 |  54.6% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.6%) -----------------
