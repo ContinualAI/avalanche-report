@@ -690,6 +690,15 @@
 |   TaskSet (L622)                                                                     | COVERED |
 |     TaskSet.__init__ (L639)                                                          | COVERED |
 |--------------------------------------------------------------------------------------|---------|
+| benchmarks/utils/ffcv_support/center_crop.py (module)                                | COVERED |
+|   get_center_crop_torchvision_alike (L16)                                            |  MISSED |
+|   CenterCropRGBImageDecoderTVAlike (L52)                                             | COVERED |
+|     CenterCropRGBImageDecoderTVAlike.__init__ (L61)                                  |  MISSED |
+|     CenterCropRGBImageDecoderTVAlike.declare_state_and_memory (L65)                  |  MISSED |
+|     CenterCropRGBImageDecoderTVAlike.generate_code (L86)                             |  MISSED |
+|       CenterCropRGBImageDecoderTVAlike.generate_code.decode (L95)                    |  MISSED |
+|     CenterCropRGBImageDecoderTVAlike.get_crop_generator (L134)                       |  MISSED |
+|--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/ffcv_support/ffcv_components.py (module)                            | COVERED |
 |   FFCVInfo (L47)                                                                     |  MISSED |
 |   enable_ffcv (L55)                                                                  | COVERED |
@@ -707,26 +716,26 @@
 | benchmarks/utils/ffcv_support/ffcv_support_internals.py (module)                     | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/ffcv_support/ffcv_transform_utils.py (module)                       | COVERED |
-|   CallableAdapter (L61)                                                              |  MISSED |
-|     CallableAdapter.__init__ (L62)                                                   |  MISSED |
-|   ScaleFrom_0_255_To_0_1 (L81)                                                       |  MISSED |
-|     ScaleFrom_0_255_To_0_1.__init__ (L82)                                            |  MISSED |
-|     ScaleFrom_0_255_To_0_1.forward (L85)                                             |  MISSED |
-|   FFCVTransformRegistry (L91)                                                        |  MISSED |
-|   make_transform_defs (L100)                                                         | COVERED |
-|   adapt_transforms (L171)                                                            | COVERED |
-|   check_transforms_consistency (L362)                                                | COVERED |
-|   SmartModuleWrapper (L418)                                                          | COVERED |
-|     SmartModuleWrapper.__init__ (L434)                                               | COVERED |
-|     SmartModuleWrapper.generate_code (L464)                                          | COVERED |
-|       SmartModuleWrapper.generate_code.convert_apply_convert_reshape (L472)          |  MISSED |
-|       SmartModuleWrapper.generate_code.convert_apply_reshape (L482)                  |  MISSED |
-|       SmartModuleWrapper.generate_code.apply_convert_reshape (L490)                  |  MISSED |
-|       SmartModuleWrapper.generate_code.convert_apply_convert (L497)                  |  MISSED |
-|       SmartModuleWrapper.generate_code.convert_apply (L502)                          |  MISSED |
-|       SmartModuleWrapper.generate_code.apply_convert (L507)                          |  MISSED |
-|       SmartModuleWrapper.generate_code.apply (L511)                                  |  MISSED |
-|     SmartModuleWrapper.declare_state_and_memory (L529)                               |  MISSED |
+|   CallableAdapter (L64)                                                              |  MISSED |
+|     CallableAdapter.__init__ (L65)                                                   |  MISSED |
+|   ScaleFrom_0_255_To_0_1 (L84)                                                       |  MISSED |
+|     ScaleFrom_0_255_To_0_1.__init__ (L85)                                            |  MISSED |
+|     ScaleFrom_0_255_To_0_1.forward (L88)                                             |  MISSED |
+|   FFCVTransformRegistry (L94)                                                        |  MISSED |
+|   make_transform_defs (L103)                                                         | COVERED |
+|   adapt_transforms (L174)                                                            | COVERED |
+|   check_transforms_consistency (L374)                                                | COVERED |
+|   SmartModuleWrapper (L430)                                                          | COVERED |
+|     SmartModuleWrapper.__init__ (L446)                                               | COVERED |
+|     SmartModuleWrapper.generate_code (L476)                                          | COVERED |
+|       SmartModuleWrapper.generate_code.convert_apply_convert_reshape (L484)          |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply_reshape (L494)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.apply_convert_reshape (L502)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply_convert (L509)                  |  MISSED |
+|       SmartModuleWrapper.generate_code.convert_apply (L514)                          |  MISSED |
+|       SmartModuleWrapper.generate_code.apply_convert (L519)                          |  MISSED |
+|       SmartModuleWrapper.generate_code.apply (L523)                                  |  MISSED |
+|     SmartModuleWrapper.declare_state_and_memory (L541)                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | distributed/distributed_consistency_verification.py (module)                         |  MISSED |
 |   hash_benchmark (L17)                                                               |  MISSED |
@@ -2212,8 +2221,8 @@
 |     ObjectDetectionTemplate.make_eval_dataloader (L169)                              | COVERED |
 |     ObjectDetectionTemplate.criterion (L205)                                         | COVERED |
 |     ObjectDetectionTemplate.forward (L230)                                           | COVERED |
-|     ObjectDetectionTemplate.backward (L256)                                          |  MISSED |
-|     ObjectDetectionTemplate.optimizer_step (L262)                                    |  MISSED |
+|     ObjectDetectionTemplate.backward (L265)                                          |  MISSED |
+|     ObjectDetectionTemplate.optimizer_step (L271)                                    |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers.py (module)                                    |  MISSED |
 |   Naive (L54)                                                                        | COVERED |
@@ -2433,6 +2442,7 @@
 | benchmarks/utils/transform_groups.py                      |    13 |    8 |     5 |    38% |
 | benchmarks/utils/transforms.py                            |    15 |    8 |     7 |    47% |
 | benchmarks/utils/utils.py                                 |     9 |    3 |     6 |    67% |
+| benchmarks/utils/ffcv_support/center_crop.py              |     8 |    6 |     2 |    25% |
 | benchmarks/utils/ffcv_support/ffcv_components.py          |     6 |    1 |     5 |    83% |
 | benchmarks/utils/ffcv_support/ffcv_epoch_iterator.py      |     4 |    0 |     4 |   100% |
 | benchmarks/utils/ffcv_support/ffcv_loader.py              |     1 |    0 |     1 |   100% |
@@ -2559,5 +2569,5 @@
 | training/templates/update_type/meta_update.py             |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py              |     3 |    2 |     1 |    33% |
 |-----------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                     |  2138 |  970 |  1168 |  54.6% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.6%) -----------------
+| TOTAL                                                     |  2146 |  976 |  1170 |  54.5% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.5%) -----------------
