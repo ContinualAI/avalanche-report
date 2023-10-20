@@ -1775,25 +1775,31 @@
 |   save_checkpoint (L57)                                                              | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/losses.py (module)                                                          |  MISSED |
-|   ICaRLLossPlugin (L10)                                                              | COVERED |
-|     ICaRLLossPlugin.__init__ (L21)                                                   |  MISSED |
-|     ICaRLLossPlugin.before_forward (L29)                                             |  MISSED |
-|     ICaRLLossPlugin.after_training_exp (L52)                                         |  MISSED |
-|   SCRLoss (L62)                                                                      | COVERED |
-|     SCRLoss.__init__ (L73)                                                           |  MISSED |
-|     SCRLoss.forward (L79)                                                            | COVERED |
+|   ICaRLLossPlugin (L13)                                                              | COVERED |
+|     ICaRLLossPlugin.__init__ (L24)                                                   |  MISSED |
+|     ICaRLLossPlugin.before_forward (L32)                                             |  MISSED |
+|     ICaRLLossPlugin.after_training_exp (L55)                                         |  MISSED |
+|   SCRLoss (L65)                                                                      | COVERED |
+|     SCRLoss.__init__ (L76)                                                           |  MISSED |
+|     SCRLoss.forward (L82)                                                            | COVERED |
+|   MaskedCrossEntropy (L167)                                                          | COVERED |
+|     MaskedCrossEntropy.__init__ (L176)                                               | COVERED |
+|     MaskedCrossEntropy.current_mask (L207)                                           |  MISSED |
+|     MaskedCrossEntropy.adaptation (L217)                                             |  MISSED |
+|     MaskedCrossEntropy.before_training_exp (L221)                                    |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/regularization.py (module)                                                  | COVERED |
-|   cross_entropy_with_oh_targets (L12)                                                | COVERED |
-|   RegularizationMethod (L21)                                                         | COVERED |
-|     RegularizationMethod.update (L28)                                                |  MISSED |
-|   LearningWithoutForgetting (L35)                                                    | COVERED |
-|     LearningWithoutForgetting.__init__ (L42)                                         | COVERED |
-|     LearningWithoutForgetting.update (L122)                                          | COVERED |
-|   ACECriterion (L146)                                                                | COVERED |
-|     ACECriterion.__init__ (L155)                                                     |  MISSED |
-|   AMLCriterion (L169)                                                                | COVERED |
-|     AMLCriterion.__init__ (L178)                                                     | COVERED |
+|   stable_softmax (L12)                                                               |  MISSED |
+|   cross_entropy_with_oh_targets (L20)                                                | COVERED |
+|   RegularizationMethod (L34)                                                         | COVERED |
+|     RegularizationMethod.update (L41)                                                |  MISSED |
+|   LearningWithoutForgetting (L48)                                                    | COVERED |
+|     LearningWithoutForgetting.__init__ (L55)                                         | COVERED |
+|     LearningWithoutForgetting.update (L135)                                          | COVERED |
+|   ACECriterion (L159)                                                                | COVERED |
+|     ACECriterion.__init__ (L168)                                                     |  MISSED |
+|   AMLCriterion (L182)                                                                | COVERED |
+|     AMLCriterion.__init__ (L191)                                                     | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/storage_policy.py (module)                                                  |  MISSED |
 |   ExemplarsBuffer (L32)                                                              | COVERED |
@@ -2273,29 +2279,29 @@
 | training/templates/base_sgd.py (module)                                              |  MISSED |
 |   BaseSGDTemplate (L32)                                                              | COVERED |
 |     BaseSGDTemplate.__init__ (L54)                                                   | COVERED |
-|     BaseSGDTemplate.train (L161)                                                     |  MISSED |
-|     BaseSGDTemplate.eval (L173)                                                      | COVERED |
-|     BaseSGDTemplate.make_optimizer (L190)                                            | COVERED |
-|     BaseSGDTemplate.criterion (L195)                                                 | COVERED |
-|     BaseSGDTemplate.forward (L199)                                                   | COVERED |
-|     BaseSGDTemplate.model_adaptation (L203)                                          | COVERED |
-|     BaseSGDTemplate.stop_training (L207)                                             | COVERED |
-|     BaseSGDTemplate.training_epoch (L211)                                            |  MISSED |
-|     BaseSGDTemplate.backward (L215)                                                  | COVERED |
-|     BaseSGDTemplate.optimizer_step (L219)                                            | COVERED |
-|     BaseSGDTemplate.eval_epoch (L223)                                                | COVERED |
-|     BaseSGDTemplate.check_model_and_optimizer (L238)                                 |  MISSED |
-|     BaseSGDTemplate.train_dataset_adaptation (L313)                                  | COVERED |
-|     BaseSGDTemplate.make_train_dataloader (L380)                                     | COVERED |
-|     BaseSGDTemplate.make_eval_dataloader (L418)                                      | COVERED |
-|     BaseSGDTemplate.eval_dataset_adaptation (L456)                                   | COVERED |
-|   PeriodicEval (L530)                                                                | COVERED |
-|     PeriodicEval.__init__ (L536)                                                     | COVERED |
-|     PeriodicEval.before_training (L559)                                              | COVERED |
-|     PeriodicEval.before_training_exp (L568)                                          |  MISSED |
-|     PeriodicEval.after_training_epoch (L593)                                         | COVERED |
-|     PeriodicEval.after_training_iteration (L599)                                     | COVERED |
-|     PeriodicEval.after_training_exp (L606)                                           | COVERED |
+|     BaseSGDTemplate.train (L164)                                                     |  MISSED |
+|     BaseSGDTemplate.eval (L176)                                                      | COVERED |
+|     BaseSGDTemplate.make_optimizer (L193)                                            | COVERED |
+|     BaseSGDTemplate.criterion (L198)                                                 | COVERED |
+|     BaseSGDTemplate.forward (L202)                                                   | COVERED |
+|     BaseSGDTemplate.model_adaptation (L206)                                          | COVERED |
+|     BaseSGDTemplate.stop_training (L210)                                             | COVERED |
+|     BaseSGDTemplate.training_epoch (L214)                                            |  MISSED |
+|     BaseSGDTemplate.backward (L218)                                                  | COVERED |
+|     BaseSGDTemplate.optimizer_step (L222)                                            | COVERED |
+|     BaseSGDTemplate.eval_epoch (L226)                                                | COVERED |
+|     BaseSGDTemplate.check_model_and_optimizer (L241)                                 |  MISSED |
+|     BaseSGDTemplate.train_dataset_adaptation (L316)                                  | COVERED |
+|     BaseSGDTemplate.make_train_dataloader (L383)                                     | COVERED |
+|     BaseSGDTemplate.make_eval_dataloader (L421)                                      | COVERED |
+|     BaseSGDTemplate.eval_dataset_adaptation (L459)                                   | COVERED |
+|   PeriodicEval (L533)                                                                | COVERED |
+|     PeriodicEval.__init__ (L539)                                                     | COVERED |
+|     PeriodicEval.before_training (L562)                                              | COVERED |
+|     PeriodicEval.before_training_exp (L571)                                          |  MISSED |
+|     PeriodicEval.after_training_epoch (L596)                                         | COVERED |
+|     PeriodicEval.after_training_iteration (L602)                                     | COVERED |
+|     PeriodicEval.after_training_exp (L609)                                           | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/templates/common_templates.py (module)                                      |  MISSED |
 |   SupervisedTemplate (L28)                                                           | COVERED |
@@ -2493,8 +2499,8 @@
 | models/utils.py                                               |    17 |   13 |     4 |    24% |
 | models/vit.py                                                 |     9 |    3 |     6 |    67% |
 | training/checkpoint.py                                        |     3 |    1 |     2 |    67% |
-| training/losses.py                                            |     8 |    5 |     3 |    38% |
-| training/regularization.py                                    |    11 |    2 |     9 |    82% |
+| training/losses.py                                            |    13 |    8 |     5 |    38% |
+| training/regularization.py                                    |    12 |    3 |     9 |    75% |
 | training/storage_policy.py                                    |    42 |   12 |    30 |    71% |
 | training/utils.py                                             |    24 |   15 |     9 |    38% |
 | training/determinism/cuda_rng.py                              |     6 |    2 |     4 |    67% |
@@ -2550,5 +2556,5 @@
 | training/templates/update_type/meta_update.py                 |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py                  |     3 |    2 |     1 |    33% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2129 |  961 |  1168 |  54.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.9%) -----------------
+| TOTAL                                                         |  2135 |  965 |  1170 |  54.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.8%) -----------------
