@@ -669,8 +669,8 @@
 |   as_taskaware_classification_dataset (L200)                                         |  MISSED |
 |   concat_datasets (L222)                                                             | COVERED |
 |   find_common_transforms_group (L237)                                                | COVERED |
-|   TaskSet (L639)                                                                     | COVERED |
-|     TaskSet.__init__ (L656)                                                          | COVERED |
+|   TaskSet (L641)                                                                     | COVERED |
+|     TaskSet.__init__ (L658)                                                          | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/ffcv_support/center_crop.py (module)                                | COVERED |
 |   get_center_crop_torchvision_alike (L16)                                            |  MISSED |
