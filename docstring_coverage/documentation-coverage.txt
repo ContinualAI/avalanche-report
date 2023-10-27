@@ -346,20 +346,25 @@
 |   make_stream (L612)                                                                 | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/online.py (module)                                              |  MISSED |
-|   BoundaryAware (L43)                                                                | COVERED |
-|     BoundaryAware.is_first_subexp (L53)                                              | COVERED |
-|     BoundaryAware.is_last_subexp (L58)                                               | COVERED |
-|     BoundaryAware.sub_stream_length (L63)                                            | COVERED |
-|     BoundaryAware.access_task_boundaries (L68)                                       | COVERED |
-|   OnlineCLExperience (L77)                                                           | COVERED |
-|     OnlineCLExperience.__init__ (L84)                                                | COVERED |
-|   FixedSizeExperienceSplitter (L130)                                                 |  MISSED |
-|     FixedSizeExperienceSplitter.__init__ (L131)                                      | COVERED |
-|   split_online_stream (L230)                                                         | COVERED |
-|     split_online_stream.default_online_split_wrapper (L276)                          |  MISSED |
-|     split_online_stream.exps_iter (L285)                                             |  MISSED |
-|   OnlineCLScenario (L313)                                                            |  MISSED |
-|     OnlineCLScenario.__init__ (L314)                                                 | COVERED |
+|   CyclicSampler (L45)                                                                | COVERED |
+|     CyclicSampler.__init__ (L48)                                                     |  MISSED |
+|   BoundaryAware (L69)                                                                | COVERED |
+|     BoundaryAware.is_first_subexp (L80)                                              | COVERED |
+|     BoundaryAware.is_last_subexp (L85)                                               | COVERED |
+|     BoundaryAware.sub_stream_length (L90)                                            | COVERED |
+|     BoundaryAware.access_task_boundaries (L96)                                       | COVERED |
+|   OnlineCLExperience (L106)                                                          | COVERED |
+|     OnlineCLExperience.__init__ (L113)                                               | COVERED |
+|   FixedSizeExperienceSplitter (L162)                                                 |  MISSED |
+|     FixedSizeExperienceSplitter.__init__ (L163)                                      | COVERED |
+|   split_online_stream (L263)                                                         | COVERED |
+|     split_online_stream.default_online_split_wrapper (L309)                          |  MISSED |
+|     split_online_stream.exps_iter (L318)                                             |  MISSED |
+|   create_sub_exp_from_multi_exps (L350)                                              | COVERED |
+|   split_continuous_linear_decay_stream (L402)                                        | COVERED |
+|     split_continuous_linear_decay_stream.exps_iter (L499)                            |  MISSED |
+|   OnlineCLScenario (L532)                                                            |  MISSED |
+|     OnlineCLScenario.__init__ (L533)                                                 | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/reinforcement_learning.py (module)                              | COVERED |
 |   RLExperience (L38)                                                                 | COVERED |
@@ -2400,7 +2405,7 @@
 | benchmarks/scenarios/detection_scenario.py                    |    11 |    7 |     4 |    36% |
 | benchmarks/scenarios/exmodel_scenario.py                      |     5 |    2 |     3 |    60% |
 | benchmarks/scenarios/generic_scenario.py                      |    31 |   14 |    17 |    55% |
-| benchmarks/scenarios/online.py                                |    15 |    5 |    10 |    67% |
+| benchmarks/scenarios/online.py                                |    20 |    7 |    13 |    65% |
 | benchmarks/scenarios/reinforcement_learning.py                |     7 |    3 |     4 |    57% |
 | benchmarks/scenarios/supervised.py                            |     9 |    0 |     9 |   100% |
 | benchmarks/scenarios/task_aware.py                            |     6 |    0 |     6 |   100% |
@@ -2556,5 +2561,5 @@
 | training/templates/update_type/meta_update.py                 |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py                  |     3 |    2 |     1 |    33% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2135 |  965 |  1170 |  54.8% |
+| TOTAL                                                         |  2140 |  967 |  1173 |  54.8% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.8%) -----------------
