@@ -1495,9 +1495,9 @@
 |     BatchRenorm2D.forward (L73)                                                      |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/bic_model.py (module)                                                         |  MISSED |
-|   BiasLayer (L4)                                                                     | COVERED |
-|     BiasLayer.__init__ (L13)                                                         | COVERED |
-|     BiasLayer.forward (L27)                                                          |  MISSED |
+|   BiasLayer (L5)                                                                     | COVERED |
+|     BiasLayer.__init__ (L14)                                                         | COVERED |
+|     BiasLayer.forward (L28)                                                          |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/cosine_layer.py (module)                                                      |  MISSED |
 |   CosineLinear (L17)                                                                 | COVERED |
@@ -1866,18 +1866,18 @@
 |   ParametricBuffer (L335)                                                            | COVERED |
 |     ParametricBuffer.__init__ (L339)                                                 | COVERED |
 |     ParametricBuffer.update (L364)                                                   |  MISSED |
-|   ExemplarsSelectionStrategy (L475)                                                  | COVERED |
-|     ExemplarsSelectionStrategy.make_sorted_indices (L481)                            | COVERED |
-|   RandomExemplarsSelectionStrategy (L492)                                            | COVERED |
-|     RandomExemplarsSelectionStrategy.make_sorted_indices (L495)                      |  MISSED |
-|   FeatureBasedExemplarsSelectionStrategy (L503)                                      | COVERED |
-|     FeatureBasedExemplarsSelectionStrategy.__init__ (L506)                           |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L510)                |  MISSED |
-|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L528)  | COVERED |
-|   HerdingSelectionStrategy (L536)                                                    | COVERED |
-|     HerdingSelectionStrategy.make_sorted_indices_from_features (L544)                |  MISSED |
-|   ClosestToCenterSelectionStrategy (L564)                                            | COVERED |
-|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L569)        |  MISSED |
+|   ExemplarsSelectionStrategy (L478)                                                  | COVERED |
+|     ExemplarsSelectionStrategy.make_sorted_indices (L484)                            | COVERED |
+|   RandomExemplarsSelectionStrategy (L495)                                            | COVERED |
+|     RandomExemplarsSelectionStrategy.make_sorted_indices (L498)                      |  MISSED |
+|   FeatureBasedExemplarsSelectionStrategy (L506)                                      | COVERED |
+|     FeatureBasedExemplarsSelectionStrategy.__init__ (L509)                           |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices (L513)                |  MISSED |
+|     FeatureBasedExemplarsSelectionStrategy.make_sorted_indices_from_features (L531)  | COVERED |
+|   HerdingSelectionStrategy (L539)                                                    | COVERED |
+|     HerdingSelectionStrategy.make_sorted_indices_from_features (L547)                |  MISSED |
+|   ClosestToCenterSelectionStrategy (L567)                                            | COVERED |
+|     ClosestToCenterSelectionStrategy.make_sorted_indices_from_features (L572)        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/utils.py (module)                                                           | COVERED |
 |   cycle (L62)                                                                        |  MISSED |
@@ -1923,17 +1923,19 @@
 |     AGEMPlugin.update_memory (L116)                                                  | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/bic.py (module)                                                     |  MISSED |
-|   BiCPlugin (L36)                                                                    | COVERED |
-|     BiCPlugin.__init__ (L49)                                                         | COVERED |
-|     BiCPlugin.before_training (L122)                                                 |  MISSED |
-|     BiCPlugin.before_train_dataset_adaptation (L127)                                 |  MISSED |
-|     BiCPlugin.before_training_exp (L172)                                             | COVERED |
-|     BiCPlugin.after_forward (L214)                                                   |  MISSED |
-|     BiCPlugin.after_eval_forward (L218)                                              |  MISSED |
-|     BiCPlugin.before_backward (L222)                                                 |  MISSED |
-|     BiCPlugin.after_training_exp (L242)                                              |  MISSED |
-|     BiCPlugin.cross_entropy (L303)                                                   | COVERED |
-|     BiCPlugin.get_group_lengths (L309)                                               | COVERED |
+|   BiCPlugin (L35)                                                                    | COVERED |
+|     BiCPlugin.__init__ (L48)                                                         | COVERED |
+|     BiCPlugin.before_training (L127)                                                 |  MISSED |
+|     BiCPlugin.before_train_dataset_adaptation (L132)                                 |  MISSED |
+|     BiCPlugin.before_training_exp (L175)                                             | COVERED |
+|     BiCPlugin.after_eval_forward (L219)                                              |  MISSED |
+|     BiCPlugin.bias_forward (L226)                                                    |  MISSED |
+|     BiCPlugin.before_backward (L232)                                                 |  MISSED |
+|     BiCPlugin.after_training_exp (L252)                                              |  MISSED |
+|     BiCPlugin.cross_entropy (L284)                                                   | COVERED |
+|     BiCPlugin.get_group_lengths (L298)                                               | COVERED |
+|     BiCPlugin.make_distillation_loss (L309)                                          |  MISSED |
+|     BiCPlugin.bias_correction_step (L352)                                            |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/checkpoint.py (module)                                              |  MISSED |
 |   CheckpointStorage (L12)                                                            | COVERED |
@@ -2566,7 +2568,7 @@
 | training/determinism/cuda_rng.py                              |     6 |    2 |     4 |    67% |
 | training/determinism/rng_manager.py                           |     1 |    1 |     0 |     0% |
 | training/plugins/agem.py                                      |     8 |    1 |     7 |    88% |
-| training/plugins/bic.py                                       |    12 |    7 |     5 |    42% |
+| training/plugins/bic.py                                       |    14 |    9 |     5 |    36% |
 | training/plugins/checkpoint.py                                |     9 |    1 |     8 |    89% |
 | training/plugins/checkpoint_common_recipes.py                 |     1 |    1 |     0 |     0% |
 | training/plugins/clock.py                                     |     9 |    7 |     2 |    22% |
@@ -2618,5 +2620,5 @@
 | training/templates/update_type/meta_update.py                 |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py                  |     3 |    2 |     1 |    33% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2189 | 1002 |  1187 |  54.2% |
+| TOTAL                                                         |  2191 | 1004 |  1187 |  54.2% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
