@@ -148,34 +148,34 @@
 |   SpeechCommands (L105)                                                              | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/torchvision_wrapper.py (module)                                  | COVERED |
-|   MNIST (L45)                                                                        |  MISSED |
-|   FashionMNIST (L49)                                                                 |  MISSED |
-|   KMNIST (L53)                                                                       |  MISSED |
-|   EMNIST (L57)                                                                       |  MISSED |
-|   QMNIST (L61)                                                                       |  MISSED |
-|   FakeData (L65)                                                                     |  MISSED |
-|   CocoCaptions (L69)                                                                 |  MISSED |
-|   CocoDetection (L73)                                                                |  MISSED |
-|   LSUN (L77)                                                                         |  MISSED |
-|   ImageFolder (L81)                                                                  |  MISSED |
-|   DatasetFolder (L85)                                                                |  MISSED |
-|   ImageNet (L89)                                                                     |  MISSED |
-|   CIFAR10 (L93)                                                                      |  MISSED |
-|   CIFAR100 (L97)                                                                     |  MISSED |
-|   STL10 (L101)                                                                       |  MISSED |
-|   SVHN (L105)                                                                        |  MISSED |
-|   PhotoTour (L109)                                                                   |  MISSED |
-|   SBU (L113)                                                                         |  MISSED |
-|   Flickr8k (L117)                                                                    |  MISSED |
-|   Flickr30k (L121)                                                                   |  MISSED |
-|   VOCDetection (L125)                                                                |  MISSED |
-|   VOCSegmentation (L129)                                                             |  MISSED |
-|   Cityscapes (L133)                                                                  |  MISSED |
-|   SBDataset (L137)                                                                   |  MISSED |
-|   USPS (L141)                                                                        |  MISSED |
-|   HMDB51 (L145)                                                                      |  MISSED |
-|   UCF101 (L149)                                                                      |  MISSED |
-|   CelebA (L153)                                                                      |  MISSED |
+|   MNIST (L46)                                                                        |  MISSED |
+|   FashionMNIST (L50)                                                                 |  MISSED |
+|   KMNIST (L54)                                                                       |  MISSED |
+|   EMNIST (L58)                                                                       |  MISSED |
+|   QMNIST (L62)                                                                       |  MISSED |
+|   FakeData (L66)                                                                     |  MISSED |
+|   CocoCaptions (L70)                                                                 |  MISSED |
+|   CocoDetection (L74)                                                                |  MISSED |
+|   LSUN (L78)                                                                         |  MISSED |
+|   ImageFolder (L82)                                                                  |  MISSED |
+|   DatasetFolder (L86)                                                                |  MISSED |
+|   ImageNet (L90)                                                                     |  MISSED |
+|   CIFAR10 (L94)                                                                      |  MISSED |
+|   CIFAR100 (L98)                                                                     |  MISSED |
+|   STL10 (L102)                                                                       |  MISSED |
+|   SVHN (L106)                                                                        |  MISSED |
+|   PhotoTour (L110)                                                                   |  MISSED |
+|   SBU (L114)                                                                         |  MISSED |
+|   Flickr8k (L118)                                                                    |  MISSED |
+|   Flickr30k (L122)                                                                   |  MISSED |
+|   VOCDetection (L126)                                                                |  MISSED |
+|   VOCSegmentation (L130)                                                             |  MISSED |
+|   Cityscapes (L134)                                                                  |  MISSED |
+|   SBDataset (L138)                                                                   |  MISSED |
+|   USPS (L142)                                                                        |  MISSED |
+|   HMDB51 (L146)                                                                      |  MISSED |
+|   UCF101 (L150)                                                                      |  MISSED |
+|   CelebA (L154)                                                                      |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear.py (module)                                          | COVERED |
 |   CLEARDataset (L49)                                                                 | COVERED |
@@ -184,15 +184,17 @@
 | benchmarks/datasets/clear/clear_data.py (module)                                     | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50.py (module)                                        | COVERED |
-|   CORe50Dataset (L31)                                                                | COVERED |
-|     CORe50Dataset.__init__ (L34)                                                     | COVERED |
-|   CORe50 (L240)                                                                      |  MISSED |
+|   CORe50Dataset (L33)                                                                | COVERED |
+|     CORe50Dataset.__init__ (L36)                                                     | COVERED |
+|   CORe50 (L242)                                                                      |  MISSED |
+|   checkpoint_CORe50Dataset (L253)                                                    |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50_data.py (module)                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/cub200/cub200.py (module)                                        | COVERED |
-|   CUB200 (L36)                                                                       | COVERED |
-|     CUB200.__init__ (L52)                                                            | COVERED |
+|   CUB200 (L38)                                                                       | COVERED |
+|     CUB200.__init__ (L54)                                                            | COVERED |
+|   checkpoint_CUB200 (L184)                                                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim.py (module)                        | COVERED |
 |   ClassificationSubSequence (L34)                                                    | COVERED |
@@ -205,28 +207,41 @@
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py (module)                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/external_datasets/cifar.py (module)                              |  MISSED |
-|   get_cifar10_dataset (L7)                                                           |  MISSED |
-|   get_cifar100_dataset (L17)                                                         |  MISSED |
-|   load_CIFAR100 (L27)                                                                |  MISSED |
-|   save_CIFAR100 (L34)                                                                |  MISSED |
-|   load_CIFAR10 (L42)                                                                 |  MISSED |
-|   save_CIFAR10 (L49)                                                                 |  MISSED |
+|   get_cifar10_dataset (L8)                                                           |  MISSED |
+|   get_cifar100_dataset (L18)                                                         |  MISSED |
+|   load_CIFAR100 (L28)                                                                |  MISSED |
+|   checkpoint_CIFAR100 (L35)                                                          |  MISSED |
+|   checkpoint_CIFAR10 (L51)                                                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/external_datasets/fmnist.py (module)                             |  MISSED |
-|   get_fmnist_dataset (L7)                                                            |  MISSED |
-|   load_FashionMNIST (L16)                                                            |  MISSED |
-|   save_FashionMNIST (L23)                                                            |  MISSED |
+|   get_fmnist_dataset (L8)                                                            |  MISSED |
+|   checkpoint_FashionMNIST (L18)                                                      |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/external_datasets/mnist.py (module)                              |  MISSED |
-|   TensorMNIST (L6)                                                                   |  MISSED |
-|   get_mnist_dataset (L27)                                                            |  MISSED |
-|   load_MNIST (L38)                                                                   |  MISSED |
-|   save_MNIST (L45)                                                                   |  MISSED |
+|   TensorMNIST (L7)                                                                   |  MISSED |
+|   get_mnist_dataset (L28)                                                            |  MISSED |
+|   checkpoint_TensorMNIST (L40)                                                       |  MISSED |
+|--------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/imagenet/imagenet.py (module)                                    |  MISSED |
+|   AvalancheImageNet (L25)                                                            | COVERED |
+|     AvalancheImageNet.__init__ (L64)                                                 |  MISSED |
+|     AvalancheImageNet.parse_archives (L112)                                          |  MISSED |
+|     AvalancheImageNet.split_folder (L123)                                            |  MISSED |
+|     AvalancheImageNet.extra_repr (L126)                                              |  MISSED |
+|   checkpoint_AvalancheImageNet (L131)                                                |  MISSED |
+|   load_meta_file (L148)                                                              |  MISSED |
+|   parse_devkit_archive (L174)                                                        | COVERED |
+|     parse_devkit_archive.parse_meta_mat (L185)                                       |  MISSED |
+|     parse_devkit_archive.parse_val_groundtruth_txt (L202)                            |  MISSED |
+|     parse_devkit_archive.get_tmp_dir (L211)                                          |  MISSED |
+|   parse_train_archive (L236)                                                         | COVERED |
+|   parse_val_archive (L264)                                                           | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist.py (module)                              | COVERED |
-|   pil_loader (L41)                                                                   | COVERED |
-|   INATURALIST2018 (L54)                                                              | COVERED |
-|     INATURALIST2018.__init__ (L91)                                                   |  MISSED |
+|   pil_loader (L44)                                                                   | COVERED |
+|   INATURALIST2018 (L57)                                                              | COVERED |
+|     INATURALIST2018.__init__ (L94)                                                   |  MISSED |
+|   checkpoint_INATURALIST2018 (L184)                                                  |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/inaturalist/inaturalist_data.py (module)                         | COVERED |
 |   TqdmUpTo (L106)                                                                    | COVERED |
@@ -238,50 +253,56 @@
 | benchmarks/datasets/lvis_dataset/lvis_data.py (module)                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/lvis_dataset/lvis_dataset.py (module)                            | COVERED |
-|   LvisDataset (L40)                                                                  | COVERED |
-|     LvisDataset.__init__ (L43)                                                       | COVERED |
-|   LVISImgEntry (L212)                                                                |  MISSED |
-|   LVISAnnotationEntry (L224)                                                         |  MISSED |
-|   LVISImgTargets (L233)                                                              |  MISSED |
-|   LVISDetectionTargets (L243)                                                        |  MISSED |
-|     LVISDetectionTargets.__init__ (L244)                                             |  MISSED |
+|   LvisDataset (L42)                                                                  | COVERED |
+|     LvisDataset.__init__ (L45)                                                       | COVERED |
+|   checkpoint_LvisDataset (L215)                                                      |  MISSED |
+|   LVISImgEntry (L232)                                                                |  MISSED |
+|   LVISAnnotationEntry (L244)                                                         |  MISSED |
+|   LVISImgTargets (L253)                                                              |  MISSED |
+|   LVISDetectionTargets (L263)                                                        |  MISSED |
+|     LVISDetectionTargets.__init__ (L264)                                             |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet.py (module)                          |  MISSED |
-|   MiniImageNetDataset (L87)                                                          | COVERED |
-|     MiniImageNetDataset.__init__ (L108)                                              | COVERED |
-|     MiniImageNetDataset.get_train_path (L210)                                        |  MISSED |
-|     MiniImageNetDataset.prepare_dataset (L216)                                       |  MISSED |
+|   MiniImageNetDataset (L89)                                                          | COVERED |
+|     MiniImageNetDataset.__init__ (L110)                                              | COVERED |
+|     MiniImageNetDataset.get_train_path (L212)                                        |  MISSED |
+|     MiniImageNetDataset.prepare_dataset (L218)                                       |  MISSED |
+|   checkpoint_MiniImageNetDataset (L290)                                              |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py (module)                     |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris.py (module)                                  | COVERED |
-|   OpenLORIS (L28)                                                                    | COVERED |
-|     OpenLORIS.__init__ (L31)                                                         | COVERED |
+|   OpenLORIS (L30)                                                                    | COVERED |
+|     OpenLORIS.__init__ (L33)                                                         | COVERED |
+|   checkpoint_OpenLORIS (L173)                                                        |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/openloris/openloris_data.py (module)                             | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/penn_fudan/penn_fudan_data.py (module)                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/penn_fudan/penn_fudan_dataset.py (module)                        |  MISSED |
-|   default_mask_loader (L68)                                                          |  MISSED |
-|   PennFudanDataset (L72)                                                             | COVERED |
-|     PennFudanDataset.__init__ (L80)                                                  | COVERED |
-|     PennFudanDataset.make_targets (L134)                                             |  MISSED |
+|   default_mask_loader (L70)                                                          |  MISSED |
+|   PennFudanDataset (L74)                                                             | COVERED |
+|     PennFudanDataset.__init__ (L82)                                                  | COVERED |
+|     PennFudanDataset.make_targets (L136)                                             |  MISSED |
+|   checkpoint_PennFudanDataset (L204)                                                 |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/stream51/stream51.py (module)                                    | COVERED |
-|   Stream51 (L37)                                                                     | COVERED |
-|     Stream51.__init__ (L40)                                                          | COVERED |
-|     Stream51.make_dataset (L186)                                                     | COVERED |
+|   Stream51 (L39)                                                                     | COVERED |
+|     Stream51.__init__ (L42)                                                          | COVERED |
+|     Stream51.make_dataset (L188)                                                     | COVERED |
+|   checkpoint_Stream51 (L263)                                                         |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/stream51/stream51_data.py (module)                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/tiny_imagenet/tiny_imagenet.py (module)                          | COVERED |
-|   TinyImagenet (L27)                                                                 | COVERED |
-|     TinyImagenet.__init__ (L36)                                                      | COVERED |
-|     TinyImagenet.labels2dict (L82)                                                   | COVERED |
-|     TinyImagenet.load_data (L105)                                                    | COVERED |
-|     TinyImagenet.get_train_images_paths (L131)                                       | COVERED |
-|     TinyImagenet.get_test_images_paths (L145)                                        | COVERED |
+|   TinyImagenet (L29)                                                                 | COVERED |
+|     TinyImagenet.__init__ (L38)                                                      | COVERED |
+|     TinyImagenet.labels2dict (L84)                                                   | COVERED |
+|     TinyImagenet.load_data (L107)                                                    | COVERED |
+|     TinyImagenet.get_train_images_paths (L133)                                       | COVERED |
+|     TinyImagenet.get_test_images_paths (L147)                                        | COVERED |
+|   checkpoint_TinyImagenet (L195)                                                     |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/dataset_scenario.py (module)                                    | COVERED |
 |   benchmark_from_datasets (L39)                                                      | COVERED |
@@ -518,7 +539,7 @@
 |     AvalancheDataset.freeze_transforms (L408)                                        | COVERED |
 |     AvalancheDataset.remove_current_transform_group (L414)                           | COVERED |
 |     AvalancheDataset.replace_current_transform_group (L421)                          | COVERED |
-|   make_avalanche_dataset (L633)                                                      | COVERED |
+|   make_avalanche_dataset (L639)                                                      | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/data_attribute.py (module)                                          | COVERED |
 |   DataAttribute (L28)                                                                | COVERED |
@@ -585,15 +606,16 @@
 |   slice_alike_object_to_indices (L343)                                               | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/datasets_from_filelists.py (module)                                 | COVERED |
-|   default_image_loader (L39)                                                         | COVERED |
-|   default_flist_reader (L50)                                                         | COVERED |
-|   PathsDataset (L80)                                                                 | COVERED |
-|     PathsDataset.__init__ (L86)                                                      | COVERED |
-|   FilelistDataset (L159)                                                             | COVERED |
-|     FilelistDataset.__init__ (L165)                                                  | COVERED |
-|   datasets_from_filelists (L199)                                                     | COVERED |
-|   datasets_from_paths (L295)                                                         | COVERED |
-|   common_paths_root (L452)                                                           |  MISSED |
+|   default_image_loader (L42)                                                         | COVERED |
+|   default_flist_reader (L53)                                                         | COVERED |
+|   PathsDataset (L83)                                                                 | COVERED |
+|     PathsDataset.__init__ (L89)                                                      | COVERED |
+|   FilelistDataset (L162)                                                             | COVERED |
+|     FilelistDataset.__init__ (L168)                                                  | COVERED |
+|   checkpoint_FilelistDataset (L203)                                                  |  MISSED |
+|   datasets_from_filelists (L219)                                                     | COVERED |
+|   datasets_from_paths (L315)                                                         | COVERED |
+|   common_paths_root (L472)                                                           |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/detection_dataset.py (module)                                       | COVERED |
 |   DetectionDataset (L76)                                                             |  MISSED |
@@ -619,18 +641,18 @@
 |   concat_detection_datasets (L634)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/flat_data.py (module)                                               | COVERED |
-|   LazyIndices (L47)                                                                  | COVERED |
-|     LazyIndices.__init__ (L56)                                                       |  MISSED |
-|   LazyRange (L124)                                                                   | COVERED |
-|     LazyRange.__init__ (L127)                                                        |  MISSED |
-|   FlatData (L154)                                                                    | COVERED |
-|     FlatData.__init__ (L175)                                                         | COVERED |
-|     FlatData.subset (L215)                                                           | COVERED |
-|     FlatData.concat (L233)                                                           | COVERED |
-|   ConstantSequence (L373)                                                            | COVERED |
-|     ConstantSequence.__init__ (L376)                                                 | COVERED |
-|     ConstantSequence.subset (L415)                                                   | COVERED |
-|     ConstantSequence.concat (L423)                                                   | COVERED |
+|   LazyIndices (L46)                                                                  | COVERED |
+|     LazyIndices.__init__ (L55)                                                       |  MISSED |
+|   LazyRange (L155)                                                                   | COVERED |
+|     LazyRange.__init__ (L158)                                                        |  MISSED |
+|   FlatData (L185)                                                                    | COVERED |
+|     FlatData.__init__ (L206)                                                         | COVERED |
+|     FlatData.subset (L286)                                                           | COVERED |
+|     FlatData.concat (L312)                                                           | COVERED |
+|   ConstantSequence (L455)                                                            | COVERED |
+|     ConstantSequence.__init__ (L458)                                                 | COVERED |
+|     ConstantSequence.subset (L497)                                                   | COVERED |
+|     ConstantSequence.concat (L505)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/utils/torchvision_wrapper.py (module)                                     | COVERED |
 |   ImageFolder (L19)                                                                  |  MISSED |
@@ -723,6 +745,14 @@
 |       SmartModuleWrapper.generate_code.apply_convert (L519)                          |  MISSED |
 |       SmartModuleWrapper.generate_code.apply (L523)                                  |  MISSED |
 |     SmartModuleWrapper.declare_state_and_memory (L541)                               |  MISSED |
+|--------------------------------------------------------------------------------------|---------|
+| checkpointing/checkpoint.py (module)                                                 |  MISSED |
+|   constructor_based_serialization (L42)                                              | COVERED |
+|   maybe_load_checkpoint (L111)                                                       | COVERED |
+|   save_checkpoint (L200)                                                             | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| checkpointing/checkpoint_internals.py (module)                                       |  MISSED |
+|   fixed_pytorch_1_13_load (L207)                                                     | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | distributed/distributed_consistency_verification.py (module)                         |  MISSED |
 |   hash_benchmark (L17)                                                               |  MISSED |
@@ -1805,10 +1835,6 @@
 |   simpleMLP (L86)                                                                    |  MISSED |
 |   create_model (L91)                                                                 |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
-| training/checkpoint.py (module)                                                      |  MISSED |
-|   maybe_load_checkpoint (L10)                                                        | COVERED |
-|   save_checkpoint (L57)                                                              | COVERED |
-|--------------------------------------------------------------------------------------|---------|
 | training/losses.py (module)                                                          |  MISSED |
 |   ICaRLLossPlugin (L13)                                                              | COVERED |
 |     ICaRLLossPlugin.__init__ (L24)                                                   |  MISSED |
@@ -1946,8 +1972,6 @@
 |     CheckpointStorage.load_checkpoint (L72)                                          | COVERED |
 |   CheckpointPlugin (L96)                                                             | COVERED |
 |     CheckpointPlugin.__init__ (L135)                                                 | COVERED |
-|--------------------------------------------------------------------------------------|---------|
-| training/plugins/checkpoint_common_recipes.py (module)                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/plugins/clock.py (module)                                                   |  MISSED |
 |   Clock (L14)                                                                        | COVERED |
@@ -2196,13 +2220,13 @@
 |     StreamingLDA.load_model (L245)                                                   | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/der.py (module)                                                  |  MISSED |
-|   compute_dataset_logits (L35)                                                       |  MISSED |
-|   ClassBalancedBufferWithLogits (L56)                                                | COVERED |
-|     ClassBalancedBufferWithLogits.__init__ (L61)                                     | COVERED |
-|     ClassBalancedBufferWithLogits.update (L86)                                       |  MISSED |
-|   DER (L140)                                                                         | COVERED |
-|     DER.__init__ (L147)                                                              | COVERED |
-|     DER.training_epoch (L262)                                                        | COVERED |
+|   compute_dataset_logits (L36)                                                       |  MISSED |
+|   ClassBalancedBufferWithLogits (L58)                                                | COVERED |
+|     ClassBalancedBufferWithLogits.__init__ (L63)                                     | COVERED |
+|     ClassBalancedBufferWithLogits.update (L88)                                       |  MISSED |
+|   DER (L150)                                                                         | COVERED |
+|     DER.__init__ (L157)                                                              | COVERED |
+|     DER.training_epoch (L274)                                                        | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/er_ace.py (module)                                               |  MISSED |
 |   ER_ACE (L19)                                                                       | COVERED |
@@ -2435,27 +2459,28 @@
 | benchmarks/datasets/torchvision_wrapper.py                    |    29 |   28 |     1 |     3% |
 | benchmarks/datasets/clear/clear.py                            |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/clear/clear_data.py                       |     1 |    0 |     1 |   100% |
-| benchmarks/datasets/core50/core50.py                          |     4 |    1 |     3 |    75% |
+| benchmarks/datasets/core50/core50.py                          |     5 |    2 |     3 |    60% |
 | benchmarks/datasets/core50/core50_data.py                     |     1 |    0 |     1 |   100% |
-| benchmarks/datasets/cub200/cub200.py                          |     3 |    0 |     3 |   100% |
+| benchmarks/datasets/cub200/cub200.py                          |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim.py          |     7 |    0 |     7 |   100% |
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py     |     1 |    0 |     1 |   100% |
-| benchmarks/datasets/external_datasets/cifar.py                |     7 |    7 |     0 |     0% |
-| benchmarks/datasets/external_datasets/fmnist.py               |     4 |    4 |     0 |     0% |
-| benchmarks/datasets/external_datasets/mnist.py                |     5 |    5 |     0 |     0% |
-| benchmarks/datasets/inaturalist/inaturalist.py                |     4 |    1 |     3 |    75% |
+| benchmarks/datasets/external_datasets/cifar.py                |     6 |    6 |     0 |     0% |
+| benchmarks/datasets/external_datasets/fmnist.py               |     3 |    3 |     0 |     0% |
+| benchmarks/datasets/external_datasets/mnist.py                |     4 |    4 |     0 |     0% |
+| benchmarks/datasets/imagenet/imagenet.py                      |    14 |   10 |     4 |    29% |
+| benchmarks/datasets/inaturalist/inaturalist.py                |     5 |    2 |     3 |    60% |
 | benchmarks/datasets/inaturalist/inaturalist_data.py           |     6 |    0 |     6 |   100% |
 | benchmarks/datasets/lvis_dataset/lvis_data.py                 |     1 |    1 |     0 |     0% |
-| benchmarks/datasets/lvis_dataset/lvis_dataset.py              |     8 |    5 |     3 |    38% |
-| benchmarks/datasets/mini_imagenet/mini_imagenet.py            |     5 |    3 |     2 |    40% |
+| benchmarks/datasets/lvis_dataset/lvis_dataset.py              |     9 |    6 |     3 |    33% |
+| benchmarks/datasets/mini_imagenet/mini_imagenet.py            |     6 |    4 |     2 |    33% |
 | benchmarks/datasets/mini_imagenet/mini_imagenet_data.py       |     1 |    1 |     0 |     0% |
-| benchmarks/datasets/openloris/openloris.py                    |     3 |    0 |     3 |   100% |
+| benchmarks/datasets/openloris/openloris.py                    |     4 |    1 |     3 |    75% |
 | benchmarks/datasets/openloris/openloris_data.py               |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/penn_fudan/penn_fudan_data.py             |     1 |    1 |     0 |     0% |
-| benchmarks/datasets/penn_fudan/penn_fudan_dataset.py          |     5 |    3 |     2 |    40% |
-| benchmarks/datasets/stream51/stream51.py                      |     4 |    0 |     4 |   100% |
+| benchmarks/datasets/penn_fudan/penn_fudan_dataset.py          |     6 |    4 |     2 |    33% |
+| benchmarks/datasets/stream51/stream51.py                      |     5 |    1 |     4 |    80% |
 | benchmarks/datasets/stream51/stream51_data.py                 |     1 |    1 |     0 |     0% |
-| benchmarks/datasets/tiny_imagenet/tiny_imagenet.py            |     7 |    0 |     7 |   100% |
+| benchmarks/datasets/tiny_imagenet/tiny_imagenet.py            |     8 |    1 |     7 |    88% |
 | benchmarks/scenarios/dataset_scenario.py                      |    11 |    4 |     7 |    64% |
 | benchmarks/scenarios/detection_scenario.py                    |    11 |    7 |     4 |    36% |
 | benchmarks/scenarios/exmodel_scenario.py                      |     5 |    2 |     3 |    60% |
@@ -2482,7 +2507,7 @@
 | benchmarks/utils/dataset_definitions.py                       |    11 |    2 |     9 |    82% |
 | benchmarks/utils/dataset_traversal_utils.py                   |     7 |    3 |     4 |    57% |
 | benchmarks/utils/dataset_utils.py                             |    12 |    6 |     6 |    50% |
-| benchmarks/utils/datasets_from_filelists.py                   |    10 |    1 |     9 |    90% |
+| benchmarks/utils/datasets_from_filelists.py                   |    11 |    2 |     9 |    82% |
 | benchmarks/utils/detection_dataset.py                         |    22 |   16 |     6 |    27% |
 | benchmarks/utils/flat_data.py                                 |    13 |    2 |    11 |    85% |
 | benchmarks/utils/torchvision_wrapper.py                       |     3 |    2 |     1 |    33% |
@@ -2495,6 +2520,8 @@
 | benchmarks/utils/ffcv_support/ffcv_loader.py                  |     1 |    0 |     1 |   100% |
 | benchmarks/utils/ffcv_support/ffcv_support_internals.py       |     1 |    0 |     1 |   100% |
 | benchmarks/utils/ffcv_support/ffcv_transform_utils.py         |    21 |   14 |     7 |    33% |
+| checkpointing/checkpoint.py                                   |     4 |    1 |     3 |    75% |
+| checkpointing/checkpoint_internals.py                         |     2 |    1 |     1 |    50% |
 | distributed/distributed_consistency_verification.py           |     6 |    6 |     0 |     0% |
 | distributed/distributed_helper.py                             |    12 |    9 |     3 |    25% |
 | evaluation/metric_definitions.py                              |    55 |   49 |     6 |    11% |
@@ -2560,7 +2587,6 @@
 | models/timm_vit.py                                            |     9 |    5 |     4 |    44% |
 | models/utils.py                                               |    17 |   13 |     4 |    24% |
 | models/vit.py                                                 |     9 |    3 |     6 |    67% |
-| training/checkpoint.py                                        |     3 |    1 |     2 |    67% |
 | training/losses.py                                            |    13 |    8 |     5 |    38% |
 | training/regularization.py                                    |    12 |    3 |     9 |    75% |
 | training/storage_policy.py                                    |    42 |   12 |    30 |    71% |
@@ -2570,7 +2596,6 @@
 | training/plugins/agem.py                                      |     8 |    1 |     7 |    88% |
 | training/plugins/bic.py                                       |    14 |    9 |     5 |    36% |
 | training/plugins/checkpoint.py                                |     9 |    1 |     8 |    89% |
-| training/plugins/checkpoint_common_recipes.py                 |     1 |    1 |     0 |     0% |
 | training/plugins/clock.py                                     |     9 |    7 |     2 |    22% |
 | training/plugins/cope.py                                      |    16 |    3 |    13 |    81% |
 | training/plugins/cwr_star.py                                  |    10 |    5 |     5 |    50% |
@@ -2620,5 +2645,5 @@
 | training/templates/update_type/meta_update.py                 |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py                  |     3 |    2 |     1 |    33% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2191 | 1004 |  1187 |  54.2% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.2%) -----------------
+| TOTAL                                                         |  2214 | 1021 |  1193 |  53.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.9%) -----------------
