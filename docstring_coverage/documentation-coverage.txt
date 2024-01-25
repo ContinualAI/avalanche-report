@@ -1808,22 +1808,25 @@
 |   checkpoint_filter_fn (L424)                                                        | COVERED |
 |--------------------------------------------------------------------------------------|---------|
 | models/utils.py (module)                                                             |  MISSED |
-|   is_multi_task_module (L10)                                                         |  MISSED |
-|   avalanche_forward (L17)                                                            |  MISSED |
-|   avalanche_model_adaptation (L24)                                                   |  MISSED |
-|   FeatureExtractorBackbone (L35)                                                     | COVERED |
-|     FeatureExtractorBackbone.__init__ (L41)                                          |  MISSED |
-|     FeatureExtractorBackbone.forward (L48)                                           |  MISSED |
-|     FeatureExtractorBackbone.get_name_to_module (L52)                                |  MISSED |
-|     FeatureExtractorBackbone.get_activation (L58)                                    |  MISSED |
-|       FeatureExtractorBackbone.get_activation.hook (L59)                             |  MISSED |
-|     FeatureExtractorBackbone.add_hooks (L64)                                         | COVERED |
-|   Flatten (L78)                                                                      | COVERED |
-|     Flatten.__init__ (L83)                                                           |  MISSED |
-|     Flatten.forward (L86)                                                            |  MISSED |
-|   MLP (L91)                                                                          | COVERED |
-|     MLP.__init__ (L103)                                                              |  MISSED |
-|     MLP.forward (L117)                                                               |  MISSED |
+|   is_multi_task_module (L11)                                                         |  MISSED |
+|   avalanche_forward (L18)                                                            |  MISSED |
+|   avalanche_model_adaptation (L25)                                                   |  MISSED |
+|   FeatureExtractorBackbone (L36)                                                     | COVERED |
+|     FeatureExtractorBackbone.__init__ (L42)                                          |  MISSED |
+|     FeatureExtractorBackbone.forward (L49)                                           |  MISSED |
+|     FeatureExtractorBackbone.get_name_to_module (L53)                                |  MISSED |
+|     FeatureExtractorBackbone.get_activation (L59)                                    |  MISSED |
+|       FeatureExtractorBackbone.get_activation.hook (L60)                             |  MISSED |
+|     FeatureExtractorBackbone.add_hooks (L65)                                         | COVERED |
+|   FeatureExtractorModel (L79)                                                        | COVERED |
+|     FeatureExtractorModel.__init__ (L84)                                             |  MISSED |
+|     FeatureExtractorModel.forward (L90)                                              |  MISSED |
+|   Flatten (L96)                                                                      | COVERED |
+|     Flatten.__init__ (L101)                                                          |  MISSED |
+|     Flatten.forward (L104)                                                           |  MISSED |
+|   MLP (L109)                                                                         | COVERED |
+|     MLP.__init__ (L121)                                                              |  MISSED |
+|     MLP.forward (L135)                                                               |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | models/vit.py (module)                                                               |  MISSED |
 |   vit_tiny_patch16_224 (L4)                                                          | COVERED |
@@ -2039,6 +2042,12 @@
 |     EWCPlugin.compute_importances (L132)                                             | COVERED |
 |     EWCPlugin.update_importances (L189)                                              | COVERED |
 |--------------------------------------------------------------------------------------|---------|
+| training/plugins/feature_distillation.py (module)                                    |  MISSED |
+|   FeatureDistillationPlugin (L17)                                                    |  MISSED |
+|     FeatureDistillationPlugin.__init__ (L18)                                         | COVERED |
+|     FeatureDistillationPlugin.before_backward (L32)                                  | COVERED |
+|     FeatureDistillationPlugin.after_training_exp (L52)                               | COVERED |
+|--------------------------------------------------------------------------------------|---------|
 | training/plugins/from_scratch_training.py (module)                                   |  MISSED |
 |   FromScratchTrainingPlugin (L11)                                                    | COVERED |
 |     FromScratchTrainingPlugin.__init__ (L20)                                         | COVERED |
@@ -2241,6 +2250,14 @@
 | training/supervised/expert_gate.py (module)                                          |  MISSED |
 |   ExpertGateStrategy (L30)                                                           | COVERED |
 |     ExpertGateStrategy.__init__ (L45)                                                | COVERED |
+|--------------------------------------------------------------------------------------|---------|
+| training/supervised/feature_replay.py (module)                                       |  MISSED |
+|   FeatureDataset (L18)                                                               | COVERED |
+|     FeatureDataset.__init__ (L24)                                                    |  MISSED |
+|   FeatureReplay (L35)                                                                | COVERED |
+|     FeatureReplay.__init__ (L47)                                                     |  MISSED |
+|     FeatureReplay.criterion (L113)                                                   |  MISSED |
+|     FeatureReplay.gather_feature_dataset (L134)                                      |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | training/supervised/icarl.py (module)                                                |  MISSED |
 |   ICaRL (L23)                                                                        | COVERED |
@@ -2585,7 +2602,7 @@
 | models/slda_resnet.py                                         |     5 |    2 |     3 |    60% |
 | models/slim_resnet18.py                                       |    15 |   12 |     3 |    20% |
 | models/timm_vit.py                                            |     9 |    5 |     4 |    44% |
-| models/utils.py                                               |    17 |   13 |     4 |    24% |
+| models/utils.py                                               |    20 |   15 |     5 |    25% |
 | models/vit.py                                                 |     9 |    3 |     6 |    67% |
 | training/losses.py                                            |    13 |    8 |     5 |    38% |
 | training/regularization.py                                    |    12 |    3 |     9 |    75% |
@@ -2602,6 +2619,7 @@
 | training/plugins/early_stopping.py                            |     6 |    4 |     2 |    33% |
 | training/plugins/evaluation.py                                |    12 |    6 |     6 |    50% |
 | training/plugins/ewc.py                                       |     7 |    1 |     6 |    86% |
+| training/plugins/feature_distillation.py                      |     5 |    2 |     3 |    60% |
 | training/plugins/from_scratch_training.py                     |     5 |    1 |     4 |    80% |
 | training/plugins/gdumb.py                                     |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                       |     8 |    1 |     7 |    88% |
@@ -2626,6 +2644,7 @@
 | training/supervised/er_ace.py                                 |     4 |    1 |     3 |    75% |
 | training/supervised/er_aml.py                                 |     4 |    1 |     3 |    75% |
 | training/supervised/expert_gate.py                            |     3 |    1 |     2 |    67% |
+| training/supervised/feature_replay.py                         |     7 |    5 |     2 |    29% |
 | training/supervised/icarl.py                                  |     3 |    1 |     2 |    67% |
 | training/supervised/joint_training.py                         |     7 |    2 |     5 |    71% |
 | training/supervised/l2p.py                                    |     5 |    3 |     2 |    40% |
@@ -2645,5 +2664,5 @@
 | training/templates/update_type/meta_update.py                 |     3 |    2 |     1 |    33% |
 | training/templates/update_type/sgd_update.py                  |     3 |    2 |     1 |    33% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2214 | 1021 |  1193 |  53.9% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 53.9%) -----------------
+| TOTAL                                                         |  2229 | 1030 |  1199 |  53.8% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.8%) -----------------
