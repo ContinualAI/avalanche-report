@@ -218,9 +218,11 @@
 |   checkpoint_FashionMNIST (L18)                                                      |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/external_datasets/mnist.py (module)                              |  MISSED |
-|   TensorMNIST (L7)                                                                   |  MISSED |
-|   get_mnist_dataset (L28)                                                            |  MISSED |
-|   checkpoint_TensorMNIST (L40)                                                       |  MISSED |
+|   TensorMNIST (L8)                                                                   |  MISSED |
+|     TensorMNIST.raw_folder (L30)                                                     |  MISSED |
+|     TensorMNIST.processed_folder (L34)                                               |  MISSED |
+|   get_mnist_dataset (L38)                                                            |  MISSED |
+|   checkpoint_TensorMNIST (L50)                                                       |  MISSED |
 |--------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/imagenet/imagenet.py (module)                                    |  MISSED |
 |   AvalancheImageNet (L25)                                                            | COVERED |
@@ -2487,7 +2489,7 @@
 | benchmarks/datasets/endless_cl_sim/endless_cl_sim_data.py     |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/external_datasets/cifar.py                |     6 |    6 |     0 |     0% |
 | benchmarks/datasets/external_datasets/fmnist.py               |     3 |    3 |     0 |     0% |
-| benchmarks/datasets/external_datasets/mnist.py                |     4 |    4 |     0 |     0% |
+| benchmarks/datasets/external_datasets/mnist.py                |     6 |    6 |     0 |     0% |
 | benchmarks/datasets/imagenet/imagenet.py                      |    14 |   10 |     4 |    29% |
 | benchmarks/datasets/inaturalist/inaturalist.py                |     5 |    2 |     3 |    60% |
 | benchmarks/datasets/inaturalist/inaturalist_data.py           |     6 |    0 |     6 |   100% |
@@ -2668,5 +2670,5 @@
 | training/templates/update_type/meta_update.py                 |     4 |    3 |     1 |    25% |
 | training/templates/update_type/sgd_update.py                  |     4 |    3 |     1 |    25% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2233 | 1033 |  1200 |  53.7% |
+| TOTAL                                                         |  2235 | 1035 |  1200 |  53.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.7%) -----------------
