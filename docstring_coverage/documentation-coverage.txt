@@ -2371,8 +2371,8 @@
 | training/supervised/supervised_contrastive_replay.py (module)                       |  MISSED |
 |   SCR (L18)                                                                         | COVERED |
 |     SCR.__init__ (L35)                                                              | COVERED |
-|     SCR.criterion (L128)                                                            |  MISSED |
-|     SCR.compute_class_means (L166)                                                  |  MISSED |
+|     SCR.criterion (L129)                                                            |  MISSED |
+|     SCR.compute_class_means (L167)                                                  |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/base.py (module)                                                 |  MISSED |
 |   BaseTemplate (L32)                                                                | COVERED |
