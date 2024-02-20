@@ -2291,13 +2291,13 @@
 | training/supervised/lamaml_v2.py (module)                                           |  MISSED |
 |   LaMAML (L26)                                                                      |  MISSED |
 |     LaMAML.__init__ (L27)                                                           | COVERED |
-|     LaMAML.copy_grads (L166)                                                        |  MISSED |
-|     LaMAML.inner_update_step (L171)                                                 | COVERED |
-|   Buffer (L292)                                                                     |  MISSED |
-|     Buffer.__init__ (L293)                                                          |  MISSED |
-|     Buffer.update (L300)                                                            |  MISSED |
-|     Buffer.get_buffer_batch (L306)                                                  |  MISSED |
-|   init_kaiming_normal (L321)                                                        |  MISSED |
+|     LaMAML.copy_grads (L165)                                                        |  MISSED |
+|     LaMAML.inner_update_step (L170)                                                 | COVERED |
+|   Buffer (L291)                                                                     |  MISSED |
+|     Buffer.__init__ (L292)                                                          |  MISSED |
+|     Buffer.update (L299)                                                            |  MISSED |
+|     Buffer.get_buffer_batch (L305)                                                  |  MISSED |
+|   init_kaiming_normal (L319)                                                        |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/mer.py (module)                                                 |  MISSED |
 |   MERBuffer (L17)                                                                   |  MISSED |
