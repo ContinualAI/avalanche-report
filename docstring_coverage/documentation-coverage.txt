@@ -413,8 +413,8 @@
 |   task_incremental_benchmark (L108)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/validation_scenario.py (module)                                |  MISSED |
-|   benchmark_with_validation_stream (L26)                                            | COVERED |
-|     benchmark_with_validation_stream.random_validation_split_strategy_wrapper (L79) |  MISSED |
+|   benchmark_with_validation_stream (L19)                                            | COVERED |
+|     benchmark_with_validation_stream.random_validation_split_strategy_wrapper (L72) |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/deprecated/benchmark_wrapper_utils.py (module)                 |  MISSED |
 |   ExperienceWrapper (L26)                                                           | COVERED |
