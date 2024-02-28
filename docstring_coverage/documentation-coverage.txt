@@ -1547,31 +1547,30 @@
 |     CosineIncrementalClassifier.forward (L159)                                      |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_modules.py (module)                                                  | COVERED |
-|   DynamicModule (L23)                                                               | COVERED |
-|     DynamicModule.adaptation (L32)                                                  | COVERED |
-|     DynamicModule.train_adaptation (L54)                                            | COVERED |
-|     DynamicModule.eval_adaptation (L62)                                             | COVERED |
-|   MultiTaskModule (L87)                                                             | COVERED |
-|     MultiTaskModule.__init__ (L100)                                                 |  MISSED |
-|     MultiTaskModule.adaptation (L106)                                               | COVERED |
-|     MultiTaskModule.eval_adaptation (L130)                                          |  MISSED |
-|     MultiTaskModule.train_adaptation (L133)                                         | COVERED |
-|     MultiTaskModule.forward (L140)                                                  | COVERED |
-|     MultiTaskModule.forward_single_task (L171)                                      | COVERED |
-|     MultiTaskModule.forward_all_tasks (L180)                                        | COVERED |
-|   IncrementalClassifier (L195)                                                      | COVERED |
-|     IncrementalClassifier.__init__ (L204)                                           | COVERED |
-|     IncrementalClassifier.adaptation (L227)                                         | COVERED |
-|     IncrementalClassifier.forward (L259)                                            | COVERED |
-|   MultiHeadClassifier (L273)                                                        | COVERED |
-|     MultiHeadClassifier.__init__ (L297)                                             | COVERED |
-|     MultiHeadClassifier.active_units (L333)                                         |  MISSED |
-|     MultiHeadClassifier.task_masks (L342)                                           |  MISSED |
-|     MultiHeadClassifier.adaptation (L348)                                           | COVERED |
-|     MultiHeadClassifier.forward_single_task (L407)                                  | COVERED |
-|   TrainEvalModel (L433)                                                             | COVERED |
-|     TrainEvalModel.__init__ (L442)                                                  | COVERED |
-|     TrainEvalModel.forward (L455)                                                   |  MISSED |
+|   avalanche_model_adaptation (L24)                                                  |  MISSED |
+|   DynamicModule (L58)                                                               | COVERED |
+|     DynamicModule.__init__ (L67)                                                    | COVERED |
+|     DynamicModule.recursive_adaptation (L76)                                        | COVERED |
+|     DynamicModule.adaptation (L83)                                                  | COVERED |
+|   MultiTaskModule (L116)                                                            | COVERED |
+|     MultiTaskModule.__init__ (L129)                                                 |  MISSED |
+|     MultiTaskModule.adaptation (L135)                                               | COVERED |
+|     MultiTaskModule.forward (L162)                                                  | COVERED |
+|     MultiTaskModule.forward_single_task (L193)                                      | COVERED |
+|     MultiTaskModule.forward_all_tasks (L202)                                        | COVERED |
+|   IncrementalClassifier (L217)                                                      | COVERED |
+|     IncrementalClassifier.__init__ (L226)                                           | COVERED |
+|     IncrementalClassifier.adaptation (L250)                                         | COVERED |
+|     IncrementalClassifier.forward (L283)                                            | COVERED |
+|   MultiHeadClassifier (L297)                                                        | COVERED |
+|     MultiHeadClassifier.__init__ (L321)                                             | COVERED |
+|     MultiHeadClassifier.active_units (L360)                                         |  MISSED |
+|     MultiHeadClassifier.task_masks (L369)                                           |  MISSED |
+|     MultiHeadClassifier.adaptation (L375)                                           | COVERED |
+|     MultiHeadClassifier.forward_single_task (L437)                                  | COVERED |
+|   TrainEvalModel (L463)                                                             | COVERED |
+|     TrainEvalModel.__init__ (L472)                                                  | COVERED |
+|     TrainEvalModel.forward (L485)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
 |   compare_keys (L20)                                                                |  MISSED |
@@ -1600,13 +1599,13 @@
 |     FeCAMClassifier.replace_class_means_dict (L203)                                 |  MISSED |
 |     FeCAMClassifier.replace_class_cov_dict (L210)                                   |  MISSED |
 |     FeCAMClassifier.init_missing_classes (L217)                                     |  MISSED |
-|     FeCAMClassifier.eval_adaptation (L223)                                          |  MISSED |
-|     FeCAMClassifier.apply_transforms (L235)                                         |  MISSED |
-|     FeCAMClassifier.apply_invert_transforms (L240)                                  |  MISSED |
-|     FeCAMClassifier.apply_cov_transforms (L245)                                     |  MISSED |
-|     FeCAMClassifier.load_state_dict (L254)                                          |  MISSED |
-|   compute_covariance (L274)                                                         |  MISSED |
-|   compute_means (L284)                                                              |  MISSED |
+|     FeCAMClassifier.adaptation (L227)                                               |  MISSED |
+|     FeCAMClassifier.apply_transforms (L242)                                         |  MISSED |
+|     FeCAMClassifier.apply_invert_transforms (L247)                                  |  MISSED |
+|     FeCAMClassifier.apply_cov_transforms (L252)                                     |  MISSED |
+|     FeCAMClassifier.load_state_dict (L261)                                          |  MISSED |
+|   compute_covariance (L281)                                                         |  MISSED |
+|   compute_means (L291)                                                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/generator.py (module)                                                        | COVERED |
 |   Generator (L28)                                                                   | COVERED |
@@ -1672,7 +1671,7 @@
 |     NCMClassifier.update_class_means_dict (L92)                                     | COVERED |
 |     NCMClassifier.replace_class_means_dict (L121)                                   | COVERED |
 |     NCMClassifier.init_missing_classes (L131)                                       |  MISSED |
-|     NCMClassifier.eval_adaptation (L137)                                            |  MISSED |
+|     NCMClassifier.adaptation (L137)                                                 |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/packnet.py (module)                                                          | COVERED |
 |   PackNetModule (L27)                                                               | COVERED |
@@ -1812,25 +1811,24 @@
 |   checkpoint_filter_fn (L425)                                                       | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/utils.py (module)                                                            |  MISSED |
-|   is_multi_task_module (L11)                                                        |  MISSED |
-|   avalanche_forward (L18)                                                           |  MISSED |
-|   avalanche_model_adaptation (L25)                                                  |  MISSED |
-|   FeatureExtractorBackbone (L36)                                                    | COVERED |
-|     FeatureExtractorBackbone.__init__ (L42)                                         |  MISSED |
-|     FeatureExtractorBackbone.forward (L49)                                          |  MISSED |
-|     FeatureExtractorBackbone.get_name_to_module (L53)                               |  MISSED |
-|     FeatureExtractorBackbone.get_activation (L59)                                   |  MISSED |
-|       FeatureExtractorBackbone.get_activation.hook (L60)                            |  MISSED |
-|     FeatureExtractorBackbone.add_hooks (L65)                                        | COVERED |
-|   FeatureExtractorModel (L79)                                                       | COVERED |
-|     FeatureExtractorModel.__init__ (L84)                                            |  MISSED |
-|     FeatureExtractorModel.forward (L90)                                             |  MISSED |
-|   Flatten (L96)                                                                     | COVERED |
-|     Flatten.__init__ (L101)                                                         |  MISSED |
-|     Flatten.forward (L104)                                                          |  MISSED |
-|   MLP (L109)                                                                        | COVERED |
-|     MLP.__init__ (L121)                                                             |  MISSED |
-|     MLP.forward (L135)                                                              |  MISSED |
+|   is_multi_task_module (L16)                                                        |  MISSED |
+|   avalanche_forward (L23)                                                           |  MISSED |
+|   FeatureExtractorBackbone (L30)                                                    | COVERED |
+|     FeatureExtractorBackbone.__init__ (L36)                                         |  MISSED |
+|     FeatureExtractorBackbone.forward (L43)                                          |  MISSED |
+|     FeatureExtractorBackbone.get_name_to_module (L47)                               |  MISSED |
+|     FeatureExtractorBackbone.get_activation (L53)                                   |  MISSED |
+|       FeatureExtractorBackbone.get_activation.hook (L54)                            |  MISSED |
+|     FeatureExtractorBackbone.add_hooks (L59)                                        | COVERED |
+|   FeatureExtractorModel (L73)                                                       | COVERED |
+|     FeatureExtractorModel.__init__ (L78)                                            |  MISSED |
+|     FeatureExtractorModel.forward (L84)                                             |  MISSED |
+|   Flatten (L90)                                                                     | COVERED |
+|     Flatten.__init__ (L95)                                                          |  MISSED |
+|     Flatten.forward (L98)                                                           |  MISSED |
+|   MLP (L103)                                                                        | COVERED |
+|     MLP.__init__ (L115)                                                             |  MISSED |
+|     MLP.forward (L129)                                                              |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/vit.py (module)                                                              |  MISSED |
 |   vit_tiny_patch16_224 (L4)                                                         | COVERED |
@@ -2588,7 +2586,7 @@
 | models/batch_renorm.py                                        |     4 |    3 |     1 |    25% |
 | models/bic_model.py                                           |     4 |    2 |     2 |    50% |
 | models/cosine_layer.py                                        |    12 |    7 |     5 |    42% |
-| models/dynamic_modules.py                                     |    26 |    5 |    21 |    81% |
+| models/dynamic_modules.py                                     |    25 |    5 |    20 |    80% |
 | models/dynamic_optimizers.py                                  |     5 |    1 |     4 |    80% |
 | models/expert_gate.py                                         |    11 |    4 |     7 |    64% |
 | models/fecam.py                                               |    16 |   13 |     3 |    19% |
@@ -2611,7 +2609,7 @@
 | models/slda_resnet.py                                         |     5 |    2 |     3 |    60% |
 | models/slim_resnet18.py                                       |    15 |   12 |     3 |    20% |
 | models/timm_vit.py                                            |     9 |    5 |     4 |    44% |
-| models/utils.py                                               |    20 |   15 |     5 |    25% |
+| models/utils.py                                               |    19 |   14 |     5 |    26% |
 | models/vit.py                                                 |     9 |    3 |     6 |    67% |
 | training/losses.py                                            |    13 |    8 |     5 |    38% |
 | training/regularization.py                                    |    12 |    3 |     9 |    75% |
@@ -2673,5 +2671,5 @@
 | training/templates/update_type/meta_update.py                 |     4 |    3 |     1 |    25% |
 | training/templates/update_type/sgd_update.py                  |     4 |    3 |     1 |    25% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2236 | 1036 |  1200 |  53.7% |
+| TOTAL                                                         |  2234 | 1035 |  1199 |  53.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.7%) -----------------
