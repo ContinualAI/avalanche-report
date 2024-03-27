@@ -1573,10 +1573,9 @@
 |     TrainEvalModel.forward (L485)                                                   |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/dynamic_optimizers.py (module)                                               | COVERED |
-|   compare_keys (L20)                                                                |  MISSED |
-|   reset_optimizer (L27)                                                             | COVERED |
-|   update_optimizer (L56)                                                            | COVERED |
-|   add_new_params_to_optimizer (L133)                                                | COVERED |
+|   reset_optimizer (L233)                                                            | COVERED |
+|   update_optimizer (L262)                                                           | COVERED |
+|   add_new_params_to_optimizer (L343)                                                | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | models/expert_gate.py (module)                                                      |  MISSED |
 |   AE_loss (L20)                                                                     | COVERED |
@@ -2430,7 +2429,7 @@
 |     BatchObservation.__init__ (L14)                                                 |  MISSED |
 |     BatchObservation.model_adaptation (L18)                                         | COVERED |
 |     BatchObservation.make_optimizer (L39)                                           | COVERED |
-|     BatchObservation.check_model_and_optimizer (L66)                                |  MISSED |
+|     BatchObservation.check_model_and_optimizer (L76)                                |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | training/templates/problem_type/supervised_problem.py (module)                      |  MISSED |
 |   SupervisedProblem (L13)                                                           |  MISSED |
@@ -2587,7 +2586,7 @@
 | models/bic_model.py                                           |     4 |    2 |     2 |    50% |
 | models/cosine_layer.py                                        |    12 |    7 |     5 |    42% |
 | models/dynamic_modules.py                                     |    25 |    5 |    20 |    80% |
-| models/dynamic_optimizers.py                                  |     5 |    1 |     4 |    80% |
+| models/dynamic_optimizers.py                                  |     4 |    0 |     4 |   100% |
 | models/expert_gate.py                                         |    11 |    4 |     7 |    64% |
 | models/fecam.py                                               |    16 |   13 |     3 |    19% |
 | models/generator.py                                           |    16 |    4 |    12 |    75% |
@@ -2671,5 +2670,5 @@
 | training/templates/update_type/meta_update.py                 |     4 |    3 |     1 |    25% |
 | training/templates/update_type/sgd_update.py                  |     4 |    3 |     1 |    25% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2234 | 1035 |  1199 |  53.7% |
+| TOTAL                                                         |  2233 | 1034 |  1199 |  53.7% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.7%) -----------------
