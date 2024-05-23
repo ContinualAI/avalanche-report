@@ -419,7 +419,7 @@
 |     TaskAware.task_label (L31)                                                      | COVERED |
 |     TaskAware.task_labels (L40)                                                     | COVERED |
 |   with_task_labels (L89)                                                            | COVERED |
-|   task_incremental_benchmark (L108)                                                 | COVERED |
+|   task_incremental_benchmark (L109)                                                 | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/scenarios/validation_scenario.py (module)                                |  MISSED |
 |   benchmark_with_validation_stream (L19)                                            | COVERED |
