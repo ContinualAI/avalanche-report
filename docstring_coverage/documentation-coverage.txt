@@ -2105,13 +2105,14 @@
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/generative_replay.py (module)                                      | COVERED |
 |   GenerativeReplayPlugin (L23)                                                      | COVERED |
-|     GenerativeReplayPlugin.__init__ (L54)                                           | COVERED |
-|     GenerativeReplayPlugin.before_training (L75)                                    | COVERED |
-|     GenerativeReplayPlugin.before_training_exp (L87)                                | COVERED |
-|     GenerativeReplayPlugin.after_training_exp (L103)                                | COVERED |
-|     GenerativeReplayPlugin.before_training_iteration (L112)                         | COVERED |
-|   TrainGeneratorAfterExpPlugin (L157)                                               | COVERED |
-|     TrainGeneratorAfterExpPlugin.after_training_exp (L164)                          | COVERED |
+|     GenerativeReplayPlugin.__init__ (L62)                                           | COVERED |
+|     GenerativeReplayPlugin.before_training (L89)                                    | COVERED |
+|     GenerativeReplayPlugin.before_training_exp (L101)                               | COVERED |
+|     GenerativeReplayPlugin.after_training_exp (L117)                                | COVERED |
+|     GenerativeReplayPlugin.before_backward (L126)                                   | COVERED |
+|     GenerativeReplayPlugin.before_training_iteration (L171)                         | COVERED |
+|   TrainGeneratorAfterExpPlugin (L219)                                               | COVERED |
+|     TrainGeneratorAfterExpPlugin.after_training_exp (L226)                          | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/plugins/gss_greedy.py (module)                                             |  MISSED |
 |   GSS_greedyPlugin (L12)                                                            | COVERED |
@@ -2359,39 +2360,39 @@
 |     Replay.__init__ (L343)                                                          | COVERED |
 |   GenerativeReplay (L403)                                                           | COVERED |
 |     GenerativeReplay.__init__ (L422)                                                | COVERED |
-|   AETraining (L535)                                                                 | COVERED |
-|     AETraining.__init__ (L552)                                                      | COVERED |
-|     AETraining.criterion (L603)                                                     |  MISSED |
-|   get_default_vae_logger (L608)                                                     |  MISSED |
-|   VAETraining (L612)                                                                | COVERED |
-|     VAETraining.__init__ (L625)                                                     | COVERED |
-|     VAETraining.criterion (L678)                                                    | COVERED |
-|   GSS_greedy (L684)                                                                 | COVERED |
-|     GSS_greedy.__init__ (L691)                                                      | COVERED |
-|   GDumb (L755)                                                                      | COVERED |
-|     GDumb.__init__ (L762)                                                           | COVERED |
-|   LwF (L823)                                                                        | COVERED |
-|     LwF.__init__ (L829)                                                             | COVERED |
-|   AGEM (L893)                                                                       | COVERED |
-|     AGEM.__init__ (L900)                                                            | COVERED |
-|   GEM (L964)                                                                        | COVERED |
-|     GEM.__init__ (L971)                                                             | COVERED |
-|   EWC (L1035)                                                                       | COVERED |
-|     EWC.__init__ (L1042)                                                            | COVERED |
-|   SynapticIntelligence (L1117)                                                      | COVERED |
-|     SynapticIntelligence.__init__ (L1133)                                           | COVERED |
-|   CoPE (L1203)                                                                      | COVERED |
-|     CoPE.__init__ (L1210)                                                           | COVERED |
-|   LFL (L1282)                                                                       | COVERED |
-|     LFL.__init__ (L1290)                                                            | COVERED |
-|   MAS (L1351)                                                                       | COVERED |
-|     MAS.__init__ (L1358)                                                            | COVERED |
-|   BiC (L1429)                                                                       | COVERED |
-|     BiC.__init__ (L1436)                                                            | COVERED |
-|   MIR (L1522)                                                                       | COVERED |
-|     MIR.__init__ (L1527)                                                            | COVERED |
-|   FromScratchTraining (L1600)                                                       | COVERED |
-|     FromScratchTraining.__init__ (L1609)                                            | COVERED |
+|   AETraining (L544)                                                                 | COVERED |
+|     AETraining.__init__ (L561)                                                      | COVERED |
+|     AETraining.criterion (L612)                                                     |  MISSED |
+|   get_default_vae_logger (L617)                                                     |  MISSED |
+|   VAETraining (L621)                                                                | COVERED |
+|     VAETraining.__init__ (L634)                                                     | COVERED |
+|     VAETraining.criterion (L687)                                                    | COVERED |
+|   GSS_greedy (L693)                                                                 | COVERED |
+|     GSS_greedy.__init__ (L700)                                                      | COVERED |
+|   GDumb (L764)                                                                      | COVERED |
+|     GDumb.__init__ (L771)                                                           | COVERED |
+|   LwF (L832)                                                                        | COVERED |
+|     LwF.__init__ (L838)                                                             | COVERED |
+|   AGEM (L902)                                                                       | COVERED |
+|     AGEM.__init__ (L909)                                                            | COVERED |
+|   GEM (L973)                                                                        | COVERED |
+|     GEM.__init__ (L980)                                                             | COVERED |
+|   EWC (L1044)                                                                       | COVERED |
+|     EWC.__init__ (L1051)                                                            | COVERED |
+|   SynapticIntelligence (L1126)                                                      | COVERED |
+|     SynapticIntelligence.__init__ (L1142)                                           | COVERED |
+|   CoPE (L1212)                                                                      | COVERED |
+|     CoPE.__init__ (L1219)                                                           | COVERED |
+|   LFL (L1291)                                                                       | COVERED |
+|     LFL.__init__ (L1299)                                                            | COVERED |
+|   MAS (L1360)                                                                       | COVERED |
+|     MAS.__init__ (L1367)                                                            | COVERED |
+|   BiC (L1438)                                                                       | COVERED |
+|     BiC.__init__ (L1445)                                                            | COVERED |
+|   MIR (L1531)                                                                       | COVERED |
+|     MIR.__init__ (L1536)                                                            | COVERED |
+|   FromScratchTraining (L1609)                                                       | COVERED |
+|     FromScratchTraining.__init__ (L1618)                                            | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | training/supervised/strategy_wrappers_online.py (module)                            |  MISSED |
 |   OnlineNaive (L33)                                                                 | COVERED |
@@ -2663,7 +2664,7 @@
 | training/plugins/from_scratch_training.py                     |     5 |    1 |     4 |    80% |
 | training/plugins/gdumb.py                                     |     6 |    4 |     2 |    33% |
 | training/plugins/gem.py                                       |     8 |    1 |     7 |    88% |
-| training/plugins/generative_replay.py                         |     9 |    0 |     9 |   100% |
+| training/plugins/generative_replay.py                         |    10 |    0 |    10 |   100% |
 | training/plugins/gss_greedy.py                                |    11 |    3 |     8 |    73% |
 | training/plugins/lfl.py                                       |     8 |    1 |     7 |    88% |
 | training/plugins/lr_scheduling.py                             |    12 |   10 |     2 |    17% |
@@ -2704,5 +2705,5 @@
 | training/templates/update_type/meta_update.py                 |     4 |    3 |     1 |    25% |
 | training/templates/update_type/sgd_update.py                  |     4 |    3 |     1 |    25% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2263 | 1042 |  1221 |  54.0% |
+| TOTAL                                                         |  2264 | 1042 |  1222 |  54.0% |
 ---------------- RESULT: PASSED (minimum: 1.0%, actual: 54.0%) -----------------
