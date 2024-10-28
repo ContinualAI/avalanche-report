@@ -1684,11 +1684,11 @@
 |     SimpleMLP_TinyImageNet.forward (L34)                                            |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/mobilenetv1.py (module)                                                      | COVERED |
-|   remove_sequential (L28)                                                           |  MISSED |
-|   remove_DwsConvBlock (L39)                                                         |  MISSED |
-|   MobilenetV1 (L51)                                                                 | COVERED |
-|     MobilenetV1.__init__ (L55)                                                      |  MISSED |
-|     MobilenetV1.forward (L79)                                                       |  MISSED |
+|   remove_sequential (L31)                                                           |  MISSED |
+|   remove_DwsConvBlock (L42)                                                         |  MISSED |
+|   MobilenetV1 (L54)                                                                 | COVERED |
+|     MobilenetV1.__init__ (L58)                                                      |  MISSED |
+|     MobilenetV1.forward (L82)                                                       |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | models/ncm_classifier.py (module)                                                   |  MISSED |
 |   NCMClassifier (L9)                                                                | COVERED |
