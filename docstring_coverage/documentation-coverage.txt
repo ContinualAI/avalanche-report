@@ -104,6 +104,12 @@
 |   SplitAlphabetOmniglot (L72)                                                       | COVERED |
 |   SplitOmniglot (L153)                                                              | COVERED |
 |-------------------------------------------------------------------------------------|---------|
+| benchmarks/classic/concon.py (module)                                               |  MISSED |
+|   build_concon_scenario (L39)                                                       |  MISSED |
+|   ConConDisjoint (L77)                                                              | COVERED |
+|   ConConStrict (L137)                                                               | COVERED |
+|   ConConUnconfounded (L198)                                                         | COVERED |
+|-------------------------------------------------------------------------------------|---------|
 | benchmarks/classic/core50.py (module)                                               | COVERED |
 |   CORe50 (L60)                                                                      | COVERED |
 |-------------------------------------------------------------------------------------|---------|
@@ -191,6 +197,10 @@
 |     CLEARDataset.__init__ (L52)                                                     | COVERED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/clear/clear_data.py (module)                                    | COVERED |
+|-------------------------------------------------------------------------------------|---------|
+| benchmarks/datasets/concon/concon.py (module)                                       |  MISSED |
+|   ConConDataset (L13)                                                               | COVERED |
+|     ConConDataset.__init__ (L48)                                                    |  MISSED |
 |-------------------------------------------------------------------------------------|---------|
 | benchmarks/datasets/core50/core50.py (module)                                       | COVERED |
 |   CORe50Dataset (L33)                                                               | COVERED |
@@ -2508,6 +2518,7 @@
 | benchmarks/classic/clear.py                                   |    10 |    1 |     9 |    90% |
 | benchmarks/classic/cmnist.py                                  |     6 |    2 |     4 |    67% |
 | benchmarks/classic/comniglot.py                               |     5 |    2 |     3 |    60% |
+| benchmarks/classic/concon.py                                  |     5 |    2 |     3 |    60% |
 | benchmarks/classic/core50.py                                  |     2 |    0 |     2 |   100% |
 | benchmarks/classic/ctiny_imagenet.py                          |     2 |    1 |     1 |    50% |
 | benchmarks/classic/ctrl.py                                    |     2 |    1 |     1 |    50% |
@@ -2523,6 +2534,7 @@
 | benchmarks/datasets/torchvision_wrapper.py                    |    29 |   28 |     1 |     3% |
 | benchmarks/datasets/clear/clear.py                            |     3 |    0 |     3 |   100% |
 | benchmarks/datasets/clear/clear_data.py                       |     1 |    0 |     1 |   100% |
+| benchmarks/datasets/concon/concon.py                          |     3 |    2 |     1 |    33% |
 | benchmarks/datasets/core50/core50.py                          |     5 |    2 |     3 |    60% |
 | benchmarks/datasets/core50/core50_data.py                     |     1 |    0 |     1 |   100% |
 | benchmarks/datasets/cub200/cub200.py                          |     4 |    1 |     3 |    75% |
@@ -2715,5 +2727,5 @@
 | training/templates/update_type/meta_update.py                 |     4 |    3 |     1 |    25% |
 | training/templates/update_type/sgd_update.py                  |     4 |    3 |     1 |    25% |
 |---------------------------------------------------------------|-------|------|-------|--------|
-| TOTAL                                                         |  2272 | 1046 |  1226 |  54.0% |
----------------- RESULT: PASSED (minimum: 1.0%, actual: 54.0%) -----------------
+| TOTAL                                                         |  2280 | 1050 |  1230 |  53.9% |
+---------------- RESULT: PASSED (minimum: 1.0%, actual: 53.9%) -----------------
